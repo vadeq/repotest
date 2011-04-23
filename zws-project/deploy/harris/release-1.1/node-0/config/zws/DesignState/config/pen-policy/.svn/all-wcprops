@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/zws/!svn/ver/5509/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/pen-policy
+END
+pen-policy-library.xml
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/zws/!svn/ver/5450/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/pen-policy/pen-policy-library.xml
+END
+zws-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/zws/!svn/ver/5180/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/pen-policy/zws-config.xml
+END
+pen-policy-drawing.xml
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/zws/!svn/ver/5450/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/pen-policy/pen-policy-drawing.xml
+END
+match.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/zws/!svn/ver/5355/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/pen-policy/match.xml
+END
+pen-policy-model.xml
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/zws/!svn/ver/5450/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/pen-policy/pen-policy-model.xml
+END

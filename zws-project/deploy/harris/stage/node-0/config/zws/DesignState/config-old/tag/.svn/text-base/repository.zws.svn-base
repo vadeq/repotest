@@ -1,0 +1,86 @@
+<?xml version="1.0" ?>
+<instructions>
+  <DesignState-config ignore="true"/>
+  <repositories ignore="true"/>
+  <folders ignore="true"/>
+  <users ignore="true"/>
+  <attributes ignore="true"/>
+  <release-schemes ignore="true"/>
+
+  <intralink-3 instance-of="zws.repository.ilink3.Ilink3RepositoryBase" static-method="add" class="zws.service.repository.RepositorySvc">
+	<name required="false"/>
+	<domain-name/>
+	<server-name/>
+	<repository-name/>
+	<protocol/>
+	<host-name/>
+	<port/>
+	<services-path/>
+	<system-username/>
+	<system-password/>
+	<env-root/>
+  </intralink-3>
+
+
+<intralink-8 instance-of="zws.repository.R8.R8RepositoryBase" static-method="add" class="zws.service.repository.RepositorySvc">
+
+		<name required="false"/>
+		<system-password/>
+		<system-username/>
+		<domain-name/>
+		<server-name/>
+		<protocol/>
+		<host-name/>
+		<port/>
+		<remote-method/>
+		<download-services-path/>
+		<services-path/>
+  </intralink-8>
+
+
+ <agile-sdk instance-of="zws.repository.agile.sdk.AgileSDKRepositoryBase" static-method="add" class="zws.service.repository.RepositorySvc">
+        <name required="false"/>
+	<domain-name/>
+	<server-name/>
+	<repository-name/>
+	<protocol/>
+	<host-name/>
+	<port/>
+	<services-path/>
+	<system-username/>
+	<system-password/>
+	<ownership-bom-attribute/>
+	<ownership-bom-attribute-value/>
+  </agile-sdk>
+
+  <agile-wsx instance-of="zws.repository.agile.plm.api.AgilePLMAPIRepositoryBase" static-method="add" class="zws.service.repository.RepositorySvc">
+        <name required="false"/>
+	<domain-name/>
+	<server-name/>
+	<repository-name/>
+	<protocol/>
+	<host-name/>
+	<port/>
+	<services-path/>
+	<system-username/>
+	<system-password/>
+  </agile-wsx>
+
+<!--
+<tc10 instance-of="zws.repository.teamcenter.TC10RepositoryBase" static-method="add" class="zws.service.repository.RepositorySvc">
+        <name required="false"/>
+	<domain-name/>
+	<server-name/>
+	<repository-name/>
+	<protocol/>
+	<host-name/>
+	<port/>
+	<services-path/>
+	<system-username/>
+	<system-password/>
+	<server-marker/>
+	<tC-server-name/>
+  </tc10>
+-->
+
+</instructions>

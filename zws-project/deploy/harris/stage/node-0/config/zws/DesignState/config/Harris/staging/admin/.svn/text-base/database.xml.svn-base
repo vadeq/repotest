@@ -1,0 +1,9 @@
+<DesignState-config>
+ <databases>
+	<oracle name="zws-synch-db" url="jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = susvr0340.gcsd.harris.com)(PORT = 1521))) (CONNECT_DATA = (SERVICE_NAME = ZWSDB)))" username="ZWS" password="zwsus3r" />
+	<oracle name="zws-recorder-db" url="jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = susvr0340.gcsd.harris.com)(PORT = 1521))) (CONNECT_DATA = (SERVICE_NAME = ZWSDB)))" username="ZWS" password="zwsus3r"/>
+	<oracle name="DesignState" url="jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = susvr0340.gcsd.harris.com)(PORT = 1521))) (CONNECT_DATA = (SERVICE_NAME = ZWSDB)))" username="ZWS" password="zwsus3r"/>    
+	<oracle name="zws-qx-queue" url="jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = susvr0340.gcsd.harris.com)(PORT = 1521))) (CONNECT_DATA = (SERVICE_NAME = ZWSDB)))" username="ZWS" password="zwsus3r"/>
+	<oracle name="zws-qx-element" url="jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = susvr0340.gcsd.harris.com)(PORT = 1521))) (CONNECT_DATA = (SERVICE_NAME = ZWSDB)))" username="ZWS" password="zwsus3r"/>
+ </databases>
+</DesignState-config>

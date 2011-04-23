@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/code/java/zws/attribute
+END
+zwsDate.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/attribute/zwsDate.java
+END
+zwsInteger.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/attribute/zwsInteger.java
+END
+Attribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/attribute/Attribute.java
+END
+zwsBoolean.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/attribute/zwsBoolean.java
+END
+zwsEnumeratedFloat.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/attribute/zwsEnumeratedFloat.java
+END
+zwsEnumeratedString.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/attribute/zwsEnumeratedString.java
+END
+Enumeration.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/attribute/Enumeration.java
+END
+EnumeratedAttributeBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/attribute/EnumeratedAttributeBase.java
+END
+zwsFloat.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/attribute/zwsFloat.java
+END
+zwsString.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/attribute/zwsString.java
+END
+zwsEnumeratedDate.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/attribute/zwsEnumeratedDate.java
+END
+zwsEnumeratedInteger.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/attribute/zwsEnumeratedInteger.java
+END
+EnumeratedAttribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/attribute/EnumeratedAttribute.java
+END
+AttributeBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/attribute/AttributeBase.java
+END

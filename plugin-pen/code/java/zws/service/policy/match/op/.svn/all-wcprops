@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/zws/!svn/ver/6277/trunk/zws/product/pen/plugin-pen/code/java/zws/service/policy/match/op
+END
+ListPropertyContains.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/zws/!svn/ver/5877/trunk/zws/product/pen/plugin-pen/code/java/zws/service/policy/match/op/ListPropertyContains.java
+END
+HasDependencies.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/zws/!svn/ver/4971/trunk/zws/product/pen/plugin-pen/code/java/zws/service/policy/match/op/HasDependencies.java
+END
+StartsWithNumber.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/5690/trunk/zws/product/pen/plugin-pen/code/java/zws/service/policy/match/op/StartsWithNumber.java
+END
+CompareItemTypeOP.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/6277/trunk/zws/product/pen/plugin-pen/code/java/zws/service/policy/match/op/CompareItemTypeOP.java
+END
+PolicyMatchOpBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/5690/trunk/zws/product/pen/plugin-pen/code/java/zws/service/policy/match/op/PolicyMatchOpBase.java
+END
+PolicyMatchOpList.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/5690/trunk/zws/product/pen/plugin-pen/code/java/zws/service/policy/match/op/PolicyMatchOpList.java
+END
+CompareAttributeOP.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/zws/!svn/ver/5690/trunk/zws/product/pen/plugin-pen/code/java/zws/service/policy/match/op/CompareAttributeOP.java
+END
+CompareCtxAttribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/zws/!svn/ver/6050/trunk/zws/product/pen/plugin-pen/code/java/zws/service/policy/match/op/CompareCtxAttribute.java
+END
+HasBOM.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/4971/trunk/zws/product/pen/plugin-pen/code/java/zws/service/policy/match/op/HasBOM.java
+END
+PolicyMatchOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/3957/trunk/zws/product/pen/plugin-pen/code/java/zws/service/policy/match/op/PolicyMatchOp.java
+END
+StartsWithOP.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/zws/!svn/ver/5690/trunk/zws/product/pen/plugin-pen/code/java/zws/service/policy/match/op/StartsWithOP.java
+END
+ExcludeAttributeOP.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/zws/!svn/ver/5690/trunk/zws/product/pen/plugin-pen/code/java/zws/service/policy/match/op/ExcludeAttributeOP.java
+END
+StartsWithAlphabet.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/zws/!svn/ver/5690/trunk/zws/product/pen/plugin-pen/code/java/zws/service/policy/match/op/StartsWithAlphabet.java
+END

@@ -1,0 +1,12 @@
+K 10
+svn:ignore
+V 24
+out
+.classpath
+.project
+
+K 15
+tsvn:logminsize
+V 2
+10
+END

@@ -1,0 +1,226 @@
+<project name="ZWS Installation Validator" basedir="./" default="validate">
+
+	<target name="init">
+		<property file="validate.properties" />
+	</target>
+
+	<target name="validate" depends="validate_proe,validate_proi,validate_chrysalis" />
+	
+	<!-- ============================================================== -->
+	<!-- Pro/E Validation/Execution                                     -->
+	<!-- ============================================================== -->
+
+	<!-- No Pro/E -->
+	<target name="if_proe_not_found" unless="proe.present">
+		<echo message="[FAILURE] The Pro/E was not found!"/>
+	</target>
+
+	<!-- Found Pro/E -->
+	<target name="if_proe_was_found" if="proe.present">
+		<echo message="[FOUND] Pro/E was found!"/>
+		<echo message="Launching Pro/E, please manually verify..."/>
+		<!-- exec executable="${proe.exe}" spawn="true" / -->
+	</target>	
+
+	<target name="validate_proe" depends="init" >
+		<echo message="Looking for Pro/E at:${line.separator}${proe.exe}" />
+		<echo />
+
+		<available file="${proe.exe}" type="file" property="proe.present" />
+		<antcall target="if_proe_not_found" />
+		<antcall target="if_proe_was_found" />
+	</target>
+
+	<!-- ============================================================== -->
+	<!-- Pro/I Validation/Execution                                     -->
+	<!-- ============================================================== -->
+
+	<!-- No Pro/I -->
+	<target name="if_proi_not_found" unless="proi.present">
+		<echo message="[FAILURE] The Pro/I client was not found!"/>
+	</target>
+
+	<!-- Found Pro/I -->
+	<target name="if_proi_was_found" if="proi.present">
+		<echo message="[FOUND] The Pro/I client was found!"/>
+		<echo message="Launching the client, please manually verify..."/>
+		<!-- exec executable="${proe.exe}" spawn="true" / -->
+	</target>	
+
+	<target name="validate_proi" depends="init">
+
+		<!-- get the pro/i bat file named by the client -->
+		<loadfile property="proi.call" srcFile="${proi.bat}">
+			<filterchain>
+				<tokenfilter>
+					<trim/>
+					<ignoreblank/>
+				</tokenfilter>
+				<tailfilter lines="1"/>
+				<striplinebreaks/>
+				<tokenfilter>
+					<replaceregex pattern="\\" replace="/" flags="gi"/>
+					<replacestring from="call " to=""/>
+					<replacestring from="%PROI_HOME%" to="${proi.home}"/>					
+				</tokenfilter>
+			</filterchain>
+		</loadfile>
+
+		<echo message="Looking for Pro/I client at:${line.separator}${proi.call}" />
+		<echo />
+
+		<available file="${proi.call}" type="file" property="proi.present" />
+		<antcall target="if_proi_not_found" />
+		<antcall target="if_proi_was_found" />
+	</target>
+
+	<!-- ============================================================== -->
+	<!-- Oracle Validation/Execution	                                -->
+	<!-- ============================================================== -->
+	<target name="validate_oracle" depends="init">
+
+		<echo message="Need to transform database configuration for ANT.." />
+		<style in="${oracle.database.xml}" out="${oracle.sandbox}/db.xml"
+				extension=".xml" style="db.xsl"/>
+
+		<xmlproperty file="${oracle.sandbox}/db.xml" />
+
+		<echo message="Oracle configuration:"/>
+		<echo message="  Url: ${database.DesignState(url)}" />
+		<echo message="  Username: ${database.DesignState(username)}" />
+		<echo message="  Password: ${database.DesignState(password)}" />
+
+		<sql url="${database.DesignState(url)}"
+				driver="${oracle.driver}"
+				userid="${database.DesignState(username)}"
+				password="${database.DesignState(password)}"
+				classpath="${oracle.classpath}"
+				print="true" showheaders="true"
+				>
+			select * from process;
+		</sql>
+	
+		<echo message="Cleaning up transformed configuration.." />
+		<delete file="${oracle.sandbox}/db.xml" />
+	</target>
+
+	<!-- ============================================================== -->
+	<!-- Chrysalis Validation/Execution                                 -->
+	<!-- ============================================================== -->
+
+	<target name="validate_chrysalis" depends="init">
+
+		<tstamp>
+		  <format property="file.time" pattern="yyyyddMM_hhmmss" />
+		</tstamp>
+
+		<loadproperties srcFile="${chrysalis.cfg}">
+			<filterchain>
+				<prefixlines prefix="cfg."/>
+				<tokenfilter>
+					<replaceregex pattern="\\" replace="/" flags="gi"/>
+					<replaceregex pattern="//" replace="/" flags="gi"/>
+					<replaceregex pattern="c:" replace="" flags="gi"/>
+					<trim/>
+				</tokenfilter>	
+			</filterchain>
+		</loadproperties>
+
+		<echo message="Important configuration properties:" />
+		<echo message="  chrysalis.input.dir=${cfg.chrysalis.input.dir}" />
+		<echo message="  chrysalis.output.dir=${cfg.chrysalis.output.dir}" />
+		<echo message="  proe.tool.config.pro=${cfg.proe.tool.config.pro}" />
+		<echo />
+	
+		<!-- chrysalis config currently has path seperators on the end of these settings, so we dont need them -->
+		<echo message="Making working directories using the timestamp ${file.time}:" />
+		<property name="chrysalis.in" value="${chrysalis.sandbox}${cfg.chrysalis.input.dir}sim_${file.time}"/>
+		<property name="chrysalis.out" value="${chrysalis.sandbox}${cfg.chrysalis.output.dir}sim_${file.time}"/>
+		<mkdir dir="${chrysalis.in}"/>
+		<mkdir dir="${chrysalis.out}"/>
+		<echo />
+
+		<echo message="Expanding archive file and copying config.pro:" />
+		<untar src="${chrysalis.test.tar}" dest="${chrysalis.in}"/>
+		<copy file="${cfg.proe.tool.config.pro}" todir="${chrysalis.in}"/>
+		<echo />
+
+		<!-- determin drawing type and filename to use in ini file -->
+		<echo message="Looking for parts..." />
+		<exec dir="${chrysalis.in}" executable="cmd.exe" outputproperty="chrysalis.tar.prt">
+		  <arg line="/c dir /b *.prt"/>
+		</exec>
+		<echo message="Found...${chrysalis.tar.prt}" />
+		
+		<echo message="Looking for assemblies..." />
+		<exec dir="${chrysalis.in}" executable="cmd.exe" outputproperty="chrysalis.tar.asm">
+		  <arg line="/c dir /b *.asm"/>
+		</exec>
+		<echo message="Found...${chrysalis.tar.asm}" />
+
+		<echo message="Looking for drawings..." />
+		<exec dir="${chrysalis.in}" executable="cmd.exe" outputproperty="chrysalis.tar.drw">
+		  <arg line="/c dir /b *.drw"/>
+		</exec>
+		<echo message="Found...${chrysalis.tar.drw}" />
+		
+		<condition property="chrysalis.filename" value="${chrysalis.tar.drw}">
+			<not><contains string="${chrysalis.tar.drw}" substring="Not Found" casesensitive="false" /></not>
+		</condition>	
+
+		<condition property="chrysalis.filename" value="${chrysalis.tar.asm}">
+			<not><or>
+					 <contains string="${chrysalis.tar.asm}" substring="Not Found" casesensitive="false" />
+					 <isset property="chrysalis.filename"/>
+			</or></not>
+		</condition>
+
+		<condition property="chrysalis.filename" value="${chrysalis.tar.prt}">
+			<not><or>
+					 <contains string="${chrysalis.tar.prt}" substring="Not Found" casesensitive="false" />
+					 <isset property="chrysalis.filename"/>
+			</or></not>
+		</condition>
+
+		<echo message="Filename: ${chrysalis.filename}" />
+
+		<!-- this is kinda a pain in the rump, but the path in the ini file needs to be windows
+			 but its converted to java friendly when read in for other operations, so we need to 
+			 put it back for the ini file update below -->
+		<dirset dir="${chrysalis.in}/.." id="unix.dir.in" >
+			<include name="sim_${file.time}"/>
+		</dirset>
+		<pathconvert property="chrysalis.in.windows" refid="unix.dir.in" targetos="windows" />
+
+		<dirset dir="${chrysalis.out}/.." id="unix.dir.out" >
+			<include name="sim_${file.time}"/>
+		</dirset>
+		<pathconvert property="chrysalis.out.windows" refid="unix.dir.out" targetos="windows" />
+
+		<echo message="Copying and modifying xlator.ini File:" />
+		<copy file="${chrysalis.ini}" tofile="${chrysalis.in}/xlator.ini"/>
+		<replace file="${chrysalis.in}/xlator.ini" token="@source.path@" value="${chrysalis.in.windows}"/>
+		<replace file="${chrysalis.in}/xlator.ini" token="@source.name@" value="${chrysalis.filename}"/>
+		<replace file="${chrysalis.in}/xlator.ini" token="@dest.path@" value="${chrysalis.out.windows}"/>
+		<replace file="${chrysalis.in}/xlator.ini" token="@dest.name@" value="${chrysalis.filename}"/>
+		<replace file="${chrysalis.in}/xlator.ini" token=".drw.plt" value=".plt"/>
+		<replace file="${chrysalis.in}/xlator.ini" token="@log.path@" value="${chrysalis.out}"/>
+		<echo />
+
+		<!-- make a backup of the config file and set it to the 
+			 correct setting.  Currently it could be PRINT or STEP -->
+		<copy file="${chrysalis.cfg}" tofile="${chrysalis.cfg}.file.time"/>
+		<replace file="${chrysalis.cfg}" token="PRINT" value="${chrysalis.output.type}"/>
+		<replace file="${chrysalis.cfg}" token="STEP" value="${chrysalis.output.type}"/>
+
+		<!-- run the chysalis bat file -->
+		<exec dir="${chrysalis.in}" executable="cmd.exe">
+		  <arg line="/c ${cfg.proe2iges.xlator.command}"/>
+		  <arg line="${chrysalis.in}/xlator.ini"/>
+		</exec>
+
+		<!-- replace the config file with the original -->
+		<move tofile="${chrysalis.cfg}" file="${chrysalis.cfg}.file.time" overwrite="true" />
+	</target>
+
+</project>

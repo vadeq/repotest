@@ -1,0 +1,103 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/_editor/nls
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+zh
+dir
+
+pt
+dir
+
+ru
+dir
+
+de
+dir
+
+LinkDialog.js
+file
+
+
+
+
+2008-07-11T22:06:19.781625Z
+062b42f0a8bb39c9a669addfcab97bd1
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+ja
+dir
+
+FontChoice.js
+file
+
+
+
+
+2008-07-11T22:06:19.906625Z
+33a23b946f435878245b87ddbc97ad10
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+cs
+dir
+
+fr
+dir
+
+es
+dir
+
+zh-tw
+dir
+
+ko
+dir
+
+pl
+dir
+
+it
+dir
+
+hu
+dir
+
+commands.js
+file
+
+
+
+
+2008-07-11T22:06:20.109750Z
+bd439b0be1a617c20c3e0da073fb796f
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+

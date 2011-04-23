@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/retrieve/binary
+END
+FetchNativeFiles.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/zws/!svn/ver/4766/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/retrieve/binary/FetchNativeFiles.java
+END
+FetchBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/retrieve/binary/FetchBase.java
+END
+RetrieveBinaryOpBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/zws/!svn/ver/3337/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/retrieve/binary/RetrieveBinaryOpBase.java
+END
+FetchDesignFilesOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/retrieve/binary/FetchDesignFilesOp.java
+END
+RetrieveBinaryOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/retrieve/binary/RetrieveBinaryOp.java
+END
+RetrieveNativeFileOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/zws/!svn/ver/3337/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/retrieve/binary/RetrieveNativeFileOp.java
+END

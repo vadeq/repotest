@@ -1,0 +1,49 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/client/code/java/zws/handler/i2a
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+hi
+dir
+
+BaseI2AHandler.java
+file
+
+
+
+
+2008-07-11T20:46:21.391000Z
+4a723c79cc35bcd8468ca171663e0060
+2007-10-09T21:42:04.172960Z
+3585
+arbind.thakur
+
+eco
+dir
+
+custom
+dir
+

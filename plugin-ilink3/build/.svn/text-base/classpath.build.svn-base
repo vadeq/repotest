@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="classpath">
+  <path id="classpath">
+    <!-- update to name specific jars -->
+    <fileset dir="${dist}/jar"> <include name="zws-qx.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-qx-web-client.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-interface.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="DesignState-Client.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-repository.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-file-depot.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-chrysalis.jar"/> </fileset>  
+	  <fileset dir="${dist}/jar"> <include name="zws-plugin-service-finder.jar"/> </fileset>    
+  </path>
+</project>

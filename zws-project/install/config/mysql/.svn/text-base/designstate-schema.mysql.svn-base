@@ -1,0 +1,99 @@
+DROP DATABASE IF EXISTS DesignState;
+CREATE DATABASE DesignState;
+USE DesignState;
+
+# Account Services
+		drop table if exists zwsuser;
+
+		create table zwsuser (
+			username  varchar(25)  not null primary key,
+			password  varchar(255),
+			firstName varchar(50),
+			lastName  varchar(50),
+			email     varchar(125),
+			phone     varchar(25),
+			role      varchar(50),
+			active    tinyint default 1
+		);
+
+# Processing Services
+		drop table if exists chronjob;
+
+		create table chronjob (
+			name          varchar(125) not null primary key,
+			processName   varchar(125) not null,
+			startTime     time not null,
+			periodHours   varchar(10),
+			periodMinutes varchar(2),
+			periodSeconds varchar(2)
+		);
+
+# Baseline Services
+#CREATE TABLE baseline(
+#  baseline_pk VARCHAR(25) NOT NULL,
+#  name VARCHAR(25) NOT NULL,
+#  location VARCHAR(50),
+#  PRIMARY KEY (baseline_pk)
+#);
+
+#CREATE TABLE baselinefile (
+#  baselinefile_pk VARCHAR(25) NOT NULL,	
+#  filename varchar(90) NOT NULL,
+#  baseline_fk varchar(25) REFERENCES baseline(baseline_pk),
+#  origin varchar(255) default NULL,
+#  revision varchar(25),
+#  version varchar(25),
+#  branch varchar(25),	
+#  PRIMARY KEY  (baselinefile_pk),
+#  INDEX baseline_fk_idx (baseline_fk)
+#);
+
+#CREATE TABLE folder(
+#  folder_pk VARCHAR(25) NOT NULL,
+#  folder_fk varchar(25) REFERENCES baseline(folder_pk),
+#  name VARCHAR(25) NOT NULL,
+#  PRIMARY KEY (folder_pk),
+#  INDEX folder_fk_idx (folder_fk)
+#);
+
+#CREATE TABLE audit(
+#  audit_pk VARCHAR(25) NOT NULL,
+#  name VARCHAR(25) NOT NULL,
+#  trace VARCHAR(25) NOT NULL,
+#  PRIMARY KEY (audit_pk)
+#);
+
+
+# Metadata Services |++todo: change table name from document to metadata
+#CREATE TABLE document (
+#  origin VARCHAR (255) NOT NULL,
+#  path VARCHAR (255),
+#  name VARCHAR (245) NOT NULL,
+#  metadata TEXT,
+#  PRIMARY KEY (origin),
+#  FULLTEXT(metadata)
+#);
+
+#CREATE TABLE subDocument (
+#  parentOrigin VARCHAR (255) NOT NULL,
+#  childOrigin VARCHAR (255) NOT NULL,
+#  count INT
+#);
+
+# Catalog Services
+#Create Table category (
+#  ID INT NOT NULL AUTO_INCREMENT,
+#  name VARCHAR(125) NOT NULL,
+#  description BLOB,
+#  parent INT,
+#  PRIMARY KEY (id)
+#);
+
+#Create Table catalogPoint (
+#  categoryID INT NOT NULL,
+#  documentOrigin VARCHAR(255) NOT NULL
+#);
+
+#CREATE TABLE agentCache ( datasource VARCHAR (255), hash VARCHAR (255), name VARCHAR (245) NOT NULL, metadata TEXT, PRIMARY KEY (ID), INDEX (datasource, hash, name), FULLTEXT(metadata) );
+#CREATE TABLE attribute (ID INT NOT NULL auto_increment,name VARCHAR (100) NOT NULL, visible BOOL DEFAULT '1', UNIQUE (name), PRIMARY KEY (ID) );
+#CREATE TABLE processingTime (ID INT NOT NULL,startTime TIME NOT NULL,PRIMARY KEY(ID));

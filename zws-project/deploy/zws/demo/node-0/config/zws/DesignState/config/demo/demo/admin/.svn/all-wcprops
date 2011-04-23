@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/6397/trunk/zws/zws-project/deploy/zws/demo/node-0/config/zws/DesignState/config/demo/demo/admin
+END
+database.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/zws/!svn/ver/6397/trunk/zws/zws-project/deploy/zws/demo/node-0/config/zws/DesignState/config/demo/demo/admin/database.xml
+END
+zws-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/zws/!svn/ver/6397/trunk/zws/zws-project/deploy/zws/demo/node-0/config/zws/DesignState/config/demo/demo/admin/zws-config.xml
+END
+application-properties.xml
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/zws/!svn/ver/6397/trunk/zws/zws-project/deploy/zws/demo/node-0/config/zws/DesignState/config/demo/demo/admin/application-properties.xml
+END
+message-constants.xml
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/zws/!svn/ver/6397/trunk/zws/zws-project/deploy/zws/demo/node-0/config/zws/DesignState/config/demo/demo/admin/message-constants.xml
+END

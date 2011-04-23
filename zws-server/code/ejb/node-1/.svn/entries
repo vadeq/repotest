@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/server/code/ejb/node-1
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:18:38.052600Z
+5306
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+application.xml
+file
+
+
+
+
+2008-07-11T20:50:15.703500Z
+3eba4279d74e3950933004033526a5e5
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+ejb-jar.xml
+file
+
+
+
+
+2008-07-11T20:50:15.750375Z
+b0824d00bec9550e2047cf854e6755a1
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/xml/parser
+END
+XMLException.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/parser/XMLException.java
+END
+Instructions.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/xml/parser/Instructions.java
+END
+XMLValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/parser/XMLValidator.java
+END
+TagMapException.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/parser/TagMapException.java
+END
+TagMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/xml/parser/TagMap.java
+END
+ParserException.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/parser/ParserException.java
+END
+Parser.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/xml/parser/Parser.java
+END

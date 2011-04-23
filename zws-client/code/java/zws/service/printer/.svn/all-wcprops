@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/code/java/zws/service/printer
+END
+PrinterServiceLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/printer/PrinterServiceLocal.java
+END
+PrinterServiceRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/printer/PrinterServiceRemote.java
+END
+EJBLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/printer/EJBLocator.java
+END
+PrinterService.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/printer/PrinterService.java
+END
+PrinterServiceLocalHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/printer/PrinterServiceLocalHome.java
+END
+PrinterServiceRemoteHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/printer/PrinterServiceRemoteHome.java
+END

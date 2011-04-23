@@ -1,0 +1,29 @@
+<DesignState-config>
+	<repositories>
+		<intralink-3 name="ilink" system-password="agile" system-username="admin"
+			domain-name="zws" server-name="node-0" protocol="http"
+			host-name="designstate-0" port="80" env-root="ilink-1"
+			services-path="ZeroWait-State/services"/>
+
+		<intralink-8 name="ilink-8" system-password="admin" system-username="admin"
+			domain-name="zws" server-name="node-0" protocol="http"
+			host-name="vm-ilink-8" port="80" remote-method="zws-ilink-interface"
+			download-services-path="Windchill/netmarkets/jsp/zws/downloadpdmcontent.jsp"
+			services-path="Windchill/servlet/RPC?CLASS=com.infoengine.soap"/>
+<!--
+		<tc10 name="TC-10" system-password="agile" system-username="zws"
+			domain-name="cisco" server-name="node-0" protocol="http"
+			host-name="vm-agile-9-2" port="7778"
+			services-path="tc/services/PLMGatewayService"
+			server-marker="TcServer1" tC-server-name="TcData"/>
+-->
+		<agile-sdk name="agile-sdk" system-password="agile" system-username="zws"
+			domain-name="cisco" server-name="node-zero" protocol="http"
+			host-name="vm-agile-9-2" port="7778" services-path="Agile"/>
+
+		<agile-wsx name="agile-wsx" system-password="agile" system-username="zws"
+			domain-name="cisco" server-name="node-zero" protocol="http"
+			host-name="vm-agile-9-2" port="7778" services-path="Agile"/>
+
+	</repositories>
+</DesignState-config>

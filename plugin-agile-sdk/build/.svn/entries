@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/repository/agile/plugin-agile-sdk/build
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-03-07T18:07:18.859560Z
+5777
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+title.build
+file
+
+
+
+
+2008-07-11T20:36:21.047250Z
+38f15db8268b35eb87189883f3ed698b
+2007-07-09T19:22:10.251730Z
+2269
+pavan.toleti
+
+classpath.build
+file
+
+
+
+
+2008-07-11T20:36:21.094125Z
+c4af18ef92cf78c99136548913c98998
+2008-03-07T18:07:18.859560Z
+5777
+pavan.toleti
+

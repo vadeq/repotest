@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/mapping/attribute
+END
+MetadataAttributeMapping.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/mapping/attribute/MetadataAttributeMapping.java
+END
+EnumerationMapping.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/mapping/attribute/EnumerationMapping.java
+END
+FieldCombiner.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/mapping/attribute/FieldCombiner.java
+END
+LocationMapping.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/mapping/attribute/LocationMapping.java
+END
+CreateAttribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/mapping/attribute/CreateAttribute.java
+END
+MetadataAttributeMappingBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/mapping/attribute/MetadataAttributeMappingBase.java
+END
+RenameAttribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/mapping/attribute/RenameAttribute.java
+END
+CopyAttribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/mapping/attribute/CopyAttribute.java
+END

@@ -1,0 +1,65 @@
+<project name="update-war" default="deploy" basedir=".">
+  <description>Updates default war file with customizations</description> 
+
+  <property name="base" location="."/>
+  <property name="staging" location="\zws\tmp"/>
+
+  <property name="tomcat.username" value="admin"/>
+  <property name="tomcat.password" value="admin"/>
+
+  <taskdef deploy=org.apache.catalina.ant.DeployTask />
+  <taskdef undeploy=org.apache.catalina.ant.UndeployTask />
+
+  <!-- clean -->
+  <target name="clean">
+    <delete dir="\zws\DesignState\config"/>
+
+    <undeploy url="http://localhost/manager"
+      username="${tomcat.username}"
+      password="${tomcat.password}"
+      path="/" />
+  </target>
+
+  <!-- ??? -->
+    // deploy zws configs and overwrites
+    // copy zws to /zws
+  -->
+
+  <!-- construct and deploy war -->
+  <target name="deploy" depends="clean">
+    <!-- copy WAR file to tmp location -->
+    <copy file="DesignState-Web.war" todir="${staging}" />
+
+    <!-- unpack the war file -->
+    <unwar src="${staging}/DesignState-Web.war" dest="${staging}/ROOT" />
+
+    <!-- delete original war file -->
+    <delete file="${staging}/DesignState-Web.war"/>
+
+    <!-- overwrite custom jsp -->
+    <copy todir="${staging}/ROOT/something">
+      <fileset dir="src_dir"/>
+    </copy>
+
+    <!-- repackage war file -->
+    <war destfile="${staging}/DesignState-Web.war" webxml="${staging}/ROOT/code/web-inf/web.xml" > 
+      <webinf dir="${staging}/ROOT/code/web-inf" > 
+        <exclude name="web.xml" /> 
+      </webinf>
+      <lib dir="${deps}/webapp/tomcat" includes="**/*.jar" />
+      <lib dir="${dist}/jar" includes="${app-name}-Client.jar" />
+      <classes dir="${classes}" casesensitive="yes" /> 
+      <fileset dir="${base}/code/jsp/root" /> 
+    </war> 
+
+    <!-- deploy new war file to /zws/designstate/webapp -->
+    <deploy 
+      url="http://localhost/"
+      username="${tomcat.username}"
+      password="${tomcat.password}"
+      path="/"
+      update="true"
+      war="something.war" />
+  </target>
+
+</project>

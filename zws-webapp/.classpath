@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="code/java"/>
+	<classpathentry kind="src" path="code/artwork"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/web-app"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/zws-client"/>
+	<classpathentry kind="lib" path="/build/dep/server/jboss/jboss-j2ee.jar"/>
+	<classpathentry kind="lib" path="/build/dep/common/activation.jar"/>
+	<classpathentry kind="lib" path="/build/dep/common/mail.jar"/>
+	<classpathentry kind="src" path="/qx"/>
+	<classpathentry kind="src" path="/plugin-recorder"/>
+	<classpathentry kind="src" path="/qx-web-client"/>
+	<classpathentry kind="src" path="/plugin-zws-interface"/>
+	<classpathentry kind="src" path="/plugin-queue-pen"/>
+	<classpathentry kind="src" path="/plugin-repository"/>
+	<classpathentry kind="src" path="/plugin-queue-admin"/>
+	<classpathentry kind="src" path="/plugin-synchronization"/>
+	<classpathentry kind="output" path="out"/>
+</classpath>

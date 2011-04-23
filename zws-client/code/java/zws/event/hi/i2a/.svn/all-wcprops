@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/code/java/zws/event/hi/i2a
+END
+BroadcastPLMStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/hi/i2a/BroadcastPLMStatus.java
+END
+BroadcastRevision.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/hi/i2a/BroadcastRevision.java
+END
+PromoteLatestItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/hi/i2a/PromoteLatestItem.java
+END
+UpdateItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/hi/i2a/UpdateItem.java
+END
+BroadcastPartNumber.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/hi/i2a/BroadcastPartNumber.java
+END
+BroadcastLifeCyclePhase.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/hi/i2a/BroadcastLifeCyclePhase.java
+END
+PromoteItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/hi/i2a/PromoteItem.java
+END
+AttachFiles.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/hi/i2a/AttachFiles.java
+END
+Inactivate.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/hi/i2a/Inactivate.java
+END
+UpdateWithNewPartNumber.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/hi/i2a/UpdateWithNewPartNumber.java
+END
+Invoke.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/hi/i2a/Invoke.java
+END

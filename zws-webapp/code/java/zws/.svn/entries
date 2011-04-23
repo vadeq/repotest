@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/java/zws
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-06-18T22:05:39.200557Z
+6369
+ptoleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+hi
+dir
+
+service
+dir
+
+application
+dir
+
+read.java
+file
+
+
+
+
+2008-07-11T22:04:05.547250Z
+5be7cb353963bc8288095015967e430a
+2008-02-29T17:00:53.791577Z
+5675
+pavan.toleti
+
+action
+dir
+

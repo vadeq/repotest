@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="project-path" basedir=".">
+
+  
+  <!-- eclipse project environment -->
+  <property name="workspace" location="\zws-dojo\workspace"/>   <!-- set this to location of Eclipse workspace -->
+  <property name="project-name" value="${eclipse-project-name}"/>
+
+  <!-- project base -->
+  <property name="base" location="${workspace}/${eclipse-project-name}"/>
+  
+  <!-- zws build scripts-->
+  <property name="build-scripts" location="${workspace}\build\script"/>	<!-- Set to the Build Scripts Project Name in eclipse-->
+
+  <!-- jar dependencies-->
+  <property name="deps" location="${workspace}\build\dep"/>
+	
+  <!-- AXIS2 Home -->
+  <property name="AXIS2_HOME" value="${deps}\Axis2-1.3"/>
+
+  <!-- published outputs -->
+  <property name="published" location="${workspace}\build\pub"/>
+
+  <!-- ZWS compiled distribution for cc: cc-distribution is the published output !-->
+  <property name="cc-dist" location="${$pub}"/>
+
+  <!-- ZWS compiled distribution for eclipse dev environment -->
+  <property name="eclipse-dist" location="${workspace}\build\dist"/>
+
+  <!-- ZWS compiled distribution -->
+  <property name="dist" location="${eclipse-dist}"/>
+
+  <!-- releases -->
+  <property name="released" location="${www}\build\release"/>
+  
+  <!-- build identifier -->
+  <property name="cc-build" value="false"/>	
+  <property name="eclipse-build" value="true"/>	
+
+	<!-- debug mode -->
+  <property name="debug-mode-on" value="true"/>
+
+</project>

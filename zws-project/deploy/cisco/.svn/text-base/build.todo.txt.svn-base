@@ -1,0 +1,7 @@
+- update build deps
+- deploy shared jars
+- deploy agile CIF jars
+
+- update config files
+- backup existing config files
+- deploy config files

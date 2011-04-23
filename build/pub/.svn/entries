@@ -1,0 +1,43 @@
+8
+
+dir
+6400
+http://build.zerowait-state.com/svn/zws/trunk/zws/build/pub
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-03-25T19:18:43.983224Z
+5913
+rmccabe
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+download-published-jars.xml
+file
+
+
+
+
+2008-07-11T17:15:13.141000Z
+97fc531110ddd7f01dffc3f021194752
+2008-03-25T19:18:43.983224Z
+5913
+rmccabe
+
+jar
+dir
+

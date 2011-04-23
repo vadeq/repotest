@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/code/java/zws/service/topology
+END
+TopologyServiceLocalHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/topology/TopologyServiceLocalHome.java
+END
+TopologyServiceRemoteHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/topology/TopologyServiceRemoteHome.java
+END
+EJBLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/topology/EJBLocator.java
+END
+TopologyServiceHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/topology/TopologyServiceHome.java
+END
+TopologyServiceLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/topology/TopologyServiceLocal.java
+END
+TopologyServiceRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/topology/TopologyServiceRemote.java
+END
+TopologyService.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/topology/TopologyService.java
+END

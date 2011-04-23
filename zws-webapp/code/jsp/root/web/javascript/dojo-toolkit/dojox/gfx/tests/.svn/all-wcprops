@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests
+END
+matrix.js
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests/matrix.js
+END
+test_pattern.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests/test_pattern.html
+END
+test_tbbox.html
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests/test_tbbox.html
+END
+test_decompose.html
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests/test_decompose.html
+END
+test_bezier.html
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests/test_bezier.html
+END
+test_poly.html
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests/test_poly.html
+END
+test_text.html
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests/test_text.html
+END
+test_gfx.html
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests/test_gfx.html
+END
+test_fill.html
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests/test_fill.html
+END
+decompose.js
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests/decompose.js
+END
+runTests.html
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests/runTests.html
+END
+test_linearGradient.html
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests/test_linearGradient.html
+END
+test_group.html
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests/test_group.html
+END
+test_gradient.html
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests/test_gradient.html
+END
+module.js
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests/module.js
+END
+test_resize.html
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests/test_resize.html
+END
+test_textpath.html
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests/test_textpath.html
+END
+test_image1.html
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests/test_image1.html
+END
+test_image2.html
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests/test_image2.html
+END
+test_arc.html
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests/test_arc.html
+END
+test_linestyle.html
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests/test_linestyle.html
+END
+test_setPath.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests/test_setPath.html
+END
+test_transform.html
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/gfx/tests/test_transform.html
+END

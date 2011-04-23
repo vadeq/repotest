@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="code/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="/zws-client"/>
+	<classpathentry kind="src" path="/plugin-zws-interface"/>
+	<classpathentry kind="src" path="/plugin-repository"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Agile API"/>
+	<classpathentry kind="src" path="/qx"/>
+	<classpathentry kind="src" path="/plugin-synchronization"/>
+	<classpathentry kind="src" path="/plugin-file-depot"/>
+	<classpathentry kind="output" path="out"/>
+</classpath>

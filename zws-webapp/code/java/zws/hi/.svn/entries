@@ -1,0 +1,94 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/java/zws/hi
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-06-18T22:05:39.200557Z
+6369
+ptoleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+IER
+dir
+
+test
+dir
+
+event
+dir
+
+queue
+dir
+
+demo
+dir
+
+administration
+dir
+
+treeview
+dir
+
+intralink
+dir
+
+synchronizer
+dir
+
+IEE
+dir
+
+application
+dir
+
+recorder
+dir
+
+prototype
+dir
+
+publish
+dir
+
+security
+dir
+
+replication
+dir
+
+data
+dir
+
+custom
+dir
+
+report
+dir
+
+topology
+dir
+
+util
+dir
+
+scheduler
+dir
+

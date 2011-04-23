@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="classpath">
+  <path id="classpath">
+    <!-- update to name specific jars -->
+    <fileset dir="${dist}/jar"> <include name="DesignState-Client.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-qx.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-uniqueid.jar"/> </fileset> 
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-chrysalis.jar"/> </fileset> 
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-service-finder.jar"/> </fileset>     
+    <fileset dir="${AXIS2_HOME}/lib"><include name="servletapi-2.3.jar"/></fileset>
+    <fileset dir="${AXIS2_HOME}/lib"><include name="commons-fileupload-1.1.1.jar"/></fileset> 
+    <fileset dir="${deps}/common"> <include name="jakarta-commons-codec-1.3.jar"/> </fileset>
+    <fileset dir="${deps}/common"> <include name="jakarta-commons-httpclient-3.0.jar"/> </fileset>    
+    <fileset dir="${deps}/common"> <include name="jakarta-commons-logging-1.0.2.jar"/> </fileset>    
+  </path>
+</project>

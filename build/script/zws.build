@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="zws-build-scripts">
+  <import file="properties.build"/>
+
+  <path id="axis2.classpath">
+    <fileset dir="${AXIS2_HOME}/lib">
+      <include name="*.jar"/>
+    </fileset>
+  </path>
+
+  <macrodef name="svn-update">
+    <attribute name="work-dir"/>
+    <attribute name="username"/>
+    <attribute name="password"/>
+    <sequential>
+      <exec dir="@{work-dir}" executable="svn" failonerror="true">
+        <arg line="update --non-interactive --username @{username} --password @{password}"/>
+      </exec>
+    </sequential>
+  </macrodef>
+
+  <target name="init" depends="display-settings"/>
+
+  <!-- top level builds -->
+  <target name="zws-publish-fast-aar" depends="init, compile, wsdl, aar, publish-aar"/>
+  <!-- for use when Eclipse already compiles the code -->
+  <target name="zws-publish-clean-aar" depends="init, clean, compile, unit-test, javadoc, wsdl, aar, publish-aar"/>
+  <target name="zws-publish-updates-aar" depends="init, clean, update, compile, unit-test, javadoc, wsdl, aar, publish-aar"/>
+
+  <target name="zws-publish-fast-jar" depends="init, compile, jar, publish-jar"/>
+  <!-- for use when Eclipse already compiles the code -->
+  <target name="zws-publish-clean-jar" depends="init, clean, compile, unit-test, javadoc, jar, publish-jar"/>
+  <target name="zws-publish-updates-jar" depends="init, clean, update, compile, unit-test, javadoc, jar, publish-jar"/>
+
+  <target name="zws-publish-fast-jar-includes" depends="init, compile, jar-includes, publish-jar"/>
+  <!-- for use when Eclipse already compiles the code -->
+  <target name="zws-publish-clean-jar-includes" depends="init, clean, compile, unit-test, javadoc, jar-includes, publish-jar"/>
+  <target name="zws-publish-updates-jar-includes" depends="init, clean, update, compile, unit-test, javadoc, jar-includes, publish-jar"/>
+
+  <target name="zws-publish-fast-client" depends="init, compile, jar-client, publish-client"/>
+  <target name="zws-publish-clean-client" depends="init, clean, compile, unit-test, jar-client, publish-client"/>
+  <target name="zws-publish-updates-client" depends="init, clean, update, compile, unit-test, jar-client, publish-client"/>
+
+  <target name="zws-publish-jsp" depends="init, war, publish-war"/>
+  <target name="zws-publish-fast-webapp" depends="init, compile, war, publish-war"/>
+  <target name="zws-publish-clean-webapp" depends="init, clean, compile, unit-test, war, publish-war"/>
+  <target name="zws-publish-updates-webapp" depends="init, clean, update, compile, unit-test, war, publish-war"/>
+
+  <target name="zws-publish-jsp-file-depot-webapp" depends="init, war-file-depot, publish-war"/>
+  <target name="zws-publish-fast-file-depot-webapp" depends="init, compile, war-file-depot, publish-war"/>
+  <target name="zws-publish-clean-file-depot-webapp" depends="init, clean, compile, unit-test, war-file-depot, publish-war"/>
+  <target name="zws-publish-updates-file-depot-webapp" depends="init, clean, update, compile, unit-test, war-file-depot, publish-war" />
+
+  <target name="zws-publish-fast-server" depends="init, compile, jar-server-node-0, publish-server"/>
+  <target name="zws-publish-clean-server" depends="init, clean, compile, unit-test, jar-server-node-0, publish-server"/>
+  <target name="zws-publish-updates-server" depends="init, clean, update, compile, unit-test, jar-server-node-0, publish-server"/>
+  <target name="zws-publish-all-servers" depends="init, clean, update, compile, unit-test, jar-server-node-0, jar-server-node-1, jar-server-node-2, jar-server-node-3, jar-server-node-4, publish-server"/>
+
+  <target name="zws-publish-fast-ear" depends="zws-publish-fast-server, ear-node-0, publish-ear"/>
+  <target name="zws-publish-clean-ear" depends="zws-publish-clean-server, ear-node-0, publish-ear"/>
+  <target name="zws-publish-updates-ear" depends="zws-publish-updates-server, ear-node-0, publish-ear"/>
+  <target name="zws-publish-all-ear" depends="zws-publish-all-servers, ear-node-0, ear-node-1, ear-node-2, ear-node-3, ear-node-4, publish-ear"/>
+
+  <!-- clean -->
+  <target name="clean" description="Clean generated directories">
+    <delete dir="${out}"/>
+  </target>
+
+  <!-- compile -->
+  <target name="compile" description="Compile the code" >
+    <mkdir dir="${classes}"/>
+    <javac source="1.4" target="1.4" destdir="${classes}" deprecation="true" debug="${debug-mode-on}" optimize="${false}">
+      <src>
+        <pathelement location="${code}"/>
+      </src>
+      <classpath refid="classpath"/>
+      <!-- <compilerarg value="-Xlint:unchecked"/>  displays details for unchecked operations -->
+    </javac>
+    <mkdir dir="${classes}/META-INF"/>
+  </target>
+
+  <!-- unit test -->
+  <target name="unit-test" description="Execute unit tests">
+    <!-- +++ToDo -->
+  </target>
+
+  <!-- javadoc -->
+  <target name="javadoc" description="Generate javadoc">
+    <!-- commented out for now..
+    <mkdir dir="${javadocs}"/>
+    <tstamp> <format pattern="2001-yyyy" property="year"/> </tstamp>
+    <property name="copyright" value="Copyright &amp;copy;  Zero Wait-State. All Rights Reserved."/>
+    <property name="title" value="${title}"/>
+    <javadoc use="true" private="true" destdir="${javadocs}" author="true" version="true" sourcepath="${code}" packagenames="zws.*, com.zws.*">
+      <classpath> <path refid="classpath"/> </classpath>
+    </javadoc>
+  -->
+  </target>
+
+  <!-- package  jar -->
+  <target name="jar" description="Create a jar file">
+    <mkdir dir="${packages}"/>
+    <jar jarfile="${packages}/${jarfile-name}.jar" basedir="${classes}"/>
+  </target>
+
+  <!-- package  jar -->
+  <target name="jar-includes" description="Create a jar file with includes">
+    <mkdir dir="${packages}"/>
+    <jar jarfile="${packages}/${jarfile-name}.jar" basedir="${classes}">
+      <zipfileset refid="include-files" />
+    </jar>
+  </target>
+
+  <target name="jar-client" description="Create a jar file">
+    <mkdir dir="${packages}"/>
+    <jar jarfile="${packages}/${app-name}-Client.jar">
+      <zipfileset dir="${classes}" includes="**/*.class" />
+      <zipfileset dir="${config}/agile-px/properties" includes="**/*.properties" />
+      <metainf dir="${config}/agile-px/meta-inf" />
+    </jar>
+  </target>
+
+  <target name="jar-server-node" description="Create a server jar file">
+    <mkdir dir="${packages}"/>
+    <jar jarfile="${packages}/${app-name}-Server-node-${node}.jar">
+      <zipfileset dir="${classes}" includes="**/*.class" />
+      <zipfileset dir="${ejb}/node-${node}" prefix="META-INF">
+        <include name="ejb-jar.xml" />
+      </zipfileset>
+    </jar>
+  </target>
+
+  <target name="jar-server-node-0" description="Create server jar file for node 0">
+    <antcall target="jar-server-node">
+      <param name="node" value="0"/>
+    </antcall>
+  </target>
+
+  <target name="jar-server-node-1" description="Create server jar file for node 0">
+    <antcall target="jar-server-node">
+      <param name="node" value="1"/>
+    </antcall>
+  </target>
+
+  <target name="jar-server-node-2" description="Create server jar file for node 0">
+    <antcall target="jar-server-node">
+      <param name="node" value="2"/>
+    </antcall>
+  </target>
+
+  <target name="jar-server-node-3" description="Create server jar file for node 0">
+    <antcall target="jar-server-node">
+      <param name="node" value="3"/>
+    </antcall>
+  </target>
+
+  <target name="jar-server-node-4" description="Create server jar file for node 0">
+    <antcall target="jar-server-node">
+      <param name="node" value="4"/>
+    </antcall>
+  </target>
+
+  <!-- Package aar -->
+  <target name="compile.src">
+    <javac source="1.4" target="1.4" fork="true" memoryInitialSize="256m" memoryMaximumSize="256m" debug="on" destdir="${classes}" srcdir="${src}">
+      <classpath refid="axis2.classpath"/>
+      <!-- <compilerarg value="-Xlint:unchecked"/>  displays details for unchecked operations -->
+    </javac>
+  </target>
+
+  <target name="wsdl">
+    <mkdir dir="${out}/META-INF"/>
+    <copy file="${web-services}/services.xml" todir="${out}/META-INF" />
+<!--    <copy file="${web-services}/QxWebService.wsdl" todir="${out}/META-INF" />
+    
+    
+    <echo message="Calling org.apache.ws.java2wsdl.Java2WSDL" />
+		<java classname="org.apache.ws.java2wsdl.Java2WSDL" >
+					<classpath>
+							<fileset dir="${dist}/jar"> <include name="zws-qx.jar"/> </fileset>
+							<fileset dir="${dist}/jar"> <include name="DesignState-Client.jar"/> </fileset>
+							<pathelement location="${classes}"/>
+							<fileset dir="${AXIS2_HOME}/lib"><include name="*.jar"/></fileset>
+					</classpath>	
+				 <arg value="-cn" />
+				 <arg value="${service-fqcn}"/>
+				 <arg value="-tn" />
+				 <arg value="http://${service-namespace}"/>
+				 <arg value="-stn" />
+				 <arg value="http://${service-namespace}"/>
+				 <arg value="-o" />
+				 <arg value="${out}/META-INF"/> 
+		</java>	 -->
+	
+  </target>
+
+  <target name="aar">
+    <mkdir dir="${packages}"/>
+    <jar destfile="${packages}/${app-name}-Qx.aar">
+      <zipfileset dir="${classes}" includes="**/*.class" />
+      <metainf dir="${out}/META-INF" />
+    </jar>
+  </target>
+
+
+
+  <!-- package  war -->
+  <target name="war" description="Create a war file">
+    <mkdir dir="${packages}"/>
+    <war destfile="${packages}/${war-file-name}.war" webxml="${base}/code/web-inf/web.xml" >
+      <webinf dir="${base}/code/web-inf" >
+        <exclude name="web.xml" />
+      </webinf>
+      <lib dir="${deps}/webapp" includes="struts.jar" />
+      <lib dir="${dist}/jar" includes="zws-plugin-*.jar"/>
+      <lib dir="${dist}/jar" includes="zws-qx.jar"/>
+      <lib dir="${dist}/jar" includes="zws-qx-web-client.jar"/>
+      <lib dir="${dist}/jar" includes="DesignState-Client.jar"/>
+      <classes dir="${classes}" casesensitive="yes" />
+      <fileset dir="${base}/code/jsp/root" />
+    </war>
+  <echo message="done warring webapp"/>
+  </target>
+
+  <target name="war-file-depot" description="Create a war file">
+    <mkdir dir="${packages}"/>
+    <war destfile="${packages}/${war-file-name}.war" webxml="${base}/code/web-inf/web.xml" >
+      <webinf dir="${base}/code/web-inf" >
+        <exclude name="web.xml" />
+      </webinf>
+      <lib dir="${dist}/jar" includes="DesignState-Client.jar" />
+      <lib dir="${dist}/jar" includes="zws-plugin-file-depot.jar" />
+      <lib dir="${dist}/jar" includes="zws-qx-service-file-depot.jar" />
+      <lib dir="${deps}/common" includes="commons-io-1.2.jar" />
+      <lib dir="${deps}/common" includes="commons-fileupload-1.1.1.jar" />
+      <fileset dir="${base}/code/jsp/root" />
+    </war>
+  <echo message="done warring filedepot"/>
+  </target>
+
+  <!-- package  ear -->
+  <target name="ear" description="Create an ear file">
+    <mkdir dir="${packages}"/>
+    <ear destfile="${packages}/${app-name}-node-${node}.ear" appxml="${ejb}/node-${node}/application.xml">
+      <fileset dir="${dist}/jar" includes="${app-name}-Client.jar" />
+      <fileset dir="${dist}/jar" includes="${app-name}-Server-node-${node}.jar"/>
+    </ear>
+  </target>
+
+  <target name="ear-node-0" description="Create an ear file for node 0">
+    <antcall target="ear">
+      <param name="node" value="0"/>
+    </antcall>
+  </target>
+
+  <target name="ear-node-1" description="Create an ear file for node 1">
+    <antcall target="ear">
+      <param name="node" value="1"/>
+    </antcall>
+  </target>
+
+  <target name="ear-node-2" description="Create an ear file for node 2">
+    <antcall target="ear">
+      <param name="node" value="2"/>
+    </antcall>
+  </target>
+
+  <target name="ear-node-3" description="Create an ear file for node 3">
+    <antcall target="ear">
+      <param name="node" value="3"/>
+    </antcall>
+  </target>
+
+  <target name="ear-node-4" description="Create an ear file for node 4">
+    <antcall target="ear">
+      <param name="node" value="4"/>
+    </antcall>
+  </target>
+
+  <!-- publish -->
+  <target name="publish-jar" description="Publish the distribution" depends="unpublish-jar">
+    <mkdir dir="${dist}"/>
+    <!-- echo message="${packages}/${jarfile-name}.jar:"/ -->
+    <move todir="${dist}/jar" file="${packages}/${jarfile-name}.jar"/>
+  </target>
+
+  <target name="publish-war" description="Publish the distribution" depends="unpublish-war">
+  <move todir="${dist}" file="${packages}/${war-file-name}.war" verbose="true"/>
+  </target>
+
+  <!-- publish -->
+  <target name="publish-aar" description="Publish the distribution" depends="unpublish-aar">
+    <mkdir dir="${dist}"/>
+    <!-- echo message="${packages}/${app-name}-Qx.aar"/ -->
+    <move todir="${dist}" file="${packages}/${app-name}-Qx.aar"/>
+  </target>
+
+  <target name="publish-client" description="Publish the distribution" depends="unpublish-ear">
+    <mkdir dir="${dist}/jar"/>
+    <!-- echo message="${packages}/${app-name}-client.jar:"/ -->
+    <move todir="${dist}/jar" file="${packages}/${app-name}-Client.jar"/>
+  </target>
+
+  <target name="publish-server" description="Publish the distribution" depends="unpublish-ear">
+    <mkdir dir="${dist}/jar"/>
+    <!-- echo message="${packages}/${app-name}-Server-node-*.ear:"/ -->
+    <move todir="${dist}/jar">
+      <fileset dir="${packages}">
+        <include name="${app-name}-Server-node-*.jar" />
+      </fileset>
+    </move>
+  </target>
+
+  <target name="publish-ear" description="Publish the distribution" depends="unpublish-ear">
+    <mkdir dir="${dist}"/>
+    <!-- echo message="${packages}/${app-name}-node-*.ear:"/ -->
+    <move todir="${dist}">
+      <fileset dir="${packages}">
+        <include name="${app-name}-node-*.ear" />
+      </fileset>
+    </move>
+  </target>
+
+  <!-- unpublish -->
+  <target name="unpublish-jar" description="Publish the distribution">
+    <delete file="${dist}/jar/${jarfile-name}.jar"/>
+  </target>
+
+  <target name="unpublish-war" description="Publish the distribution">
+    <delete file="${dist}/${app-name}-Web.war"/>
+  </target>
+
+  <target name="unpublish-aar" description="Publish the distribution">
+    <delete file="${dist}/${app-name}-Qx.aar"/>
+  </target>
+
+  <target name="unpublish-client" description="Publish the distribution">
+    <delete file="${dist}/jar/${app-name}-Client.jar"/>
+  </target>
+
+  <target name="unpublish-server" description="Publish the distribution">
+    <delete file="${dist}/jar/${app-name}-Server-node-*.jar"/>
+  </target>
+
+  <target name="unpublish-ear" description="Publish the distribution">
+    <delete file="${dist}/${app-name}-node-*.jar"/>
+  </target>
+
+
+  <!-- svn management -->
+  <!-- +++ add developer utilities -->
+  <!--
+    Developer Checkin: update from svn, clean, build, checkin, trigger build on build-dojo
+    Release management: branch code for release
+    Maintenance: get prior released branch, Developer Checkins to branch
+    Maintenance: merge branch changes to head
+  -->
+
+  <!-- +++ add deployment utilities -->
+  <!--
+    Deployment: build distribution for a released branch
+    Deployment: create project to hold customized configs and jsp files for customer
+    Implementation: on site checkout of custom project at customer
+    Implementation: checkin custom project from customer's site
+    Implementation: label released branch + finalized customizations
+  -->
+
+  <target name="update">
+    <svn-update work-dir="${base}" username="cruise" password="cruise"/>
+  </target>
+
+  <target name="tag">
+    <fail unless="label" message="Need to have 'label' defined"/>
+    <svn-copy src="${basedir}" dest="${svnBaseURL}/tags/${label}" message="Tagging build ${label}" username="cruise" password="cruise"/>
+  </target>
+
+  <target name="branch">
+    <fail unless="label" message="Need to have 'label' defined"/>
+    <svn-copy src="${basedir}" dest="${svnBaseURL}/branches/${label}" message="Tagging build ${label}" username="cruise" password="cruise"/>
+  </target>
+
+  <!-- dispay properties -->
+  <target name="display-settings" description="Displays property settings">
+    <!--
+    <echo message="eclipse build=         ${eclipse-build}"/>
+    <echo message="cruise control build=  ${cc-build}"/>
+    <echo message="app-name=           ${app-name}"/>
+    <echo message="deps=           ${deps}"/>
+    <echo message="published=      ${published}"/>
+    <echo message="base=           ${base}"/>
+    <echo message="code=           ${code}"/>
+    <echo message="classes=        ${classes}"/>
+    <echo message="javadocs=       ${javadocs}"/>
+    <echo message="packages=       ${packages}"/>
+    <echo message="dist=           ${dist}"/>
+    <echo message="classpath=      ${classpath}"/>
+    -->
+  </target>
+
+  <target name="zws-publish-updates-px-jar" depends="init, clean, compile, unit-test, javadoc, jar-px, publish-jar"/>
+
+  <target name="jar-px" description="jar px">
+    <mkdir dir="${packages}"/>
+    <jar jarfile="${packages}/${jarfile-name}.jar" basedir="${classes}">
+      <metainf dir="${meta-inf}"/>
+      <zipfileset dir="${agile-config}" includes="**/*.properties"/>
+    </jar>
+  </target>
+
+</project>

@@ -1,0 +1,44 @@
+<DesignState-config>
+  <properties>
+    <property name="os-platform" value="windows" /> <!-- windows, windows-nt, solaris, etc. -->
+    <property name="debug-mode" value="false"/>
+
+    <property name="pen-namespace" value="publishing.engine" />
+    <property name="pen-name" value="transfer" />
+
+    <property name="domain-name" value="harris"/>
+    <property name="server-name" value="node-0"/>
+    <property name="hostname" value="HOST_NAME" />
+
+    <property name="organization" value="Harris" />
+    <property name="project" value="release-1.1" />
+
+    <property name="email-from-address" value="PEN@harris.com" />
+    <property name="email-smtp-server" value="smtp.corp.harris.com" />
+    <property name="email-recipients" value="kcornish@harris.com|admin@harris.com" />
+
+    <property name="central-server" value="DesignState-node-0" />
+
+    <property name="max-ilink-tk-licenses" value="1" />
+	<property name="service-finder-hostname" value="HOST_NAME"/>
+	<property name="file-depot-hostname" value="HOST_NAME"/>
+
+    <dir name="zws-home" path="\zws" />
+    <dir name="zws-temp" path="[zws-home]\temp"/> 
+    <dir name="zws-env" path="[zws-home]\env" />  
+    <dir name="zws-bin" path="[zws-home]\bin" />  
+    <dir name="zws-app" path="[zws-home]\app" />  
+
+    <dir name="zws-data" path="[zws-home]\data"/>
+    <dir name="zws-local" path="[zws-data]\local"/>
+
+    <dir name="zws-log" path="[zws-home]\log"/>
+    <dir name="zws-work" path="[zws-log]\work"/>
+
+    <dir name="DesignState-home" path="\zws\DesignState" />
+    <dir name="zws-config" path="[DesignState-home]\config" />
+
+
+ </properties>
+</DesignState-config>
+

@@ -1,0 +1,210 @@
+<DesignState-config>
+	<pen-policies>
+
+		<pen-policy name="ilink3-to-sdk" src-repository="ilink" target-repository="agile-sdk">
+			<retrieve-data>
+				<get-metadata/>
+				<get-binary/>
+			</retrieve-data>
+
+			<!-- transform data -->
+			<transform-data>
+				<copy-sub-components/>
+				<copy-all-attributes/>
+				<getBasename attributeName="name"/>
+				<updateAttribute attributeName="name" suffix="_P" prefix="MEP_"/>
+
+				<rename-attribute source-attribute="name"
+					target-attribute="number"/>
+				<set-attribute target-attribute="description">
+					<string-constant string-value="published from ilink3"/>
+				</set-attribute>
+
+				<set-attribute target-attribute="agile-class">
+					<string-constant string-value="Mechanical Part"/>
+				</set-attribute>
+			</transform-data>
+
+			<!-- publish data -->
+			<publish-target-data>
+				<publish-metadata/>
+			</publish-target-data>
+			<update-source/>
+		</pen-policy>
+
+		<pen-policy name="tc10-to-wsx" src-repository="tc10" target-repository="agile-wsx">
+			<retrieve-data>
+				<get-metadata/>
+				<get-binary/>
+			</retrieve-data>
+
+			<!-- transform data -->
+			<transform-data>
+				<copy-sub-components/>
+				<copy-all-attributes/>
+				<getBasename attributeName="name"/>
+				<updateAttribute attributeName="name" suffix="_P" prefix="MEP_"/>
+
+				<rename-attribute source-attribute="name"
+					target-attribute="number"/>
+				<set-attribute target-attribute="description">
+					<string-constant string-value="published from ilink3"/>
+				</set-attribute>
+
+				<set-attribute target-attribute="agile-class">
+					<string-constant string-value="Mechanical Part"/>
+				</set-attribute>
+			</transform-data>
+
+			<!-- publish data -->
+			<publish-target-data>
+				<update-eco/>
+			<!--
+				<publish-metadata/>
+				<harris-policy-1/>
+				<harris-policy-2/>
+				<harris-policy-3/>
+				<cisco-policy-1/>
+				<cisco-policy-1/>
+				<cisco-policy-1/>
+				-->
+			</publish-target-data>
+			<update-source/>
+		</pen-policy>
+
+		<pen-policy name="ilink8-to-wsx" src-repository="ilink-8" target-repository="agile-wsx">
+			<!-- retrieve data -->
+			<retrieve-data>
+				<get-metadata/>
+				<get-binary/>
+			</retrieve-data>
+
+			<!-- transform data -->
+			<transform-data>
+				<copy-sub-components/>
+				<copy-all-attributes/>
+				<!--
+				<set-attribute target-attribute="number">
+				<get-source-value attribute-name="name"/>
+				</set-attribute>
+				-->
+				<copy-attribute attribute-name="name"/>
+				<rename-attribute source-attribute="name"
+					target-attribute="number"/>
+				<set-attribute target-attribute="description">
+					<string-constant
+						string-value="Changed thru XML configuration"/>
+				</set-attribute>
+			</transform-data>
+
+			<!-- publish data -->
+			<publish-target-data>
+				<publish-metadata/>
+			</publish-target-data>
+
+			<update-source/>
+
+		</pen-policy>
+
+		<pen-policy name="ilink3-to-wsx" src-repository="ilink" target-repository="agile-wsx">
+			<retrieve-data>
+				<get-metadata/>
+				<get-binary/>
+			</retrieve-data>
+
+			<!-- transform data -->
+			<transform-data>
+				<copy-sub-components/>
+				<copy-all-attributes/>
+				<getBasename attributeName="name"/>
+				<updateAttribute attributeName="name" suffix="_P" prefix="MEP_"/>
+
+				<rename-attribute source-attribute="name"
+					target-attribute="number"/>
+				<set-attribute target-attribute="description">
+					<string-constant string-value="published from ilink3"/>
+				</set-attribute>
+
+				<set-attribute target-attribute="agile-class">
+					<string-constant string-value="Mechanical Part"/>
+				</set-attribute>
+			</transform-data>
+
+			<!-- publish data -->
+			<publish-target-data>
+				<publish-metadata/>
+			</publish-target-data>
+			<update-source/>
+		</pen-policy>
+
+		<pen-policy name="tc10-to-sdk" src-repository="tc10" target-repository="agile-sdk">
+			<!-- retrieve data -->
+			<retrieve-data>
+				<get-metadata/>
+				<get-binary/>
+			</retrieve-data>
+
+			<!-- transform data -->
+			<transform-data>
+				<copy-sub-components/>
+				<copy-all-attributes/>
+				<!--
+				<set-attribute target-attribute="number">
+				<get-source-value attribute-name="name"/>
+				</set-attribute>
+				-->
+				<copy-attribute attribute-name="name"/>
+				<rename-attribute source-attribute="name"
+					target-attribute="number"/>
+				<set-attribute target-attribute="description">
+					<string-constant
+						string-value="Changed thru XML configuration"/>
+				</set-attribute>
+			</transform-data>
+
+			<!-- publish data -->
+			<publish-target-data>
+				<publish-metadata/>
+			</publish-target-data>
+
+			<update-source/>
+
+		</pen-policy>
+
+		<pen-policy name="ilink8-to-sdk" src-repository="ilink-8" target-repository="agile-sdk">
+			<!-- retrieve data -->
+			<retrieve-data>
+				<get-metadata/>
+				<get-binary/>
+			</retrieve-data>
+
+			<!-- transform data -->
+			<transform-data>
+				<copy-sub-components/>
+				<copy-all-attributes/>
+				<!--
+				<set-attribute target-attribute="number">
+				<get-source-value attribute-name="name"/>
+				</set-attribute>
+				-->
+				<copy-attribute attribute-name="name"/>
+				<rename-attribute source-attribute="name"
+					target-attribute="number"/>
+				<set-attribute target-attribute="description">
+					<string-constant
+						string-value="Changed thru XML configuration"/>
+				</set-attribute>
+			</transform-data>
+
+			<!-- publish data -->
+			<publish-target-data>
+				<publish-metadata/>
+			</publish-target-data>
+
+			<update-source/>
+
+		</pen-policy>
+
+	</pen-policies>
+
+</DesignState-config>

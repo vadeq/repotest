@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/zws/!svn/ver/6045/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/message
+END
+RecordElementWarningMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/zws/!svn/ver/3406/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/message/RecordElementWarningMessage.java
+END
+RecordElementDebugMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/zws/!svn/ver/3406/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/message/RecordElementDebugMessage.java
+END
+ResolveMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/zws/!svn/ver/6045/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/message/ResolveMessage.java
+END
+RecordElementErrorMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/zws/!svn/ver/3406/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/message/RecordElementErrorMessage.java
+END
+RecordDBMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/zws/!svn/ver/5731/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/message/RecordDBMessage.java
+END
+RecordElementMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/zws/!svn/ver/3406/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/message/RecordElementMessage.java
+END

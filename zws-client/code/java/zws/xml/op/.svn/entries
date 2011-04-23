@@ -1,0 +1,70 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/client/code/java/zws/xml/op
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+XMLOp.java
+file
+
+
+
+
+2008-07-11T20:48:18.078500Z
+712b21bb8c0db3d01d045c84924cc8ae
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+create
+dir
+
+call
+dir
+
+NoOp.java
+file
+
+
+
+
+2008-07-11T20:48:18.156625Z
+491cb6c04a6790c48c7e8f562194a5f1
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+XMLOpException.java
+file
+
+
+
+
+2008-07-11T20:48:18.297250Z
+87bc56ab8d3ef4ee3ebe5c7fe1fd6ca7
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+

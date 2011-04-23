@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 16
+.project
+dist
+
+K 15
+tsvn:logminsize
+V 2
+10
+END

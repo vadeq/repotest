@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<instructions>
+ <DesignState-config ignore="true"/>
+  <event-handlers ignore="true"/>
+  <handler instance-of="zws.util.Pair" static-method="register" class="zws.qx.event.processor.EventProcessor">
+  <event-type property="object0" required="true"/>
+  <handler-fqcn property="object1" required="true"/>
+  </handler> 
+</instructions>

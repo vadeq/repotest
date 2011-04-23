@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/zws/!svn/ver/6040/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/comparison
+END
+CompareStringLength.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/zws/!svn/ver/3435/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/comparison/CompareStringLength.java
+END
+isGreaterThan.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/zws/!svn/ver/3885/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/comparison/isGreaterThan.java
+END
+StringLengthEquals.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/zws/!svn/ver/3435/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/comparison/StringLengthEquals.java
+END
+StringStartsWith.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/zws/!svn/ver/3480/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/comparison/StringStartsWith.java
+END
+isEqual.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/zws/!svn/ver/3858/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/comparison/isEqual.java
+END
+StringStartsWithAlphabet.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/zws/!svn/ver/4556/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/comparison/StringStartsWithAlphabet.java
+END
+StringDoesNotContainInvalidChars.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/zws/!svn/ver/4905/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/comparison/StringDoesNotContainInvalidChars.java
+END
+StringContainsOnlyValidChars.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/zws/!svn/ver/3435/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/comparison/StringContainsOnlyValidChars.java
+END
+CompareStringsOpBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/zws/!svn/ver/3861/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/comparison/CompareStringsOpBase.java
+END
+isEmpty.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/zws/!svn/ver/3795/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/comparison/isEmpty.java
+END
+StringEndsWith.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/zws/!svn/ver/3482/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/comparison/StringEndsWith.java
+END
+StringStartsWithNumber.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/zws/!svn/ver/4556/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/comparison/StringStartsWithNumber.java
+END
+isLessThan.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/zws/!svn/ver/3858/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/comparison/isLessThan.java
+END

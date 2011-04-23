@@ -1,0 +1,106 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/layout
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+tests
+dir
+
+FloatingPane.js
+file
+
+
+
+
+2008-07-11T22:09:13.984750Z
+ac86a6327a87c35dd6bbdb4a79cc5879
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+RadioGroup.js
+file
+
+
+
+
+2008-07-11T22:09:14.062875Z
+ef262aad48ea3e58bd65d6bfe4a0df96
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+ResizeHandle.js
+file
+
+
+
+
+2008-07-11T22:09:14.141000Z
+439c89c8c761c06a764e33b2ddcc2463
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+ContentPane.js
+file
+
+
+
+
+2008-07-11T22:09:14.219125Z
+0d4dc84cf8fa2edb51bc3508cd46ab98
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+resources
+dir
+
+BorderContainer.js
+file
+
+
+
+
+2008-07-11T22:09:14.312875Z
+e29c054956972871044d188370eb069d
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+README
+file
+
+
+
+
+2008-07-11T22:09:14.406625Z
+4e485a28f90f9015dd2b6d27e325796e
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/zws/!svn/ver/5981/trunk/zws/designstate/webapp/code/jsp/root/account/profile
+END
+edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5981/trunk/zws/designstate/webapp/code/jsp/root/account/profile/edit.jsp
+END
+changePassword.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/zws/!svn/ver/5981/trunk/zws/designstate/webapp/code/jsp/root/account/profile/changePassword.jsp
+END
+view.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5981/trunk/zws/designstate/webapp/code/jsp/root/account/profile/view.jsp
+END
+index.htm
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/jsp/root/account/profile/index.htm
+END

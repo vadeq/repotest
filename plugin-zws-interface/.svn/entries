@@ -1,0 +1,46 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/plugin-interface
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-06-17T14:44:27.706258Z
+6346
+ptoleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+build
+dir
+
+code
+dir
+
+build.xml
+file
+
+
+
+
+2008-07-11T17:25:15.453500Z
+d42a434c1a05305c1a15cf08cd688157
+2007-07-25T05:20:43.528922Z
+2600
+arbind.thakur
+

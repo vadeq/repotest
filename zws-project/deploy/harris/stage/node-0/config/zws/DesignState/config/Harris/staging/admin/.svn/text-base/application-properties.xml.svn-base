@@ -1,0 +1,38 @@
+<DesignState-config>
+ <!-- organization's customized application properties -->
+ <properties>
+
+  <property name="publishing-environment" value="Open" /> <!-- Open or Vault -->
+  <property name="find-numbers-base-directory" value="\\sc297286\FN_FILES\"/>
+
+	<!-- comma separated list of folders -->
+  <property name="untouchable-folders" value="
+    Root Folder/Training,
+    Root Folder/test,
+    Root Folder/RTP Forms,
+    Root Folder/AAA TEST SERVER 0371,
+    Root Folder/APE,
+    Root Folder/Airborne,
+    Root Folder/Analysis,
+    Root Folder/Ground,
+    Root Folder/Manufacturing,
+    Root Folder/Mechatronics,
+    Root Folder/Operations,
+    Root Folder/Optics,
+    Root Folder/Test Sets,
+    Root Folder/WPG,
+    Root Folder/zws/Demo 012208,
+    Root Folder/zws/Proc Dev,
+    Root Folder/zws/assy1
+" />
+
+	<!-- comma separated list of folders -->
+  <property name="non-publishing-folders" value="" />
+
+  <!-- email alert -->
+  <property name="email-from-address" value="PEN@harris.com" />
+  <property name="email-smtp-server" value="smtp.corp.harris.com" />
+  <property name="email-recipients" value="kcornish@harris.com | dstewart@zerowait-state.com |eankutse@zerowait-state.com" />
+
+ </properties>
+</DesignState-config>

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/code/java/zws/service/email
+END
+EmailServiceHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/email/EmailServiceHome.java
+END
+EmailServiceLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/email/EmailServiceLocal.java
+END
+EJBLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/email/EJBLocator.java
+END
+EmailServiceRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/email/EmailServiceRemote.java
+END
+EmailService.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/email/EmailService.java
+END
+EmailServiceLocalHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/email/EmailServiceLocalHome.java
+END

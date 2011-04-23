@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/search/criteria/modifier
+END
+CriteriaModifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/search/criteria/modifier/CriteriaModifier.java
+END
+EnsureEither.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/search/criteria/modifier/EnsureEither.java
+END
+CriteriaModifierBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/search/criteria/modifier/CriteriaModifierBase.java
+END
+EnsureComparison.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/search/criteria/modifier/EnsureComparison.java
+END
+Postfix.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/search/criteria/modifier/Postfix.java
+END
+RemapFieldNames.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/search/criteria/modifier/RemapFieldNames.java
+END
+Prefix.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/search/criteria/modifier/Prefix.java
+END

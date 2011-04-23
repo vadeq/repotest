@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/services
+END
+plm-api-ws.jar
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/services/plm-api-ws.jar
+END
+plm-api-cif.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/services/plm-api-cif.jar
+END
+plm-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/services/plm-api.jar
+END
+plm-api-server.jar
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/services/plm-api-server.jar
+END

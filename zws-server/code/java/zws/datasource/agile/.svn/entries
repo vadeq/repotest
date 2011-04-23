@@ -1,0 +1,79 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/server/code/java/zws/datasource/agile
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+AgileSource.java
+file
+
+
+
+
+2008-07-11T20:50:33.969125Z
+e8be2b238112d3831e4227462fd74585
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+
+AgileSource01.java
+file
+
+
+
+
+2008-07-11T20:50:34.031625Z
+1f57b0af106679240b7ecf2c7e01dcf1
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+
+KLAAgileSource.java
+file
+
+
+
+
+2008-07-11T20:50:34.078500Z
+2428ba942781b9090d760d73569d6658
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+
+HarrisAgileSource.java
+file
+
+
+
+
+2008-07-11T20:50:34.141000Z
+c79e9779d1de4ac0eea42b782af16baf
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+
+op
+dir
+

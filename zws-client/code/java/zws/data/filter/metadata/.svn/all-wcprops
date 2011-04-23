@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/code/java/zws/data/filter/metadata
+END
+Not.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/data/filter/metadata/Not.java
+END
+MetadataUnitFilterBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/data/filter/metadata/MetadataUnitFilterBase.java
+END
+MetadataValueEndsWith.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/data/filter/metadata/MetadataValueEndsWith.java
+END
+MetadataValueFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/data/filter/metadata/MetadataValueFilter.java
+END
+MetadataUnitFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/data/filter/metadata/MetadataUnitFilter.java
+END
+CriteriaFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/data/filter/metadata/CriteriaFilter.java
+END
+MetadataValueBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/data/filter/metadata/MetadataValueBase.java
+END
+MetadataValueStartsWith.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/data/filter/metadata/MetadataValueStartsWith.java
+END
+MetadataValueContains.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/data/filter/metadata/MetadataValueContains.java
+END

@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/client/code/java/zws/data/eco
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+AffectedItem.java
+file
+
+
+
+
+2008-07-11T20:47:42.125375Z
+196fb75913f304e09c54cad51ad07020
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+ECO.java
+file
+
+
+
+
+2008-07-11T20:47:42.203500Z
+6e8c3d8bf5310fd361ef5fddb102be62
+2008-02-01T17:33:05.097516Z
+5376
+pavan.toleti
+

@@ -1,0 +1,40 @@
+8
+
+dir
+6400
+http://build.zerowait-state.com/svn/zws/trunk/zws/build
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-05-20T19:18:56.795383Z
+6263
+rmccabe
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+release
+dir
+
+script
+dir
+
+pub
+dir
+
+dep
+dir
+

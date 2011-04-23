@@ -1,0 +1,67 @@
+8
+
+dir
+6400
+http://build.zerowait-state.com/svn/zws/trunk/zws/build/dep
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-05-08T20:33:01.044895Z
+6224
+rmccabe
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+agile
+dir
+
+axis2-1.1.1
+dir
+
+shared.txt
+file
+
+
+
+
+2008-07-11T17:22:15.047250Z
+ae1b1ec55385d5da28950316ee438349
+2007-05-30T04:42:43.697351Z
+314
+arbind.thakur
+
+Axis2-1.3
+dir
+
+ptc
+dir
+
+server
+dir
+
+common
+dir
+
+client
+dir
+
+ugs
+dir
+
+webapp
+dir
+

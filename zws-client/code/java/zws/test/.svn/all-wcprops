@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/test
+END
+Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/test/Test.java
+END
+DemoClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/test/DemoClient.java
+END
+EventHandlingClientTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/test/EventHandlingClientTest.java
+END
+tester.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/test/tester.java
+END
+ReportClientTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/test/ReportClientTest.java
+END
+PrintTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/test/PrintTest.java
+END

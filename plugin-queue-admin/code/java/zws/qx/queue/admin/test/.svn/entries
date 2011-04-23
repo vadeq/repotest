@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/queue/plugin-queue-admin/code/java/zws/qx/queue/admin/test
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-04-01T19:30:16.747995Z
+5939
+pavan.toleti
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+TestQueueHandler.java
+file
+
+
+
+
+2008-07-11T17:25:31.437875Z
+0d83dab7ef0eb057c326464e984202e9
+2008-04-01T19:30:16.747995Z
+5939
+pavan.toleti
+
+TestQueuePlugin.java
+file
+
+
+
+
+2008-07-11T17:25:31.484750Z
+2c704de8ed7ecff249f2e3f0d8082f74
+2008-04-01T19:30:16.747995Z
+5939
+pavan.toleti
+

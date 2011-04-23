@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/zws/!svn/ver/5296/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/logical
+END
+NAND.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/zws/!svn/ver/3364/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/logical/NAND.java
+END
+NOT.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/zws/!svn/ver/3363/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/logical/NOT.java
+END
+OR.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/zws/!svn/ver/3363/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/logical/OR.java
+END
+AND.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/zws/!svn/ver/3364/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/logical/AND.java
+END
+LogicalOPBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/zws/!svn/ver/3362/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/logical/LogicalOPBase.java
+END
+XNOR.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/zws/!svn/ver/3363/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/logical/XNOR.java
+END
+XOR.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/zws/!svn/ver/3363/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/logical/XOR.java
+END
+NOR.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/zws/!svn/ver/3365/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/logical/NOR.java
+END

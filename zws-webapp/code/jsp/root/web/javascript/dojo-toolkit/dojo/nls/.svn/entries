@@ -1,0 +1,79 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/nls
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+zh
+dir
+
+pt
+dir
+
+cs
+dir
+
+ru
+dir
+
+es
+dir
+
+fr
+dir
+
+de
+dir
+
+ko
+dir
+
+zh-tw
+dir
+
+ja
+dir
+
+pl
+dir
+
+hu
+dir
+
+it
+dir
+
+colors.js
+file
+
+
+
+
+2008-07-11T22:10:38.312875Z
+23326636477e08a5c90d1257d4e2e41e
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+

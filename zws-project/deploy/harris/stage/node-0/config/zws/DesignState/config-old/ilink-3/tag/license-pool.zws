@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<instructions>
+<DesignState-config ignore="true"/>
+<license-pools ignore="true"/>
+ <ilink3-license-pool instance-of="zws.util.KeyValue" static-method="add" class="zws.repository.ilink3.license.IlinkTKLicensePoolSvc">
+  <env-root property="key"/>
+  <max-number-of-licenses property="value"/>
+ </ilink3-license-pool>
+</instructions>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/service/securespace
+END
+DBTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/service/securespace/DBTest.java
+END
+SecureSpaceAdministrationEJB.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/service/securespace/SecureSpaceAdministrationEJB.java
+END
+SecureSpaceRegistrationEJB.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/service/securespace/SecureSpaceRegistrationEJB.java
+END
+SecureSpaceSvc.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/5048/trunk/zws/designstate/server/code/java/zws/service/securespace/SecureSpaceSvc.java
+END

@@ -1,0 +1,151 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/java/com/zws/functor
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:00:53.791577Z
+5675
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+processor
+dir
+
+java
+dir
+
+TimerTaskFunctor.java
+file
+
+
+
+
+2008-07-11T22:04:36.406625Z
+d0fae6ddcbffb994a2ccb1a10f68f29e
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+filter
+dir
+
+RunnableFunctor.java
+file
+
+
+
+
+2008-07-11T22:04:36.469125Z
+cdc0e456bbd637259d869cf8fb4376de
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+intralink
+dir
+
+ListFunctor.java
+file
+
+
+
+
+2008-07-11T22:04:36.625375Z
+754782e2d6d07e35baa9380d4ce8891d
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+MetadataExtractor.java
+file
+
+
+
+
+2008-07-11T22:04:36.547250Z
+1112a1f5b765899e4351d344641592ec
+2008-02-29T17:00:53.791577Z
+5675
+pavan.toleti
+
+Functor.java
+file
+
+
+
+
+2008-07-11T22:04:36.781625Z
+b9812ba8a120714cc10f502bd0270251
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+PDFGenerator.java
+file
+
+
+
+
+2008-07-11T22:04:36.703500Z
+801d7e2cb5666bd6b7d7a0daec45f869
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+bean
+dir
+
+search
+dir
+
+finder
+dir
+
+security
+dir
+
+catalog
+dir
+
+custom
+dir
+
+Getter.java
+file
+
+
+
+
+2008-07-11T22:04:36.844125Z
+0e4d277860f2bc0060a94bcf805c7fbb
+2007-12-02T05:45:26.953916Z
+4445
+arbind.thakur
+
+report
+dir
+
+util
+dir
+
+pdfstamp
+dir
+

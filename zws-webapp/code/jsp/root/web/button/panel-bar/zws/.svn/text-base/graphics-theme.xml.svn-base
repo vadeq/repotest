@@ -1,0 +1,21 @@
+<graphics-theme name="zws">
+ <property name="panel-height" value="" descripion=""/>
+ <property name="panel-width" value=""  descripion=""/>
+ <property name="panel-border" value="" descripion=""/>
+ <property name="group-spacing" value="" descripion=""/>
+ <property name="title-height" value="" descripion=""/>
+ <property name="title-width" value="" descripion=""/>
+ <property name="title-border" value="" descripion=""/>
+ <property name="item-height" value="" descripion=""/>
+ <property name="item-width" value="" descripion=""/>
+
+ <image name="panel-background" src="" descripion=""/>
+ <image name="title-background" src="" descripion=""/>
+ <image name="content-background" src="" descripion=""/>
+ <image name="scroll-up-active" src="" descripion=""/>
+ <image name="scroll-up-inactive" src="" descripion=""/>
+ <image name="scroll-up-enabled" src="" descripion=""/>
+ <image name="scroll-down-active" src="" descripion=""/>
+ <image name="scroll-down-inactive" src="" descripion=""/>
+ <image name="scroll-down-enabled" src="" descripion=""/>
+</graphics-theme>

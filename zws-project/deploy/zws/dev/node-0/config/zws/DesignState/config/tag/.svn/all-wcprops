@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/zws/!svn/ver/6284/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/config/tag
+END
+pen-policy.zws
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/2721/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/config/tag/pen-policy.zws
+END
+repository.zws
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/6284/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/config/tag/repository.zws
+END
+database.zws
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/915/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/config/tag/database.zws
+END
+property.zws
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/915/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/config/tag/property.zws
+END
+config.zws
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/zws/!svn/ver/915/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/config/tag/config.zws
+END
+policy-match.zws
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/zws/!svn/ver/2726/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/config/tag/policy-match.zws
+END
+qx-queue.zws
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/915/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/config/tag/qx-queue.zws
+END
+pen-policy.zws-old
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/zws/!svn/ver/2784/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/config/tag/pen-policy.zws-old
+END
+topology.zws
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/915/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/config/tag/topology.zws
+END

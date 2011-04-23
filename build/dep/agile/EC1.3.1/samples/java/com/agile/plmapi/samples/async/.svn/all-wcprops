@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/samples/java/com/agile/plmapi/samples/async
+END
+AsyncCallbackModeSample.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/samples/java/com/agile/plmapi/samples/async/AsyncCallbackModeSample.java
+END
+AsyncListenerServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/samples/java/com/agile/plmapi/samples/async/AsyncListenerServlet.java
+END
+AsyncPollingModeSample.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/samples/java/com/agile/plmapi/samples/async/AsyncPollingModeSample.java
+END
+AsyncListenerModeSample.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/samples/java/com/agile/plmapi/samples/async/AsyncListenerModeSample.java
+END
+AsyncListenerServletSample.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/samples/java/com/agile/plmapi/samples/async/AsyncListenerServletSample.java
+END
+BaseAsyncSample.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/samples/java/com/agile/plmapi/samples/async/BaseAsyncSample.java
+END

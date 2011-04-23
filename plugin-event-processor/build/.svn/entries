@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/event/plugin-event-processor/build
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:23:32.296473Z
+5325
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+title.build
+file
+
+
+
+
+2008-07-11T17:23:14.562875Z
+3b4456d0561d3c02c5862a80ad098de2
+2007-10-26T01:30:37.266117Z
+3714
+arbind.thakur
+
+classpath.build
+file
+
+
+
+
+2008-07-11T17:23:14.609750Z
+1aa416795d1f4844c3718aa878bd18a8
+2007-11-20T16:42:40.984779Z
+4230
+pavan.toleti
+

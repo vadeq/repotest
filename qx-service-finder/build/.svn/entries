@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/qx-service/qx-service-finder/build
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:21:54.333293Z
+5317
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+title.build
+file
+
+
+
+
+2008-07-11T20:42:38.812875Z
+b4b8c81ea830afd3ae21b8166ad988f8
+2007-10-30T21:05:19.816788Z
+3817
+pavan.toleti
+
+classpath.build
+file
+
+
+
+
+2008-07-11T20:42:38.859750Z
+803194236bf8baca22eab87e946dce9c
+2007-10-31T19:33:02.724923Z
+3844
+pavan.toleti
+

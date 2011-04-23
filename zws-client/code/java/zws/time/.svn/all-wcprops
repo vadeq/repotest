@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/code/java/zws/time
+END
+DurationBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/886/trunk/zws/designstate/client/code/java/zws/time/DurationBase.java
+END
+TimeOfDay.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/time/TimeOfDay.java
+END
+Duration.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/time/Duration.java
+END
+TimeBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/zws/!svn/ver/4399/trunk/zws/designstate/client/code/java/zws/time/TimeBase.java
+END
+TimeOfDayBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/time/TimeOfDayBase.java
+END
+Time.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/time/Time.java
+END

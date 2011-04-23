@@ -1,0 +1,147 @@
+package zws.pen.policy.old.op;
+/*
+* DesignState - Design Compression Technology
+* @author: ptoleti
+* @version: 1.0
+* Created on Apr 27, 2007 9:58:02 AM
+* Copywrite (c) 2007 Zero Wait-State Inc. All rights reserved
+*/
+
+
+import zws.data.Metadata;
+import zws.data.MetadataBase;
+import zws.data.MetadataSubComponent;
+import zws.data.MetadataSubComponentBase;
+import zws.repository.Repository;
+import zws.repository.source.RepositoryMetadataSource;
+import zws.security.Authentication;
+import zws.service.pen.PENDataElement;
+import zws.service.pen.SourceDataElement;
+import zws.service.pen.TargetDataElement;
+import zws.service.pen.TxDataElement;
+import zws.util.LogWriter;
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Iterator;
+
+/**
+ * The Class UpdateStateAttributeOp.
+ *
+ * @author ptoleti
+ */
+public class GetSourceDataOp extends PENDataOpBase {
+
+  /**
+   * @throws Exception Exception
+   * @see zws.pen.policy.old.op.PENDataOpBase#execute()
+   */
+  public void execute() throws Exception {
+    LogWriter.printOnConsole("GetSourceDataOp execute....");
+    Metadata sourceData = null;
+    HashMap penRefMap = new HashMap();
+    Metadata txRoot = new MetadataBase();
+    try {
+      Repository repositoryObj = getPenPolicyObj().getSourceRepository();
+      RepositoryMetadataSource metadataSourceObj = repositoryObj.materializeMetadataSource();
+      //Authentication id = new Authentication(repositoryObj.getSystemUsername(), repositoryObj.getSystemPassword());
+      sourceData = metadataSourceObj.findLatest(getQxCtx(), getOrigin().getName(), this.getAuthentication());
+      if (null != sourceData) {
+        // get first level sub-components of each item
+        getChildren(sourceData, penRefMap);
+        getPenData().setReferenceMap(penRefMap);
+        // prepare transform data
+        prepareTransformData(sourceData, txRoot);
+        getPenData().setReferenceMap(penRefMap);
+        // set source data in PENData
+        LogWriter.printOnConsole("sourceData    " + sourceData);
+        getPenData().setSourceData(sourceData);
+        setPenData(getPenData());
+      } else {
+        LogWriter.printOnConsole("No data found.");
+      }
+    } catch (Exception e) {
+      e.printStackTrace();
+      throw e;
+    }
+ }
+
+  /**
+   * @param parent parent data
+   * @param penRefMap reference map
+   */
+  private static void getChildren(Metadata parent, HashMap penRefMap) {
+    LogWriter.printOnConsole(parent.getName());
+    PENDataElement penDataElement = new PENDataElement();
+
+    SourceDataElement srcDataElement = new SourceDataElement();
+
+    TxDataElement txDataElement = new TxDataElement();
+    TargetDataElement targetDataElement = new TargetDataElement();
+    // set  parent -> srcDataElement -> penDataElement
+    srcDataElement.setSourceData(parent);
+    txDataElement.setTransformedData(new MetadataBase());
+    targetDataElement.setTargetData(new MetadataBase());
+
+    penDataElement.setSourceDataElement(srcDataElement);
+    penDataElement.setTxDataElement(txDataElement);
+    penDataElement.setTargetDataElement(targetDataElement);
+
+    if (!penRefMap.containsKey(parent.getName())) {
+      penRefMap.put(parent.getName(), penDataElement);
+    } else {
+      LogWriter.printOnConsole(parent.getName() + " Already added to Map");
+      // check the origin and unique ID
+      // if they are different throw error
+    }
+
+    Collection childrenLst = parent.getSubComponents();
+    if (null != childrenLst) {
+      Iterator itr = childrenLst.iterator();
+      MetadataSubComponent temp = null;
+      while (itr.hasNext()) {
+        temp = (MetadataSubComponent) itr.next();
+        getChildren(temp, penRefMap);
+      }
+    }
+  }
+
+
+  /**
+   * @param srcParent source
+   * @param txParent root
+   */
+  private void prepareTransformData(Metadata srcParent, Metadata txParent) {
+    LogWriter.printOnConsole(srcParent.getName() + " transforming...");
+    PENDataElement penDataElement = null;
+    TxDataElement txDataElement = new TxDataElement();
+    String itemName = srcParent.getName();
+    txParent.set("name", itemName);
+    penDataElement = (PENDataElement) getPenData().getReferenceMap().get(itemName);
+    LogWriter.printOnConsole("penDataElement... " + penDataElement);
+
+    Collection childrenLst = srcParent.getSubComponents();
+    if (null != childrenLst) {
+      Iterator itr = childrenLst.iterator();
+      MetadataSubComponent srcChild = null;
+      MetadataSubComponentBase tempChild = null;
+      while (itr.hasNext()) {
+        srcChild = (MetadataSubComponent) itr.next();
+        tempChild = new MetadataSubComponentBase(new MetadataBase());
+        tempChild.set("name", srcChild.getName());
+        tempChild.set("pavan", "pavan");
+        tempChild.setQuantity(srcChild.getQuantity());
+        prepareTransformData(srcChild, tempChild);
+        txParent.addSubComponent(tempChild);
+      }
+    }
+    // set txParent -> txDataElement -> penDataElement
+    txDataElement.setTransformedData(txParent);
+    penDataElement.setTxDataElement(txDataElement);
+    getPenData().getReferenceMap().put(srcParent.getName(), penDataElement);
+
+    LogWriter.printOnConsole("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+    LogWriter.printOnConsole(txParent.toString());
+    LogWriter.printOnConsole("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+  }
+}

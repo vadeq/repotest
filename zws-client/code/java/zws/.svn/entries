@@ -1,0 +1,568 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/client/code/java/zws
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-07-17T20:25:37.483748Z
+6405
+rmccabe
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+processor
+dir
+
+UploadPackage.java
+file
+
+
+
+
+2008-07-11T20:48:33.641000Z
+65937ee49eca45510edab150ce4b5ddb
+2007-06-04T17:24:42.241866Z
+558
+pavan.toleti
+
+AgileAccess.java
+file
+
+
+
+
+2008-07-11T20:48:33.687875Z
+b029c2e8ccaa3a3830bda562e90b01c8
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+PrinterAccess.java
+file
+
+
+
+
+2008-07-11T20:48:33.750375Z
+170f9731f1f752f58fd0fa822954138a
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+DocumentConverter.java
+file
+
+
+
+
+2008-07-11T20:48:33.828500Z
+2530cf7633810eb261c936659e235938
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+Alert.java
+file
+
+
+
+
+2008-07-11T20:48:33.875375Z
+e7c1ec47856ec816a28bfc5048dc950f
+2008-04-22T17:07:33.104619Z
+6088
+arbind.thakur
+
+datasource
+dir
+
+userspace
+dir
+
+HTTPUptimeMonitor.java
+file
+
+
+
+
+2008-07-11T20:48:33.937875Z
+9eccf3557e5c080b882888097c0dec1c
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+DatasourceAccess.java
+file
+
+
+
+
+2008-07-11T20:48:34.000375Z
+dbb04c7e856f70258420c1d931476abb
+2007-06-04T17:14:41.833836Z
+551
+pavan.toleti
+
+time
+dir
+
+Emailer.java
+file
+
+
+
+
+2008-07-11T20:48:34.047250Z
+98484fdb287209d328af635ee99480ff
+2007-12-04T21:10:50.210802Z
+4534
+rmccabe
+
+synchronization
+dir
+
+criteria
+dir
+
+securespace
+dir
+
+application
+dir
+
+attribute
+dir
+
+publishing
+dir
+
+EventHandlingClient.java
+file
+
+
+
+
+2008-07-11T20:48:34.094125Z
+d54c66178137d9a74360a968f51cccbe
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+search
+dir
+
+recorder
+dir
+
+Version.java
+file
+
+
+
+
+2008-08-27T18:49:12.671750Z
+79665db7ae283e0ab054ced6dc9dd031
+2008-07-17T20:25:37.483748Z
+6405
+rmccabe
+
+finder
+dir
+
+handler
+dir
+
+Downloader.java
+file
+
+
+
+
+2008-07-11T20:48:34.172250Z
+9db65f80261c8227c9d42cf655049602
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+IntralinkPersonalWorkspaceAccess.java
+file
+
+
+
+
+2008-07-11T20:48:34.234750Z
+5b0d94c5d6d10bbe3292400aafa16086
+2007-06-04T16:56:15.036565Z
+545
+pavan.toleti
+
+pkg
+dir
+
+log
+dir
+
+Reporter.java
+file
+
+
+
+
+2008-07-11T20:48:34.281625Z
+695883dd2965e3fea387dae38b657ed8
+2007-06-04T17:24:42.241866Z
+558
+pavan.toleti
+
+bill
+dir
+
+RecorderSvcImpl.java
+file
+
+
+
+
+2008-07-11T20:48:34.391000Z
+336ce09d3788bc341faa0046f1360046
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+printer
+dir
+
+Server.java
+file
+
+
+
+
+2008-07-11T20:48:34.453500Z
+024327a21216ec86f83ee39c6b18d5cd
+2008-02-28T23:07:07.017399Z
+5619
+pavan.toleti
+
+origin
+dir
+
+ReplicationClient.java
+file
+
+
+
+
+2008-07-11T20:48:34.531625Z
+99e53653815ec587e474b5428ef07914
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+TopologyClient.java
+file
+
+
+
+
+2008-07-11T20:48:34.578500Z
+00ec91f725ff07222fc62b5e36e9bf2a
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+space
+dir
+
+IntralinkAccess.java
+file
+
+
+
+
+2008-07-11T20:48:34.625375Z
+eecd662b121152e798421716c6593833
+2007-06-04T17:14:41.833836Z
+551
+pavan.toleti
+
+service
+dir
+
+folderize.java
+file
+
+
+
+
+2008-07-11T20:48:34.687875Z
+ed0add4a8c8c351a1b65f798d4e78369
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+RecorderBO.java
+file
+
+
+
+
+2008-07-11T20:48:34.781625Z
+bab5b2c949f38a2be958be6fbf3a992e
+2007-06-04T17:14:41.833836Z
+551
+pavan.toleti
+
+StartReplication.java
+file
+
+
+
+
+2008-07-11T20:48:34.844125Z
+dbba59b683afc5ad9c0eafc65e7ecb7b
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+security
+dir
+
+IntralinkClient.java
+file
+
+
+
+
+2008-07-11T20:48:34.906625Z
+7f6174539665af48847e23252c99daa2
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+util
+dir
+
+action
+dir
+
+echo
+dir
+
+op
+dir
+
+Schema.java
+file
+
+
+
+
+2008-07-11T20:48:34.953500Z
+a108b82232be28254e88fd54cba62e48
+2008-05-01T18:38:21.291769Z
+6172
+eankutse
+
+property
+dir
+
+Recorder.java
+file
+
+
+
+
+2008-07-11T20:48:35.016000Z
+4f2c93a91842046c487b1f420e2a0aab
+2007-11-26T20:12:20.454068Z
+4313
+arbind.thakur
+
+dataspace
+dir
+
+email
+dir
+
+DesignStateClient.java
+file
+
+
+
+
+2008-07-11T20:48:35.078500Z
+e439d6b511cd19532e11f571ea4492de
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+mapping
+dir
+
+exception
+dir
+
+Test.java
+file
+
+
+
+
+2008-07-11T20:48:35.141000Z
+ecb33f2b62c82a04071656a55ed946aa
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+lifecycle
+dir
+
+database
+dir
+
+data
+dir
+
+folder
+dir
+
+report
+dir
+
+topology
+dir
+
+Synchronizer.java
+file
+
+
+
+
+2008-07-11T20:48:35.187875Z
+90144fe4df5c93f021927e3bee9e3cb7
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+ownership
+dir
+
+test
+dir
+
+IRecorderBO.java
+file
+
+
+
+
+2008-07-11T20:48:35.250375Z
+23bffd8a072e80e2fb8fb7b7197ee9d4
+2007-06-04T17:14:41.833836Z
+551
+pavan.toleti
+
+DocumentAccess.java
+file
+
+
+
+
+2008-07-11T20:48:35.297250Z
+d803422314579b0aa409465907b23252
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+agile
+dir
+
+event
+dir
+
+context
+dir
+
+queue
+dir
+
+Replicator.java
+file
+
+
+
+
+2008-07-11T20:48:35.359750Z
+df19a0bf69784cf26a85637e20466f13
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+WebServer.java
+file
+
+
+
+
+2008-07-11T20:48:35.406625Z
+757dd08dc4deb957b7457a5d38a9afe7
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+ProcessorClient.java
+file
+
+
+
+
+2008-07-11T20:48:35.469125Z
+a102874178c1044552dd1ddaa0cfe899
+2007-06-04T17:24:42.241866Z
+558
+pavan.toleti
+
+xml
+dir
+
+RepTest.java
+file
+
+
+
+
+2008-07-11T20:48:35.531625Z
+3d1a36e6a0188ae8c7f9431e7ba08584
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+replication
+dir
+
+logical
+dir
+
+user
+dir
+
+scheduler
+dir
+

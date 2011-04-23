@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<configuration>
+ <configurator base-path="\zws\DesignState\config\[organization]\[project]\service">
+
+  <load tag-map="..\..\..\tag\property.zws"  file="\service-properties.xml"/>
+
+  <!-- service locations -->
+  <load tag-map="..\..\..\tag\services.zws"  file="\services.xml"/>
+
+  <!-- DesignState Key Services -->
+  <load tag-map="..\..\..\tag\repository.zws"  file="\repository.xml"/>
+  <load tag-map="..\..\..\tag\qx-queue.zws"  file="\qx-queue.xml"/>
+
+  <!-- Service Modules  -->
+  <load tag-map="..\..\..\tag\config.zws"  file="\ilink-3\zws-config.xml"/>
+  <load tag-map="..\..\..\tag\config.zws"  file="\pen\zws-config.xml"/>
+
+  <!-- Customizations -->
+  <load tag-map="..\..\..\tag\event-handlers.zws"  file="\event-handlers.xml"/>
+
+
+ </configurator>
+</configuration>

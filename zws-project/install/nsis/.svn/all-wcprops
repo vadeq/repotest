@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/zws/!svn/ver/6286/trunk/zws/zws-project/install/nsis
+END
+setup.nsi
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/zws/!svn/ver/6122/trunk/zws/zws-project/install/nsis/setup.nsi
+END
+setup.ico
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/zws/!svn/ver/5440/trunk/zws/zws-project/install/nsis/setup.ico
+END
+ant_setup.nsi
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/zws/!svn/ver/6286/trunk/zws/zws-project/install/nsis/ant_setup.nsi
+END

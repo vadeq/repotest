@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/code/java/zws/service/recorder
+END
+RecorderServiceLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/recorder/RecorderServiceLocal.java
+END
+RecorderServiceRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/recorder/RecorderServiceRemote.java
+END
+EJBLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/recorder/EJBLocator.java
+END
+RecorderService.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zws/!svn/ver/1206/trunk/zws/designstate/client/code/java/zws/service/recorder/RecorderService.java
+END
+RecorderServiceLocalHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/recorder/RecorderServiceLocalHome.java
+END
+RecorderServiceRemoteHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/recorder/RecorderServiceRemoteHome.java
+END

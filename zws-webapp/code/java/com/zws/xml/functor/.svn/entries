@@ -1,0 +1,70 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/java/com/zws/xml/functor
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:00:53.791577Z
+5675
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+XMLFunctorException.java
+file
+
+
+
+
+2008-07-11T22:04:53.516000Z
+e8769aa099227fa97339d58019fb0ca5
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+XMLFunctor.java
+file
+
+
+
+
+2008-07-11T22:04:53.578500Z
+98dde68eb8237e3441bb62b710fba914
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+create
+dir
+
+call
+dir
+
+NoOp.java
+file
+
+
+
+
+2008-07-11T22:04:53.672250Z
+fc9c87cab9d1d1099b27f2f8e6505faa
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+

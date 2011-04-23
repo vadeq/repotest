@@ -1,0 +1,55 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/zws-project/deploy/harris/stage/node-0/config/zws/DesignState/config-old/message-constants
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-03-17T17:30:12.000371Z
+5832
+eankutse
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+zws-config.xml
+file
+
+
+
+
+2008-07-11T20:44:59.328500Z
+4bfe7330735c3055d0f8c6d17b014afb
+2008-03-13T18:15:10.851981Z
+5825
+eankutse
+
+tag
+dir
+
+message-constants.xml
+file
+
+
+
+
+2008-07-11T20:44:59.391000Z
+91d0bef22ab3d50c1ae8d256e671f395
+2008-03-17T17:30:12.000371Z
+5832
+eankutse
+

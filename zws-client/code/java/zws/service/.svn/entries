@@ -1,0 +1,184 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/client/code/java/zws/service
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+processor
+dir
+
+test
+dir
+
+PrototypeServiceLocal.java
+file
+
+
+
+
+2008-07-11T20:46:47.078500Z
+a7dc5205ad2d83fd9e3bbb0ff6dcb3a4
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+event
+dir
+
+PrototypeServiceRemote.java
+file
+
+
+
+
+2008-07-11T20:46:47.125375Z
+dfb47f908c4bad25d0f5e7097cb59f55
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+Locator.java
+file
+
+
+
+
+2008-07-11T20:46:47.187875Z
+d6b482af95d411c5ba2de93fa4768c77
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+printer
+dir
+
+packaging
+dir
+
+email
+dir
+
+PrototypeServiceLocalHome.java
+file
+
+
+
+
+2008-07-11T20:46:47.234750Z
+454f0fc4f4936d7d20807358215e3d16
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+datasource
+dir
+
+PrototypeServiceRemoteHome.java
+file
+
+
+
+
+2008-07-11T20:46:47.281625Z
+ba0c67978b9bf5ed055927b919750192
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+space
+dir
+
+EJBLocatorBase.java
+file
+
+
+
+
+2008-07-11T20:46:47.344125Z
+25ab7dfbfcd39a441251b03b14de86ac
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+synchronization
+dir
+
+PrototypeSvc.java
+file
+
+
+
+
+2008-07-11T20:46:47.422250Z
+41dc6518848428d8ffa3b4dc9317b42d
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+securespace
+dir
+
+EJBLocator.java
+file
+
+
+
+
+2008-07-11T20:46:47.484750Z
+9523d9c87814562c593280bf6903bf8d
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+search
+dir
+
+recorder
+dir
+
+PrototypeService.java
+file
+
+
+
+
+2008-07-11T20:46:47.531625Z
+2b485535a830228b1eca8d057e6f6859
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+replication
+dir
+
+report
+dir
+
+topology
+dir
+
+document
+dir
+

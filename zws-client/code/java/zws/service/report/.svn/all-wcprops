@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/code/java/zws/service/report
+END
+ReportServiceLocalHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/report/ReportServiceLocalHome.java
+END
+ReportServiceRemoteHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/report/ReportServiceRemoteHome.java
+END
+EJBLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/report/EJBLocator.java
+END
+ReportServiceLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/report/ReportServiceLocal.java
+END
+ReportServiceRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/report/ReportServiceRemote.java
+END
+ReportService.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/report/ReportService.java
+END

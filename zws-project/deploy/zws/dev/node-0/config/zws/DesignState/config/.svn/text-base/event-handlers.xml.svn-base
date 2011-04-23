@@ -1,0 +1,5 @@
+<DesignState-config>
+	<event-handlers>
+		<email-notifier to="me@here.com, your@there.com"/>
+	</event-handlers>
+</DesignState-config>

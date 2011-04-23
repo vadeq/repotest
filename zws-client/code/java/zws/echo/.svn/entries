@@ -1,0 +1,40 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/client/code/java/zws/echo
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+EchoClient.java
+file
+
+
+
+
+2008-07-11T20:47:17.500375Z
+c9f8834f232905d05e15f9733e0f9f75
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+

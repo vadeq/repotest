@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/metadata
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:19:54.379681Z
+5307
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+Setter.java
+file
+
+
+
+
+2008-07-11T22:04:08.734750Z
+255f427424ecd48fb576b32f7ec01a83
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+Getter.java
+file
+
+
+
+
+2008-07-11T22:04:08.844125Z
+0e69140c7ad1d4f204723a2f2af299a2
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+

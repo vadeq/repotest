@@ -1,0 +1,52 @@
+8
+
+dir
+6518
+http://build.zerowait-state.com/svn/zws/trunk/zws/qx-service/qx-service-property/build
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-09-03T17:38:51.137899Z
+6518
+ptoleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+title.build
+file
+6517
+
+
+
+2008-07-11T20:42:57.891000Z
+1cbf8daa0869a46f423b8f64d1a47fd7
+2008-06-20T17:48:50.036207Z
+6382
+ptoleti
+
+classpath.build
+file
+6517
+
+
+
+2008-07-11T20:42:57.953500Z
+ff1f0380e62ee3134a23843d100647ed
+2008-06-20T17:48:50.036207Z
+6382
+ptoleti
+

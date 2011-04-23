@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/server/code/java/zws/datasource/filesystem/xml
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:18:38.052600Z
+5306
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+AutoCADMetadataHandler.java
+file
+
+
+
+
+2008-07-11T20:50:35.016000Z
+06a8389403ac060b0b1ea143a6d5feae
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+FileSystemResultHandler.java
+file
+
+
+
+
+2008-07-11T20:50:35.109750Z
+2c934bb5db5bad57cd800d219089601b
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+

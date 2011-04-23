@@ -1,0 +1,67 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/product/pen/qx-service-pen/code/java
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-08-14T12:55:51.207855Z
+6502
+eankutse
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+test.java
+file
+
+
+
+
+2008-07-11T20:41:55.062875Z
+5ad6f19740e014057f72bb6886cf8760
+2008-02-29T17:07:58.472510Z
+5704
+pavan.toleti
+
+test1.java
+file
+
+
+
+
+2008-07-11T20:41:55.125375Z
+eca535c82f5604ece4bcb2f160d218d5
+2008-02-29T17:00:42.980850Z
+5667
+pavan.toleti
+
+test3.java
+file
+6509
+
+
+
+2008-08-26T20:28:58.937375Z
+c3a3e6aa0a3e21d38b72fa080464d9a4
+2008-08-27T20:36:19.150488Z
+6509
+ptoleti
+
+zws
+dir
+

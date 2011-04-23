@@ -1,0 +1,40 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/zws-project/deploy/zws/demo/node-0/webapp/ROOT/web/css
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-07-08T21:09:35.831603Z
+6398
+rmccabe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+style.css
+file
+
+
+
+
+2008-07-11T20:44:50.562875Z
+0cf47efdd48533b9bdac544fb64a2bfd
+2008-07-08T21:09:35.831603Z
+6398
+rmccabe
+

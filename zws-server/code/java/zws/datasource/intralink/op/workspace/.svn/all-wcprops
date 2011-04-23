@@ -1,0 +1,245 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace
+END
+AdoptGhosts.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/AdoptGhosts.java
+END
+RemoveFromWorkspace.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/RemoveFromWorkspace.java
+END
+ASMPRT2IGES.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/ASMPRT2IGES.java
+END
+CheckoutList.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/CheckoutList.java
+END
+Checkout.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/Checkout.java
+END
+ListWorkspaceContents.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/ListWorkspaceContents.java
+END
+Import.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/Import.java
+END
+SetAttributeList.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/SetAttributeList.java
+END
+SetAttribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/SetAttribute.java
+END
+DRW2DWG.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/DRW2DWG.java
+END
+CreateWorkspace.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/CreateWorkspace.java
+END
+AutoPartCreationOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/AutoPartCreationOp.java
+END
+DRWconverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/DRWconverter.java
+END
+ASMPRT2STEP.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/ASMPRT2STEP.java
+END
+FindInWorkspace.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/FindInWorkspace.java
+END
+DRW2HPGL.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/DRW2HPGL.java
+END
+Link.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/Link.java
+END
+ProEConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/ProEConverter.java
+END
+ReportWorkspaceStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/ReportWorkspaceStatus.java
+END
+mdimpexExportList.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/mdimpexExportList.java
+END
+mdimpexImportListFamilyTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/mdimpexImportListFamilyTable.java
+END
+Checkin.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/Checkin.java
+END
+mdimpexExport.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/mdimpexExport.java
+END
+DRW2CGM.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/DRW2CGM.java
+END
+RemoveQuarantinedDuplicates.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/RemoveQuarantinedDuplicates.java
+END
+mdimpexImportFamilyTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/mdimpexImportFamilyTable.java
+END
+DestroyWorkspace.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/DestroyWorkspace.java
+END
+IntralinkWorkspaceOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/IntralinkWorkspaceOp.java
+END
+ASMPRT2IDF.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/ASMPRT2IDF.java
+END
+ListWorkspaces.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/ListWorkspaces.java
+END
+HoldGhosts.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/HoldGhosts.java
+END
+DRW2DXF.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/DRW2DXF.java
+END
+Export.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/Export.java
+END
+DRW2PS.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/DRW2PS.java
+END
+CheckoutLatest.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/CheckoutLatest.java
+END
+ASMPRT2Neutral.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/ASMPRT2Neutral.java
+END
+ReportAllWorkspaceStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/ReportAllWorkspaceStatus.java
+END
+mdimpexImportList.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/mdimpexImportList.java
+END
+ModelCheck.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/ModelCheck.java
+END
+mdimpexImport.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/op/workspace/mdimpexImport.java
+END

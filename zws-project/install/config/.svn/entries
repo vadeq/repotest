@@ -1,0 +1,43 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/zws-project/install/config
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-05-06T21:09:23.143603Z
+6207
+rmccabe
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+mysql
+dir
+
+oracle
+dir
+
+axis2
+dir
+
+tomcat
+dir
+
+zws-bootstrap
+dir
+

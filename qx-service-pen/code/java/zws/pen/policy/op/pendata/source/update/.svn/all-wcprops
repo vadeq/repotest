@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/5521/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/source/update
+END
+PromoteSourceData.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/zws/!svn/ver/5521/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/source/update/PromoteSourceData.java
+END
+DemoteSourceData.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/zws/!svn/ver/5521/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/source/update/DemoteSourceData.java
+END
+UpdateSourceStateOpBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/zws/!svn/ver/5521/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/source/update/UpdateSourceStateOpBase.java
+END

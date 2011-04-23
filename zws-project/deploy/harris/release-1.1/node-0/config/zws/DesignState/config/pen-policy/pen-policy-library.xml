@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<designstate-config>
+ <pen-policies>
+  <!--++++++++++++++++++++++++++++-->
+  <!--  Harris I2A                                     -->
+  <!--  PEN policy for ProE-Library       -->
+  <!--++++++++++++++++++++++++++++-->
+  <pen-policy name="ProE-Library" src-repository="ilink" target-repository="agile-sdk">
+    <retrieve-data>
+    <load-metadata-from-source-repository/>
+    <!-- get-binary/ -->
+   </retrieve-data>
+   
+   <transform-data>
+    <!-- Retrieve publishing-environment setting on this machine -->
+    <set-global-status status="publishing-environment">
+     <make-string><get-system-property-value attribute="publishing-environment" /></make-string>
+    </set-global-status>
+    
+    <!-- Agile Subclass -->
+    <for-each-element>
+     <set-attribute xfer-attribute="agile-class" value="Part"/>
+     <!-- Generate Part Number -->
+     <set-attribute xfer-attribute="number"> <uppercase> <get-source-value attribute="Part_Number"/> </uppercase> </set-attribute>
+     <set-attribute xfer-attribute="name"> <uppercase> <get-source-value attribute="Part_Number"/> </uppercase> </set-attribute>
+     <!-- Map Attributes -->
+     <set-attribute xfer-attribute="Make/Buy" value="Make"/>
+     <set-attribute xfer-attribute="Authoring Application" value="MCAD"/>
+     <set-attribute xfer-attribute="UOM" value="Each"/>
+     <set-attribute xfer-attribute="Description" max-length="50">
+      <make-string>
+       <get-source-value attribute="Description"/>
+       <make-string string=" "/>
+       <get-source-value attribute="Description2"/>
+      </make-string>
+     </set-attribute>
+     <rename-attribute source-attribute="Cage_Code" xfer-attribute="Cage Code" default-value="91417"/>
+     <rename-attribute source-attribute="Project" xfer-attribute="Project Authorization"/>
+    </for-each-element>
+    <!-- restructure design -->
+    <!-- no structure is required: subcomponents should not be published for Libraries -->
+   </transform-data>
+   <!-- analyze data -->
+   <analyze-data>
+    <!-- initialize variables -->
+
+    <for-each-element> <!-- initialization -->
+    <set-target-eco logical-name=""/>
+    <set-element-status status="item-needs-evaluation" value="true" />
+    <!--library vars -->
+    <set-element-status status="item-is-valid" value="~"/>
+    <set-element-status status="filter-out" value="~"/>
+    <set-element-status status="sync-status" value="~"/>
+    <set-element-status status="item-has-name-conflict" value="~"/>
+    <set-element-status status="item-source-system-matches-pub-env" value="~"/>    
+    <set-element-status status="item-has-synchronization-conflict" value="~"/>
+    <set-element-status status="item-has-pending-eco" value="~"/>
+    <set-element-status status="item-is-on-open-eco" value="~"/>
+    <set-element-status status="target-is-already-released" value="~"/>
+
+    <!-- initialize Publishing Patteren to be undefined -->
+    <set-element-status status="publish-pattern" value="~"/>
+    <set-element-status status="ignore-for-publishing" value="~"/>
+    <set-element-status status="bind-to-target" value="~"/>
+    <set-element-status status="publish-as-first-release" value="~"/>
+    <set-element-status status="publish-as-unbinded-first-release" value="~"/>    
+    <set-element-status status="publish-as-revised-release" value="~"/>
+    <set-element-status status="publish-as-first-wip" value="~"/>
+    <set-element-status status="publish-as-revised-wip" value="~"/>
+    <set-element-status status="doc-release" value="~"/>
+    <set-element-status status="doc-wip" value="~"/>
+
+    <!-- initialize actions for publishing pattern -->
+    <set-element-status status="item-needs-to-be-created" value="false"/>
+    <set-element-status status="item-needs-to-be-synchronized" value="false"/>
+    <set-element-status status="metadata-needs-to-be-updated" value="false"/>
+    <set-element-status status="struct-needs-to-be-updated" value="false"/>
+    <set-element-status status="file-needs-to-be-updated" value="false"/>
+    <set-element-status status="doc-needs-to-be-added" value="false"/>
+    <!-- initialize actions for publishing patterns -->
+    <for-each-element>
+     
+    </for-each-element>     
+   <!-- basic attribute validation -->
+   <set-element-status status="item-is-valid" value="true"/>   
+   <!-- Part number validation -->
+     <if-element>
+       <string-length-is-at-least min="1"> <get-source-value attribute="Part_Number"/></string-length-is-at-least>
+      <else>
+       <set-element-status status="item-is-valid" value="false"/>
+       <error-message>
+        <make-string string="Invalid! [Part_Number="/><get-source-value attribute="Part_Number"/><make-string string="] can not be empty"/>
+       </error-message>
+      </else>
+     </if-element>
+     
+     <if-element>
+       <string-length-is-at-most max="21"> <get-source-value attribute="Part_Number"/></string-length-is-at-most>
+      <else>
+       <set-element-status status="item-is-valid" value="false"/>
+       <error-message>
+        <make-string string="Invalid! [Part_Number="/><get-source-value attribute="Part_Number"/><make-string string="] is longer than 21 characters."/>
+       </error-message>
+      </else>
+     </if-element>
+     <if-element>
+      <and>
+       <string-contains-only-valid-chars valid-characters="">
+        <get-source-value attribute="Part_Number"/>
+       </string-contains-only-valid-chars>
+      </and>
+      <else>
+       <set-element-status status="item-is-valid" value="false"/>
+       <error-message>
+        <make-string string="Invalid! [Part_Number="/><get-source-value attribute="Part_Number"/><make-string string="] contains invalid characters."/>
+       </error-message>
+      </else>
+     </if-element>
+
+     <!-- rodney -->
+     <if-element>
+      <not>
+       <string-does-not-contain-invalid-chars invalid-characters=" &quot;`'~">
+        <get-source-value attribute="Part_Number"/>
+       </string-does-not-contain-invalid-chars>
+      </not>
+      <then>
+       <set-element-status status="item-is-valid" value="false"/>
+       <error-message>
+        <make-string string="Invalid! [Part_Number="/><get-source-value attribute="Part_Number"/><make-string string="] contains invalid characters."/>
+       </error-message>
+     </then>
+     </if-element>
+     <!-- rodney ... end of changes -->
+			
+     <if-element>
+      <or>
+       <is-equal value="P"><uppercase><get-source-value attribute="Cage_Code"/></uppercase></is-equal>
+       <string-length-is-exactly length="5"> <get-source-value attribute="Cage_Code"/></string-length-is-exactly>
+      </or>
+      <else>
+       <set-element-status status="item-is-valid" value="false"/>
+       <error-message>
+        <make-string string="Invalid! Cage_Code must be P or exactly 5 characters in length:"/>
+        <make-string string="["/> <get-source-value attribute="Cage_Code"/> <make-string string="]"/>
+       </error-message>
+      </else>
+     </if-element>
+
+     <if-element>
+      <not><string-length-is-exactly length="4"><get-source-value attribute="Project"/></string-length-is-exactly></not>
+      <then>
+       <set-element-status status="item-is-valid" value="false"/>
+       <error-message>
+        <make-string string="Invalid! Project must be exactly 4 characters in length:"/>
+        <make-string string="["/> <get-source-value attribute="Project"/> <make-string string="]"/>
+       </error-message>
+      </then>
+     </if-element>
+
+   </for-each-element>
+    <for-each-element>
+     <if-element>
+      <is-equal value="NO_PUB" ignore-case="true">
+       <uppercase>
+        <get-source-value attribute="Part_Number"/>
+       </uppercase>
+      </is-equal>
+      <then>
+       <set-element-status status="filter-out" value="true"/>
+				<status-message>
+				 <make-string string="Cannot publish item with Part Number of NO_PUB"/>
+				</status-message>       
+      </then>
+      <else>
+       <set-element-status status="filter-out" value="false"/>
+      </else>
+     </if-element>
+    </for-each-element>
+
+    <!-- Define Truth Table Variables -->
+    <load-synchronization-status/>
+    <detect-name-conflicts/>
+    <detect-synchronization-conflicts/>
+    <detect-pending-eco/>
+    <load-pending-eco/>
+
+    <for-each-element> <!-- check if metadata is valid -->
+     <if-element>
+      <item-has-multiple-pending-ecos/>
+      <then>
+       <set-element-status status="item-is-valid" value="false"/>
+       <error-message>
+        <make-string string="Invalid! Item has multiple pending ECOs. +++todo add eco numbers here"/>
+        <!-- +++todo get-pending-eco-number/ -->
+       </error-message>
+      </then>
+     </if-element>
+    </for-each-element>
+
+      
+    <for-each-element>
+     <load-metadata-from-target-repository/>
+    </for-each-element>
+ 
+    <for-each-element>
+     <if-element>
+     <and>
+      <item-has-pending-eco/>
+      <or>
+       <is-equal value="Unassigned">
+        <get-pending-eco-status/>
+       </is-equal>
+       <is-equal value="Pending">
+        <get-pending-eco-status/>
+       </is-equal>
+      </or>
+     </and>
+     <then> <set-element-status status="item-is-on-open-eco" value="true"/> </then>
+     <else> <set-element-status status="item-is-on-open-eco" value="false"/> </else>
+    </if-element>
+    </for-each-element>
+   
+    <for-each-element>
+     <if><item-is-on-open-eco/>
+      <then>
+       <save-pending-eco>
+        <logical-name>
+         <get-pending-eco-type/>      
+         <make-string string="-"/>
+         <get-pending-eco-value attribute="Project Authorization"/>
+        </logical-name>
+       </save-pending-eco>
+      </then>
+     </if>
+    </for-each-element>
+
+    <for-each-element>
+     <if-element>
+     <and>
+       <or>
+        <and>
+         <item-is-new/>
+         <item-has-name-conflict/>
+        </and>
+        <item-is-modified/>
+       </or>
+      <not>
+      <is-equal>
+       <get-target-value attribute="rev"/>
+       <make-string string="Introductory"/>
+      </is-equal>
+      </not>
+     </and>
+     <then>
+      <set-element-status status="target-is-already-released" value="true"/>
+     </then>
+     <else>
+      <set-element-status status="target-is-already-released" value="false"/>
+     </else>
+    </if-element>
+    </for-each-element>
+
+
+    <!-- Set 'item-source-system-matches-pub-env' variable for vault functionality -->
+    <!-- Set 'item-source-system-matches-pub-env' variable for vault functionality -->
+    <for-each-element>
+     <set-element-status status="item-source-system-matches-pub-env" value="true"/>   
+     <if-element>
+      <is-empty><get-target-value attribute="Source System"/></is-empty>
+      <then><set-element-status status="item-source-system-matches-pub-env" value="true"/></then>
+      <else>      
+       <if-element>
+        <is-not-equal>
+         <make-string><get-global-status status="publishing-environment" /></make-string>
+         <make-string><get-target-value attribute="Source System" /></make-string>
+        </is-not-equal>
+        <then><set-element-status status="item-source-system-matches-pub-env" value="false"/></then>
+        <else></else>
+       </if-element>    
+      </else>
+      </if-element>        
+    </for-each-element>
+
+
+    <!-- Define Truth Table Variables -->
+    
+    
+    <!-- Truth Table Logic ################################################### -->
+    <!--
+ Test Case	lib-cnl-1000
+ publish-action	Cancel
+ is-valid:F
+-->
+    <set-global-status status="policy-case" value="lib-cnl-1000"/>
+    <for-each-element>
+     <if-element>
+     <and>
+      <element-status-is-true status="item-needs-evaluation"/>      
+      <element-status-is-false status="item-is-valid"/>
+     </and>
+     <then>
+      <set-global-status status="case-id" value="*"><get-global-status status="policy-case"/></set-global-status>
+      <error-message>
+       <make-string string="["/>
+       <get-global-status status="policy-case"/>
+       <make-string string="]"/>
+       <make-string string="Cancelled! Item is not valid for publishing."/>
+      </error-message>
+      <show-pen-data/>      
+      <cancel/>
+     </then>
+     <else>
+      <debug-message>
+       <make-string string="["/>
+       <get-global-status status="policy-case"/>
+       <make-string string="]"/>
+       <make-string string="does not match:"/>
+      </debug-message>
+     </else>
+    </if-element>
+    </for-each-element>
+    <!--
+ Test Case	lib-cnl-1100 
+ publish-action	Cancel
+ sync-conflict:T
+-->
+    <set-global-status status="policy-case" value="lib-cnl-1100"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>
+       <item-has-synchronization-conflict/>
+      </and>
+     <then>
+      <set-global-status status="case-id" value="*"><get-global-status status="policy-case"/></set-global-status> 
+      <error-message>
+       <make-string string="["/>
+       <get-global-status status="policy-case"/>
+       <make-string string="]"/>
+       <make-string string="publishing cancelled - synchronization conflict for"/>
+       <get-source-value attribute="Part_Number"/>
+      </error-message>
+      <error-message>
+       <make-string string="Synchronization Conflict Found: "><get-element-status status="sync-conflict-uid"/></make-string> 
+      </error-message>
+      <show-pen-data/>      
+      <cancel/>
+     </then>
+     <else>
+      <debug-message>
+       <make-string string="["/>
+       <get-global-status status="policy-case"/>
+       <make-string string="]"/>
+       <make-string string="does not match:"/>
+      </debug-message>
+     </else>
+    </if-element>
+    </for-each-element>
+    <!--
+ Test Case	lib-cnl-1200
+  publish-action	Cancel
+ is-valid:T  has-pend-eco:T on-open-eco:F
+-->
+    <set-global-status status="policy-case" value="lib-cnl-1200"/>
+    <for-each-element>
+     <if-element>
+     <and>
+      <element-status-is-true status="item-needs-evaluation"/>
+      <item-is-valid/>
+      <item-has-pending-eco/>
+      <item-is-not-on-open-eco/>
+     </and>
+     <then>
+      <set-global-status status="case-id" value="*"><get-global-status status="policy-case"/></set-global-status> 
+      <error-message>
+       <make-string string="["/><get-global-status status="policy-case"/><make-string string="]"/>
+       <make-string string="publishing cancelled - item is already on an ECO that is no longer open for changes."/>
+       <make-string string="[+++todo eco-number"/><!-- get-pending-eco-number/ --><make-string string="]"/>
+      </error-message>
+      <show-pen-data/>      
+      <cancel/>
+     </then>
+     <else>
+      <debug-message>
+       <make-string string="["/><get-global-status status="policy-case"/><make-string string="]"/><make-string string="does not match:"/>
+      </debug-message>
+     </else>
+    </if-element>
+    </for-each-element>
+    
+    <!--
+ Test Case	lib-cnl-1300
+  publish-action	Cancel
+ is-valid:T  matches-pub-env:F sync-status:is-new name-cflct:T sync-conflict:F
+-->
+    <set-global-status status="policy-case" value="lib-cnl-1300"/>
+    <for-each-element>
+     <if-element>
+     <and>
+      <element-status-is-true status="item-needs-evaluation"/>
+      <item-is-valid/>
+      <item-source-system-does-not-match-pub-env/>
+      <item-is-new/>
+      <item-has-name-conflict/>
+      <item-does-not-have-synchronization-conflict/>
+     </and>
+     <then>
+      <set-global-status status="case-id" value="*"><get-global-status status="policy-case"/></set-global-status> 
+      <error-message>
+       <make-string string="["/><get-global-status status="policy-case"/><make-string string="]"/>
+       <make-string string="publishing cancelled - Publishing environment does not match item's Source System attribute in Agile."/>
+      </error-message>
+      <show-pen-data/>      
+      <cancel/>
+     </then>
+     <else>
+      <debug-message>
+       <make-string string="["/><get-global-status status="policy-case"/><make-string string="]"/><make-string string="does not match:"/>
+      </debug-message>
+     </else>
+    </if-element>
+    </for-each-element>
+    
+    
+    <!--
+ Test Case	lib-cnl-1350
+  publish-action	Cancel
+ is-valid:T  matches-pub-env:F sync-status:modified
+-->
+    <set-global-status status="policy-case" value="lib-cnl-1350"/>
+    <for-each-element>
+     <if-element>
+     <and>
+      <element-status-is-true status="item-needs-evaluation"/>
+      <item-is-valid/>
+      <item-source-system-does-not-match-pub-env/>  
+      <item-is-modified/>
+     </and>
+     <then>
+      <set-global-status status="case-id" value="*"><get-global-status status="policy-case"/></set-global-status> 
+      <error-message>
+       <make-string string="["/><get-global-status status="policy-case"/><make-string string="]"/>
+       <make-string string="publishing cancelled - Publishing environment does not match item's Source System attribute in Agile"/>
+      </error-message>
+      <show-pen-data/>      
+      <cancel/>      
+     </then>
+     <else>
+      <debug-message>
+       <make-string string="["/><get-global-status status="policy-case"/><make-string string="]"/><make-string string="does not match:"/>
+      </debug-message>
+     </else>
+    </if-element>
+    </for-each-element>
+    
+    
+    
+    <!--
+ Test Case	lib-fr-nweco-1400
+ publish-action	first-release
+ target-eco	new-eco
+ is-valid:T filter-out:F sync-status:is-new name-cflct:F
+-->
+    <set-global-status status="policy-case" value="lib-fr-nweco-1400"/>
+    <for-each-element>
+     <if-element>
+     <and>
+      <element-status-is-true status="item-needs-evaluation"/>
+      <item-is-valid/>
+			<item-is-not-filtered-out/>
+      <item-is-new/>
+      <item-does-not-have-name-conflict/>
+     </and>
+     <then>
+      <publish-as-first-release/>
+      <set-global-status status="case-id" value="*"><get-global-status status="policy-case"/></set-global-status> 
+      <create-eco>
+       <logical-name>
+     	 <make-string string="Initial Release"/>
+     	  <make-string string="-"/>
+        <get-source-value attribute="Project"/>
+       </logical-name>
+       <property attribute="agile-class" value="Initial Release"/>
+       <property attribute="Workflow" value="Initial Release"/>
+       <property attribute="Project Authorization">
+        <get-source-value attribute="Project"/>       
+       </property>
+      </create-eco>
+      <!-- may need to create a count variale for eco-ref-name -->
+       <set-target-eco>
+        <logical-name>
+      	 <make-string string="Initial Release"/>
+      	  <make-string string="-"/>
+         <get-source-value attribute="Project"/>
+        </logical-name>
+       </set-target-eco>       
+      <status-message>
+       <make-string string="["/><get-global-status status="policy-case"/><make-string string="]"/><make-string string="publishing: "/><get-element-status status="publishing-as"/>
+      </status-message>
+     </then>
+     <else>
+      <debug-message><make-string string="["/><get-global-status status="policy-case"/><make-string string="]"/><make-string string="does not match:"/></debug-message>
+     </else>
+    </if-element>
+    </for-each-element>
+     
+    <!--
+ Test Case	lib-rr-rveco-1500
+ publish-action	rev-release
+ target-eco	revised-eco
+ is-valid:T filter-out:F matches-pub-env:T sync-status:is-new name-cflct:T sync-conflict:F has-pend-eco:F Is-released:T
+-->
+    <set-global-status status="policy-case" value="lib-rr-rveco-1500"/>
+    <for-each-element>
+     <if-element>
+     <and>
+      <element-status-is-true status="item-needs-evaluation"/>
+      <item-is-valid/>
+      <item-is-not-filtered-out/>
+      <item-source-system-matches-pub-env/>
+      <item-is-new/>
+      <item-has-name-conflict/>
+      <item-does-not-have-synchronization-conflict/>
+      <item-does-not-have-pending-eco/>
+      <target-is-already-released/>
+     </and>
+     <then>
+      <publish-as-revised-release/>
+      <set-global-status status="case-id" value="*"><get-global-status status="policy-case"/></set-global-status> 
+      <create-eco>
+       <logical-name>
+     	 <make-string string="Engineering Change Order"/>
+     	  <make-string string="-"/>
+        <get-source-value attribute="Project"/>
+       </logical-name>
+       <property attribute="agile-class" value="Engineering Change Order"/>
+       <property attribute="Workflow" value="Engineering Change Order"/>
+       <property attribute="Owning Organization" value="Mechanical"/>
+       <property attribute="Project Authorization">
+        <get-source-value attribute="Project"/>       
+       </property>
+      </create-eco>
+      <set-target-eco>
+       <logical-name>
+        <make-string string="Engineering Change Order"/>
+        <make-string string="-"/>
+        <get-source-value attribute="Project"/>
+       </logical-name>
+      </set-target-eco>
+      <status-message>
+       <make-string string="["/><get-global-status status="policy-case"/><make-string string="]"/><make-string string="publishing: "/><get-element-status status="publishing-as"/>
+      </status-message>
+      <warning-message>
+       <make-string string="Conflict Found: "><get-element-status status="name-conflict-origin"/></make-string> 
+      </warning-message>
+     </then>
+     <else>
+      <debug-message><make-string string="["/><get-global-status status="policy-case"/><make-string string="]"/><make-string string="does not match:"/></debug-message>
+     </else>
+    </if-element>
+    </for-each-element>
+    
+    <!--
+     Test Case	lib-rr-nweco-1600
+     publish-action	rev-release
+     target-eco	new-eco
+     is-valid:T filter-out:F matches-pub-env:T sync-status:is-new name-cflct:T sync-conflict:F has-pend-eco:F Is-released:F
+     -->
+    <set-global-status status="policy-case" value="lib-rr-nweco-1600"/>
+    <for-each-element>
+     <if-element>
+     <and>
+      <element-status-is-true status="item-needs-evaluation"/>
+      <item-is-valid/>
+			<item-is-not-filtered-out/>
+      <item-source-system-matches-pub-env/>      
+      <item-is-new/>
+      <item-has-name-conflict/>
+      <item-does-not-have-synchronization-conflict/>
+      <item-does-not-have-pending-eco/>
+      <target-is-not-already-released/>
+     </and>
+     <then>
+      <publish-as-revised-release/>
+      <set-global-status status="case-id" value="*"><get-global-status status="policy-case"/></set-global-status> 
+      <create-eco>
+       <logical-name>
+     	 <make-string string="Initial Release"/>
+     	  <make-string string="-"/>
+        <get-source-value attribute="Project"/>
+       </logical-name>
+       <property attribute="agile-class" value="Initial Release"/>
+       <property attribute="Workflow" value="Initial Release"/>
+       <property attribute="Project Authorization">
+        <get-source-value attribute="Project"/>       
+       </property>
+      </create-eco>
+      <set-target-eco>
+       <logical-name>
+        <make-string string="Initial Release"/>
+        <make-string string="-"/>
+        <get-source-value attribute="Project"/>
+       </logical-name>
+      </set-target-eco>
+      <status-message>
+       <make-string string="["/><get-global-status status="policy-case"/><make-string string="]"/><make-string string="publishing: "/><get-element-status status="publishing-as"/>
+      </status-message>
+      <warning-message>
+       <make-string string="Conflict Found: "><get-element-status status="name-conflict-origin"/></make-string> 
+      </warning-message>      
+     </then>
+     <else>
+      <debug-message><make-string string="["/><get-global-status status="policy-case"/><make-string string="]"/><make-string string="does not match:"/></debug-message>
+     </else>
+    </if-element>
+    </for-each-element>
+    
+    <!--
+     Test Case	lib-rr-pdeco-1700	
+	  publish-action	rev-release
+	  target-eco	use-pending-eco
+	  is-valid:T filter-out:F matches-pub-env:T sync-status:is-new name-cflct:T sync-conflict:F has-pend-eco:T on-open-eco:T
+	-->
+    <set-global-status status="policy-case" value="lib-rr-pdeco-1700"/>
+    <for-each-element>
+     <if-element>
+     <and>
+      <element-status-is-true status="item-needs-evaluation"/>
+      <item-is-valid/>
+			<item-is-not-filtered-out/>
+      <item-source-system-matches-pub-env/>      
+      <item-is-new/>
+      <item-has-name-conflict/>
+      <item-does-not-have-synchronization-conflict/>
+      <item-has-pending-eco/>
+      <item-is-on-open-eco/>
+     </and>
+     <then>
+      <publish-as-revised-release/>
+      <set-global-status status="case-id" value="*"><get-global-status status="policy-case"/></set-global-status> 
+      <use-pending-eco/>
+      <status-message>
+       <make-string string="["/><get-global-status status="policy-case"/><make-string string="]"/><make-string string="publishing: "/><get-element-status status="publishing-as"/>
+      </status-message>
+      <warning-message>
+       <make-string string="Conflict Found: "><get-element-status status="name-conflict-origin"/></make-string> 
+      </warning-message>      
+     </then>
+     <else>
+      <debug-message><make-string string="["/><get-global-status status="policy-case"/><make-string string="]"/><make-string string="does not match:"/></debug-message>
+     </else>
+    </if-element>
+    </for-each-element>
+    
+    <!--
+     Test Case	lib-rr-rveco-1800
+     publish-action	rev-release
+     target-eco	revised-eco
+     is-valid:T filter-out:F matches-pub-env:T sync-status:modified has-pend-eco:F Is-released:T
+     -->
+    <set-global-status status="policy-case" value="lib-rr-rveco-1800"/>
+    <for-each-element>    
+     <if-element>
+     <and>
+      <element-status-is-true status="item-needs-evaluation"/>      
+      <item-is-valid/>
+			<item-is-not-filtered-out/>
+      <item-source-system-matches-pub-env/>      
+      <item-is-modified/>
+      <item-does-not-have-pending-eco/>
+      <target-is-already-released/>
+     </and>
+     <then>
+      <publish-as-revised-release/>
+      <set-global-status status="case-id" value="*"><get-global-status status="policy-case"/></set-global-status> 
+       <create-eco>
+        <logical-name>
+      	 <make-string string="Engineering Change Order"/>
+      	  <make-string string="-"/>
+         <get-source-value attribute="Project"/>
+        </logical-name>
+        <property attribute="agile-class" value="Engineering Change Order"/>
+        <property attribute="Workflow" value="Engineering Change Order"/>
+        <property attribute="Owning Organization" value="Mechanical"/>
+        <property attribute="Project Authorization">
+         <get-source-value attribute="Project"/>       
+        </property>
+      </create-eco>
+      <set-target-eco>
+       <logical-name>
+        <make-string string="Engineering Change Order"/>
+        <make-string string="-"/>
+        <get-source-value attribute="Project"/>
+       </logical-name>
+      </set-target-eco>
+      <status-message>
+       <make-string string="["/><get-global-status status="policy-case"/><make-string string="]"/><make-string string="publishing: "/><get-element-status status="publishing-as"/>
+      </status-message>
+     </then>
+     <else>
+      <print-out><make-string string="****IN ELSE OF lib-rr-rveco-1800"/></print-out>      
+      <debug-message><make-string string="["/><get-global-status status="policy-case"/><make-string string="]"/><make-string string="does not match:"/></debug-message>
+     </else>
+    </if-element>
+    </for-each-element>
+
+    <!--
+     Test Case	lib-rr-nweco-1850
+     publish-action	rev-release
+     target-eco	new-eco
+     is-valid:T filter-out:F matches-pub-env:T sync-status:modified has-pend-eco:F Is-released:F
+     -->
+    <set-global-status status="policy-case" value="lib-rr-nweco-1850"/>
+    <for-each-element>
+     <if-element>
+     <and>
+      <element-status-is-true status="item-needs-evaluation"/>
+      <item-is-valid/>
+			<item-is-not-filtered-out/>
+      <item-source-system-matches-pub-env/>      
+      <item-is-modified/>
+      <item-does-not-have-pending-eco/>
+      <target-is-not-already-released/>
+     </and>
+     <then>
+      <publish-as-revised-release/>
+      <set-global-status status="case-id" value="*"><get-global-status status="policy-case"/></set-global-status> 
+       <create-eco>
+       <logical-name>
+     	 <make-string string="Initial Release"/>
+     	  <make-string string="-"/>
+        <get-source-value attribute="Project"/>
+       </logical-name>
+       <property attribute="agile-class" value="Initial Release"/>
+       <property attribute="Workflow" value="Initial Release"/>
+       <property attribute="Project Authorization">
+        <get-source-value attribute="Project"/>       
+       </property>
+      </create-eco>
+      <set-target-eco>
+       <logical-name>
+        <make-string string="Initial Release"/>
+        <make-string string="-"/>
+        <get-source-value attribute="Project"/>
+       </logical-name>
+      </set-target-eco>
+      <status-message>
+       <make-string string="["/><get-global-status status="policy-case"/><make-string string="]"/><make-string string="publishing: "/><get-element-status status="publishing-as"/>
+      </status-message>
+      <warning-message>
+       <make-string string="Conflict Found: "><get-element-status status="name-conflict-origin"/></make-string> 
+      </warning-message>      
+     </then>
+     <else>
+      <debug-message><make-string string="["/><get-global-status status="policy-case"/><make-string string="]"/><make-string string="does not match:"/></debug-message>
+     </else>
+    </if-element>
+    </for-each-element>
+         
+     <!--
+      Test Case	lib-rr-pdeco-1900
+      publish-action	rev-release
+      target-eco	use-pending-eco
+      is-valid:T filter-out:F matches-pub-env:T sync-status:modified has-pend-eco:T on-open-eco:T
+     -->
+     <set-global-status status="policy-case" value="lib-rr-pdeco-1900"/>
+     <for-each-element>
+      <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>
+       <item-is-valid/>
+			 <item-is-not-filtered-out/>
+       <item-source-system-matches-pub-env/>       
+       <item-is-modified/>
+       <item-has-pending-eco/>
+       <item-is-on-open-eco/>
+      </and>
+      <then>
+       <publish-as-revised-release/>
+       <use-pending-eco/>
+      <set-global-status status="case-id" value="*"><get-global-status status="policy-case"/></set-global-status> 
+      <status-message>
+       <make-string string="["/><get-global-status status="policy-case"/><make-string string="]"/><make-string string="publishing: "/><get-element-status status="publishing-as"/>
+      </status-message>
+     </then>
+     <else>
+      <debug-message><make-string string="["/><get-global-status status="policy-case"/><make-string string="]"/><make-string string="does not match:"/></debug-message>
+     </else>
+     </if-element>
+     </for-each-element>
+
+     <!--
+      Test Case	lib-ign-1300
+      publish-action	ignore
+      is-valid:T filter-out:F sync-status:synchronized sync-conflict:F
+     -->
+     <set-global-status status="policy-case" value="lib-ign-1300"/>
+     <for-each-element>
+      <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>
+       <item-is-valid/>
+			 <item-is-not-filtered-out/>
+       <item-is-synchronized/>
+      </and>
+      <then>
+       <ignore-for-publishing/>
+      <set-global-status status="case-id" value="*"><get-global-status status="policy-case"/></set-global-status> 
+       <status-message>
+        <make-string string="["/><get-global-status status="policy-case"/><make-string string="]"/><make-string string="publishing: "/><get-element-status status="publishing-as"/>
+        <make-string string="publishing ignored - item is already synchronized."/>        
+       </status-message>
+      </then>
+      <else>
+       <debug-message><make-string string="["/><get-global-status status="policy-case"/><make-string string="]"/><make-string string="does not match:"/></debug-message>
+      </else>
+     </if-element>
+     </for-each-element>
+     <!-- END Truth Table Logic ################################################### -->
+ 
+     <for-each-element>
+
+     
+     <set-global-status status="policy-case" value="~"/>
+
+     <!-- ignore -->
+     <if>
+      <element-status-is-true status="ignore-for-publishing"/>
+      <then>
+       <do-not-need-to-create-item/>
+        <do-not-need-to-update-metadata/>
+       <do-not-need-to-update-struct/>
+       <do-not-need-to-update-file/>
+       <do-not-need-to-synchronize-item/>
+      </then>
+     </if>
+     <!--bind-items-->
+     <if>
+      <element-status-is-true status="bind-to-target"/>
+      <then>
+       <do-not-need-to-create-item/>
+       <do-not-need-to-update-metadata/>
+       <do-not-need-to-update-struct/>
+       <do-not-need-to-update-file/>
+       <need-to-synchronize-item/>
+      </then>
+     </if>
+     <!--first-wip -->
+     <if>
+      <element-status-is-true status="publish-as-first-wip"/>
+      <then>
+       <need-to-create-item/>
+       <need-to-update-metadata/>
+       <need-to-update-struct/>
+       <need-to-update-file/>
+       <need-to-synchronize-item/>
+      </then>
+     </if>
+     <!--rev-wip -->
+     <if>
+      <element-status-is-true status="publish-as-revised-wip"/>
+      <then>
+       <do-not-need-to-create-item/>
+       <need-to-update-metadata/>
+       <need-to-update-struct/>
+       <need-to-update-file/>
+       <need-to-synchronize-item/>
+      </then>
+     </if>
+     <!--first-release -->
+     <if>
+      <element-status-is-true status="publish-as-first-release"/>
+      <then>
+       <need-to-create-item/>
+       <need-to-update-metadata/>
+       <need-to-update-struct/>
+       <need-to-update-file/>
+       <need-to-synchronize-item/>
+      </then>
+     </if>
+     <!--rev-release -->
+     <if>
+      <element-status-is-true status="publish-as-revised-release"/>
+      <then>
+       <do-not-need-to-create-item/>
+       <need-to-update-metadata/>
+       <need-to-update-struct/>
+       <need-to-update-file/>
+       <need-to-synchronize-item/>
+      </then>
+     </if>
+     
+     <if>
+      <element-status-is-true status="doc-wip"/>
+      <then>
+       <need-to-add-doc/>
+      </then>
+     </if>
+     <if>
+      <element-status-is-true status="doc-release"/>
+      <then>
+       <need-to-add-doc/>
+      </then>
+     </if>
+    
+     <!-- publish-as-unbinded-first-release -->
+     <if>
+      <element-status-is-true status="publish-as-unbinded-first-release"/>
+      <then>
+       <need-to-create-item/>
+       <need-to-update-metadata/>
+       <need-to-update-struct/>
+       <need-to-update-file/>
+       <do-not-need-to-synchronize-item/>       
+      </then>
+     </if>
+              
+     </for-each-element>
+     <show-pen-data/>
+   </analyze-data>
+
+	<cancel-publish continue-if-cancelled="true">
+	  <breakpoint spot="cancel publish" />
+       <for-each-origin-to-publish continue-if-cancelled="true">
+        <demote-source-data state-name="WIP"/>
+       </for-each-origin-to-publish>
+	 </cancel-publish>
+
+    <!-- publish data -->
+    <publish-target-data>
+
+    <create-new-items/>
+    <detect-redlines/>
+    <update-metadata/>
+    <update-structure/>
+    <update-documentation/>
+    <update-binary-files/>
+    <synchronize/>
+  
+    </publish-target-data>
+
+    <update-source/>
+   
+     </pen-policy>
+ </pen-policies>
+</designstate-config>

@@ -1,0 +1,167 @@
+<?xml version="1.0" ?>
+<instructions>
+  <DesignState-config ignore="true"/>
+  <pen-policies ignore="true"/>
+<!-- sample code for op-->
+<pen-printer instance-of="zws.pen.policy.op.PENPrinter" method="add"/>
+
+<!-- Defines the policy start-->
+	<pen-policy instance-of="zws.pen.policy.PENPolicy" static-method="add" class="zws.service.pen.policy.PENPolicySvc">
+		<name required="true"/>
+		<src-repository property="srcRepositoryName"/>
+		<target-repository property="targetRepositoryName" required="true"/>
+	</pen-policy>
+<!-- Defines the policy start-->
+
+<!-- Retrieve data start-->
+		<retrieve-data instance-of="zws.pen.policy.op.PENDataOpList" method="setRetrieveSrcOp"/>
+		<get-metadata  instance-of="zws.pen.policy.op.GetSourceDataOp" method="add"/>
+		<get-binary    instance-of="zws.pen.policy.op.GetSourceBinaryOp" method="add"/>
+		<change-part-type instance-of="zws.pen.policy.op.ChangePartTypeOp" method="add">
+			<from-type/>
+			<to-type/>
+	</change-part-type>
+<!-- Retrieve data end-->
+
+<!-- Retrieve BOM start-->
+		<get-BOM  instance-of="zws.pen.policy.op.RetrieveBOMOp" method="add"/>
+<!-- Retrieve BOM end-->
+
+
+<!-- transform data Start-->
+
+	<transform-data instance-of="zws.pen.policy.op.PENDataOpList" method="setTransformSrcOp"/>
+
+	<!-- map attributes for transform data-->
+	<copy-all-attributes instance-of="zws.pen.policy.op.MapAttributeOp" method="add"/>
+
+	<!-- set source attribute value as target attribute value-->
+	<set-attribute instance-of="zws.pen.policy.op.SetAttributeOp" method="add">
+		<target-attribute/>
+	</set-attribute>
+
+	<!-- copy attribute from source data to target data -->
+	<copy-attribute instance-of="zws.pen.policy.op.CopyAttributeOp" method="add">
+		<attribute-name/>
+	</copy-attribute>
+
+	<!-- copy attribute from source data as new attribute in target data -->
+	<rename-attribute instance-of="zws.pen.policy.op.RenameAttributeOp" method="add">
+		<source-attribute/>
+		<target-attribute/>
+	</rename-attribute>
+
+		<!-- Prepare transform data with first level child components  -->
+	<copy-sub-components instance-of="zws.pen.policy.op.CopyStructureOp" method="add"/>
+
+	<getBasename instance-of="zws.pen.policy.op.GetBasenameOp" method="add">
+		<attributeName/>
+	</getBasename>
+<!-- transform data End-->
+
+
+<!-- publish data start-->
+
+	<publish-target-data instance-of="zws.pen.policy.op.PENDataOpList" method="setPublishTargetOp"/>
+	<publish-metadata  instance-of="zws.pen.policy.op.PublishMetaDataOp" method="add"/>
+	<publish-BOM  instance-of="zws.pen.policy.op.PublishMetaDataBOMOp" method="add"/>
+
+<!-- publish data end-->
+
+
+<!-- update source start-->
+
+	<update-source instance-of="zws.pen.policy.op.PENDataOpList" method="setUpdateSrcOp"/>
+
+	<!-- Updates the state attributes -->
+	<update-state-attribute-op instance-of="zws.pen.policy.op.UpdateStateAttributeOp" method="add">
+		<attribute-name/>
+		<attribute-value/>
+	</update-state-attribute-op>
+
+<!-- update source end-->
+
+
+<!-- Get attribute values start-->
+
+	<!-- Get the attribute values from Target Metadata -->
+	<get-target-value instance-of="zws.pen.policy.op.GetValueFromTargetOp" method="add">
+		<attribute-name/>
+	</get-target-value>
+
+	<!-- Get the attribute values from Source Metadata -->
+	<get-source-value instance-of="zws.pen.policy.op.GetValueFromSourceOp" method="add">
+		<attribute-name/>
+	</get-source-value>
+
+
+	<!-- Get the attribute values from QxContext  -->
+	<get-context-value instance-of="zws.pen.policy.op.GetValueFromContextOp" method="add">
+		<attribute-name/>
+	</get-context-value>
+
+
+<!-- Get attribute values end-->
+
+<!-- Set attribute values start-->
+
+	<!-- set the attribute values from Target Metadata -->
+	<set-target-value instance-of="zws.pen.policy.op.SetValueInTargetOp" method="add">
+		<attribute-name/>
+		<attribute-value/>
+	</set-target-value>
+
+
+	<!-- set the attribute values from Source Metadata
+	<set-source-value instance-of="zws.pen.policy.op.setValueFromSourceOp" method="add">
+		<attribute-name/>
+	</set-source-value>
+	-->
+
+	<!-- set the attribute values from QxContext  -->
+	<set-context-value instance-of="zws.pen.policy.op.SetValueInContextOp" method="add">
+		<attribute-name/>
+		<attribute-value/>
+	</set-context-value>
+
+<!-- Set attribute values end -->
+
+<!-- get user name for authentication start-->
+
+	<get-user-name instance-of="zws.pen.policy.op.GetUserName" method="add"/>
+
+<!-- get user name for authentication end -->
+
+<!-- Date/Time utilities start -->
+	<!-- To get curent data and time in a given format -->
+	<get-current-date-time instance-of="zws.pen.policy.op.GetCurrentDateTimeOp" method="add">
+		<attribute-name/>
+		<date-format/>
+	</get-current-date-time>
+<!-- Date/Time utilities end -->
+
+<!-- String utilities start -->
+
+	<!-- to define string-constant -->
+	<string-constant instance-of="zws.pen.policy.op.StringConstantOp" method="add">
+		<string-value/>
+	</string-constant>
+	<!-- To add the given strings-->
+	<add-strings instance-of="zws.pen.policy.op.AddStrings" method="add"/>
+	<!-- To convert the string to lower case-->
+	<to-lowercase instance-of="zws.pen.policy.op.ToLowercaseOP" method="add"/>
+	<!-- To convert the string to UPPER case-->
+	<to-uppercase instance-of="zws.pen.policy.op.ToUppercaseOP" method="add"/>
+	<!-- To capitalize the string -->
+	<to-capitalize instance-of="zws.pen.policy.op.ToCapitalizeOP" method="add"/>
+	<!-- To add prefix to the string -->
+	<add-prefix instance-of="zws.pen.policy.op.AddPrefixOP" method="add">
+		<prefix/>
+	</add-prefix>
+	<!-- To add suffix to the string -->
+	<add-suffix instance-of="zws.pen.policy.op.AddSuffixOP" method="add">
+		<suffix/>
+	</add-suffix>
+<!-- String utilities end -->
+
+</instructions>

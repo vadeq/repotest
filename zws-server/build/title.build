@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="title" basedir=".">
+
+  <!-- title -->
+  <property name="title" value="DesignState Distributed Application Server"/>
+
+  <!-- names -->
+  <property name="svn-project-name" value="server"/>
+  <property name="eclipse-project-name" value="zws-server"/>
+  <property name="jar-file-name" value="zws-server"/>
+
+</project>

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/zws/!svn/ver/6322/trunk/zws/plugin/repository/ilink8/plugin-ilink8/code/java/zws/repository/R8
+END
+R8RepositoryBinarySource.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/zws/!svn/ver/5678/trunk/zws/plugin/repository/ilink8/plugin-ilink8/code/java/zws/repository/R8/R8RepositoryBinarySource.java
+END
+R8RepositoryMetadataStateTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/zws/!svn/ver/4069/trunk/zws/plugin/repository/ilink8/plugin-ilink8/code/java/zws/repository/R8/R8RepositoryMetadataStateTarget.java
+END
+R8ILSearchAgent.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/5678/trunk/zws/plugin/repository/ilink8/plugin-ilink8/code/java/zws/repository/R8/R8ILSearchAgent.java
+END
+R8LocalTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/5678/trunk/zws/plugin/repository/ilink8/plugin-ilink8/code/java/zws/repository/R8/R8LocalTest.java
+END
+R8RepositoryBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/zws/!svn/ver/6150/trunk/zws/plugin/repository/ilink8/plugin-ilink8/code/java/zws/repository/R8/R8RepositoryBase.java
+END
+R8Invoke.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/6322/trunk/zws/plugin/repository/ilink8/plugin-ilink8/code/java/zws/repository/R8/R8Invoke.java
+END
+R8Constants.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/1705/trunk/zws/plugin/repository/ilink8/plugin-ilink8/code/java/zws/repository/R8/R8Constants.java
+END
+R8Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/zws/!svn/ver/6139/trunk/zws/plugin/repository/ilink8/plugin-ilink8/code/java/zws/repository/R8/R8Test.java
+END
+R8Test1.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/6269/trunk/zws/plugin/repository/ilink8/plugin-ilink8/code/java/zws/repository/R8/R8Test1.java
+END
+R8RepositoryMetadataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/zws/!svn/ver/5678/trunk/zws/plugin/repository/ilink8/plugin-ilink8/code/java/zws/repository/R8/R8RepositoryMetadataSource.java
+END
+R8RepositoryStructureSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/zws/!svn/ver/6144/trunk/zws/plugin/repository/ilink8/plugin-ilink8/code/java/zws/repository/R8/R8RepositoryStructureSource.java
+END
+R8ILRetrieveContentAgent.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/zws/!svn/ver/5384/trunk/zws/plugin/repository/ilink8/plugin-ilink8/code/java/zws/repository/R8/R8ILRetrieveContentAgent.java
+END
+R8RepositorySearchAgent.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/zws/!svn/ver/5678/trunk/zws/plugin/repository/ilink8/plugin-ilink8/code/java/zws/repository/R8/R8RepositorySearchAgent.java
+END

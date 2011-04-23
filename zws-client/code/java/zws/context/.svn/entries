@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/client/code/java/zws/context
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+Context.java
+file
+
+
+
+
+2008-07-11T20:48:10.125375Z
+32b0921b4e998345d78431e9a8ee0c4d
+2008-01-02T17:47:31.801807Z
+5027
+arbind.thakur
+
+StringContext.java
+file
+
+
+
+
+2008-07-11T20:48:10.187875Z
+753a7cb3377e41999e806206d8406456
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/6152/trunk/zws/designstate/webapp/code/java/com/zws/service/account
+END
+MismatchedPasswordsException.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/service/account/MismatchedPasswordsException.java
+END
+InvalidPasswordException.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/service/account/InvalidPasswordException.java
+END
+DuplicateUsernameException.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/service/account/DuplicateUsernameException.java
+END
+UserNotFoundException.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/service/account/UserNotFoundException.java
+END
+AccountService.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/6152/trunk/zws/designstate/webapp/code/java/com/zws/service/account/AccountService.java
+END

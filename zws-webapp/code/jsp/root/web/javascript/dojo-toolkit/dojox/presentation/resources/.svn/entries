@@ -1,0 +1,67 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/presentation/resources
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+Show.html
+file
+
+
+
+
+2008-07-11T22:10:04.766000Z
+7bf981a493196a8a1407acbbfad9f8ee
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+Slide.html
+file
+
+
+
+
+2008-07-11T22:10:04.844125Z
+d86ca7cbd54b088e4b49175c8a344aa9
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+Show.css
+file
+
+
+
+
+2008-07-11T22:10:04.937875Z
+2a59ba8e9e2ae6bebab8420e2aaed4f4
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+icons
+dir
+

@@ -1,0 +1,6 @@
+<DesignState-config>
+ <qx-queue-ops>
+  <qx-queue queue-namespace="qx-queue-pen-queue" queue-op="zws.qx.queue.PublishQueueHandler"/>
+  <qx-queue queue-namespace="qx-queue-event-queue" queue-op="zws.qx.event.processor.EventProcessQueueHandler"/>
+ </qx-queue-ops>
+</DesignState-config>

@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/qx-service/qx/code/java/zws/qx/program
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:08:31.188091Z
+5718
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+QxInstruction.java
+file
+
+
+
+
+2008-07-11T20:42:23.078500Z
+c57fe42d62877dd3f0333bf9ce5fbdb8
+2008-02-01T17:33:03.771752Z
+5375
+pavan.toleti
+
+TestQxInstruction.java
+file
+
+
+
+
+2008-07-11T20:42:23.141000Z
+3e0aeb6dd1a31d3394e08e1aca7c4a2d
+2008-02-29T17:08:31.188091Z
+5718
+pavan.toleti
+

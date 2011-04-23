@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/6173/trunk/zws/plugin/event/plugin-queue-event/code/java/zws/service/event
+END
+EventQueuePlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/zws/!svn/ver/6173/trunk/zws/plugin/event/plugin-queue-event/code/java/zws/service/event/EventQueuePlugin.java
+END
+TestEventQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/5680/trunk/zws/plugin/event/plugin-queue-event/code/java/zws/service/event/TestEventQueue.java
+END

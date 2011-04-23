@@ -1,0 +1,13 @@
+<project basedir=".">
+  <property name="COMPANY" value="cisco"/>
+  <property name="PROJECT" value="release-1.1"/>
+  <property name="SERVER" value="node-0"/>
+
+  <property name="ZWS_APP_HOME" value="C:/zws"/>
+  <property name="ZWS_DATA_HOME" value="C:/zws/data"/>
+
+  <property name="axis2-version-deps" value="axis2-1.1.1"/>
+  <property name="agile-plmapi-version-deps" value="plmapi-1x"/>
+  <property name="agile-sdk-version-deps" value=""/>
+
+</project>

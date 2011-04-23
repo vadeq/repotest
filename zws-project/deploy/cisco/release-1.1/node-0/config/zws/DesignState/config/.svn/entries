@@ -1,0 +1,160 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-06-04T19:29:17.296362Z
+6301
+ptoleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+pen-policy
+dir
+
+web-node.xml
+file
+
+
+
+
+2008-07-11T20:44:33.922250Z
+0cbf348005c3483824fd9b6851c88403
+2007-08-01T20:16:09.977373Z
+2719
+arbind.thakur
+
+panel-bar.xml
+file
+
+
+
+
+2008-07-11T20:44:34.000375Z
+94610f2b67b2035f107dba729f651b32
+2008-06-04T19:29:17.296362Z
+6301
+ptoleti
+
+web-system-property.xml
+file
+
+
+
+
+2008-07-11T20:44:34.109750Z
+4b820afa0683dfe15d10f1271ae29ff9
+2008-04-25T17:53:52.393846Z
+6134
+pavan.toleti
+
+services.xml
+file
+
+
+
+
+2008-07-11T20:44:34.187875Z
+0910a9dfca6b1c4475d7f5f32b89e90f
+2007-12-17T16:28:37.837031Z
+4902
+arbind.thakur
+
+tc-10-rich-client
+dir
+
+database.xml
+file
+
+
+
+
+2008-07-11T20:44:34.266000Z
+0d417d3500793418ee28310d38e4a928
+2008-04-25T17:53:52.393846Z
+6134
+pavan.toleti
+
+event-listener.xml
+file
+
+
+
+
+2008-07-11T20:44:34.344125Z
+686ea1b85c0cde119f56c48fba6cfb59
+2008-04-25T17:53:52.393846Z
+6134
+pavan.toleti
+
+qx-queue.xml
+file
+
+
+
+
+2008-07-11T20:44:34.422250Z
+5749fccd992d86500c6b6e7f581aa030
+2007-12-17T16:28:37.837031Z
+4902
+arbind.thakur
+
+server-system-property.xml
+file
+
+
+
+
+2008-07-11T20:44:34.500375Z
+be92984febdeac84b5a87de7cfa40ca9
+2008-06-04T19:29:17.296362Z
+6301
+ptoleti
+
+tag
+dir
+
+message-constants
+dir
+
+event-handlers.xml
+file
+
+
+
+
+2008-07-11T20:44:34.562875Z
+7c83e62c070ce8dd4d17bbec3063d8f7
+2007-12-17T16:28:37.837031Z
+4902
+arbind.thakur
+
+repository.xml
+file
+
+
+
+
+2008-07-11T20:44:34.609750Z
+ffb87dcc80ba56b48168ccf62247cbd5
+2008-04-25T17:53:52.393846Z
+6134
+pavan.toleti
+

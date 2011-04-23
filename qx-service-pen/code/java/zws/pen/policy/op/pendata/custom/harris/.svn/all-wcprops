@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/6420/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/custom/harris
+END
+ListFirstLevelLatestDepsFromTargetRepository.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/zws/!svn/ver/6420/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/custom/harris/ListFirstLevelLatestDepsFromTargetRepository.java
+END
+GetNewPRNotes.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/zws/!svn/ver/6512/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/custom/harris/GetNewPRNotes.java
+END
+SetFindNumbers.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/zws/!svn/ver/5924/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/custom/harris/SetFindNumbers.java
+END
+KeepOnlyNewDocs.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/zws/!svn/ver/5961/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/custom/harris/KeepOnlyNewDocs.java
+END
+ItemHasSourceAssembliesWithTrueStatusFor.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/zws/!svn/ver/6420/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/custom/harris/ItemHasSourceAssembliesWithTrueStatusFor.java
+END
+ItemIsSoleDrwParentOfSourceAssemblySubcomponents.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/zws/!svn/ver/6420/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/custom/harris/ItemIsSoleDrwParentOfSourceAssemblySubcomponents.java
+END

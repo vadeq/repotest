@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/repository/TC10/plugin-TC10/code/java/zws/repository/teamcenter/util
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:16:03.521282Z
+5294
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+TC10Util.java
+file
+
+
+
+
+2008-07-11T20:38:48.281625Z
+eb97b4ee342b40bf57302b4605ddb692
+2007-11-19T16:30:47.784609Z
+4166
+william.kasunic
+
+ZWS2TC10AttributeMapper.java
+file
+
+
+
+
+2008-07-11T20:38:48.344125Z
+cf9d42bd14f5634c407fff39829e994a
+2007-09-11T00:12:15.722268Z
+3138
+arbind.thakur
+

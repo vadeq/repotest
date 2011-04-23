@@ -1,0 +1,371 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/zws/!svn/ver/6279/trunk/zws/designstate/client/code/java/zws/exception
+END
+NotSynchronized.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/NotSynchronized.java
+END
+InitializationError.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/InitializationError.java
+END
+FailedToUntar.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/FailedToUntar.java
+END
+NoSuchType.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/NoSuchType.java
+END
+NotAFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/NotAFile.java
+END
+InvalidMapping.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/InvalidMapping.java
+END
+CanNotDo.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/4877/trunk/zws/designstate/client/code/java/zws/exception/CanNotDo.java
+END
+BadPassword.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/BadPassword.java
+END
+CanNotMaterialize.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/CanNotMaterialize.java
+END
+MatchNotFound.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/MatchNotFound.java
+END
+Duplicate.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/Duplicate.java
+END
+DuplicateName.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/DuplicateName.java
+END
+InvalidConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/InvalidConfiguration.java
+END
+StartOfList.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/StartOfList.java
+END
+InvalidComparison.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/InvalidComparison.java
+END
+LocationDoesNotExist.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/LocationDoesNotExist.java
+END
+ServerNotFound.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/ServerNotFound.java
+END
+NoMoreTokens.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/zws/!svn/ver/5542/trunk/zws/designstate/client/code/java/zws/exception/NoMoreTokens.java
+END
+EmptyDirectory.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/EmptyDirectory.java
+END
+UnexpectedMessageConstantParameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/5799/trunk/zws/designstate/client/code/java/zws/exception/UnexpectedMessageConstantParameter.java
+END
+NotADirectory.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/NotADirectory.java
+END
+InvalidAttributeMapping.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/InvalidAttributeMapping.java
+END
+MismatchedKey.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/MismatchedKey.java
+END
+InvalidType.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/InvalidType.java
+END
+FailedToTransferFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/4772/trunk/zws/designstate/client/code/java/zws/exception/FailedToTransferFile.java
+END
+UnsupportedConstraint.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/UnsupportedConstraint.java
+END
+InvalidSyntax.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/InvalidSyntax.java
+END
+RequiresDependency.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/RequiresDependency.java
+END
+EmptyFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/EmptyFile.java
+END
+Empty.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5489/trunk/zws/designstate/client/code/java/zws/exception/Empty.java
+END
+FailedToRetrieveMetadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/6279/trunk/zws/designstate/client/code/java/zws/exception/FailedToRetrieveMetadata.java
+END
+InvalidRouting.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/InvalidRouting.java
+END
+MetadataException.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/MetadataException.java
+END
+AgileException.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/AgileException.java
+END
+EventHandlingError.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/543/trunk/zws/designstate/client/code/java/zws/exception/EventHandlingError.java
+END
+zwsException.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/zwsException.java
+END
+CircularDependency.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/CircularDependency.java
+END
+PathDoesNotExist.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/PathDoesNotExist.java
+END
+NotUpToDate.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/NotUpToDate.java
+END
+DriverNotFound.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/DriverNotFound.java
+END
+UnsupportedOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/UnsupportedOperation.java
+END
+DatabaseError.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/DatabaseError.java
+END
+Unmodifyable.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/Unmodifyable.java
+END
+MultipleVersionsOfSameFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/1598/trunk/zws/designstate/client/code/java/zws/exception/MultipleVersionsOfSameFile.java
+END
+NotEmpty.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/NotEmpty.java
+END
+WaitedTooLong.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/WaitedTooLong.java
+END
+FailedToGzip.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/FailedToGzip.java
+END
+FailedToExportBinaryFiles.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/FailedToExportBinaryFiles.java
+END
+InvalidValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/InvalidValue.java
+END
+NotConnected.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/NotConnected.java
+END
+FailedToGunzip.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/FailedToGunzip.java
+END
+BadUsername.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/BadUsername.java
+END
+FailedToAuthenticate.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/2467/trunk/zws/designstate/client/code/java/zws/exception/FailedToAuthenticate.java
+END
+InvalidState.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/InvalidState.java
+END
+InvalidName.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/InvalidName.java
+END
+EndOfList.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/EndOfList.java
+END
+NotAString.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/543/trunk/zws/designstate/client/code/java/zws/exception/NotAString.java
+END
+IsLocked.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/IsLocked.java
+END
+NameNotFound.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/NameNotFound.java
+END
+InvalidOrigin.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/4580/trunk/zws/designstate/client/code/java/zws/exception/InvalidOrigin.java
+END
+FailedToTar.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/exception/FailedToTar.java
+END

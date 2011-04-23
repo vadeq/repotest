@@ -1,0 +1,58 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/zws-project/deploy/zws/demo/node-0/config/zws/DesignState/config
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-07-08T16:14:23.243555Z
+6397
+rmccabe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+deployment-environment.xml
+file
+
+
+
+
+2008-07-11T20:44:48.469125Z
+5e8f60f0d4b949c2ffbe0c5a383e9af3
+2008-07-08T16:14:23.243555Z
+6397
+rmccabe
+
+version.txt
+file
+
+
+
+
+2008-07-11T20:44:48.531625Z
+63b9f607b7f1eece1c2e1a9bb2c4a1f3
+2008-07-08T16:14:23.243555Z
+6397
+rmccabe
+
+demo
+dir
+
+tag
+dir
+

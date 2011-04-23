@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<designstate-config>
+ <pen-policies>
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <!--  Harris I2A                           -->
+  <!--  PEN policy for ProE-Library-MassSync -->
+  <!--+++++++++++++++++++++++++++++++++++++++-->
+  <pen-policy name="ProE-Library-MassSync" src-repository="ilink" target-repository="agile-sdk">
+   <retrieve-data>
+    <load-latest-metadata-from-source-repository/>
+   </retrieve-data>
+   
+   <transform-data>
+    <!-- Retrieve publishing-environment setting on this machine -->
+    <set-global-status status="publishing-environment">
+     <make-string><get-system-property-value attribute="publishing-environment" /></make-string>
+    </set-global-status>
+    
+    <!-- Agile Subclass -->
+    <for-each-element>
+     <set-attribute xfer-attribute="agile-class" value="Part"/>
+     <!-- Generate Part Number -->
+     <set-attribute xfer-attribute="number"> <uppercase> <get-source-value attribute="Part_Number"/> </uppercase> </set-attribute>
+     <set-attribute xfer-attribute="name"> <uppercase> <get-source-value attribute="Part_Number"/> </uppercase> </set-attribute>
+     <!-- Map Attributes -->
+     <set-attribute xfer-attribute="Make/Buy" value="Make"/>
+     <set-attribute xfer-attribute="Authoring Application" value="MCAD"/>
+     <set-attribute xfer-attribute="UOM" value="Each"/>
+     <set-attribute xfer-attribute="Description" max-length="50">
+      <make-string>
+       <get-source-value attribute="Description"/>
+       <make-string string=" "/>
+       <get-source-value attribute="Description2"/>
+      </make-string>
+     </set-attribute>
+     <rename-attribute source-attribute="Cage_Code" xfer-attribute="Cage Code" default-value="91417"/>
+     <rename-attribute source-attribute="Project" xfer-attribute="Project Authorization"/>
+    </for-each-element>
+    <!-- restructure design -->
+    <!-- no structure is required: subcomponents should not be published for Libraries -->
+   </transform-data>
+   
+   
+   <!-- analyze data -->
+   <analyze-data>
+    <!-- initialize variables -->
+
+    <for-each-element> <!-- initialization -->
+    <set-element-status status="item-needs-evaluation" value="true" />
+    <!--library vars -->
+    <set-element-status status="item-is-valid" value="~"/>
+    <set-element-status status="filter-out" value="~"/>
+    <set-element-status status="sync-status" value="~"/>
+    <set-element-status status="item-has-name-conflict" value="~"/>
+    <set-element-status status="item-source-system-matches-pub-env" value="~"/>    
+    <set-element-status status="item-has-synchronization-conflict" value="~"/>
+
+
+    <!-- initialize Publishing Patteren to be undefined -->
+    <set-element-status status="publish-pattern" value="~"/>
+    <set-element-status status="ignore-for-publishing" value="~"/>
+    <set-element-status status="sync-item" value="~"/>    
+
+    <!-- initialize actions for publishing pattern -->
+    <set-element-status status="item-needs-to-be-created" value="false"/>
+    <set-element-status status="item-needs-to-be-synchronized" value="false"/>
+    <set-element-status status="metadata-needs-to-be-updated" value="false"/>
+    <set-element-status status="struct-needs-to-be-updated" value="false"/>
+    <set-element-status status="file-needs-to-be-updated" value="false"/>
+    <set-element-status status="doc-needs-to-be-added" value="false"/>
+    <!-- initialize actions for publishing patterns -->
+
+    <!-- basic attribute validation -->
+    <set-element-status status="sync-item" value="false"/>    
+    <set-element-status status="item-is-valid" value="true"/>   
+    <!-- Part number validation -->
+
+
+     <if-element>
+      <is-equal value="NO_PUB" ignore-case="true">
+       <uppercase>
+        <get-source-value attribute="Part_Number"/>
+       </uppercase>
+      </is-equal>
+      <then>
+       <set-element-status status="filter-out" value="true"/>
+       <write-to-file file-name="\zws\log\work\MassSync-StatusMessageDetails.txt">
+       <make-string>
+        <make-time/><make-string string=" "/>        
+        <resolve-message key="filtered-out">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+        </resolve-message>
+       </make-string>         
+       </write-to-file>
+       <write-to-file file-name="\zws\log\work\nosync-filtered-out.txt">
+        <resolve-message key="nosync-filtered-out">
+         <property attribute="timestamp"><make-time/></property>  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+	        <property attribute="case-number"><make-string string="Basic attribute validation"/></property>
+        </resolve-message>         
+       </write-to-file>       
+      </then>
+      <else>
+       <set-element-status status="filter-out" value="false"/>
+      </else>
+     </if-element>
+
+
+     <if-element>
+     <and>			
+       <item-is-not-filtered-out/>
+       <not><string-length-is-at-least min="1"> <get-source-value attribute="Part_Number"/></string-length-is-at-least></not>
+     </and>
+      <then>
+       <set-element-status status="item-is-valid" value="false"/>
+       <write-to-file file-name="\zws\log\work\MassSync-StatusMessageDetails.txt">
+        <make-string>
+         <make-time/><make-string string=" "/>        
+         <resolve-message key="invalid-pn-empty">  
+          <property attribute="name"><get-source-value attribute="Name"/></property>
+         </resolve-message>
+        </make-string>         
+       </write-to-file>
+      </then>
+     </if-element>
+     
+     <if-element>
+      <and>			
+       <item-is-not-filtered-out/>
+       <not><string-length-is-at-most max="21"> <get-source-value attribute="Part_Number"/></string-length-is-at-most></not>
+       </and>
+      <then>
+       <set-element-status status="item-is-valid" value="false"/>
+       <write-to-file file-name="\zws\log\work\MassSync-StatusMessageDetails.txt">
+        <make-string>
+         <make-time/><make-string string=" "/>        
+         <resolve-message key="invalid-pn-too-long">  
+          <property attribute="name"><get-source-value attribute="Name"/></property>
+          <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+         </resolve-message>
+        </make-string>         
+       </write-to-file>
+      </then>
+     </if-element>
+
+     <if-element>
+      <and>			
+       <item-is-not-filtered-out/>
+       <not>
+        <string-does-not-contain-invalid-chars invalid-characters=" &quot;`'~|">
+         <get-source-value attribute="Part_Number"/>
+        </string-does-not-contain-invalid-chars>
+       </not>
+      </and>
+      <then>
+       <set-element-status status="item-is-valid" value="false"/>
+       <write-to-file file-name="\zws\log\work\MassSync-StatusMessageDetails.txt">
+        <make-string>
+         <make-time/><make-string string=" "/>        
+         <resolve-message key="invalid-pn-bad-chars">  
+          <property attribute="name"><get-source-value attribute="Name"/></property>
+          <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+          <property attribute="bad-chars" value=" &quot;`'~|"></property>
+         </resolve-message>
+        </make-string>         
+       </write-to-file>
+     </then>
+     </if-element>
+     
+    <!-- check for bad characters in Description field -->            
+    <if-element>
+     <and>
+      <item-is-not-filtered-out/>
+      <not>
+       <string-does-not-contain-invalid-chars invalid-characters="&quot;`'~|">        
+        <get-xfer-value attribute="Description"/>
+       </string-does-not-contain-invalid-chars>
+      </not>
+     </and>
+     <then>
+      <set-element-status status="item-is-valid" value="false"/>
+      <error-message>
+       <resolve-message key="invalid-desc-bad-chars">  
+        <property attribute="name"><get-source-value attribute="Name"/></property>
+        <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+        <property attribute="bad-chars" value="&quot;`'~|" />
+       </resolve-message>         
+      </error-message>
+     </then>
+    </if-element>
+    
+			
+     <if-element>
+      <and>			
+       <item-is-not-filtered-out/>
+       <not>
+        <or>
+         <is-equal value="P"><uppercase><get-source-value attribute="Cage_Code"/></uppercase></is-equal>
+         <string-length-is-exactly length="5"> <get-source-value attribute="Cage_Code"/></string-length-is-exactly>
+        </or>
+       </not>
+      </and>
+      <then>
+       <set-element-status status="item-is-valid" value="false"/>
+       <write-to-file file-name="\zws\log\work\MassSync-StatusMessageDetails.txt">
+        <make-string>
+         <make-time/><make-string string=" "/>        
+         <resolve-message key="invalid-cagecode">  
+          <property attribute="name"><get-source-value attribute="Name"/></property>
+          <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+          <property attribute="cage-code"><get-source-value attribute="Cage_Code"/></property>
+         </resolve-message>
+        </make-string>         
+       </write-to-file>
+      </then>
+     </if-element>
+
+     <if-element>
+      <and>			
+       <item-is-not-filtered-out/>
+       <not><string-length-is-exactly length="4"><get-source-value attribute="Project"/></string-length-is-exactly></not>
+      </and>
+      <then>
+       <set-element-status status="item-is-valid" value="false"/>
+       <write-to-file file-name="\zws\log\work\MassSync-StatusMessageDetails.txt">
+        <make-string>
+         <make-time/><make-string string=" "/>        
+         <resolve-message key="invalid-project">  
+          <property attribute="name"><get-source-value attribute="Name"/></property>
+          <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+          <property attribute="project"><get-source-value attribute="Project"/></property>
+         </resolve-message>
+        </make-string>         
+       </write-to-file>
+      </then>
+     </if-element>
+
+    </for-each-element>
+    
+
+    <!-- Define Truth Table Variables -->
+    <load-synchronization-status/>
+    <detect-name-conflicts/>
+    <detect-synchronization-conflicts/>
+      
+    <for-each-element>
+     <load-metadata-from-target-repository/>
+    </for-each-element>
+
+
+		  <!-- BEGIN: Check for all non-publish folders (rmccabe) -->
+    <set-global-status status="all-non-publish" value="true"/>
+    <set-global-status status="any-non-publish" value="false"/>
+
+   <for-each-origin-to-publish>
+		  <if-element>
+     <item-is-not-filtered-out/>
+     <then>
+      <if-element>
+       <list-contains>
+        <get-list-property-value property="non-publishing-folders" />
+        <get-source-value attribute="folder"/>
+       </list-contains>
+       <then>
+        <set-global-status status="any-non-publish" value="true"/>
+        <write-to-file file-name="\zws\log\work\nosync-non-publishing-folder.txt">
+         <make-string>
+          <make-time/><make-string string=" "/>         
+          <resolve-message key="invalid-non-publish">  
+           <property attribute="name"><get-source-value attribute="Name"/></property>
+           <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+           <property attribute="folder"><get-source-value attribute="folder"/></property>
+          </resolve-message>
+         </make-string>
+        </write-to-file>
+       </then>
+       <else>
+        <set-global-status status="all-non-publish" value="false"/>
+       </else>
+      </if-element>
+     </then>
+    </if-element>
+   </for-each-origin-to-publish>
+
+     <if>
+      <is-equal value="true" ignore-case="true">
+       <get-global-status status="all-non-publish" />
+      </is-equal>
+      <then>       
+       <cancel notify="false"/>
+      </then>
+     </if>
+
+     <if>
+      <and>
+       <is-equal value="false" ignore-case="true">
+        <get-global-status status="all-non-publish" />
+       </is-equal>
+       <is-equal value="true" ignore-case="true">
+        <get-global-status status="any-non-publish" />
+       </is-equal>
+      </and>
+      <then>      
+       <cancel  notify="false"/>        
+      </then>
+     </if>
+		<!-- END: Check for all non-publish folders  --> 
+
+    <!-- Set 'item-source-system-matches-pub-env' variable for vault functionality -->
+    <for-each-element>
+     <set-element-status status="item-source-system-matches-pub-env" value="true"/>   
+     <if-element>
+      <is-empty><get-target-value attribute="Source System"/></is-empty>
+      <then><set-element-status status="item-source-system-matches-pub-env" value="true"/></then>
+      <else>      
+       <if-element>
+        <is-not-equal>
+         <make-string><get-global-status status="publishing-environment" /></make-string>
+         <make-string><get-target-value attribute="Source System" /></make-string>
+        </is-not-equal>
+        <then><set-element-status status="item-source-system-matches-pub-env" value="false"/></then>
+        <else></else>
+       </if-element>    
+      </else>
+      </if-element>        
+    </for-each-element>
+     
+    <!-- Define Truth Table Variables -->
+    
+    
+ <!-- Truth Table Logic ################################################### -->
+
+ <!--
+ Case	ms-cnl-1000
+ publish-action	Cancel
+ is-valid:F
+ -->
+    <set-global-status status="policy-case" value="ms-cnl-1000"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>      
+       <item-is-not-valid/>
+      </and>
+     <then>
+      <set-global-status status="case-id" value="*"><get-global-status status="policy-case"/></set-global-status>
+       <write-to-file file-name="\zws\log\work\nosync-invalid.txt">
+        <resolve-message key="nosync-invalid">
+         <property attribute="timestamp"><make-time/></property>           
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </write-to-file>      
+      <cancel notify="false"/>
+     </then>
+    </if-element>
+    </for-each-element>
+
+
+ <!--
+ Case	ms-cnl-1100
+ publish-action	Cancel
+ filter-out:T
+ -->
+    <set-global-status status="policy-case" value="ms-cnl-1100"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>      
+       <item-is-filtered-out/>
+      </and>
+     <then>
+      <set-global-status status="case-id" value="*"><get-global-status status="policy-case"/></set-global-status>
+       <write-to-file file-name="\zws\log\work\nosync-filtered-out.txt">
+        <resolve-message key="nosync-filtered-out">
+         <property attribute="timestamp"><make-time/></property>  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </write-to-file>      
+      <cancel notify="false"/>
+     </then>
+    </if-element>
+    </for-each-element>
+
+
+ <!--
+ Case	ms-cnl-1200
+ publish-action	Cancel
+ matches-pub-env:F
+ -->
+ 
+    <set-global-status status="policy-case" value="ms-cnl-1200"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>      
+       <item-source-system-does-not-match-pub-env/>
+      </and>
+     <then>
+      <set-global-status status="case-id" value="*"><get-global-status status="policy-case"/></set-global-status>
+       <write-to-file file-name="\zws\log\work\nosync-bad-env.txt">
+        <resolve-message key="nosync-bad-env">
+         <property attribute="timestamp"><make-time/></property>           
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+         <property attribute="env"><get-global-status status="publishing-environment"/></property>
+         <property attribute="source-system"><get-target-value attribute="Source System"/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </write-to-file>      
+      <cancel notify="false"/>
+     </then>
+    </if-element>
+    </for-each-element>
+
+
+ <!--
+ Case	ms-cnl-1300
+ publish-action	Cancel
+ sync-status: NOT new
+ -->
+    <set-global-status status="policy-case" value="ms-cnl-1300"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>      
+       <not><item-is-new/></not>
+      </and>
+     <then>
+      <set-global-status status="case-id" value="*"><get-global-status status="policy-case"/></set-global-status>
+       <write-to-file file-name="\zws\log\work\nosync-unexpected-sync-status.txt">
+        <resolve-message key="nosync-unexpected-sync-status">
+         <property attribute="timestamp"><make-time/></property>           
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+         <property attribute="sync-status"><get-element-status status="sync-status"/></property>         
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </write-to-file>      
+      <cancel notify="false"/>
+     </then>
+    </if-element>
+    </for-each-element> 
+ 
+ 
+  <!--
+ Case	ms-cnl-1400
+ publish-action	Cancel
+ name-cflct:F
+ -->
+    <set-global-status status="policy-case" value="ms-cnl-1400"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>      
+       <item-does-not-have-name-conflict/>
+      </and>
+     <then>
+      <set-global-status status="case-id" value="*"><get-global-status status="policy-case"/></set-global-status>
+       <write-to-file file-name="\zws\log\work\nosync-missing-target.txt">
+        <resolve-message key="nosync-missing-target">
+         <property attribute="timestamp"><make-time/></property>           
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>         
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </write-to-file>      
+      <cancel notify="false"/>
+     </then>
+    </if-element>
+    </for-each-element> 
+  
+ <!--
+ Test Case	ms-cnl-1500
+ publish-action	Cancel
+ sync-conflict:T
+ -->
+    <set-global-status status="policy-case" value="ms-cnl-1500"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>      
+       <item-has-synchronization-conflict/>
+      </and>
+     <then>
+      <set-global-status status="case-id" value="*"><get-global-status status="policy-case"/></set-global-status>
+       <write-to-file file-name="\zws\log\work\nosync-sync-conflict.txt">
+        <resolve-message key="nosync-sync-conflict">
+         <property attribute="timestamp"><make-time/></property>           
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+         <property attribute="sync-conflict-name"><get-element-status status="sync-conflict-uid"/></property>         
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </write-to-file>      
+      <cancel notify="false"/>
+     </then>
+    </if-element>
+    </for-each-element> 
+  
+
+ <!--
+ Case	ms-syn-1600
+ publish-action	Synchronize
+ is-valid:T filter-out:F matches-pub-env:T sync-status:is-new name-cflct:T sync-conflict:F
+ -->
+    <set-global-status status="policy-case" value="ms-syn-1600"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>      
+       <item-is-valid/>
+       <item-is-not-filtered-out/>
+       <item-source-system-matches-pub-env/>
+       <item-is-new/>
+       <item-has-name-conflict/>
+       <item-does-not-have-synchronization-conflict/>
+      </and>
+     <then>
+      <set-global-status status="case-id" value="*"><get-global-status status="policy-case"/></set-global-status>
+      <set-element-status status="sync-item" value="true"/>      
+      <write-to-file file-name="\zws\log\work\sync.txt">
+       <resolve-message key="sync">
+        <property attribute="timestamp"><make-time/></property>          
+        <property attribute="name"><get-source-value attribute="Name"/></property>
+        <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>         
+        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+       </resolve-message>         
+      </write-to-file>
+      <turn-off-notification />
+     </then>
+    </if-element>
+    </for-each-element> 
+    <!-- END Truth Table Logic ################################################### -->
+ 
+ 
+ 
+     <for-each-element>
+     <set-global-status status="policy-case" value="~"/>
+     
+     <!-- sync -->
+     <if>
+      <element-status-is-true status="sync-item"/>
+      <then>
+       <do-not-need-to-create-item/>
+       <do-not-need-to-update-metadata/>
+       <do-not-need-to-update-struct/>
+       <do-not-need-to-update-file/>
+       <need-to-synchronize-item/>      
+      </then>
+     </if>
+              
+     </for-each-element>
+     <show-pen-data/>
+   </analyze-data>
+
+
+   <cancel-publish continue-if-cancelled="true">
+    <if continue-if-cancelled="true">
+     <is-equal value="false" ignore-case="true">
+      <get-global-status status="all-non-publish" />
+     </is-equal>
+     <then continue-if-cancelled="true"></then>
+    </if>
+   </cancel-publish>
+
+   <!-- publish data -->
+   <publish-target-data>
+    <explicit-synchronize/>
+   </publish-target-data>
+ 
+   <update-source/>
+    
+  </pen-policy>
+ </pen-policies>
+</designstate-config>

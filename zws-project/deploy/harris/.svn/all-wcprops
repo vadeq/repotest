@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/zws/!svn/ver/6504/trunk/zws/zws-project/deploy/harris
+END
+deploy.bat
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/zws/!svn/ver/2709/trunk/zws/zws-project/deploy/harris/deploy.bat
+END
+todo.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/zws/!svn/ver/2932/trunk/zws/zws-project/deploy/harris/todo.txt
+END
+update.bat
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/zws/!svn/ver/2709/trunk/zws/zws-project/deploy/harris/update.bat
+END
+checkin.bat
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/zws/!svn/ver/2502/trunk/zws/zws-project/deploy/harris/checkin.bat
+END
+local-env.template
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/zws/!svn/ver/6252/trunk/zws/zws-project/deploy/harris/local-env.template
+END
+deploy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/zws/!svn/ver/6389/trunk/zws/zws-project/deploy/harris/deploy.xml
+END

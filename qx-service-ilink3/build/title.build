@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="title" basedir=".">
+
+  <!-- title -->
+  <property name="title" value="Design State Server-Side Intralink 3x Service"/>
+
+  <!-- names -->
+  <property name="svn-project-name" value="qx-service-ilink3"/>
+  <property name="eclipse-project-name" value="qx-service-ilink3"/>
+  <property name="jarfile-name" value="zws-qx-service-ilink3"/>
+
+</project>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/zws/!svn/ver/5348/trunk/zws/zws-project/deploy/harris/validate
+END
+chr.bat
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/zws/!svn/ver/5348/trunk/zws/zws-project/deploy/harris/validate/chr.bat
+END
+validate.properties
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5348/trunk/zws/zws-project/deploy/harris/validate/validate.properties
+END
+validate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/5348/trunk/zws/zws-project/deploy/harris/validate/validate.xml
+END
+db.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/zws/!svn/ver/5161/trunk/zws/zws-project/deploy/harris/validate/db.xsl
+END
+validate.bat
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/5161/trunk/zws/zws-project/deploy/harris/validate/validate.bat
+END

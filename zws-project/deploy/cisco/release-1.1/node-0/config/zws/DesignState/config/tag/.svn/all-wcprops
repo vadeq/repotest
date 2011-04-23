@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/zws/!svn/ver/6134/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/tag
+END
+tc10-standalone-services.zws
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/zws/!svn/ver/6134/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/tag/tc10-standalone-services.zws
+END
+event-handlers.zws
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/zws/!svn/ver/4134/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/tag/event-handlers.zws
+END
+repository.zws
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/zws/!svn/ver/6134/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/tag/repository.zws
+END
+services.zws
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/zws/!svn/ver/4049/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/tag/services.zws
+END
+database.zws
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/zws/!svn/ver/6134/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/tag/database.zws
+END
+event-listener.zws
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/zws/!svn/ver/6134/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/tag/event-listener.zws
+END
+property.zws
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/zws/!svn/ver/683/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/tag/property.zws
+END
+config.zws
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/683/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/tag/config.zws
+END
+qx-queue.zws
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/zws/!svn/ver/683/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/tag/qx-queue.zws
+END
+tc10-standalone-repository.zws
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/zws/!svn/ver/6134/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/tag/tc10-standalone-repository.zws
+END
+topology.zws
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/zws/!svn/ver/683/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/tag/topology.zws
+END

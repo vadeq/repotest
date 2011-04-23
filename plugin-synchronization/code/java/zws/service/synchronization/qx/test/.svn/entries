@@ -1,0 +1,40 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/synchronization/plugin-synchronization/code/java/zws/service/synchronization/qx/test
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:08:18.724515Z
+5710
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+TestSync.java
+file
+
+
+
+
+2008-07-11T20:39:44.109750Z
+b0d67b426769200623bf8be4678baa93
+2008-02-29T17:08:18.724515Z
+5710
+pavan.toleti
+

@@ -1,0 +1,57 @@
+<DesignState-config>
+	<policy-matches>
+
+		<matching-rules policy="ProE-Library" priority="3" target-name="agile-sdk" intent="publish|promote|review">
+			<discard-policy-match><root-folder location="Root Folder/Training" /></discard-policy-match>
+			<discard-policy-match><root-folder location="Root Folder/test" /></discard-policy-match>
+			<discard-policy-match><root-folder location="Root Folder/RTP Forms" /></discard-policy-match>
+			<discard-policy-match><root-folder location="Root Folder/Libraries/Design Aids" /></discard-policy-match>
+			<discard-policy-match><root-folder location="Root Folder/Libraries/Formats" /></discard-policy-match>
+			<discard-policy-match><root-folder location="Root Folder/Libraries/Materials" /></discard-policy-match>
+			<discard-policy-match><root-folder location="Root Folder/Libraries/Notes" /></discard-policy-match>
+			<discard-policy-match><root-folder location="Root Folder/Libraries/Pending" /></discard-policy-match>
+			<discard-policy-match><root-folder location="Root Folder/Libraries/Pro Cable" /></discard-policy-match>
+			<discard-policy-match><root-folder location="Root Folder/Libraries/Sections" /></discard-policy-match>
+			<discard-policy-match><root-folder location="Root Folder/Libraries/Symbols" /></discard-policy-match>
+			<discard-policy-match><root-folder location="Root Folder/Libraries/Tables" /></discard-policy-match>
+			<discard-policy-match><root-folder location="Root Folder/Libraries/Templates" /></discard-policy-match>
+			
+			<include-match>
+				<root-folder location="Root Folder/Libraries" />
+				<!-- <compare-attribute attribute-name="release-level" attribute-value="Pending"/> -->
+			</include-match>
+		</matching-rules>
+
+		<matching-rules policy="ProE-Models" priority="2" target-name="agile-sdk" intent="publish|promote|review">
+			<discard-policy-match><root-folder location="Root Folder/Training" /></discard-policy-match>
+			<discard-policy-match><root-folder location="Root Folder/test" /></discard-policy-match>
+			<discard-policy-match><root-folder location="Root Folder/RTP Forms" /></discard-policy-match>
+			
+			<discard-policy-match><root-folder location="Root Folder/Libraries" /></discard-policy-match>
+			<discard-policy-match><is-drw-item /></discard-policy-match>
+
+			<include-match>
+				<root-folder location="Root Folder" />
+				<is-prt-item />
+			</include-match>
+
+			<include-match>
+				<root-folder location="Root Folder" />
+				<is-asm-item />
+			</include-match>
+		</matching-rules>
+
+		<matching-rules policy="ProE-Drawings" priority="1" target-name="agile-sdk" intent="publish|promote|review">
+			<discard-policy-match><root-folder location="Root Folder/Training" /></discard-policy-match>
+			<discard-policy-match><root-folder location="Root Folder/test" /></discard-policy-match>
+			<discard-policy-match><root-folder location="Root Folder/RTP Forms" /></discard-policy-match>
+			<discard-policy-match><root-folder location="Root Folder/Libraries" /></discard-policy-match>
+
+			<include-match>
+				<is-drw-item />
+				<root-folder location="Root Folder" />
+			</include-match>
+		</matching-rules>
+
+	</policy-matches>
+</DesignState-config>

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/zws/!svn/ver/5336/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/bootstrap
+END
+bootstrap.zws
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/zws/!svn/ver/5180/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/bootstrap/bootstrap.zws
+END
+server-bootstrap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/zws/!svn/ver/5180/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/bootstrap/server-bootstrap.xml
+END

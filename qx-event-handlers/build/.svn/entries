@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/event/qx-event-handlers/build
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:04:22.078273Z
+5261
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+title.build
+file
+
+
+
+
+2008-07-11T17:23:48.734750Z
+226e076cde1ac0a0699362a0fefa9a34
+2007-11-05T20:31:07.868062Z
+3912
+eankutse
+
+classpath.build
+file
+
+
+
+
+2008-07-11T17:23:48.812875Z
+45b59c7f9e03e452fece79bd8b82de1b
+2007-11-16T20:04:09.306377Z
+4120
+arbind.thakur
+

@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/cldr/nls/ko-kr
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+number.js
+file
+
+
+
+
+2008-07-11T22:10:23.766000Z
+e759727e9c499e9b6a0af2055d15b391
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+gregorian.js
+file
+
+
+
+
+2008-07-11T22:10:23.828500Z
+c90d373b2729da4528408e63305d4392
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+

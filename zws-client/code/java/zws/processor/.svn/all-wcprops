@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/processor
+END
+Processor.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/processor/Processor.java
+END
+SerialProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/processor/SerialProcessor.java
+END
+BatchProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/processor/BatchProcessor.java
+END
+ReplicationProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/processor/ReplicationProcessor.java
+END
+ProcessorBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/processor/ProcessorBase.java
+END
+ProcessorList.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/processor/ProcessorList.java
+END
+ReportProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/processor/ReportProcessor.java
+END
+ParallelProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/processor/ParallelProcessor.java
+END

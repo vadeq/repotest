@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/nls/pl
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+common.js
+file
+
+
+
+
+2008-07-11T22:06:47.437875Z
+3bb5fc1da60d0f6de81193b06cb5ea7e
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+loading.js
+file
+
+
+
+
+2008-07-11T22:06:47.516000Z
+0e05f11899fd9f4820b2f720178102df
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+

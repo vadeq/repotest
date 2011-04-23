@@ -1,0 +1,10 @@
+xsd.folder=PLMAPI_SCHEMA
+xsd.file=plm-api-xml.xsd
+connector.folder=PLMAPI_CONNECTOR
+connector.file=plm-api-sdk.xml
+async.folder=PLMAPI_ASYNC
+async.file=plm-api-server.xml
+mapping.folder=PLMAPI_MAPPING
+mapping.file=mastermapping.txt
+validation.changesubclass=ECO
+revision.aiAutoRevisionFormat=$nnn

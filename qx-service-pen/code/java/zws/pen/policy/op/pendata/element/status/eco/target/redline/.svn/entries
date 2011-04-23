@@ -1,0 +1,40 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/status/eco/target/redline
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-23T00:26:41.270635Z
+5521
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+TargetECORedLineStatusOpBase.java
+file
+
+
+
+
+2008-07-11T20:41:36.766000Z
+ddd2195be99542056262cc455d6fa477
+2008-02-23T00:26:41.270635Z
+5521
+pavan.toleti
+

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/datasource
+END
+Find.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/datasource/Find.java
+END
+Operation.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/datasource/Operation.java
+END
+StoreBinary.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/datasource/StoreBinary.java
+END
+Delete.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/datasource/Delete.java
+END
+Update.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/datasource/Update.java
+END
+Add.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/datasource/Add.java
+END
+StoredProcedure.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/datasource/StoredProcedure.java
+END
+Store.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/datasource/Store.java
+END

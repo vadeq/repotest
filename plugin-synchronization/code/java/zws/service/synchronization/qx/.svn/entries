@@ -1,0 +1,67 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/synchronization/plugin-synchronization/code/java/zws/service/synchronization/qx
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-04-23T20:11:03.960172Z
+6106
+rmccabe
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+test
+dir
+
+SynchronizationClient.java
+file
+
+
+
+
+2008-07-11T20:39:44.875375Z
+dd33486851a608aa12353c8ea4f3896c
+2008-04-23T20:11:03.960172Z
+6106
+rmccabe
+
+SynchronizationService.java
+file
+
+
+
+
+2008-07-11T20:39:44.953500Z
+98f35df83abd2bb9e144ae6a6b283aac
+2007-11-19T18:56:20.010823Z
+4175
+pavan.toleti
+
+SynchronizationParser.java
+file
+
+
+
+
+2008-07-11T20:39:45.016000Z
+b891a8c048597fd6f6b216caa12603fa
+2008-02-29T17:00:52.385529Z
+5674
+pavan.toleti
+

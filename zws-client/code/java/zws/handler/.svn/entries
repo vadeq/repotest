@@ -1,0 +1,100 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/client/code/java/zws/handler
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+ier
+dir
+
+HandlerRegistry.java
+file
+
+
+
+
+2008-07-11T20:46:21.641000Z
+1d354e74888d8e902dede316136877ef
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+HandlerBase.java
+file
+
+
+
+
+2008-07-11T20:46:21.750375Z
+d80a10561a400ea5df6075260e82688e
+2007-06-04T16:55:55.440588Z
+543
+pavan.toleti
+
+replication
+dir
+
+datasource
+dir
+
+TestPrintHandler.java
+file
+
+
+
+
+2008-07-11T20:46:21.906625Z
+949fe9ddd4d4f5f833fcca1f83b3d4e7
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+i2a
+dir
+
+Handler.java
+file
+
+
+
+
+2008-07-11T20:46:22.000375Z
+3036bc8d87159d108f4b0b8a7fd67a2b
+2007-06-04T17:14:41.833836Z
+551
+pavan.toleti
+
+TestHandler.java
+file
+
+
+
+
+2008-07-11T20:46:22.062875Z
+3bd4479a50423ed3e8f8ac8d28092272
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+

@@ -1,0 +1,18 @@
+TC10 Plugin:
+ x TCProxy			 x implements TC10 Interface functions
+ + TC10client    x converts TC10 function calls to QxXML
+                 > convert QxXML to java
+ + QxIntructionFileClient  x writes QxXML to a instruction.xml
+                           > reads result.xml to QxXML
+
+-------------------------------------------------------
+
+TC10 Standalone Service:
+ x QxInstructionFileService x read instruction.xml and convert to QxXML
+                 x calls QxServiceTC10
+ + QxServiceTC10 x receive QxXML
+                 > calls TC10 Repository functions
+                 x convert results to QxXML
+                 x write QxXML results to results.xml
+ x TC10Repository
+ x Load configuration

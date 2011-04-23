@@ -1,0 +1,26 @@
+DROP DATABASE IF EXISTS zwsQxQueue;
+CREATE DATABASE zwsQxQueue;
+USE zwsQxQueue;
+
+# QxQueue
+	drop table if exists QxQueue;
+	create table QxQueue (
+		name  varchar(250)      not null primary key,
+		state varchar(50)       not null,
+		notes mediumtext        default ''
+	)engine = InnoDB;
+
+	drop table if exists QxElement;
+
+	create table QxElement (
+		id            bigint(20)      not null auto_increment primary key references QxQueue(id),
+		namespace     varchar(250)    not null,
+		name          varchar(250)    not null,
+		priority      bigint(20)      not null,
+		qorder        bigint(20)      not null,
+		state         varchar(50)     not null,
+		context       mediumtext      default '',
+		instruction   mediumtext      not null,
+		summary       mediumtext      default '',
+		notes         mediumtext      default '',
+	);

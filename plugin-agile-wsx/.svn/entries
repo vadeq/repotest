@@ -1,0 +1,49 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/repository/agile/plugin-agile-wsx
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-06-04T19:15:52.975097Z
+6295
+ptoleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+build
+dir
+
+config
+dir
+
+code
+dir
+
+build.xml
+file
+
+
+
+
+2008-07-11T20:36:45.437875Z
+22fa779ded323e4f77d6798cc65dded0
+2008-05-29T14:57:49.919190Z
+6287
+ptoleti
+

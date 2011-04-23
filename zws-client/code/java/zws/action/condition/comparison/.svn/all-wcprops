@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/code/java/zws/action/condition/comparison
+END
+IsGreaterThan.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/action/condition/comparison/IsGreaterThan.java
+END
+IsEqual.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/action/condition/comparison/IsEqual.java
+END
+IsNotEqual.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/action/condition/comparison/IsNotEqual.java
+END
+IsLessThanOrEqual.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/action/condition/comparison/IsLessThanOrEqual.java
+END
+IsGreaterThanOrEqual.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/action/condition/comparison/IsGreaterThanOrEqual.java
+END
+Comparison.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/1586/trunk/zws/designstate/client/code/java/zws/action/condition/comparison/Comparison.java
+END
+IsLessThan.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/action/condition/comparison/IsLessThan.java
+END

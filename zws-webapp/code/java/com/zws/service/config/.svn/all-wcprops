@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/zws/!svn/ver/5307/trunk/zws/designstate/webapp/code/java/com/zws/service/config
+END
+DuplicateConfigurationName.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/service/config/DuplicateConfigurationName.java
+END
+ConfigurationNotFound.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/service/config/ConfigurationNotFound.java
+END
+SearchAgentService.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/service/config/SearchAgentService.java
+END
+DataReportService.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/service/config/DataReportService.java
+END
+DataProcessorService.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/service/config/DataProcessorService.java
+END
+DataSourceService.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/service/config/DataSourceService.java
+END

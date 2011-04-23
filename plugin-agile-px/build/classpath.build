@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="classpath">
+  <path id="classpath">
+    <!-- update to name specific jars -->
+    <fileset dir="${deps}/agile/AgileAPI/9.2.0_46"> <include name="AgileAPI.jar"/> </fileset>    
+    <fileset dir="${deps}/agile/AgileAPI/9.2.0_46"> <include name="pxapi.jar"/> </fileset>
+    <fileset dir="${deps}/Axis2-1.3/lib"> <include name="commons-httpclient-3.0.1.jar"/> </fileset>
+  </path>
+</project>

@@ -1,0 +1,4 @@
+use DesignState;
+insert into zwsuser (username, password, role) values ('admin','CPqCyhCRa0w=','admin');
+insert into zwsuser (username, password, role) values ('test','CPqCyhCRa0w=','engineer');
+insert into zwsuser (username, password, role) values ('intralink','TsQ6OZNzl3Y=','user'); 

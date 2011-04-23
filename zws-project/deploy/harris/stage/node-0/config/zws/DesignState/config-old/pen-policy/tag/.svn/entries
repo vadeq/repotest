@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/zws-project/deploy/harris/stage/node-0/config/zws/DesignState/config-old/pen-policy/tag
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-03-21T21:50:52.947535Z
+5879
+rmccabe
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+pen-policy.zws
+file
+
+
+
+
+2008-07-11T20:44:57.937875Z
+cdad865529711c194ecbb0a9a4edc68f
+2008-03-21T20:17:10.358517Z
+5874
+rmccabe
+
+policy-match.zws
+file
+
+
+
+
+2008-07-11T20:44:58.000375Z
+0f6070f2257d0c1a196bef383a784bda
+2008-03-21T21:50:52.947535Z
+5879
+rmccabe
+

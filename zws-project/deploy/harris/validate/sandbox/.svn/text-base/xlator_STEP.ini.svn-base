@@ -1,0 +1,36 @@
+[Tool]
+tool.command=C:\zws\env\ptc\ilink-1\PtcWildfire3\bin\proe1.bat
+tool.config.pro=c:\zws\env\ptc\ilink-1\config\config.pro
+tool.instruction=convert
+tool.in.graphic.mode=False
+tool.exit.on.completion=True
+
+
+[Source]
+source.design.format=ProE
+source.design.name=@source.name@
+source.design.path=@source.path@\
+
+
+[Target]
+target.design.format=STEP
+target.design.name=@dest.name@.stp
+target.design.path=@dest.path@\
+
+
+[Options]
+export.surfaces=False
+export.datums=True
+export.solid=True
+export.facets=False
+export.blanked.entities=True
+export.wireframe=False
+coordinate.system=Default
+export.layers.AutoID=True
+output.assembly.configuration=Single file		
+export.quilts=False
+
+[Log Files]
+log.activity.file=@log.path@/activity.log
+log.status.directory=@log.path@/
+

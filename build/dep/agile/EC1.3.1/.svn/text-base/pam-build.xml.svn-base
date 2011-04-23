@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- $Id: pam-build.xml,v 1.1.2.4 2008/03/07 12:56:39 wendta01 Exp $ -->
+<project name="CIF" default="bootstrap" basedir=".">
+    
+     <property file="pam-build.properties"/> 
+
+     <property environment="env"/>
+     <property name="lib.dir" value="${basedir}/lib"/>
+     <property name="lib.plmapi.dir" value="${basedir}/lib/plmapi/client"/>
+     <property name="lib.ext.dir" value="${basedir}/lib/plmapi/ext"/>
+     <property name="lib.sdk.dir" value="${basedir}/lib/sdk"/>
+     <property name="lib.as.dir" value="${lib.sdk.dir}/as"/>
+     <property name="pam.ini.dir" value="${basedir}/ini"/>
+     <property name="pam.security.dir" value="${basedir}/ini/security"/>
+     <property name="lib.tools.dir" value="${basedir}/tools/lib"/>
+     <property name="classes.dir" value=""/>
+
+    <taskdef resource="net/sf/antcontrib/antlib.xml" classpath="${lib.tools.dir}/ant-contrib.jar"/>
+
+    <!-- Checks for proper Java version. -->
+    <target name="bootstrap" unless="java-checked">
+        <echo message="*******************************"/>
+        <echo message="PLM API mapping generation tool"/>
+        <echo message="*******************************"/>
+        <echo/>
+        <echo message="Ant    : ${ant.version}"/>
+        <echo message="JVM    : ${ant.java.version}"/>
+        <echo message="OS     : ${os.name} ${os.version} (${os.arch})"/>
+        <condition property="wrong_java_msg" value="Wrong java version ${ant.java.version}; Java 1.4 required">
+            <not>
+                <equals arg1="${ant.java.version}" arg2="1.4"/>
+            </not>
+        </condition>
+        <condition property="java_error_msg" value="JAVA_HOME must be set!">
+            <equals arg1="${env.JAVA_HOME}" arg2="$${env.JAVA_HOME}"/>
+        </condition>
+        <property name="java-checked" value="true"/>
+    </target>
+    <target name="java-error" if="wrong_java_msg">
+        <fail message="${wrong_java_msg}"/>
+    </target>  
+    
+    <!-- Initializes the necessary components.  -->
+    <target name="init" depends="bootstrap,java-error" unless="init-done">
+        <property name="init-done" value="true"/>
+    </target>
+    
+    <path id="pam.compile.classpath">
+        <fileset dir="${lib.ext.dir}">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${lib.sdk.dir}">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${lib.as.dir}">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${lib.plmapi.dir}">
+            <include name="*.jar"/>
+        </fileset>
+        <pathelement path="${basedir}/target/classes"/>
+        <pathelement location="${env.JAVA_HOME}/jre/lib/rt.jar"/>
+    </path>
+    
+    <target name="generate_dumpclasses_csv" depends="init">
+		<input message="Enter your Agile username : " addproperty="agile.username"/>
+        <input message="Enter your Agile password ( Your password will appear in cleartext on the console !!! ) : " addproperty="agile.password"/>
+        <!-- Enable this property to run tool over an https connection -->
+        <!--input message="Enter your truststore password ( Your password will appear in cleartext on the console !!! ) : " addproperty="truststore.password"/-->       
+        <java classname="com.agile.sdo.cif.utils.mapping.DumpClasses" classpath="${pam.ini.dir}\" classpathref="pam.compile.classpath" fork="yes" maxmemory="128m">
+            <arg value="classes"/>
+            <sysproperty key="com.ibm.CORBA.ConfigURL" value="${pam.security.dir}/sas.client.props"/>
+            <sysproperty key="java.security.auth.login.config" value="${pam.security.dir}/wsjaas_client.conf"/>
+            <sysproperty key="com.ibm.ssl.keyStore" value="${pam.security.dir}/DummyClientKeyFile.jks"/>
+            <sysproperty key="com.ibm.ssl.trustStore" value="${pam.security.dir}/DummyClientTrustFile.jks"/>
+            <sysproperty key="java.protocol.handler.pkgs" value="com.sun.net.ssl.internal.www.protocol"/>
+            <sysproperty key="javax.net.ssl.trustStore" value="${env.JAVA_HOME}/jre/lib/security/cacerts"/>
+            <sysproperty key="username" value="${agile.username}"/>
+            <sysproperty key="password" value="${agile.password}"/>
+        </java>   
+    </target>
+    
+    <target name="generate_plmsdk_file" depends="init">
+        <input message="Enter your Agile username : " addproperty="agile.username"/>
+        <input message="Enter your Agile password ( Your password will appear in cleartext on the console !!! ) : " addproperty="agile.password"/>
+        <java classname="com.agile.sdo.cif.utils.mapping.GeneratePlmSdkFile" classpath="${pam.ini.dir}\" classpathref="pam.compile.classpath" fork="yes" maxmemory="128m">
+            <!--option -c giving path to DumpedClasses.csv-->
+            <arg value="-c"/>
+			<arg value="${basedir}/DumpedClasses.csv"/>
+            <!--option -t giving path to MappingTables.csv-->
+            <arg value="-t"/>
+			<arg value="${basedir}/ini/MappingTables.csv"/>
+            <!--path to place genertated plm-api-sdk.xml file-->
+            <arg value="-d"/>
+			<arg value="${basedir}"/>
+            <sysproperty key="com.ibm.CORBA.ConfigURL" value="${pam.security.dir}/sas.client.props"/>
+            <sysproperty key="java.security.auth.login.config" value="${pam.security.dir}/wsjaas_client.conf"/>
+            <sysproperty key="com.ibm.ssl.keyStore" value="${pam.security.dir}/DummyClientKeyFile.jks"/>
+            <sysproperty key="com.ibm.ssl.trustStore" value="${pam.security.dir}/DummyClientTrustFile.jks"/>
+            <sysproperty key="java.protocol.handler.pkgs" value="com.sun.net.ssl.internal.www.protocol"/>
+            <sysproperty key="javax.net.ssl.trustStore" value="${env.JAVA_HOME}/jre/lib/security/cacerts"/>
+            <sysproperty key="username" value="${agile.username}"/>
+            <sysproperty key="password" value="${agile.password}"/>
+        </java>   
+    </target>
+</project>

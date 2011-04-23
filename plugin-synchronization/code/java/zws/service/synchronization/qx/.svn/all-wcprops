@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/zws/!svn/ver/6106/trunk/zws/plugin/synchronization/plugin-synchronization/code/java/zws/service/synchronization/qx
+END
+SynchronizationClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/zws/!svn/ver/6106/trunk/zws/plugin/synchronization/plugin-synchronization/code/java/zws/service/synchronization/qx/SynchronizationClient.java
+END
+SynchronizationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/zws/!svn/ver/4175/trunk/zws/plugin/synchronization/plugin-synchronization/code/java/zws/service/synchronization/qx/SynchronizationService.java
+END
+SynchronizationParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/zws/!svn/ver/5674/trunk/zws/plugin/synchronization/plugin-synchronization/code/java/zws/service/synchronization/qx/SynchronizationParser.java
+END

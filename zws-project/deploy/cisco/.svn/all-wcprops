@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/zws/!svn/ver/6301/trunk/zws/zws-project/deploy/cisco
+END
+build.todo.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/zws/!svn/ver/1044/trunk/zws/zws-project/deploy/cisco/build.todo.txt
+END
+deploy.bat
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/zws/!svn/ver/1331/trunk/zws/zws-project/deploy/cisco/deploy.bat
+END
+update.bat
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/zws/!svn/ver/1049/trunk/zws/zws-project/deploy/cisco/update.bat
+END
+checkin.bat
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/zws/!svn/ver/418/trunk/zws/zws-project/deploy/cisco/checkin.bat
+END
+local-env.template
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/zws/!svn/ver/4885/trunk/zws/zws-project/deploy/cisco/local-env.template
+END
+deploy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/zws/!svn/ver/5113/trunk/zws/zws-project/deploy/cisco/deploy.xml
+END

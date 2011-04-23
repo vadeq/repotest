@@ -1,0 +1,94 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/server/code/java/zws/service
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+processor
+dir
+
+test
+dir
+
+event
+dir
+
+printer
+dir
+
+property
+dir
+
+packaging
+dir
+
+PrototypeServiceEJB.java
+file
+
+
+
+
+2008-07-11T20:50:26.953500Z
+54e0ec902910978d1a0b6e827bcc6c8c
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+email
+dir
+
+datasource
+dir
+
+space
+dir
+
+synchronization
+dir
+
+securespace
+dir
+
+transformer
+dir
+
+search
+dir
+
+recorder
+dir
+
+replication
+dir
+
+report
+dir
+
+topology
+dir
+
+document
+dir
+

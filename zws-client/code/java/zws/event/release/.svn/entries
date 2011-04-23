@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/client/code/java/zws/event/release
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:17:50.730907Z
+5300
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+Promotion.java
+file
+
+
+
+
+2008-07-11T20:47:52.531625Z
+ef9973638fb8a01d6145510a352a221e
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+Demotion.java
+file
+
+
+
+
+2008-07-11T20:47:52.594125Z
+ea4bd7fa0a1255787d96bdaee70d90b2
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+

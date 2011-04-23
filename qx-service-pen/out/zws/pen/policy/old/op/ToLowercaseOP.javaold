@@ -1,0 +1,46 @@
+package zws.pen.policy.old.op;
+/*
+* DesignState - Design Compression Technology
+* @author: ptoleti
+* @version: 1.0
+* Created on Apr 27, 2007 9:58:02 AM
+* Copywrite (c) 2007 Zero Wait-State Inc. All rights reserved
+*/
+
+
+import zws.util.LogWriter;
+import java.util.Iterator;
+
+/**
+ * The Class UpdateStateAttributeOp.
+ *
+ * @author ptoleti
+ */
+public class ToLowercaseOP extends PENDataOpBase {
+
+  /**
+   * @throws Exception Exception
+   * @see zws.pen.policy.old.op.PENDataOpBase#execute()
+   */
+  public void execute() throws Exception {
+    LogWriter.printOnConsole("toLower execute....");
+    String finalString = "";
+    PENDataOp op = null;
+    try {
+      Iterator itr = getOps().iterator();
+      while (itr.hasNext()) {
+        op = (PENDataOp) itr.next();
+        passConfiguration(op);
+        op.execute();
+        finalString = (String) op.getResult();
+        LogWriter.printOnConsole("finalString in toLower ...." + finalString);
+      }
+      finalString = finalString.toLowerCase();
+      LogWriter.printOnConsole("toLower(finalString)" + finalString);
+      setResult(finalString);
+    } catch (Exception e) {
+      e.printStackTrace();
+      throw e;
+    }
+ }
+}

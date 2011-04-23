@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/repository/ilink3/qx-service-ilink3/code/java/zws/service/event/watcher
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:01:11.814396Z
+5682
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+Ilink3EventWatcherSvcOLD.java
+file
+
+
+
+
+2008-07-11T20:37:18.516000Z
+35252103b14f3e048c1b957645da7af1
+2008-02-29T17:01:11.814396Z
+5682
+pavan.toleti
+
+EventWatcherSvc.java
+file
+
+
+
+
+2008-07-11T20:37:18.594125Z
+9a83b96583d790f7bc0c94b4f8167e0c
+2008-02-29T17:01:11.814396Z
+5682
+pavan.toleti
+

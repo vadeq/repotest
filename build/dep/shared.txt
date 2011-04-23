@@ -1,0 +1,7 @@
+activation
+mail
+servletapi
+wsdl4j
+xalan
+xeces-impl
+xml-apis

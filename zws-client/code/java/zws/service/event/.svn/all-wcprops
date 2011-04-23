@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/code/java/zws/service/event
+END
+EventHandlingServiceHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/event/EventHandlingServiceHome.java
+END
+EventHandlingServiceLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/event/EventHandlingServiceLocal.java
+END
+EventHandlingServiceRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/event/EventHandlingServiceRemote.java
+END
+EJBLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/event/EJBLocator.java
+END
+EventHandlingService.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/event/EventHandlingService.java
+END
+EventHandlingServiceLocalHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/event/EventHandlingServiceLocalHome.java
+END

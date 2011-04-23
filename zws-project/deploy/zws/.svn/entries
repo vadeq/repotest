@@ -1,0 +1,94 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/zws-project/deploy/zws
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-07-08T22:09:36.204235Z
+6399
+rmccabe
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+deploy.bat
+file
+
+
+
+
+2008-07-11T20:44:56.500375Z
+0ea4b23a5a4b40413100e94bca71343d
+2007-04-16T22:15:28.943975Z
+917
+pavan.toleti
+
+demo
+dir
+
+update.bat
+file
+
+
+
+
+2008-07-11T20:44:56.578500Z
+60a2ba62c56c3e448e399660505c2743
+2007-04-16T22:15:51.904959Z
+919
+pavan.toleti
+
+checkin.bat
+file
+
+
+
+
+2008-07-11T20:44:56.625375Z
+d41d8cd98f00b204e9800998ecf8427e
+2007-04-16T22:15:05.949553Z
+916
+pavan.toleti
+
+local-env.template
+file
+
+
+
+
+2008-07-11T20:44:56.687875Z
+717bdfbb810170caa5d7d6efd8d7fae4
+2008-07-07T13:05:54.691458Z
+6394
+rmccabe
+
+deploy.xml
+file
+
+
+
+
+2008-07-11T20:44:56.750375Z
+a86c406eb4f43848a5ab47dc55d39d02
+2007-04-16T22:15:40.983203Z
+918
+pavan.toleti
+
+dev
+dir
+

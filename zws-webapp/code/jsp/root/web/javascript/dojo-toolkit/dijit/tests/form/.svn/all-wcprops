@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/form
+END
+test_InlineEditBox.html
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/form/test_InlineEditBox.html
+END
+test_Textarea.html
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/form/test_Textarea.html
+END
+test_Spinner.html
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/form/test_Spinner.html
+END
+test_ComboBox_destroy.html
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/form/test_ComboBox_destroy.html
+END
+test_Slider.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/form/test_Slider.html
+END
+test_FilteringSelect.html
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/form/test_FilteringSelect.html
+END
+Form.html
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/form/Form.html
+END
+test_CheckBox.html
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/form/test_CheckBox.html
+END
+test_ComboBox.html
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/form/test_ComboBox.html
+END
+test_validate.html
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/form/test_validate.html
+END
+test_Button.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/form/test_Button.html
+END
+test_DateTextBox.html
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/form/test_DateTextBox.html
+END
+Form.js
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/form/Form.js
+END
+test_TimeTextBox.html
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/form/test_TimeTextBox.html
+END

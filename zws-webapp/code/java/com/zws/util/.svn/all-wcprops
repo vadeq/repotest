@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/util
+END
+Profiler.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5621/trunk/zws/designstate/webapp/code/java/com/zws/util/Profiler.java
+END
+UniqueID.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/util/UniqueID.java
+END
+Base64.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/util/Base64.java
+END
+StringUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5522/trunk/zws/designstate/webapp/code/java/com/zws/util/StringUtil.java
+END
+KeyValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/util/KeyValue.java
+END
+OriginUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/util/OriginUtil.java
+END
+GenericSAXHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/util/GenericSAXHandler.java
+END
+GenericParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/util/GenericParser.java
+END
+ListUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/util/ListUtil.java
+END
+Value.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/util/Value.java
+END
+AutoIncrement.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/util/AutoIncrement.java
+END
+FileNameUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/util/FileNameUtil.java
+END

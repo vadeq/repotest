@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/zws/!svn/ver/6179/trunk/zws/qx-service/qx-service-queue/code/java/zws/qx/queue
+END
+PersistentQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/zws/!svn/ver/6178/trunk/zws/qx-service/qx-service-queue/code/java/zws/qx/queue/PersistentQueue.java
+END
+QxQueueElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zws/!svn/ver/5942/trunk/zws/qx-service/qx-service-queue/code/java/zws/qx/queue/QxQueueElement.java
+END
+DaemonQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/zws/!svn/ver/6159/trunk/zws/qx-service/qx-service-queue/code/java/zws/qx/queue/DaemonQueue.java
+END
+QxQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/5697/trunk/zws/qx-service/qx-service-queue/code/java/zws/qx/queue/QxQueue.java
+END
+QxQueuePersistent.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/zws/!svn/ver/6178/trunk/zws/qx-service/qx-service-queue/code/java/zws/qx/queue/QxQueuePersistent.java
+END
+QxQueueService.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zws/!svn/ver/6178/trunk/zws/qx-service/qx-service-queue/code/java/zws/qx/queue/QxQueueService.java
+END

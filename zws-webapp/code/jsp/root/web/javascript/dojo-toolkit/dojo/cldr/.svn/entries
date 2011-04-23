@@ -1,0 +1,79 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/cldr
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+LICENSE
+file
+
+
+
+
+2008-07-11T22:10:32.859750Z
+83f319a7861569b7a5075eb8a9354a86
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+supplemental.js
+file
+
+
+
+
+2008-07-11T22:10:32.922250Z
+1c11f8f1afcd018366035866addcda7a
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+monetary.js
+file
+
+
+
+
+2008-07-11T22:10:33.031625Z
+eebc18fcb652f727c8fe376d33775b42
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+nls
+dir
+
+README
+file
+
+
+
+
+2008-07-11T22:10:33.406625Z
+7469baf6326ab2a137bb3f71c52633c0
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+

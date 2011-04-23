@@ -1,0 +1,14 @@
+<DesignState-config>
+ <services>
+
+  <service service-name="file-depot" protocol="http-servlet" host-name="plm-rtp-002-d" port="80"/>
+
+	<service service-name="uniqueid" protocol="QxAxis2WebService" host-name="plm-rtp-002-d" port="80"
+    soap-service-path="ZeroWait-State/services" soap-service-name="QxWebService"  soap-service-method="runQx" />
+
+  <service service-name="repository-service" protocol="QxAxis2WebService" host-name="plm-rtp-002-d" port="80"
+    soap-service-path="ZeroWait-State/services" soap-service-name="QxWebService"  soap-service-method="runQx" />
+
+ </services>
+
+</DesignState-config>

@@ -1,0 +1,52 @@
+8
+
+dir
+6400
+http://build.zerowait-state.com/svn/zws/trunk/zws/build/script/local
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-05-20T15:37:54.028510Z
+6256
+rmccabe
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+local-env.build.eclipse
+file
+
+
+
+
+2008-07-11T17:15:12.000375Z
+303d20d8267d1bc76a66d1cd775d6cc4
+2008-05-08T19:36:52.806126Z
+6219
+rmccabe
+
+local-env.build.cc
+file
+
+
+
+
+2008-07-11T17:15:12.062875Z
+c0c32aeb5f6738dc57e2c7e9540d59c1
+2008-05-20T15:37:54.028510Z
+6256
+rmccabe
+

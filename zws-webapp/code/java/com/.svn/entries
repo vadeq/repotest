@@ -1,0 +1,43 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/java/com
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-05-01T15:46:06.603513Z
+6152
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+zws
+dir
+
+TimeTest.java
+file
+
+
+
+
+2008-07-11T22:05:06.984750Z
+ef2621c7676f3d388afc333e1743ee0c
+2008-02-29T17:00:53.791577Z
+5675
+pavan.toleti
+

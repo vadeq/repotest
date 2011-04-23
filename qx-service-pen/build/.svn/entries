@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/product/pen/qx-service-pen/build
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:16:47.355764Z
+5296
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+title.build
+file
+
+
+
+
+2008-07-11T20:41:16.812875Z
+f08337fa94f066baa18c33b246de33f1
+2007-05-31T03:36:00.644320Z
+394
+pavan.toleti
+
+classpath.build
+file
+
+
+
+
+2008-07-11T20:41:16.875375Z
+99c3b5b0fdc2bf8ff8ef510c018a1614
+2007-11-18T07:53:59.184871Z
+4157
+eankutse
+

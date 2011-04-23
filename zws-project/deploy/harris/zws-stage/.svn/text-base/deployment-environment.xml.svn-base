@@ -1,0 +1,42 @@
+<DesignState-config>
+ <properties>
+
+  <!-- runtime -->
+  <property name="debug-mode" value="true"/>
+  <property name="os-platform" value="windows" />
+
+  <!-- project -->
+  <property name="organization" value="Harris" />
+  <property name="project" value="staging" />
+
+  <!-- routing -->
+  <property name="domain-name" value="harris"/>
+  <property name="server-name" value="node-0"/>
+  <property name="hostname" value="zero-big" />
+
+  <!-- service locations  -->
+  <property name="central-server" value="DesignState-node-0" />
+  <property name="service-finder-hostname" value="zero-big"/>
+  <property name="file-depot-hostname" value="zero-big"/>
+
+  <!-- local directory structure -->
+  <dir name="zws-home" path="\zws" />
+  <dir name="zws-temp" path="[zws-home]\temp"/> 
+  <dir name="zws-env" path="[zws-home]\env" />  
+  <dir name="zws-bin" path="[zws-home]\bin" />  
+  <dir name="zws-app" path="[zws-home]\app" />  
+  <dir name="zws-data" path="[zws-home]\data"/>
+  <dir name="zws-local" path="[zws-data]\local"/>
+  <dir name="ldb-path-base" path="[zws-data]\space"/>
+
+  <dir name="zws-log" path="[zws-home]\log"/>
+  <dir name="zws-work" path="[zws-log]\work"/>
+
+  <dir name="DesignState-home" path="[zws-home]\DesignState" />
+  <dir name="zws-config" path="[DesignState-home]\config" />
+
+  <dir name="zws-xml" path="[DesignState-home]\xml" />  
+  <dir name="zws-xslt" path="[zws-xml]\xslt" />
+
+ </properties>
+</DesignState-config>

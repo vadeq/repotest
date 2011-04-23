@@ -1,0 +1,76 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/java/com/zws/domo
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:19:54.379681Z
+5307
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+Adapter.java
+file
+
+
+
+
+2008-07-11T22:05:05.828500Z
+31411a1eb7010fe1e213d35d22ee1863
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+baseline
+dir
+
+BaseDomainObject.java
+file
+
+
+
+
+2008-07-11T22:05:05.891000Z
+3701f759c500dc1531c33247b0658a19
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+catalog
+dir
+
+account
+dir
+
+document
+dir
+
+Domo.java
+file
+
+
+
+
+2008-07-11T22:05:05.969125Z
+0f629fd8956ecfada51d360e2a2e0bc0
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+

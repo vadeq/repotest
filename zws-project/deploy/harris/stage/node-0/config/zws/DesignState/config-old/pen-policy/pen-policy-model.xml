@@ -1,0 +1,1703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<designstate-config >
+ <pen-policies>
+  <!--++++++++++++++++++++++++++++-->
+  <!--  Harris I2A                -->
+  <!--  PEN policy for ProE-Models-->
+  <!--++++++++++++++++++++++++++++-->
+  <pen-policy name="ProE-Models" src-repository="ilink" target-repository="agile-sdk">
+   <retrieve-data>
+    <load-first-level-latest-bill-from-source-repository/>
+    <!-- <get-binary/>  -->
+   </retrieve-data>
+   
+   <transform-data>
+   <!-- Retrieve publishing-environment setting on this machine -->
+   <set-global-status status="publishing-environment">
+    <make-string><get-system-property-value attribute="publishing-environment" /></make-string>
+   </set-global-status>
+   
+    <!-- First remove layouts and formats -->
+    <for-each-element>
+     <if-element>
+       <item-is-design-model/>
+      <then></then>
+      <else>
+      <global-warning-message>
+       <resolve-message key="removed-support-files">  
+        <property attribute="name"><get-source-value attribute="Name"/></property>
+       </resolve-message>
+      </global-warning-message>
+       <remove-item/>
+      </else>
+     </if-element>
+    </for-each-element>
+
+
+    <for-each-element>
+     <set-attribute xfer-attribute="agile-class" value="Part"/>
+     <!-- Generate Part Number -->
+     <set-attribute xfer-attribute="number">
+      <uppercase>
+       <get-source-value attribute="Part_Number"/>
+      </uppercase>
+     </set-attribute>
+     <set-attribute xfer-attribute="name">
+      <uppercase>
+       <get-source-value attribute="Part_Number"/>
+      </uppercase>
+     </set-attribute>
+     <!-- Map Attributes -->
+     <set-attribute xfer-attribute="Authoring Application" value="MCAD"/>
+     <set-attribute xfer-attribute="UOM" value="Each"/>
+     <set-attribute xfer-attribute="Description" max-length="50">
+      <make-string>
+       <get-source-value attribute="Description"/>
+       <make-string string=" "/>
+       <get-source-value attribute="Description2"/>
+      </make-string>
+     </set-attribute>
+     <rename-attribute source-attribute="Cage_Code" xfer-attribute="Cage Code" default-value="91417"/>
+     <rename-attribute source-attribute="Project" xfer-attribute="Project Authorization"/>
+    </for-each-element>
+    <!-- restructure design -->
+<!--    <for-each-element> -->
+     <copy-sub-components>
+       <bom-property attribute="Usage Type" value="Std"/>
+       <bom-property attribute="CAD Source" value="Intralink-Part"/> 
+     </copy-sub-components>
+<!--    </for-each-element> -->
+
+    <for-each-element>
+     <if><xfer-has-subcomponents/>
+      <then>
+        <set-harris-find-numbers file-type="txt" base-directory="E:\zws\Findnumbers"/>
+      </then>
+     </if>
+    </for-each-element>
+
+   </transform-data>
+   <!-- analyze data -->
+   <analyze-data>
+    <!-- initialize variables -->
+    <for-each-element>
+     <set-target-eco logical-name=""/>
+    	<set-element-status status="item-needs-evaluation" value="true" />    	     
+     <!--model vars -->
+     <set-element-status status="item-is-valid" value="~"/>
+     <set-element-status status="filter-out" value="~"/>
+     <set-element-status status="sync-status" value="~"/>
+     <set-element-status status="item-has-name-conflict" value="~"/>
+     <set-element-status status="item-source-system-matches-pub-env" value="~"/>     
+     <set-element-status status="item-has-synchronization-conflict" value="~"/>
+     <set-element-status status="item-has-pending-eco" value="~"/>
+     <set-element-status status="item-is-on-open-eco" value="~"/>
+     <set-element-status status="target-is-already-released" value="~"/>
+     <set-element-status status="library-component" value="~"/>
+     <set-element-status status="nosnc" value="~"/>
+     <set-element-status status="explicit-pub" value="~"/>      
+     <!-- initialize Publishing Patteren to be undefined -->
+     <set-element-status status="publish-pattern" value="~"/>
+     <set-element-status status="ignore-for-publishing" value="~"/>
+     <set-element-status status="bind-to-target" value="~"/>
+     <set-element-status status="publish-as-first-release" value="~"/>
+     <set-element-status status="publish-as-unbound-first-release" value="~"/>     
+     <set-element-status status="publish-as-revised-release" value="~"/>
+     <set-element-status status="publish-as-unbound-revised-release" value="~"/>     
+     <set-element-status status="publish-as-first-wip" value="~"/>
+     <set-element-status status="publish-as-unbound-first-wip" value="~"/>     
+     <set-element-status status="publish-as-revised-wip" value="~"/>
+     <set-element-status status="publish-as-unbound-revised-wip" value="~"/>     
+     <set-element-status status="doc-release" value="~"/>
+     <set-element-status status="doc-wip" value="~"/>
+     <set-element-status status="publishing-as" value="~"/>
+    
+     <!-- initialize actions for publishing pattern -->
+     <set-element-status status="item-needs-to-be-created" value="false"/>
+     <set-element-status status="item-needs-to-be-synchronized" value="false"/>
+     <set-element-status status="metadata-needs-to-be-updated" value="false"/>
+     <set-element-status status="struct-needs-to-be-updated" value="false"/>
+     <set-element-status status="file-needs-to-be-updated" value="false"/>
+     <set-element-status status="doc-needs-to-be-added" value="false"/>    
+     <!-- initialize actions for publishing patterns -->
+
+     <!-- basic attribute validation -->
+
+     <!-- check if metadata is valid -->
+     <set-element-status status="item-is-valid" value="true"/>     
+     <!-- part number validation -->
+     <if-element>
+       <string-length-is-at-least min="1"> <get-source-value attribute="Part_Number"/></string-length-is-at-least>
+      <else>
+       <set-element-status status="item-is-valid" value="false"/>
+       <error-message>
+        <resolve-message key="invalid-pn-empty">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+        </resolve-message>         
+       </error-message>
+      </else>
+     </if-element>
+     
+     <!-- Check for special characters -->
+
+     <if-element>
+      <not>
+       <string-does-not-contain-invalid-chars invalid-characters=" &quot;`'~">
+        <get-source-value attribute="Part_Number"/>
+       </string-does-not-contain-invalid-chars>
+      </not>
+      <then>
+       <set-element-status status="item-is-valid" value="false"/>
+       <error-message>
+        <resolve-message key="invalid-pn-bad-chars">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+         <property attribute="bad-chars" value=" &quot;`'~" />
+        </resolve-message>         
+       </error-message>
+      </then>
+     </if-element>
+
+     <if-element>
+       <string-length-is-at-most max="21"> <get-source-value attribute="Part_Number"/></string-length-is-at-most>
+      <else>
+       <set-element-status status="item-is-valid" value="false"/>
+       <error-message>
+        <resolve-message key="invalid-pn-too-long">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+        </resolve-message>         
+       </error-message>
+      </else>
+     </if-element>
+
+     <if-element>
+      <or>
+       <is-equal value="P" ignore-case="true">
+        <get-source-value attribute="Cage_Code"/>
+       </is-equal>
+       <string-length-is-exactly length="5">
+        <get-source-value attribute="Cage_Code"/>
+       </string-length-is-exactly>
+      </or>
+      <else>
+       <set-element-status status="item-is-valid" value="false"/>
+       <error-message>
+        <resolve-message key="invalid-cagecode">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+         <property attribute="cage-code"><get-source-value attribute="Cage_Code"/></property>
+        </resolve-message>         
+       </error-message>
+      </else>
+     </if-element>
+     <if-element>
+      <not>
+       <string-length-is-exactly length="4">
+        <get-source-value attribute="Project"/>
+       </string-length-is-exactly>
+      </not>
+      <then>
+     	 <set-element-status status="item-is-valid" value="false"/>
+       <error-message>
+        <resolve-message key="invalid-project">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+         <property attribute="project"><get-source-value attribute="Project"/></property>
+        </resolve-message>         
+       </error-message>
+      </then>
+     </if-element>
+
+    </for-each-element>
+    
+    <!-- Define Truth Table Variables -->
+    <load-synchronization-status/>
+    <detect-name-conflicts/>
+    <detect-synchronization-conflicts/>
+    <detect-pending-eco/>
+    <load-pending-eco/>
+    
+    <for-each-element>
+     <if-element>
+      <is-equal value="NO_PUB" ignore-case="true">
+       <uppercase>
+        <get-source-value attribute="Part_Number"/>
+       </uppercase>
+      </is-equal>
+      <then>
+       <set-element-status status="filter-out" value="true"/>
+       <global-status-message>
+        <resolve-message key="filtered-out">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+        </resolve-message>
+       </global-status-message>         
+      </then>
+      <else>
+       <set-element-status status="filter-out" value="false"/>
+      </else>
+     </if-element>
+    </for-each-element>
+    <for-each-element>
+       <if-element>
+      <item-has-multiple-pending-ecos/>
+      <then>
+       <set-element-status status="item-is-valid" value="false"/>
+       <error-message>
+        <resolve-message key="invalid-multi-pending-eco">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+        </resolve-message>         
+       </error-message>
+      </then>
+     </if-element>
+    </for-each-element>
+
+    <for-each-element>
+     <load-metadata-from-target-repository/>
+     <if>
+       <is-empty> <get-target-value attribute="Make/Buy"/> </is-empty>
+      <then>
+       <set-attribute xfer-attribute="Make/Buy" value="Make"/>
+      </then>
+     </if>
+    </for-each-element>
+  
+    <!-- model-specific-vars -->
+    <for-each-element>
+     <if-element>
+      <and>
+       <item-has-pending-eco/>
+       <or>
+        <is-equal value="Unassigned" ignore-case="true">
+         <get-pending-eco-status/>
+        </is-equal>
+        <is-equal value="Pending" ignore-case="true">
+         <get-pending-eco-status/>
+        </is-equal>
+       </or>
+      </and>
+      <then>
+       <set-element-status status="item-is-on-open-eco" value="true"/>
+      </then>
+      <else>
+       <set-element-status status="item-is-on-open-eco" value="false"/>
+      </else>
+     </if-element>
+    </for-each-element>
+
+    <for-each-element>
+     <if><item-is-on-open-eco/>
+      <then>
+       <save-pending-eco>
+        <logical-name>
+         <uppercase>
+         <get-pending-eco-type/>      
+         <make-string string="-"/>
+         <get-pending-eco-value attribute="Project Authorization"/>
+         </uppercase>
+        </logical-name>
+       </save-pending-eco>
+      </then>
+     </if>
+    </for-each-element>
+
+    <for-each-element>
+     <if-element>
+     <and>
+       <or>
+        <and>
+         <or>
+          <item-is-new/>
+          <item-is-renumbered/>
+         </or>
+         <item-has-name-conflict/>
+        </and>
+        <item-is-modified/>
+       </or>
+      <not>
+      <is-equal>
+       <get-target-value attribute="rev"/>
+       <make-string string="Introductory"/>
+      </is-equal>
+      </not>
+     </and>
+      <then>
+       <set-element-status status="target-is-already-released" value="true"/>
+      </then>
+      <else>
+       <set-element-status status="target-is-already-released" value="false"/>
+      </else>
+     </if-element>
+    </for-each-element>
+    <for-each-element>
+     <if-element>
+      <starts-with prefix="Root Folder/Libraries">
+       <get-source-value attribute="folder"/>
+      </starts-with>
+      <then>
+       <set-element-status status="library-component" value="true"/>
+      </then>
+      <else>
+       <set-element-status status="library-component" value="false"/>
+      </else>
+     </if-element>
+    </for-each-element>
+    <for-each-element>
+     <if-element>
+      <is-equal value="NOSNC" ignore-case="true">
+       <uppercase>
+        <get-source-value attribute="Cage_Code"/>
+       </uppercase>
+      </is-equal>
+      <then>
+       <set-element-status status="nosnc" value="true"/>
+      </then>
+      <else>
+       <set-element-status status="nosnc" value="false"/>
+      </else>
+     </if-element>
+    </for-each-element>
+    <for-each-element>
+     <if-element>
+      <item-is-design-root/>
+      <then>
+       <set-element-status status="explicit-pub" value="true"/>
+      </then>
+      <else>
+       <set-element-status status="explicit-pub" value="false"/>
+      </else>
+     </if-element>
+    </for-each-element>
+    <for-each-element>
+		 <if-element>
+			<list-contains>
+       <get-list-property-value property="untouchable-folders"/>
+			 <get-source-value attribute="folder"/>
+			</list-contains>			
+      <then>
+       <set-element-status status="untouchable" value="true"/>
+      </then>
+      <else>
+       <set-element-status status="untouchable" value="false"/>
+      </else>
+     </if-element>
+    </for-each-element> 
+    
+    <for-each-element>
+     <if-element>
+      <element-status-is-true status="untouchable"/>
+      <then>
+       <set-element-status status="item-is-valid" value="false"/>
+       <error-message>
+        <resolve-message key="invalid-untouchable">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+	        <property attribute="folder"><get-source-value attribute="folder"/></property>
+        </resolve-message>
+       </error-message>
+      </then>
+     </if-element>
+    </for-each-element>
+    
+
+    <!-- Set 'item-source-system-matches-pub-env' variable for vault functionality -->
+    <!-- Set 'item-source-system-matches-pub-env' variable for vault functionality -->
+    <for-each-element>
+     <set-element-status status="item-source-system-matches-pub-env" value="true"/>   
+     <if-element>
+      <is-empty><get-target-value attribute="Source System"/></is-empty>
+      <then><set-element-status status="item-source-system-matches-pub-env" value="true"/></then>
+      <else>      
+       <if-element>
+        <is-not-equal>
+         <make-string><get-global-status status="publishing-environment" /></make-string>
+         <make-string><get-target-value attribute="Source System" /></make-string>
+        </is-not-equal>
+        <then><set-element-status status="item-source-system-matches-pub-env" value="false"/></then>
+        <else></else>
+       </if-element>    
+      </else>
+      </if-element>        
+    </for-each-element>
+
+     
+   
+   
+    <!-- Truth Table Logic ################################################### -->
+    <!--
+Test Case	mdl-cnl-1000
+publish-action	cancel
+sync-conflict:T nosnc:F
+-->
+    <set-global-status status="policy-case" value="mdl-cnl-1000"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>       
+       <item-has-synchronization-conflict/>
+       <element-status-is-false status="nosnc"/>
+      </and>
+      <then>
+       <set-element-status status="case-id" value="*">
+        <get-global-status status="policy-case"/>
+       </set-element-status>
+       <error-message>
+        <resolve-message key="cancel-sync-conflict">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+         <property attribute="sync-conflict-name"><get-element-status status="sync-conflict-uid"/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </error-message>
+       <show-pen-data/>       
+       <cancel/>
+      </then>
+     </if-element>
+    </for-each-element>
+    <!--
+Test Case	mdl-cnl-1100
+publish-action	cancel
+is-valid:F
+-->
+    <set-global-status status="policy-case" value="mdl-cnl-1100"/>
+    <for-each-element>
+     <if-element>
+      <and>       
+       <element-status-is-true status="item-needs-evaluation"/>
+       <item-is-not-valid/>
+      </and>
+      <then>
+       <set-element-status status="case-id" value="*">
+        <get-global-status status="policy-case"/>
+       </set-element-status>
+       <error-message>
+        <resolve-message key="cancel-invalid">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </error-message>
+       <show-pen-data/>       
+       <cancel/>
+      </then>
+     </if-element>
+    </for-each-element>
+    <!--
+Test Case	mdl-cnl-1200
+publish-action	cancel 
+has-pend-eco:T on-open-eco:F
+-->
+    <set-global-status status="policy-case" value="mdl-cnl-1200"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>       
+       <item-has-pending-eco/>
+       <item-is-not-on-open-eco/>
+      </and>
+      <then>
+       <set-element-status status="case-id" value="*">
+        <get-global-status status="policy-case"/>
+       </set-element-status>
+       <error-message>
+        <resolve-message key="cancel-eco-closed">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+         <property attribute="eco-number"><get-pending-eco-number/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </error-message>
+       <show-pen-data/>       
+       <cancel/>
+      </then>
+     </if-element>
+    </for-each-element>
+    <!--
+Test Case	mdl-cnl-1300
+publish-action	cancel
+is-valid:T filter-out:F sync-status:is-new or renumbered name-cflct:F nosnc:T is-lib:F
+-->
+    <set-global-status status="policy-case" value="mdl-cnl-1300"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>       
+       <item-is-valid/>
+       <item-is-not-filtered-out/>
+       <or>
+        <item-is-new/>
+        <item-is-renumbered/>
+       </or>
+       <item-does-not-have-name-conflict/>
+       <element-status-is-true status="nosnc"/>
+       <item-is-not-library-component/>
+      </and>
+      <then>
+       <set-element-status status="case-id" value="*">
+        <get-global-status status="policy-case"/>
+       </set-element-status>
+       <error-message>
+        <resolve-message key="cancel-nosnc-nopart">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </error-message>
+       <show-pen-data/>       
+       <cancel/>
+      </then>
+     </if-element>
+    </for-each-element>
+    
+    <!--
+Test Case	mdl-cnl-1350
+publish-action	cancel
+is-valid:T filter-out:F matches-pub-env:F sync-status:is-new or renumbered name-cflct:T sync-conflict:F explicit-pub:T
+-->
+    <set-global-status status="policy-case" value="mdl-cnl-1350"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>       
+       <item-is-valid/>
+       <item-is-not-filtered-out/>
+       <item-source-system-does-not-match-pub-env/>       
+       <or>
+        <item-is-new/>
+        <item-is-renumbered/>
+       </or>
+       <item-has-name-conflict/>
+       <item-does-not-have-synchronization-conflict/>
+       <element-status-is-true status="explicit-pub" />       
+      </and>
+      <then>
+       <set-element-status status="case-id" value="*">
+        <get-global-status status="policy-case"/>
+       </set-element-status>
+       <error-message>
+        <resolve-message key="cancel-bad-env">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+         <property attribute="env"><get-global-status status="publishing-environment"/></property>
+         <property attribute="source-system"><get-target-value attribute="Source System"/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </error-message>
+       <show-pen-data/>       
+       <show-pen-data/>       
+       <cancel/>
+      </then>
+     </if-element>
+    </for-each-element>
+    
+    
+    <!--
+Test Case	mdl-cnl-1375
+publish-action	cancel
+is-valid:T filter-out:F matches-pub-env:F sync-status:modified explicit-pub:T
+-->
+    <set-global-status status="policy-case" value="mdl-cnl-1375"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>       
+       <item-is-valid/>
+       <item-is-not-filtered-out/>
+       <item-source-system-does-not-match-pub-env/>       
+       <item-is-modified/>
+       <element-status-is-true status="explicit-pub" />       
+      </and>
+      <then>
+       <set-element-status status="case-id" value="*">
+        <get-global-status status="policy-case"/>
+       </set-element-status>
+       <error-message>
+        <resolve-message key="cancel-bad-env">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+         <property attribute="env"><get-global-status status="publishing-environment"/></property>
+         <property attribute="source-system"><get-target-value attribute="Source System"/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </error-message>
+       <show-pen-data/>       
+       <cancel/>       
+      </then>
+     </if-element>
+    </for-each-element>
+    
+    
+    <!--
+Test Case	mdl-rmv-1400
+publish-action	remove
+filter-out:T
+-->
+    <set-global-status status="policy-case" value="mdl-rmv-1400"/>
+    <for-each-element>
+     <if-element>
+      <and>     
+       <element-status-is-true status="item-needs-evaluation"/>  
+       <item-is-filtered-out/>
+      </and>
+      <then>
+       <set-global-status status="case-id" value="*">
+        <get-global-status status="policy-case"/>
+       </set-global-status>
+       <global-error-message>
+        <resolve-message key="removed">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </global-error-message>
+       <remove-item/>
+      </then><!--
+      <else>
+       <global-debug-message>
+        <make-string string="["/>
+        <get-global-status status="policy-case"/>
+        <make-string string="]"/>
+        <make-string string="does not match:"/>
+       </global-debug-message>
+      </else> -->
+     </if-element>
+    </for-each-element>
+    <!--
+Test Case	mdl-ign-1500
+publish-action	ignore
+is-valid:T filter-out:F name-cflct:T sync-conflict:F nosnc:T is-lib:F
+-->
+    <set-global-status status="policy-case" value="mdl-ign-1500"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>       
+       <item-is-valid/>
+       <item-is-not-filtered-out/>
+       <item-has-name-conflict/>
+       <item-does-not-have-synchronization-conflict/>
+       <element-status-is-true status="nosnc"/>
+       <item-is-not-library-component/>
+      </and>
+      <then>
+       <ignore-for-publishing/>
+       <set-element-status status="publishing-as" value="ignore"/>       
+       <set-element-status status="case-id" value="*">
+        <get-global-status status="policy-case"/>
+       </set-element-status>
+       <status-message>
+        <resolve-message key="ignore-nosnc">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>
+       </status-message>
+      </then>
+     </if-element>
+    </for-each-element>
+    <!--
+Test Case	mdl-ign-1550
+publish-action	ignore
+is-valid:T filter-out:F name-cflct:T sync-conflict:T nosnc:T
+-->
+    <set-global-status status="policy-case" value="mdl-ign-1550"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>       
+       <item-is-valid/>
+       <item-is-not-filtered-out/>
+       <item-has-name-conflict/>
+       <item-has-synchronization-conflict/>
+       <element-status-is-true status="nosnc"/>
+      </and>
+      <then>
+       <ignore-for-publishing/>
+       <set-element-status status="publishing-as" value="ignore"/>       
+       <set-element-status status="case-id" value="*">
+        <get-global-status status="policy-case"/>
+       </set-element-status>
+       <status-message>
+        <resolve-message key="ignore-nosnc">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>
+       </status-message>
+      </then>
+     </if-element>
+    </for-each-element>
+    <!--
+Test Case	mdl-bdi-1700
+publish-action	ignore
+is-valid:T filter-out:F matches-pub-env:T sync-status:is-new or renumbered name-cflct:T sync-conflict:F nosnc:F is-lib:F explicit-pub:F
+-->
+    <set-global-status status="policy-case" value="mdl-bdi-1700"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>       
+       <item-is-valid/>
+       <item-is-not-filtered-out/>
+       <item-source-system-matches-pub-env/>       
+       <or>
+        <item-is-new/>
+        <item-is-renumbered/>
+       </or>
+       <item-has-name-conflict/>
+       <item-does-not-have-synchronization-conflict/>
+       <element-status-is-false status="nosnc"/>
+       <item-is-not-library-component/>
+       <element-status-is-false status="explicit-pub"/>
+      </and>
+      <then>
+       <ignore-for-publishing/>
+       <set-element-status status="publishing-as" value="ignore"/>            
+       <set-element-status status="case-id" value="*">
+        <get-global-status status="policy-case"/>
+       </set-element-status>
+       <status-message>
+        <resolve-message key="ignore-implicit-item-exists">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>
+       </status-message>
+      </then>
+     </if-element>
+    </for-each-element>
+    
+    <!--
+Test Case	mdl-ign-1750
+publish-action	ignore
+is-valid:T filter-out:F matches-pub-env:F sync-status:is-new or renumbered name-cflct:T sync-conflict:F nosnc:F is-lib:F explicit-pub:F
+-->
+    <set-global-status status="policy-case" value="mdl-ign-1750"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>       
+       <item-is-valid/>
+       <item-is-not-filtered-out/>
+       <item-source-system-does-not-match-pub-env/>       
+       <or>
+        <item-is-new/>
+        <item-is-renumbered/>
+       </or>
+       <item-has-name-conflict/>
+       <item-does-not-have-synchronization-conflict/>
+       <element-status-is-false status="nosnc"/>
+       <item-is-not-library-component/>
+       <element-status-is-false status="explicit-pub"/>
+      </and>
+      <then>
+       <ignore-for-publishing/> 
+       <set-element-status status="publishing-as" value="ignore"/>           
+       <set-element-status status="case-id" value="*">
+        <get-global-status status="policy-case"/>
+       </set-element-status>
+       <status-message>
+        <resolve-message key="ignore-implicit-item-exists">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>
+       </status-message>
+       <status-message>
+        <resolve-message key="note-bad-env">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+         <property attribute="env"><get-global-status status="publishing-environment"/></property>
+         <property attribute="source-system"><get-target-value attribute="Source System"/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </status-message>
+       <show-pen-data/>       
+      </then>
+     </if-element>
+    </for-each-element>
+    
+    
+    <!--
+Test Case	mdl-bdi-1800
+publish-action	ignore
+is-valid:T filter-out:F matches-pub-env:T sync-status:is-modified nosnc:F explicit-pub:F
+-->
+    <set-global-status status="policy-case" value="mdl-bdi-1800"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>       
+       <item-is-valid/>
+       <item-is-not-filtered-out/>
+       <item-source-system-matches-pub-env/>       
+       <item-is-modified/>
+       <element-status-is-false status="nosnc"/>
+       <element-status-is-false status="explicit-pub"/>
+      </and>
+      <then>
+       <ignore-for-publishing/>
+       <set-element-status status="publishing-as" value="ignore"/>       
+       <set-element-status status="case-id" value="*">
+        <get-global-status status="policy-case"/>
+       </set-element-status>      
+       <status-message>
+        <resolve-message key="ignore-implicit-item-exists">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>
+       </status-message>
+      </then>
+     </if-element>
+    </for-each-element>
+    
+    
+    <!--
+Test Case	mdl-ign-1850
+publish-action	ignore
+is-valid:T filter-out:F matches-pub-env:F sync-status:is-modified nosnc:F explicit-pub:F
+-->
+    <set-global-status status="policy-case" value="mdl-ign-1850"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>       
+       <item-is-valid/>
+       <item-is-not-filtered-out/>
+       <item-source-system-does-not-match-pub-env/>       
+       <item-is-modified/>
+       <element-status-is-false status="nosnc"/>
+       <element-status-is-false status="explicit-pub"/>
+      </and>
+      <then>
+       <ignore-for-publishing/>
+       <set-element-status status="publishing-as" value="ignore"/>       
+       <set-element-status status="case-id" value="*">
+        <get-global-status status="policy-case"/>
+       </set-element-status>      
+       <status-message>
+        <resolve-message key="ignore-implicit-item-exists">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>
+       </status-message>
+       <status-message>
+        <resolve-message key="note-bad-env">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+         <property attribute="env"><get-global-status status="publishing-environment"/></property>
+         <property attribute="source-system"><get-target-value attribute="Source System"/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </status-message>
+       <show-pen-data/>
+      </then>
+     </if-element>
+    </for-each-element>
+    
+    <!--
+Test Case	mdl-fr-nweco-1900
+publish-action	first-release
+target-eco:	new-eco
+is-valid:T filter-out:F sync-status:is-new or renumbered name-cflct:F nosnc:F is-lib:F explicit-pub:T
+-->
+    <set-global-status status="policy-case" value="mdl-fr-nweco-1900"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>       
+       <item-is-valid/>
+       <item-is-not-filtered-out/>
+       <or>
+        <item-is-new/>
+        <item-is-renumbered/>
+       </or>
+       <item-does-not-have-name-conflict/>
+       <element-status-is-false status="nosnc"/>
+       <item-is-not-library-component/>
+       <element-status-is-true status="explicit-pub"/>
+      </and>
+      <then>
+       <publish-as-first-release/>
+       <set-element-status status="publishing-as" value="first-release"/>       
+       <set-element-status status="case-id" value="*">
+        <get-global-status status="policy-case"/>
+       </set-element-status> 
+       <create-eco>
+        <logical-name>
+         <uppercase>
+      	 <make-string string="Initial Release"/>
+      	  <make-string string="-"/>
+         <get-source-value attribute="Project"/>
+         </uppercase>
+        </logical-name>
+        <!-- may need to create a count variale for eco-ref-name -->
+        <property attribute="agile-class" value="Initial Release"/>
+        <property attribute="Workflow" value="Initial Release"/>
+        <property attribute="Project Authorization">
+         <get-source-value attribute="Project"/>       
+        </property>
+		      <property attribute="originator">
+        <get-context-value attribute="originator" />       
+        </property>
+       </create-eco>
+       <set-target-eco>
+        <logical-name>
+         <uppercase>
+      	   <make-string string="Initial Release"/>
+      	   <make-string string="-"/>
+          <get-source-value attribute="Project"/>
+         </uppercase>
+        </logical-name>
+       </set-target-eco>               
+       <!-- may need to create a count variale for eco-ref-name -->
+       <status-message>
+        <resolve-message key="released-new-eco">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+         <property attribute="eco-number"><get-target-eco/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </status-message>
+      </then>
+     </if-element>
+    </for-each-element>
+    <!--
+Test Case	mdl-fr-nweco-2000
+publish-action	unbound-first-release
+target-eco:	new-eco
+is-valid:T filter-out:F sync-status:is-new or renumbered name-cflct:F nosnc:F is-lib:T explicit-pub:F
+-->
+    <set-global-status status="policy-case" value="mdl-fr-nweco-2000"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>       
+       <item-is-valid/>
+       <item-is-not-filtered-out/>
+       <or>
+        <item-is-new/>
+        <item-is-renumbered/>
+       </or>
+       <item-does-not-have-name-conflict/>
+       <element-status-is-false status="nosnc"/>
+       <item-is-library-component/>
+       <element-status-is-false status="explicit-pub"/>
+      </and>
+      <then>
+       <publish-as-unbound-first-release/>
+       <set-element-status status="publishing-as" value="unbound-first-release"/>       
+       <set-element-status status="case-id" value="*">
+        <get-global-status status="policy-case"/>
+       </set-element-status>    
+       <create-eco>
+        <logical-name>
+         <uppercase>
+      	 <make-string string="Initial Release"/>
+      	  <make-string string="-"/>
+         <get-source-value attribute="Project"/>
+         </uppercase>
+        </logical-name>       
+        <!-- may need to create a count variale for eco-ref-name -->
+        <property attribute="agile-class" value="Initial Release"/>
+        <property attribute="Workflow" value="Initial Release"/>
+        <property attribute="Project Authorization">
+         <get-source-value attribute="Project"/>       
+        </property>
+		       <property attribute="originator">
+         <get-context-value attribute="originator" />       
+        </property>
+       </create-eco>
+       <set-target-eco>
+        <logical-name>
+         <uppercase>
+      	 <make-string string="Initial Release"/>
+      	  <make-string string="-"/>
+         <get-source-value attribute="Project"/>
+         </uppercase>
+        </logical-name>
+       </set-target-eco>  
+       <!-- may need to create a count variale for eco-ref-name -->
+       <status-message>
+        <resolve-message key="unbd-release-new-eco">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+         <property attribute="eco-number"><get-target-eco/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </status-message>
+      </then>
+     </if-element>
+    </for-each-element>
+    <!--
+Test Case	mdl-fw-2100
+publish-action	unbound-first-wip
+is-valid:T filter-out:F sync-status:is-new or renumbered name-cflct:F has-pend-eco:F nosnc:F is-lib:F explicit-pub:F
+-->
+    <set-global-status status="policy-case" value="mdl-fw-2100"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>       
+       <item-is-valid/>
+       <item-is-not-filtered-out/>
+       <or>
+        <item-is-new/>
+        <item-is-renumbered/>
+       </or>
+       <item-does-not-have-name-conflict/>
+       <item-does-not-have-pending-eco/>
+       <element-status-is-false status="nosnc"/>
+       <item-is-not-library-component/>
+       <element-status-is-false status="explicit-pub"/>
+      </and>
+      <then>
+       <publish-as-unbound-first-wip/>
+       <set-element-status status="publishing-as" value="unbound-first-wip"/>       
+       <set-element-status status="case-id" value="*">
+        <get-global-status status="policy-case"/>
+       </set-element-status>       
+       <status-message>
+        <resolve-message key="unbd-first-wip">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </status-message>
+      </then>
+     </if-element>
+    </for-each-element>
+    <!--
+Test Case	mdl-rr-pdeco-2200
+publish-action	rev-release
+target-eco:	use-pending-eco
+is-valid:T matches-pub-env:T sync-status:is-new or renumbered or modified filter-out:F has-pend-eco:T on-open-eco:T nosnc:F is-lib:F explicit-pub:T
+-->
+    <set-global-status status="policy-case" value="mdl-rr-pdeco-2200"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>       
+       <or>
+        <item-is-new/>
+        <item-is-renumbered/>
+        <item-is-modified/>
+       </or>
+       <item-is-valid/>
+       <item-source-system-matches-pub-env/>       
+       <item-is-not-filtered-out/>
+       <item-has-pending-eco/>
+       <item-is-on-open-eco/>
+       <element-status-is-false status="nosnc"/>
+       <item-is-not-library-component/>
+       <element-status-is-true status="explicit-pub"/>
+      </and>
+      <then>
+       <publish-as-revised-release/>
+       <set-element-status status="publishing-as" value="revised-release"/>       
+       <set-element-status status="case-id" value="*">
+        <get-global-status status="policy-case"/>
+       </set-element-status>
+       <use-pending-eco/>                  
+       <status-message>
+        <resolve-message key="revised-pending-eco">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+         <property attribute="eco-number"><get-pending-eco-number/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </status-message>
+      </then>
+     </if-element>
+    </for-each-element>
+    <!--
+Test Case	mdl-rr-nweco-2300
+publish-action	rev-release
+target-eco:	new-eco
+is-valid:T filter-out:F matches-pub-env:T sync-status:is-new or renumbered name-cflct:T sync-conflict:F has-pend-eco:F is-released:F nosnc:F 
+is-lib:F explicit-pub:T
+-->
+    <set-global-status status="policy-case" value="mdl-rr-nweco-2300"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>       
+       <item-is-valid/>
+       <item-is-not-filtered-out/>
+       <item-source-system-matches-pub-env/>       
+       <or>
+        <item-is-new/>
+        <item-is-renumbered/>
+       </or>
+       <item-has-name-conflict/>
+       <item-does-not-have-synchronization-conflict/>
+       <item-does-not-have-pending-eco/>
+       <target-is-not-already-released/>
+       <element-status-is-false status="nosnc"/>
+       <item-is-not-library-component/>
+       <element-status-is-true status="explicit-pub"/>
+      </and>
+      <then>
+       <publish-as-revised-release/>
+       <set-element-status status="publishing-as" value="revised-release"/>        
+       <set-element-status status="case-id" value="*">
+        <get-global-status status="policy-case"/>
+       </set-element-status>      
+       <create-eco>
+        <logical-name>
+         <uppercase>
+      	 <make-string string="Initial Release"/>
+      	  <make-string string="-"/>
+         <get-source-value attribute="Project"/>
+         </uppercase>
+        </logical-name>       
+        <property attribute="agile-class" value="Initial Release"/>
+        <property attribute="Workflow" value="Initial Release"/>
+        <property attribute="Project Authorization">
+         <get-source-value attribute="Project"/>       
+        </property>
+		      <property attribute="originator">
+         <get-context-value attribute="originator" />       
+        </property>
+       </create-eco>
+       <set-target-eco>
+        <logical-name>
+         <uppercase>
+      	 <make-string string="Initial Release"/>
+      	  <make-string string="-"/>
+         <get-source-value attribute="Project"/>
+         </uppercase>
+        </logical-name>
+       </set-target-eco>  
+       <status-message>
+        <resolve-message key="unbd-release-new-eco">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+         <property attribute="eco-number"><get-target-eco/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </status-message>
+      </then>
+     </if-element>
+    </for-each-element>
+    <!--
+Test Case	mdl-rr-nweco-2400
+publish-action	rev-release
+target-eco:	new-eco
+is-valid:T filter-out:F matches-pub-env:T sync-status:is-modified has-pend-eco:F is-released:F nosnc:F is-lib:F explicit-pub:T
+-->
+    <set-global-status status="policy-case" value="mdl-rr-nweco-2400"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>       
+       <item-is-valid/>
+       <item-is-not-filtered-out/>
+       <item-source-system-matches-pub-env/>       
+       <item-is-modified/>
+       <item-does-not-have-pending-eco/>
+       <target-is-not-already-released/>
+       <element-status-is-false status="nosnc"/>
+       <item-is-not-library-component/>
+       <element-status-is-true status="explicit-pub"/>
+      </and>
+      <then>
+       <publish-as-revised-release/>
+       <set-element-status status="publishing-as" value="revised-release"/>        
+       <set-element-status status="case-id" value="*">
+        <get-global-status status="policy-case"/>
+       </set-element-status>       
+       <create-eco>
+        <logical-name>
+         <uppercase>
+      	 <make-string string="Initial Release"/>
+      	  <make-string string="-"/>
+         <get-source-value attribute="Project"/>
+         </uppercase>
+        </logical-name>
+         <property attribute="agile-class" value="Initial Release"/>
+         <property attribute="Workflow" value="Initial Release"/>
+        <property attribute="Project Authorization">
+         <get-source-value attribute="Project"/>       
+        </property>
+		      <property attribute="originator">
+         <get-context-value attribute="originator" />       
+        </property>
+       </create-eco>
+       <set-target-eco>
+        <logical-name>
+         <uppercase>
+      	 <make-string string="Initial Release"/>
+      	  <make-string string="-"/>
+         <get-source-value attribute="Project"/>
+         </uppercase>
+        </logical-name>
+       </set-target-eco>  
+       <status-message>
+        <resolve-message key="revised-new-eco">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+         <property attribute="eco-number"><get-target-eco/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </status-message>
+      </then>
+     </if-element>
+    </for-each-element>
+    <!--
+Test Case	mdl-rr-rveco-2500
+publish-action	rev-release
+target-eco:	revised-eco
+is-valid:T filter-out:F matches-pub-env:T sync-status:is-new or renumbered name-cflct:T sync-conflict:F has-pend-eco:F is-released:T nosnc:F 
+is-lib:F explicit-pub:T
+-->
+    <set-global-status status="policy-case" value="mdl-rr-rveco-2500"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>       
+       <item-is-valid/>
+       <item-is-not-filtered-out/>
+       <item-source-system-matches-pub-env/>       
+       <or>
+        <item-is-new/>
+        <item-is-renumbered/>
+       </or>
+       <item-has-name-conflict/>
+       <item-does-not-have-synchronization-conflict/>
+       <item-does-not-have-pending-eco/>
+       <target-is-already-released/>
+       <element-status-is-false status="nosnc"/>
+       <item-is-not-library-component/>
+       <element-status-is-true status="explicit-pub"/>
+      </and>
+      <then>
+       <publish-as-revised-release/>
+       <set-element-status status="publishing-as" value="revised-release"/>        
+       <set-element-status status="case-id" value="*">
+        <get-global-status status="policy-case"/>
+       </set-element-status>      
+       <create-eco>
+        <logical-name>
+         <uppercase>
+      	 <make-string string="Engineering Change Order"/>
+      	  <make-string string="-"/>
+         <get-source-value attribute="Project"/>
+         </uppercase>
+        </logical-name>        
+        <property attribute="agile-class" value="Engineering Change Order"/>
+        <property attribute="Workflow" value="Engineering Change Order"/>
+        <property attribute="Owning Organization" value="Mechanical"/>
+        <property attribute="Project Authorization">
+         <get-source-value attribute="Project"/>       
+        </property>
+		      <property attribute="originator">
+         <get-context-value attribute="originator" />       
+        </property>
+       </create-eco>
+       <set-target-eco>
+        <logical-name>
+         <uppercase>
+      	 <make-string string="Engineering Change Order"/>
+      	  <make-string string="-"/>
+         <get-source-value attribute="Project"/>
+         </uppercase>
+        </logical-name>
+       </set-target-eco>         
+       <status-message>
+        <resolve-message key="revised-rev-eco">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+         <property attribute="eco-number"><get-target-eco/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </status-message>
+      </then>
+     </if-element>
+    </for-each-element>
+    <!--
+Test Case	mdl-rr-rveco-2600
+publish-action	rev-release
+target-eco:	revised-eco
+is-valid:T filter-out:F matches-pub-env:T sync-status:is-modified has-pend-eco:F is-released:T nosnc:F is-lib:F explicit-pub:T
+-->
+    <set-global-status status="policy-case" value="mdl-rr-rveco-2600"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>       
+       <item-is-valid/>
+       <item-is-not-filtered-out/>
+       <item-source-system-matches-pub-env/>       
+       <item-is-modified/>
+       <item-does-not-have-pending-eco/>
+       <target-is-already-released/>
+       <item-is-not-library-component/>
+       <element-status-is-false status="nosnc"/>
+       <element-status-is-true status="explicit-pub"/>
+      </and>
+      <then>
+       <publish-as-revised-release/>
+       <set-element-status status="publishing-as" value="revised-release"/>        
+       <set-element-status status="case-id" value="*">
+        <get-global-status status="policy-case"/>
+       </set-element-status> 
+       <create-eco>
+        <logical-name>
+         <uppercase>
+      	 <make-string string="Engineering Change Order"/>
+      	  <make-string string="-"/>
+         <get-source-value attribute="Project"/>
+         </uppercase>
+        </logical-name>        
+        <property attribute="agile-class" value="Engineering Change Order"/>
+        <property attribute="Workflow" value="Engineering Change Order"/>
+        <property attribute="Owning Organization" value="Mechanical"/>
+        <property attribute="Project Authorization">
+         <get-source-value attribute="Project"/>       
+        </property> 
+		      <property attribute="originator">
+         <get-context-value attribute="originator" />       
+        </property>
+       </create-eco>
+       <set-target-eco>
+        <logical-name>
+         <uppercase>
+      	 <make-string string="Engineering Change Order"/>
+      	  <make-string string="-"/>
+         <get-source-value attribute="Project"/>
+         </uppercase>
+        </logical-name>
+       </set-target-eco> 
+       <status-message>
+        <resolve-message key="revised-rev-eco">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+         <property attribute="eco-number"><get-target-eco/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </status-message>
+      </then>
+     </if-element>
+    </for-each-element>
+    <!--
+Test Case	mdl-ign-2700
+publish-action	ignore 
+matches-pub-env:T sync-status:synchronized
+-->
+    <set-global-status status="policy-case" value="mdl-ign-2700"/>
+    <for-each-element>
+     <if-element>
+      <and>
+       <element-status-is-true status="item-needs-evaluation"/>
+       <item-source-system-matches-pub-env/>              
+       <item-is-synchronized/>       
+      </and>
+      <then>
+       <ignore-for-publishing/>
+       <set-element-status status="publishing-as" value="ignore"/>       
+       <set-element-status status="case-id" value="*">
+        <get-global-status status="policy-case"/>
+       </set-element-status>
+       <status-message>
+        <resolve-message key="synchronized">  
+         <property attribute="name"><get-source-value attribute="Name"/></property>
+         <property attribute="part-number"><get-source-value attribute="Part_Number"/></property>
+	        <property attribute="case-number"><get-global-status status="policy-case"/></property>
+        </resolve-message>         
+       </status-message>
+      </then>
+     </if-element>
+    </for-each-element>
+    <!-- END Truth Table Logic ################################################### -->
+
+ 
+				<!--+++++++++++++++++++-->
+				<!-- PL DOCUMENT LOGIC -->
+				<!--+++++++++++++++++++-->
+
+				<!-- Three things need to be accomplished with PL-Document:
+					1. Create the PL-Document and put it on appropriate CO (assembly's)
+					2. Associate PL-Document with the Assembly
+					3. Flag to publish the PL-Document into the target (Agile) 
+				-->
+
+				<for-each-element>
+					<if-element>
+						<and>
+							<item-is-design-assembly />
+							<item-is-design-root />
+							<item-is-not-library-component />
+							<or>
+								<element-status-is-true status="publish-as-first-release" />
+								<element-status-is-true status="publish-as-revised-release" />
+							</or>
+						</and>
+						<then>
+							<doc-release /><!-- flag to do a PL Document release on this ASSEMBLY -->
+							<set-element-status status="pl-document-name">
+								<uppercase>
+									<add-prefix prefix="PL">
+										<get-source-value attribute="Part_Number" />
+									</add-prefix>
+								</uppercase>
+							</set-element-status>
+
+							<create-element><!--creating the PL Document -->
+								<logical-name>
+									<get-element-status status="pl-document-name" />
+								</logical-name>
+							</create-element>
+
+							<add-document><!-- add PL Document to Assembly's BOM -->
+								<logical-name>
+									<get-element-status status="pl-document-name" />
+								</logical-name>
+
+								<bom-property attribute="Qty" value="1" />
+								<bom-property attribute="Find Num" value="0" />
+								<bom-property attribute="Usage Type" value="Std" />
+								<bom-property attribute="CAD Source" value="Intralink-Doc" />
+							</add-document>
+							<!--
+								<set-context-value attribute="Source System">
+								<get-source-value attribute="Source System"/>
+								</set-context-value>
+							-->
+
+							<set-context-value attribute="Description">
+								<add-prefix prefix="PL for ">
+									<get-source-value attribute="Description" />
+									<make-string string=" " />
+									<get-source-value attribute="Description2" />
+								</add-prefix>
+							</set-context-value>
+
+							<set-context-value attribute="Cage Code">
+								<get-source-value attribute="Cage_Code" />
+							</set-context-value>
+
+							<set-context-value attribute="Project Authorization">
+								<get-source-value attribute="Project" />
+							</set-context-value>
+
+							<select-by-name>
+								<logical-name>
+									<get-element-status status="pl-document-name" />
+								</logical-name>
+								<set-element-status status="item-needs-evaluation" value="false" />
+								<set-attribute xfer-attribute="agile-class" value="Parts List" />
+								<set-attribute xfer-attribute="name">
+									<get-element-name />
+								</set-attribute>
+								<set-attribute xfer-attribute="number">
+									<get-element-name />
+								</set-attribute>
+
+								<set-attribute xfer-attribute="Description" max-length="50">
+									<get-context-value attribute="Description" />
+								</set-attribute>
+
+								<set-attribute xfer-attribute="Owning Organization" value="Mechanical" />
+
+								<set-attribute xfer-attribute="Cage Code">
+									<get-context-value attribute="Cage Code" />
+								</set-attribute>
+
+								<set-attribute xfer-attribute="Project Authorization">
+									<get-context-value attribute="Project Authorization" />
+								</set-attribute>
+						  
+								<set-target-eco>
+									<logical-name>
+										<select-first-document-parent>
+											<get-target-eco />
+										</select-first-document-parent>
+									</logical-name>
+								</set-target-eco>
+
+                <if>
+									<item-is-in-target/>
+									<then>
+                    <publish-as-unbound-revised-release />
+										<use-pending-eco />
+									</then>
+									<else>
+										<publish-as-unbound-first-release />
+									</else>
+								</if>
+							</select-by-name>
+							
+						</then>
+						<else>
+							<!-- Assembly does NOT meet criteria for document with PL-document -->
+						</else>
+					</if-element>
+				</for-each-element>
+
+				<!-- PL DOCUMENT LOGIC END-->
+ 
+    
+    <for-each-element>
+     <set-global-status status="policy-case" value="~"/>
+     <!-- ignore -->
+     <if>
+      <element-status-is-true status="ignore-for-publishing"/>
+      <then>
+       <do-not-need-to-create-item/>
+       <do-not-need-to-update-metadata/>
+       <do-not-need-to-update-struct/>
+       <do-not-need-to-update-file/>
+       <do-not-need-to-synchronize-item/>
+      </then>
+     </if>
+     <!--bind-items-->
+     <if>
+      <element-status-is-true status="bind-to-target"/>
+      <then>
+       <do-not-need-to-create-item/>
+       <do-not-need-to-update-metadata/>
+       <do-not-need-to-update-struct/>
+       <do-not-need-to-update-file/>
+       <need-to-synchronize-item/>
+      </then>
+     </if>
+     <!--first-wip -->
+     <if>
+      <element-status-is-true status="publish-as-first-wip"/>
+      <then>
+       <need-to-create-item/>
+       <need-to-update-metadata/>
+       <need-to-update-struct/>
+       <need-to-update-file/>
+       <need-to-synchronize-item/>
+      </then>
+     </if>
+     <!--unbound-first-wip -->
+     <if>
+      <element-status-is-true status="publish-as-unbound-first-wip"/>
+      <then>
+       <need-to-create-item/>
+       <need-to-update-metadata/>
+       <need-to-update-struct/>
+       <need-to-update-file/>
+       <do-not-need-to-synchronize-item/>
+      </then>
+     </if>     
+     <!--rev-wip -->
+     <if>
+      <element-status-is-true status="publish-as-revised-wip"/>
+      <then>
+       <do-not-need-to-create-item/>
+       <need-to-update-metadata/>
+       <need-to-update-struct/>
+       <need-to-update-file/>
+       <need-to-synchronize-item/>
+      </then>
+     </if>
+     <!--unbound-rev-wip -->
+     <if>
+      <element-status-is-true status="publish-as-unbound-revised-wip"/>
+      <then>
+       <do-not-need-to-create-item/>
+       <need-to-update-metadata/>
+       <need-to-update-struct/>
+       <need-to-update-file/>
+       <do-not-need-to-synchronize-item/>
+      </then>
+     </if> 
+         
+     <!--first-release -->
+     <if>
+      <element-status-is-true status="publish-as-first-release"/>
+      <then>
+       <need-to-create-item/>
+       <need-to-update-metadata/>
+       <need-to-update-struct/>
+       <need-to-update-file/>
+       <need-to-synchronize-item/>
+      </then>
+     </if>
+     <!-- publish-as-unbound-first-release -->
+     <if>
+      <element-status-is-true status="publish-as-unbound-first-release"/>
+      <then>
+       <need-to-create-item/>
+       <need-to-update-metadata/>
+       <need-to-update-struct/>
+       <need-to-update-file/>
+       <do-not-need-to-synchronize-item/>       
+      </then>
+     </if>
+          
+     <!--rev-release -->
+     <if>
+      <element-status-is-true status="publish-as-revised-release"/>
+      <then>
+       <do-not-need-to-create-item/>
+       <need-to-update-metadata/>
+       <need-to-update-struct/>
+       <need-to-update-file/>
+       <need-to-synchronize-item/>
+      </then>
+     </if>
+     <!--unbound-rev-release -->
+     <if>
+      <element-status-is-true status="publish-as-unbound-revised-release"/>
+      <then>
+       <do-not-need-to-create-item/>
+       <need-to-update-metadata/>
+       <need-to-update-struct/>
+       <need-to-update-file/>
+       <do-not-need-to-synchronize-item/>
+      </then>
+     </if>     
+     
+     
+     
+     
+     <if>
+      <element-status-is-true status="doc-wip"/>
+      <then>
+       <need-to-add-doc/>
+      </then>
+     </if>
+     <if>
+      <element-status-is-true status="doc-release"/>
+      <then>
+       <need-to-add-doc/>
+      </then>
+     </if>
+     
+
+    </for-each-element>
+
+    <show-pen-data/>
+   </analyze-data>
+
+	 <cancel-publish continue-if-cancelled="true">
+       <for-each-origin-to-publish continue-if-cancelled="true">
+        <demote-source-data state-name="WIP"/>
+       </for-each-origin-to-publish>
+	 </cancel-publish>
+
+   <publish-target-data>
+
+    <create-new-items/>
+    <detect-redlines/>
+    <update-metadata/>
+    <update-structure/>
+    <update-documentation/>
+    <update-binary-files/>
+    <synchronize/>
+
+    <show-pen-data/>
+   </publish-target-data>
+   <update-source/>
+  </pen-policy>
+ </pen-policies>
+</designstate-config>

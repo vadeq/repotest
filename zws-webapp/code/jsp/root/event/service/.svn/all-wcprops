@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/zws/!svn/ver/5307/trunk/zws/designstate/webapp/code/jsp/root/event/service
+END
+event-handler-not-defined.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/jsp/root/event/service/event-handler-not-defined.jsp
+END
+event-not-recognized.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/jsp/root/event/service/event-not-recognized.jsp
+END
+event-no-user.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/jsp/root/event/service/event-no-user.jsp
+END
+index.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/jsp/root/event/service/index.jsp
+END
+event-error.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/jsp/root/event/service/event-error.jsp
+END
+event-fired.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/jsp/root/event/service/event-fired.jsp
+END
+event-bad-login.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/jsp/root/event/service/event-bad-login.jsp
+END
+err-missing-required-attribute.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/jsp/root/event/service/err-missing-required-attribute.jsp
+END
+err-not-synchronized.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/jsp/root/event/service/err-not-synchronized.jsp
+END
+err-not-up-to-date.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/jsp/root/event/service/err-not-up-to-date.jsp
+END
+index.htm
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/jsp/root/event/service/index.htm
+END

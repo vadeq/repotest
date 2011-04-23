@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/zws/!svn/ver/6301/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config
+END
+web-node.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/zws/!svn/ver/2719/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/web-node.xml
+END
+panel-bar.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/6301/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/panel-bar.xml
+END
+web-system-property.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/zws/!svn/ver/6134/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/web-system-property.xml
+END
+services.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/zws/!svn/ver/4902/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/services.xml
+END
+database.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/zws/!svn/ver/6134/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/database.xml
+END
+event-listener.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/zws/!svn/ver/6134/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/event-listener.xml
+END
+qx-queue.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/zws/!svn/ver/4902/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/qx-queue.xml
+END
+server-system-property.xml
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/zws/!svn/ver/6301/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/server-system-property.xml
+END
+event-handlers.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/zws/!svn/ver/4902/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/event-handlers.xml
+END
+repository.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/zws/!svn/ver/6134/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/repository.xml
+END

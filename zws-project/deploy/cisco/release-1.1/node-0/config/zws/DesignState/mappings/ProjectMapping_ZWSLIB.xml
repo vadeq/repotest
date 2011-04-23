@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:root
+    xsi:schemaLocation="http://www.agile.com/api/map file:/xsd/map.xsd"
+    version="2.0.0" xmlns:map="http://www.agile.com/api/map" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <map:globalRules>
+        <map:addTypeOption value="true"/>
+        <!-- read only or special attributes in Agile. 2064 and 2065 are used by CIF -->
+        <map:forceIsDirty value="false"
+            attribute="1001,1011,1014,1016,1017,1020,1021,1030,1046,1047,1051,1054,1055,1056,1057,1069,1081,1084,1142,1143,1144,1343,2064,2065,2181,3582,3621,3623,3624,3645,3743,4500,4684,6038,6148,6154,6173,6175,6176,6177,6178,6180,6184,6305,6388,6389,6390,7951,10014,12089,12205,2000004143,2000004612,2000004891,2000007045" split=","/>
+        <!-- flex fields that should work
+        <map:forceIsDirty value="false"
+            attribute="35818,35826,35827,35828,35829,35830,37549,37555,38266" split=","/>
+        -->
+    </map:globalRules>
+    <!--  ************************************************************************************************************
+          **      ProE  Library  Part  Structure                                                                    **
+          **                                                                                                        **
+          **                  Design Change Order                                                                   **
+          **               ECPN                                                                                     **
+          **            ProE Object (self)  ->  ProE Object                                                         **
+          **               ProE Part File                                                                           **
+          **                  ProE Part Folder                                                                      **
+          **                                                                                                        **
+          ************************************************************************************************************  -->
+    <map:structure name="ProE Object Structure">
+        <map:matchRule source="number+name" match="(.+\.prt$)|(.+\.prtnull$)|(.+\.asm$)|(.+\.asmnull$)|(.+\.drw$)|(.+\.drwnull$)"/>
+        <map:self name="ProE Object" head="false">
+            <map:key page="Title Block" name="Number" id="1001">
+                <map:expressionOption>
+                    <map:expression source="number" match="^(.+)\.prt$"
+                        replace="MEP_$1_P" toCase="upper"/>
+                    <map:expression source="number" match="^(.+)\.asm$"
+                        replace="MEP_$1_A" toCase="upper"/>
+                    <map:expression source="number" match="^(.+)\.drw$"
+                        replace="MEP_$1_D" toCase="upper"/>
+                    <map:expression source="name" match="^(.+)\.prt$"
+                        replace="MEP_$1_P" toCase="upper"/>
+                    <map:expression source="name" match="^(.+)\.asm$"
+                        replace="MEP_$1_A" toCase="upper"/>
+                    <map:expression source="name" match="^(.+)\.drw$"
+                        replace="MEP_$1_D" toCase="upper"/>
+                </map:expressionOption>
+            </map:key>
+            <map:class name="Documents">
+                <map:target page="Title Block" name="Description" id="1002">
+                    <map:expression source="description"/>
+                </map:target>
+                <map:target page="Title Block" name="Lifecycle Phase" id="1084">
+                    <map:expression replace="Released"/>
+                </map:target>
+            </map:class>
+            <map:subclass name="Mechanical Library Part">
+                <map:matchRule source="number+name" match="(.+\.prt$)|(.+\.prtnull$)"/>
+                <map:target page="Page Three" name="LIB_MKP1_X" id="12506">
+                    <map:expression source="LIB_MKP1_X" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_MKP1_Y" id="12507">
+                    <map:expression source="LIB_MKP1_Y" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="APC_ATRB_3" id="37549">
+                    <map:expression source="APC_ATRB_3" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_MKP4_Y" id="35818">
+                    <map:expression source="LIB_MKP4_Y" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Pitch" id="12505">
+                    <map:expression source="Pitch" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_BB_MIN_X" id="35826">
+                    <map:expression source="LIB_BB_MIN_X" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_MKP2_X" id="9384">
+                    <map:expression source="LIB_MKP2_X" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_HEIGHT" id="35830">
+                    <map:expression source="LIB_BB_HEIGHT"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_MKP3_X" id="9386">
+                    <map:expression source="LIB_MKP3_X" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Type of Part" id="1540">
+                    <map:expression source="Type of Part" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_BB_MAX_Y" id="35829">
+                    <map:expression source="LIB_BB_MAX_Y" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Gender" id="1543">
+                    <map:expression source="Gender" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="APC_ATRB_6" id="1579">
+                    <map:expression source="APC_ATRB_6" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_PIN_TECH" id="1542">
+                    <map:expression source="LIB_PIN_TECH" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_UNITS" id="1541">
+                    <map:expression source="LIB_UNITS" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="APC_ATRB_7" id="1580">
+                    <map:expression source="APC_ATRB_7" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="APC_ATRB_8" id="1581">
+                    <map:expression source="APC_ATRB_8" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_MKP2_Y" id="9385">
+                    <map:expression source="LIB_MKP2_Y" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="APC_ATRB_1" id="1575">
+                    <map:expression source="APC_ATRB_1" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_BB_MAX_X" id="35828">
+                    <map:expression source="LIB_BB_MAX_X" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_MKP4_X" id="9412">
+                    <map:expression source="LIB_MKP4_X" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="APC_ATRB_2" id="1576">
+                    <map:expression source="APC_ATRB_2" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_MKP3_Y" id="9411">
+                    <map:expression source="LIB_MKP3_Y" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Number of Pins" id="12503">
+                    <map:expression source="Number of Pins" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="APC_ATRB_9" id="37555">
+                    <map:expression source="APC_ATRB_9" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Number of Rows" id="12504">
+                    <map:expression source="Number of Rows" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="APC_ATRB_5" id="1578">
+                    <map:expression source="APC_ATRB_5" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Source Library" id="1539">
+                    <map:expression source="Source Library" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="APC_ATRB_4" id="1577">
+                    <map:expression source="APC_ATRB_4" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_BB_MIN_Y" id="35827">
+                    <map:expression source="LIB_BB_MIN_Y" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Auto Part Creation" id="12459">
+                    <map:expression
+                        source="Auto Part Creation" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Auto Verification" id="12460">
+                    <map:expression
+                        source="Auto Verification" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Part Information" id="12458">
+                    <map:expression source="Part Information" refresh="true"/>
+                </map:target>
+            </map:subclass>
+        </map:self>
+        <map:object name="ECPN" head="true" isdirty="false">
+            <map:key page="Title Block" name="Number" id="1001">
+                <map:expressionOption>
+                    <map:expression source="number"
+                        match="(?!^null$)(.+)\..{3}" replace="ENG_$1" toCase="upper"/>
+                    <map:expression source="name"
+                        match="(?!^null$)(.+)\..{3}" replace="ENG_$1" toCase="upper"/>
+                </map:expressionOption>
+            </map:key>
+            <map:class name="Documents" limitRefresh="true">
+                <map:target name="role" option="true">
+                    <map:expression replace="parent"/>
+                </map:target>
+            </map:class>
+            <map:subclass name="ECPN" limitRefresh="true"/>
+        </map:object>
+        <map:object name="Design Change Order" head="true">
+            <map:key page="Cover Page" name="Number" id="1047">
+                <map:expression replace="$AUTO-01"/>
+            </map:key>
+            <map:class name="Change Orders">
+                <map:target name="multipleaffecteditems" option="true">
+                    <map:expression replace="true"/>
+                </map:target>
+                <map:target name="autonumbersource" option="true">
+                    <map:expression replace="MLP-Mechanical Library Publish"/>
+                </map:target>
+                <map:target name="ownerattribute" option="true">
+                    <map:expression replace="1099"/>
+                </map:target>
+                <map:target page="Cover Page" name="Workflow" id="3742">
+                    <map:expression replace="Eng Library Publish"/>
+                </map:target>
+                <map:target page="Cover Page" name="Change Analyst" id="1099">
+                    <map:expression replace="$USER"/>
+                </map:target>
+                <map:target page="Cover Page" name="Description of Change" id="1052" isdirtyDefault="true">
+                    <map:expressionOption>
+                        <map:expression source="Cover Page.Description of Change" match="(.+)" replace="$1"/>
+                        <map:expression source="'default'" quote="'" match="default" replace="Mechanical Library Publish"/>
+                    </map:expressionOption>
+                </map:target>
+                <map:target page="Cover Page" name="Reason For Change" id="1053" isdirtyDefault="true">
+                    <map:expressionOption>
+                        <map:expression source="Cover Page.Reason For Change" match="(.+)" replace="$1"/>
+                        <map:expression source="'default'" quote="'" match="default" replace="Mechanical Library Publish"/>
+                    </map:expressionOption>
+                </map:target>
+                <map:target page="Cover Page" name="Change Category" id="1060" isdirtyDefault="true">
+                    <map:expressionOption>
+                        <map:expression source="Cover Page.Change Category" match="(.+)" replace="$1"/>
+                        <map:expression source="'default'" quote="'" match="default" replace="ENG"/>
+                    </map:expressionOption>
+                </map:target>
+            </map:class>
+            <map:subclass name="Eng Library Publish">
+                <map:target page="Page Three"
+                    name="Eng Library Publish Category" id="1539" isdirtyDefault="true">
+                    <map:expressionOption>
+                        <map:expression source="Eng Library Publish Category" match="(.+)" replace="$1"/>
+                        <map:expression source="'default'" quote="'" match="default" replace="Mechanical Library Publish"/>
+                    </map:expressionOption>
+                </map:target>
+            </map:subclass>
+        </map:object>
+        <map:object name="ProE Folder" head="false">
+            <map:key page="Title Block" name="Number" id="6173">
+                <map:expression replace=""/>
+            </map:key>
+            <map:class name="File Folders">
+                <map:target name="autonumbersource" option="true">
+                    <map:expression replace="File Folder Number"/>
+                </map:target>
+            </map:class>
+            <map:subclass name="Library File Folder"/>
+        </map:object>
+        <map:object name="ProE File" head="false">
+            <map:key page="" name="file-name" id="">
+                <map:expression source="attachment"
+                    match="^(.*[\\/]|)([^\\/]+)$" replace="$2"/>
+            </map:key>
+            <map:class name="Files">
+                <map:target page="" name="file-path" id="">
+                    <map:expression source="attachment"
+                        match="^(.*[\\/]|)([^\\/]+)$" replace="$1"/>
+                </map:target>
+                <map:target page="" name="file-id" id="">
+                    <map:expression source="fileId"/>
+                </map:target>
+            </map:class>
+            <map:subclass name="file"/>
+        </map:object>
+        <map:relation parent="ProE Object" child="ProE Object" self="true">
+            <map:childClass name="Documents">
+                <map:target page="BOM" name="Find Num" id="1012">
+                    <map:expression source="BOM.Find Num" refresh="true"/>
+                </map:target>
+                <map:target page="BOM" name="Item Number" id="1011">
+                    <map:expressionOption>
+                        <map:expression source="number"
+                            match="^(.+)\.prt$" replace="MEP_$1_P" toCase="upper"/>
+                        <map:expression source="number"
+                            match="^(.+)\.asm$" replace="MEP_$1_A" toCase="upper"/>
+                        <map:expression source="number"
+                            match="^(.+)\.drw$" replace="MEP_$1_D" toCase="upper"/>
+                        <map:expression source="name"
+                            match="^(.+)\.prt$" replace="MEP_$1_P" toCase="upper"/>
+                        <map:expression source="name"
+                            match="^(.+)\.asm$" replace="MEP_$1_A" toCase="upper"/>
+                        <map:expression source="name"
+                            match="^(.+)\.drw$" replace="MEP_$1_D" toCase="upper"/>
+                    </map:expressionOption>
+                </map:target>
+            </map:childClass>
+            <map:parentClass name="Documents"/>
+        </map:relation>
+        <map:relation parent="ECPN" child="ProE Object" self="false">
+            <map:childClass name="Documents" limitRefresh="true">
+                <map:target page="BOM" name="Item Number" id="1011">
+                    <map:expressionOption>
+                        <map:expression source="number"
+                            match="^(.+)\.prt$" replace="MEP_$1_P" toCase="upper"/>
+                        <map:expression source="number"
+                            match="^(.+)\.asm$" replace="MEP_$1_A" toCase="upper"/>
+                        <map:expression source="number"
+                            match="^(.+)\.drw$" replace="MEP_$1_D" toCase="upper"/>
+                        <map:expression source="name"
+                            match="^(.+)\.prt$" replace="MEP_$1_P" toCase="upper"/>
+                        <map:expression source="name"
+                            match="^(.+)\.asm$" replace="MEP_$1_A" toCase="upper"/>
+                        <map:expression source="name"
+                            match="^(.+)\.drw$" replace="MEP_$1_D" toCase="upper"/>
+                    </map:expressionOption>
+                </map:target>
+            </map:childClass>
+            <map:parentClass name="Documents" limitRefresh="true"/>
+        </map:relation>
+        <map:relation parent="ProE Object" child="Design Change Order" self="false">
+            <map:childClass name="Change Orders">
+                <map:target page="Affected Items" name="Lifecycle Phase" id="1057">
+                    <map:expression replace="Released"/>
+                </map:target>
+            </map:childClass>
+            <map:parentClass name="Documents"/>
+        </map:relation>
+        <map:relation parent="ECPN" child="Design Change Order" self="false">
+            <map:childClass name="Change Orders" limitRefresh="true">
+                <map:target page="Affected Items" name="Lifecycle Phase" id="1057">
+                    <map:expression replace="Design"/>
+                </map:target>
+            </map:childClass>
+            <map:parentClass name="Documents" limitRefresh="true"/>
+        </map:relation>
+        <map:relation parent="ProE Object" child="ProE File" self="false">
+            <map:childClass name="Files"/>
+            <map:parentClass name="Documents">
+                <map:target page="Attachments" name="Filename" id="1046">
+                    <map:expression source="attachment"
+                        match="^(.*[\\/]|)([^\\/]+)$" replace="$2"/>
+                </map:target>
+            </map:parentClass>
+        </map:relation>
+        <map:relation parent="ProE File" child="ProE Folder" self="false">
+            <map:childClass name="File Folders">
+                <map:target page="Files" name="File Name" id="6303">
+                    <map:expression source="attachment"
+                        match="^(.*[\\/]|)([^\\/]+)$" replace="$2"/>
+                </map:target>
+            </map:childClass>
+            <map:parentClass name="Files"/>
+        </map:relation>
+    </map:structure>
+    <!--  ************************************************************************************************************
+          **      Misc Related File Structure                                                                       **
+          **                                                                                                        **
+          **               File (self) <- ProE Object                                                               **
+          **                  Folder                                                                                **
+          **                                                                                                        **
+          ************************************************************************************************************  -->
+    <map:structure name="Misc Related File Structure">
+        <map:matchRule source="attachment" match="^.*$"/>
+        <map:self name="Misc Related File" head="false">
+            <map:key page="" name="file-name" id="">
+                <map:expression source="attachment"
+                    match="^(.*[\\/]|)([^\\/]+)$" replace="$2"/>
+            </map:key>
+            <map:class name="Files">
+                <map:target page="" name="file-path" id="">
+                    <map:expression source="attachment"
+                        match="^(.*[\\/]|)([^\\/]+)$" replace="$1"/>
+                </map:target>
+                <map:target page="" name="file-id" id="">
+                    <map:expression source="fileId"/>
+                </map:target>
+                <map:target page="" name="number" id="">
+                    <map:expression source="number"/>
+                </map:target>
+            </map:class>
+            <map:subclass name="file"/>
+        </map:self>
+        <map:object name="Misc Related File Folder" head="false">
+            <map:key page="Title Block" name="Number" id="6173">
+                <map:expression replace=""/>
+            </map:key>
+            <map:class name="File Folders">
+                <map:target name="autonumbersource" option="true">
+                    <map:expression replace="File Folder Number"/>
+                </map:target>
+            </map:class>
+            <map:subclass name="Design File Folder"/>
+        </map:object>
+        <map:relation parent="ProE Object" child="Misc Related File" self="true">
+            <map:childClass name="Files">
+                <map:target page="Attachments" name="Filename" id="1046">
+                    <map:expression source="attachment"
+                        match="^(.*[\\/]|)([^\\/]+)$" replace="$2"/>
+                </map:target>
+            </map:childClass>
+            <map:parentClass name="Documents"/>
+        </map:relation>
+        <map:relation parent="Misc Related File"
+            child="Misc Related File Folder" self="false">
+            <map:childClass name="File Folders"/>
+            <map:parentClass name="Files">
+            </map:parentClass>
+        </map:relation>
+    </map:structure>
+</map:root>

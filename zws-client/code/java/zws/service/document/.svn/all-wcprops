@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/code/java/zws/service/document
+END
+DocumentService.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/document/DocumentService.java
+END
+DocumentServiceLocalHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/document/DocumentServiceLocalHome.java
+END
+DocumentServiceRemoteHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/document/DocumentServiceRemoteHome.java
+END
+EJBLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/document/EJBLocator.java
+END
+DocumentServiceLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/document/DocumentServiceLocal.java
+END
+DocumentServiceRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/document/DocumentServiceRemote.java
+END

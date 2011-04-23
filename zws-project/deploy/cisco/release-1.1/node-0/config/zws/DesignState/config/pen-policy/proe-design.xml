@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<designstate-config>
+ <pen-policies>
+  <!-- Proe- design -->
+  <pen-policy name="ProE-Design" src-repository="ilink-8" target-repository="agile-wsx">
+   <retrieve-data>
+<!-- 		<load-bill-from-source-repository select-attributes="DESC,LIB_MKP1_X,LIB_MKP1_Y,LIB_MKP2_X,LIB_MKP2_Y,LIB_MKP3_X,LIB_MKP3_Y,LIB_MKP4_X,LIB_UNITS,LIB_PIN_TECH,LIB_BB_MIN_X,LIB_BB_MIN_Y,LIB_BB_MAX_Y,LIB_MKP4_Y,LIB_BB_MAX_X,LIB_BB_HEIGHT"/> -->
+		<!--LIB_UNITS,LIB_PIN_TECH,LIB_BB_MIN_X,LIB_BB_MIN_Y,LIB_BB_MAX_Y,LIB_MKP4_Y,LIB_BB_MAX_X,LIB_BB_HEIGHT-->
+
+		<load-bill-with-deps-from-source-repository select-attributes="DESC,LIB_MKP1_X,LIB_MKP1_Y,LIB_MKP2_X,LIB_MKP2_Y,LIB_MKP3_X,LIB_MKP3_Y,LIB_MKP4_X,LIB_UNITS,LIB_PIN_TECH,LIB_BB_MIN_X,LIB_BB_MIN_Y,LIB_BB_MAX_Y,LIB_MKP4_Y,LIB_BB_MAX_X,LIB_BB_HEIGHT"/>
+
+   </retrieve-data>
+
+   <transform-data>
+      <set-context-value attribute="createdByTool" value="MCAD ProE Design"/>
+      <set-context-value attribute="createdForProject" value="project PLS 1.3"/>
+	  <set-context-value attribute="createdByToolVersion" value="PLS 1.3"/>
+	  <set-context-value attribute="asyncFlag" value="TRUE"/>
+	  <set-context-value attribute="mappedFlag" value="FALSE"/>
+	  <set-context-value attribute="auto-release" value="TRUE"/>
+     <copy-sub-components/>
+    <for-each-element>
+		<copy-all-attributes/>
+		<!-- set-attribute xfer-attribute="agile-class" value="Part"/ -->
+
+	 <set-attribute xfer-attribute="description">
+      <make-string>
+       <get-source-value attribute="DESC"/>
+       <make-string string=""/>
+       <get-source-value attribute="Description"/>
+      </make-string>
+    </set-attribute>
+
+     <set-attribute xfer-attribute="publisher">
+          <lowercase><username/></lowercase>
+     </set-attribute>
+
+	<set-attribute xfer-attribute="number">
+		<lowercase><get-source-value attribute="number"/></lowercase>
+	</set-attribute>
+
+	 <set-attribute xfer-attribute="name">
+      <make-string>
+	         <make-string string="MEP_"/>
+	      <lowercase>
+			<get-filename-base><get-source-value attribute="number"/></get-filename-base>
+		  </lowercase>
+		  <get-agile-suffix alternate-attribute="CADName">
+			  <get-source-value attribute="number"/>
+		  </get-agile-suffix>
+      </make-string>
+     </set-attribute>
+
+	<if>
+	  <starts-with prefix="CiscoStandard">
+	    <get-source-value attribute="container"/>
+	  </starts-with>
+      <then> <set-attribute xfer-attribute="is-library" value="true"/> </then>
+	  <else><set-attribute xfer-attribute="is-library" value="false"/> </else>
+	</if>
+
+	<replace-missing-part-numbers/>
+    </for-each-element>
+   </transform-data>
+   <!-- analyze data -->
+   
+   <analyze-data>
+	<for-each-element> <!-- initialization -->
+		<set-target-eco logical-name=""/>
+		<set-element-status status="item-needs-evaluation" value="true" />
+		<!--library vars -->
+		<set-element-status status="item-is-valid" value="~"/>
+		<set-element-status status="filter-out" value="~"/>
+		<set-element-status status="sync-status" value="~"/>
+		<set-element-status status="item-has-name-conflict" value="~"/>
+		<set-element-status status="item-has-synchronization-conflict" value="~"/>
+		<set-element-status status="item-has-pending-eco" value="~"/>
+		<set-element-status status="item-is-on-open-eco" value="~"/>
+		<set-element-status status="target-is-already-released" value="~"/>
+
+		<!-- initialize Publishing Patteren to be undefined -->
+		<set-element-status status="publish-pattern" value="~"/>
+		<set-element-status status="ignore-for-publishing" value="~"/>
+		<set-element-status status="bind-to-target" value="~"/>
+		<set-element-status status="publish-as-first-release" value="~"/>
+		<set-element-status status="publish-as-unbinded-first-release" value="~"/>    
+		<set-element-status status="publish-as-revised-release" value="~"/>
+		<set-element-status status="publish-as-first-wip" value="~"/>
+		<set-element-status status="publish-as-revised-wip" value="~"/>
+		<set-element-status status="doc-release" value="~"/>
+		<set-element-status status="doc-wip" value="~"/>
+
+		<!-- initialize actions for publishing pattern -->
+		<set-element-status status="item-needs-to-be-created" value="false"/>
+		<set-element-status status="item-needs-to-be-synchronized" value="false"/>
+		<set-element-status status="metadata-needs-to-be-updated" value="false"/>
+		<set-element-status status="struct-needs-to-be-updated" value="false"/>
+		<set-element-status status="file-needs-to-be-updated" value="false"/>
+		<set-element-status status="doc-needs-to-be-added" value="false"/>
+	    <!-- initialize actions for publishing patterns -->
+
+	   <set-element-status status="item-is-valid" value="true"/>
+    </for-each-element>
+
+    <load-synchronization-status/>
+    <!--<detect-name-conflicts/>
+    <detect-synchronization-conflicts/>
+    <detect-pending-eco/>
+    <load-pending-eco/>
+	-->
+     <!--
+      Test Case	
+      publish-action	ignore
+      is-valid:T sync-status:synchronized
+     -->
+     <set-global-status status="policy-case" value="already-sync"/>
+     <for-each-element>
+      <if-element>
+      <and>
+       <item-is-valid/>
+       <item-is-synchronized/>
+      </and>
+      <then>
+       <ignore-for-publishing/>
+      <set-global-status status="case-id" value="*"><get-global-status status="policy-case"/></set-global-status>
+       <status-message>
+        <make-string string="["/><get-global-status status="policy-case"/><make-string string="]"/><make-string string="publishing: "/><get-element-status status="publishing-as"/>
+        <make-string string="publishing ignored - item is already synchronized."/>
+       </status-message>
+      </then>
+     </if-element>
+     </for-each-element>
+
+	<for-each-element> 
+		<if-element>
+			<item-is-new/>
+		<then>
+		      <publish-as-first-release/>
+		</then>
+		</if-element>
+
+		<if-element>
+	        <item-is-modified/>
+		<then>
+		     <publish-as-revised-release/>
+		</then>
+		</if-element>
+	</for-each-element>
+
+<for-each-element>
+
+
+     <set-global-status status="policy-case" value="~"/>
+
+     <!-- ignore -->
+     <if>
+      <element-status-is-true status="ignore-for-publishing"/>
+      <then>
+       <do-not-need-to-create-item/>
+        <do-not-need-to-update-metadata/>
+       <do-not-need-to-update-struct/>
+       <do-not-need-to-update-file/>
+       <do-not-need-to-synchronize-item/>
+      </then>
+     </if>
+     <!--bind-items-->
+     <if>
+      <element-status-is-true status="bind-to-target"/>
+      <then>
+       <do-not-need-to-create-item/>
+       <do-not-need-to-update-metadata/>
+       <do-not-need-to-update-struct/>
+       <do-not-need-to-update-file/>
+       <need-to-synchronize-item/>
+      </then>
+     </if>
+     <!--first-wip -->
+     <if>
+      <element-status-is-true status="publish-as-first-wip"/>
+      <then>
+       <need-to-create-item/>
+       <need-to-update-metadata/>
+       <need-to-update-struct/>
+       <need-to-update-file/>
+       <need-to-synchronize-item/>
+      </then>
+     </if>
+     <!--rev-wip -->
+     <if>
+      <element-status-is-true status="publish-as-revised-wip"/>
+      <then>
+       <do-not-need-to-create-item/>
+       <need-to-update-metadata/>
+       <need-to-update-struct/>
+       <need-to-update-file/>
+       <need-to-synchronize-item/>
+      </then>
+     </if>
+     <!--first-release -->
+     <if>
+      <element-status-is-true status="publish-as-first-release"/>
+      <then>
+       <need-to-create-item/>
+       <need-to-update-metadata/>
+       <need-to-update-struct/>
+       <need-to-update-file/>
+       <need-to-synchronize-item/>
+      </then>
+     </if>
+     <!--rev-release -->
+     <if>
+      <element-status-is-true status="publish-as-revised-release"/>
+      <then>
+       <do-not-need-to-create-item/>
+       <need-to-update-metadata/>
+       <need-to-update-struct/>
+       <need-to-update-file/>
+       <need-to-synchronize-item/>
+      </then>
+     </if>
+
+     <if>
+      <element-status-is-true status="doc-wip"/>
+      <then>
+       <need-to-add-doc/>
+      </then>
+     </if>
+     <if>
+      <element-status-is-true status="doc-release"/>
+      <then>
+       <need-to-add-doc/>
+      </then>
+     </if>
+
+     <!-- publish-as-unbinded-first-release -->
+     <if>
+      <element-status-is-true status="publish-as-unbinded-first-release"/>
+      <then>
+       <need-to-create-item/>
+       <need-to-update-metadata/>
+       <need-to-update-struct/>
+       <need-to-update-file/>
+       <do-not-need-to-synchronize-item/>
+      </then>
+     </if>
+
+     </for-each-element>
+
+
+    <show-pen-data/>
+   </analyze-data>
+   
+   <!-- publish data -->
+   <publish-target-data>
+ <!-- BINARY ATTACHMENT STUFF -->
+      <for-each-element>
+        <fetch-design-files/>
+		<copy-binaries/>
+     </for-each-element> 
+
+    <publish-part/>
+    <synchronize/>
+   </publish-target-data>
+   <update-source/>
+  </pen-policy>
+  
+ </pen-policies>
+</designstate-config>

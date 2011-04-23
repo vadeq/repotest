@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="code/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="/zws-client"/>
+	<classpathentry kind="src" path="/qx"/>
+	<classpathentry kind="src" path="/plugin-recorder"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Agile PLM-API"/>
+	<classpathentry kind="src" path="/qx-web-client"/>
+	<classpathentry kind="lib" path="/build/dep/agile/EC1.3.1/lib/plmapi/ext/dom4j-full.jar"/>
+	<classpathentry kind="src" path="/plugin-zws-interface"/>
+	<classpathentry kind="src" path="/plugin-repository"/>
+	<classpathentry kind="lib" path="/build/dep/webapp/tomcat/servlet-api.jar"/>
+	<classpathentry kind="output" path="out"/>
+</classpath>

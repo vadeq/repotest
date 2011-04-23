@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/zws/!svn/ver/6464/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/util
+END
+SequenceIndex.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/zws/!svn/ver/3863/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/util/SequenceIndex.java
+END
+DeleteMeRemoveIfOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/zws/!svn/ver/6164/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/util/DeleteMeRemoveIfOp.java
+END
+GetSystemCollectionPropertyValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/zws/!svn/ver/5871/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/util/GetSystemCollectionPropertyValue.java
+END
+CreateMetadataOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/zws/!svn/ver/5521/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/util/CreateMetadataOp.java
+END
+GetEnvValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/zws/!svn/ver/5521/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/util/GetEnvValue.java
+END
+Setter.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/3435/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/util/Setter.java
+END
+GetSystemPropertyValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/util/GetSystemPropertyValue.java
+END
+Sleep.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/zws/!svn/ver/5521/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/util/Sleep.java
+END
+StandardOut.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/zws/!svn/ver/5963/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/util/StandardOut.java
+END
+CancelPublishing.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/zws/!svn/ver/5963/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/util/CancelPublishing.java
+END
+SetNotificationFlag.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/zws/!svn/ver/6120/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/util/SetNotificationFlag.java
+END
+ShowPENData.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/zws/!svn/ver/5667/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/util/ShowPENData.java
+END
+RecordMessageOpBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/zws/!svn/ver/5573/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/util/RecordMessageOpBase.java
+END
+Breakpoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/5667/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/util/Breakpoint.java
+END

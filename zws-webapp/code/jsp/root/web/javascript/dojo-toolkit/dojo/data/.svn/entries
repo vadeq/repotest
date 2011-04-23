@@ -1,0 +1,58 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/data
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+ItemFileWriteStore.js
+file
+
+
+
+
+2008-07-11T22:11:36.250375Z
+74530baf5615561c459d324dac9b8326
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+ItemFileReadStore.js
+file
+
+
+
+
+2008-07-11T22:11:36.344125Z
+5c0a72065ce06550599662d1685b4cff
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+api
+dir
+
+util
+dir
+

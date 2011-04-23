@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/handler/replication
+END
+EchoVerificationHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/543/trunk/zws/designstate/client/code/java/zws/handler/replication/EchoVerificationHandler.java
+END
+DeleteItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/handler/replication/DeleteItem.java
+END
+ReplicationHandlerBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/handler/replication/ReplicationHandlerBase.java
+END
+VersionedDesignEventHandlerBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/zws/!svn/ver/551/trunk/zws/designstate/client/code/java/zws/handler/replication/VersionedDesignEventHandlerBase.java
+END
+DesignEventHandlerBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/543/trunk/zws/designstate/client/code/java/zws/handler/replication/DesignEventHandlerBase.java
+END
+Promote.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/handler/replication/Promote.java
+END
+Move.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/handler/replication/Move.java
+END
+Rename.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/handler/replication/Rename.java
+END
+DeleteVersion.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/handler/replication/DeleteVersion.java
+END
+BaseNameHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/551/trunk/zws/designstate/client/code/java/zws/handler/replication/BaseNameHandler.java
+END
+ReleaseEventHandlerBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/543/trunk/zws/designstate/client/code/java/zws/handler/replication/ReleaseEventHandlerBase.java
+END
+Demote.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/551/trunk/zws/designstate/client/code/java/zws/handler/replication/Demote.java
+END
+ReplicateCheckin.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/handler/replication/ReplicateCheckin.java
+END

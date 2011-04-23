@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/xml/functor/call
+END
+PropertyGetter.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/functor/call/PropertyGetter.java
+END
+Caller.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/xml/functor/call/Caller.java
+END
+AddInvoker.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/functor/call/AddInvoker.java
+END
+StringConcatenator.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/functor/call/StringConcatenator.java
+END
+BeanAccessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/functor/call/BeanAccessor.java
+END
+CallException.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/functor/call/CallException.java
+END
+NoOpCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/functor/call/NoOpCommand.java
+END
+PropertySetter.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/functor/call/PropertySetter.java
+END
+StaticMethodCaller.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/functor/call/StaticMethodCaller.java
+END

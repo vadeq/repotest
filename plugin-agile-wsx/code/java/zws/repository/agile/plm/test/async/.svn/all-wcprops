@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/zws/!svn/ver/5669/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/zws/repository/agile/plm/test/async
+END
+AsyncCallbackModeSample.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/zws/!svn/ver/5366/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/zws/repository/agile/plm/test/async/AsyncCallbackModeSample.java
+END
+AsyncListenerServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/zws/!svn/ver/5366/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/zws/repository/agile/plm/test/async/AsyncListenerServlet.java
+END
+AsyncPollingModeSample.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/zws/!svn/ver/5366/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/zws/repository/agile/plm/test/async/AsyncPollingModeSample.java
+END
+AsyncListenerModeSample.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/zws/!svn/ver/5366/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/zws/repository/agile/plm/test/async/AsyncListenerModeSample.java
+END
+AsyncListenerServletSample.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/zws/!svn/ver/5366/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/zws/repository/agile/plm/test/async/AsyncListenerServletSample.java
+END
+BaseAsyncSample.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/zws/!svn/ver/5669/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/zws/repository/agile/plm/test/async/BaseAsyncSample.java
+END
+BaseSample.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/zws/!svn/ver/5366/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/zws/repository/agile/plm/test/async/BaseSample.java
+END

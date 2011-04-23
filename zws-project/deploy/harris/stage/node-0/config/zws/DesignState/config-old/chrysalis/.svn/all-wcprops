@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/5883/trunk/zws/zws-project/deploy/harris/stage/node-0/config/zws/DesignState/config-old/chrysalis
+END
+chrysalis-property.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/zws/!svn/ver/5883/trunk/zws/zws-project/deploy/harris/stage/node-0/config/zws/DesignState/config-old/chrysalis/chrysalis-property.cfg
+END
+proe-to-iges.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/zws/!svn/ver/5883/trunk/zws/zws-project/deploy/harris/stage/node-0/config/zws/DesignState/config-old/chrysalis/proe-to-iges.cfg
+END
+proe-to-pdf.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/zws/!svn/ver/5883/trunk/zws/zws-project/deploy/harris/stage/node-0/config/zws/DesignState/config-old/chrysalis/proe-to-pdf.cfg
+END
+proe-to-step.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/zws/!svn/ver/5883/trunk/zws/zws-project/deploy/harris/stage/node-0/config/zws/DesignState/config-old/chrysalis/proe-to-step.cfg
+END
+proe-to-print.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/zws/!svn/ver/5883/trunk/zws/zws-project/deploy/harris/stage/node-0/config/zws/DesignState/config-old/chrysalis/proe-to-print.cfg
+END

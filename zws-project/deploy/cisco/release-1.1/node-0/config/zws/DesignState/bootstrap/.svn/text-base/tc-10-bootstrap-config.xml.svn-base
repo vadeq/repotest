@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<bootstrap-configuration>
+  <configurator base-path="d:\zws\DesignState\config">
+    <load tag-map="\tag\property.zws" file="\tc-10-rich-client\rich-client-property.xml"/>
+    <load tag-map="\tag\tc10-standalone-repository.zws" file="\tc-10-rich-client\rich-client-repository.xml"/>
+    <load tag-map="\tag\tc10-standalone-services.zws" file="\tc-10-rich-client\rich-client-services.xml"/>
+  </configurator>
+</bootstrap-configuration>

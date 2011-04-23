@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/origin
+END
+TC10Origin.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/origin/TC10Origin.java
+END
+HarrisOrigin.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/origin/HarrisOrigin.java
+END
+FTPOrigin.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/origin/FTPOrigin.java
+END
+R8Origin.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/origin/R8Origin.java
+END
+OriginBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/662/trunk/zws/designstate/client/code/java/zws/origin/OriginBase.java
+END
+IntralinkOrigin.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/origin/IntralinkOrigin.java
+END
+Origin_old.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/origin/Origin_old.java
+END
+WorkspaceOrigin.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/origin/WorkspaceOrigin.java
+END
+Origin.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/zws/!svn/ver/2658/trunk/zws/designstate/client/code/java/zws/origin/Origin.java
+END
+OriginMaker.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/2658/trunk/zws/designstate/client/code/java/zws/origin/OriginMaker.java
+END
+AgileOrigin.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/2894/trunk/zws/designstate/client/code/java/zws/origin/AgileOrigin.java
+END
+URLOrigin.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/origin/URLOrigin.java
+END
+FileSystemOrigin.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/origin/FileSystemOrigin.java
+END
+IlinkPartNumberOrigin.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/origin/IlinkPartNumberOrigin.java
+END

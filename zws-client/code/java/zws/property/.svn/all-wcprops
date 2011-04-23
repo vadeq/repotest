@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/code/java/zws/property
+END
+zwsPropertyString.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/551/trunk/zws/designstate/client/code/java/zws/property/zwsPropertyString.java
+END
+zwsListOfProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/property/zwsListOfProperties.java
+END
+zwsPropertyNumber.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/551/trunk/zws/designstate/client/code/java/zws/property/zwsPropertyNumber.java
+END
+zwsPropertyBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/551/trunk/zws/designstate/client/code/java/zws/property/zwsPropertyBase.java
+END
+PropertyMaker.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/property/PropertyMaker.java
+END
+zwsPropertyPath.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/551/trunk/zws/designstate/client/code/java/zws/property/zwsPropertyPath.java
+END
+zwsPropertyInteger.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/zws/!svn/ver/551/trunk/zws/designstate/client/code/java/zws/property/zwsPropertyInteger.java
+END
+zwsProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/property/zwsProperty.java
+END
+zwsPropertyBoolean.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/zws/!svn/ver/551/trunk/zws/designstate/client/code/java/zws/property/zwsPropertyBoolean.java
+END
+zwsPropertyFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/551/trunk/zws/designstate/client/code/java/zws/property/zwsPropertyFile.java
+END
+zwsPropertyURL.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/zws/!svn/ver/551/trunk/zws/designstate/client/code/java/zws/property/zwsPropertyURL.java
+END
+zwsPropertyDirectory.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/zws/!svn/ver/551/trunk/zws/designstate/client/code/java/zws/property/zwsPropertyDirectory.java
+END

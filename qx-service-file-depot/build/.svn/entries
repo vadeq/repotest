@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/file-depot/qx-service-file-depot/build
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-05-08T20:33:18.022340Z
+6225
+rmccabe
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+title.build
+file
+
+
+
+
+2008-07-11T20:34:31.250375Z
+052db0dab1b2362ea872ff6f1590b18c
+2007-10-26T00:27:57.594772Z
+3687
+arbind.thakur
+
+classpath.build
+file
+
+
+
+
+2008-07-11T20:34:31.297250Z
+3437e0770af090ac6b9912c89cf4d18c
+2008-05-08T20:33:18.022340Z
+6225
+rmccabe
+

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/_base
+END
+html.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/_base/html.js
+END
+query.js
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/_base/query.js
+END
+window.js
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/_base/window.js
+END
+connect.js
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/_base/connect.js
+END
+json.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/_base/json.js
+END
+fx.js
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/_base/fx.js
+END
+Color.js
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/_base/Color.js
+END
+array.js
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/_base/array.js
+END
+declare.js
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/_base/declare.js
+END
+Deferred.js
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/_base/Deferred.js
+END
+NodeList.js
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/_base/NodeList.js
+END
+event.js
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/_base/event.js
+END
+lang.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/_base/lang.js
+END
+xhr.js
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/_base/xhr.js
+END

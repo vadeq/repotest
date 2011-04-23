@@ -1,0 +1,37 @@
+; DOCUMENT CONVERTER PROPERTIES:
+;
+; chrysalis.input.dir and chrysalis.output.dir specify the workarea for the 
+; document converter. It puts files to be converted in the location specified 
+; by chrysalis.input.dir while it is working on them and puts the result of 
+; the conversion into the location specified by chrysalis.output.dir.
+; They are read only at startup and require a restart of the document converter
+; service when changed.
+; 
+chrysalis.input.dir=E:/zws/data-chry/temp/chrysalis/in/
+chrysalis.output.dir=E:/zws/data-chry/temp/chrysalis/out/
+properties.reader.frequency.time=60000
+
+; AVAILABLE TRANSLATORS:
+; 
+; A semicolon-delimeted list of translators that are installed and available for use
+; 
+installed.translators=proe2iges;iges2proe;
+
+
+; PROE2IGES TRANSLATOR PROPERTIES:
+;  
+; proe2iges.xlator.command=c:/test/translate-test/run.bat
+proe2iges.xlator.command=E:\\zws\\DesignState\\chrysalis\\proe\\proexlator.bat 
+proe.tool.command=E:\\zws\\env\\ptc\\ilink-1\\proe\\bin\\proe1.bat
+proe.tool.config.pro=E:\\zws\\env\\ptc\\ilink-1\\config\\config.pro
+proe2iges.graphic.mode=True
+proe2iges.exit.on.completion=True
+
+; How to generate PDF during translation - PRINT or DIRECT
+pdf.generation.approach=PRINT
+
+
+; IGES2PROE TRANSLATOR PROPERTIES:
+
+
+ 

@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+
+<instructions>
+
+  <DesignState-config ignore="true"/>
+
+  <properties ignore="true"/>
+
+  <property instance-of="zws.util.KeyValue" static-method="add" class="zws.application.Properties" >
+    <name required="true" property="key" />
+    <value required="true"/>
+  </property>
+
+  <dir instance-of="zws.util.KeyValue" static-method="addDirectoryPath" class="zws.application.Properties" >
+    <name required="true" property="key"/>
+    <path required="true" property="value"/>
+  </dir>
+
+  <file instance-of="zws.util.KeyValue" static-method="addFilePath" class="zws.application.Properties" >
+    <name required="true" property="key"/>
+    <path required="true" property="value"/>
+  </file>
+
+</instructions>

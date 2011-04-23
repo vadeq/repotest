@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/ext
+END
+axis.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/ext/axis.jar
+END
+jakarta-commons-logging-1.0.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/ext/jakarta-commons-logging-1.0.2.jar
+END
+dom4j-full.jar
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/ext/dom4j-full.jar
+END
+saaj.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/ext/saaj.jar
+END
+log4j.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/ext/log4j.jar
+END
+crypto.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/ext/crypto.jar
+END
+mail.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/ext/mail.jar
+END
+j2ee.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/ext/j2ee.jar
+END
+jakarta-commons-cli-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/ext/jakarta-commons-cli-1.0.jar
+END
+jaxrpc.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/ext/jaxrpc.jar
+END
+xerces.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/ext/xerces.jar
+END
+xml-apis.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/ext/xml-apis.jar
+END
+jakarta-commons-discovery.jar
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/ext/jakarta-commons-discovery.jar
+END
+servlet-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/ext/servlet-api.jar
+END
+jakarta-commons-codec-1.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/ext/jakarta-commons-codec-1.3.jar
+END
+jakarta-commons-httpclient-3.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/ext/jakarta-commons-httpclient-3.0.jar
+END
+activation.jar
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/ext/activation.jar
+END
+castor-0.9.4.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/ext/castor-0.9.4.3.jar
+END
+xalan.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/lib/plmapi/ext/xalan.jar
+END

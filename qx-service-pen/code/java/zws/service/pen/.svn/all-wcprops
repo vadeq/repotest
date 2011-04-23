@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/6176/trunk/zws/product/pen/qx-service-pen/code/java/zws/service/pen
+END
+TxDataElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/service/pen/TxDataElement.java
+END
+ECOElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/3841/trunk/zws/product/pen/qx-service-pen/code/java/zws/service/pen/ECOElement.java
+END
+PENDataNames.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zws/!svn/ver/3406/trunk/zws/product/pen/qx-service-pen/code/java/zws/service/pen/PENDataNames.java
+END
+SourceDataElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/zws/!svn/ver/4766/trunk/zws/product/pen/qx-service-pen/code/java/zws/service/pen/SourceDataElement.java
+END
+PENDataElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/5798/trunk/zws/product/pen/qx-service-pen/code/java/zws/service/pen/PENDataElement.java
+END
+DocumentElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/service/pen/DocumentElement.java
+END
+PublishingEngine.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/6176/trunk/zws/product/pen/qx-service-pen/code/java/zws/service/pen/PublishingEngine.java
+END
+TargetDataElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/service/pen/TargetDataElement.java
+END
+PENData.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/6174/trunk/zws/product/pen/qx-service-pen/code/java/zws/service/pen/PENData.java
+END
+RedlineElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/service/pen/RedlineElement.java
+END
+StatusElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/zws/!svn/ver/3441/trunk/zws/product/pen/qx-service-pen/code/java/zws/service/pen/StatusElement.java
+END

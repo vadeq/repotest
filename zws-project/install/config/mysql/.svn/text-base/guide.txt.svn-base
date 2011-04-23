@@ -1,0 +1,68 @@
+Installation
+===============================================
+Database installation:
+To prevent login errors where MySQL cannot resolve the localhost
+value in the user table, include the following in hosts file:
+(%WINDOWS%\system32\drivers\etc\hosts)
+127.0.0.1 localhost
+-----------------------------------------------
+
+
+Configuration Files
+===============================================
+my.cnf
+  mysql configuration file.
+  We modify only the following default values:
+    [mysqld] 
+    basedir = @APP_HOME_DRIVE@:/zws/server/mysql/ 
+    datadir = @DATA_HOME_DRIVE@:/zws/data/DB/mysql/ 
+    set-variable = interactive-timeout=2000000
+    set-variable = wait-timeout=2000000
+-----------------------------------------------
+
+
+Setup Scripts
+===============================================
+secure-db.mysql
+  Secures MySQL database by removing the default root and anonymous users.
+  Be sure to run this after installation in order to prevent hacking.
+
+init-users.mysql
+  run this to populate initial conditions for users
+-----------------------------------------------
+
+
+Active Schema
+===============================================
+designstate-schema.mysql
+  Contains core designstate schema user and chron-job tables
+  (Obsolete tables have been commented out)
+
+synch-schema.mysql
+  Synchronization Service Schema
+  synchronization service will track the an item's Origin
+  as it gets published into multiple systems 
+  in order to know how they are synchronized
+ 
+recorder-schema.mysql
+  Recorder Service schema
+  The recorder service provides distributed/structured logging for:
+    running process status
+    activity logs
+    errors
+    warnings
+
+property-schema.mysql
+  Property Service
+    Will persist properties.
+  
+-----------------------------------------------
+
+
+Future Schema
+===============================================
+secure-space-schema.mysql
+  This is a prototype security module.
+-----------------------------------------------
+
+

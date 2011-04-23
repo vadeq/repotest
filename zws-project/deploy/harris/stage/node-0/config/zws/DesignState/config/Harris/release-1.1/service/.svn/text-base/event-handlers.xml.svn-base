@@ -1,0 +1,8 @@
+<DesignState-config>
+ <event-handlers>
+  <handler event-type="eco-update" handler-fqcn="zws.qx.event.custom.harris.handlers.UpdateIntralinkOnAgileECOUpdate"/>
+  <handler event-type="event.release.promotion" handler-fqcn="zws.qx.event.custom.harris.handlers.PublishOnIntralinkPromotion"/>
+  <handler event-type="event.design.renamed" handler-fqcn="zws.qx.event.custom.harris.handlers.RenameSyncLogOnIntralinkRename"/>    
+  <handler event-type="event.design.post_checkin" handler-fqcn="zws.qx.event.handler.ilink.Intralink8CheckinHandler"/>    
+ </event-handlers>
+</DesignState-config>

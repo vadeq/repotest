@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/pen-policy/tag
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-06-04T19:29:17.296362Z
+6301
+ptoleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+pen-policy.zws
+file
+
+
+
+
+2008-07-11T20:44:27.750375Z
+ce43b3a958a2df719a5d682d42fcc584
+2008-06-04T19:29:17.296362Z
+6301
+ptoleti
+
+policy-match.zws
+file
+
+
+
+
+2008-07-11T20:44:27.859750Z
+0c189148a2655563b7e3906ab6c92833
+2008-02-06T22:06:11.693402Z
+5433
+pavan.toleti
+

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/service/processor
+END
+ProcessorService.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/processor/ProcessorService.java
+END
+EJBLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/processor/EJBLocator.java
+END
+ProcessorServiceLocalHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/processor/ProcessorServiceLocalHome.java
+END
+ProcessorServiceHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/processor/ProcessorServiceHome.java
+END
+ProcessorServiceLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/processor/ProcessorServiceLocal.java
+END
+RemoteProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/service/processor/RemoteProcessor.java
+END
+ProcessorServiceRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/processor/ProcessorServiceRemote.java
+END

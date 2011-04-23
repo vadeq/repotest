@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/code/java/zws/service/datasource/agile
+END
+AgileAccessServiceLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/datasource/agile/AgileAccessServiceLocal.java
+END
+AgileAccessServiceRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/datasource/agile/AgileAccessServiceRemote.java
+END
+AgileAccessService.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/zws/!svn/ver/3585/trunk/zws/designstate/client/code/java/zws/service/datasource/agile/AgileAccessService.java
+END
+EJBLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/datasource/agile/EJBLocator.java
+END
+AgileAccessServiceLocalHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/datasource/agile/AgileAccessServiceLocalHome.java
+END
+AgileAccessServiceRemoteHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/datasource/agile/AgileAccessServiceRemoteHome.java
+END

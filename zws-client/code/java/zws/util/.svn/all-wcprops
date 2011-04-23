@@ -1,0 +1,575 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/zws/!svn/ver/6272/trunk/zws/designstate/client/code/java/zws/util
+END
+ZipWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/ZipWriter.java
+END
+DeleteFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5376/trunk/zws/designstate/client/code/java/zws/util/DeleteFile.java
+END
+StringValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/StringValue.java
+END
+RoutedEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/RoutedEvent.java
+END
+TarUncompress.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/TarUncompress.java
+END
+SecureSpaced.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/SecureSpaced.java
+END
+Messages.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/zws/!svn/ver/5447/trunk/zws/designstate/client/code/java/zws/util/Messages.java
+END
+Sleep.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/zws/!svn/ver/5947/trunk/zws/designstate/client/code/java/zws/util/Sleep.java
+END
+StringMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/2393/trunk/zws/designstate/client/code/java/zws/util/StringMapper.java
+END
+AdapterBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/AdapterBase.java
+END
+ListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/ListAdapter.java
+END
+DomainContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/DomainContext.java
+END
+ExecShell.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/util/ExecShell.java
+END
+TransformerCollection.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/TransformerCollection.java
+END
+MetadataUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/MetadataUtil.java
+END
+Namespaces.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/Namespaces.java
+END
+PrototypeCollection.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/PrototypeCollection.java
+END
+Profiler.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/Profiler.java
+END
+RoutedUserDataBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/RoutedUserDataBase.java
+END
+GenericSAXHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/GenericSAXHandler.java
+END
+EMail.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/zws/!svn/ver/6223/trunk/zws/designstate/client/code/java/zws/util/EMail.java
+END
+ListTransformerBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/ListTransformerBase.java
+END
+StringKeyedHashMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/StringKeyedHashMap.java
+END
+RoutedUserBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/RoutedUserBase.java
+END
+RoutedData.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/RoutedData.java
+END
+Namespace.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/Namespace.java
+END
+HTTPPing.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/util/HTTPPing.java
+END
+StringSequence.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/StringSequence.java
+END
+Namespaced.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/Namespaced.java
+END
+Routed.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/Routed.java
+END
+Transformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/Transformer.java
+END
+UniqueIdMaker.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/4741/trunk/zws/designstate/client/code/java/zws/util/UniqueIdMaker.java
+END
+AdapterVector.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/AdapterVector.java
+END
+ListUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/ListUtil.java
+END
+Gzip.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/util/Gzip.java
+END
+TokenPool.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5560/trunk/zws/designstate/client/code/java/zws/util/TokenPool.java
+END
+Zunpack.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/Zunpack.java
+END
+Storable.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/Storable.java
+END
+HexString.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/HexString.java
+END
+MapUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/MapUtil.java
+END
+AdapterSortedSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/AdapterSortedSet.java
+END
+FileNameUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/FileNameUtil.java
+END
+RoutedServiceBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/RoutedServiceBase.java
+END
+PrototypeIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/PrototypeIterator.java
+END
+GenericParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/GenericParser.java
+END
+TimeUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/TimeUtil.java
+END
+AdapterCollection.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/AdapterCollection.java
+END
+TransformerSortedSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/TransformerSortedSet.java
+END
+RoutedEventBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/4311/trunk/zws/designstate/client/code/java/zws/util/RoutedEventBase.java
+END
+SecureSpace.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/SecureSpace.java
+END
+Quadrouplet.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/Quadrouplet.java
+END
+IPUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/IPUtil.java
+END
+AdapterPrototype.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/AdapterPrototype.java
+END
+ListAdapterBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/ListAdapterBase.java
+END
+Zpack.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/Zpack.java
+END
+Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/util/Test.java
+END
+UTF8Tidy.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/UTF8Tidy.java
+END
+Adapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/Adapter.java
+END
+Triplet.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/Triplet.java
+END
+Named.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/Named.java
+END
+ZipFileUtility.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5862/trunk/zws/designstate/client/code/java/zws/util/ZipFileUtility.java
+END
+WaitForThreads.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/WaitForThreads.java
+END
+RoutedDataBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/RoutedDataBase.java
+END
+Routing.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/Routing.java
+END
+PrintUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/6272/trunk/zws/designstate/client/code/java/zws/util/PrintUtil.java
+END
+RoutedUserData.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/RoutedUserData.java
+END
+RemoteFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/4089/trunk/zws/designstate/client/code/java/zws/util/RemoteFile.java
+END
+TransformerBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/TransformerBase.java
+END
+ListTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/ListTransformer.java
+END
+GarbageCollector.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/util/GarbageCollector.java
+END
+StringSequenceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/util/StringSequenceTest.java
+END
+RoutedUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/RoutedUser.java
+END
+TarCompress.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/util/TarCompress.java
+END
+StringUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/6151/trunk/zws/designstate/client/code/java/zws/util/StringUtil.java
+END
+Prototype.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/Prototype.java
+END
+PrototypeAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/PrototypeAdapter.java
+END
+JavaObjectUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/JavaObjectUtil.java
+END
+StorableBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/4383/trunk/zws/designstate/client/code/java/zws/util/StorableBase.java
+END
+RemotePackage.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/4806/trunk/zws/designstate/client/code/java/zws/util/RemotePackage.java
+END
+CopyFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/util/CopyFile.java
+END
+AdapterTreeSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/AdapterTreeSet.java
+END
+Gunzip.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/Gunzip.java
+END
+PartNumberUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/PartNumberUtil.java
+END
+FileUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/zws/!svn/ver/6053/trunk/zws/designstate/client/code/java/zws/util/FileUtil.java
+END
+AutoIncrement.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/AutoIncrement.java
+END
+LogWriterOLD.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/util/LogWriterOLD.java
+END
+Counter.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/zws/!svn/ver/4770/trunk/zws/designstate/client/code/java/zws/util/Counter.java
+END
+StringPair.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/StringPair.java
+END
+RoutedService.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/RoutedService.java
+END
+KeyValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/KeyValue.java
+END
+TransformerVector.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/TransformerVector.java
+END
+ZipReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/ZipReader.java
+END
+PrototypeVector.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/PrototypeVector.java
+END
+Pair.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/Pair.java
+END
+TransformerTreeSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/TransformerTreeSet.java
+END

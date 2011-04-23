@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/chrysalis/qx-service-chrysalis/code/java/zws/service/chrysalis/test
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-04-01T19:35:49.969947Z
+5941
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+QueueTest.java
+file
+
+
+
+
+2008-07-11T17:22:56.453500Z
+1b67561a92b12b19f7c9d7fa5816725e
+2008-04-01T19:35:49.969947Z
+5941
+pavan.toleti
+
+ProETracking.java
+file
+
+
+
+
+2008-07-11T17:22:56.578500Z
+3860471e4d4331b76da640b8c5706574
+2008-02-29T17:00:29.015068Z
+5659
+pavan.toleti
+

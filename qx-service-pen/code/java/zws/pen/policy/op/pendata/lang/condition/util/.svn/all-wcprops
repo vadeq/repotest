@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/6498/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util
+END
+ItemIsDesignDrawing.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/zws/!svn/ver/6396/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util/ItemIsDesignDrawing.java
+END
+ItemSourceHasBinaryFiles.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/zws/!svn/ver/4554/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util/ItemSourceHasBinaryFiles.java
+END
+ItemIsDesignModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/zws/!svn/ver/6396/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util/ItemIsDesignModel.java
+END
+HasMultiplePendingECOs.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/zws/!svn/ver/3357/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util/HasMultiplePendingECOs.java
+END
+CompareItemTypeOP.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/zws/!svn/ver/3355/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util/CompareItemTypeOP.java
+END
+CompareItemStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/zws/!svn/ver/3355/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util/CompareItemStatus.java
+END
+ItemHasDocuments.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/zws/!svn/ver/5961/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util/ItemHasDocuments.java
+END
+ItemHasParentInSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/zws/!svn/ver/6420/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util/ItemHasParentInSource.java
+END
+TargetHasSubcomponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/zws/!svn/ver/3477/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util/TargetHasSubcomponent.java
+END
+ItemIsDesignLayout.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/zws/!svn/ver/6396/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util/ItemIsDesignLayout.java
+END
+ItemSourceHasAssemblies.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/zws/!svn/ver/6420/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util/ItemSourceHasAssemblies.java
+END
+ItemIsDesignAssembly.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/zws/!svn/ver/6396/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util/ItemIsDesignAssembly.java
+END
+HasParent.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/zws/!svn/ver/3357/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util/HasParent.java
+END
+ItemIsSkeletonPart.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/zws/!svn/ver/6396/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util/ItemIsSkeletonPart.java
+END
+ItemHasDocumentParents.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/zws/!svn/ver/6498/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util/ItemHasDocumentParents.java
+END
+ItemIsInTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/zws/!svn/ver/5425/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util/ItemIsInTarget.java
+END
+SourceHasSubcomponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/zws/!svn/ver/3477/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util/SourceHasSubcomponent.java
+END
+HasDuplicateAttribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/zws/!svn/ver/6019/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util/HasDuplicateAttribute.java
+END
+CompareSourceAttributeOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/zws/!svn/ver/3355/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util/CompareSourceAttributeOp.java
+END
+PublishingIsCancelled.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/zws/!svn/ver/5086/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util/PublishingIsCancelled.java
+END
+ItemIsDesignFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/zws/!svn/ver/6396/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util/ItemIsDesignFormat.java
+END
+XferHasSubcomponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/zws/!svn/ver/3784/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util/XferHasSubcomponent.java
+END
+ItemTxHasBinaryFiles.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/zws/!svn/ver/4554/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition/util/ItemTxHasBinaryFiles.java
+END

@@ -1,0 +1,24 @@
+#Process Extension Properties
+
+#DesignState routing
+designstate.domain.name=harris
+designstate.server.name=node-0
+designstate.datasource.name=agile
+
+#Default designstate authtentication
+designstate.default.username=zws
+designstate.default.password=agile
+designstate.log.file=E:\\zws.px.log
+
+#URLs to DesignState Services
+designstate.apc.service.url=not-deployed
+designstate.event.service.url=http://pbypdmload2.gs.myharris.net/eventProcessor/fireEvent.jsp
+designstate.event.service.protocol=http
+
+#standalone testing (commandline)
+agile.cmdln.username=intralink
+agile.cmdln.password=agile
+agile.cmdln.url=http://susvr0309.gcsd.harris.com/Agile
+
+#Debug Mode
+designstate.px.in.debug.mode=true

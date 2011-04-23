@@ -1,0 +1,70 @@
+8
+
+dir
+6400
+http://build.zerowait-state.com/svn/zws/trunk/zws/build/script
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-05-20T19:18:56.795383Z
+6263
+rmccabe
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+zws.build
+file
+
+
+
+
+2008-07-11T17:15:12.562875Z
+f146e6325ee34b16f8ee3a057dd6334c
+2008-05-16T19:43:16.542791Z
+6243
+rmccabe
+
+order.txt
+file
+
+
+
+
+2008-07-11T17:15:12.609750Z
+e1a4e560720da994d01b56c6d1a372c9
+2007-05-29T00:32:15.224313Z
+168
+arbind.thakur
+
+local
+dir
+
+properties.build
+file
+
+
+
+
+2008-07-11T17:15:12.656625Z
+fc6eabb11dd50b8977693aee5dcbf6e9
+2008-05-20T19:18:56.795383Z
+6263
+rmccabe
+
+deploy
+dir
+

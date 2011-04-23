@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<configuration>
+ <configurator base-path="\zws\DesignState\config\[organization]\[project]\web-app">
+  <load tag-map="..\..\..\tag\property.zws"  file="web-node.xml"/>
+  <load tag-map="..\..\..\tag\property.zws"  file="web-app-properties.xml"/>
+ </configurator>
+</configuration>

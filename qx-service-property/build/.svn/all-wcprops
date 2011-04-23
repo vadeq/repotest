@@ -1,0 +1,21 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 18
+/svn/zws/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/zws/!svn/ver/6518/trunk/zws/qx-service/qx-service-property/build
+END
+title.build
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/zws/!svn/ver/6382/trunk/zws/qx-service/qx-service-property/build/title.build
+END
+classpath.build
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/6382/trunk/zws/qx-service/qx-service-property/build/classpath.build
+END

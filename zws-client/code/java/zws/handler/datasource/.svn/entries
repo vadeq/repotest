@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/client/code/java/zws/handler/datasource
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+testMoveHandler.java
+file
+
+
+
+
+2008-07-11T20:46:19.703500Z
+a6e08065410fcb3c1ba1418f8cb3bea2
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+testRenameHandler.java
+file
+
+
+
+
+2008-07-11T20:46:19.766000Z
+c9fb1142f697e5a0e1ea03121e3924be
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+

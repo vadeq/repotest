@@ -1,0 +1,80 @@
+package zws.pen.policy.old.op;
+/*
+* DesignState - Design Compression Technology
+* @author: ptoleti
+* @version: 1.0
+* Created on Apr 27, 2007 9:58:02 AM
+* Copywrite (c) 2007 Zero Wait-State Inc. All rights reserved
+*/
+
+import zws.data.Metadata;
+import zws.service.pen.PENDataElement;
+import zws.service.pen.SourceDataElement;
+import zws.service.pen.TxDataElement;
+import zws.util.LogWriter;
+import java.util.Map.Entry;
+import java.util.HashMap;
+import java.util.Iterator;
+
+
+
+/**
+ * The Class UpdateStateAttributeOp.
+ *
+ * @author ptoleti
+ */
+public class MapAttributeOp extends PENDataOpBase {
+
+  /**
+   * Execute.
+   *
+   * @throws Exception Exception
+   *
+   * @see zws.pen.policy.old.op.PENDataOpBase#execute()
+   */
+  public void execute() throws Exception {
+    Metadata transformedData = null;
+    Metadata sourceData = null;
+    String attrKey = "";
+    String attrValue = "";
+    String name = null;
+    HashMap refMap = null;
+    PENDataElement penDataElement = null;
+
+    try {
+      refMap = getPenData().getReferenceMap();
+      Iterator itr = refMap.keySet().iterator();
+      LogWriter.printOnConsole("Execute in MapAttributeOp ");
+      //iterate thru ref map and get src and transform data from BOM ref object.
+      while (itr.hasNext()) {
+          name = (String) itr.next();
+          penDataElement   = (PENDataElement) refMap.get(name);
+          SourceDataElement srcDataElement = penDataElement.getSourceDataElement();
+          TxDataElement txDataElement = penDataElement.getTxDataElement();
+          sourceData      = srcDataElement .getSourceData();
+          transformedData = txDataElement.getTransformedData();
+          LogWriter.printOnConsole("Name : " + sourceData.getName());
+          LogWriter.printOnConsole("transformedData : " + transformedData);
+          // copy arrtibutes from src data to transform data
+          Iterator srcAttrItr = sourceData.getAttributes().entrySet().iterator();
+          while (srcAttrItr.hasNext()) {
+            attrKey   = (String) ((Entry) srcAttrItr.next()).getKey();
+            attrValue = sourceData.get(attrKey);
+            LogWriter.printOnConsole("attrKey " + attrKey + "  attrValue  " + attrValue);
+            transformedData.set(attrKey, attrValue);
+          }
+          LogWriter.printOnConsole("transformedData in MapAttributeOp   " + transformedData);
+          txDataElement.setTransformedData(transformedData);
+          penDataElement.setTxDataElement(txDataElement);
+          refMap.put(sourceData.getName(), penDataElement);
+      }
+      getPenData().setReferenceMap(refMap);
+      setPenData(getPenData());
+      LogWriter.printOnConsole(getPenData().getReferenceMap().toString());
+    } catch (Exception e) {
+      e.printStackTrace();
+      throw e;
+    }
+  }
+
+}

@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/repository/ilink3/qx-service-ilink3/code/java/zws/repository/ilink3/license
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:01:11.814396Z
+5682
+pavan.toleti
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+IlinkTKLicensePool.java
+file
+
+
+
+
+2008-07-11T20:37:17.234750Z
+abffedc7b49485daf262d6ec4b3694bb
+2008-02-29T17:01:11.814396Z
+5682
+pavan.toleti
+
+IlinkTKLicensePoolSvc.java
+file
+
+
+
+
+2008-07-11T20:37:17.297250Z
+4945fda590c1e65ecbe719ef810e3d1c
+2008-02-25T23:58:56.602607Z
+5544
+arbind.thakur
+

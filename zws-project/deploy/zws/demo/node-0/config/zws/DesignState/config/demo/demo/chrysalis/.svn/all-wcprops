@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/zws/!svn/ver/6397/trunk/zws/zws-project/deploy/zws/demo/node-0/config/zws/DesignState/config/demo/demo/chrysalis
+END
+ps_print.pcf
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/zws/!svn/ver/6397/trunk/zws/zws-project/deploy/zws/demo/node-0/config/zws/DesignState/config/demo/demo/chrysalis/ps_print.pcf
+END
+zws-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/zws/!svn/ver/6397/trunk/zws/zws-project/deploy/zws/demo/node-0/config/zws/DesignState/config/demo/demo/chrysalis/zws-config.xml
+END
+chrysalis-qx-queue.xml
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/zws/!svn/ver/6397/trunk/zws/zws-project/deploy/zws/demo/node-0/config/zws/DesignState/config/demo/demo/chrysalis/chrysalis-qx-queue.xml
+END
+proe-to-iges.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/zws/!svn/ver/6397/trunk/zws/zws-project/deploy/zws/demo/node-0/config/zws/DesignState/config/demo/demo/chrysalis/proe-to-iges.cfg
+END
+chrysalis-properties.xml
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/zws/!svn/ver/6397/trunk/zws/zws-project/deploy/zws/demo/node-0/config/zws/DesignState/config/demo/demo/chrysalis/chrysalis-properties.xml
+END
+proe-to-pdf.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/zws/!svn/ver/6397/trunk/zws/zws-project/deploy/zws/demo/node-0/config/zws/DesignState/config/demo/demo/chrysalis/proe-to-pdf.cfg
+END
+proe-to-step.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/zws/!svn/ver/6397/trunk/zws/zws-project/deploy/zws/demo/node-0/config/zws/DesignState/config/demo/demo/chrysalis/proe-to-step.cfg
+END

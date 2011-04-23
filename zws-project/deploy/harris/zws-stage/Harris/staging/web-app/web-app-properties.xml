@@ -1,0 +1,39 @@
+<DesignState-config>
+ <properties>
+  <property name="start-page" value="publish-search" />
+  <property name="enable-authentication" value="true"/>
+
+  <property name="service-name" value="DesignState" />
+
+  <property name="server-list" value="DesignState-node-0" />
+
+  <dir name="zws-web-app-config" path="[zws-config]/[organization]/[project]/web-app"/>
+
+  <property name="DesignState-database" value="DesignState" />
+
+
+  <!-- MODULE SPECIFIC PROPERTIES -->
+  <!-- Proc On Fly -->
+  <property name="proc-on-fly-report" value="Austin"/>
+
+
+  <!-- report Configurations -->
+  <!--
+  <property name="sort-key-fields" value="Name | Data Source | Rev | Ver"/>
+  <property name="admin-presentation-reports" value="Peterbilt | Dallas"/>
+  <property name="engineer-presentation-reports" value="Peterbilt | Dallas"/>
+  <property name="user-presentation-reports" value="Peterbilt | Initial Assemblies | Initial Parts | Released Drawings | Released Assemblies | Released Parts"/>
+      <property name="guest-presentation-reports" value="Peterbilt | Initial Assemblies | Initial Parts | Released Drawings | Released Assemblies | Released Parts"/>
+  -->
+  <!-- XSL STYLESHEETS  -->
+  <!--
+  <file name="xslt-treeview" path="[zws-xslt]/treeview/treeview.xslt"/>
+  <file name="xslt-folder-tree" path="[zws-xslt]/treeview/folder/folder-tree.xslt"/>
+  <file name="xslt-fig-tree" path="[zws-xslt]/treeview/fig/fig-tree.xslt"/>
+  <file name="xslt-fig-branch-tree" path="[zws-xslt]/treeview/fig/fig-branch-tree.xslt"/>
+  <file name="xslt-fig-history-tree" path="[zws-xslt]/treeview/fig/fig-history-tree.xslt"/>
+  <file name="xslt-bill-tree" path="[zws-xslt]/treeview/bill/bill-tree.xslt"/>
+  <file name="xslt-agile-publish-result-tree" path="[zws-xslt]/treeview/agile/agile-publish-result-tree.xslt"/>
+  -->
+ </properties>
+</DesignState-config>

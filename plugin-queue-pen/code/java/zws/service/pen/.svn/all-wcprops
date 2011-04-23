@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/6175/trunk/zws/plugin/queue/plugin-queue-pen/code/java/zws/service/pen
+END
+BulkPublish.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/6067/trunk/zws/plugin/queue/plugin-queue-pen/code/java/zws/service/pen/BulkPublish.java
+END
+PenQueuePlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/zws/!svn/ver/6175/trunk/zws/plugin/queue/plugin-queue-pen/code/java/zws/service/pen/PenQueuePlugin.java
+END
+TestPublish.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/6055/trunk/zws/plugin/queue/plugin-queue-pen/code/java/zws/service/pen/TestPublish.java
+END
+TestPenQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/zws/!svn/ver/6055/trunk/zws/plugin/queue/plugin-queue-pen/code/java/zws/service/pen/TestPenQueue.java
+END

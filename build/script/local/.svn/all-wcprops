@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/zws/!svn/ver/6256/trunk/zws/build/script/local
+END
+local-env.build.eclipse
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/zws/!svn/ver/6219/trunk/zws/build/script/local/local-env.build.eclipse
+END
+local-env.build.cc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/zws/!svn/ver/6256/trunk/zws/build/script/local/local-env.build.cc
+END

@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/qx-service/qx-web-service/build
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:20:21.222299Z
+5308
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+title.build
+file
+
+
+
+
+2008-07-11T20:43:56.953500Z
+8a87c5205541b0710b7244759ade2e4f
+2007-05-29T07:38:43.112782Z
+198
+arbind.thakur
+
+classpath.build
+file
+
+
+
+
+2008-07-11T20:43:57.031625Z
+04537b1079c027eff81f361054a11cb8
+2007-06-05T18:20:50.625500Z
+635
+arbind.thakur
+

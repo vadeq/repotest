@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<instructions>
+  <DesignState-config ignore="true"/>
+  <services ignore="true"/>
+
+  <service instance-of="zws.qx.service.ServiceRecord" static-method="add" class="zws.service.finder.qx.ServiceRecordSvc">
+	<service-name required="true"/>
+	<protocol required="true"/>
+	<host-name required="true"/>
+	<description/>
+	<port/>
+	<soap-service-path/>
+	<soap-service-name/>
+	<soap-service-method/>
+  </service>
+</instructions>

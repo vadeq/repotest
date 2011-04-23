@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/recorder/qx-service-recorder/code/java/zws/service/recorder/qx
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-06-09T20:44:12.127269Z
+6319
+ptoleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+RecorderSvc.java
+file
+
+
+
+
+2008-07-11T20:35:36.672250Z
+4f125127891e7f8e2e4b11143b844ea0
+2008-06-09T20:44:12.127269Z
+6319
+ptoleti
+
+RecorderTest.java
+file
+
+
+
+
+2008-07-11T20:35:36.812875Z
+606d9491266a5dccb272a0c76dc86558
+2008-04-01T19:38:57.516962Z
+5943
+pavan.toleti
+

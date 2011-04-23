@@ -1,0 +1,100 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-08-14T12:55:51.207855Z
+6502
+eankutse
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+source
+dir
+
+lang
+dir
+
+status
+dir
+
+message
+dir
+
+eco
+dir
+
+PENDataOpBase.java
+file
+
+
+
+
+2008-07-11T20:41:53.828500Z
+776c2a9d6592509f9d7436c53ef49c8c
+2008-02-15T17:12:40.668261Z
+5465
+eankutse
+
+PENDataOpList.java
+file
+
+
+
+
+2008-07-11T20:41:53.906625Z
+14fe7b8f7c1d07ecf0ca8181e0b10e66
+2008-01-29T20:22:17.802877Z
+5349
+pavan.toleti
+
+element
+dir
+
+custom
+dir
+
+PENDataOp.java
+file
+
+
+
+
+2008-07-11T20:41:53.953500Z
+f397e0e46af9d23d8b07ef29511731f2
+2008-02-22T21:52:24.123602Z
+5519
+arbind.thakur
+
+PENDataProcessor.java
+file
+
+
+
+
+2008-07-11T20:41:54.000375Z
+7bd23e163f7843be9de596224a68866a
+2008-02-29T17:07:58.472510Z
+5704
+pavan.toleti
+
+util
+dir
+

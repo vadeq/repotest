@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/config/agile-px/command-line-client/ZWS_PX/META-INF/services
+END
+com.agile.px.ICustomAction
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/config/agile-px/command-line-client/ZWS_PX/META-INF/services/com.agile.px.ICustomAction
+END

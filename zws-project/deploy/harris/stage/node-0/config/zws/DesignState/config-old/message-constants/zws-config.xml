@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<configuration>
+ <configurator base-path="\zws\DesignState\config\message-constants">
+  <load tag-map="\tag\message-constants.zws"  file="\message-constants.xml"/>
+ </configurator>
+</configuration>

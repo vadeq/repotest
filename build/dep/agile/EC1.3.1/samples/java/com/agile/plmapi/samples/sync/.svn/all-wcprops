@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/samples/java/com/agile/plmapi/samples/sync
+END
+SyncModeSample.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/samples/java/com/agile/plmapi/samples/sync/SyncModeSample.java
+END
+SyncPollingModeSample.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/samples/java/com/agile/plmapi/samples/sync/SyncPollingModeSample.java
+END
+BaseSyncSample.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/samples/java/com/agile/plmapi/samples/sync/BaseSyncSample.java
+END

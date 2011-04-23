@@ -1,0 +1,80 @@
+;
+font.stroke			=  true type
+;stroke
+;true type (default)
+;
+color.depth			= color
+;color
+;gray
+;mono
+;
+hiddenline.mode		= solid
+;solid,
+;dashed
+;
+searchable.text		= True
+;
+raster.dpi			= 300
+;Int, Range 100 - 600, default 300
+;
+launch.viewer		= False
+;
+layer.mode			= all
+;all
+;visible
+;none
+;
+parameter.mode			= all
+;all
+;designated
+;none
+;
+hyperlinks			= True
+;
+bookmark.zones		= True
+;
+bookmark.views		= True
+;
+bookmark.sheets		= True
+;
+bookmark.flag.notes	= True
+;
+;title
+;String, default ""
+;
+;author
+;String, default <current user name>
+;
+;subject
+;String, default ""
+;
+;keywords
+;String, default ""
+;
+;password.to.open
+;String, default NULL, which means that the document may be opened by anyone
+;
+;master.password
+;String, default NULL, which means that anyone may perform any change regardless
+;of any of the modification flags PRO_PDFOPT_ALLOW_* listed below
+;
+restrict.operations	= False
+;set to TRUE to use PRO_PDFOPT_ALLOW_* to use ProPDFRestrictOperationsMode
+;
+allow.printing		= True
+;
+printing.mode		= high
+;low
+:high
+;
+allow.mode			= none
+;none
+;forms signing
+;insert delete rotate
+;comment form signing
+;restrict extracting
+;
+allow.copying		= True
+;
+allow.accessibility	= True
+

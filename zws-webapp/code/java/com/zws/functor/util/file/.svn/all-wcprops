@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5307/trunk/zws/designstate/webapp/code/java/com/zws/functor/util/file
+END
+ZipWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/util/file/ZipWriter.java
+END
+UTF8Tidy.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/util/file/UTF8Tidy.java
+END
+Delete.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/util/file/Delete.java
+END
+DWG2PS.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/util/file/DWG2PS.java
+END
+FileMetadataSetter.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/util/file/FileMetadataSetter.java
+END
+Office2PDF.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/util/file/Office2PDF.java
+END
+Call.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/util/file/Call.java
+END
+PS2PDF.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/util/file/PS2PDF.java
+END

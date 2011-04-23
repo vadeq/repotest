@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/6248/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/status/item
+END
+LoadSyncStatusOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/zws/!svn/ver/5519/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/status/item/LoadSyncStatusOp.java
+END
+GetItemStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/status/item/GetItemStatus.java
+END
+ItemStatusOpBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/zws/!svn/ver/3336/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/status/item/ItemStatusOpBase.java
+END
+DetectNameConflictsOP.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/zws/!svn/ver/5521/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/status/item/DetectNameConflictsOP.java
+END
+SetItemStatusOP.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/zws/!svn/ver/6248/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/status/item/SetItemStatusOP.java
+END
+DetectSynchronizationConflictsOP.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/status/item/DetectSynchronizationConflictsOP.java
+END

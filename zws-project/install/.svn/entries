@@ -1,0 +1,40 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/zws-project/install
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-05-29T13:08:15.064673Z
+6286
+rmccabe
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+zws
+dir
+
+config
+dir
+
+nsis
+dir
+
+ugs
+dir
+

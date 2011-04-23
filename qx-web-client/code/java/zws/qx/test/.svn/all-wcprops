@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/zws/!svn/ver/5691/trunk/zws/qx-service/qx-web-client/code/java/zws/qx/test
+END
+TestQxClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/zws/!svn/ver/5691/trunk/zws/qx-service/qx-web-client/code/java/zws/qx/test/TestQxClient.java
+END
+LoadTestQx.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5655/trunk/zws/qx-service/qx-web-client/code/java/zws/qx/test/LoadTestQx.java
+END
+NestedPingQxService.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/zws/!svn/ver/5655/trunk/zws/qx-service/qx-web-client/code/java/zws/qx/test/NestedPingQxService.java
+END

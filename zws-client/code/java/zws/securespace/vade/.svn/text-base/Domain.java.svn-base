@@ -1,0 +1,9 @@
+package zws.securespace.vade;/*
+DesignState - Design Compression Technology
+@author: athakur
+@version: 1.0
+Created on February 24, 2004, 7:09 PM
+Copywrite (c) 2003 Zero Wait-State Inc. All rights reserved */
+
+public interface Domain extends VadeSpace {
+}

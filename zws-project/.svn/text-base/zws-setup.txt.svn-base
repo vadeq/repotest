@@ -1,0 +1,90 @@
+GET LATEST PLATFORM
+pg-1) download & install tortoise-SVN
+pg-2) download & install svn command line client
+pg-3) checkout zws-installer:
+      > mkdir /zws/zws-project
+      > cd /zws/zws-project
+      > svn co http://build.zerowait-state.com/svn/zws/trunk/zws/zws-project
+
+INSTALL PLATFORM [+++ToDo: By ZWS]
+ip-1) install platform
+      > cd /zws/zws-project/install
+      > install-paltform.bat
+
+GET LATEST DEPENDENCIES [+++ToDo: By ZWS]
+gr-1) get latest deps
+      > cd \zws\zws-project\install
+      > get-deps.bat
+
+DEPLOY LATEST DEPENDENCIES [+++ToDo: By ZWS]
+ir-1) install latest Designstate Release
+      > cd /zws/zws-project/deploy/cisco/[path to node being deployed]
+      > deploy-deps.bat
+
+GET LATEST RELEASE
+gr-1) get latest release:
+      > cd \zws\zws-project\deploy\cisco
+      > update.bat
+
+DEPLOY LATEST RELEASE [+++ToDo: By ZWS]
+ir-1) install latest Designstate Release
+      > cd /zws/zws-project/deploy/cisco/[path to node being deployed]
+      > deploy.bat
+
+START SERVER (DEV)
+sS-1) start axis2 SOAP server:
+     > cd /zws/bin
+     > start-axis2server.bat
+
+INITIALIZE DesignState SERVER
+
+MAKE CHANGES TO CONFIGURATION
+ [+++tODo ]
+
+CHECKIN CONFIGURATION CHANGES
+ [+++tODo ]
+
+UPDATE STAGING SERVER
+ [+++tODo ]
+
+UPDATE PRODUCTION SERVER
+ [+++tODo ]
+
+
+---------------------
+deps:
+
+Agile:
+agile-share-prof.jar
+agile-share-xml.jar
+agile-share.jar
+ecp-connector.jar
+ecp-plm-api.jar
+ecp-util.jar
+ep-eci.jar
+
+shared:
+axis.jar
+crypto.jar
+dom4j-full.jar
+isorelax.jar
+mail.jar
+msv.jar
+mysql-connector-java-3.1.12-bin.jar
+relaxngDatatype.jar
+saaj.jar
+wsdl4j.jar
+xalan.jar
+xercesImpl.jar
+xml-apis.jar
+jakarta-commons-codec-1.3.jar
+jakarta-commons-collections-3.1.jar
+jakarta-commons-discovery.jar
+jakarta-commons-httpclient-3.0.jar
+jakarta-commons-logging-1.0.2.jar
+jakarta-httpcore-4.0-alpha2.jar
+jaxrpc.jar
+
+
+
+

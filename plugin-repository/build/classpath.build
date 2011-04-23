@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="classpath">
+  <path id="classpath">
+    <!-- update to name specific jars -->
+    <fileset dir="${dist}/jar"> <include name="DesignState-Client.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-qx.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-qx-web-client.jar"/> </fileset>
+	  <fileset dir="${dist}/jar"> <include name="zws-qx.jar"/> </fileset>
+	  <fileset dir="${dist}/jar"> <include name="zws-plugin-ilink3.jar"/> </fileset>
+	  <fileset dir="${dist}/jar"> <include name="zws-plugin-interface.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-agile-cif.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-ilink8.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-TC10.jar"/> </fileset>
+		<fileset dir="${dist}/jar"> <include name="zws-plugin-service-finder.jar"/> </fileset>    
+  </path>
+</project>

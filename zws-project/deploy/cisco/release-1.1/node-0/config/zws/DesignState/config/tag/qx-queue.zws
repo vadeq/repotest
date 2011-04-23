@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+
+<instructions>
+
+  <DesignState-config ignore="true"/>
+
+  <qx-queue-ops ignore="true"/>
+
+  <qx-queue instance-of="zws.util.KeyValue" static-method="add" class="zws.application.Properties" >
+    <queue-namespace required="true" property="key" />
+    <queue-op required="true" property="value"/>
+  </qx-queue>
+
+</instructions>

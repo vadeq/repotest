@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="classpath">
+  <path id="classpath">
+    <!-- update to name specific jars -->
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-interface.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-qx.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="DesignState-Client.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-synchronization.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-recorder.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-agile-sdk.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-queue-pen.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-file-depot.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-chrysalis.jar"/> </fileset>    
+    <fileset dir="${deps}/agile/AgileAPI"> <include name="AgileAPI.jar"/> </fileset>
+  </path>
+</project>

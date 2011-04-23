@@ -1,0 +1,41 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/zws-project/install/config/oracle
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-04-30T15:52:49.073393Z
+6147
+pavan.toleti
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+oracle_install.sql
+file
+
+
+
+
+2008-07-11T20:44:20.078500Z
+11b14d18adf8f7e22be1c093cbbb1151
+2008-04-30T15:52:49.073393Z
+6147
+pavan.toleti
+has-props
+

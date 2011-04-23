@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/status/eco/pending
+END
+DetectPendingECOOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/zws/!svn/ver/5521/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/status/eco/pending/DetectPendingECOOp.java
+END
+PendingECOStatusOpBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/zws/!svn/ver/5521/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/status/eco/pending/PendingECOStatusOpBase.java
+END
+GetPendingECOAttributeValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/status/eco/pending/GetPendingECOAttributeValue.java
+END
+LoadPendingECOsOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/status/eco/pending/LoadPendingECOsOp.java
+END

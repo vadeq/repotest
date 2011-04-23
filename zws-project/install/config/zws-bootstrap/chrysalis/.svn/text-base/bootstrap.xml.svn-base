@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<bootstrap-configuration>
+ <configurator base-path="\zws\DesignState\config">
+  <load tag-map="\tag\property.zws"  file="\deployment-environment.xml"/>
+  <load tag-map="\tag\config.zws"  file="\[organization]\[project]\admin\zws-config.xml"/>
+  <load tag-map="\tag\config.zws"  file="\[organization]\[project]\chrysalis\zws-config.xml"/>
+ </configurator>
+</bootstrap-configuration>

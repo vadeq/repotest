@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5363/trunk/zws/plugin/plugin-interface/code/java/zws/repository/source
+END
+RepositoryMetadataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/zws/!svn/ver/2150/trunk/zws/plugin/plugin-interface/code/java/zws/repository/source/RepositoryMetadataSource.java
+END
+RepositoryStateSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/4058/trunk/zws/plugin/plugin-interface/code/java/zws/repository/source/RepositoryStateSource.java
+END
+RepositoryStructureSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/zws/!svn/ver/4978/trunk/zws/plugin/plugin-interface/code/java/zws/repository/source/RepositoryStructureSource.java
+END
+RepositoryBinarySource.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/5363/trunk/zws/plugin/plugin-interface/code/java/zws/repository/source/RepositoryBinarySource.java
+END
+RepositoryECOSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/4077/trunk/zws/plugin/plugin-interface/code/java/zws/repository/source/RepositoryECOSource.java
+END
+RepositoryConfigurationSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/zws/!svn/ver/1004/trunk/zws/plugin/plugin-interface/code/java/zws/repository/source/RepositoryConfigurationSource.java
+END
+RepositoryWorkflowSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/zws/!svn/ver/953/trunk/zws/plugin/plugin-interface/code/java/zws/repository/source/RepositoryWorkflowSource.java
+END
+RepositoryPackageSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/950/trunk/zws/plugin/plugin-interface/code/java/zws/repository/source/RepositoryPackageSource.java
+END
+RepositoryTemplateSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/zws/!svn/ver/1004/trunk/zws/plugin/plugin-interface/code/java/zws/repository/source/RepositoryTemplateSource.java
+END
+RepositoryECOTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/4472/trunk/zws/plugin/plugin-interface/code/java/zws/repository/source/RepositoryECOTarget.java
+END

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<configuration>
+ <configurator base-path="\zws\DesignState\config\[organization]\[project]\service\pen">
+
+  <load tag-map="..\..\..\..\tag\property.zws"  file="\pen-properties.xml"/>
+
+  <!-- PEN Policies -->
+  <load tag-map="..\..\..\..\tag\pen-policy.zws"  file="\pen-policy-sync-library.xml"/>
+  <load tag-map="..\..\..\..\tag\pen-policy.zws"  file="\pen-policy-library.xml"/>
+  <load tag-map="..\..\..\..\tag\pen-policy.zws"  file="\pen-policy-model.xml"/>
+  <load tag-map="..\..\..\..\tag\pen-policy.zws"  file="\pen-policy-drawing.xml"/>
+
+  <!-- policy match -->
+  <load tag-map="..\..\..\..\tag\policy-match.zws"  file="\match.xml"/>
+ </configurator>
+</configuration>

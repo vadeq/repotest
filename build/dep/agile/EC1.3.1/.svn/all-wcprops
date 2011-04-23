@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1
+END
+setPAMEnv.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/setPAMEnv.cmd
+END
+dumpClasses.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/dumpClasses.cmd
+END
+pam-build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/pam-build.xml
+END
+generateMapFile.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/generateMapFile.cmd
+END

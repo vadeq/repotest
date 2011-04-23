@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/code/java/zws/service/search
+END
+SearchAgentServiceLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/search/SearchAgentServiceLocal.java
+END
+SearchAgentServiceRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/search/SearchAgentServiceRemote.java
+END
+EJBLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/search/EJBLocator.java
+END
+SearchAgentService.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/search/SearchAgentService.java
+END
+SearchAgentServiceLocalHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/search/SearchAgentServiceLocalHome.java
+END
+SearchAgentServiceRemoteHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/search/SearchAgentServiceRemoteHome.java
+END

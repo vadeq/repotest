@@ -1,0 +1,29 @@
+DROP DATABASE IF EXISTS zwsSynchronizationLog;
+CREATE DATABASE zwsSynchronizationLog;
+USE zwsSynchronizationLog;
+
+# Synchronization log
+#Need to create a Primary key based on domain0, server0, datasource0, uid0, domainA, serverA, datasourceA - a unique distribution
+drop table if exists synchronizationLog;
+
+create table synchronizationLog (
+ domainName0      varchar(255),
+ serverName0      varchar(255),
+ datasourceType0  varchar(255),
+ datasourceName0  varchar(255),
+ stamp0           bigint,
+ uid0             varchar(255),
+ name0            varchar(255),
+ location0        varchar(255),
+ state0           varchar(255),
+ domainNameA      varchar(255),
+ serverNameA      varchar(255),
+ datasourceTypeA  varchar(255),
+ datasourceNameA  varchar(255),
+ stampA           bigint,
+ uidA             varchar(255),
+ nameA            varchar(255),
+ locationA        varchar(255),
+ stateA           varchar(255)
+ -- primary key (domainName0, serverName0, datasourceName0, uid0, domainNameA, serverNameA, datasourceNameA)
+) type = InnoDB;

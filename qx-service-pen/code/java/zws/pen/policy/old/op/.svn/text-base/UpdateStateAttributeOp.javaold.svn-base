@@ -1,0 +1,134 @@
+package zws.pen.policy.old.op;
+/*
+* DesignState - Design Compression Technology
+* @author: ptoleti
+* @version: 1.0
+* Created on Apr 27, 2007 9:58:02 AM
+* Copywrite (c) 2007 Zero Wait-State Inc. All rights reserved
+*/
+
+import zws.data.Metadata;
+import zws.repository.Repository;
+import zws.repository.target.RepositoryStateTarget;
+import zws.security.Authentication;
+import zws.service.pen.PENDataElement;
+import zws.service.pen.SourceDataElement;
+import zws.util.LogWriter;
+import java.util.HashMap;
+import java.util.Iterator;
+
+
+
+/**
+ * The Class UpdateStateAttributeOp.
+ *
+ * @author ptoleti
+ */
+public class UpdateStateAttributeOp extends PENDataOpBase {
+
+  /**
+   * Execute.
+   * @throws Exception Exception
+   * @see zws.pen.policy.old.op.PENDataOpBase#execute()
+   */
+  public void execute() throws Exception {
+    Metadata sourceData = null;
+    String name = null;
+    HashMap refMap = null;
+    PENDataElement penDataElement = null;
+    try {
+      LogWriter.printOnConsole("Execute in UpdateStateAttributeOp ");
+      Repository repositoryObj = getPenPolicyObj().getSourceRepository();
+      RepositoryStateTarget repositoryStateTarget = repositoryObj.materializeStateTarget();
+      //Authentication id = new Authentication(repositoryObj.getSystemUsername(), repositoryObj.getSystemPassword());
+      String opValue = null;
+      String value = getAttributeValue();
+      if (null == value) {
+        value = "";
+      }
+      if (null != getOps() && !getOps().isEmpty()) {
+        PENDataOp op = null;
+        Iterator i = getOps().iterator();
+        while (i.hasNext()) {
+          opValue = null;
+          op = (PENDataOp) i.next();
+          op.setQxCtx(getQxCtx());
+          op.setPenData(getPenData());
+          op.setPenPolicyObj(getPenPolicyObj());
+          op.setAuthentication(getAuthentication());
+          op.setOrigin(getOrigin());
+          op.setLocation(getLocation());
+          op.execute();
+          opValue = (String) op.getResult();
+          LogWriter.printOnConsole("opValue " + opValue);
+          if (null != opValue) {
+            value += opValue;
+          }
+        }
+      }
+      LogWriter.printOnConsole("Final value " + value);
+      HashMap attrValues = new HashMap();
+      attrValues.put(getAttributeName(), value);
+
+      refMap = getPenData().getReferenceMap();
+      Iterator itr = refMap.keySet().iterator();
+      //iterate thru ref map and get binary and transform data from source data table.
+      while (itr.hasNext()) {
+          name = (String) itr.next();
+          penDataElement    = (PENDataElement) refMap.get(name);
+          penDataElement   = (PENDataElement) refMap.get(name);
+          SourceDataElement srcDataElement = penDataElement.getSourceDataElement();
+          sourceData      = srcDataElement .getSourceData();
+          repositoryStateTarget.writeStateAttributes(getQxCtx(), sourceData.getOrigin(), attrValues, this.getAuthentication());
+          LogWriter.printOnConsole("Update State Attribute is completed for " + sourceData.getOrigin().getName());
+      }
+
+    } catch (Exception e) {
+      e.printStackTrace();
+      throw e;
+    }
+  }
+
+  /** The attribute name. */
+  private String attributeName = null;
+
+  /** The attribute value. */
+  private String attributeValue = null;
+
+  /**
+   * Gets the attribute name.
+   *
+   * @return the attributeName
+   */
+  public String getAttributeName() {
+    return attributeName;
+  }
+
+  /**
+   * Sets the attribute name.
+   *
+   * @param attrName the attribute name
+   */
+  public void setAttributeName(String attrName) {
+    this.attributeName = attrName;
+  }
+
+  /**
+   * Gets the attribute value.
+   *
+   * @return the attributeValue
+   */
+  public String getAttributeValue() {
+    return attributeValue;
+  }
+
+  /**
+   * Sets the attribute value.
+   *
+   * @param attrValue the attribute value
+   */
+  public void setAttributeValue(String attrValue) {
+    this.attributeValue = attrValue;
+  }
+
+}

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/condition
+END
+FileExists.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/condition/FileExists.java
+END
+IsEarlier.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/condition/IsEarlier.java
+END
+Conditional.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/condition/Conditional.java
+END
+IsEqual.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/condition/IsEqual.java
+END
+IsLater.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/condition/IsLater.java
+END
+HasChildren.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/condition/HasChildren.java
+END
+FileUpdated.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/condition/FileUpdated.java
+END
+IsNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/condition/IsNull.java
+END
+MetaDataDiscriminator.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/condition/MetaDataDiscriminator.java
+END

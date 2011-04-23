@@ -1,0 +1,27 @@
+[Tool]
+tool.command=C:\zws\env\ptc\ilink-1\ProE\bin\proe1.bat
+tool.config.pro=c:\zws\env\ptc\ilink-1\config\config.pro
+tool.instruction=convert
+tool.in.graphic.mode=False
+tool.exit.on.completion=True
+
+
+[Source]
+source.design.format=ProE
+source.design.name=@source.name@
+source.design.path=@source.path@\
+
+
+[Target]
+target.design.format=PRINT
+target.design.name=@dest.name@.plt
+target.design.path=@dest.path@\
+
+[Options]
+print.pcf.file=C:/zws/env/ptc/ilink-1/ProE/text/plot_config/postscript.pcf
+;=If a pcf file is specified, its values will be used rather than those following
+
+[Log Files]
+log.activity.file=@log.path@\activity.log
+log.status.directory=@log.path@\
+

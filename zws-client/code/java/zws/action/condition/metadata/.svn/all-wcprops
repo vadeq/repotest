@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/code/java/zws/action/condition/metadata
+END
+IsEarlier.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/action/condition/metadata/IsEarlier.java
+END
+IsEqual.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/action/condition/metadata/IsEqual.java
+END
+IsLater.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/action/condition/metadata/IsLater.java
+END
+HasChildren.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/action/condition/metadata/HasChildren.java
+END
+Comparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/action/condition/metadata/Comparator.java
+END
+HasSameOrigin.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/action/condition/metadata/HasSameOrigin.java
+END

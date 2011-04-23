@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.4 U (http://www.xmlspy.com) by Juan Egas (Eigner + Partner) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:complexType name="attributeType">
+		<xs:attribute name="name" type="xs:string" use="required"/>
+		<xs:attribute name="type" type="attributeDataTypes"/>
+		<xs:attribute name="value" type="xs:string" use="required"/>
+		<xs:attribute name="required" type="xs:string" use="required"/>
+		<xs:attribute name="send-back" type="xs:string" use="required"/>
+		<xs:attribute name="class" type="xs:string"/>
+		<xs:attribute name="old-name" type="xs:string"/>
+	</xs:complexType>
+	<xs:complexType name="attributesType">
+		<xs:sequence>
+			<xs:element name="attribute" type="attributeType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="objectType">
+		<xs:sequence>
+			<xs:element name="attributes" type="attributesType" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="name" type="xs:string" use="required"/>
+		<xs:attribute name="id" type="xs:QName" use="required"/>
+		<xs:attribute name="cad-type" type="xs:string"/>
+		<xs:attribute name="is-dirty" type="xs:string"/>
+		<xs:attribute name="selected-to-save" type="xs:string"/>
+		<xs:attribute name="lock" type="xs:string"/>
+		<xs:attribute name="keep-locked" type="xs:string"/>
+		<xs:attribute name="roll-revision" type="xs:string"/>
+		<xs:attribute name="mode" type="xs:string"/>
+		<xs:attribute name="modified-in-cad" type="xs:string"/>
+		<xs:attribute name="check-out" type="xs:string"/>
+		<xs:attribute name="check-in" type="xs:string"/>
+		<xs:attribute name="save-baseline" type="xs:string"/>
+		<xs:attribute name="new-name" type="xs:QName"/>
+		<xs:attribute name="new-rev" type="xs:QName"/>
+		<xs:attribute name="new-number" type="xs:QName"/>
+		<xs:attribute name="new-phase" type="xs:QName"/>
+		<xs:attribute name="eco-number" type="xs:QName"/>
+		<xs:attribute name="file" type="xs:QName"/>
+		<xs:attribute name="selection" type="xs:QName"/>
+		<xs:attribute name="cad-config" type="xs:QName"/>
+		<xs:attribute name="download-file" type="xs:string"/>
+		<xs:attribute name="parent-object-number" type="xs:QName"/>
+		<xs:attribute name="parent-object-revision" type="xs:QName"/>
+		<xs:attribute name="cad-variant" type="xs:QName"/>
+		<xs:attribute name="type" type="xs:string"/>
+		<xs:attribute name="parent-object" type="xs:QName"/>
+		<xs:attribute name="subclass" type="xs:string"/>
+		<xs:attribute name="number-source-id" type="xs:string"/>
+		<xs:attribute name="next-autonumber" type="xs:string"/>
+		<xs:attribute name="class" type="xs:string"/>
+	</xs:complexType>
+	<xs:complexType name="objectsType">
+		<xs:sequence>
+			<xs:element name="object" type="objectType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="plm-api">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="objects" type="objectsType"/>
+				<xs:element name="relations" type="relationsType"/>
+			</xs:sequence>
+			<xs:attribute name="version" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="relationType">
+		<xs:sequence>
+			<xs:element name="attributes" type="attributesType" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="name" use="required"/>
+		<xs:attribute name="id" type="xs:QName"/>
+		<xs:attribute name="cad-type" type="xs:string"/>
+		<xs:attribute name="is-dirty" type="xs:string"/>
+		<xs:attribute name="selected-to-save" type="xs:string"/>
+		<xs:attribute name="lock" type="xs:string"/>
+		<xs:attribute name="keep-locked" type="xs:string"/>
+		<xs:attribute name="roll-revision" type="xs:string"/>
+		<xs:attribute name="mode" type="xs:string"/>
+		<xs:attribute name="child-id" type="xs:QName"/>
+		<xs:attribute name="download-file" type="xs:string"/>
+		<xs:attribute name="file-folder-subclass" type="xs:string"/>
+		<xs:attribute name="class" type="xs:string"/>
+	</xs:complexType>
+	<xs:complexType name="relationsType">
+		<xs:sequence>
+			<xs:element name="relation" type="relationType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="attributeDataTypes">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="string"/>
+			<xs:enumeration value="integer"/>
+			<xs:enumeration value="float"/>
+			<xs:enumeration value="datetime"/>
+			<xs:enumeration value="single-selection"/>
+			<xs:enumeration value="multiple-selection"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

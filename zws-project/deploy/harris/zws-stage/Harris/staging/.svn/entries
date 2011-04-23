@@ -1,0 +1,40 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/zws-project/deploy/harris/zws-stage/Harris/staging
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-05-05T16:07:40.543386Z
+6200
+eankutse
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+service
+dir
+
+chrysalis
+dir
+
+admin
+dir
+
+web-app
+dir
+

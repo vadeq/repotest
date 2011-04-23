@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="code/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/build/dep/common/ojdbc14.jar"/>
+	<classpathentry kind="lib" path="/build/dep/common/oraclejdbc8i.jar"/>
+	<classpathentry kind="lib" path="/build/dep/common/ApacheJMeter_core.jar"/>
+	<classpathentry kind="lib" path="/build/dep/common/ApacheJMeter_java.jar"/>
+	<classpathentry kind="lib" path="/build/dep/server/jboss/jboss-j2ee.jar"/>
+	<classpathentry kind="lib" path="/build/dep/common/mail.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Agile API"/>
+	<classpathentry kind="output" path="out"/>
+</classpath>

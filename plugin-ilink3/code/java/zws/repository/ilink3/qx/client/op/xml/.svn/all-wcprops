@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/5713/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/xml
+END
+WorkspaceStatusHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/zws/!svn/ver/181/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/xml/WorkspaceStatusHandler.java
+END
+NamesHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/zws/!svn/ver/5713/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/xml/NamesHandler.java
+END
+SearchResultHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/zws/!svn/ver/5713/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/xml/SearchResultHandler.java
+END
+Ilink3QxFileDepotXferInvokerResultHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/zws/!svn/ver/5713/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/xml/Ilink3QxFileDepotXferInvokerResultHandler.java
+END
+GetBillHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/zws/!svn/ver/181/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/xml/GetBillHandler.java
+END
+ListAttributesHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/zws/!svn/ver/181/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/xml/ListAttributesHandler.java
+END
+PromoteResultHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/zws/!svn/ver/181/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/xml/PromoteResultHandler.java
+END
+GetDependenciesHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/zws/!svn/ver/5713/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/xml/GetDependenciesHandler.java
+END
+IntralinkResultHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/zws/!svn/ver/5713/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/xml/IntralinkResultHandler.java
+END
+ListWorkspaceHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/zws/!svn/ver/181/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/xml/ListWorkspaceHandler.java
+END
+WorkspaceListHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/zws/!svn/ver/552/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/xml/WorkspaceListHandler.java
+END
+FolderTreeHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/zws/!svn/ver/181/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/xml/FolderTreeHandler.java
+END
+IlinkQxResponseHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/zws/!svn/ver/529/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/xml/IlinkQxResponseHandler.java
+END
+PromoteFormSearchResultHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/zws/!svn/ver/5381/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/xml/PromoteFormSearchResultHandler.java
+END
+WorkspaceHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/zws/!svn/ver/552/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/xml/WorkspaceHandler.java
+END
+ListNamesHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/zws/!svn/ver/181/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/xml/ListNamesHandler.java
+END
+ListEventsHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/zws/!svn/ver/181/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/xml/ListEventsHandler.java
+END

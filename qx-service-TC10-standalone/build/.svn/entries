@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/build
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-31T18:14:52.943785Z
+5364
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+title.build
+file
+
+
+
+
+2008-07-11T20:39:18.437875Z
+15c307c216b62309f3ee3f2e516bc546
+2007-09-10T13:58:05.131270Z
+3099
+arbind.thakur
+
+classpath.build
+file
+
+
+
+
+2008-07-11T20:39:18.484750Z
+3d21e00856f7eed226681edccfe7db87
+2008-01-31T18:14:52.943785Z
+5364
+pavan.toleti
+

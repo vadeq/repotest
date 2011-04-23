@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/zws/!svn/ver/6496/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk
+END
+AgileSDKRepositoryBinaryTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/zws/!svn/ver/4947/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/AgileSDKRepositoryBinaryTarget.java
+END
+AgileSDKConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/zws/!svn/ver/6290/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/AgileSDKConstants.java
+END
+AgileSDKRepositoryECOTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/zws/!svn/ver/6531/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/AgileSDKRepositoryECOTarget.java
+END
+AgileSDKTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/zws/!svn/ver/6345/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/AgileSDKTest.java
+END
+AgileSDKRepositoryStateSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/zws/!svn/ver/5374/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/AgileSDKRepositoryStateSource.java
+END
+AgileSDKRepositoryMetadataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/zws/!svn/ver/2855/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/AgileSDKRepositoryMetadataSource.java
+END
+AgileSDKRepositoryWorkflowTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/zws/!svn/ver/5822/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/AgileSDKRepositoryWorkflowTarget.java
+END
+AgileSDKRepositoryStructureSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/zws/!svn/ver/5822/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/AgileSDKRepositoryStructureSource.java
+END
+AgileSDKRepositoryBinarySource.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/zws/!svn/ver/5371/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/AgileSDKRepositoryBinarySource.java
+END
+AgileSDKRepositoryStructureTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/zws/!svn/ver/5822/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/AgileSDKRepositoryStructureTarget.java
+END
+AgileSDKRepositoryStateTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/zws/!svn/ver/5374/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/AgileSDKRepositoryStateTarget.java
+END
+AgileSDKRepositoryMetadataTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/zws/!svn/ver/5822/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/AgileSDKRepositoryMetadataTarget.java
+END
+AgileSDKRepositoryECOSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/zws/!svn/ver/5822/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/AgileSDKRepositoryECOSource.java
+END
+AgileSDKRepositoryBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/zws/!svn/ver/6290/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/AgileSDKRepositoryBase.java
+END

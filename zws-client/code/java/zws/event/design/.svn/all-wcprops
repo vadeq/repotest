@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/event/design
+END
+EventTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/event/design/EventTest.java
+END
+Locked.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/design/Locked.java
+END
+CheckIn.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/design/CheckIn.java
+END
+Unlocked.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/design/Unlocked.java
+END
+Deleted.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/design/Deleted.java
+END
+Moved.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/design/Moved.java
+END
+Renamed.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/design/Renamed.java
+END
+VersionDeleted.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/design/VersionDeleted.java
+END

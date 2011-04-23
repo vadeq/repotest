@@ -1,0 +1,8 @@
+<project basedir=".">
+  <property name="COMPANY" value="harris"/>
+  <property name="PROJECT" value="stage"/>
+  <property name="SERVER" value="node-0"/>
+  <property name="PLATFORM" value="Win64"/>
+  <property name="ZWS_APP_HOME" value="e:/zws"/>
+  <property name="ZWS_DATA_HOME" value="e:/zws/data"/>
+</project>

@@ -1,0 +1,94 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/client/code/java/zws/data/filter
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+file
+dir
+
+metadata
+dir
+
+UnitFilterBase.java
+file
+
+
+
+
+2008-07-11T20:47:33.578500Z
+3aead70454b0899bfe267cdbd3671477
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+ListFilter.java
+file
+
+
+
+
+2008-07-11T20:47:36.078500Z
+6764101836142a7ad5f6892563a9bb38
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+Filter.java
+file
+
+
+
+
+2008-07-11T20:47:36.812875Z
+08eb8d591a058a46c63d8bdb3527bc11
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+UnitFilter.java
+file
+
+
+
+
+2008-07-11T20:47:37.906625Z
+0e7b0bd8010346a91278cea824fd3f9c
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+ListFilterBase.java
+file
+
+
+
+
+2008-07-11T20:47:38.172250Z
+a37fcffef5186dc07044ba18f4db7a7c
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+

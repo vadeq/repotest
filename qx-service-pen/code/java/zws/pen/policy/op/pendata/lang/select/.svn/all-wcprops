@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/5296/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/select
+END
+SelectFirstDocumentParent.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/zws/!svn/ver/3617/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/select/SelectFirstDocumentParent.java
+END
+SelectFirstSourceParent.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/zws/!svn/ver/3883/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/select/SelectFirstSourceParent.java
+END
+SelectFirstXferParent.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/zws/!svn/ver/3499/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/select/SelectFirstXferParent.java
+END
+SelectFirstXferSubComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/zws/!svn/ver/3499/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/select/SelectFirstXferSubComponent.java
+END
+SelectOpBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/zws/!svn/ver/3479/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/select/SelectOpBase.java
+END
+SelectFromListWhere.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/zws/!svn/ver/3499/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/select/SelectFromListWhere.java
+END
+SelectByName.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/zws/!svn/ver/3598/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/select/SelectByName.java
+END

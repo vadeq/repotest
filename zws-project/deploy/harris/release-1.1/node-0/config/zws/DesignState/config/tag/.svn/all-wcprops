@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/zws/!svn/ver/5790/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/tag
+END
+event-handlers.zws
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/zws/!svn/ver/5180/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/tag/event-handlers.zws
+END
+repository.zws
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/zws/!svn/ver/5510/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/tag/repository.zws
+END
+services.zws
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/zws/!svn/ver/5180/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/tag/services.zws
+END
+database.zws
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/zws/!svn/ver/5180/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/tag/database.zws
+END
+property.zws
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/zws/!svn/ver/5180/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/tag/property.zws
+END
+config.zws
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/zws/!svn/ver/5180/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/tag/config.zws
+END
+qx-queue.zws
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/zws/!svn/ver/5180/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/tag/qx-queue.zws
+END
+topology.zws
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/zws/!svn/ver/5180/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/tag/topology.zws
+END

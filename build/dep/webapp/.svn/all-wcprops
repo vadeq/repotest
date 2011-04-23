@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/zws/!svn/ver/6224/trunk/zws/build/dep/webapp
+END
+rollerjm-utils.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/zws/!svn/ver/5/trunk/zws/build/dep/webapp/rollerjm-utils.jar
+END
+struts.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/zws/!svn/ver/5/trunk/zws/build/dep/webapp/struts.jar
+END
+Coalesys.PanelBar.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/zws/!svn/ver/5/trunk/zws/build/dep/webapp/Coalesys.PanelBar.jar
+END
+jaxen-full.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/zws/!svn/ver/2066/trunk/zws/build/dep/webapp/jaxen-full.jar
+END
+saxpath.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/zws/!svn/ver/2066/trunk/zws/build/dep/webapp/saxpath.jar
+END
+xml-apis.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/zws/!svn/ver/2066/trunk/zws/build/dep/webapp/xml-apis.jar
+END
+xercesImpl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/zws/!svn/ver/2066/trunk/zws/build/dep/webapp/xercesImpl.jar
+END
+jdbc2_0-stdext.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/zws/!svn/ver/2066/trunk/zws/build/dep/webapp/jdbc2_0-stdext.jar
+END
+jstl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/zws/!svn/ver/2066/trunk/zws/build/dep/webapp/jstl.jar
+END
+servletapi-2.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/zws/!svn/ver/6224/trunk/zws/build/dep/webapp/servletapi-2.3.jar
+END
+standard.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/zws/!svn/ver/2032/trunk/zws/build/dep/webapp/standard.jar
+END
+xalan.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/zws/!svn/ver/2066/trunk/zws/build/dep/webapp/xalan.jar
+END

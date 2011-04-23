@@ -1,0 +1,55 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/file-depot/plugin-file-depot/code/java/zws/service/file/depot
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:00:32.886001Z
+5662
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+test
+dir
+
+RemotePackageBase.java
+file
+
+
+
+
+2008-07-11T17:24:15.609750Z
+7aac260d6fc944104d07d5c8c5df7e44
+2008-02-01T17:33:08.650119Z
+5378
+pavan.toleti
+
+FileDepotClient.java
+file
+
+
+
+
+2008-07-11T17:24:15.656625Z
+3d9e1954bdf6450c90bb7503a202c0ea
+2008-02-29T17:00:32.886001Z
+5662
+pavan.toleti
+

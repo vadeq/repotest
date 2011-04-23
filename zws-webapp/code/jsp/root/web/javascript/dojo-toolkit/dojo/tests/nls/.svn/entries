@@ -1,0 +1,115 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/tests/nls
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+en-us-new_york-brooklyn
+dir
+
+zh-cn
+dir
+
+salutations.js
+file
+
+
+
+
+2008-07-11T22:10:55.187875Z
+5ab8f8b30daaef0d233beb73ea5fca75
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+yi
+dir
+
+pt
+dir
+
+tr
+dir
+
+fa
+dir
+
+ru
+dir
+
+en-us-hawaii
+dir
+
+de
+dir
+
+sw
+dir
+
+ja
+dir
+
+he
+dir
+
+hi
+dir
+
+el
+dir
+
+ar
+dir
+
+en-au
+dir
+
+cs
+dir
+
+fr
+dir
+
+es
+dir
+
+ko
+dir
+
+en-us-texas
+dir
+
+zh-tw
+dir
+
+pl
+dir
+
+th
+dir
+
+it
+dir
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="title" basedir=".">
+
+  <!-- title -->
+  <property name="title" value="Design State Repository Plugin Implementation For Intralink 3x"/>
+
+  <!-- project path within the svn repository -->
+  <property name="svn-project-path" value="plugin/repository/ilink3"/>
+
+  <!-- svn repository -->
+  <property name="svn-project-name" value="plugin-queue-event"/>
+  <property name="svn-repository" value="zws"/>
+  <property name="baseURL" value="http://dev.zerowait-state.com:80/svn/${svn-repository}"/>
+  <property name="svnBaseURL" value="${baseURL}/${svn-project-path}/${svn-project-name}"/>
+
+  <!-- eclipse dev-dojo -->
+  <property name="eclipse-project-name" value="plugin-queue-event"/>
+
+  <!-- jar file name -->
+  <property name="jarfile-name" value="zws-plugin-queue-event"/>
+
+</project>

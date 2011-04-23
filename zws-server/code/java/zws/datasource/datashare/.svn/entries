@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/server/code/java/zws/datasource/datashare
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+SearchAgent.java
+file
+
+
+
+
+2008-07-11T20:50:49.609750Z
+95c49834565fe7666a6a7eeff0078554
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+
+DataShareSource.java
+file
+
+
+
+
+2008-07-11T20:50:49.672250Z
+85e3cfcfe04a4c9d87bc184c7a817a97
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+

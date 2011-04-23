@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="classpath">
+  <path id="classpath">
+    <fileset dir="${dist}/jar"> <include name="zws-qx.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="DesignState-Client.jar"/> </fileset>
+    <fileset dir="${AXIS2_HOME}/lib"><include name="*.jar"/></fileset>
+    <fileset  dir="${deps}/common" includes="ApacheJMeter_core.jar" />
+    <fileset  dir="${deps}/common" includes="ApacheJMeter_java.jar" />
+
+  </path>
+</project>

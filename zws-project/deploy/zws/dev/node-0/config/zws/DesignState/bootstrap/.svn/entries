@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/bootstrap
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:26:01.026163Z
+5336
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+bootstrap.zws
+file
+
+
+
+
+2008-07-11T20:44:55.172250Z
+839a5eb24b8b02bcd03bd50636e7ba0a
+2007-04-16T22:13:47.851959Z
+913
+pavan.toleti
+
+server-bootstrap.xml
+file
+
+
+
+
+2008-07-11T20:44:55.234750Z
+39805f6fe87ed292f2d178c679936d66
+2007-05-10T01:37:16.443936Z
+1426
+pavan.toleti
+

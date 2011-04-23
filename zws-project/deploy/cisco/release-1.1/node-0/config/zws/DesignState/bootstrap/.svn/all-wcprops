@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/6133/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/bootstrap
+END
+bootstrap.zws
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/zws/!svn/ver/683/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/bootstrap/bootstrap.zws
+END
+server-bootstrap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/zws/!svn/ver/6133/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/bootstrap/server-bootstrap.xml
+END
+tc-10-bootstrap-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/zws/!svn/ver/6133/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/bootstrap/tc-10-bootstrap-config.xml
+END

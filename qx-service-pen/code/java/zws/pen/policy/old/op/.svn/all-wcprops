@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5296/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op
+END
+GetValueFromContextOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/GetValueFromContextOp.javaold
+END
+AddPrefixOP.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/AddPrefixOP.javaold
+END
+PENDataOpBase.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/PENDataOpBase.javaold
+END
+UpdateStateAttributeOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/UpdateStateAttributeOp.javaold
+END
+GetBasenameOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/GetBasenameOp.javaold
+END
+AddSuffixOP.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/AddSuffixOP.javaold
+END
+ChangePartTypeOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/ChangePartTypeOp.javaold
+END
+UpdateBasenameOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/UpdateBasenameOp.javaold
+END
+GetUserName.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/GetUserName.javaold
+END
+CheckStatusOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/CheckStatusOp.javaold
+END
+RetrieveBOMOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/RetrieveBOMOp.javaold
+END
+SetValueInContextOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/SetValueInContextOp.javaold
+END
+SetValueInTargetOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/SetValueInTargetOp.javaold
+END
+ToLowercaseOP.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/ToLowercaseOP.javaold
+END
+RenameAttributeOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/RenameAttributeOp.javaold
+END
+SetDefaultValueOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/SetDefaultValueOp.javaold
+END
+GetCurrentDateTimeOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/GetCurrentDateTimeOp.javaold
+END
+MapAttributeOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/MapAttributeOp.javaold
+END
+AddStrings.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/AddStrings.javaold
+END
+GetSourceBinaryOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/GetSourceBinaryOp.javaold
+END
+PublishMetaDataBOMOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/PublishMetaDataBOMOp.javaold
+END
+GetValueFromTargetOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/GetValueFromTargetOp.javaold
+END
+PublishMetaDataOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/PublishMetaDataOp.javaold
+END
+PENDataOpList.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/PENDataOpList.javaold
+END
+PENDataOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/PENDataOp.javaold
+END
+SetAttributeOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/SetAttributeOp.javaold
+END
+StringConstantOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/StringConstantOp.javaold
+END
+GetValueFromSourceOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/GetValueFromSourceOp.javaold
+END
+PENPrinter.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/PENPrinter.javaold
+END
+ToCapitalizeOP.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/ToCapitalizeOP.javaold
+END
+GetSourceDataOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/GetSourceDataOp.javaold
+END
+ToUppercaseOP.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/ToUppercaseOP.javaold
+END
+CopyStructureOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/CopyStructureOp.javaold
+END
+CopyAttributeOp.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/2779/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/old/op/CopyAttributeOp.javaold
+END

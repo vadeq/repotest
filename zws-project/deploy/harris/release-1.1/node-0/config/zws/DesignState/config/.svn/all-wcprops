@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/5790/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config
+END
+web-node.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/5190/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/web-node.xml
+END
+web-system-property.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/zws/!svn/ver/5460/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/web-system-property.xml
+END
+panel-bar.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/zws/!svn/ver/5486/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/panel-bar.xml
+END
+services.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/5357/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/services.xml
+END
+event-listener.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/zws/!svn/ver/5180/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/event-listener.xml
+END
+database.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/5180/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/database.xml
+END
+publishing-environment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/zws/!svn/ver/5180/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/publishing-environment.xml
+END
+server-system-property-chrysalis.xml
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/zws/!svn/ver/5357/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/server-system-property-chrysalis.xml
+END
+server-system-property.xml
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/zws/!svn/ver/5357/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/server-system-property.xml
+END
+qx-queue.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/5180/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/qx-queue.xml
+END
+qx-queue2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/zws/!svn/ver/5180/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/qx-queue2.xml
+END
+repository.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/zws/!svn/ver/5190/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/repository.xml
+END
+event-handlers.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/zws/!svn/ver/5180/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/event-handlers.xml
+END

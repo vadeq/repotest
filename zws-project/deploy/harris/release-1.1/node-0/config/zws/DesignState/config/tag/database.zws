@@ -1,0 +1,42 @@
+<instructions>
+  <DesignState-config ignore="true"/>
+
+  <databases ignore="true"/>
+
+  <mysql instance-of="zws.database.MySQL" static-method="add" class="zws.database.DB" >
+    <name required="true"/>
+    <database-name required="true"/>
+    <host/>
+    <username/>
+    <password/>
+    <connection-timeout type="int" default="888"/> <!-- seconds -->
+  </mysql>
+
+  <postgres instance-of="zws.database.Postgres" static-method="add" class="zws.database.DB">
+    <name required="true"/>
+    <database-name required="true"/>
+    <host/>
+    <username/>
+    <password/>
+    <connection-timeout type="int" default="888"/> <!-- seconds -->
+  </postgres>
+
+  <ms-sql-server instance-of="zws.database.MSSQLServer" static-method="add" class="zws.database.DB">
+    <name required="true"/>
+    <database-name required="true"/>
+    <host/>
+    <username/>
+    <password/>
+    <connection-timeout type="int" default="888"/> <!-- seconds -->
+  </ms-sql-server>
+
+  <oracle instance-of="zws.database.Oracle" static-method="add" class="zws.database.DB">
+    <name required="true"/>
+    <url required="true"/>
+    <username/>
+    <password/>
+    <driver-name type="String" default="oracle.jdbc.driver.OracleDriver" />
+    <connection-timeout type="int" default="888" /> <!-- seconds -->
+  </oracle>
+  
+</instructions>

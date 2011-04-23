@@ -1,0 +1,55 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/message-constants
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-03-18T16:31:41.620672Z
+5843
+pavan.toleti
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+zws-config.xml
+file
+
+
+
+
+2008-07-11T20:44:33.531625Z
+4bfe7330735c3055d0f8c6d17b014afb
+2008-03-18T16:31:41.620672Z
+5843
+pavan.toleti
+
+tag
+dir
+
+message-constants.xml
+file
+
+
+
+
+2008-07-11T20:44:33.594125Z
+270f005d665806a2770e53a0cc0fc51e
+2008-03-18T16:31:41.620672Z
+5843
+pavan.toleti
+

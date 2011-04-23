@@ -1,0 +1,5 @@
+<DesignState-config>
+	<event-listeners>
+		<ilink3-listener repository-name="ilink" system-username="intralink" system-password="zero0" />
+	</event-listeners>
+</DesignState-config>

@@ -1,0 +1,18 @@
+<DesignState-config>
+ <properties>
+  <file name="proe2pdfstp-xlator-command" path="[zws-home]\DesignState\chrysalis\proe\Proexlator.bat" />
+  <file name="proe-tool-command" path="[zws-env]\ptc\ilink-1\ProE\bin\proe1.bat" />
+  <file name="proe-tool-config-pro" path="[zws-env]\ptc\ilink-1\config\config.pro" />
+  <file name="print-pcf-file" path="[zws-home]\DesignState\config\Harris\staging\chrysalis\ps_print.pcf" />
+
+  <property name="proe2pdfstp-graphic-mode" value="False" />
+  <property name="proe2pdfstp-exit-on-completion" value="True" />
+  <property name="pdf-generation-approach" value="PRINT" />
+            
+  <dir name="chrysalis-input-dir" path="[zws-home]\data-chry\temp\chrysalis\in"/>
+  <dir name="chrysalis-output-dir" path="[zws-home]\data-chry\temp\chrysalis\out"/> 
+   
+ </properties>
+</DesignState-config>
+
+

@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 37
+local-env.build.cc
+local-env.build
+
+K 15
+tsvn:logminsize
+V 2
+10
+END

@@ -1,0 +1,124 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/jsp/root/demo/I2A
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:19:54.379681Z
+5307
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+promote.jsp
+file
+
+
+
+
+2008-07-11T22:05:36.531625Z
+81b7c9dba9bd2bb499bee13a17e8ff0b
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+publish.jsp
+file
+
+
+
+
+2008-07-11T22:05:36.641000Z
+4e1814300860e6572da74b8307c981f2
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+ilinkMapping
+dir
+
+excludeList
+dir
+
+eco
+dir
+
+publish
+dir
+
+replace.jsp
+file
+
+
+
+
+2008-07-11T22:05:36.750375Z
+c3652207db6c93c41d850c005e53ebf6
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+mappings.jsp
+file
+
+
+
+
+2008-07-11T22:05:36.859750Z
+01e85d9aa29060c1746ab109f6973e90
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+promote-eco-add.jsp
+file
+
+
+
+
+2008-07-11T22:05:36.953500Z
+e34e7170b95b300f45ddafcd21cf71a0
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+update.jsp
+file
+
+
+
+
+2008-07-11T22:05:37.078500Z
+3fdde73e393f4b26ab110e1407aee0a1
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+index.htm
+file
+
+
+
+
+2008-07-11T22:05:37.328500Z
+3f28aad845b55dc467bead0b59bddae0
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+

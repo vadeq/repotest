@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/rpc
+END
+RpcService.js
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/rpc/RpcService.js
+END
+JsonService.js
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/rpc/JsonService.js
+END
+JsonpService.js
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/rpc/JsonpService.js
+END

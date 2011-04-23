@@ -1,0 +1,5 @@
+<DesignState-config>
+ <license-pools>
+   <ilink3-license-pool env-root="ilink-1" max-number-of-licenses="4"/>
+ </license-pools>
+</DesignState-config>

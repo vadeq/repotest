@@ -1,0 +1,179 @@
+<project basedir=".">
+  <description>Downloads DesignState Client and Server jar files</description>
+
+  <import file="deployment-env.xml"/>
+
+  <property name="base" location="${ZWS_APP_HOME}/zws-project/${COMPANY}/${PROJECT}/${SERVER}"/>
+  <property name="zws-build" location="${ZWS_APP_HOME}/zws-build"/>
+  <property name="zws-install" location="${ZWS_APP_HOME}/zws-install"/>
+
+  <property name="deps" location="${zws-build}/dep"/>
+
+  <macrodef name="svn-update">
+    <attribute name="work-dir"/>
+    <attribute name="username"/>
+    <attribute name="password"/>
+    <sequential>
+      <exec dir="@{work-dir}" executable="svn" failonerror="true">
+        <arg line="update --non-interactive --username @{username} --password @{password}"/>
+      </exec>
+    </sequential>
+  </macrodef>
+
+  <target name="update" depends="update-latest, download-pubs"/>
+
+  <!-- svn update of project specific config files -->
+
+  <target name="update-latest">
+    <echo message="updating ${zws-install}..."/>
+    <svn-update work-dir="${zws-install}" username="cruise" password="cruise"/>
+    <echo message="updating ${base}..."/>
+    <svn-update work-dir="${base}" username="cruise" password="cruise"/>
+    <echo message="updating ${deps}.."/>
+    <svn-update work-dir="${deps}" username="cruise" password="cruise"/>
+  </target>
+
+  <!-- get download script and published deployables/libraries -->
+  <target name="download-pubs">
+    <available file="pub" property="pub.already.downloaded"/>
+    <fail if="pub.already.downloaded" message="pub director already exists - Move it out of the way."/>
+    <mkdir dir="pub"/>
+    <get dest="pub/download-published-jars.xml" verbose="true" usetimestamp="false" src="http://build.zerowait-state.com/build/pub/download-published-jars.xml" />
+    <!-- call download script to download published deployables/libraries -->
+    <ant antfile="download-published-jars.xml" dir="pub"/>
+  </target>
+
+  <target name="install">
+   <echo message="++ToDo!"/>
+  </target>
+  
+  <target name="install-tomcat">
+    <available file="${ZWS_APP_HOME}\server\tomcat" property="tomcat.is.installed"/>
+    <fail unless="tomcat.is.installed" message="Tomcagt is not installed in ${ZWS_APP_HOME}\server\tomcat "/>
+  </target>
+
+  <target name="install-axis2" depends="install-tomcat>
+    <available file="${ZWS_APP_HOME}\DesignState\webapp\ZeroWait-State\" property="axis2.is.installed"/>
+    <condition unless="axis2.is.installed">
+     <!-- unwar axis2.war to webapp ZeroWait-State-->
+    </condition>
+    <!-- Deploy Axis2 web.xml config file to tomcat server -->
+    <copy toDir="${ZWS_APP_HOME}/DesignState/webapp/ZeroWait-State/WEB-INF" file="${ZWS_APP_HOME}/zws-project/install/config/axis2/web.xml" overwrite="true"/>
+  </target>
+
+  <target name="install-mysql">
+    <available file="${ZWS_APP_HOME}\server\mysql" property="mysql.is.installed"/>
+    <fail unless="mysql.is.installed" message="MySQL is not installed in ${ZWS_APP_HOME}\server\mysql"/>
+  </target>
+
+  <target name="install-oracle">
+    <available file="${ZWS_APP_HOME}\server\oracle" property="oracle.is.installed"/>
+  </target>
+
+  <target name="configure-tomcat" depends="install-tomcat">
+    <!-- Deploy Tomcat server config file -->
+    <copy toDir="${ZWS_APP_HOME}/server/tomcat/conf" file="${ZWS_APP_HOME}/zws-project/install/config/tomcat/conf/server.xml" overwrite="true"/>
+    <replace file="${ZWS_APP_HOME}/server/tomcat/conf/server.xml" token="@APP_HOME@" value="${ZWS_APP_HOME}"/>
+  </target>
+
+  <target name="configure-axis2" depends="install-axis2">
+    <!-- Deploy Axis2.xml web services config to standalone TOMCAT -->
+    <copy toDir="${ZWS_APP_HOME}/DesignState/webapp/ZeroWait-State/WEB-INF/conf"  file="${zws-install}/config/axis2/axis2.xml" overwrite="true"/>
+    <replace file="${ZWS_APP_HOME}/DesignState/webapp/ZeroWait-State/WEB-INF/conf/axis2.xml" token="@APP_HOME@" value="${ZWS_APP_HOME}"/>
+    <!-- Deploy Axis2 web.xml config file to tomcat server -->
+    <copy toDir="${ZWS_APP_HOME}/DesignState/webapp/ZeroWait-State/WEB-INF" file="${ZWS_APP_HOME}/zws-project/install/config/axis2/web.xml" overwrite="true"/>
+  </target>
+
+  <target name="configure-mysql" depends="install-mysql">
+    <!-- Deploy Mysql config file -->
+    <copy toDir="C:/" file="${ZWS_APP_HOME}/zws-project/install/config/mysql/my.cnf" overwrite="true"/>
+    <replace file="C:/my.cnf" token="@APP_HOME@" value="${ZWS_APP_HOME}"/>
+    <replace file="C:/my.cnf" token="@DATA_HOME@" value="${ZWS_DATA_HOME}"/>
+  </target>
+
+  <!-- deploy to application servers -->
+  <target name="deploy" depends="deploy-server-configurations">
+  </target>
+
+  <target name="deploy-qx-services" >
+    <available file="pub" property="pub.already.downloaded"/>
+    <fail unless="pub.already.downloaded" message="pub director has not been downloaded"/>
+    <copy toDir="${ZWS_APP_HOME}/DesignState/webservice" file="pub/DesignState-Qx.aar"/>
+    <copy toDir="${ZWS_APP_HOME}/DesignState/webapp/ZeroWait-State/WEB-INF/lib">
+      <fileset dir="pub/jar"/>
+    </copy>
+  </target>
+  
+  <target name="deploy-file-depot" >
+    <delete dir="${ZWS_APP_HOME}/DesignState/webapp/FileDepot"/>
+  	<mkdir dir="${ZWS_APP_HOME}/DesignState/webapp/FileDepot"/>
+    <unwar src="pub/zws-webapp-file-depot.war" dest="${ZWS_APP_HOME}/DesignState/webapp/FileDepot"/>
+  </target>
+
+  <target name="deploy-file-chrysalis" >
+  </target>
+
+  <target name="deploy-ilink-3-plugin" >
+  </target>
+
+  <target name="deploy-ilink-3-services" >
+  </target>
+
+  <target name="deploy-windchill-plugin" >
+  </target>
+
+  <target name="deploy-windchill-services" >
+  </target>
+
+  <target name="deploy-tc-plugin" >
+  </target>
+
+  <target name="deploy-tc-standalone-services" >
+  </target>
+
+  <target name="deploy-agile-wsx-plugin" >
+    <!-- copy Axis2 Lib -->
+    <copy toDir="${ZWS_APP_HOME}/DesignState/webapp/ZeroWait-State/WEB-INF/lib">
+      <fileset dir="${deps}/agile/${agile-plmapi-version-deps}" includes="*.jar"/>
+    </copy>
+  </target>
+
+  <target name="deploy-agile-sdk-plugin" >
+    <!-- copy Axis2 Lib -->
+    <copy toDir="${ZWS_APP_HOME}/DesignState/webapp/ZeroWait-State/WEB-INF/lib">
+      <fileset dir="${deps}/agile/${agile-plmapi-version-deps}" includes="*.jar"/>
+    </copy>
+  </target>
+
+  <target name="deploy-DesignState-Web" >
+    <delete dir="${ZWS_APP_HOME}/DesignState/webapp/ROOT"/>
+    <mkdir dir="${ZWS_APP_HOME}/DesignState/webapp/ROOT"/>
+    <unwar src="pub/DesignState-web.war" dest="${ZWS_APP_HOME}/DesignState/webapp/ROOT"/>
+    <copy toDir="${ZWS_APP_HOME}/DesignState/webapp/ROOT/WEB-INF/lib">
+      <fileset dir="${deps}/${axis2-version-deps}/lib" includes="*.jar"/>
+    </copy>
+    <copy toDir="${ZWS_APP_HOME}/DesignState/webapp/ROOT/WEB-INF/lib">
+      <fileset dir="pub/jar" includes="zws-plugin-*.jar"/>
+      <fileset dir="pub/jar" includes="zws-qx.jar"/>
+      <fileset dir="pub/jar" includes="zws-qx-web-client.jar"/>
+    </copy>
+    <!-- copy Axis2 Lib -->
+    <copy toDir="${ZWS_APP_HOME}/DesignState/webapp/ZeroWait-State/WEB-INF/lib">
+      <fileset dir="${deps}/agile/${agile-plmapi-version-deps}" includes="*.jar"/>
+    </copy>
+  </target>
+
+<!--
+    <copy toDir="${ZWS_APP_HOME}/DesignState/webapp/ROOT/WEB-INF/lib">
+      <fileset dir="${deps}/common" includes="axis.jar"/>
+      <fileset dir="${deps}/common" includes="jakarta-commons-discovery.jar"/>
+      <fileset dir="${deps}/webapp" includes="jaxen-full.jar"/>
+      <fileset dir="${deps}/webapp" includes="jdbc2_0-stdext.jar"/>
+      <fileset dir="${deps}/webapp" includes="jstl.jar"/>
+      <fileset dir="${deps}/webapp" includes="saxpath.jar"/>
+      <fileset dir="${deps}/webapp" includes="standard.jar"/>
+      <fileset dir="${deps}/webapp" includes="xalan.jar"/>
+    </copy>
+    <delete dir="pub"/>
+-->
+</project>

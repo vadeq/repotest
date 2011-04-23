@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/datasource/filesystem/op
+END
+DWG2PDF.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/filesystem/op/DWG2PDF.java
+END
+DWGLayouts2PDF.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/filesystem/op/DWGLayouts2PDF.java
+END
+DWGMetadataExtractor.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/filesystem/op/DWGMetadataExtractor.java
+END
+FileSystemOpBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/datasource/filesystem/op/FileSystemOpBase.java
+END

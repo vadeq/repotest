@@ -1,0 +1,23 @@
+plotter POSTSCRIPT
+button_name Generic Postscript
+button_help Print to any printer that supports generic postscript format.
+plot_drawing_format YES default
+plot_segmented NO default
+plot_roll_media NO default
+plot_label NO default
+plot_handshake software default
+create_separate_files YES default
+plot_with_panzoom YES default
+rotate_plotting NO default
+allow_file_naming YES
+plot_name NO
+interface_quality 3 default
+plot_destination file default
+paper_outline NO default
+plot_clip NO default
+plot_area NO default
+plot_access create default
+
+
+
+

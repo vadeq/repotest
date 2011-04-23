@@ -1,0 +1,13 @@
+<DesignState-config>
+ <databases>
+  <!-- 
+  <mysql name="zws-synch-db" database-name="zwsSynchronizationLog" host="localhost" username="DesignState" password="zero0"/>
+  <mysql name="zws-recorder-db" database-name="zwsRecorder" host="localhost" username="DesignState" password="zero0"/>
+  <mysql name="DesignState" database-name="DesignState" host="localhost" username="DesignState" password="zero0"/>	
+  -->
+
+	<oracle name="zws-synch-db" url="jdbc:oracle:thin:@10.10.10.185:1521:ZWSDB" username="DesignState" password="zero0" />
+	<oracle name="zws-recorder-db" url="jdbc:oracle:thin:@10.10.10.185:1521:ZWSDB" username="DesignState" password="zero0"/>
+	<oracle name="DesignState" url="jdbc:oracle:thin:@10.10.10.185:1521:ZWSDB" username="DesignState" password="zero0"/>    
+ </databases>
+</DesignState-config>

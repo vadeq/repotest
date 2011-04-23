@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests
+END
+_Templated.html
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/_Templated.html
+END
+ondijitclick.js
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/ondijitclick.js
+END
+test.html
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/test.html
+END
+Container.html
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/Container.html
+END
+test_TitlePane.html
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/test_TitlePane.html
+END
+test_Declaration.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/test_Declaration.html
+END
+test_Editor.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/test_Editor.html
+END
+test_Table.html
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/test_Table.html
+END
+_Templated.js
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/_Templated.js
+END
+runTests.html
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/runTests.html
+END
+test_ProgressBar.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/test_ProgressBar.html
+END
+test_Tree_Notification_API_Support.html
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/test_Tree_Notification_API_Support.html
+END
+test_Tooltip.html
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/test_Tooltip.html
+END
+widgetsInTemplate.html
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/widgetsInTemplate.html
+END
+Container.js
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/Container.js
+END
+test_ColorPalette.html
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/test_ColorPalette.html
+END
+test_InlineEditBox.html
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/test_InlineEditBox.html
+END
+module.js
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/module.js
+END
+test_Tree.html
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/test_Tree.html
+END
+test_Dialog.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/test_Dialog.html
+END
+_testCommon.js
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/_testCommon.js
+END
+test_Toolbar.html
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/test_Toolbar.html
+END
+widgetsInTemplate.js
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/widgetsInTemplate.js
+END
+test_Menu.html
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/test_Menu.html
+END
+_inspector.html
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/_inspector.html
+END
+ondijitclick.html
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/ondijitclick.html
+END
+_programaticTest.html
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/_programaticTest.html
+END
+test_Calendar.html
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/tests/test_Calendar.html
+END

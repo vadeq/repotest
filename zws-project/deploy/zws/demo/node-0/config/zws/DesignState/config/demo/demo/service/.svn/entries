@@ -1,0 +1,106 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/zws-project/deploy/zws/demo/node-0/config/zws/DesignState/config/demo/demo/service
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-07-08T16:14:23.243555Z
+6397
+rmccabe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+pen
+dir
+
+services.xml
+file
+
+
+
+
+2008-07-11T20:44:43.312875Z
+d6ecc43ed3def3a11c945922cb98e7cd
+2008-07-08T16:14:23.243555Z
+6397
+rmccabe
+
+zws-config.xml
+file
+
+
+
+
+2008-07-11T20:44:43.437875Z
+b4db6674cedfa0b82a3633e971438967
+2008-07-08T16:14:23.243555Z
+6397
+rmccabe
+
+ilink-3
+dir
+
+qx-queue.xml
+file
+
+
+
+
+2008-07-11T20:44:43.531625Z
+69f9525528fb40eccbe4ab4af2a81ac0
+2008-07-08T16:14:23.243555Z
+6397
+rmccabe
+
+service-properties.xml
+file
+
+
+
+
+2008-07-11T20:44:43.594125Z
+9f78c97d467469ccf1b642a83f065a65
+2008-07-08T16:14:23.243555Z
+6397
+rmccabe
+
+event-handlers.xml
+file
+
+
+
+
+2008-07-11T20:44:43.641000Z
+d01ef2d6e065f15c2bf9b50816030f48
+2008-07-08T16:14:23.243555Z
+6397
+rmccabe
+
+repository.xml
+file
+
+
+
+
+2008-07-11T20:44:43.734750Z
+b457b068c438eec114cf79b2396b247d
+2008-07-08T16:14:23.243555Z
+6397
+rmccabe
+

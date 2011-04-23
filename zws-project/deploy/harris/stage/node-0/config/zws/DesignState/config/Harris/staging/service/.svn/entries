@@ -1,0 +1,106 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/zws-project/deploy/harris/stage/node-0/config/zws/DesignState/config/Harris/staging/service
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-08-14T13:01:39.624670Z
+6504
+eankutse
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+pen
+dir
+
+services.xml
+file
+
+
+
+
+2008-07-11T20:45:05.875375Z
+7a1a6b5cd29aadaffa996edf071b11db
+2008-03-25T20:58:53.351917Z
+5922
+arbind.thakur
+
+zws-config.xml
+file
+
+
+
+
+2008-07-11T20:45:05.937875Z
+b4db6674cedfa0b82a3633e971438967
+2008-03-24T19:37:31.638117Z
+5884
+arbind.thakur
+
+ilink-3
+dir
+
+qx-queue.xml
+file
+
+
+
+
+2008-07-11T20:45:06.000375Z
+69f9525528fb40eccbe4ab4af2a81ac0
+2008-03-24T19:37:31.638117Z
+5884
+arbind.thakur
+
+service-properties.xml
+file
+
+
+
+
+2008-07-11T20:45:06.094125Z
+9f78c97d467469ccf1b642a83f065a65
+2008-03-24T19:37:31.638117Z
+5884
+arbind.thakur
+
+event-handlers.xml
+file
+
+
+
+
+2008-07-11T20:45:06.172250Z
+d01ef2d6e065f15c2bf9b50816030f48
+2008-03-24T19:37:31.638117Z
+5884
+arbind.thakur
+
+repository.xml
+file
+
+
+
+
+2008-07-11T20:45:06.234750Z
+1c293195576ba2926e5cacbd69229f65
+2008-05-28T23:05:12.605093Z
+6285
+rmccabe
+

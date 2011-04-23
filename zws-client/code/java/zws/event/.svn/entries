@@ -1,0 +1,208 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/client/code/java/zws/event
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-05-01T17:35:59.234202Z
+6160
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+ier
+dir
+
+release
+dir
+
+EventMaker.java
+file
+
+
+
+
+2008-07-11T20:48:05.312875Z
+0b59d743af0e440a8be0e6f08acd8026
+2008-05-01T17:35:59.234202Z
+6160
+pavan.toleti
+
+hiEvent.java
+file
+
+
+
+
+2008-07-11T20:48:05.391000Z
+693e3d77737ebcf80c9b91ed58a61a0a
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+ECOEventBase.java
+file
+
+
+
+
+2008-07-11T20:48:05.453500Z
+5c2e62e289f313b482642d147d47a8ef
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+DesignEventBase.java
+file
+
+
+
+
+2008-07-11T20:48:05.547250Z
+836c14fba14bccc582c0b9f4d423b394
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+ECOEvent.java
+file
+
+
+
+
+2008-07-11T20:48:05.656625Z
+f69a258200f874aaa370716b2898e707
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+hiProcessItemBase.java
+file
+
+
+
+
+2008-07-11T20:48:05.750375Z
+e1b58da7fa94d3b4a476d29aaad0c57e
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+DesignEvent.java
+file
+
+
+
+
+2008-07-11T20:48:05.875375Z
+3e6e212b55ebfabb1c575a3bf7f3e833
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+ReleaseEventBase.java
+file
+
+
+
+
+2008-07-11T20:48:05.953500Z
+1f5192da99725f34926caaca794d79f7
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+hi
+dir
+
+xml
+dir
+
+EventProcessor.java
+file
+
+
+
+
+2008-07-11T20:48:06.047250Z
+edb6d4b3683a1c16fe3b5b9f843276c7
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+ReleaseEvent.java
+file
+
+
+
+
+2008-07-11T20:48:06.109750Z
+0131c39a8ab1df589bdeb0ae1aeb8c85
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+VersionedDesignEventBase.java
+file
+
+
+
+
+2008-07-11T20:48:06.203500Z
+94a26cbc79d03afe042c4343f40a7428
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+eco
+dir
+
+replication
+dir
+
+design
+dir
+
+custom
+dir
+
+VersionedDesignEvent.java
+file
+
+
+
+
+2008-07-11T20:48:06.266000Z
+d5db9b07b923a8e9db9b26708059dff4
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+hiEventBase.java
+file
+
+
+
+
+2008-07-11T20:48:06.359750Z
+0b43c342417aa7056912f9cf2fc842aa
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+

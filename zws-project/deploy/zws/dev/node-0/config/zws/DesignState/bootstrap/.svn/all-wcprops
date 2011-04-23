@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/zws/!svn/ver/5336/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/bootstrap
+END
+bootstrap.zws
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/915/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/bootstrap/bootstrap.zws
+END
+server-bootstrap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/1426/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/bootstrap/server-bootstrap.xml
+END

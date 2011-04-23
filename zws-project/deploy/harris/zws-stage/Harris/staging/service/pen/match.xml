@@ -1,0 +1,40 @@
+<DesignState-config>
+ <policy-matches>
+ 
+  <matching-rules policy="ProE-Drawings" priority="1" target-name="agile-sdk" intent="publish|promote|review">
+   <include-match>
+    <is-drw-item />
+    <root-folder location="Root Folder" />
+   </include-match>
+  </matching-rules> 
+
+  <matching-rules policy="ProE-Models" priority="2" target-name="agile-sdk" intent="publish|promote|review">
+	 <discard-policy-match>
+	  <is-drw-item />
+	 </discard-policy-match>
+   <discard-policy-match>
+    <root-folder location="Root Folder/Libraries" />
+   </discard-policy-match>
+   <include-match>
+    <root-folder location="Root Folder" />
+    <is-prt-item/>
+   </include-match>
+
+   <include-match>
+    <root-folder location="Root Folder" />
+    <is-asm-item />
+   </include-match>
+  </matching-rules>
+
+  <matching-rules policy="ProE-Library" priority="3" target-name="agile-sdk" intent="publish|promote|review">
+<!--   <discard-policy-match>
+	  <list-contains attribute="folder" list-property-name="untouchable-folders" />
+	 </discard-policy-match> -->
+
+   <include-match>
+    <root-folder location="Root Folder/Libraries" />
+    <!-- <compare-attribute attribute-name="release-level" attribute-value="Pending"/> -->
+   </include-match>
+  </matching-rules>  
+ </policy-matches>
+</DesignState-config>

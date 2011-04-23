@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/zws/!svn/ver/5337/trunk/zws/build/dep/ugs/tc10
+END
+TcGatewayWebService.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/zws/!svn/ver/3156/trunk/zws/build/dep/ugs/tc10/TcGatewayWebService.jar
+END
+xmldto.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/zws/!svn/ver/3156/trunk/zws/build/dep/ugs/tc10/xmldto.jar
+END
+portal_localization.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/zws/!svn/ver/3156/trunk/zws/build/dep/ugs/tc10/portal_localization.jar
+END
+tcgatewaystubs.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/zws/!svn/ver/3156/trunk/zws/build/dep/ugs/tc10/tcgatewaystubs.jar
+END
+ssoapplib.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/zws/!svn/ver/3156/trunk/zws/build/dep/ugs/tc10/ssoapplib.jar
+END
+ssocommon.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/zws/!svn/ver/3156/trunk/zws/build/dep/ugs/tc10/ssocommon.jar
+END
+portal_patch.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/zws/!svn/ver/3156/trunk/zws/build/dep/ugs/tc10/portal_patch.jar
+END
+portal.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/zws/!svn/ver/3156/trunk/zws/build/dep/ugs/tc10/portal.jar
+END
+tcgs_bom_xfer.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/zws/!svn/ver/3156/trunk/zws/build/dep/ugs/tc10/tcgs_bom_xfer.jar
+END
+icctstubs.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/zws/!svn/ver/3156/trunk/zws/build/dep/ugs/tc10/icctstubs.jar
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/code/java/zws/service/packaging
+END
+PackagingServiceLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/packaging/PackagingServiceLocal.java
+END
+PackagingServiceRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/packaging/PackagingServiceRemote.java
+END
+EJBLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/packaging/EJBLocator.java
+END
+PackagingService.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/packaging/PackagingService.java
+END
+PackagingServiceLocalHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/packaging/PackagingServiceLocalHome.java
+END
+PackagingServiceRemoteHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/packaging/PackagingServiceRemoteHome.java
+END

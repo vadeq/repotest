@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/5702/trunk/zws/plugin/repository/TC10/plugin-TC10/code/java/zws/repository/teamcenter/proxy/xml
+END
+BinaryResultHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/zws/!svn/ver/5665/trunk/zws/plugin/repository/TC10/plugin-TC10/code/java/zws/repository/teamcenter/proxy/xml/BinaryResultHandler.java
+END
+SearchResultHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/zws/!svn/ver/5702/trunk/zws/plugin/repository/TC10/plugin-TC10/code/java/zws/repository/teamcenter/proxy/xml/SearchResultHandler.java
+END
+DependenciesHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/zws/!svn/ver/5702/trunk/zws/plugin/repository/TC10/plugin-TC10/code/java/zws/repository/teamcenter/proxy/xml/DependenciesHandler.java
+END
+TC10ResultHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/zws/!svn/ver/5702/trunk/zws/plugin/repository/TC10/plugin-TC10/code/java/zws/repository/teamcenter/proxy/xml/TC10ResultHandler.java
+END
+BomHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/zws/!svn/ver/5388/trunk/zws/plugin/repository/TC10/plugin-TC10/code/java/zws/repository/teamcenter/proxy/xml/BomHandler.java
+END

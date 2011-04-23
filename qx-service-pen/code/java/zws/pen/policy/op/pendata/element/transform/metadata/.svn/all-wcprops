@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/zws/!svn/ver/6502/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/metadata
+END
+AttributeSetterOPBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/zws/!svn/ver/6502/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/metadata/AttributeSetterOPBase.java
+END
+OverrideAttributes.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/zws/!svn/ver/5550/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/metadata/OverrideAttributes.java
+END
+TransformMetadataOpBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/zws/!svn/ver/3488/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/metadata/TransformMetadataOpBase.java
+END
+CopyAllAttributesOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/zws/!svn/ver/5530/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/metadata/CopyAllAttributesOp.java
+END
+RenameAttributeOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/zws/!svn/ver/5521/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/metadata/RenameAttributeOp.java
+END
+RemoveItemOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/zws/!svn/ver/6162/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/metadata/RemoveItemOp.java
+END
+SetNameOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/metadata/SetNameOp.java
+END
+CopyAttributeOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/zws/!svn/ver/5521/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/metadata/CopyAttributeOp.java
+END
+SetAttributeOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/metadata/SetAttributeOp.java
+END

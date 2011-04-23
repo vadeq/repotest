@@ -1,0 +1,52 @@
+8
+
+dir
+6400
+http://build.zerowait-state.com/svn/zws/trunk/zws/build/script/deploy
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:26:07.440306Z
+5337
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+deployment-env.template
+file
+
+
+
+
+2008-07-11T17:15:12.359750Z
+5116c9f98b5d1fb2668a6003c1e4394b
+2007-12-09T06:00:54.629968Z
+4670
+arbind.thakur
+
+zws.deploy
+file
+
+
+
+
+2008-07-11T17:15:12.406625Z
+72a526abd9b5596dd3dfdc9b6bf7c0cd
+2007-12-09T06:00:54.629968Z
+4670
+arbind.thakur
+

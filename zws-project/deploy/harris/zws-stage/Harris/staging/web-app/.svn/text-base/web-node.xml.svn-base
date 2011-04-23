@@ -1,0 +1,16 @@
+<DesignState-config>
+ <properties>
+  <property name="node-type" value="WEB Server"/>
+  <property name="realm" value="zero2wait"/>
+  <property name="node-number" value="100"/>
+  <property name="node-alias" value="alias"/>
+  <property name="node-description" value="sample node description"/>
+  <property name="node-city" value="austin"/>
+  <property name="node-state" value="tx"/>
+  <property name="node-country" value="usa"/>
+  <property name="node-location" value="mozarts"/>
+  <property name="node-contact-name" value="arb"/>
+  <property name="node-contact-email" value="arb@here.now"/>
+  <property name="node-contact-number" value="828-888-2828"/>
+ </properties>
+</DesignState-config>

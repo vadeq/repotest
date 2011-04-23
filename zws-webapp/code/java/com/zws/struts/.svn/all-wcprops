@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/struts
+END
+ItemService.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/struts/ItemService.java
+END
+ListForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/struts/ListForm.java
+END
+ItemForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/struts/ItemForm.java
+END
+ListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/struts/ListAction.java
+END
+ItemAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/struts/ItemAction.java
+END
+Item.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/struts/Item.java
+END

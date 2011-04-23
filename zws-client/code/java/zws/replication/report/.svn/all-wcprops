@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/code/java/zws/replication/report
+END
+Conflict.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/replication/report/Conflict.java
+END
+AvailableUpdatesReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/replication/report/AvailableUpdatesReport.java
+END
+ConflictReportBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/replication/report/ConflictReportBase.java
+END
+ConflictBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/replication/report/ConflictBase.java
+END
+ConflictReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/replication/report/ConflictReport.java
+END

@@ -1,0 +1,40 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/qx-service/qx-web-service/config
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:20:21.222299Z
+5308
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+axis2.xml
+file
+
+
+
+
+2008-07-11T20:43:57.672250Z
+dd9fb2cc8d4662fa4e83519fd87cbf32
+2007-05-29T00:52:57.878933Z
+170
+arbind.thakur
+

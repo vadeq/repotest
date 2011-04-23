@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<bootstrap-configuration>
+  <configurator base-path="\zws\DesignState\config">
+    <load tag-map="\tag\database.zws"  file="\database.xml"/>
+    <load tag-map="\tag\property.zws"  file="\server-system-property.xml"/>
+    <load tag-map="\tag\services.zws"  file="\services.xml"/>
+    <load tag-map="\tag\repository.zws"  file="\repository.xml"/>
+    <load tag-map="\tag\qx-queue.zws"  file="\qx-queue.xml"/>
+    <load tag-map="\tag\event-handlers.zws"  file="\event-handlers.xml"/>
+
+    <load tag-map="\tag\config.zws"  file="\pen-policy\zws-config.xml"/>
+    <load tag-map="\tag\config.zws"  file="\ilink-3\zws-config.xml"/>
+
+<!-- This file isnot being loaded-->
+<!-- 
+    <load tag-map="\tag\event-listener.zws"  file="\event-listener.xml"/>
+    <load tag-map="\tag\property.zws"  file="\server-node.xml"/>
+    <load tag-map="\tag\database.zws"  file="\database.xml"/>
+    <load tag-map="\tag\config.zws"    file="\server-system-config.xml"/>
+    <load tag-map="\tag\repository.zws"  file="\server-system-property.xml"/>
+    <load tag-map="\tag\topology.zws"  file="\topology.xml"/>
+-->
+  </configurator>
+</bootstrap-configuration>

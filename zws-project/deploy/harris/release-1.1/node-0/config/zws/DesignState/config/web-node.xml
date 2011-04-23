@@ -1,0 +1,16 @@
+<DesignState-config>
+ <properties>
+  <property name="node-type" value="WEB Server"/>
+  <property name="realm" value="DesignState"/>
+  <property name="node-number" value="100"/>
+  <property name="node-alias" value="alias"/>
+  <property name="node-description" value="Sample node description"/>
+  <property name="node-city" value="City"/>
+  <property name="node-state" value="State"/>
+  <property name="node-country" value="USA"/>
+  <property name="node-location" value="Location"/>
+  <property name="node-contact-name" value="Administration User"/>
+  <property name="node-contact-email" value="admin@harris.com"/>
+  <property name="node-contact-number" value=""/>
+ </properties>
+</DesignState-config>

@@ -1,0 +1,46 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/status/eco
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:07:58.472510Z
+5704
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+pending
+dir
+
+ECOStatusOpBase.java
+file
+
+
+
+
+2008-07-11T20:41:37.578500Z
+1e7a9b88812f0c26edd04adc42538663
+2007-09-22T21:21:59.815308Z
+3336
+arbind.thakur
+
+target
+dir
+

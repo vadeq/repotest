@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/java/zws/hi/intralink
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:00:53.791577Z
+5675
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+agile
+dir
+
+baseline
+dir
+
+listener
+dir
+
+promote
+dir
+
+publish
+dir
+
+proconfly
+dir
+
+duplicates
+dir
+
+workspace
+dir
+

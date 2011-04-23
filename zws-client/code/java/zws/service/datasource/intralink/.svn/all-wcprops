@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/code/java/zws/service/datasource/intralink
+END
+IntralinkAccessServiceLocalHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/datasource/intralink/IntralinkAccessServiceLocalHome.java
+END
+IntralinkAccessServiceRemoteHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/datasource/intralink/IntralinkAccessServiceRemoteHome.java
+END
+EJBLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/datasource/intralink/EJBLocator.java
+END
+IntralinkAccessServiceLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/datasource/intralink/IntralinkAccessServiceLocal.java
+END
+IntralinkAccessServiceRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/datasource/intralink/IntralinkAccessServiceRemote.java
+END
+IntralinkAccessService.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/zws/!svn/ver/551/trunk/zws/designstate/client/code/java/zws/service/datasource/intralink/IntralinkAccessService.java
+END

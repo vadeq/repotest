@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/product/pen/plugin-pen/build
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:17:08.858105Z
+5298
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+title.build
+file
+
+
+
+
+2008-07-11T20:41:00.187875Z
+d39bbddd4f14cf22c8a90777ef17def4
+2007-05-31T03:29:59.673409Z
+391
+pavan.toleti
+
+classpath.build
+file
+
+
+
+
+2008-07-11T20:41:00.250375Z
+f036cf6f759bef530765c4c6e20b2aa2
+2007-12-13T23:59:44.851179Z
+4812
+pavan.toleti
+

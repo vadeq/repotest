@@ -1,0 +1,75 @@
+DROP DATABASE IF EXISTS zwsProperty;
+CREATE DATABASE zwsProperty;
+USE zwsProperty;
+
+# Namespaces
+		drop table if exists namespace;
+
+		create table namespace (
+			namespace varchar(250) primary key
+		) type = InnoDB;
+
+# Properties
+		drop table if exists property;
+
+		create table property (
+		 namespace  varchar(250),
+		 name       varchar(250),
+		 primitive  varchar(250),
+		 spot       bigint default -1,
+		 primary key (namespace, name)
+		) type = InnoDB;
+
+# Property Values
+		drop table if exists propvalue;
+
+		create table propvalue (
+		 namespace  varchar(250),
+		 name       varchar(250),
+		 propvalue  varchar(250),
+		 spot       bigint default -1
+		) type = InnoDB;
+
+# Enumerated Properties
+		drop table if exists enumproperty;
+
+		create table enumproperty (
+		 propNamespace  varchar(250),
+		 propName       varchar(250),
+		 enumNamespace  varchar(250),
+		 enumName       varchar(250),
+		 isFree         tinyint default 0,
+		 isChangeable   tinyint default 0
+		) type = InnoDB;;
+
+# Categories
+		drop table if exists category;
+
+		create table category (
+		 namespace    varchar(250),
+		 category     varchar(250),
+		 spot         bigint default -1,
+		 primary key (namespace, category)
+		) type = InnoDB;
+
+# Property Categorization
+		drop table if exists categorization;
+
+		create table categorization (
+		 namespace  varchar(250),
+		 catName    varchar(250),
+		 propName   varchar(250)
+		) type = InnoDB;
+
+# OREIGN KEY (namespace) REFERENCES namespace(namespace) ON DELETE CASCADE
+# OREIGN KEY (namespace, name) REFERENCES property(namespace, name) ON DELETE CASCADE
+# OREIGN KEY (namespace) REFERENCES namespace(namespace) ON DELETE CASCADE
+# OREIGN KEY (enumNamespace,enumName) REFERENCES property(namespace,name) ON DELETE CASCADE
+# OREIGN KEY (propNamespace,propName) REFERENCES property(namespace,name) ON DELETE CASCADE,
+# OREIGN KEY (namespace) REFERENCES namespace(namespace) ON DELETE CASCADE
+# OREIGN KEY (namespace) REFERENCES property(namespace)
+# RIMARY KEY (namespace, name, propvalue),
+# OREIGN KEY (propNamespace,propName) REFERENCES property(namespace,name) ON DELETE CASCADE,
+# OREIGN KEY (catNamespace,catName) REFERENCES category(namespace,category) ON DELETE RESTRICT
+
+

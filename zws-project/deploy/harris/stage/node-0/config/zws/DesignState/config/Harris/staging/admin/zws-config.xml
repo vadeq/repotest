@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<configuration>
+ <configurator base-path="\zws\designstate\config\[organization]\[project]\admin">
+  <load tag-map="..\..\..\tag\database.zws"  file="database.xml"/>
+  <load tag-map="..\..\..\tag\property.zws"  file="application-properties.xml"/>
+  <load tag-map="..\..\..\tag\message-constants.zws"  file="message-constants.xml"/>
+ </configurator>
+</configuration>

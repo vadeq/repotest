@@ -1,0 +1,68 @@
+<DesignState-config>
+  <properties>
+    <property name="os-platform" value="windows" /> <!-- windows, windows-nt, solaris, etc. -->
+    <property name="debug-mode" value="true"/>
+
+    <property name="pen-namespace" value="publishing.engine" />
+    <property name="pen-name" value="transfer" />
+
+    <property name="domain-name" value="harris"/>
+    <property name="server-name" value="node-0"/>
+    <property name="hostname" value="zero-big" />
+
+    <property name="organization" value="Harris" />
+    <property name="project" value="Release-1.1" />
+
+    <property name="email-from-address" value="pen@zerowait-state.com" />
+    <property name="email-smtp-server" value="mail.zerowait-state.com" />
+<!--     <property name="email-recipients" value="ptoleti@zerowait-state.com|dstewart@zerowait-state.com|athakur@zerowait-state.com|eankutse@zerowait-state.com" /> -->
+     <property name="email-recipients" value="rmccabe@zerowait-state.com|dstewart@zerowait-state.com|eankutse@zerowait-state.com" /> 
+
+    <property name="central-server" value="DesignState-node-0" />
+
+    <property name="max-ilink-tk-licenses" value="1" />
+	  <property name="service-finder-hostname" value="zero-big"/>
+	  <property name="file-depot-hostname" value="zero-big"/>
+
+    <dir name="zws-home" path="\zws" />
+    <dir name="zws-temp" path="[zws-home]\temp"/> 
+    <dir name="zws-env" path="[zws-home]\env" />  
+    <dir name="zws-bin" path="[zws-home]\bin" />  
+    <dir name="zws-app" path="[zws-home]\app" />  
+
+    <dir name="zws-data" path="[zws-home]\data"/>
+    <!-- dir name="zws-local" path="[zws-data]\local"/ -->
+
+    <dir name="zws-log" path="[zws-home]\log"/>
+    <dir name="zws-work" path="[zws-log]\work"/>
+
+    <dir name="DesignState-home" path="\zws\DesignState" />
+    <dir name="zws-config" path="[DesignState-home]\config" />
+    
+		<property name="untouchable-folders" value="
+					 Root Folder/Training,
+					 Root Folder/test,
+					 Root Folder/Untouchable,
+					 Root Folder/Models/Exception/999-500/Untouch,
+					 Root Folder/RTP Forms,
+					 Root Folder/Libraries/Design Aids,
+					 Root Folder/Libraries/Formats,
+					 Root Folder/Libraries/Materials,
+					 Root Folder/Libraries/Notes,
+					 Root Folder/Libraries/Pending,
+					 Root Folder/Libraries/Pro Cable,
+					 Root Folder/Libraries/Sections,
+					 Root Folder/Libraries/Symbols,
+					 Root Folder/Libraries/Tables,
+					 Root Folder/Libraries/Templates
+		" />
+  
+<!--
+    <dir name="zws-xml" path="[DesignState-home]\xml" />  
+    <dir name="zws-xslt" path="[zws-xml]\xslt" />
+    <dir name="zws-config" path="[DesignState-home]\config\[organization]\[project]" />
+-->
+
+ </properties>
+</DesignState-config>
+

@@ -1,0 +1,69 @@
+<DesignState-config>
+ <message-constants>
+  <!--
+   Make sure to escape [& < > ' "] characters in your messages!
+    escape these as follows:
+    & becomes &amp;
+    < becomes &lt;
+    > becomes &gt;
+    ' becomes &apos;
+    " becomes &quot;
+    
+   For example, if you need:
+   message="Error: Can not contain number ["56"] in your request!"
+   
+   Then you should use:
+   message="Error: Can not contain number [&quot;56&quot;] in your request!"
+   
+   Same idea for the other escape chars!
+  -->
+  
+  <message-constant id="invalid-pn-empty"     message="[$name]() Invalid! Part Number can not be empty!"/>
+  <message-constant id="invalid-pn-too-long"  message="[$name]($part-number) Invalid! Part Number is longer than 21 characters!"/>
+  <message-constant id="invalid-pn-bad-chars" message="[$name]($part-number) Invalid! [$bad-chars] are not allowed in Part Number!"/>
+  <message-constant id="invalid-cagecode"     message="[$name]($part-number) Invalid! Cage Code [$cage-code] must be P or exactly 5 characters in length!"/>
+  <message-constant id="invalid-project"      message="[$name]($part-number) Invalid! Project [$project] must be exactly 4 characters in length!"/>
+  <message-constant id="invalid-multi-pending-eco" message="[$name]($part-number) Invalid! Multiple pending Change Orders already exist!"/>
+  <message-constant id="invalid-untouchable"   message="[$name]($part-number) Invalid! Is in untouchable folder [$folder]!"/>
+  <message-constant id="invalid-bad-rel-level" message="[$name]($part-number) Invalid! Release level [$release-level] is not at Pending or beyond!"/>
+  <message-constant id="invalid-nosnc-drw"     message="[$name]($part-number) Invalid! Cannot publish drawing with Cage Code=NOSNC!"/>
+  <message-constant id="invalid-none-drw"      message="[$name]($part-number) Invalid! Cannot publish drawing with Project=NONE!"/>
+  <message-constant id="removed-support-files" message="[$name] Is a support file and will not be published."/>
+  <message-constant id="filtered-out"          message="[$name]($part-number) Will not be published since part number=NO_PUB!"/>
+  <message-constant id="cancel-invalid"        message="[$name]($part-number) Canceled! Not valid for publishing! {$case-number}"/>
+  <message-constant id="cancel-sync-conflict"  message="[$name]($part-number) Canceled! Agile Part Number already synchronized to a different item [$sync-conflict-name]! {$case-number}"/>
+  <message-constant id="cancel-eco-closed"     message="[$name]($part-number) Canceled! Already on pending ECO [$eco-number] that can no longer be modification! {$case-number}"/>
+  <message-constant id="cancel-bad-env"        message="[$name]($part-number) Canceled! Environment [$env] does not match item's Source System [$source-system] in Agile! {$case-number}"/>
+  <message-constant id="cancel-nosnc-nopart"   message="[$name]($part-number) Canceled! Cage Code=NOSNC but there is no corresponding Agile part! {$case-number}"/>
+  <message-constant id="cancel-high-rev"       message="[$name]($part-number) Canceled! Agile revision [$agile-rev] is higher than Intralink revision [$ilink-rev]! {$case-number}"/>
+  <message-constant id="ignore-nosnc"          message="[$name]($part-number) Ignoring publish of NOSNC item because part number already exists in Agile. {$case-number}"/>
+  <message-constant id="ignore-implicit-item-exists" message="[$name]($part-number) Ignoring publish of implicitly selected item because part number already exists in Agile. {$case-number}"/>
+  <message-constant id="note-bad-env"          message="[$name]($part-number) Environment [$env] does not match item's Source System [$source-system] in Agile! {$case-number}"/>
+  <message-constant id="released-new-eco"      message="[$name]($part-number) Released using Initial Release Change Order [$eco-number]. {$case-number}"/>
+  <message-constant id="released-models-eco"   message="[$name]($part-number) Released using model's Change Order [$eco-number]. {$case-number}"/>
+  <message-constant id="removed"               message="[$name]($part-number) Removed (not published). {$case-number}"/>
+  <message-constant id="repub"                 message="[$name]($part-number) Will Republish using different policy. {$case-number}"/>
+  <message-constant id="revised-rev-eco"       message="[$name]($part-number) Revised using Engineering Change Order [$eco-number]. {$case-number}"/>
+  <message-constant id="revised-new-eco"       message="[$name]($part-number) Revised using Initial Release Change Order [$eco-number]. {$case-number}"/>
+  <message-constant id="revised-pending-eco"   message="[$name]($part-number) Revised using the pending Change Order [$eco-number]. {$case-number}"/>
+  <message-constant id="revised-models-eco"    message="[$name]($part-number) Revised using model's Change Order [$eco-number]. {$case-number}"/>
+  <message-constant id="synchronized"          message="[$name]($part-number) Is already synchronized. {$case-number}"/>
+  <message-constant id="unbd-release-new-eco"  message="[$name]($part-number) Released (but not synchronized) using Initial Release Change Order [$eco-number]. {$case-number}"/>
+  <message-constant id="documenting"           message="[$name]($part-number) Adding drawing as documentation."/>
+  <message-constant id="documenting-on-rev-eco" message="[$name]($part-number) Adding drawing as documentation using revised Engineering Change Order [$eco-number]."/>
+  <message-constant id="documenting-on-new-eco" message="[$name]($part-number) Adding drawing as documentation using Initial Release Change Order [$eco-number]."/>
+  <message-constant id="documenting-on-pending-eco"   message="[$name]($part-number) Adding drawing as documentation using the pending Change Order [$eco-number]."/>        
+  <message-constant id="email.subject.pen-canceled"     message="PEN: CANCELED! $published-items [$policy-name]"/>
+  <message-constant id="email.subject.pen-republished"     message="PEN: PUBLISHING DEPENDENT ITEMS FIRST $published-items [$policy-name]"/>
+  <message-constant id="email.subject.pen-published-ok"     message="PEN: PUBLISHED $published-items [$policy-name]"/>
+  <message-constant id="email.subject.pen-failed"     message="PEN: FAILED!!! $published-items [$policy-name]"/>
+  <message-constant id="email.subject.policy-no-match-found"     message="PEN: ERROR! No Policy defined to publish $name"/>  
+  <message-constant id="email.msg.title.pen-canceled"     message="Publishing was cancelled."/> 
+  <message-constant id="email.msg.title.pen-republished"     message="Publishing dependent items first!"/>
+  <message-constant id="email.msg.title.pen-published-ok"     message="Publish complete."/>
+  <message-constant id="email.msg.title.pen-failed"     message="Publish Failed!!!"/>
+  <message-constant id="email.msg.title.policy-no-match-found"     message="Policy match does not exist for $origin"/>  
+  <message-constant id="email.msg.footer.pen-published-by"     message="Published by $user"/>    
+  <message-constant id="parameterless"     message="$msg"/>
+ </message-constants>
+</DesignState-config>

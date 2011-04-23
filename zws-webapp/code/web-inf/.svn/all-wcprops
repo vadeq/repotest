@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/zws/!svn/ver/6348/trunk/zws/designstate/webapp/code/web-inf
+END
+struts-template.tld
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/web-inf/struts-template.tld
+END
+struts-logic.tld
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/web-inf/struts-logic.tld
+END
+c.tld
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/zws/!svn/ver/2068/trunk/zws/designstate/webapp/code/web-inf/c.tld
+END
+struts-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/zws/!svn/ver/6324/trunk/zws/designstate/webapp/code/web-inf/struts-config.xml
+END
+struts-form.tld
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/web-inf/struts-form.tld
+END
+struts-html.tld
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/web-inf/struts-html.tld
+END
+struts-bean.tld
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/web-inf/struts-bean.tld
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/zws/!svn/ver/6348/trunk/zws/designstate/webapp/code/web-inf/web.xml
+END

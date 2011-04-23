@@ -1,0 +1,41 @@
+DROP DATABASE IF EXISTS zwsRecorder;
+CREATE DATABASE zwsRecorder;
+USE zwsRecorder;
+
+# Recorder
+		drop table if exists process;
+
+		create table process (
+			id          bigint(20)		not null auto_increment primary key,
+			namespace   varchar(250)	not null default '',
+			name        varchar(250)	not null default '',
+			starttime   datetime			not null default '0000-00-00 00:00:00',
+			endtime     datetime,
+			status      varchar(250),
+			description mediumtext,
+			notes				mediumtext default ''
+		) engine = InnoDB;
+
+		drop table if exists family;
+
+		create table family (
+			parentid bigint(20) unsigned not null default '0' references process(id),
+			childid bigint(20) unsigned not null default '0' references process(id),
+			index p (parentid),
+			index c (childid),
+		) engine = InnoDB;
+
+		drop table if exists activity;
+
+		create table activity (
+			id        bigint(20) unsigned not null default '0' references process(id),
+			domain    varchar(250) not null default '',
+			node      varchar(250) not null default '',
+			timestamp datetime not null default '0000-00-00 00:00:00',
+			type      varchar(250) not null default '',
+			message   mediumtext not null default '',
+			notes			mediumtext default ''
+  		index p (id),
+		) engine = InnoDB;
+
+

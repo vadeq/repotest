@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/client/code/java/zws/xml
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+XML.java
+file
+
+
+
+
+2008-07-11T20:48:18.625375Z
+61995a5643cdb9ab7e4ef57fdd3588b0
+2007-06-04T17:14:41.833836Z
+551
+pavan.toleti
+
+xslt
+dir
+
+parser
+dir
+
+util
+dir
+
+op
+dir
+

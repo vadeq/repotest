@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/repository/ilink3/qx-service-ilink3/build
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:18:17.800561Z
+5303
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+title.build
+file
+
+
+
+
+2008-07-11T20:37:16.141000Z
+dba14d4642b833c1d8199961f0d73bfd
+2007-05-29T07:38:35.380872Z
+196
+arbind.thakur
+
+classpath.build
+file
+
+
+
+
+2008-07-11T20:37:16.203500Z
+f5a414e477d8c2c19ac23c864ef2fcb2
+2008-01-23T22:16:02.400073Z
+5245
+eankutse
+

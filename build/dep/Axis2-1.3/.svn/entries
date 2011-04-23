@@ -1,0 +1,47 @@
+8
+
+dir
+6400
+http://build.zerowait-state.com/svn/zws/trunk/zws/build/dep/Axis2-1.3
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-04-17T17:06:01.874429Z
+6062
+pavan.toleti
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+lib
+dir
+
+bin
+dir
+
+axis2-1.3.war
+file
+
+
+
+
+2008-07-11T17:19:04.109750Z
+c2671d7aad966e2c8bfbc43f8e2fd56d
+2008-04-17T17:06:01.874429Z
+6062
+pavan.toleti
+has-props
+

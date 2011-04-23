@@ -1,0 +1,38 @@
+<branch name="main" level="0">
+  <revision-tree revision-level="C">
+    <version number="id-27"/>
+    <version number="id-24"/>
+  </revision-tree>
+  <revision-tree revision-level="B">
+    <version number="id-28"/>
+    <version number="id-25"/>
+  </revision-tree>
+  <revision-tree revision-level="A">
+    <version number="id-29"/>
+    <version number="id-26"/>
+  </revision-tree>
+<branch name="main/abc" level="1">
+  <revision-tree revision-level="D">
+    <version number="id-30"/>
+  </revision-tree>
+  <revision-tree revision-level="C">
+    <version number="id-32"/>
+  </revision-tree>
+  <revision-tree revision-level="A">
+    <version number="id-31"/>
+  </revision-tree>
+</branch>
+<branch name="main/main2" level="1">
+  <revision-tree revision-level="B">
+    <version number="id-33"/>
+  </revision-tree>
+<branch name="main/main2/main3" level="2">
+  <revision-tree revision-level="B">
+    <version number="id-35"/>
+  </revision-tree>
+  <revision-tree revision-level="A">
+    <version number="id-34"/>
+  </revision-tree>
+</branch>
+</branch>
+</branch>

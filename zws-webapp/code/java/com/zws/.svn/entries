@@ -1,0 +1,70 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/java/com/zws
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-05-01T15:46:06.603513Z
+6152
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+test
+dir
+
+functor
+dir
+
+hi
+dir
+
+jni
+dir
+
+service
+dir
+
+xml
+dir
+
+application
+dir
+
+session
+dir
+
+struts
+dir
+
+custom
+dir
+
+datasource
+dir
+
+util
+dir
+
+domo
+dir
+
+exception
+dir
+

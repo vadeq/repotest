@@ -1,0 +1,55 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:08:21.571462Z
+5713
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+xml
+dir
+
+commonspace
+dir
+
+xfer
+dir
+
+IntralinkOpBase.java
+file
+
+
+
+
+2008-07-11T20:37:07.531625Z
+09b61dc5a2a1ec77a1662fded31f2068
+2008-02-29T17:08:21.571462Z
+5713
+pavan.toleti
+
+sandbox
+dir
+
+workspace
+dir
+

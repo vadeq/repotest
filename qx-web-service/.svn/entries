@@ -1,0 +1,55 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/qx-service/qx-web-service
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-05-08T19:38:31.038151Z
+6222
+rmccabe
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+build
+dir
+
+config
+dir
+
+doc
+dir
+
+bin
+dir
+
+code
+dir
+
+build.xml
+file
+
+
+
+
+2008-07-11T20:44:04.828500Z
+f669880c5f1101e87d6ed35f04b79b6c
+2007-07-25T05:22:31.538593Z
+2610
+arbind.thakur
+

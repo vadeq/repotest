@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/synchronization/plugin-synchronization/build
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-04-07T16:04:45.816833Z
+6001
+eankutse
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+title.build
+file
+
+
+
+
+2008-07-11T20:39:42.469125Z
+4b77f89466ae7a9c2fb647562e3769f7
+2007-06-13T20:44:49.309384Z
+1943
+pavan.toleti
+
+classpath.build
+file
+
+
+
+
+2008-07-11T20:39:42.547250Z
+c85bf7db555be72365ace25400eec0d1
+2008-04-07T16:04:45.816833Z
+6001
+eankutse
+

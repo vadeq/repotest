@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="title" basedir=".">
+
+  <!-- title -->
+  <property name="title" value="Design State Server-Side Intralink 3x Service"/>
+
+  <!-- names -->
+  <property name="svn-project-name" value="plugin-service-finder"/>
+  <property name="eclipse-project-name" value="plugin-service-finder"/>
+  <property name="jarfile-name" value="zws-plugin-service-finder"/>
+
+</project>

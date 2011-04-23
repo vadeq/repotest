@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/server/code/java/zws/service/test
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+TestServiceEJB.java
+file
+
+
+
+
+2008-07-11T20:50:17.625375Z
+44fffd3d6e1b4b9e3497fbe2a1c0e1e1
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+
+TestSvc.java
+file
+
+
+
+
+2008-07-11T20:50:17.703500Z
+5e2f49301d94086164a2d3d9f56ab064
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+

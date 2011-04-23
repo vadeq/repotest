@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/functor/util
+END
+GarbageCollector.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/functor/util/GarbageCollector.java
+END
+FunctorVector.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/util/FunctorVector.java
+END
+WaitForThreads.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/util/WaitForThreads.java
+END
+FunctorIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/util/FunctorIterator.java
+END
+ExecShell.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/zws/!svn/ver/5607/trunk/zws/designstate/webapp/code/java/com/zws/functor/util/ExecShell.java
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/zws/!svn/ver/6041/trunk/zws/build/dep/agile/plmapi-2x
+END
+jar-changes.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/zws/!svn/ver/2505/trunk/zws/build/dep/agile/plmapi-2x/jar-changes.txt
+END
+plm-api-ws.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/zws/!svn/ver/6041/trunk/zws/build/dep/agile/plmapi-2x/plm-api-ws.jar
+END
+plm-api-pam.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/zws/!svn/ver/6041/trunk/zws/build/dep/agile/plmapi-2x/plm-api-pam.jar
+END
+fsclient-a9.2.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/2732/trunk/zws/build/dep/agile/plmapi-2x/fsclient-a9.2.2.1.jar
+END
+plm-api-cif.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/zws/!svn/ver/6041/trunk/zws/build/dep/agile/plmapi-2x/plm-api-cif.jar
+END
+plm-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/zws/!svn/ver/6041/trunk/zws/build/dep/agile/plmapi-2x/plm-api.jar
+END
+plm-api-server.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/zws/!svn/ver/6041/trunk/zws/build/dep/agile/plmapi-2x/plm-api-server.jar
+END

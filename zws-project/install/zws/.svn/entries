@@ -1,0 +1,53 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/zws-project/install/zws
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-04-10T14:23:41.074638Z
+6020
+rmccabe
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+PEN.ico
+file
+
+
+
+
+2008-07-11T20:44:13.047250Z
+b2c70e6af20533c67f712921c42fc764
+2007-09-01T20:11:37.027201Z
+3042
+arbind.thakur
+has-props
+
+purge-all.bat
+file
+
+
+
+
+2008-07-11T20:44:13.094125Z
+1e3cde12df7713c2fc54fa58a6931c3d
+2008-04-10T14:23:41.074638Z
+6020
+rmccabe
+

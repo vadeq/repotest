@@ -1,0 +1,67 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/repository/service/plugin-repository/code/java/zws/service/repository
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-05-01T17:43:13.893414Z
+6169
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+test
+dir
+
+RepositoryMaker.java
+file
+
+
+
+
+2008-07-11T20:38:08.578500Z
+3bdb2e4c32076ef28d8815441379b48d
+2008-05-01T17:43:13.893414Z
+6169
+pavan.toleti
+
+RepositoryService.java
+file
+
+
+
+
+2008-07-11T20:38:08.656625Z
+28131d3bb903e6a372430f9231ab775b
+2007-11-28T16:43:59.064246Z
+4373
+pavan.toleti
+
+RepositoryClient.java
+file
+
+
+
+
+2008-07-11T20:38:08.703500Z
+536a73d2671d0f149adaf3db1bac8459
+2008-02-29T17:07:44.709644Z
+5693
+pavan.toleti
+

@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/zws/!svn/ver/6167/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/op
+END
+TC10Finder.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/zws/!svn/ver/5666/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/op/TC10Finder.java
+END
+TC10BinaryUpdater.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/zws/!svn/ver/5666/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/op/TC10BinaryUpdater.java
+END
+TC10OpBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/zws/!svn/ver/5396/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/op/TC10OpBase.java
+END
+TC10AttachmentUpdater.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/zws/!svn/ver/5598/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/op/TC10AttachmentUpdater.java
+END
+TC10Op.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/zws/!svn/ver/5396/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/op/TC10Op.java
+END
+TC10BinaryAdder.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/zws/!svn/ver/5666/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/op/TC10BinaryAdder.java
+END
+TC10LatestFinder.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/zws/!svn/ver/5666/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/op/TC10LatestFinder.java
+END
+TC10Creater.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/zws/!svn/ver/5666/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/op/TC10Creater.java
+END
+TC10AttachmentAdder.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/zws/!svn/ver/5598/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/op/TC10AttachmentAdder.java
+END
+TC10Renamer.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/zws/!svn/ver/5666/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/op/TC10Renamer.java
+END
+TC10Searcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/zws/!svn/ver/6167/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/op/TC10Searcher.java
+END
+TC10Downloader.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/zws/!svn/ver/5666/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/op/TC10Downloader.java
+END
+RepositoryOpener.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/zws/!svn/ver/4331/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/op/RepositoryOpener.java
+END
+TC10BOMReporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/zws/!svn/ver/5666/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/op/TC10BOMReporter.java
+END
+TC10FetchNativeFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/zws/!svn/ver/5666/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/op/TC10FetchNativeFile.java
+END
+TC10Updater.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/zws/!svn/ver/5666/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/op/TC10Updater.java
+END
+TC10FetchDesignFiles.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/zws/!svn/ver/5598/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/op/TC10FetchDesignFiles.java
+END

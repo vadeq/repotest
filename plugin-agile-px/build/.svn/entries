@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/repository/agile/plugin-agile-px/build
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-06-05T15:34:05.938598Z
+6308
+rmccabe
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+title.build
+file
+
+
+
+
+2008-07-11T20:36:06.578500Z
+188c812555d7cb69987bd1a2f3119a74
+2007-11-12T23:47:05.653732Z
+4005
+pavan.toleti
+
+classpath.build
+file
+
+
+
+
+2008-07-11T20:36:06.625375Z
+5efd6ae54d32ce054a5f893e748baad9
+2008-06-05T15:34:05.938598Z
+6308
+rmccabe
+

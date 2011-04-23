@@ -1,0 +1,64 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/client/code/java/zws/search
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+sortcomparator
+dir
+
+SearchAgentBase.java
+file
+
+
+
+
+2008-07-11T20:46:16.734750Z
+3021de07b40c52ce65981eb34f81a626
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+criteriamodifier
+dir
+
+criteria
+dir
+
+SearchAgent.java
+file
+
+
+
+
+2008-07-11T20:46:16.781625Z
+03c1525a067fd2cecb063b9ef9a6f38a
+2007-07-14T18:29:54.706384Z
+2429
+arbind.thakur
+
+filter
+dir
+

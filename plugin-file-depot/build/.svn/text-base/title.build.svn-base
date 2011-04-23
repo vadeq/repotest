@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="title" basedir=".">
+
+  <!-- title -->
+  <property name="title" value="Chrysalis - Design State File Service Implementation "/>
+
+  <!-- names -->
+  <property name="svn-project-name" value="plugin-file-depot"/>
+  <property name="eclipse-project-name" value="plugin-file-depot"/>
+  <property name="jarfile-name" value="zws-plugin-file-depot"/>
+
+</project>

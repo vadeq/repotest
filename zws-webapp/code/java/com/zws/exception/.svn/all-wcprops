@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/zws/!svn/ver/5307/trunk/zws/designstate/webapp/code/java/com/zws/exception
+END
+InvalidValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/exception/InvalidValue.java
+END
+InvalidEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/exception/InvalidEntry.java
+END
+DuplicateEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/exception/DuplicateEntry.java
+END
+EntryNotFound.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/exception/EntryNotFound.java
+END

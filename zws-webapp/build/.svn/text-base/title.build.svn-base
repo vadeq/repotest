@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="title" basedir=".">
+
+  <!-- title -->
+  <property name="title" value="DesignState Web Application"/>
+
+  <!-- names -->
+  <property name="svn-project-name" value="webapp"/>
+  <property name="eclipse-project-name" value="zws-webapp"/>
+  <property name="war-file-name" value="DesignState-Web"/>
+
+</project>

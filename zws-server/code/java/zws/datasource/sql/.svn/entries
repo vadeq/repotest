@@ -1,0 +1,55 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/server/code/java/zws/datasource/sql
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+SQLSource.java
+file
+
+
+
+
+2008-07-11T20:50:32.547250Z
+0ec7c92c8934c5a78f198956dedb9702
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+
+SearchAgent.java
+file
+
+
+
+
+2008-07-11T20:50:32.625375Z
+14f58173bd162fa665e8bb687637943a
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+
+finder
+dir
+

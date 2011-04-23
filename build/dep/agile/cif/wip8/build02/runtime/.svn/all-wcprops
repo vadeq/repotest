@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/zws/!svn/ver/5337/trunk/zws/build/dep/agile/cif/wip8/build02/runtime
+END
+plm-api-ws.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/4431/trunk/zws/build/dep/agile/cif/wip8/build02/runtime/plm-api-ws.jar
+END
+plm-api-cif.jar
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/4431/trunk/zws/build/dep/agile/cif/wip8/build02/runtime/plm-api-cif.jar
+END
+plm-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/4431/trunk/zws/build/dep/agile/cif/wip8/build02/runtime/plm-api.jar
+END
+plm-api-server.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/4431/trunk/zws/build/dep/agile/cif/wip8/build02/runtime/plm-api-server.jar
+END

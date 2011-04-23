@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<instructions>
+  <DesignState-config ignore="true"/>
+  <repositories ignore="true"/>
+  <folders ignore="true"/>
+  <users ignore="true"/>
+  <attributes ignore="true"/>
+  <release-schemes ignore="true"/>
+
+  <tc10 instance-of="zws.repository.teamcenter.TC10RepositoryBase" static-method="add" class="zws.service.repository.RepositorySvc">
+        <name required="false"/>
+	<domain-name/>
+	<server-name/>
+	<repository-name/>
+	<protocol/>
+	<host-name/>
+	<port/>
+	<services-path/>
+	<system-username/>
+	<system-password/>
+	<encrypted-system-password/>
+  </tc10>
+
+
+
+</instructions>

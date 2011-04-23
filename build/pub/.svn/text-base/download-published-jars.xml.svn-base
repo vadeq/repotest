@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="update-deps" default="download-deps" basedir=".">
+  <description> Downloads DesignState Client and Server jar files</description>
+
+
+  <target name="download-deps">
+    <mkdir dir="jar"/>
+
+    <get dest="DesignState-Qx.aar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/DesignState-Qx.aar" />
+
+    <get dest="DesignState-Web.war" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/DesignState-Web.war" />
+
+    <get dest="zws-webapp-file-depot.war" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/zws-webapp-file-depot.war" />
+    
+    <get dest="jar/DesignState-Client.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/DesignState-Client.jar" />
+
+    <get dest="jar/DesignState-Server-node-0.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/DesignState-Server-node-0.jar" />
+
+    <get dest="jar/zws-plugin-service-finder.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-plugin-service-finder.jar" />
+
+    <get dest="jar/zws-plugin-ilink8.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-plugin-ilink8.jar" />
+
+    <get dest="jar/zws-plugin-TC10.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-plugin-TC10.jar" />
+
+    <get dest="jar/zws-plugin-agile-sdk.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-plugin-agile-sdk.jar" />
+
+    <get dest="jar/zws-plugin-agile-wsx.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-plugin-agile-wsx.jar" />
+
+    <get dest="jar/zws-plugin-chrysalis.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-plugin-chrysalis.jar" />    
+
+    <get dest="jar/zws-plugin-event-processor.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-plugin-event-processor.jar" />
+    
+    <get dest="jar/zws-plugin-file-depot.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-plugin-file-depot.jar" />
+    
+    <get dest="jar/zws-plugin-ilink3.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-plugin-ilink3.jar" />
+
+    <get dest="jar/zws-plugin-interface.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-plugin-interface.jar" />
+
+    <get dest="jar/zws-plugin-pen.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-plugin-pen.jar" />
+
+    <get dest="jar/zws-plugin-queue-event.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-plugin-queue-event.jar" />
+
+    <get dest="jar/zws-plugin-queue-admin.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-plugin-queue-admin.jar" />
+      
+    <get dest="jar/zws-plugin-queue-pen.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-plugin-queue-pen.jar" />
+
+    <get dest="jar/zws-plugin-recorder.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-plugin-recorder.jar" />
+
+    <get dest="jar/zws-plugin-repository.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-plugin-repository.jar" />
+
+    <get dest="jar/zws-plugin-synchronization.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-plugin-synchronization.jar" />
+
+    <get dest="jar/zws-plugin-uniqueid.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-plugin-uniqueid.jar" />
+    
+    <get dest="jar/zws-qx-service-finder.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-qx-service-finder.jar" />
+    
+    <get dest="jar/zws-qx-service-ilink3.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-qx-service-ilink3.jar" />
+
+    <get dest="jar/zws-qx-service-TC10.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-qx-service-TC10.jar" />
+
+    <get dest="jar/zws-qx-service-TC10-standalone.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-qx-service-TC10-standalone.jar" />
+
+    <get dest="jar/zws-qx-service-chrysalis.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-qx-service-chrysalis.jar" />
+
+    <get dest="jar/zws-qx-service-event-processor.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-qx-service-event-processor.jar" />
+
+    <get dest="jar/zws-qx-event-handlers.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-qx-event-handlers.jar" />
+
+    <get dest="jar/zws-qx-service-queue.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-qx-service-queue.jar" />
+
+    <get dest="jar/zws-qx-service-file-depot.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-qx-service-file-depot.jar" />
+    
+    <get dest="jar/zws-qx-service-pen.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-qx-service-pen.jar" />
+
+    <get dest="jar/zws-qx-service-recorder.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-qx-service-recorder.jar" />
+
+    <get dest="jar/zws-qx-service-repository.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-qx-service-repository.jar" />
+
+    <get dest="jar/zws-qx-service-synchronization.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-qx-service-synchronization.jar" />
+
+    <get dest="jar/zws-qx-service-uniqueid.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-qx-service-uniqueid.jar" />
+    
+    <get dest="jar/zws-qx-web-client.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-qx-web-client.jar" />
+
+    <get dest="jar/zws-qx.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-qx.jar" />
+
+    <get dest="jar/zws-plugin-agile-px.jar" verbose="true" usetimestamp="false"
+      src="http://build.zerowait-state.com/build/pub/jar/zws-plugin-agile-px.jar" />
+      
+  </target>
+
+</project>

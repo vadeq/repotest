@@ -1,0 +1,37 @@
+<DesignState-config>
+ <repositories>
+  <intralink-3 name="ilink" system-password="zero0" system-username="intralink"
+   domain-name="harris" server-name="node-0" protocol="http"
+   host-name="zero-big" port="80" env-root="ilink-1"
+   services-path="ZeroWait-State/services"/>
+<!--
+  <intralink-8 name="ilink-8" system-password="admin" system-username="admin"
+   domain-name="harris" server-name="node-0" protocol="http"
+   host-name="vm-ilink-8" port="80" remote-method="zws-ilink-interface"
+   download-services-path="Windchill/netmarkets/jsp/zws/downloadpdmcontent.jsp"
+   services-path="Windchill/servlet/RPC?CLASS=com.infoengine.soap"/>
+-->
+
+  <agile-sdk name="agile-sdk" system-password="zero0" system-username="intralink"
+   domain-name="harris" server-name="node-0" protocol="http"
+   host-name="vm-oas9213.dev.zerowait-state.com" port="80" services-path="Agile" 
+   ownership-bom-attribute="CAD Source" ownership-bom-attribute-value="Intralink"/> 
+
+<!--
+  <tc10 name="TC-10" system-password="infodba" system-username="infodba"
+   domain-name="cisco" server-name="node-0" protocol="http"
+   host-name="zws-tc-svr" port="8090"
+   services-path="tc/services/PLMGatewayService"
+   server-marker="TcServer1" tC-server-name="TcData"/>
+
+      <agile-sdk name="agile-sdk-920" system-password="zero0" system-username="intralink"
+   domain-name="cisco" server-name="node-zero" protocol="http"
+   host-name="vm-agile-9-2" port="7778" services-path="Agile"/>
+
+  <agile-wsx name="agile-wsx" system-password="agile" system-username="admin"
+   domain-name="harris" server-name="node-0" protocol="http"
+   host-name="linuxwas.agilesoft.com" port="80" services-path="Agile/services"/>
+-->
+
+ </repositories>
+</DesignState-config>

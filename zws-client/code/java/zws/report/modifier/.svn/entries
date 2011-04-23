@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/client/code/java/zws/report/modifier
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:17:50.730907Z
+5300
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+CriteriaModifier.java
+file
+
+
+
+
+2008-07-11T20:47:46.750375Z
+6859f8812c835b91cc71bebc8b03d623
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+AddFileExtention.java
+file
+
+
+
+
+2008-07-11T20:47:46.891000Z
+b63fd2630edeaa59dd67571dd9522ebb
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+

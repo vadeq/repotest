@@ -1,0 +1,9 @@
+ wsdl4j -> wsdl4j-1.6.2
+
+ ????
+ xalan.jar
+ xml-apis.jar
+ dom4j-full -> dom4j-1.6.1
+ pxapi -> pxapi-a92sp2.jar
+ servletapi-2.3 -> servlet-api
+ xalan-2.7.09 -> xalan

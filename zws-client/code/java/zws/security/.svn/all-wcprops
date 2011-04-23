@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/zws/!svn/ver/6131/trunk/zws/designstate/client/code/java/zws/security
+END
+Authentication.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/security/Authentication.java
+END
+Password.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/security/Password.java
+END
+MD5.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/security/MD5.java
+END
+Secret.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/security/Secret.java
+END
+SecretTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/security/SecretTest.java
+END
+SHA.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/zws/!svn/ver/4489/trunk/zws/designstate/client/code/java/zws/security/SHA.java
+END
+PasswordCipher.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/security/PasswordCipher.java
+END
+CryptoUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/6131/trunk/zws/designstate/client/code/java/zws/security/CryptoUtil.java
+END

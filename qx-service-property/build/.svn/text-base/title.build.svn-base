@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="title" basedir=".">
+
+  <!-- title -->
+  <property name="title" value="Design State Repository Plugin Implementation For Agile CAD Integration Framework "/>
+
+  <!-- names -->
+  <property name="svn-project-name" value="qx-service-property"/>
+  <property name="eclipse-project-name" value="qx-service-property"/>
+  <property name="jarfile-name" value="zws-qx-service-property"/>
+
+</project>

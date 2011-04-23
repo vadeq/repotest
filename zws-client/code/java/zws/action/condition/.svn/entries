@@ -1,0 +1,100 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/client/code/java/zws/action/condition
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:17:50.730907Z
+5300
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+TRUE.java
+file
+
+
+
+
+2008-07-11T20:46:55.031625Z
+81a3d50992fa30e00f5acbe09c253a25
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+metadata
+dir
+
+Conditional.java
+file
+
+
+
+
+2008-07-11T20:46:55.094125Z
+5fe89e910dc0d4ec15e768add0167d1d
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+IsNull.java
+file
+
+
+
+
+2008-07-11T20:46:55.141000Z
+c1e8c89a72917ef48cea7aae00020ab8
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+comparison
+dir
+
+logical
+dir
+
+FALSE.java
+file
+
+
+
+
+2008-07-11T20:46:55.203500Z
+d53b22449728a339fef40cec8fee383b
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+LocalFileExists.java
+file
+
+
+
+
+2008-07-11T20:46:55.266000Z
+34fd43edf9d06d269741f20cafc59fae
+2007-06-04T17:24:50.450499Z
+559
+pavan.toleti
+
+document
+dir
+

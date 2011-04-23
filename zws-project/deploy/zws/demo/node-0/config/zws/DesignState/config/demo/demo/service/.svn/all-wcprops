@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/6397/trunk/zws/zws-project/deploy/zws/demo/node-0/config/zws/DesignState/config/demo/demo/service
+END
+services.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/zws/!svn/ver/6397/trunk/zws/zws-project/deploy/zws/demo/node-0/config/zws/DesignState/config/demo/demo/service/services.xml
+END
+zws-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/zws/!svn/ver/6397/trunk/zws/zws-project/deploy/zws/demo/node-0/config/zws/DesignState/config/demo/demo/service/zws-config.xml
+END
+qx-queue.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/zws/!svn/ver/6397/trunk/zws/zws-project/deploy/zws/demo/node-0/config/zws/DesignState/config/demo/demo/service/qx-queue.xml
+END
+service-properties.xml
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/zws/!svn/ver/6397/trunk/zws/zws-project/deploy/zws/demo/node-0/config/zws/DesignState/config/demo/demo/service/service-properties.xml
+END
+event-handlers.xml
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/zws/!svn/ver/6397/trunk/zws/zws-project/deploy/zws/demo/node-0/config/zws/DesignState/config/demo/demo/service/event-handlers.xml
+END
+repository.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/zws/!svn/ver/6397/trunk/zws/zws-project/deploy/zws/demo/node-0/config/zws/DesignState/config/demo/demo/service/repository.xml
+END

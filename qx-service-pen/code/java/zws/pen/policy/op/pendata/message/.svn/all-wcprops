@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zws/!svn/ver/5296/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/message
+END
+RecordGlobalMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/zws/!svn/ver/3406/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/message/RecordGlobalMessage.java
+END
+RecordGlobalWarningMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/zws/!svn/ver/3406/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/message/RecordGlobalWarningMessage.java
+END
+RecordGlobalDebugMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/zws/!svn/ver/3406/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/message/RecordGlobalDebugMessage.java
+END
+RecordGlobalErrorMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/zws/!svn/ver/3406/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/message/RecordGlobalErrorMessage.java
+END

@@ -1,0 +1,28 @@
+<DesignState-config>
+ <repositories>
+
+<!--
+  <intralink-3 name="ilink" encrypted-system-password="agile"  system-username="admin"
+	  domain-name="zws" server-name="node-0"
+	  protocol="http" host-name="designstate-0" port="80"
+	  services-path="ZeroWait-State/services"
+	  env-root="ciscocntl"/>
+-->
+
+<intralink-8 name="ilink-8" encrypted-system-password="LAFaKBV7AJY=" system-username="user81"
+	  domain-name="zws" server-name="node-0"
+	  protocol="http" host-name="mustafar.cisco.com" port="80"
+	  remote-method="zws-ilink-interface" download-services-path="Windchill/netmarkets/jsp/zws/downloadpdmcontent.jsp" services-path="Windchill/servlet/RPC?CLASS=com.infoengine.soap"
+	  ilink-server-domain="com.cisco"/>
+
+<tc10-proxy name="TC-10" encrypted-system-password="LAFaKBV7AJY=" system-username="user81"
+	  domain-name="zws" server-name="node-0"
+	  protocol="http" host-name="plm-rtp-002-d" port="80"
+	  services-path="ZeroWait-State/services"/>
+
+<agile-wsx name="agile-wsx" encrypted-system-password="LAFaKBV7AJY="  system-username="user81"
+	  domain-name="cisco" server-name="node-zero"
+	  protocol="http" host-name="pwebdev.cisco.com" port="80" services-path="pls/services"/>
+
+ </repositories>
+</DesignState-config>

@@ -1,0 +1,46 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/chrysalis/qx-service-chrysalis
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-06-18T22:22:41.231110Z
+6371
+eankutse
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+build
+dir
+
+code
+dir
+
+build.xml
+file
+
+
+
+
+2008-07-11T17:23:03.937875Z
+c36d06955b5294e7dc7199ddbee64469
+2007-10-25T23:41:03.748170Z
+3675
+arbind.thakur
+

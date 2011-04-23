@@ -1,0 +1,5 @@
+<DesignState-config>
+	<event-listeners>
+		<ilink3-listener repository-name="ilink"/>
+	</event-listeners>
+</DesignState-config>

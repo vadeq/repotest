@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/service/recorder
+END
+Schema.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/service/recorder/Schema.java
+END
+RecorderSvc.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/service/recorder/RecorderSvc.java
+END
+RecorderTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/service/recorder/RecorderTest.java
+END
+RecorderServiceEJB.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/service/recorder/RecorderServiceEJB.java
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/zws/!svn/ver/5307/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/intralink
+END
+PromotionFormQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/intralink/PromotionFormQuery.java
+END
+AttribSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/intralink/AttribSet.java
+END
+Export.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/intralink/Export.java
+END
+BOMAsStored.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/intralink/BOMAsStored.java
+END
+Checkin.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/intralink/Checkin.java
+END
+Checkout.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/intralink/Checkout.java
+END
+DestroyWorkspace.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/intralink/DestroyWorkspace.java
+END
+CheckoutAsStored.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/intralink/CheckoutAsStored.java
+END
+Import.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/intralink/Import.java
+END
+Link.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/processor/action/intralink/Link.java
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/6295/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/zws/repository/agile/plm/api
+END
+AgilePLMAPIRepositoryBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/zws/!svn/ver/6295/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/zws/repository/agile/plm/api/AgilePLMAPIRepositoryBase.java
+END
+AgilePLMAPIRepositoryBinaryTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/zws/!svn/ver/5380/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/zws/repository/agile/plm/api/AgilePLMAPIRepositoryBinaryTarget.java
+END
+AgilePLMAPIConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/zws/!svn/ver/5358/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/zws/repository/agile/plm/api/AgilePLMAPIConstants.java
+END
+AgilePLMAPIRepositoryECOTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/zws/!svn/ver/4473/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/zws/repository/agile/plm/api/AgilePLMAPIRepositoryECOTarget.java
+END
+AgilePLMAPIRepositoryMetadataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/zws/!svn/ver/6264/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/zws/repository/agile/plm/api/AgilePLMAPIRepositoryMetadataSource.java
+END
+AgilePLMAPIRepositoryStructureSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/zws/!svn/ver/4980/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/zws/repository/agile/plm/api/AgilePLMAPIRepositoryStructureSource.java
+END
+AgilePLMAPIRepositoryBinarySource.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/zws/!svn/ver/5359/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/zws/repository/agile/plm/api/AgilePLMAPIRepositoryBinarySource.java
+END
+AgilePLMAPIRepositoryECOSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/zws/!svn/ver/4473/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/zws/repository/agile/plm/api/AgilePLMAPIRepositoryECOSource.java
+END
+AgilePLMAPIRepositoryMetadataTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/zws/!svn/ver/5669/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/zws/repository/agile/plm/api/AgilePLMAPIRepositoryMetadataTarget.java
+END
+AgilePLMAPIRepositoryStructureTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/zws/!svn/ver/6112/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/zws/repository/agile/plm/api/AgilePLMAPIRepositoryStructureTarget.java
+END
+AgilePLMAPIRepositoryConfigurationSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/zws/!svn/ver/4473/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/zws/repository/agile/plm/api/AgilePLMAPIRepositoryConfigurationSource.java
+END

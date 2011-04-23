@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/6296/trunk/zws/plugin/repository/TC10/plugin-TC10/code/java/zws/repository/teamcenter/proxy/target
+END
+TC10ProxyRepositoryMetadataTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/zws/!svn/ver/6296/trunk/zws/plugin/repository/TC10/plugin-TC10/code/java/zws/repository/teamcenter/proxy/target/TC10ProxyRepositoryMetadataTarget.java
+END
+TC10ProxyRepositoryStateTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/zws/!svn/ver/5388/trunk/zws/plugin/repository/TC10/plugin-TC10/code/java/zws/repository/teamcenter/proxy/target/TC10ProxyRepositoryStateTarget.java
+END
+TC10ProxyRepositoryStructureTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/zws/!svn/ver/5388/trunk/zws/plugin/repository/TC10/plugin-TC10/code/java/zws/repository/teamcenter/proxy/target/TC10ProxyRepositoryStructureTarget.java
+END
+TC10ProxyRepositoryBinaryTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/zws/!svn/ver/5388/trunk/zws/plugin/repository/TC10/plugin-TC10/code/java/zws/repository/teamcenter/proxy/target/TC10ProxyRepositoryBinaryTarget.java
+END

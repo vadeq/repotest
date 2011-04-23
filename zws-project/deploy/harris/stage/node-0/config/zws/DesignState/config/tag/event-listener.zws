@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<instructions>
+<DesignState-config ignore="true"/>
+<event-listeners ignore="true"/>
+  <ilink3-listener instance-of="zws.repository.ilink3.Ilink3EventListener" static-method="add" class="zws.service.event.watcher.EventWatcherSvc">
+    <repository-name/>
+    <system-username/>
+    <system-password/>
+  </ilink3-listener>
+</instructions>

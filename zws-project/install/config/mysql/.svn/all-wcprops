@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/zws/!svn/ver/5953/trunk/zws/zws-project/install/config/mysql
+END
+qxqueue-schema.mysql
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5953/trunk/zws/zws-project/install/config/mysql/qxqueue-schema.mysql
+END
+secure-space-schema.mysql
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5119/trunk/zws/zws-project/install/config/mysql/secure-space-schema.mysql
+END
+init-users.mysql
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/zws/!svn/ver/5753/trunk/zws/zws-project/install/config/mysql/init-users.mysql
+END
+property-schema.mysql
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5118/trunk/zws/zws-project/install/config/mysql/property-schema.mysql
+END
+synch-schema.mysql
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/zws/!svn/ver/5116/trunk/zws/zws-project/install/config/mysql/synch-schema.mysql
+END
+recorder-schema.mysql
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5733/trunk/zws/zws-project/install/config/mysql/recorder-schema.mysql
+END
+my.cnf
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/zws/!svn/ver/4643/trunk/zws/zws-project/install/config/mysql/my.cnf
+END
+guide.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/zws/!svn/ver/4009/trunk/zws/zws-project/install/config/mysql/guide.txt
+END
+designstate-schema.mysql
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5115/trunk/zws/zws-project/install/config/mysql/designstate-schema.mysql
+END
+secure-db.mysql
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/zws/!svn/ver/1213/trunk/zws/zws-project/install/config/mysql/secure-db.mysql
+END

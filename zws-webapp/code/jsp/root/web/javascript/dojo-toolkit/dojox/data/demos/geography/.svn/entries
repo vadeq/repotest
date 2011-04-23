@@ -1,0 +1,91 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/data/demos/geography
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+Italy
+dir
+
+China
+dir
+
+Brazil
+dir
+
+United States of America
+dir
+
+Mexico
+dir
+
+India
+dir
+
+Egypt
+dir
+
+Commonwealth of Australia
+dir
+
+root.json
+file
+
+
+
+
+2008-07-11T22:09:05.031625Z
+ab0528ef2bdce8c9e66a7a087982fa6b
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+France
+dir
+
+Germany
+dir
+
+Mongolia
+dir
+
+Russia
+dir
+
+Kenya
+dir
+
+Canada
+dir
+
+Argentina
+dir
+
+Sudan
+dir
+
+Spain
+dir
+

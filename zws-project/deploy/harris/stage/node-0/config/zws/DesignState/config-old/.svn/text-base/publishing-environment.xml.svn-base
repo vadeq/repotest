@@ -1,0 +1,10 @@
+<DesignState-config>
+  <properties>
+    <property name="publishing-environment" value="Open" />
+
+    <!--
+    <property name="publishing-environment" value="Vault" />
+    -->
+ </properties>
+</DesignState-config>
+

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/search/criteria
+END
+Expression.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/search/criteria/Expression.java
+END
+Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/search/criteria/Test.java
+END
+Criteria.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/search/criteria/Criteria.java
+END
+LogicalOperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/zws/!svn/ver/2381/trunk/zws/designstate/client/code/java/zws/search/criteria/LogicalOperator.java
+END
+Comparison.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/zws/!svn/ver/2394/trunk/zws/designstate/client/code/java/zws/search/criteria/Comparison.java
+END
+Grouping.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/search/criteria/Grouping.java
+END
+OROperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/search/criteria/OROperator.java
+END
+ANDOperator.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/search/criteria/ANDOperator.java
+END

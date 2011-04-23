@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/event/qx-event-handlers/code/java/zws/qx/event/handler/agile
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:00:09.835723Z
+5654
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+AgileCheckinHandler.java
+file
+
+
+
+
+2008-07-11T17:23:50.250375Z
+ac3bd6b7e4d26feb0548f854cfb4f71f
+2008-02-29T17:00:09.835723Z
+5654
+pavan.toleti
+
+AgileRenameHandler.java
+file
+
+
+
+
+2008-07-11T17:23:50.312875Z
+a0ab06998766a27a8a2dfa019bbd3a50
+2008-02-29T17:00:09.835723Z
+5654
+pavan.toleti
+

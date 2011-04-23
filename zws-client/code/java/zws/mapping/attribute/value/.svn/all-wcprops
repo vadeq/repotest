@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/code/java/zws/mapping/attribute/value
+END
+ValueMappingBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/mapping/attribute/value/ValueMappingBase.java
+END
+ValueMapping.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/mapping/attribute/value/ValueMapping.java
+END
+ConvertValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/mapping/attribute/value/ConvertValue.java
+END

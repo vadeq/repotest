@@ -1,0 +1,22 @@
+<service name="QxWebService" scope="application">
+    <description>
+        Qx Web Service.. for integrating with Ilink3
+    </description>
+    <operation name="clearKeys">
+        <messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+    </operation>
+	  <operation name="exchangeKeys">
+        <messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+    </operation>
+    <operation name="transferQx">
+        <messageReceiver class="org.apache.axis2.receivers.RawXMLINOutMessageReceiver"/>
+    </operation>
+    <operation name="executeQx">
+    	<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+    </operation>
+    <operation name="runQx">
+    	<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+    </operation>
+
+    <parameter name="ServiceClass">zws.qx.QxWebService</parameter>
+</service>

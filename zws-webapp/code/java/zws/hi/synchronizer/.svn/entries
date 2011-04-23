@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/java/zws/hi/synchronizer
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-04-23T20:09:34.808018Z
+6104
+rmccabe
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+hiSynchronizerService.java
+file
+
+
+
+
+2008-07-11T22:03:55.312875Z
+caf37d889ee46579f635b460bb625259
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+hiSyncAdmin.java
+file
+
+
+
+
+2008-07-11T22:03:55.391000Z
+2f3e67c114d8455330ef8f98d6244a61
+2008-04-23T20:09:34.808018Z
+6104
+rmccabe
+

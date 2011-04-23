@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/zws/!svn/ver/6297/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/publish
+END
+DetectDirtyFlags.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/publish/DetectDirtyFlags.java
+END
+CreateStructureOP.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/zws/!svn/ver/6297/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/publish/CreateStructureOP.java
+END
+UpdateMetadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/zws/!svn/ver/5521/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/publish/UpdateMetadata.java
+END
+UpdateStructure.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/publish/UpdateStructure.java
+END
+CreateItems.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/publish/CreateItems.java
+END
+UpdateBinaryFiles.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/publish/UpdateBinaryFiles.java
+END
+Synchronize.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/publish/Synchronize.java
+END
+UpdateDocumentation.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/zws/!svn/ver/5532/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/publish/UpdateDocumentation.java
+END
+DeleteMeAddAffectedItemOP.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/publish/DeleteMeAddAffectedItemOP.java
+END
+ExplicitSynchronize.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/zws/!svn/ver/6048/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/publish/ExplicitSynchronize.java
+END
+DetectRedLines.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/zws/!svn/ver/5996/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/publish/DetectRedLines.java
+END

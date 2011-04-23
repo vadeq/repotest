@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/recorder/qx-service-recorder/build
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:21:39.010276Z
+5315
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+title.build
+file
+
+
+
+
+2008-07-11T20:35:33.812875Z
+40e6e432633cf01173d0a3ac95fb7e69
+2007-06-13T20:45:40.434926Z
+1944
+pavan.toleti
+
+classpath.build
+file
+
+
+
+
+2008-07-11T20:35:33.984750Z
+ff1f0380e62ee3134a23843d100647ed
+2007-06-14T01:32:37.781181Z
+1993
+pavan.toleti
+

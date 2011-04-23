@@ -1,0 +1,52 @@
+8
+
+dir
+6400
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/repository/ilink8/ilink8-server-component/build
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:25:55.170960Z
+5335
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+title.build
+file
+
+
+
+
+2008-07-11T20:37:32.828500Z
+7bd06f4ddb270c7f0173540658c7bbf7
+2007-06-27T01:25:52.063545Z
+2142
+senthil.swamy
+
+classpath.build
+file
+
+
+
+
+2008-07-11T20:37:32.891000Z
+009ea849d191435f587d8edcfd5b1ae3
+2007-06-27T23:02:48.483878Z
+2143
+pavan.toleti
+

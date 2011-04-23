@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/plugin-interface/code/java/zws/repository/search
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:24:33.425112Z
+5334
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+RepositorySearchAgentBase.java
+file
+
+
+
+
+2008-07-11T17:25:12.891000Z
+32adbc6dd4aa8f641f19272954dc3b57
+2007-04-17T16:51:42.618400Z
+946
+pavan.toleti
+
+RepositorySearchAgent.java
+file
+
+
+
+
+2008-07-11T17:25:12.937875Z
+1f6fafd9497d2566646bb5b4649400c5
+2007-07-24T00:59:43.300748Z
+2553
+dushant.reddy
+

@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/zws/!svn/ver/5307/trunk/zws/designstate/webapp/code/jsp/root/web/include
+END
+menu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/jsp/root/web/include/menu.jsp
+END
+no-menu-header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/jsp/root/web/include/no-menu-header.jsp
+END
+header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/jsp/root/web/include/header.jsp
+END
+head.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/2449/trunk/zws/designstate/webapp/code/jsp/root/web/include/head.html
+END
+plainHeader.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/jsp/root/web/include/plainHeader.jsp
+END
+footer.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5016/trunk/zws/designstate/webapp/code/jsp/root/web/include/footer.jsp
+END
+logo-title.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5125/trunk/zws/designstate/webapp/code/jsp/root/web/include/logo-title.jsp
+END
+application-name.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/zws/!svn/ver/877/trunk/zws/designstate/webapp/code/jsp/root/web/include/application-name.jsp
+END
+interactor.params
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/jsp/root/web/include/interactor.params
+END
+logo-title-menu.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/jsp/root/web/include/logo-title-menu.jsp
+END
+panel-bar.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/2064/trunk/zws/designstate/webapp/code/jsp/root/web/include/panel-bar.jsp
+END
+plainFooter.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/jsp/root/web/include/plainFooter.jsp
+END
+index.htm
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/jsp/root/web/include/index.htm
+END

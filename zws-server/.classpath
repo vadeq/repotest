@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="code/java"/>
+	<classpathentry kind="src" path="code/ejb"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/zws-client"/>
+	<classpathentry kind="lib" path="/build/dep/server/jboss/jboss-j2ee.jar"/>
+	<classpathentry kind="lib" path="/build/dep/common/mail.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Agile API"/>
+	<classpathentry kind="lib" path="/build/dep/common/log4j.jar"/>
+	<classpathentry kind="lib" path="/build/dep/common/jdom.jar"/>
+	<classpathentry kind="output" path="out"/>
+</classpath>

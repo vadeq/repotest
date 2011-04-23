@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root datasource="intralink">
+	<folder name="Arb-My docsd" label="abc8" >
+		<folder name="Arb-Housed"  label="abc7"/>
+		<folder name="Arb-My imagesd"  label="abc6"/>
+	</folder>
+	<folder name="Arb-My computerd"  label="abc5">
+		<folder name="Arb-Floppy (A:)d"  label="abc4"/>
+		<folder name="Arb-Hard drive (C:)d"  label="abc3"/>
+	</folder>
+	<folder name="Arb-Networkd"  label="abc2"/>
+	<folder name="Arb-Trashd"  label="abc1"/>
+</root>

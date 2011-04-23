@@ -1,0 +1,46 @@
+<DesignState-config>
+	<policy-matches>
+		<matching-rules policy="ilink3-to-sdk" priority="1" target-name="agile-sdk"
+			intent="publish|promote|review">
+			<include-match>
+				<compare-attribute attribute-name="description" attribute-value="ilink3-to-sdk"/>
+			</include-match>
+		</matching-rules>
+
+		<matching-rules policy="tc10-to-wsx" priority="2" target-name="agile-sdk"
+			intent="publish|promote|review">
+			<include-match>
+				<compare-attribute attribute-name="description" attribute-value="tc10-to-wsx"/>
+			</include-match>
+		</matching-rules>
+
+		<matching-rules policy="ilink8-to-wsx" priority="3" target-name="agile-sdk"
+			intent="publish|promote|review">
+			<include-match>
+				<compare-attribute attribute-name="description" attribute-value="ilink8-to-wsx"/>
+			</include-match>
+		</matching-rules>
+
+		<matching-rules policy="ilink3-to-wsx" priority="4" target-name="agile-sdk"
+			intent="publish|promote|review">
+			<include-match>
+				<compare-attribute attribute-name="description" attribute-value="ilink3-to-wsx"/>
+			</include-match>
+		</matching-rules>
+
+		<matching-rules policy="tc10-to-sdk" priority="5" target-name="agile-sdk"
+			intent="publish|promote|review">
+			<include-match>
+				<compare-attribute attribute-name="description" attribute-value="tc10-to-sdk"/>
+			</include-match>
+		</matching-rules>
+
+		<matching-rules policy="ilink8-to-sdk" priority="6" target-name="agile-sdk"
+			intent="publish|promote|review">
+			<include-match>
+				<compare-attribute attribute-name="description" attribute-value="ilink3-to-sdk"/>
+			</include-match>
+		</matching-rules>
+
+	</policy-matches>
+</DesignState-config>

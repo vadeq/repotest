@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/6496/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/svc
+END
+AgileSDKPartNumberSvc.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/zws/!svn/ver/2630/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/svc/AgileSDKPartNumberSvc.java
+END
+AgileSDKRevisionControlSvc.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/zws/!svn/ver/3769/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/svc/AgileSDKRevisionControlSvc.java
+END
+AgileSDKAffectedItemSvc.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/zws/!svn/ver/6469/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/svc/AgileSDKAffectedItemSvc.java
+END
+AgileLoginThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/zws/!svn/ver/6246/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/svc/AgileLoginThread.java
+END
+AgileSDKSessionSvc.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/zws/!svn/ver/6283/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/svc/AgileSDKSessionSvc.java
+END
+AgileSDKECOSvc.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/zws/!svn/ver/6533/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/svc/AgileSDKECOSvc.java
+END
+AgileSDKConfigurationSvc.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/zws/!svn/ver/5822/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/svc/AgileSDKConfigurationSvc.java
+END
+AgileSDKSvcBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/zws/!svn/ver/5822/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/svc/AgileSDKSvcBase.java
+END
+AgileSDKBOMSvc.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/zws/!svn/ver/6496/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/svc/AgileSDKBOMSvc.java
+END
+AgileSDKItemSvc.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/zws/!svn/ver/6345/trunk/zws/plugin/repository/agile/plugin-agile-sdk/code/java/zws/repository/agile/sdk/svc/AgileSDKItemSvc.java
+END

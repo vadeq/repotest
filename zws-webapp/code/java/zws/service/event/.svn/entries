@@ -1,0 +1,40 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/java/zws/service/event
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:00:53.791577Z
+5675
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+svcFireEvent.java
+file
+
+
+
+
+2008-07-11T22:04:03.750375Z
+db1997cef49718caa3be74ba959b341e
+2008-02-29T17:00:53.791577Z
+5675
+pavan.toleti
+

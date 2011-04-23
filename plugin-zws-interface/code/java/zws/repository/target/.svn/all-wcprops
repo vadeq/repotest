@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/6346/trunk/zws/plugin/plugin-interface/code/java/zws/repository/target
+END
+RepositoryWorkflowTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/zws/!svn/ver/3586/trunk/zws/plugin/plugin-interface/code/java/zws/repository/target/RepositoryWorkflowTarget.java
+END
+RepositoryPackageTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/zws/!svn/ver/1005/trunk/zws/plugin/plugin-interface/code/java/zws/repository/target/RepositoryPackageTarget.java
+END
+RepositoryTemplateTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/zws/!svn/ver/1005/trunk/zws/plugin/plugin-interface/code/java/zws/repository/target/RepositoryTemplateTarget.java
+END
+RepositoryMetadataTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/zws/!svn/ver/3284/trunk/zws/plugin/plugin-interface/code/java/zws/repository/target/RepositoryMetadataTarget.java
+END
+RepositoryStateTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/4067/trunk/zws/plugin/plugin-interface/code/java/zws/repository/target/RepositoryStateTarget.java
+END
+RepositoryStructureTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/zws/!svn/ver/5379/trunk/zws/plugin/plugin-interface/code/java/zws/repository/target/RepositoryStructureTarget.java
+END
+RepositoryBinaryTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/zws/!svn/ver/4761/trunk/zws/plugin/plugin-interface/code/java/zws/repository/target/RepositoryBinaryTarget.java
+END
+RepositoryECOTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/6530/trunk/zws/plugin/plugin-interface/code/java/zws/repository/target/RepositoryECOTarget.java
+END
+RepositoryConfigurationTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/zws/!svn/ver/1005/trunk/zws/plugin/plugin-interface/code/java/zws/repository/target/RepositoryConfigurationTarget.java
+END

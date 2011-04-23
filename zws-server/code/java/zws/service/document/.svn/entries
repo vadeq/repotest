@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/server/code/java/zws/service/document
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+DocumentServiceEJB.java
+file
+
+
+
+
+2008-07-11T20:50:26.594125Z
+aac4c7648b34c8bb2531542a043e00f1
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+DocumentSvc.java
+file
+
+
+
+
+2008-07-11T20:50:26.687875Z
+0cb11e417493643874b9bdb6aa4b0f59
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+

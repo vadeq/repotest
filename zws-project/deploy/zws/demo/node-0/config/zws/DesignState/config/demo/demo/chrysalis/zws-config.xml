@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<configuration>
+ <configurator base-path="\zws\DesignState\config\[organization]\[project]\chrysalis">
+  <load tag-map="..\..\..\tag\property.zws"  file="\chrysalis-properties.xml"/>
+  <load tag-map="..\..\..\tag\qx-queue.zws"  file="\chrysalis-qx-queue.xml"/>
+ </configurator>
+</configuration>

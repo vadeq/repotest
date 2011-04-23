@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/functor
+END
+PDFGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/PDFGenerator.java
+END
+Functor.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/Functor.java
+END
+TimerTaskFunctor.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/TimerTaskFunctor.java
+END
+RunnableFunctor.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/RunnableFunctor.java
+END
+Getter.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/4445/trunk/zws/designstate/webapp/code/java/com/zws/functor/Getter.java
+END
+MetadataExtractor.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/functor/MetadataExtractor.java
+END
+ListFunctor.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/functor/ListFunctor.java
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/zws/!svn/ver/6132/trunk/zws/designstate/client/code/java/zws/database
+END
+ClobManipulationIn10g.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/6070/trunk/zws/designstate/client/code/java/zws/database/ClobManipulationIn10g.java
+END
+DatabaseBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/6132/trunk/zws/designstate/client/code/java/zws/database/DatabaseBase.java
+END
+Database.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5035/trunk/zws/designstate/client/code/java/zws/database/Database.java
+END
+DB.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/database/DB.java
+END
+DBTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/database/DBTest.java
+END
+MySQL.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/database/MySQL.java
+END
+Oracle.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/6073/trunk/zws/designstate/client/code/java/zws/database/Oracle.java
+END
+MSSQLServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/database/MSSQLServer.java
+END
+Oracle8i.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/database/Oracle8i.java
+END
+Postgres.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/database/Postgres.java
+END
+DatabaseBaseOld.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/database/DatabaseBaseOld.java
+END

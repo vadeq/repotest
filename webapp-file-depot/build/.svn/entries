@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/file-depot/webapp-file-depot/build
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:15:36.272164Z
+5293
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+title.build
+file
+
+
+
+
+2008-07-11T17:24:45.937875Z
+0f894979604ff5bb7d88b062012928c3
+2007-12-08T23:20:25.875841Z
+4655
+arbind.thakur
+
+classpath.build
+file
+
+
+
+
+2008-07-11T17:24:45.984750Z
+c5732f61968b696633aa5a55f16e1a68
+2007-12-08T18:39:18.224715Z
+4615
+arbind.thakur
+

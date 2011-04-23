@@ -1,0 +1,9 @@
+<project basedir=".">
+  <property name="COMPANY" value="cisco"/>
+  <property name="PROJECT" value="release-1.1"/>
+  <property name="SERVER" value="node-0"/>
+
+  <property name="ZWS_APP_HOME" value="C:/zws"/>
+  <property name="ZWS_DATA_HOME" value="C:/zws/data"/>
+
+</project>

@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/server/code/java/zws/service/email
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:18:38.052600Z
+5306
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+EmailSvc.java
+file
+
+
+
+
+2008-07-11T20:50:19.625375Z
+223613f94886fb1ff14dbf0010883ff2
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+EmailServiceEJB.java
+file
+
+
+
+
+2008-07-11T20:50:19.703500Z
+e3a1bd84f9fe62cd317dc03af8ae95a4
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+

@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/server/code/java/zws/service/report
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+ReportSvc.java
+file
+
+
+
+
+2008-07-11T20:50:25.562875Z
+d8c201871b6f0195688d32c623fa1486
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+
+ReportServiceEJB.java
+file
+
+
+
+
+2008-07-11T20:50:25.656625Z
+ab662874c7577e15790fe51c3fccba68
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+

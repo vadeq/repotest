@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/xml/op/create
+END
+CreateException.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/xml/op/create/CreateException.java
+END
+CreateFunctor.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/xml/op/create/CreateFunctor.java
+END
+InstanceCreator.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/xml/op/create/InstanceCreator.java
+END
+ClassCreator.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/xml/op/create/ClassCreator.java
+END
+SingletonInstance.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/zws/!svn/ver/4449/trunk/zws/designstate/client/code/java/zws/xml/op/create/SingletonInstance.java
+END
+XMLStringCreator.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/xml/op/create/XMLStringCreator.java
+END

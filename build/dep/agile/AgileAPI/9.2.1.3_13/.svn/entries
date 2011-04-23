@@ -1,0 +1,54 @@
+8
+
+dir
+6529
+http://build.zerowait-state.com/svn/zws/trunk/zws/build/dep/agile/AgileAPI/9.2.1.3_13
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:26:07.440306Z
+5337
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+AgileAPI.jar
+file
+
+
+
+
+2008-07-11T17:17:32.969125Z
+d5cca1c5075270135ba2eeba8e967504
+2007-07-30T21:51:11.829465Z
+2713
+arbind.thakur
+has-props
+
+pxapi.jar
+file
+
+
+
+
+2008-07-11T17:17:33.031625Z
+fdcdb933e4470b1981be301a6fc9adce
+2007-07-30T21:51:11.829465Z
+2713
+arbind.thakur
+has-props
+

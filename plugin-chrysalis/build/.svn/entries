@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/chrysalis/plugin-chrysalis/build
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-04-02T17:39:55.532732Z
+5956
+eankutse
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+title.build
+file
+
+
+
+
+2008-07-11T17:22:33.234750Z
+bb1ca7ee9edf5c005451cc5fe6035e38
+2007-10-25T23:41:03.748170Z
+3675
+arbind.thakur
+
+classpath.build
+file
+
+
+
+
+2008-07-11T17:22:33.312875Z
+a878160bb6a0c77158bc0cb4f7e871f4
+2008-04-02T17:39:55.532732Z
+5956
+eankutse
+

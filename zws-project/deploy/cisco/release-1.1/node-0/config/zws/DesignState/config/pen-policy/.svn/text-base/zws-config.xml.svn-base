@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<configuration>
+ <configurator base-path="\zws\DesignState\config\pen-policy">
+  <load tag-map="\tag\pen-policy.zws"  file="\proe-library.xml"/>
+  <load tag-map="\tag\pen-policy.zws"  file="\proe-design.xml"/>
+  <load tag-map="\tag\pen-policy.zws"  file="\proe-design-pending.xml"/>
+  <load tag-map="\tag\pen-policy.zws"  file="\proe-design-pending_ecpn.xml"/>
+  <load tag-map="\tag\pen-policy.zws"  file="\teamcenter-design.xml"/>
+  <load tag-map="\tag\pen-policy.zws"  file="\teamcenter-design-pending.xml"/>
+  <load tag-map="\tag\pen-policy.zws"  file="\teamcenter-design-pending_ecpn.xml"/>
+
+  <load tag-map="\tag\policy-match.zws"  file="\match.xml"/>
+ </configurator>
+</configuration>

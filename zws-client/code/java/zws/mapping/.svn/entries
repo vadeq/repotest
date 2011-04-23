@@ -1,0 +1,94 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/client/code/java/zws/mapping
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+Test.java
+file
+
+
+
+
+2008-07-11T20:47:22.531625Z
+2a6ae22476f39044d24a4f0c6005f9ca
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+metadata
+dir
+
+MetadataMappingInstructions.java
+file
+
+
+
+
+2008-07-11T20:47:22.578500Z
+2d32b13248d8ea6158b41bbc65ec7c59
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+attribute
+dir
+
+MetadataMappingBase.java
+file
+
+
+
+
+2008-07-11T20:47:22.641000Z
+256a3b34c73fc63794cb59dab2d849b9
+2007-06-04T17:14:41.833836Z
+551
+pavan.toleti
+
+MetadataMappingSet.java
+file
+
+
+
+
+2008-07-11T20:47:22.703500Z
+050bcb350ca5ecb19b804401a1551c8e
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+MetadataMapping.java
+file
+
+
+
+
+2008-07-11T20:47:22.766000Z
+c8e5c715b133bb11ea61d0b67788c5e2
+2007-06-04T17:14:41.833836Z
+551
+pavan.toleti
+

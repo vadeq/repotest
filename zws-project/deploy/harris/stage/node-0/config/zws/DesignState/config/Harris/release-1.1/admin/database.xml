@@ -1,0 +1,19 @@
+<DesignState-config>
+ <databases>
+ <!--  If using service names
+	<oracle name="zws-synch-db" url="jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = MY_HOST)(PORT = 1521))) (CONNECT_DATA = (SERVICE_NAME = SERVICE_NAME)))" username="USER" password="PWD" />
+	<oracle name="zws-recorder-db" url="jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = MY_HOST)(PORT = 1521))) (CONNECT_DATA = (SERVICE_NAME = SERVICE_NAME)))" username="USER" password="PWD"/>
+	<oracle name="DesignState" url="jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = MY_HOST)(PORT = 1521))) (CONNECT_DATA = (SERVICE_NAME = SERVICE_NAME)))" username="USER" password="PWD"/>    
+	<oracle name="zws-qx-queue" url="jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = MY_HOST)(PORT = 1521))) (CONNECT_DATA = (SERVICE_NAME = SERVICE_NAME)))" username="USER" password="PWD"/>
+	<oracle name="zws-qx-element" url="jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS_LIST = (ADDRESS = (PROTOCOL = TCP)(HOST = MY_HOST)(PORT = 1521))) (CONNECT_DATA = (SERVICE_NAME = SERVICE_NAME)))" username="USER" password="PWD"/>
+ -->
+ 
+ 	<!-- if using SID -->
+	<oracle name="zws-synch-db" url="jdbc:oracle:thin:@MY_HOST:PORT:SID" username="USER" password="PWD" />
+	<oracle name="zws-recorder-db" url="jdbc:oracle:thin:@MY_HOST:PORT:SID" username="USER" password="PWD"/>
+	<oracle name="DesignState" url="jdbc:oracle:thin:@MY_HOST:PORT:SID" username="USER" password="PWD"/>
+	<oracle name="zws-qx-queue" url="jdbc:oracle:thin:@MY_HOST:PORT:SID" username="USER" password="PWD"/>
+	<oracle name="zws-qx-element" url="jdbc:oracle:thin:@MY_HOST:PORT:SID" username="USER" password="PWD"/>
+
+ </databases>
+</DesignState-config>

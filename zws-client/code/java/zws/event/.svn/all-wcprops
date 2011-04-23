@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/zws/!svn/ver/6160/trunk/zws/designstate/client/code/java/zws/event
+END
+EventMaker.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/6160/trunk/zws/designstate/client/code/java/zws/event/EventMaker.java
+END
+EventProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/event/EventProcessor.java
+END
+hiEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/hiEvent.java
+END
+ReleaseEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/ReleaseEvent.java
+END
+ECOEventBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/ECOEventBase.java
+END
+VersionedDesignEventBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/VersionedDesignEventBase.java
+END
+DesignEventBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/DesignEventBase.java
+END
+ECOEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/ECOEvent.java
+END
+hiProcessItemBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/hiProcessItemBase.java
+END
+VersionedDesignEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/VersionedDesignEvent.java
+END
+DesignEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/DesignEvent.java
+END
+ReleaseEventBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/ReleaseEventBase.java
+END
+hiEventBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/event/hiEventBase.java
+END

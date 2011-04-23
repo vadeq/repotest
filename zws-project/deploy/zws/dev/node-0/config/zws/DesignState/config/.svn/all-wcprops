@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/6284/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/config
+END
+web-node.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/1425/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/config/web-node.xml
+END
+panel-bar.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/zws/!svn/ver/2503/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/config/panel-bar.xml
+END
+web-system-property.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/5150/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/config/web-system-property.xml
+END
+database.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/1425/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/config/database.xml
+END
+pen-policy-template.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/2656/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/config/pen-policy-template.xml
+END
+policy-match.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/2651/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/config/policy-match.xml
+END
+qx-queue.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/1624/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/config/qx-queue.xml
+END
+server-system-property.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/zws/!svn/ver/1425/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/config/server-system-property.xml
+END
+event-handlers.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/1425/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/config/event-handlers.xml
+END
+pen-policy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/zws/!svn/ver/2651/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/config/pen-policy.xml
+END
+repository.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/zws/!svn/ver/2655/trunk/zws/zws-project/deploy/zws/dev/node-0/config/zws/DesignState/config/repository.xml
+END

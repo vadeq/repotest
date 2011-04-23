@@ -1,0 +1,136 @@
+package zws.pen.policy.old.op;
+
+import zws.pen.policy.PENPolicy;
+import zws.qx.QxContext;
+import zws.security.Authentication;
+import zws.service.pen.PENData;
+import zws.op.Op;
+import zws.origin.Origin;
+
+
+/*
+ * DesignState - Design Compression Technology @author: ptoleti @version: 1.0
+ * Created on Apr 26, 2007 12:09:08 PM Copywrite (c) 2007 Zero Wait-State Inc.
+ * All rights reserved
+ */
+
+/**
+ * The Interface PENDataOp.
+ * @author ptoleti
+ */
+public interface PENDataOp extends Op {
+
+  /**
+   * Gets the qx ctx.
+   *
+   * @return the ctx
+   */
+  QxContext getQxCtx();
+
+  /**
+   * Sets the qx ctx.
+   *
+   * @param ctx
+   * the ctx to set
+   */
+  void setQxCtx(QxContext ctx);
+
+  /**
+   * Gets the pen data.
+   *
+   * @return the penData
+   */
+  PENData getPenData();
+
+  /**
+   * Add.
+   * @param op the op
+   */
+   void add(PENDataOp op);
+
+  /**
+   * Sets the pen data.
+   *
+   * @param penData
+   * the penData to set
+   */
+  void setPenData(PENData penData);
+
+
+  /**
+   * Sets the location.
+   * @param location the location
+   */
+  void setCurrentElement(String location);
+
+  /**
+   * Gets the location.
+   * @return the location
+   */
+  String getCurrentElement();
+ 
+  /**
+   * Sets the pen policy obj.
+   *
+   * @param penPolicyObj
+   * the pen policy obj
+   */
+  void setPenPolicyObj(PENPolicy penPolicyObj);
+
+  /**
+   * Gets the pen policy obj.
+   *
+   * @return the pen policy obj
+   */
+  PENPolicy getPenPolicyObj();
+
+  /**
+   * Sets the authentication.
+   *
+   * @param authID
+   * the authentication
+   */
+  void setAuthentication(Authentication authID);
+
+  /**
+   * Gets the authentication.
+   *
+   * @return the authentication
+   */
+  Authentication getAuthentication();
+
+  /**
+   * Sets the Origin.
+   * @param origin the origin
+   */
+  void setOrigin(Origin origin);
+
+  /**
+   * Gets the authentication.
+   * @return the Origin
+   */
+  Origin getOrigin();
+
+  /**
+   * Sets the location.
+   * @param location the location
+   */
+  void setLocation(String location);
+
+  /**
+   * Gets the location.
+   * @return the location
+   */
+  String getLocation();
+
+  /**
+   * @param qxctx context
+   * @param originObj origin
+   * @param penPolicy policy
+   * @param penDataObj pen data
+   * @param id authentication
+   */
+  void setRuntimeValues(QxContext qxctx, Origin originObj, PENPolicy penPolicy,
+                 PENData penDataObj, Authentication id);
+
+}

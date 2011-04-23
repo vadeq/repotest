@@ -1,0 +1,94 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/client/code/java/zws/space
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+DataSpaceBase.java
+file
+
+
+
+
+2008-07-11T20:46:28.250375Z
+128a5ef89ef11d05da65b93eb68f0b1d
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+filesystem
+dir
+
+DataSpace.java
+file
+
+
+
+
+2008-07-11T20:46:28.312875Z
+8b3e9484019f000a9663e986c3ac3e0a
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+DataSpaceProxy.java
+file
+
+
+
+
+2008-07-11T20:46:28.375375Z
+fb3b56f48b6f5a0e755c3c3f88507396
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+EventDiscovery.java
+file
+
+
+
+
+2008-07-11T20:46:28.437875Z
+5c7c5a1ed7aeb0ad556e498dfb60f28e
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+EventDiscovery_1.java
+file
+
+
+
+
+2008-07-11T20:46:28.484750Z
+02402cf35c0079288ae194606b791495
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+intralink
+dir
+

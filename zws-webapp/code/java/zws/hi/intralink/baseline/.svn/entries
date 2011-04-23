@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/java/zws/hi/intralink/baseline
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:00:53.791577Z
+5675
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+hiBaselineList.java
+file
+
+
+
+
+2008-07-11T22:03:52.469125Z
+8fbcb7d2a5d529581afa17b909f9c6d8
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+hiBaseline.java
+file
+
+
+
+
+2008-07-11T22:03:52.531625Z
+720c83a87d9956c10d11e524a8f93a90
+2008-02-29T17:00:53.791577Z
+5675
+pavan.toleti
+

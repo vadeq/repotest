@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/code/java/zws/logical
+END
+MetadataFieldEquals.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/logical/MetadataFieldEquals.java
+END
+ListLogicalOpBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/logical/ListLogicalOpBase.java
+END
+Not.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/logical/Not.java
+END
+And.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/logical/And.java
+END
+LogicalOpBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/logical/LogicalOpBase.java
+END
+ListLogicalOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/logical/ListLogicalOp.java
+END
+BinaryLogicalOpBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/logical/BinaryLogicalOpBase.java
+END
+LogicalOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/logical/LogicalOp.java
+END
+LogicException.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/logical/LogicException.java
+END
+BinaryLogicalOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/logical/BinaryLogicalOp.java
+END
+Nand.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/logical/Nand.java
+END
+Or.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/logical/Or.java
+END
+StringEquals.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/logical/StringEquals.java
+END
+UnaryLogicalOpBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/logical/UnaryLogicalOpBase.java
+END
+UnaryLogicalOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/logical/UnaryLogicalOp.java
+END
+Nor.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/logical/Nor.java
+END

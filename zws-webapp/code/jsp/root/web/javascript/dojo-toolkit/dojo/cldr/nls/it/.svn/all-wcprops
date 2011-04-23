@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/cldr/nls/it
+END
+number.js
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/cldr/nls/it/number.js
+END
+currency.js
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/cldr/nls/it/currency.js
+END
+gregorian.js
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/zws/!svn/ver/5774/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojo/cldr/nls/it/gregorian.js
+END

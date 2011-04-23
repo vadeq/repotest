@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/zws/!svn/ver/6405/trunk/zws/designstate/client/code/java/zws
+END
+Schema.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/zws/!svn/ver/6172/trunk/zws/designstate/client/code/java/zws/Schema.java
+END
+UploadPackage.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/zws/!svn/ver/558/trunk/zws/designstate/client/code/java/zws/UploadPackage.java
+END
+AgileAccess.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/AgileAccess.java
+END
+Recorder.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/zws/!svn/ver/4313/trunk/zws/designstate/client/code/java/zws/Recorder.java
+END
+PrinterAccess.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/PrinterAccess.java
+END
+DocumentConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/DocumentConverter.java
+END
+Alert.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/zws/!svn/ver/6088/trunk/zws/designstate/client/code/java/zws/Alert.java
+END
+DesignStateClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/DesignStateClient.java
+END
+HTTPUptimeMonitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/HTTPUptimeMonitor.java
+END
+DatasourceAccess.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/551/trunk/zws/designstate/client/code/java/zws/DatasourceAccess.java
+END
+Emailer.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/zws/!svn/ver/4534/trunk/zws/designstate/client/code/java/zws/Emailer.java
+END
+Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/Test.java
+END
+EventHandlingClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/EventHandlingClient.java
+END
+Version.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/zws/!svn/ver/6405/trunk/zws/designstate/client/code/java/zws/Version.java
+END
+Synchronizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/Synchronizer.java
+END
+Downloader.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/Downloader.java
+END
+IRecorderBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/zws/!svn/ver/551/trunk/zws/designstate/client/code/java/zws/IRecorderBO.java
+END
+IntralinkPersonalWorkspaceAccess.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/zws/!svn/ver/545/trunk/zws/designstate/client/code/java/zws/IntralinkPersonalWorkspaceAccess.java
+END
+DocumentAccess.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/DocumentAccess.java
+END
+Reporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/zws/!svn/ver/558/trunk/zws/designstate/client/code/java/zws/Reporter.java
+END
+RecorderSvcImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/RecorderSvcImpl.java
+END
+Replicator.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/Replicator.java
+END
+WebServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/WebServer.java
+END
+Server.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/zws/!svn/ver/5619/trunk/zws/designstate/client/code/java/zws/Server.java
+END
+ReplicationClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/ReplicationClient.java
+END
+TopologyClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/TopologyClient.java
+END
+IntralinkAccess.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/551/trunk/zws/designstate/client/code/java/zws/IntralinkAccess.java
+END
+ProcessorClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/558/trunk/zws/designstate/client/code/java/zws/ProcessorClient.java
+END
+folderize.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/folderize.java
+END
+RecorderBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/551/trunk/zws/designstate/client/code/java/zws/RecorderBO.java
+END
+RepTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/RepTest.java
+END
+StartReplication.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/StartReplication.java
+END
+IntralinkClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/IntralinkClient.java
+END

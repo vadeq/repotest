@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/ini/security
+END
+DummyClientTrustFile.jks
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/ini/security/DummyClientTrustFile.jks
+END
+sas.client.props
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/ini/security/sas.client.props
+END
+DummyClientKeyFile.jks
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/ini/security/DummyClientKeyFile.jks
+END
+wsjaas_client.conf
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/ini/security/wsjaas_client.conf
+END
+cad-dev.cer
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/ini/security/cad-dev.cer
+END

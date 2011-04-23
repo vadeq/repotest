@@ -1,0 +1,65 @@
+QxQueue TEst
+
+Test	Queues	status	Threads	Ramp-up	Loops	Instructions	Queued	result
+1	1	stoped	1	1	1000	6		6000	passed
+2	1	stoped	2	1	500	6		6000	passed
+3	1	stoped	5	1	200	6		6000	passed
+4	1	stoped	10	1	100	6		6000	passed
+5	1	stoped	20	1	50	6		6000	passed
+6	1	started	1	1	1	start		-1426	passed
+7	1	stopped	1	1	1	stop		-	passed
+8	1	stoped	50	1	20	6		6000	passed
+9	1	stoped	100	1	10	6		6000	Failed	4 queues werent posted
+10	1	stoped	150	1	10	6		6000	Failed	Test Interrupted. Serverside max(150) threads reached SEVERE error warning. Multiple errors (Address already in USe exce)
+11	1	stoped	150	15	10	6		6000	Failed
+12	1	stoped	100	15	10	6		6000	Passed
+13	4	stoped	25	4	10	6		6000	Passed
+14	4	started	25	4	10	6		6000	Passed
+12	1	started	1		1	start		-30000?	?
+
+
+1		4665
+2		6147
+3		6150
+4		6149
+10		6116
+20		6149
+
+
+TodO Functionality:
+Persist state of the queue
+OnDequeue: move to serialized item active-items directory (see zws.util.FileUtil)
+OnCompletion of QxOp, delete serialized item from active-items directory
+
+TodO reliability:
+Queue-Scan on startup
+  - init server
+    if already initialized, return
+    else
+      initialize Queues
+
+synchronized startup: (called from executeQx and transferQx)
+if already started up, exit
+else 
+  load xml configuartions
+  scan existing queue directory and call re-instate service for each queue-name
+
+
+QxQueueSerrvice:
+ - stop: queue-name
+ - start: queue-name
+ - add(enqueue): queue-name
+ - re-instate: queue-name
+    verify queue-name does not exist in hash map
+    if queue-name does exist in hashmap
+      cancel any existing threads running 
+      remove queue-name from hash map
+    then: //queue-name no longer exists in hashmap
+    construct a new queue-name in stopped state
+    read any active items
+    notify active items that were interupted (see zws.Alert.alert()) or notify()
+    re-instate queue
+      delete ACTIVE ITEMS (or requeue them into highest priority+1) configurable.
+      set Queue state to same as persisted stated
+      place re-instated queue into hashmap
+

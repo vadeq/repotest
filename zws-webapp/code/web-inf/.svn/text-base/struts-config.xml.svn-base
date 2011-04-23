@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.0//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_0.dtd">
+<struts-config>
+ <form-beans>
+
+  <!-- HTTP Services  -->
+  <form-bean name="svcFireEvent" type="zws.service.event.svcFireEvent"/>
+  <!-- add file upload service -->
+
+  <!-- DesignState 3.0  -->
+  <form-bean name="hiIEE" type="zws.hi.IEE.hiIEE"/>
+  <form-bean name="hiReport" type="zws.hi.report.hiReport"/>
+  <form-bean name="hiSearch" type="zws.hi.publish.hiSearch"/>
+  <form-bean name="hiPublish2Agile" type="zws.hi.intralink.agile.hiPublish2Agile"/>
+  <form-bean name="hiProcOnFly" type="zws.hi.intralink.proconfly.hiProcOnFly"/>
+  <form-bean name="hiPersonalWorkspace" type="zws.hi.intralink.workspace.hiPersonalWorkspace"/>
+  <form-bean name="hiCheckout" type="zws.hi.intralink.workspace.hiCheckout"/>
+  <form-bean name="hiIntralinkListener" type="zws.hi.intralink.listener.hiIntralinkListener"/>
+  <form-bean name="hiReplication" type="zws.hi.replication.hiReplication"/>
+  <form-bean name="hiOwnership" type="zws.hi.replication.ownership.hiOwnership"/>
+  <form-bean name="hiEventProcessor" type="zws.hi.event.processor.hiEventProcessor"/>
+  <form-bean name="hiEventService" type="zws.hi.event.service.hiEventService"/>
+
+  <form-bean name="hiProcessList" type="zws.hi.scheduler.hiProcessList" />
+  <form-bean name="hiChronJob" type="zws.hi.scheduler.hiChronJob" />
+  <form-bean name="hiChronJobList" type="zws.hi.scheduler.hiChronJobList" />
+
+  <form-bean name="hiReportDuplicates" type="zws.hi.intralink.duplicates.hiReportDuplicates"/>
+
+
+  <form-bean name="hiTopology" type="zws.hi.topology.hiTopology"/>
+  <form-bean name="hiAdministration" type="zws.hi.administration.hiAdministration"/>
+
+  <!-- DesignState 3.0  DEMO -->
+  <!-- DesignState 3.0  DEMO - Start Part -->
+  <form-bean name="hiCiscoStartPart" type="zws.hi.custom.cisco.hiCiscoStartPart"/>
+
+  <!-- DesignState 3.0  DEMO - I2A -->
+  <!--
+  <form-bean name="hiKLAIlinkMapping" type="zws.hi.demo.kla.hiKLAIlinkMapping"/>
+  <form-bean name="hiKLAExcludeList" type="zws.hi.demo.kla.hiKLAExcludeList"/>
+  <form-bean name="hiKLAPublish2Agile" type="zws.hi.demo.kla.hiKLAPublish2Agile"/>
+   -->
+
+  <!-- DesignState 3.0  DEMO - Cisco - Engineering Commit (EC)-->
+  <form-bean name="hiCiscoIlinkMapping" type="zws.hi.demo.cisco.ec.hiCiscoIlinkMapping"/>
+  <form-bean name="hiCiscoPublish2Agile" type="zws.hi.demo.cisco.ec.hiCiscoPublish2Agile"/>
+
+  <!-- DesignState 3.0  DEMO - I2A -->
+  <form-bean name="hiZWSAgileSetup" type="zws.hi.demo.zws.hiZWSAgileSetup"/>
+  <form-bean name="hiZWSAgileMapping" type="zws.hi.demo.zws.hiZWSAgileMapping"/>
+  <form-bean name="hiZWSPublish2Agile" type="zws.hi.demo.zws.hiZWSPublish2Agile"/>
+
+
+
+<!--Form bean defination for recorder list-->
+  <form-bean name="hiRecorderList" type="zws.hi.recorder.hiRecorderList"/>
+
+<!--Form bean defination for recorder list-->
+  <form-bean name="hiNamespaceList" type="zws.hi.recorder.hiNamespaceList"/>
+  <form-bean name="hiNameList" type="zws.hi.recorder.hiNameList"/>
+  <form-bean name="hiExecutionRecordList" type="zws.hi.recorder.hiExecutionRecordList"/>
+  <form-bean name="hiExecutionRecord" type="zws.hi.recorder.hiExecutionRecord"/>
+
+
+
+  <!--Form bean defination for publish list-->
+  <form-bean name="hiPublishQueList" type="zws.hi.publish.hiPublishQueList"/>
+
+  <!--Form bean defination for queue monitor-->
+  <form-bean name="hiQueueMonitor" type="zws.hi.queue.hiQueueMonitor"/>
+  <form-bean name="DataArchive" type="zws.hi.util.DataArchive"/>
+  <form-bean name="FileCleanup" type="zws.hi.util.FileCleanup"/>  
+  <form-bean name="TrimPublishLogs" type="zws.hi.util.TrimPublishLogs"/>
+  
+  <!--Form bean defination for sync log admin -->
+  <form-bean name="hiSyncAdmin" type="zws.hi.synchronizer.hiSyncAdmin"/>
+  
+  <!--Form bean defination for Encrypt Password admin -->
+  <form-bean name="hiEncryptPassword" type="zws.hi.security.hiEncryptPassword"/>
+  
+  <!-- DesignState 2.0  (need to be port) -->
+  <form-bean name="hiLogin" type="com.zws.hi.account.hiLogin"/>
+  <form-bean name="hiUser" type="com.zws.hi.account.hiUser"/>
+  <form-bean name="hiUserList" type="com.zws.hi.account.hiUserList"/>
+  <form-bean name="hiSystem" type="com.zws.hi.system.hiSystem"/>
+
+  <!-- Prototyping -->
+  <form-bean name="hiTreeview" type="zws.hi.prototype.treeview.hiTreeview"/>
+  <form-bean name="treeNodeForm" type="zws.hi.test.hiTreeNode"/>
+  <form-bean name="hiUpload" type="zws.hi.prototype.fileupload.Uploader"/>
+
+  <!-- ToDo  -->
+  <form-bean name="hiBaseline" type="zws.hi.intralink.baseline.hiBaseline"/>
+  <form-bean name="hiBaselineList" type="zws.hi.intralink.baseline.hiBaselineList"/>
+  <form-bean name="hiModelcheck" type="zws.hi.report.hiModelcheck"/>
+  <form-bean name="hiPromote" type="zws.hi.intralink.promote.hiPromote"/>
+  <form-bean name="hiSynchronizer" type="zws.hi.synchronizer.hiSynchronizerService"/>
+
+  <!-- Obsolete  -->
+
+ </form-beans>
+
+ <global-forwards>
+  <forward name="systemError" path="/system/error.jsp" redirect="true"/>
+  <forward name="login" path="/login.jsp" redirect="true"/>
+  <forward name="search" path="/report/index.do" redirect="true"/>
+  <forward name="promote" path="/promote/index.do" redirect="true"/>
+  <forward name="snapshot" path="/snapshot/index.do" redirect="true"/>
+  <forward name="cad-printer" path="/CADPrinter/index.do" redirect="true"/>
+  <forward name="publish-logs" path="/publish/retrieveque.do" redirect="true"/>
+  <forward name="publish-search" path="/publish/search.do?menuItem=0.1" redirect="true"/>
+  <forward name="publish-cisco" path="/publish/cisco.do?menuItem=0.1" redirect="true"/> 
+  <forward name="replication" path="to.do"  redirect="true"/>
+  <forward name="profile" path="/account/profile/index.do" redirect="true"/>
+  <forward name="account-management" path="/account/user/index.do" redirect="true"/>
+  <forward name="scheduler" path="/scheduler/index.do" redirect="true"/>
+  <forward name="cisco-publish-2-agile" path="/demo/agile/mappings.jsp" redirect="true"/>
+  <forward name="publish-2-agile" path="/i2a/mappings.do" redirect="true"/>
+
+  <forward name="start-part" path="/demo/start-part/index.jsp"/>
+  <forward name="ec-demo" path="/custom/cisco/ec/update.jsp" redirect="true"/>
+  <forward name="i2a-mappings" path="/demo/I2A/ilinkMapping/index.do"  redirect="true"/>
+
+
+
+ </global-forwards>
+
+ <action-mappings>
+
+  <!-- Login/out  -->
+  <action path="/login" input="/login.jsp"
+   name="hiLogin" scope="session" type="com.zws.hi.Controller" >
+   <forward name="ok"    path="/start.jsp" redirect="true"/>
+   <forward name="index" path="/login.jsp"/>
+   <forward name="error" path="/login.jsp"/>
+  </action>
+  <action path="/logout" input="/index.jsp"
+   name="hiLogin" scope="session" type="com.zws.hi.Controller" >
+   <forward name="ok"    path="/index.jsp"/>
+  </action>
+
+
+
+
+   <action path="/recorder/namespaces" input="/recorder/execution-record/namespaces.jsp"
+   name="hiExecutionRecordList" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/recorder/execution-record/namespaces.jsp"/>
+   <forward name="listNames" path="/recorder/execution-record/names.jsp"/>
+   <forward name="executionRecordList" path="/recorder/execution-record/list.jsp"/>
+   <forward name="viewExecutionRecord" path="/recorder/execution-record/viewnewLayout.jsp"/>
+  </action>
+
+
+
+  <!--New additions started on 26 march for publish que related UI-->
+
+
+
+  <action path="/publish/retrieveque" input="/publish/publishque.jsp"
+   name="hiPublishQueList" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/pen/publishqueue.jsp"/>
+  </action>
+
+  <action path="/queue/monitor" input="/queue/monitor.jsp"
+   name="hiQueueMonitor" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/queue/monitor.jsp"/>
+  </action>
+
+  <action path="/system/table_export" input="/system/table_export.jsp"
+   name="DataArchive" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/system/table_export.jsp"/>
+  </action>
+
+  <action path="/system/file_cleanup" input="/system/file_cleanup.jsp"
+   name="FileCleanup" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/system/file_cleanup.jsp"/>
+  </action>
+  
+  <action path="/system/purge_logs" input="/system/purge_logs.jsp"
+   name="TrimPublishLogs" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/system/purge_logs.jsp"/>
+  </action>
+  
+  <action path="/synchronization/sync" input="/synchronization/sync.jsp"
+   name="hiSyncAdmin" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/synchronization/sync.jsp"/>
+  </action> 
+
+    <action path="/password/encryptPassword" input="/password/password.jsp"
+   name="hiEncryptPassword" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/password/password.jsp"/>
+  </action> 
+  
+  <!-- Execution Record UI commented on 20 march
+   <action path="/recorder/namespaces" input="/recorder/execution-record/namespaces.jsp"
+   name="hiNamespaceList" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/recorder/execution-record/namespaces.jsp"/>
+   <forward name="list" path="/recorder/execution-record/namespaces.jsp"/>
+   <forward name="error" path="/recorder/execution-record/namespaces.jsp"/>
+   <forward name="choose" path="/recorder/execution-record/names.jsp"/>
+   <forward name="view" path="/recorder/execution-record/names.jsp"/>
+  </action>
+
+   <action path="/recorder/names" input="/recorder/execution-record/names.jsp"
+   name="hiNameList" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/recorder/execution-record/names.jsp"/>
+   <forward name="list" path="/recorder/execution-record/names.jsp"/>
+   <forward name="error" path="/recorder/execution-record/names.jsp"/>
+   <forward name="choose" path="/recorder/execution-record/list.jsp"/>
+  </action>
+
+
+  <action path="/recorder/list" input="/recorder/execution-record/list.jsp"
+   name="hiExecutionRecordList" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/recorder/execution-record/list.jsp"/>
+   <forward name="list" path="/recorder/execution-record/list.jsp"/>
+   <forward name="error" path="/recorder/execution-record/list.jsp"/>
+  </action>
+
+  <action path="/recorder/view" input="/recorder/execution-record/view.jsp"
+   name="hiExecutionRecord" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/recorder/execution-record/view.jsp"/>
+   <forward name="list" path="/recorder/execution-record/list.jsp"/>
+   <forward name="error" path="/recorder/execution-record/view.jsp"/>
+   <forward name="ok" path="/recorder/execution-record/view.jsp"/>
+   <forward name="viewExecutionRecord" path="/recorder/execution-record/view.jsp"/>
+  </action>
+
+
+  -->
+
+
+
+  <!-- Recorder Service UI old sample application-->
+
+  <!--
+   <action path="/recorder/index" input="/recorder/list.jsp"
+   name="hiRecorderList" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/recorder/list.jsp"/>
+   <forward name="list" path="/recorder/list.jsp"/>
+   <forward name="error" path="/recorder/errorlist.jsp"/>
+   <forward name="add" path="/recorder/add.jsp"/>
+  </action>
+
+
+
+
+  <action path="/recorder/retriverecorderdata" input="/recorder/list.jsp"
+   name="hiRecorderList" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/recorder/recorderdatainput.jsp"/>
+   <forward name="list" path="/recorder/recorderdatalist.jsp"/>
+   <forward name="error" path="/recorder/errorlist.jsp"/>
+   <forward name="add" path="/recorder/add.jsp"/>
+  </action>
+
+
+
+  <action path="/recorder/getNamespaces" input="/recorder/recorderdatainput.jsp"
+   name="hiRecorderList" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/recorder/namespaceList"/>
+   <forward name="namespaces" path="/recorder/namespaceList.jsp"/>
+   <forward name="error" path="/recorder/namespaceList.jsp"/>
+   <forward name="add" path="/recorder/namespaceList.jsp"/>
+  </action>
+
+
+
+
+
+  <action path="/recorder/names" input="/recorder/namespaceList.jsp"
+   name="hiRecorderList" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/recorder/view.jsp"/>
+   <forward name="view" path="/recorder/view.jsp"/>
+   <forward name="edit" path="/recorder/edit.jsp"/>
+   <forward name="error" path="/recorder/edit.jsp"/>
+   <forward name="viewExecutionRecord" path="/recorder/viewExecutionRecords.jsp"/>
+  </action>
+
+  -->
+
+
+
+  <!-- Service: Fire Event-->
+  <action path="/event-queue/fire" input="/event-queue/fire.jsp"
+   name="svcFireEvent" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/event/service/index.jsp"/>
+   <forward name="ok" path="/event/service/event-fired.jsp"/>
+   <forward name="error" path="/event/service/event-fired.jsp"/>
+  </action>
+
+  <!-- Account Profile -->
+  <action path="/account/profile/index" input="/account/profile/edit.jsp?ID=member"
+   name="hiUser" scope="request" type="com.zws.hi.Controller">
+   <forward name="index" path="/account/profile/view.jsp?ID=member"/>
+   <forward name="view" path="/account/profile/view.jsp?ID=member"/>
+   <forward name="edit" path="/account/profile/edit.jsp?ID=member"/>
+   <forward name="error" path="/account/profile/edit.jsp?ID=member"/>
+   <forward name="ok" path="/account/profile/view.jsp?ID=member"/>
+  </action>
+
+  <action path="/account/profile/changePassword" input="/account/profile/changePassword.jsp"
+   name="hiUser" scope="request" type="com.zws.hi.Controller">
+   <forward name="index" path="/account/profile/changePassword.jsp"/>
+   <forward name="ok" path="/account/profile/view.jsp"/>
+   <forward name="error" path="/account/profile/changePassword.jsp"/>
+  </action>
+
+  <!-- Account Managment -->
+  <action path="/account/user/index" input="/account/user/list.jsp"
+   name="hiUserList" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/account/user/list.jsp"/>
+   <forward name="list" path="/account/user/list.jsp"/>
+   <forward name="error" path="/account/user/list.jsp"/>
+   <forward name="add" path="/account/user/add.jsp"/>
+  </action>
+
+  <action path="/account/user/item" input="/account/user/edit.jsp"
+   name="hiUser" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/account/user/view.jsp"/>
+   <forward name="view" path="/account/user/view.jsp"/>
+   <forward name="edit" path="/account/user/edit.jsp"/>
+   <forward name="error" path="/account/user/edit.jsp"/>
+   <forward name="newPassword" path="/account/user/newPassword.jsp"/>
+   <forward name="ok" path="/account/user/view.jsp"/>
+  </action>
+
+  <action path="/account/user/add" input="/account/user/add.jsp"
+   name="hiUser" scope="session" type="com.zws.hi.Controller">
+   <forward name="add" path="/account/user/add.jsp" redirect="true"/>
+   <forward name="error" path="/account/user/add.jsp"/>
+   <forward name="ok" path="/account/user/index.do" redirect="true"/>
+  </action>
+
+  <action path="/account/user/newPassword" input="/account/user/newPassword.jsp"
+   name="hiUser" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/account/user/newPassword.jsp"/>
+   <forward name="ok" path="/account/user/item.do"/>
+   <forward name="error" path="/account/user/newPassword.jsp"/>
+  </action>
+
+  <!-- Scheduler -->
+  <action path="/scheduler/index" input="/scheduler/list.jsp" name="hiChronJobList" scope="request" type="com.zws.hi.Controller">
+   <forward name="list" path="/scheduler/list.jsp" />
+   <forward name="index" path="/scheduler/list.jsp" />
+   <forward name="ok" path="/scheduler/list.jsp" />
+  </action>
+  <action path="/scheduler/item" input="/scheduler/edit.jsp" name="hiChronJob" scope="request" type="com.zws.hi.Controller">
+   <forward name="edit" path="/scheduler/edit.jsp" />
+   <forward name="add" path="/scheduler/add.jsp" />
+  </action>
+   <action path="/scheduler/edit" input="/scheduler/edit.jsp" name="hiChronJob" scope="request" type="com.zws.hi.Controller">
+   <forward name="error" path="/scheduler/edit.jsp" />
+   <forward name="ok" path="/scheduler/index.do" redirect="true" />
+  </action>
+  <action path="/scheduler/add" input="/scheduler/add.jsp" name="hiChronJob" scope="request" type="com.zws.hi.Controller">
+   <forward name="error" path="/scheduler/add.jsp" />
+   <forward name="ok" path="/scheduler/index.do" redirect="true" />
+  </action>
+
+  <!-- Search -->
+  <action path="/report/index" input="/report/index.jsp"
+   name="hiReport" scope="request" type="com.zws.hi.Controller">
+   <forward name="index" path="/report/index.jsp"/>
+   <forward name="list" path="/report/index.jsp"/>
+   <forward name="view" path="/report/view.jsp"/>
+   <forward name="complete" path="/report/complete.jsp"/>
+  </action>
+
+  <action path="/publish/search" input="/pen/publishsearch-pen.jsp"
+   name="hiSearch" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/pen/publishsearch-pen.jsp"/>
+   <forward name="back" path="/pen/publishsearch-pen.jsp"/>
+   <forward name="error" path="/pen/publishsearch-pen.jsp"/>
+   <forward name="saved" path="/pen/define-missing-cpn.jsp"/>
+   <forward name="choose" path="/pen/publishsearch-pen.jsp"/>
+   <forward name="pick" path="/pen/publishsearch-pen.jsp"/>
+   <forward name="unpick" path="/pen/publishsearch-pen.jsp"/>
+   <forward name="ok" path="/pen/publishsearch-pen.jsp"/>
+   <forward name="complete" path="/pen/publishsearch-pen.jsp"/>
+  </action> 
+
+<action path="/publish/cisco" input="/pen/publishsearch-cisco2.jsp"
+   name="hiSearch" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/pen/publishsearch-cisco2.jsp"/>
+   <forward name="back" path="/pen/publishsearch-cisco2.jsp"/>
+   <forward name="error" path="/pen/publishsearch-cisco2.jsp"/>
+   <forward name="missing-cpn-detected" path="/pen/define-missing-cpn.jsp"/>
+   <forward name="saved" path="/pen/define-missing-cpn.jsp"/>
+   <forward name="choose" path="/pen/publishsearch-cisco2.jsp"/>
+   <forward name="pick" path="/pen/publishsearch-cisco2.jsp"/>
+   <forward name="unpick" path="/pen/publishsearch-cisco2.jsp"/>
+   <forward name="ok" path="/pen/publishsearch-cisco2.jsp"/>
+<!--
+   <forward name="complete" path="/publish/retrieveque.do" redirect="true"/>
+   <forward name="missing-cpn-published" path="/publish/retrieveque.do" redirect="true"/>
+-->
+   <forward name="complete" path="/pen/publishsearch-cisco2.jsp"/>
+   <forward name="missing-cpn-published" path="/pen/publishsearch-cisco2.jsp"/>
+  </action>
+
+  <!-- Replication-->
+  <action path="/replication/index" input="/replication/index.jsp"
+   name="hiReplication" scope="session" type="com.zws.hsi.Controller">
+   <forward name="ok" path="/replication/index.jsp"/>
+   <forward name="index" path="/replication/index.jsp"/>
+   <forward name="list" path="/replication/index.jsp"/>
+   <forward name="choose" path="/replication/index.jsp"/>
+   <forward name="pick" path="/replication/index.jsp"/>
+   <forward name="error" path="/replication/index.jsp"/>
+  </action>
+
+  <action path="/replication/report-duplicates/index" input="/replication/report-duplicates/index.jsp"
+   name="hiReportDuplicates" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/replication/report-duplicates/index.jsp"/>
+   <forward name="ok" path="/replication/report-duplicates/index.jsp"/>
+   <forward name="error" path="/replication/report-duplicates/index.jsp"/>
+  </action>
+
+  <!-- Ownership -->
+  <action path="/replication/ownership/index" input="/replication/ownership/index.jsp" name="hiOwnership" scope="session" type="com.zws.hi.Controller">
+   <forward name="ok" path="/replication/ownership/index.jsp"/>
+   <forward name="index" path="/replication/ownership/index.jsp"/>
+   <forward name="list" path="/replication/ownership/index.jsp"/>
+   <forward name="error" path="/replication/ownership/index.jsp"/>
+  </action>
+
+
+  <!-- CAD Printer +++ update hiInteractor to be generic-->
+  <action path="/CADPrinter/index" input="/CADPrinter/index.jsp"
+   name="hiProcOnFly" scope="session" type="com.zws.hi.Controller">
+   <forward name="ok" path="/CADPrinter/index.jsp"/>
+   <forward name="index" path="/CADPrinter/index.jsp"/>
+   <forward name="list" path="/CADPrinter/index.jsp"/>
+   <forward name="error" path="/CADPrinter/index.jsp"/>
+  </action>
+
+  <!-- Event Processor -->
+  <action path="/event/processor/index" input="/event/processor/index.jsp"
+   name="hiEventProcessor" scope="session" type="com.zws.hi.Controller">
+   <forward name="ok" path="/event/processor/index.jsp"/>
+   <forward name="index" path="/event/processor/index.jsp"/>
+   <forward name="list" path="/event/processor/index.jsp"/>
+   <forward name="choose" path="/event/processor/index.jsp"/>
+   <forward name="pick" path="/event/processor/index.jsp"/>
+   <forward name="error" path="/event/processor/index.jsp"/>
+  </action>
+
+  <!-- Event Service-->
+  <action path="/event/service/fire" input="/event/service/index.jsp"
+   name="hiEventService" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/event/service/index.jsp"/>
+   <forward name="event-ok" path="/event/service/event-fired.jsp"/>
+   <forward name="event-fired" path="/event/service/event-fired.jsp"/>
+   <forward name="event-error" path="/event/service/event-error.jsp"/>
+   <forward name="event-no-user" path="/event/service/event-no-user.jsp"/>
+   <forward name="event-bad-login" path="/event/service/event-bad-login.jsp"/>
+   <forward name="event-not-recognized" path="/event/service/event-not-recognized.jsp"/>
+   <forward name="event-handler-not-defined" path="/event/service/event-handler-not-defined.jsp"/>
+   <forward name="err-not-synchronized" path="/event/service/err-not-synchronized.jsp"/>
+   <forward name="err-not-up-to-date" path="/event/service/err-not-up-to-date.jsp"/>
+   <forward name="err-missing-required-attribute" path="/event/service/err-missing-required-attribute.jsp"/>
+  </action>
+
+  <!-- Intralink -->
+  <!-- Listener -->
+  <action path="/intralink/listener/index" input="/intralink/listener/index.jsp"
+   name="hiIntralinkListener" scope="session" type="com.zws.hi.Controller">
+   <forward name="ok" path="/intralink/listener/index.jsp"/>
+   <forward name="index" path="/intralink/listener/index.jsp"/>
+   <forward name="list" path="/intralink/listener/index.jsp"/>
+   <forward name="choose" path="/intralink/listener/index.jsp"/>
+   <forward name="pick" path="/intralink/listener/index.jsp"/>
+   <forward name="error" path="/intralink/listener/index.jsp"/>
+  </action>
+
+  <!-- Intralink Workspace -->
+  <action path="/intralink/workspace/index" input="/intralink/workspace/index.jsp"
+   name="hiPersonalWorkspace" scope="session" type="com.zws.hi.Controller">
+   <forward name="ok" path="/intralink/workspace/index.jsp"/>
+   <forward name="index" path="/intralink/workspace/index.jsp"/>
+   <forward name="list" path="/intralink/workspace/index.jsp"/>
+   <forward name="choose" path="/intralink/workspace/index.jsp"/>
+   <forward name="pick" path="/intralink/workspace/index.jsp"/>
+   <forward name="view-item" path="/intralink/workspace/view-item.jsp"/>
+   <forward name="edit-item" path="/intralink/workspace/edit-item.jsp"/>
+   <forward name="update-existing-binary" path="/intralink/workspace/update-binary.jsp"/>
+   <forward name="import-new-binary" path="/intralink/workspace/import-binary/upload-binary.jsp"/>
+   <forward name="error" path="/intralink/workspace/index.jsp"/>
+  </action>
+
+  <action path="/intralink/workspace/import" input="/intralink/workspace/import-binary/upload-binary.jsp"
+   name="hiPersonalWorkspace" scope="session" type="com.zws.hi.Controller">
+   <forward name="ok" path="/intralink/workspace/import-binary/name-binary.jsp"/>
+   <forward name="index" path="/intralink/workspace/import-binary/name-binary.jsp"/>
+   <forward name="cancel" path="/intralink/workspace/index.jsp"/>
+   <forward name="upload-new-binary" path="/intralink/workspace/import-binary/upload-binary.jsp"/>
+   <forward name="name-binary" path="/intralink/workspace/import-binary/name-binary.jsp"/>
+   <forward name="name-conflict" path="/intralink/workspace/import-binary/name-conflict.jsp"/>
+   <forward name="place-binary" path="/intralink/workspace/import-binary/place-binary.jsp"/>
+   <forward name="set-release" path="/intralink/workspace/import-binary/set-release.jsp"/>
+   <forward name="set-revision" path="/intralink/workspace/import-binary/set-revision.jsp"/>
+   <forward name="set-attributes" path="/intralink/workspace/import-binary/set-attributes.jsp"/>
+   <forward name="complete" path="/intralink/workspace/index.jsp"/>
+  </action>
+
+  <action path="/intralink/workspace/checkout" input="/intralink/workspace/checkout.jsp"
+   name="hiCheckout" scope="session" type="com.zws.hi.Controller">
+   <forward name="ok" path="/intralink/workspace/checkout.jsp"/>
+   <forward name="index" path="/intralink/workspace/checkout.jsp"/>
+   <forward name="list" path="/intralink/workspace/checkout.jsp"/>
+   <forward name="choose" path="/intralink/workspace/checkout.jsp"/>
+   <forward name="pick" path="/intralink/workspace/checkout.jsp"/>
+   <forward name="error" path="/intralink/workspace/checkout.jsp"/>
+   <forward name="back" path="/intralink/workspace/index.jsp"/>
+  </action>
+
+  <!-- Snapshot +++ update hiInteractor to be generic-->
+  <action path="/snapshot/index" input="/snapshot/index.jsp"
+   name="hiProcOnFly" scope="session" type="com.zws.hi.Controller">
+   <forward name="ok" path="/snapshot/index.jsp"/>
+   <forward name="index" path="/snapshot/index.jsp"/>
+   <forward name="list" path="/snapshot/index.jsp"/>
+   <forward name="error" path="/snapshot/index.jsp"/>
+  </action>
+
+  <!-- Snapshot +++ update hiInteractor to be generic-->
+  <action path="/promote/index" input="/promote/index.jsp"
+   name="hiProcOnFly" scope="session" type="com.zws.hi.Controller">
+   <forward name="ok" path="/promote/index.jsp"/>
+   <forward name="index" path="/promote/index.jsp"/>
+   <forward name="list" path="/promote/index.jsp"/>
+   <forward name="error" path="/promote/index.jsp"/>
+  </action>
+
+  <!-- DEMO-->
+  <!-- I2A -->
+
+
+  <action path="/i2a/setup" input="/demo/agile/setup.jsp"
+   name="hiZWSAgileSetup" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/demo/agile/setup.jsp"/>
+   <forward name="list" path="/demo/agile/setup.jsp"/>
+   <forward name="ok" path="/demo/agile/setup.jsp"/>
+   <forward name="error" path="/demo/agile/setup.jsp"/>
+  </action>
+
+  <action path="/i2a/mappings" input="/demo/agile/mappings.jsp"
+   name="hiZWSAgileMapping" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/demo/agile/mappings.jsp"/>
+   <forward name="list" path="/demo/agile/mappings.jsp"/>
+   <forward name="ok" path="/demo/agile/mappings.jsp"/>
+   <forward name="error" path="/demo/agile/mappings.jsp"/>
+  </action>
+
+  <action path="/i2a/publish" input="/demo/agile/publish.jsp"
+   name="hiZWSPublish2Agile" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/demo/agile/publish.jsp"/>
+   <forward name="wip" path="/demo/agile/publish.jsp"/>
+   <forward name="ok" path="/demo/agile/publish.jsp"/>
+   <forward name="list" path="/demo/agile/publish.jsp"/>
+   <forward name="pick" path="/demo/agile/publish.jsp"/>
+   <forward name="choose" path="/demo/agile/publish.jsp"/>
+   <forward name="eco" path="/demo/agile/promote.jsp"/>
+   <forward name="error" path="/demo/agile/publish.jsp"/>
+  </action>
+
+  <action path="/i2a/update" input="/demo/agile/update.jsp"
+   name="hiZWSPublish2Agile" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/demo/agile/update.jsp"/>
+   <forward name="wip" path="/demo/agile/update.jsp"/>
+   <forward name="ok" path="/demo/agile/update.jsp"/>
+   <forward name="list" path="/demo/agile/update.jsp"/>
+   <forward name="pick" path="/demo/agile/update.jsp"/>
+   <forward name="choose" path="/demo/agile/update.jsp"/>
+   <forward name="eco" path="/demo/agile/promote.jsp"/>
+   <forward name="error" path="/demo/agile/update.jsp"/>
+  </action>
+
+  <action path="/i2a/replace" input="/demo/agile/replace.jsp"
+   name="hiZWSPublish2Agile" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/demo/agile/replace.jsp"/>
+   <forward name="wip" path="/demo/agile/replace.jsp"/>
+   <forward name="ok" path="/demo/agile/replace.jsp"/>
+   <forward name="list" path="/demo/agile/replace.jsp"/>
+   <forward name="pick" path="/demo/agile/replace.jsp"/>
+   <forward name="choose" path="/demo/agile/replace.jsp"/>
+   <forward name="error" path="/demo/agile/replace.jsp"/>
+  </action>
+
+
+  <!-- DEMO-->
+  <!-- Start-Part -->
+  <action path="/demo/start-part/index" input="/demo/start-part/index.jsp"
+   name="hiCiscoStartPart" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/demo/start-part/index.jsp"/>
+   <forward name="list" path="/demo/start-part/index.jsp"/>
+   <forward name="ok" path="/demo/start-part/index.jsp"/>
+   <forward name="view" path="/demo/start-part/agile-part.jsp"/>
+   <forward name="error" path="/demo/start-part/index.jsp"/>
+   <forward name="agile-px-ok" path="/agile-px/px-ok.jsp"/>
+   <forward name="agile-px-error" path="/agile-px/px-error.jsp"/>
+   <forward name="agile-px-no-user" path="/agile-px/px-no-user.jsp"/>
+   <forward name="agile-px-bad-login" path="/agile-px/px-bad-login.jsp"/>
+   <forward name="agile-px-duplicate-name" path="/agile-px/px-duplicate-name.jsp"/>
+  </action>
+
+
+  <!-- Cisco Engineering Commit -->
+
+  <action path="/ec/mappings" input="/custom/cisco/ec/mappings.jsp"
+   name="hiCiscoIlinkMapping" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/custom/cisco/ec/mappings.jsp"/>
+   <forward name="list" path="/custom/cisco/ec/mappings.jsp"/>
+   <forward name="ok" path="/custom/cisco/ec/mappings.jsp"/>
+   <forward name="error" path="/custom/cisco/ec/mappings.jsp"/>
+  </action>
+
+  <action path="/ec/publish" input="/custom/cisco/ec/publish.jsp"
+   name="hiCiscoPublish2Agile" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/custom/cisco/ec/publish.jsp"/>
+   <forward name="wip" path="/custom/cisco/ec/publish.jsp"/>
+   <forward name="ok" path="/custom/cisco/ec/publish.jsp"/>
+   <forward name="list" path="/custom/cisco/ec/publish.jsp"/>
+   <forward name="pick" path="/custom/cisco/ec/publish.jsp"/>
+   <forward name="choose" path="/custom/cisco/ec/publish.jsp"/>
+   <forward name="eco" path="/custom/cisco/ec/promote.jsp"/>
+   <forward name="error" path="/custom/cisco/ec/publish.jsp"/>
+  </action>
+
+  <action path="/ec/update" input="/custom/cisco/ec/update.jsp"
+   name="hiCiscoPublish2Agile" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/custom/cisco/ec/update.jsp"/>
+   <forward name="wip" path="/custom/cisco/ec/update.jsp"/>
+   <forward name="ok" path="/custom/cisco/ec/update.jsp"/>
+   <forward name="list" path="/custom/cisco/ec/update.jsp"/>
+   <forward name="pick" path="/custom/cisco/ec/update.jsp"/>
+   <forward name="choose" path="/custom/cisco/ec/update.jsp"/>
+   <forward name="eco" path="/custom/cisco/ec/promote.jsp"/>
+   <forward name="error" path="/custom/cisco/ec/update.jsp"/>
+  </action>
+
+  <action path="/demo/I2A/replace" input="/custom/cisco/ec/replace.jsp"
+   name="hiKLAPublish2Agile" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/custom/cisco/ec/replace.jsp"/>
+   <forward name="wip" path="/custom/cisco/ec/replace.jsp"/>
+   <forward name="ok" path="/custom/cisco/ec/replace.jsp"/>
+   <forward name="list" path="/custom/cisco/ec/replace.jsp"/>
+   <forward name="pick" path="/custom/cisco/ec/replace.jsp"/>
+   <forward name="choose" path="/custom/cisco/ec/replace.jsp"/>
+   <forward name="error" path="/custom/cisco/ec/replace.jsp"/>
+  </action>
+
+  <!-- Publish to Agile -->
+
+  <action path="/agile/index" input="/agile/index.jsp"
+   name="hiPublish2Agile" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/agile/index.jsp"/>
+   <forward name="list" path="/agile/index.jsp"/>
+   <forward name="running" path="/agile/running.jsp"/>
+   <forward name="complete" path="/agile/complete.jsp"/>
+  </action>
+
+
+<!--
+  <action path="/demo/I2A/mappings" input="/demo/I2A/mappings.jsp"
+   name="hiKLAIlinkMapping" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/demo/I2A/mappings.jsp"/>
+   <forward name="list" path="/demo/I2A/mappings.jsp"/>
+   <forward name="ok" path="/demo/I2A/mappings.jsp"/>
+   <forward name="error" path="/demo/I2A/mappings.jsp"/>
+  </action>
+-->
+  <!-- KLA -->
+<!--
+  <action path="/demo/I2A/publish" input="/demo/I2A/publish.jsp"
+   name="hiKLAPublish2Agile" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/demo/I2A/publish.jsp"/>
+   <forward name="wip" path="/demo/I2A/publish.jsp"/>
+   <forward name="ok" path="/demo/I2A/publish.jsp"/>
+   <forward name="list" path="/demo/I2A/publish.jsp"/>
+   <forward name="pick" path="/demo/I2A/publish.jsp"/>
+   <forward name="choose" path="/demo/I2A/publish.jsp"/>
+   <forward name="eco" path="/demo/I2A/promote.jsp"/>
+   <forward name="error" path="/demo/I2A/publish.jsp"/>
+  </action>
+
+
+  <action path="/demo/I2A/update" input="/demo/I2A/update.jsp"
+   name="hiKLAPublish2Agile" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/demo/I2A/update.jsp"/>
+   <forward name="wip" path="/demo/I2A/update.jsp"/>
+   <forward name="ok" path="/demo/I2A/update.jsp"/>
+   <forward name="list" path="/demo/I2A/update.jsp"/>
+   <forward name="pick" path="/demo/I2A/update.jsp"/>
+   <forward name="choose" path="/demo/I2A/update.jsp"/>
+   <forward name="eco" path="/demo/I2A/promote.jsp"/>
+   <forward name="error" path="/demo/I2A/update.jsp"/>
+  </action>
+
+  <action path="/demo/I2A/replace" input="/demo/I2A/replace.jsp"
+   name="hiKLAPublish2Agile" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/demo/I2A/replace.jsp"/>
+   <forward name="wip" path="/demo/I2A/replace.jsp"/>
+   <forward name="ok" path="/demo/I2A/replace.jsp"/>
+   <forward name="list" path="/demo/I2A/replace.jsp"/>
+   <forward name="pick" path="/demo/I2A/replace.jsp"/>
+   <forward name="choose" path="/demo/I2A/replace.jsp"/>
+   <forward name="error" path="/demo/I2A/replace.jsp"/>
+  </action>
+
+  <action path="/demo/I2A/promote" input="/demo/I2A/promote.jsp"
+   name="hiKLAPublish2Agile" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/demo/I2A/promote.jsp"/>
+   <forward name="eco" path="/demo/I2A/promote.jsp"/>
+   <forward name="ok" path="/demo/I2A/promote.jsp"/>
+   <forward name="error" path="/demo/I2A/promote.jsp"/>
+   <forward name="pick" path="/demo/I2A/promote.jsp"/>
+   <forward name="choose" path="/demo/I2A/promote.jsp"/>
+   <forward name="list" path="/demo/I2A/promote-eco-add.jsp"/>
+   <forward name="add-changes" path="/demo/I2A/promote-eco-add.jsp"/>
+  </action>
+
+  <action path="/demo/I2A/promote-eco-add" input="/demo/I2A/promote-eco-add.jsp"
+   name="hiKLAPublish2Agile" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/demo/I2A/promote-eco-add.jsp"/>
+   <forward name="eco" path="/demo/I2A/promote-eco-add.jsp"/>
+   <forward name="ok" path="/demo/I2A/promote-eco-add.jsp"/>
+   <forward name="error" path="/demo/I2A/promote-eco-add.jsp"/>
+   <forward name="pick" path="/demo/I2A/promote-eco-add.jsp"/>
+   <forward name="choose" path="/demo/I2A/promote-eco-add.jsp"/>
+   <forward name="list" path="/demo/I2A/promote-eco-add.jsp"/>
+   <forward name="add-changes" path="/demo/I2A/promote-eco-add.jsp"/>
+  </action>
+
+  <action path="/demo/I2A/ilinkMapping/index" input="/demo/I2A/ilinkMapping/index.jsp"
+   name="hiKLAIlinkMapping" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/demo/I2A/ilinkMapping/index.jsp"/>
+   <forward name="list" path="/demo/I2A/ilinkMapping/index.jsp"/>
+   <forward name="ok" path="/demo/I2A/ilinkMapping/index.jsp"/>
+   <forward name="error" path="/demo/I2A/ilinkMapping/index.jsp"/>
+  </action>
+
+  <action path="/demo/I2A/excludeList/index" input="/demo/I2A/excludeList/index.jsp"
+   name="hiKLAExcludeList" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/demo/I2A/excludeList/index.jsp"/>
+   <forward name="list" path="/demo/I2A/excludeList/index.jsp"/>
+   <forward name="ok" path="/demo/I2A/excludeList/index.jsp"/>
+   <forward name="error" path="/demo/I2A/excludeList/index.jsp"/>
+  </action>
+
+  <action path="/demo/I2A/publish/index" input="/demo/I2A/publish/index.jsp"
+   name="hiKLAPublish2Agile" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/demo/I2A/publish/index.jsp"/>
+   <forward name="eco" path="/demo/I2A/eco/index.jsp"/>
+   <forward name="wip" path="/demo/I2A/publish/publish.jsp"/>
+   <forward name="ok" path="/demo/I2A/publish/index.jsp"/>
+   <forward name="error" path="/demo/I2A/publish/index.jsp"/>
+  </action>
+
+  <action path="/demo/I2A/publish/publish" input="/demo/I2A/publish/publish.jsp"
+   name="hiKLAPublish2Agile" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/demo/I2A/publish/publish.jsp"/>
+   <forward name="eco" path="/demo/I2A/eco/index.jsp"/>
+   <forward name="wip" path="/demo/I2A/publish/publish.jsp"/>
+   <forward name="list" path="/demo/I2A/publish/publish.jsp"/>
+   <forward name="ok" path="/demo/I2A/publish/publish.jsp"/>
+   <forward name="error" path="/demo/I2A/publish/publish.jsp"/>
+  </action>
+
+  <action path="/demo/I2A/eco/index" input="/demo/I2A/eco/index.jsp"
+   name="hiKLAPublish2Agile" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/demo/I2A/eco/index.jsp"/>
+   <forward name="eco" path="/demo/I2A/eco/index.jsp"/>
+   <forward name="wip" path="/demo/I2A/publish/publish.jsp"/>
+   <forward name="ok" path="/demo/I2A/eco/index.jsp"/>
+   <forward name="error" path="/demo/I2A/eco/index.jsp"/>
+   <forward name="pick" path="/demo/I2A/eco/index.jsp"/>
+   <forward name="choose" path="/demo/I2A/eco/index.jsp"/>
+   <forward name="list" path="/demo/I2A/eco/add-changes.jsp"/>
+   <forward name="add-changes" path="/demo/I2A/eco/add-changes.jsp"/>
+  </action>
+  <action path="/demo/I2A/eco/add-changes" input="/demo/I2A/eco/add-changes.jsp"
+   name="hiKLAPublish2Agile" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/demo/I2A/eco/add-changes.jsp"/>
+   <forward name="eco" path="/demo/I2A/eco/index.jsp"/>
+   <forward name="wip" path="/demo/I2A/publish/publish.jsp"/>
+   <forward name="ok" path="/demo/I2A/eco/add-changes.jsp"/>
+   <forward name="error" path="/demo/I2A/eco/add-changes.jsp"/>
+   <forward name="pick" path="/demo/I2A/eco/add-changes.jsp"/>
+   <forward name="choose" path="/demo/I2A/eco/add-changes.jsp"/>
+   <forward name="list" path="/demo/I2A/eco/add-changes.jsp"/>
+   <forward name="add-changes" path="/demo/I2A/eco/add-changes.jsp"/>
+  </action>
+-->
+
+
+
+  <!-- PROTOTYPING -->
+
+  <!-- FileUpload -->
+  <action path="/prototype/file-upload/index"
+   name="hiUpload" scope="session" type="com.zws.hi.Controller"
+   validate="true" input="/prototype/file-upload/index.jsp">
+   <forward name="ok" path="/prototype/file-upload/index.jsp"/>
+   <forward name="error" path="/prototype/file-upload/index.jsp"/>
+  </action>
+
+  <!-- Topology -->
+  <action path="/topology/index" input="/topology/index.jsp"
+   name="hiTopology" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/topology/index.jsp"/>
+   <forward name="ok" path="/topology/index.jsp"/>
+   <forward name="error" path="/topology/index.jsp"/>
+  </action>
+  <!-- Administration -->
+  <action path="/administration/index" input="/administration/index.jsp"
+   name="hiAdministration" scope="request" type="com.zws.hi.Controller">
+   <forward name="index" path="/administration/index.jsp"/>
+   <forward name="list" path="/administration/index.jsp"/>
+   <forward name="error" path="/administration/index.jsp"/>
+   <forward name="ok" path="/administration/index.jsp"/>
+  </action>
+  <!-- Synchronization Service -->
+  <action path="/synchronizer/index" input="/synchronizer/index.jsp"
+   name="hiSynchronizer" scope="request" type="com.zws.hi.Controller">
+   <forward name="index" path="/synchronizer/index.jsp"/>
+   <forward name="list" path="/synchronizer/index.jsp"/>
+   <forward name="error" path="/synchronizer/index.jsp"/>
+   <forward name="ok" path="/synchronizer/index.jsp"/>
+  </action>
+
+    <!-- Synchronization Service -->
+  <action path="/password/index" input="/password/index.jsp"
+   name="hiEncryptPassword" scope="request" type="com.zws.hi.Controller">
+   <forward name="index" path="/password/index.jsp"/>
+   <forward name="list" path="/password/index.jsp"/>
+   <forward name="error" path="/password/index.jsp"/>
+   <forward name="ok" path="/password/index.jsp"/>
+  </action>
+
+  <!-- TEST ACTIONS  -->
+  <!-- TREEVIEW -->
+  <action path="/treeview" input="/prototype/treeview/index.jsp"
+   name="hiTreeview" scope="request" type="com.zws.hi.Controller">
+   <forward name="index" path="/prototype/treeview/index.jsp"/>
+   <forward name="ok" path="/prototype/treeview/index.jsp"/>
+  </action>
+  <action path="/test/view" input="/test/view.jsp"
+   name="treeNodeForm" scope="session" type="com.zws.hi.Controller">
+  </action>
+
+  <!-- TODO  -->
+  <action path="/modelcheck/index" input="/modulecheck/index.jsp"
+   name="hiPromote" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/modelcheck/index.jsp"/>
+   <forward name="list" path="/modelcheck/index.jsp"/>
+   <forward name="running" path="/modelcheck/running.jsp"/>
+   <forward name="complete" path="/modelcheck/complete.jsp"/>
+  </action>
+  <!-- Bill Report -->
+  <action path="/report/bill" input="/report/index.jsp"
+   name="hiReport" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/report/bill.jsp"/>
+   <forward name="list" path="/report/index.jsp"/>
+  </action>
+  <!-- Browse interface  -->
+  <action path="/browse/index" input="/browse/index.jsp"
+   name="hiReport" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/browse/index.jsp"/>
+   <forward name="list" path="/browse/index.jsp"/>
+  </action>
+  <!-- Intralink Baselines -->
+  <action path="/intralink/baseline/index" input="/intralink/baseline/list.jsp"
+   name="hiBaselineList" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/intralink/baseline/list.jsp"/>
+   <forward name="choose" path="/intralink/baseline/list.jsp"/>
+   <forward name="list" path="/intralink/baseline/list.jsp"/>
+   <forward name="ok" path="/intralink/baseline/list.jsp"/>
+   <forward name="add" path="/intralink/baseline/add.do" redirect="true"/>
+   <forward name="edit" path="/intralink/baseline/edit.do" redirect="true"/>
+  </action>
+
+  <action path="/intralink/baseline/edit" input="/intralink/baseline/edit.jsp"
+   name="hiBaseline" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/intralink/baseline/edit.jsp"/>
+   <forward name="list" path="/intralink/baseline/index.do" redirect="true"/>
+   <forward name="choose" path="/intralink/baseline/edit.jsp"/>
+   <forward name="pick" path="/intralink/baseline/edit.jsp"/>
+   <forward name="unpick" path="/intralink/baseline/edit.jsp"/>
+   <forward name="ok" path="/intralink/baseline/edit.jsp"/>
+   <forward name="error" path="/intralink/baseline/edit.jsp"/>
+   <forward name="saved" path="/intralink/baseline/index.do" redirect="true"/>
+   <forward name="cancel" path="/intralink/baseline/list.jsp"/>
+  </action>
+  <action path="/intralink/baseline/add" input="/intralink/baseline/add.jsp"
+   name="hiBaseline" scope="session" type="com.zws.hi.Controller">
+   <forward name="index" path="/intralink/baseline/add.jsp"/>
+   <forward name="edit" path="/intralink/baseline/edit.jsp"/>
+   <forward name="list" path="/intralink/baseline/edit.jsp"/>
+   <forward name="choose" path="/intralink/baseline/edit.jsp"/>
+   <forward name="pick" path="/intralink/baseline/edit.jsp"/>
+   <forward name="unpick" path="/intralink/baseline/edit.jsp"/>
+   <forward name="error" path="/intralink/baseline/add.jsp"/>
+   <forward name="ok" path="/intralink/baseline/edit.jsp"/>
+   <forward name="cancel" path="/intralink/baseline/list.jsp"/>
+  </action>
+
+  <!-- Obsolete -->
+  <!-- PROCESSING -->
+  <action path="/process/index" input="/process/index.jsp"
+   name="hiProcessList" scope="request" type="com.zws.hi.Controller">
+   <forward name="index" path="/process/index.jsp"/>
+   <forward name="list" path="/process/index.jsp"/>
+   <forward name="ok" path="/process/index.jsp"/>
+   <forward name="error" path="/process/index.jsp"/>
+  </action>
+  <action path="/procOnFly/monitor" input="/procOnFly/queue-monitor.jsp"
+   name="hiProcOnFly" scope="session" type="com.zws.hi.Controller">
+   <forward name="ok" path="/procOnFly/queue-monitor.jsp"/>
+   <forward name="index" path="/procOnFly/queue-monitor.jsp"/>
+   <forward name="list" path="/procOnFly/queue-monitor.jsp"/>
+   <forward name="error" path="/procOnFly/queue-monitor.jsp"/>
+  </action>
+
+ </action-mappings>
+
+<!--
+    <data-source
+      key="Tejas"
+      autoCommit="false"
+      description="SQL Server"
+      driverClass="com.microsoft.jdbc.sqlserver.SQLServerDriver"
+      maxCount="4"
+      minCount="2"
+      user="sa"
+      password="sa"
+      url="jdbc:microsoft:sqlserver//localhost:1433;DatabaseName=tejas"/>
+
+      <data-source
+      key="docViewerss"
+      autoCommit="false"
+      description="MySQL"
+      driverClass="org.gjt.mm.mysql.Driver"
+      maxCount="4"
+      minCount="2"
+      url="jdbc:mysql://localhost:3306/docViewer"/>
+
+    <data-source
+      autoCommit="false"
+      description="Example Data Source Configuration"
+      driverClass="org.postgresql.Driver"
+      maxCount="4"
+      minCount="2"
+      password="mypassword"
+      url="jdbc:postgresql://localhost/mydatabase"
+      user="myusername"/>
+-->
+
+</struts-config>

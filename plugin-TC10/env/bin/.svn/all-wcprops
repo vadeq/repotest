@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/zws/!svn/ver/5294/trunk/zws/plugin/repository/TC10/plugin-TC10/env/bin
+END
+find.bat
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/zws/!svn/ver/3248/trunk/zws/plugin/repository/TC10/plugin-TC10/env/bin/find.bat
+END
+LOCAL_IMAN_ENV_TEMPLATE.bat
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zws/!svn/ver/3413/trunk/zws/plugin/repository/TC10/plugin-TC10/env/bin/LOCAL_IMAN_ENV_TEMPLATE.bat
+END
+TC10QxService.bat
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/zws/!svn/ver/3413/trunk/zws/plugin/repository/TC10/plugin-TC10/env/bin/TC10QxService.bat
+END
+simulate-PEN.bat
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/3016/trunk/zws/plugin/repository/TC10/plugin-TC10/env/bin/simulate-PEN.bat
+END
+search.bat
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/3248/trunk/zws/plugin/repository/TC10/plugin-TC10/env/bin/search.bat
+END
+download.bat
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/3248/trunk/zws/plugin/repository/TC10/plugin-TC10/env/bin/download.bat
+END
+reportBOM.bat
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/3248/trunk/zws/plugin/repository/TC10/plugin-TC10/env/bin/reportBOM.bat
+END

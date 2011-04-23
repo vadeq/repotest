@@ -1,0 +1,88 @@
+8
+
+dir
+6400
+http://build.zerowait-state.com/svn/zws/trunk/zws/build/dep/agile/EC1.3.1
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-04-29T16:38:20.819720Z
+6142
+arbind.thakur
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+ini
+dir
+
+tools
+dir
+
+samples
+dir
+
+setPAMEnv.cmd
+file
+
+
+
+
+2008-07-11T17:16:15.187875Z
+1d8ef01d109093d0a2dd52dd1cda55d1
+2008-04-29T16:38:20.819720Z
+6142
+arbind.thakur
+
+dumpClasses.cmd
+file
+
+
+
+
+2008-07-11T17:16:15.312875Z
+2db902f6928db9a38a7b03d67b70959b
+2008-04-29T16:38:20.819720Z
+6142
+arbind.thakur
+
+lib
+dir
+
+pam-build.xml
+file
+
+
+
+
+2008-07-11T17:16:15.437875Z
+681740941f5a4cd0fccdcd7c6b2a58fb
+2008-04-29T16:38:20.819720Z
+6142
+arbind.thakur
+
+generateMapFile.cmd
+file
+
+
+
+
+2008-07-11T17:16:15.562875Z
+e20da86e20d3a01b95352799e4dd5bd6
+2008-04-29T16:38:20.819720Z
+6142
+arbind.thakur
+

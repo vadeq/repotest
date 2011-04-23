@@ -1,0 +1,12 @@
+<instructions>
+  <DesignState-config ignore="true"/>
+  <DesignState-nodes ignore="true"/>
+
+  <node instance-of="zws.topology.NodeBase" static-method="register" class="zws.service.topology.TopologySvc" >
+    <number type="long" required="true"/>
+    <host-name/>
+    <ip-address property="iPAddress"/>
+    <port type="long" default="1099"/>
+  </node>
+
+</instructions>

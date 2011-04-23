@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/event/plugin-queue-event/build
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:23:52.784963Z
+5328
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+title.build
+file
+
+
+
+
+2008-07-11T17:23:33.859750Z
+96f05dc3794a68a99bfbeff0c0a8ae18
+2007-10-26T01:02:26.575220Z
+3706
+pavan.toleti
+
+classpath.build
+file
+
+
+
+
+2008-07-11T17:23:33.906625Z
+39e888bbdf8b218cf030ba9b8f0b2f6b
+2007-11-20T16:48:29.695611Z
+4232
+pavan.toleti
+

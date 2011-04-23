@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/6294/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/com/agile/sdo/cif
+END
+AgileWSXStructureSvc.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/zws/!svn/ver/6266/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/com/agile/sdo/cif/AgileWSXStructureSvc.java
+END
+CifClientUtils.javaold
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/zws/!svn/ver/2740/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/com/agile/sdo/cif/CifClientUtils.javaold
+END
+CifClientSvc.java-workin
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/zws/!svn/ver/3276/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/com/agile/sdo/cif/CifClientSvc.java-workin
+END
+AgileWSXSearchSvc.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/zws/!svn/ver/5669/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/com/agile/sdo/cif/AgileWSXSearchSvc.java
+END
+AgileWSXSvcBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/zws/!svn/ver/6266/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/com/agile/sdo/cif/AgileWSXSvcBase.java
+END
+AgileWSXItemSvc.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/zws/!svn/ver/6294/trunk/zws/plugin/repository/agile/plugin-agile-wsx/code/java/com/agile/sdo/cif/AgileWSXItemSvc.java
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/zws/!svn/ver/5462/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/mappings
+END
+ProjectMapping_ZWS.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/zws/!svn/ver/5461/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/mappings/ProjectMapping_ZWS.xml
+END
+mastermapping.txt
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/zws/!svn/ver/5462/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/mappings/mastermapping.txt
+END
+ProjectMapping_ZWSLIB.xml
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/zws/!svn/ver/5461/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/mappings/ProjectMapping_ZWSLIB.xml
+END
+ProjectMapping_ZWSTC.xml
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/zws/!svn/ver/5461/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/mappings/ProjectMapping_ZWSTC.xml
+END

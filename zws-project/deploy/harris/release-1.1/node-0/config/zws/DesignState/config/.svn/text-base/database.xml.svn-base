@@ -1,0 +1,7 @@
+<DesignState-config>
+ <databases>
+  <oracle name="zws-synch-db" url="jdbc:oracle:thin:@HOST:SID" username="USER" password="PWD" />
+	<oracle name="zws-recorder-db" url="jdbc:oracle:thin:@HOST:1521:SID" username="USER" password="PWD"/>
+	<oracle name="DesignState" url="jdbc:oracle:thin:@HOST:1521:SID" username="USER" password="PWD"/>    
+ </databases>
+</DesignState-config>

@@ -1,0 +1,55 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/qx-service/qx-web-service/code/java/zws/qx
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-05-08T19:38:31.038151Z
+6222
+rmccabe
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+service
+dir
+
+QxWebService.java
+file
+
+
+
+
+2008-07-11T20:44:02.469125Z
+cffdf007e8e68a46fbc8e3281a3dad95
+2008-05-08T19:38:31.038151Z
+6222
+rmccabe
+
+QxAxis2WebService.java
+file
+
+
+
+
+2008-07-11T20:44:02.703500Z
+8fcab7b9f59f684cc4c500c0bdef7625
+2008-05-08T19:38:31.038151Z
+6222
+rmccabe
+

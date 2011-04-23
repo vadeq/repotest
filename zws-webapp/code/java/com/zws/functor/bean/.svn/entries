@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/java/com/zws/functor/bean
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:19:54.379681Z
+5307
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+PropertyGetter.java
+file
+
+
+
+
+2008-07-11T22:04:25.984750Z
+f05515238b248591ac0a413cc3722927
+2007-12-02T06:38:30.568647Z
+4455
+arbind.thakur
+
+PropertySetter.java
+file
+
+
+
+
+2008-07-11T22:04:26.078500Z
+ca7f2781326daf692ff76b381515da78
+2007-12-02T05:45:26.953916Z
+4445
+arbind.thakur
+

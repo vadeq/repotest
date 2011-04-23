@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/storage/tests/resources
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+testXML.xml
+file
+
+
+
+
+2008-07-11T22:08:40.266000Z
+c9628f38e33086980fc2a8bc6986b4a4
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+testBook.txt
+file
+
+
+
+
+2008-07-11T22:08:40.359750Z
+51d2c0e549646ab8f519d6221633760d
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+

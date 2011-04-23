@@ -1,0 +1,148 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/qx-service/qx/code/java/zws/qx
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-05-23T17:21:19.795305Z
+6270
+ptoleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+test
+dir
+
+xml
+dir
+
+QxPoet.java
+file
+
+
+
+
+2008-07-11T20:42:23.609750Z
+d2cbe6a24ca4186674e4c3d21aec4247
+2007-06-03T02:52:26.230984Z
+451
+cruise
+
+event
+dir
+
+QxInvoker.java
+file
+
+
+
+
+2008-07-11T20:42:23.672250Z
+d4fdab029ce942e3bacfbff4fb8a6f4e
+2007-06-03T02:52:26.230984Z
+451
+cruise
+
+program
+dir
+
+QxOp.java
+file
+
+
+
+
+2008-07-11T20:42:23.734750Z
+c957b81b9e70a865afcaaab712df35a8
+2008-02-29T17:08:31.188091Z
+5718
+pavan.toleti
+
+Qx.java
+file
+
+
+
+
+2008-07-11T20:42:23.781625Z
+b4edec4570283a624c23529f28d73b36
+2008-05-08T19:37:52.042729Z
+6220
+rmccabe
+
+QxTransferBase.java
+file
+
+
+
+
+2008-07-11T20:42:23.844125Z
+983a8cc7234735c696001716beffab7e
+2007-06-03T02:52:26.230984Z
+451
+cruise
+
+QxService.java
+file
+
+
+
+
+2008-07-11T20:42:23.891000Z
+0ba33643c301788a7a4527d16734b22b
+2008-02-29T17:08:31.188091Z
+5718
+pavan.toleti
+
+QxContext.java
+file
+
+
+
+
+2008-07-11T20:42:23.937875Z
+70569e845a3bb833b500cf4307d396da
+2008-05-23T17:21:19.795305Z
+6270
+ptoleti
+
+QxContextTest.java
+file
+
+
+
+
+2008-07-11T20:42:24.000375Z
+934700306423ae2e92e41ff88a123b8a
+2008-02-29T17:08:31.188091Z
+5718
+pavan.toleti
+
+QxTransfer.java
+file
+
+
+
+
+2008-07-11T20:42:24.047250Z
+8b0306fba20343980f65b6990fe024eb
+2007-06-03T02:52:26.230984Z
+451
+cruise
+

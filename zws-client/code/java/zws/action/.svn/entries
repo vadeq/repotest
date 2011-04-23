@@ -1,0 +1,115 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/client/code/java/zws/action
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+metadata
+dir
+
+transformer
+dir
+
+context
+dir
+
+ActionListBase.java
+file
+
+
+
+
+2008-07-11T20:46:59.016000Z
+378a75c0245cda0d8d7e61ffb239c280
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+condition
+dir
+
+converter
+dir
+
+ActionBase.java
+file
+
+
+
+
+2008-07-11T20:46:59.078500Z
+97d6f3ec89b5d96844e8f9409ca5d8c9
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+ActionList.java
+file
+
+
+
+
+2008-07-11T20:46:59.187875Z
+5dba072e81ce9477f353a84cd807e8c8
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+DummyAction.java
+file
+
+
+
+
+2008-07-11T20:46:59.250375Z
+334e2a5e037155a4dd205c89e0588b7d
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+datasource
+dir
+
+partner
+dir
+
+util
+dir
+
+Action.java
+file
+
+
+
+
+2008-07-11T20:46:59.312875Z
+41da3eb2add24ddd0828b07379a0f353
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+document
+dir
+

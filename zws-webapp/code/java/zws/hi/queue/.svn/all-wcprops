@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/zws/!svn/ver/6110/trunk/zws/designstate/webapp/code/java/zws/hi/queue
+END
+QueueHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5949/trunk/zws/designstate/webapp/code/java/zws/hi/queue/QueueHandler.java
+END
+MonitorPluginParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/zws/!svn/ver/5767/trunk/zws/designstate/webapp/code/java/zws/hi/queue/MonitorPluginParser.java
+END
+MonitoredQueueItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/5949/trunk/zws/designstate/webapp/code/java/zws/hi/queue/MonitoredQueueItem.java
+END
+MonitoredQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/5767/trunk/zws/designstate/webapp/code/java/zws/hi/queue/MonitoredQueue.java
+END
+hiQueueMonitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/6110/trunk/zws/designstate/webapp/code/java/zws/hi/queue/hiQueueMonitor.java
+END

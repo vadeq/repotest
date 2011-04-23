@@ -1,0 +1,187 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/zws-project/deploy/harris/stage/node-0/config/zws/DesignState/config-old
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-03-24T18:59:31.258904Z
+5883
+arbind.thakur
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+pen-policy
+dir
+
+web-system-property.xml
+file
+
+
+
+
+2008-07-11T20:45:02.625375Z
+7480c60cc491b49474156c3c7ab7dad4
+2008-02-14T23:42:27.067972Z
+5460
+pavan.toleti
+
+services.xml
+file
+
+
+
+
+2008-07-11T20:45:02.687875Z
+7a1a6b5cd29aadaffa996edf071b11db
+2008-02-11T16:36:09.356099Z
+5445
+rmccabe
+
+qx-queue2.xml
+file
+
+
+
+
+2008-07-11T20:45:02.750375Z
+10f5361807db2387f56cc569f1c962e8
+2008-01-07T18:12:12.851477Z
+5110
+eankutse
+
+message-constants
+dir
+
+web-node.xml
+file
+
+
+
+
+2008-07-11T20:45:02.797250Z
+99cebe73ba2839fcc7c729224716161b
+2007-07-25T19:31:54.578958Z
+2638
+arbind.thakur
+
+panel-bar.xml
+file
+
+
+
+
+2008-07-11T20:45:02.859750Z
+18562d6ac1140084c07b3b914dd23aa6
+2008-03-07T18:00:13.159931Z
+5776
+rmccabe
+
+chrysalis
+dir
+
+database.xml
+file
+
+
+
+
+2008-07-11T20:45:02.922250Z
+cd90b041ddc6602a2179ae3aa60407d0
+2008-01-03T17:05:23.891688Z
+5039
+rmccabe
+
+publishing-environment.xml
+file
+
+
+
+
+2008-07-11T20:45:02.984750Z
+566ded725c2655576017978c072eda04
+2008-01-07T18:10:02.779639Z
+5109
+eankutse
+
+ilink-3
+dir
+
+server-system-property-chrysalis.xml
+file
+
+
+
+
+2008-07-11T20:45:03.062875Z
+aa7d79326d79ae1ac9272f1620f4826d
+2008-02-21T18:21:29.835402Z
+5506
+eankutse
+
+server-system-property.xml
+file
+
+
+
+
+2008-07-11T20:45:03.391000Z
+ff15079d5456eab7c58dea63de3743be
+2008-03-21T20:20:42.562274Z
+5875
+rmccabe
+
+qx-queue.xml
+file
+
+
+
+
+2008-07-11T20:45:03.453500Z
+9b87b7b06991a79de747d7493816ddac
+2008-01-07T18:13:15.717372Z
+5111
+eankutse
+
+tag
+dir
+
+repository.xml
+file
+
+
+
+
+2008-07-11T20:45:03.516000Z
+e1e666bb16f1701e324ad9353708ad45
+2008-01-06T00:03:12.712543Z
+5097
+pavan.toleti
+
+event-handlers.xml
+file
+
+
+
+
+2008-07-11T20:45:03.562875Z
+d01ef2d6e065f15c2bf9b50816030f48
+2008-02-21T18:17:54.567552Z
+5504
+eankutse
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="classpath">
+  <path id="classpath">
+    <!-- update to name specific jars -->
+    <fileset dir="${deps}/agile/plmapi-1x"> <include name="**/*.jar"/> </fileset>
+    <fileset dir="${deps}/axis2-1.1.1/lib"> <include name="commons-httpclient-3.0.1.jar"/> </fileset>
+    <fileset dir="${deps}/common"> <include name="dom4j-full.jar"/> </fileset>
+	<fileset dir="${deps}/common"> <include name="javax.servlet.jar"/> </fileset>
+
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-interface.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="DesignState-Client.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-qx.jar"/> </fileset>
+    <fileset dir="${deps}/ptc/r8il"> <include name="ptc-codebase.jar"/> </fileset>
+    <fileset dir="${deps}/ptc/r8il"> <include name="ie.jar"/> </fileset>
+  </path>
+</project>

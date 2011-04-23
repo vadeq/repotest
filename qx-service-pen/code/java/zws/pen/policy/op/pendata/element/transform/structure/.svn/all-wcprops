@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/zws/!svn/ver/6461/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/structure
+END
+RemoveECOAttachments.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/zws/!svn/ver/6461/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/structure/RemoveECOAttachments.java
+END
+CopyAllSubcomponentsOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/zws/!svn/ver/5761/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/structure/CopyAllSubcomponentsOp.java
+END
+AddSubcomponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/zws/!svn/ver/5521/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/structure/AddSubcomponent.java
+END
+TransformStructureOpBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/zws/!svn/ver/3334/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/structure/TransformStructureOpBase.java
+END
+NameOfFirstParent.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/zws/!svn/ver/5521/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/structure/NameOfFirstParent.java
+END
+AddSubcomponents.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/zws/!svn/ver/5521/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/structure/AddSubcomponents.java
+END
+BindToParentOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/zws/!svn/ver/3334/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/structure/BindToParentOp.java
+END
+ListParents.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/zws/!svn/ver/6163/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/structure/ListParents.java
+END
+RemoveSubcomponentOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/zws/!svn/ver/3334/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/structure/RemoveSubcomponentOp.java
+END
+RemoveSubComponentsOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/structure/RemoveSubComponentsOp.java
+END

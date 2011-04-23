@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5307/trunk/zws/designstate/webapp/code/java/zws/hi/demo/kla/choices
+END
+ChoiceValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/zws/hi/demo/kla/choices/ChoiceValidator.java
+END
+UpdateWIPChoiceValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/zws/hi/demo/kla/choices/UpdateWIPChoiceValidator.java
+END
+PublishWIPChoiceValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/zws/hi/demo/kla/choices/PublishWIPChoiceValidator.java
+END
+ChoiceValidatorBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/zws/hi/demo/kla/choices/ChoiceValidatorBase.java
+END
+ReplaceWIPChoiceValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/zws/hi/demo/kla/choices/ReplaceWIPChoiceValidator.java
+END

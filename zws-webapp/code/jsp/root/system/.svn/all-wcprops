@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/zws/!svn/ver/6324/trunk/zws/designstate/webapp/code/jsp/root/system
+END
+file_cleanup.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/6324/trunk/zws/designstate/webapp/code/jsp/root/system/file_cleanup.jsp
+END
+purge_logs.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/6324/trunk/zws/designstate/webapp/code/jsp/root/system/purge_logs.jsp
+END
+table_export.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/6324/trunk/zws/designstate/webapp/code/jsp/root/system/table_export.jsp
+END
+error.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/zws/!svn/ver/5024/trunk/zws/designstate/webapp/code/jsp/root/system/error.jsp
+END
+index.htm
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/jsp/root/system/index.htm
+END

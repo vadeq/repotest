@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5820/trunk/zws/designstate/server/code/java/zws/datasource/intralink
+END
+DataServerOld.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/datasource/intralink/DataServerOld.java
+END
+Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/datasource/intralink/Test.java
+END
+BillHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/datasource/intralink/BillHandler.java
+END
+DataServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/datasource/intralink/DataServer.java
+END
+DataServerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/datasource/intralink/DataServerTest.java
+END
+IlinkTKLicensePool.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/IlinkTKLicensePool.java
+END
+SearchAgent.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/datasource/intralink/SearchAgent.java
+END
+AgileCreate.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/datasource/intralink/AgileCreate.java
+END
+EventListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/datasource/intralink/EventListener.java
+END
+IntralinkSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/5820/trunk/zws/designstate/server/code/java/zws/datasource/intralink/IntralinkSource.java
+END
+StartPartDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/StartPartDefinition.java
+END

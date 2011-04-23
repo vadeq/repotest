@@ -1,0 +1,67 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/zws-project/deploy/harris/release-1.1/node-0/config/zws/DesignState/config/ilink-3
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:26:01.026163Z
+5336
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+event-listener.xml
+file
+
+
+
+
+2008-07-11T20:45:32.375375Z
+696ff109967bad35938618e473a0cbf0
+2008-01-15T21:33:54.010304Z
+5180
+rmccabe
+
+zws-config.xml
+file
+
+
+
+
+2008-07-11T20:45:32.422250Z
+613771e89fb1c2db485312e27eb36c07
+2008-01-15T21:33:54.010304Z
+5180
+rmccabe
+
+license-pool.xml
+file
+
+
+
+
+2008-07-11T20:45:32.484750Z
+6eed036db94a7ffe8217d63ccd279a10
+2008-01-15T21:33:54.010304Z
+5180
+rmccabe
+
+tag
+dir
+

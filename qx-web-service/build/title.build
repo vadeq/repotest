@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="title" basedir=".">
+
+  <!-- title -->
+  <property name="title" value="Design State SOAP WebService implementation for Server-Side Ilink Service"/>
+
+  <!-- names -->
+  <property name="svn-project-name" value="qx-web-service"/>
+  <property name="eclipse-project-name" value="qx-web-service"/>
+  <property name="aarfile-name" value="zws-qx-web-service"/>
+  
+  <!-- WebService WSDL -->
+  <property name="service-namespace" value="qx.zws"/>
+  <property name="service-fqcn" value="zws.qx.QxWebService"/>  
+
+</project>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5983/trunk/zws/zws-project/deploy/harris/zws-stage/Harris/staging/web-app
+END
+web-node.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/zws/!svn/ver/5923/trunk/zws/zws-project/deploy/harris/zws-stage/Harris/staging/web-app/web-node.xml
+END
+panel-bar.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/5983/trunk/zws/zws-project/deploy/harris/zws-stage/Harris/staging/web-app/panel-bar.xml
+END
+web-app-properties.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/zws/!svn/ver/5923/trunk/zws/zws-project/deploy/harris/zws-stage/Harris/staging/web-app/web-app-properties.xml
+END
+zws-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/zws/!svn/ver/5923/trunk/zws/zws-project/deploy/harris/zws-stage/Harris/staging/web-app/zws-config.xml
+END

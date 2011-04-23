@@ -1,0 +1,127 @@
+<project basedir=".">
+  <description>Downloads DesignState Client and Server jar files</description>
+
+  <import file="local-env.xml"/>
+
+  <property name="base" location="."/>
+  <property name="zws-build" location="${ZWS_APP_HOME}/zws-build"/>
+  <property name="zws-install" location="${ZWS_APP_HOME}/zws-project/install"/>
+
+  <property name="deps" location="${zws-build}/dep"/>
+
+  <macrodef name="svn-update">
+    <attribute name="work-dir"/>
+    <attribute name="username"/>
+    <attribute name="password"/>
+    <sequential>
+      <exec dir="@{work-dir}" executable="svn" failonerror="true">
+        <arg line="update --non-interactive --username @{username} --password @{password}"/>
+      </exec>
+    </sequential>
+  </macrodef>
+
+  <target name="update" depends="update-latest, download-pubs"/>
+
+  <!-- svn update of project specific config files -->
+
+  <target name="update-latest">
+    <echo message="updating ${zws-install}"/>
+    <svn-update work-dir="${zws-install}" username="cruise" password="cruise"/>
+    <echo message="updating ${base}"/>
+    <svn-update work-dir="${base}" username="cruise" password="cruise"/>
+    <echo message="updating ${deps}"/>
+    <svn-update work-dir="${deps}" username="cruise" password="cruise"/>
+  </target>
+
+  <!-- get download script and published deployables/libraries -->
+  <target name="download-pubs">
+    <delete dir="pub"/>
+    <mkdir dir="pub"/>
+    <get dest="pub/download-published-jars.xml" verbose="true" usetimestamp="false" src="http://build.zerowait-state.com/build/pub/download-published-jars.xml" />
+
+    <!-- call download script to download published deployables/libraries -->
+    <ant antfile="download-published-jars.xml" dir="pub"/>
+  </target>
+
+  <target name="deploy-server-configurations">
+
+    <!-- Deploy Tomcat server config file -->
+    <copy toDir="${ZWS_APP_HOME}/server/tomcat/conf" file="${ZWS_APP_HOME}/zws-project/install/config/tomcat/conf/server.xml" overwrite="true"/>
+    <replace file="${ZWS_APP_HOME}/server/tomcat/conf/server.xml" token="@APP_HOME@" value="${ZWS_APP_HOME}"/>
+
+    <!-- Deploy Axis2.xml web services config to standalone TOMCAT -->
+
+    <!-- <copy toDir="${ZWS_APP_HOME}/server/axis2/conf" file="${ZWS_APP_HOME}/zws-project/install/config/axis2/axis2.xml" overwrite="true"/> -->
+    <copy toDir="${ZWS_APP_HOME}/DesignState/webapp/ZeroWait-State/WEB-INF/conf"  file="${ZWS_APP_HOME}/zws-project/install/config/axis2/axis2.xml" overwrite="true"/>
+    <replace file="${ZWS_APP_HOME}/DesignState/webapp/ZeroWait-State/WEB-INF/conf/axis2.xml" token="@APP_HOME@" value="${ZWS_APP_HOME}"/>
+
+    <!-- Deploy Axis2 web.xml config file to standalone server -->
+    <copy toDir="${ZWS_APP_HOME}/server/axis2/webapp/WEB-INF" file="${ZWS_APP_HOME}/zws-project/install/config/axis2/web.xml" overwrite="true"/>
+
+    <!-- Deploy Axis2 web.xml config file to tomcat server -->
+    <copy toDir="${ZWS_APP_HOME}/DesignState/webapp/ZeroWait-State/WEB-INF" file="${ZWS_APP_HOME}/zws-project/install/config/axis2/web.xml" overwrite="true"/>
+
+    <!-- Deploy Mysql config file -->
+    <copy toDir="C:/" file="${ZWS_APP_HOME}/zws-project/install/config/mysql/my.cnf" overwrite="true"/>
+    <replace file="C:/my.cnf" token="@APP_HOME@" value="${ZWS_APP_HOME}"/>
+    <replace file="C:/my.cnf" token="@DATA_HOME@" value="${ZWS_DATA_HOME}"/>
+  </target>
+
+  <!-- deploy to application servers -->
+  <target name="deploy" depends="deploy-server-configurations">
+    <copy toDir="${ZWS_APP_HOME}/DesignState/webservice" file="pub/DesignState-Qx.aar"/>
+    <copy toDir="${ZWS_APP_HOME}/server/axis2/lib">
+      <fileset dir="pub/jar"/>
+    </copy>
+    <copy toDir="${ZWS_APP_HOME}/DesignState/webapp/ZeroWait-State/WEB-INF/lib">
+      <fileset dir="pub/jar"/>
+    </copy>
+
+    <delete dir="${ZWS_APP_HOME}/DesignState/webapp/ROOT"/>
+    <delete dir="${ZWS_APP_HOME}/DesignState/webapp/FileDepot"/>
+    <mkdir dir="${ZWS_APP_HOME}/DesignState/webapp/ROOT"/>
+  	<mkdir dir="${ZWS_APP_HOME}/DesignState/webapp/FileDepot"/>
+    <unwar src="pub/DesignState-web.war" dest="${ZWS_APP_HOME}/DesignState/webapp/ROOT"/>
+    <unwar src="pub/zws-webapp-file-depot.war" dest="${ZWS_APP_HOME}/DesignState/webapp/FileDepot"/>
+    <copy toDir="${ZWS_APP_HOME}/DesignState/webapp/ROOT/WEB-INF/lib">
+      <fileset dir="${deps}/axis2-1.1.1/lib" includes="*.jar"/>
+    </copy>
+    <copy toDir="${ZWS_APP_HOME}/DesignState/webapp/ROOT/WEB-INF/lib">
+      <fileset dir="pub/jar" includes="zws-plugin-*.jar"/>
+    </copy>
+    <copy toDir="${ZWS_APP_HOME}/DesignState/webapp/ROOT/WEB-INF/lib">
+      <fileset dir="pub/jar" includes="zws-qx.jar"/>
+    </copy>
+    <copy toDir="${ZWS_APP_HOME}/DesignState/webapp/ROOT/WEB-INF/lib">
+      <fileset dir="pub/jar" includes="zws-qx-web-client.jar"/>
+    </copy>
+
+    <!-- copy Axis2 Lib -->
+    <!--
+    <copy toDir="${ZWS_APP_HOME}/server/Axis2/lib">
+      <fileset dir="${deps}/agile/cif/wip8/build02/bin/java" includes="*.jar"/>
+      <fileset dir="${deps}/agile/cif/wip8/build02/ext/bin/java" includes="*.jar"/>
+    </copy>
+    -->
+    <copy toDir="${ZWS_APP_HOME}/DesignState/webapp/ZeroWait-State/WEB-INF/lib">
+      <fileset dir="${deps}/agile/cif/wip8/build02/bin/java" includes="*.jar"/>
+      <fileset dir="${deps}/agile/cif/wip8/build02/ext/bin/java" includes="*.jar"/>
+    </copy>
+    <copy toDir="${ZWS_APP_HOME}/DesignState/webapp/ROOT/WEB-INF/lib">
+      <!-- <fileset dir="${deps}/common" includes="axis.jar"/> -->
+      <fileset dir="${deps}/agile/cif/wip8/build02/bin/java" includes="*.jar"/>
+      <fileset dir="${deps}/agile/cif/wip8/build02/ext/bin/java" includes="*.jar"/>
+      <fileset dir="${deps}/common" includes="jakarta-commons-discovery.jar"/>
+      <fileset dir="${deps}/webapp" includes="jaxen-full.jar"/>
+      <fileset dir="${deps}/webapp" includes="jdbc2_0-stdext.jar"/>
+      <fileset dir="${deps}/webapp" includes="jstl.jar"/>
+      <fileset dir="${deps}/webapp" includes="saxpath.jar"/>
+      <fileset dir="${deps}/webapp" includes="standard.jar"/>
+      <fileset dir="${deps}/webapp" includes="xalan.jar"/>
+      <fileset dir="${deps}/common" includes="ojdbc14.jar"/>      
+    </copy>
+
+    <delete dir="pub"/>
+  </target>
+  
+</project>

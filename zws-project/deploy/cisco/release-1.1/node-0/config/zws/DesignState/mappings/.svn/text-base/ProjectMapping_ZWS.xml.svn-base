@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:root
+    xsi:schemaLocation="http://www.agile.com/api/map file:/xsd/map.xsd"
+    version="2.0.0" xmlns:map="http://www.agile.com/api/map" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <map:globalRules>
+        <map:addTypeOption value="true"/>
+        <!-- read only or special attributes in Agile. 2064 and 2065 are used by CIF -->
+        <map:forceIsDirty value="false"
+            attribute="1001,1011,1014,1016,1017,1020,1021,1030,1046,1047,1051,1054,1055,1056,1057,1069,1081,1084,1142,1143,1144,1343,2064,2065,2181,3582,3621,3623,3624,3645,3743,4500,4684,6038,6148,6154,6173,6175,6176,6177,6178,6180,6184,6305,6388,6389,6390,7951,10014,12089,12205,2000004143,2000004612,2000004891,2000007045" split=","/>
+        <!-- flex fields that should work
+        <map:forceIsDirty value="false"
+            attribute="35818,35826,35827,35828,35829,35830,37549,37555,38266" split=","/>
+        -->
+    </map:globalRules>
+    <!--  ************************************************************************************************************
+          **      ProE  Part  ReadOnly  Structure                                                                   **
+          **                                                                                                        **
+          **            ProE Object (self)                                                                          **
+          **                                                                                                        **
+          ************************************************************************************************************  -->
+    <map:structure name="ProE Part ReadOnly Structure">
+        <map:matchRule source="$ISDIRTY" match="^false$"/>
+        <map:self name="ProE Object" head="true" isdirty="false">
+            <map:key page="Title Block" name="Number" id="1001">
+                <map:expressionOption>
+                    <map:expression source="number" match="^(.+)\.prt$"
+                        replace="MEP_$1_P" toCase="upper"/>
+                    <map:expression source="number" match="^(.+)\.asm$"
+                        replace="MEP_$1_A" toCase="upper"/>
+                    <map:expression source="number" match="^(.+)\.drw$"
+                        replace="MEP_$1_D" toCase="upper"/>
+                    <map:expression source="name" match="^(.+)\.prt$"
+                        replace="MEP_$1_P" toCase="upper"/>
+                    <map:expression source="name" match="^(.+)\.asm$"
+                        replace="MEP_$1_A" toCase="upper"/>
+                    <map:expression source="name" match="^(.+)\.drw$"
+                        replace="MEP_$1_D" toCase="upper"/>
+                </map:expressionOption>
+            </map:key>
+            <map:class name="Documents">
+                <map:target page="Title Block" name="Description" id="1002">
+                    <map:expression source="description"/>
+                </map:target>
+            </map:class>
+            <map:subclass name="Mechanical Library Part">
+                <map:matchRule source="is-library" match="^true$"/>
+            </map:subclass>
+            <map:subclass name="Mechanical Design Model">
+            </map:subclass>
+        </map:self>
+    </map:structure>
+    <!--  ************************************************************************************************************
+          **      ProE  Part/Assembly/Drawing  Structure                                                            **
+          **                                                                                                        **
+          **                  Design Change Order                                                                   **
+          **               ECPN                                                                                     **
+          **            ProE Object (self)  ->  ProE Object                                                         **
+          **               ProE Part File                                                                           **
+          **                  ProE Part Folder                                                                      **
+          **                                                                                                        **
+          ************************************************************************************************************  -->
+    <map:structure name="ProE Object Structure">
+        <map:matchRule source="number+name" match="(.+\.prt$)|(.+\.prtnull$)|(.+\.asm$)|(.+\.asmnull$)|(.+\.drw$)|(.+\.drwnull$)"/>
+        <map:self name="ProE Object" head="false">
+            <map:key page="Title Block" name="Number" id="1001">
+                <map:expressionOption>
+                    <map:expression source="number" match="^(.+)\.prt$"
+                        replace="MEP_$1_P" toCase="upper"/>
+                    <map:expression source="number" match="^(.+)\.asm$"
+                        replace="MEP_$1_A" toCase="upper"/>
+                    <map:expression source="number" match="^(.+)\.drw$"
+                        replace="MEP_$1_D" toCase="upper"/>
+                    <map:expression source="name" match="^(.+)\.prt$"
+                        replace="MEP_$1_P" toCase="upper"/>
+                    <map:expression source="name" match="^(.+)\.asm$"
+                        replace="MEP_$1_A" toCase="upper"/>
+                    <map:expression source="name" match="^(.+)\.drw$"
+                        replace="MEP_$1_D" toCase="upper"/>
+                </map:expressionOption>
+            </map:key>
+            <map:class name="Documents">
+                <map:target page="Title Block" name="Description" id="1002">
+                    <map:expression source="description"/>
+                </map:target>
+                <map:target page="Title Block" name="Rev" id="1014">
+                    <map:expression source="Title Block.Rev" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Product Line(s)" id="1004">
+                    <map:expression source="Title Block.Product Line(s)" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Lifecycle Phase" id="1084">
+                    <map:expression source="Title Block.Lifecycle Phase" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Document Subclass" id="1081">
+                    <map:expression
+                        source="Title Block.Document Subclass" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Commodity" id="12938">
+                    <map:expression source="Title Block.Commodity" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Document Category" id="1082">
+                    <map:expression
+                        source="Title Block.Document Category" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Rev Release Date" id="1016">
+                    <map:expression
+                        source="Title Block.Rev Release Date" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Rev Incorp Date" id="1017">
+                    <map:expression source="Title Block.Rev Incorp Date" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block"
+                    name="Compliance Calculated Date" id="2000004143">
+                    <map:expression
+                        source="Title Block.Compliance Calculated Date" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Mass" id="2000004612">
+                    <map:expression source="Title Block.Mass" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Overall Compliance" id="2000004891">
+                    <map:expression
+                        source="Title Block.Overall Compliance" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Size" id="1068">
+                    <map:expression source="Title Block.Size" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Effectivity Date" id="12089">
+                    <map:expression
+                        source="Title Block.Effectivity Date" refresh="true"/>
+                </map:target>
+                <map:target page="Page Two" name="Project Codename" id="2090">
+                    <map:expression source="Page Two.Project Codename" refresh="true"/>
+                </map:target>
+            </map:class>
+            <map:subclass name="Mechanical Library Part">
+                <map:matchRule source="is-library+number+name" match="(^true.+\.prt$)|(^true.+\.prtnull$)"/>
+                <map:target page="Page Three" name="LIB_MKP1_X" id="12506">
+                    <map:expression source="lib_x"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_MKP1_Y" id="12507">
+                    <map:expression source="lib_y"/>
+                </map:target>
+                <map:target page="Page Three" name="APC_ATRB_3" id="37549">
+                    <map:expression source="Page Three.APC_ATRB_3" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_MKP4_Y" id="35818">
+                    <map:expression source="Page Three.LIB_MKP4_Y" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Pitch" id="12505">
+                    <map:expression source="Page Three.Pitch" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_BB_MIN_X" id="35826">
+                    <map:expression source="Page Three.LIB_BB_MIN_X" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_MKP2_X" id="9384">
+                    <map:expression source="Page Three.LIB_MKP2_X" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_HEIGHT" id="35830">
+                    <map:expression source="Page Three.LIB_HEIGHT" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_MKP3_X" id="9386">
+                    <map:expression source="Page Three.LIB_MKP3_X" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Type of Part" id="1540">
+                    <map:expression source="Page Three.Type of Part" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_BB_MAX_Y" id="35829">
+                    <map:expression source="Page Three.LIB_BB_MAX_Y" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Gender" id="1543">
+                    <map:expression source="Page Three.Gender" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="APC_ATRB_6" id="1579">
+                    <map:expression source="Page Three.APC_ATRB_6" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_PIN_TECH" id="1542">
+                    <map:expression source="Page Three.LIB_PIN_TECH" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_UNITS" id="1541">
+                    <map:expression source="Page Three.LIB_UNITS" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="APC_ATRB_7" id="1580">
+                    <map:expression source="Page Three.APC_ATRB_7" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="APC_ATRB_8" id="1581">
+                    <map:expression source="Page Three.APC_ATRB_8" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_MKP2_Y" id="9385">
+                    <map:expression source="Page Three.LIB_MKP2_Y" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="APC_ATRB_1" id="1575">
+                    <map:expression source="Page Three.APC_ATRB_1" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_BB_MAX_X" id="35828">
+                    <map:expression source="Page Three.LIB_BB_MAX_X" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_MKP4_X" id="9412">
+                    <map:expression source="Page Three.LIB_MKP4_X" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="APC_ATRB_2" id="1576">
+                    <map:expression source="Page Three.APC_ATRB_2" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_MKP3_Y" id="9411">
+                    <map:expression source="Page Three.LIB_MKP3_Y" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Number of Pins" id="12503">
+                    <map:expression source="Page Three.Number of Pins" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="APC_ATRB_9" id="37555">
+                    <map:expression source="Page Three.APC_ATRB_9" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Number of Rows" id="12504">
+                    <map:expression source="Page Three.Number of Rows" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="APC_ATRB_5" id="1578">
+                    <map:expression source="Page Three.APC_ATRB_5" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Source Library" id="1539">
+                    <map:expression source="Page Three.Source Library" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="APC_ATRB_4" id="1577">
+                    <map:expression source="Page Three.APC_ATRB_4" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="LIB_BB_MIN_Y" id="35827">
+                    <map:expression source="Page Three.LIB_BB_MIN_Y" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Auto Part Creation" id="12459">
+                    <map:expression
+                        source="Page Three.Auto Part Creation" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Auto Verification" id="12460">
+                    <map:expression
+                        source="Page Three.Auto Verification" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Part Information" id="12458">
+                    <map:expression source="Page Three.Part Information" refresh="true"/>
+                </map:target>
+            </map:subclass>
+            <map:subclass name="Mechanical Design Model">
+                <map:matchRule source="number+name" match="(.+\.prt$)|(.+\.prtnull$)"/>
+                <map:target page="Page Three" name="Technology Group" id="1540">
+                    <map:expression source="Page Three.Technology Group" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Mechanical NPIE" id="1543">
+                    <map:expression source="Page Three.Mechanical NPIE" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Electrical NPIE" id="1542">
+                    <map:expression source="Page Three.Electrical NPIE" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Mechanical Engineer" id="1541">
+                    <map:expression
+                        source="Page Three.Mechanical Engineer" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Designer" id="1544">
+                    <map:expression source="Page Three.Designer" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Resources" id="12458">
+                    <map:expression source="Page Three.Resources" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Business Unit" id="1539">
+                    <map:expression source="Page Three.Business Unit" refresh="true"/>
+                </map:target>
+            </map:subclass>
+            <map:subclass name="Mechanical Assembly">
+                <map:matchRule source="number+name" match="(.+\.asm$)|(.+\.asmnull$)"/>
+                <map:target page="Page Three" name="Technology Group" id="1540">
+                    <map:expression source="Page Three.Technology Group" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Mechanical NPIE" id="1543">
+                    <map:expression source="Page Three.Mechanical NPIE" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Electrical NPIE" id="1542">
+                    <map:expression source="Page Three.Electrical NPIE" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Mechanical Engineer" id="1541">
+                    <map:expression
+                        source="Page Three.Mechanical Engineer" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Designer" id="1544">
+                    <map:expression source="Page Three.Designer" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Resources" id="12458">
+                    <map:expression source="Page Three.Resources" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Business Unit" id="1539">
+                    <map:expression source="Page Three.Business Unit" refresh="true"/>
+                </map:target>
+            </map:subclass>
+            <map:subclass name="Mechanical Drawing">
+                <map:matchRule source="number+name" match="(.+\.drw$)|(.+\.drwnull$)"/>
+                <map:target page="Page Three" name="Technology Group" id="1540">
+                    <map:expression source="Page Three.Technology Group" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Mechanical NPIE" id="1543">
+                    <map:expression source="Page Three.Mechanical NPIE" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Electrical NPIE" id="1542">
+                    <map:expression source="Page Three.Electrical NPIE" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Mechanical Engineer" id="1541">
+                    <map:expression
+                        source="Page Three.Mechanical Engineer" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Designer" id="1544">
+                    <map:expression source="Page Three.Designer" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Resources" id="12458">
+                    <map:expression source="Page Three.Resources" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Business Unit" id="1539">
+                    <map:expression source="Page Three.Business Unit" refresh="true"/>
+                </map:target>
+            </map:subclass>
+        </map:self>
+        <map:object name="ECPN" head="true" isdirty="false">
+            <map:key page="Title Block" name="Number" id="1001">
+                <map:expressionOption>
+                    <map:expression source="number"
+                        match="(?!^null$)(.+)\..{3}" replace="ENG_$1" toCase="upper"/>
+                    <map:expression source="name"
+                        match="(?!^null$)(.+)\..{3}" replace="ENG_$1" toCase="upper"/>
+                </map:expressionOption>
+            </map:key>
+            <map:class name="Documents" limitRefresh="true">
+                <map:target name="role" option="true">
+                    <map:expression replace="parent"/>
+                </map:target>
+            </map:class>
+            <map:subclass name="ECPN" limitRefresh="true"/>
+        </map:object>
+        <map:object name="Design Change Order" head="true">
+            <map:key page="Cover Page" name="Number" id="1047">
+                <map:expression replace="$AUTO-01"/>
+            </map:key>
+            <map:class name="Change Orders">
+                <map:target name="multipleaffecteditems" option="true">
+                    <map:expression replace="true"/>
+                </map:target>
+                <map:target name="autonumbersource" option="true">
+                    <map:expression replace="Mechanical Design Publish (MDP) ECO Numbering Scheme"/>
+                </map:target>
+                <map:target name="ownerattribute" option="true">
+                    <map:expression replace="1099"/>
+                </map:target>
+                <map:target page="Cover Page" name="Workflow" id="3742">
+                    <map:expression replace="Eng Design Publish"/>
+                </map:target>
+                <map:target page="Cover Page" name="Change Analyst" id="1099">
+                    <map:expression replace="$USER"/>
+                </map:target>
+                <map:target page="Cover Page" name="Change Type" id="1069">
+                    <map:expression source="Cover Page.Change Type" refresh="true"/>
+                </map:target>
+                <map:target page="Cover Page" name="Status" id="1030">
+                    <map:expression source="Cover Page.Status" refresh="true"/>
+                </map:target>
+                <map:target page="Cover Page" name="Description of Change" id="1052" isdirtyDefault="true">
+                    <map:expressionOption>
+                        <map:expression source="Cover Page.Description of Change" match="(.+)" replace="$1" refresh="true"/>
+                        <map:expression source="'default'" quote="'" match="default" replace="Mechanical Design Publish" refresh="true"/>
+                    </map:expressionOption>
+                </map:target>
+                <map:target page="Cover Page" name="Reason For Change" id="1053" isdirtyDefault="true">
+                    <map:expressionOption>
+                        <map:expression source="Cover Page.Reason For Change" match="(.+)" replace="$1" refresh="true"/>
+                        <map:expression source="'default'" quote="'" match="default" replace="Mechanical Design Publish" refresh="true"/>
+                    </map:expressionOption>
+                </map:target>
+                <map:target page="Cover Page" name="Product Line(s)" id="1003">
+                    <map:expression source="Cover Page.Product Line(s)" refresh="true"/>
+                </map:target>
+                <map:target page="Cover Page" name="Reason Code" id="1049">
+                    <map:expression source="Cover Page.Reason Code" refresh="true"/>
+                </map:target>
+                <map:target page="Cover Page" name="Date Originated" id="1061">
+                    <map:expression source="Cover Page.Date Originated" refresh="true"/>
+                </map:target>
+                <map:target page="Cover Page" name="Change Category" id="1060" isdirtyDefault="true">
+                    <map:expressionOption>
+                        <map:expression source="Cover Page.Change Category" match="(.+)" replace="$1" refresh="true"/>
+                        <map:expression source="'default'" quote="'" match="default" replace="ENG" refresh="true"/>
+                    </map:expressionOption>
+                </map:target>
+                <map:target page="Cover Page" name="Originator" id="1050">
+                    <map:expression source="Cover Page.Originator" refresh="true"/>
+                </map:target>
+                <map:target page="Cover Page" name="Final Complete Date" id="3743">
+                    <map:expression
+                        source="Cover Page.Final Complete Date" refresh="true"/>
+                </map:target>
+                <map:target page="Cover Page" name="Date Released" id="1051">
+                    <map:expression source="Cover Page.Date Released" refresh="true"/>
+                </map:target>
+                <map:target page="Page Two" name="Original Submit Date" id="2002">
+                    <map:expression
+                        source="Page Two.Original Submit Date" refresh="true"/>
+                </map:target>
+                <map:target page="Page Two" name="Last Submit Date" id="2003">
+                    <map:expression source="Page Two.Last Submit Date" refresh="true"/>
+                </map:target>
+                <map:target page="Page Two" name="Business Unit" id="1271">
+                    <map:expression source="Page Two.Business Unit" refresh="true"/>
+                </map:target>
+            </map:class>
+            <map:subclass name="Eng Design Publish">
+                <map:target page="Page Three"
+                    name="Eng Design Publish Category" id="1540" isdirtyDefault="true">
+                    <map:expressionOption>
+                        <map:expression source="Page Three.Eng Design Publish Category" match="(.+)" replace="$1" refresh="true"/>
+                        <map:expression source="'default'" quote="'" match="default" replace="Mechanical Design" refresh="true"/>
+                    </map:expressionOption>
+                </map:target>
+                <map:target page="Page Three" name="Thermal Engineer" id="42347">
+                    <map:expression source="Page Three.Thermal Engineer" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="ECAD Manager" id="42335">
+                    <map:expression source="Page Three.ECAD Manager" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Mechanical Engineer" id="42338">
+                    <map:expression
+                        source="Page Three.Mechanical Engineer" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Program Manager" id="1565">
+                    <map:expression source="Page Three.Program Manager" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Electrical NPIE" id="42340">
+                    <map:expression source="Page Three.Electrical NPIE" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="EDVT" id="42351">
+                    <map:expression source="Page Three.EDVT" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Hardware Engineer" id="42337">
+                    <map:expression
+                        source="Page Three.Hardware Engineer" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Engineering Manager" id="1564">
+                    <map:expression
+                        source="Page Three.Engineering Manager" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Test Engineer" id="42352">
+                    <map:expression source="Page Three.Test Engineer" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="SI Engineer" id="42346">
+                    <map:expression source="Page Three.SI Engineer" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="EMC Engineer" id="42345">
+                    <map:expression source="Page Three.EMC Engineer" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Mechanical NPIE" id="42343">
+                    <map:expression source="Page Three.Mechanical NPIE" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Network Engineer" id="42349">
+                    <map:expression source="Page Three.Network Engineer" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="PCB Engineer" id="42339">
+                    <map:expression source="Page Three.PCB Engineer" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Project Resources" id="12458">
+                    <map:expression
+                        source="Page Three.Project Resources" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Mechanical Manager" id="1566">
+                    <map:expression
+                        source="Page Three.Mechanical Manager" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Power Engineer" id="42348">
+                    <map:expression source="Page Three.Power Engineer" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Project Codename" id="1539">
+                    <map:expression source="Page Three.Project Codename" refresh="true"/>
+                </map:target>
+                <map:target page="Page Three" name="Safety Engineer" id="42350">
+                    <map:expression source="Page Three.Safety Engineer" refresh="true"/>
+                </map:target>
+            </map:subclass>
+        </map:object>
+        <map:object name="ProE Folder" head="false">
+            <map:key page="Title Block" name="Number" id="6173">
+                <map:expression replace=""/>
+            </map:key>
+            <map:class name="File Folders">
+                <map:target name="autonumbersource" option="true">
+                    <map:expression replace="File Folder Number"/>
+                </map:target>
+                <map:target page="Title Block" name="Type" id="6175">
+                    <map:expression source="Title Block.Type" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Lifecycle Phase" id="6390">
+                    <map:expression source="Title Block.Lifecycle Phase" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Last Modified Date" id="6178">
+                    <map:expression
+                        source="Title Block.Last Modified Date" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Checkin Date" id="6388">
+                    <map:expression source="Title Block.Checkin Date" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Checkout Status" id="6389">
+                    <map:expression source="Title Block.Checkout Status" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Description" id="6174">
+                    <map:expression source="Title Block.Description" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Checkout User" id="6180">
+                    <map:expression source="Title Block.Checkout User" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Checkout Date" id="6184">
+                    <map:expression source="Title Block.Checkout Date" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Version" id="7951">
+                    <map:expression source="Title Block.Version" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Create Date" id="6177">
+                    <map:expression source="Title Block.Create Date" refresh="true"/>
+                </map:target>
+            </map:class>
+            <map:subclass name="Design File Folder"/>
+        </map:object>
+        <map:object name="ProE File" head="false">
+            <map:key page="" name="file-name" id="">
+                <map:expression source="attachment"
+                    match="^(.*[\\/]|)([^\\/]+)$" replace="$2"/>
+            </map:key>
+            <map:class name="Files">
+                <map:target page="" name="file-path" id="">
+                    <map:expression source="attachment"
+                        match="^(.*[\\/]|)([^\\/]+)$" replace="$1"/>
+                </map:target>
+                <map:target page="" name="file-id" id="">
+                    <map:expression source="fileId"/>
+                </map:target>
+            </map:class>
+            <map:subclass name="file"/>
+        </map:object>
+        <map:relation parent="ProE Object" child="ProE Object" self="true">
+            <map:childClass name="Documents">
+                <map:target page="BOM" name="Find Num" id="1012">
+                    <map:expression source="BOM.Find Num" refresh="true"/>
+                </map:target>
+                <map:target page="BOM" name="Item Number" id="1011">
+                    <map:expressionOption>
+                        <map:expression source="number"
+                            match="^(.+)\.prt$" replace="MEP_$1_P" toCase="upper"/>
+                        <map:expression source="number"
+                            match="^(.+)\.asm$" replace="MEP_$1_A" toCase="upper"/>
+                        <map:expression source="number"
+                            match="^(.+)\.drw$" replace="MEP_$1_D" toCase="upper"/>
+                        <map:expression source="name"
+                            match="^(.+)\.prt$" replace="MEP_$1_P" toCase="upper"/>
+                        <map:expression source="name"
+                            match="^(.+)\.asm$" replace="MEP_$1_A" toCase="upper"/>
+                        <map:expression source="name"
+                            match="^(.+)\.drw$" replace="MEP_$1_D" toCase="upper"/>
+                    </map:expressionOption>
+                </map:target>
+                <map:target page="BOM" name="Verified" id="1636">
+                    <map:expression source="BOM.Verified" refresh="true"/>
+                </map:target>
+                <map:target page="BOM" name="Item Lifecycle Phase" id="10014">
+                    <map:expression source="BOM.Item Lifecycle Phase" refresh="true"/>
+                </map:target>
+                <map:target page="BOM" name="Subclass" id="3582">
+                    <map:expression source="BOM.Subclass" refresh="true"/>
+                </map:target>
+                <map:target page="BOM" name="Ref Des" id="1019">
+                    <map:expression source="BOM.Ref Des" refresh="true"/>
+                </map:target>
+                <map:target page="BOM" name="Qty" id="1035">
+                    <map:expression source="BOM.Qty" refresh="true"/>
+                </map:target>
+                <map:target page="BOM" name="Date Last Modified" id="2181">
+                    <map:expression source="BOM.Date Last Modified" refresh="true"/>
+                </map:target>
+                <map:target page="BOM" name="Sites" id="12205">
+                    <map:expression source="BOM.Sites" refresh="true"/>
+                </map:target>
+                <map:target page="BOM" name="BOM Notes" id="1036">
+                    <map:expression source="BOM.BOM Notes" refresh="true"/>
+                </map:target>
+                <map:target page="BOM" name="Item Rev" id="1021">
+                    <map:expression source="BOM.Item Rev" refresh="true"/>
+                </map:target>
+                <map:target page="BOM" name="Item Description" id="1020">
+                    <map:expression source="BOM.Item Description" refresh="true"/>
+                </map:target>
+                <map:target page="BOM" name="CAD Rev" id="2175">
+                    <map:expression source="BOM.CAD Rev" refresh="true"/>
+                </map:target>
+            </map:childClass>
+            <map:parentClass name="Documents"/>
+        </map:relation>
+        <map:relation parent="ECPN" child="ProE Object" self="false">
+            <map:childClass name="Documents" limitRefresh="true">
+                <map:target page="BOM" name="Item Number" id="1011">
+                    <map:expressionOption>
+                        <map:expression source="number"
+                            match="^(.+)\.prt$" replace="MEP_$1_P" toCase="upper"/>
+                        <map:expression source="number"
+                            match="^(.+)\.asm$" replace="MEP_$1_A" toCase="upper"/>
+                        <map:expression source="number"
+                            match="^(.+)\.drw$" replace="MEP_$1_D" toCase="upper"/>
+                        <map:expression source="name"
+                            match="^(.+)\.prt$" replace="MEP_$1_P" toCase="upper"/>
+                        <map:expression source="name"
+                            match="^(.+)\.asm$" replace="MEP_$1_A" toCase="upper"/>
+                        <map:expression source="name"
+                            match="^(.+)\.drw$" replace="MEP_$1_D" toCase="upper"/>
+                    </map:expressionOption>
+                </map:target>
+            </map:childClass>
+            <map:parentClass name="Documents" limitRefresh="true"/>
+        </map:relation>
+        <map:relation parent="ProE Object" child="Design Change Order" self="false">
+            <map:childClass name="Change Orders">
+                <map:target page="Affected Items" name="New Rev" id="1056">
+                    <map:expression replace="$NN"/>
+                </map:target>
+                <map:target page="Affected Items" name="Lifecycle Phase" id="1057">
+                    <map:expressionOption>
+                        <map:expression source="state" match="intro" replace="Prelimanary"/>
+                        <map:expression source="state" match="proto" replace="Prototype"/>
+                        <map:expression source="state" match="released" replace="Production"/>
+                        <map:expression source="state" match="obsolete" replace="Obsolete"/>
+                    </map:expressionOption>
+                </map:target>
+                <map:target page="Affected Items" name="Auto Rev Prefix" id="2065">
+                    <map:expression
+                        source="Affected Items.Auto Rev Prefix" refresh="true"/>
+                </map:target>
+                <map:target page="Affected Items" name="Auto Rev Format" id="2064">
+                    <map:expression
+                        source="Affected Items.Auto Rev Format" refresh="true"/>
+                </map:target>
+                <map:target page="Affected Items" name="Change Function" id="1058">
+                    <map:expression
+                        source="Affected Items.Change Function" refresh="true"/>
+                </map:target>
+                <map:target page="Affected Items"
+                    name="Old Lifecycle Phase" id="4500">
+                    <map:expression
+                        source="Affected Items.Old Lifecycle Phase" refresh="true"/>
+                </map:target>
+                <map:target page="Affected Items"
+                    name="Implementation Date" id="1105">
+                    <map:expression
+                        source="Affected Items.Implementation Date" refresh="true"/>
+                </map:target>
+                <map:target page="Affected Items" name="Effective Date" id="1079">
+                    <map:expression
+                        source="Affected Items.Effective Date" refresh="true"/>
+                </map:target>
+                <map:target page="Affected Items"
+                    name="Item Description" id="1059">
+                    <map:expression
+                        source="Affected Items.Item Description" refresh="true"/>
+                </map:target>
+                <map:target page="Affected Items" name="Sites" id="12208">
+                    <map:expression source="Affected Items.Sites" refresh="true"/>
+                </map:target>
+                <map:target page="Affected Items" name="Old Rev" id="1055">
+                    <map:expression source="Affected Items.Old Rev" refresh="true"/>
+                </map:target>
+                <map:target page="Affected Items" name="Obsolete Date" id="1078">
+                    <map:expression
+                        source="Affected Items.Obsolete Date" refresh="true"/>
+                </map:target>
+                <map:target page="Affected Items" name="Item Number" id="1054">
+                    <map:expression source="Affected Items.Item Number" refresh="true"/>
+                </map:target>
+            </map:childClass>
+            <map:parentClass name="Documents"/>
+        </map:relation>
+        <map:relation parent="ECPN" child="Design Change Order" self="false">
+            <map:childClass name="Change Orders" limitRefresh="true"/>
+            <map:parentClass name="Documents" limitRefresh="true"/>
+        </map:relation>
+        <map:relation parent="ProE Object" child="ProE File" self="false">
+            <map:childClass name="Files"/>
+            <map:parentClass name="Documents">
+                <map:target page="Attachments" name="Filename" id="1046">
+                    <map:expression source="attachment"
+                        match="^(.*[\\/]|)([^\\/]+)$" replace="$2"/>
+                </map:target>
+                <map:target page="Attachments" name="Source Version" id="3688">
+                    <map:expression source="version"/>
+                </map:target>
+                <map:target page="Attachments" name="Source Created By" id="3689">
+                    <map:expression source="author"/>
+                </map:target>
+                <map:target page="Attachments" name="Authoring Tool" id="3651">
+                    <map:expression source="Attachments.Authoring Tool" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="Checkout User" id="1142">
+                    <map:expression source="Attachments.Checkout User" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="File Description" id="1045">
+                    <map:expression
+                        source="Attachments.File Description" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="Folder Version" id="3622">
+                    <map:expression source="Attachments.Folder Version" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="File Size" id="3623">
+                    <map:expression source="Attachments.File Size" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="Tool Version" id="3687">
+                    <map:expression source="Attachments.Tool Version" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="Checkout Location" id="1144">
+                    <map:expression
+                        source="Attachments.Checkout Location" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments"
+                    name="Source Created Date" id="3646">
+                    <map:expression
+                        source="Attachments.Source Created Date" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="File Type" id="3624">
+                    <map:expression source="Attachments.File Type" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="Folder Number" id="6038">
+                    <map:expression source="Attachments.Folder Number" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="Checkout Date" id="1143">
+                    <map:expression source="Attachments.Checkout Date" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="Modified Date" id="3621">
+                    <map:expression source="Attachments.Modified Date" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="Last View Date" id="3645">
+                    <map:expression source="Attachments.Last View Date" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="Folder Description" id="6039">
+                    <map:expression
+                        source="Attachments.Folder Description" refresh="true"/>
+                </map:target>
+            </map:parentClass>
+        </map:relation>
+        <map:relation parent="ProE File" child="ProE Folder" self="false">
+            <map:childClass name="File Folders">
+                <map:target page="Files" name="File Name" id="6303">
+                    <map:expression source="attachment"
+                        match="^(.*[\\/]|)([^\\/]+)$" replace="$2"/>
+                </map:target>
+                <map:target page="Files" name="Source Version" id="6318">
+                    <map:expression source="version"/>
+                </map:target>
+                <map:target page="Files" name="Source Created By" id="6319">
+                    <map:expression source="author"/>
+                </map:target>
+                <map:target page="Files" name="File Type" id="6305">
+                    <map:expression source="Files.File Type" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="Source Created Date" id="6151">
+                    <map:expression source="Files.Source Created Date" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="Document Text" id="4684">
+                    <map:expression source="Files.Document Text" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="Modified Date" id="6154">
+                    <map:expression source="Files.Modified Date" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="Checkout Location" id="2000007045">
+                    <map:expression source="Files.Checkout Location" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="Tool Version" id="6317">
+                    <map:expression source="Files.Tool Version" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="File Description" id="6181">
+                    <map:expression source="Files.File Description" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="PDM Version" id="6320">
+                    <map:expression source="Files.PDM Version" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="File Path" id="6304">
+                    <map:expression source="Files.File Path" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="File Size" id="6148">
+                    <map:expression source="Files.File Size" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="Authoring Tool" id="6296">
+                    <map:expression source="Files.Authoring Tool" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="Last View Date" id="6176">
+                    <map:expression source="Files.Last View Date" refresh="true"/>
+                </map:target>
+            </map:childClass>
+            <map:parentClass name="Files"/>
+        </map:relation>
+    </map:structure>
+    <!--  ************************************************************************************************************
+          **      Misc Related File Structure                                                                       **
+          **                                                                                                        **
+          **               File (self) <- ProE Object                                                               **
+          **                  Folder                                                                                **
+          **                                                                                                        **
+          ************************************************************************************************************  -->
+    <map:structure name="Misc Related File Structure">
+        <map:matchRule source="attachment" match="^.*$"/>
+        <map:self name="Misc Related File" head="false">
+            <map:key page="" name="file-name" id="">
+                <map:expression source="attachment"
+                    match="^(.*[\\/]|)([^\\/]+)$" replace="$2"/>
+            </map:key>
+            <map:class name="Files">
+                <map:target page="" name="file-path" id="">
+                    <map:expression source="attachment"
+                        match="^(.*[\\/]|)([^\\/]+)$" replace="$1"/>
+                </map:target>
+                <map:target page="" name="file-id" id="">
+                    <map:expression source="fileId"/>
+                </map:target>
+                <map:target page="" name="number" id="">
+                    <map:expression source="number"/>
+                </map:target>
+            </map:class>
+            <map:subclass name="file"/>
+        </map:self>
+        <map:object name="Misc Related File Folder" head="false">
+            <map:key page="Title Block" name="Number" id="6173">
+                <map:expression replace=""/>
+            </map:key>
+            <map:class name="File Folders">
+                <map:target name="autonumbersource" option="true">
+                    <map:expression replace="File Folder Number"/>
+                </map:target>
+                <map:target page="Title Block" name="Type" id="6175">
+                    <map:expression source="Title Block.Type" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Lifecycle Phase" id="6390">
+                    <map:expression source="Title Block.Lifecycle Phase" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Last Modified Date" id="6178">
+                    <map:expression
+                        source="Title Block.Last Modified Date" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Checkin Date" id="6388">
+                    <map:expression source="Title Block.Checkin Date" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Checkout Status" id="6389">
+                    <map:expression source="Title Block.Checkout Status" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Description" id="6174">
+                    <map:expression source="Title Block.Description" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Checkout User" id="6180">
+                    <map:expression source="Title Block.Checkout User" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Checkout Date" id="6184">
+                    <map:expression source="Title Block.Checkout Date" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Version" id="7951">
+                    <map:expression source="Title Block.Version" refresh="true"/>
+                </map:target>
+                <map:target page="Title Block" name="Create Date" id="6177">
+                    <map:expression source="Title Block.Create Date" refresh="true"/>
+                </map:target>
+            </map:class>
+            <map:subclass name="Design File Folder"/>
+        </map:object>
+        <map:relation parent="ProE Object" child="Misc Related File" self="true">
+            <map:childClass name="Files">
+                <map:target page="Attachments" name="Source Version" id="3688">
+                    <map:expression source="version"/>
+                </map:target>
+                <map:target page="Attachments" name="Authoring Tool" id="3651">
+                    <map:expression source="Attachments.Authoring Tool" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="Source Created By" id="3689">
+                    <map:expression
+                        source="Attachments.Source Created By" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="Checkout User" id="1142">
+                    <map:expression source="Attachments.Checkout User" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="File Description" id="1045">
+                    <map:expression
+                        source="Attachments.File Description" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="Folder Version" id="3622">
+                    <map:expression source="Attachments.Folder Version" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="Filename" id="1046">
+                    <map:expression source="attachment"
+                        match="^(.*[\\/]|)([^\\/]+)$" replace="$2"/>
+                </map:target>
+                <map:target page="Attachments" name="File Size" id="3623">
+                    <map:expression source="Attachments.File Size" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="Tool Version" id="3687">
+                    <map:expression source="Attachments.Tool Version" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="Checkout Location" id="1144">
+                    <map:expression
+                        source="Attachments.Checkout Location" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments"
+                    name="Source Created Date" id="3646">
+                    <map:expression
+                        source="Attachments.Source Created Date" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="File Type" id="3624">
+                    <map:expression source="Attachments.File Type" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="Folder Number" id="6038">
+                    <map:expression source="Attachments.Folder Number" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="Checkout Date" id="1143">
+                    <map:expression source="Attachments.Checkout Date" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="Modified Date" id="3621">
+                    <map:expression source="Attachments.Modified Date" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="Last View Date" id="3645">
+                    <map:expression source="Attachments.Last View Date" refresh="true"/>
+                </map:target>
+                <map:target page="Attachments" name="Folder Description" id="6039">
+                    <map:expression
+                        source="Attachments.Folder Description" refresh="true"/>
+                </map:target>
+            </map:childClass>
+            <map:parentClass name="Documents"/>
+        </map:relation>
+        <map:relation parent="Misc Related File"
+            child="Misc Related File Folder" self="false">
+            <map:childClass name="File Folders"/>
+            <map:parentClass name="Files">
+                <map:target page="Files" name="Source Version" id="6318">
+                    <map:expression source="version"/>
+                </map:target>
+                <map:target page="Files" name="File Type" id="6305">
+                    <map:expression source="Files.File Type" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="Source Created Date" id="6151">
+                    <map:expression source="Files.Source Created Date" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="Source Created By" id="6319">
+                    <map:expression source="Files.Source Created By" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="Document Text" id="4684">
+                    <map:expression source="Files.Document Text" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="Modified Date" id="6154">
+                    <map:expression source="Files.Modified Date" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="Checkout Location" id="2000007045">
+                    <map:expression source="Files.Checkout Location" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="File Name" id="6303">
+                    <map:expression source="Files.File Name" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="Tool Version" id="6317">
+                    <map:expression source="Files.Tool Version" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="File Description" id="6181">
+                    <map:expression source="Files.File Description" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="PDM Version" id="6320">
+                    <map:expression source="Files.PDM Version" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="File Path" id="6304">
+                    <map:expression source="Files.File Path" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="File Size" id="6148">
+                    <map:expression source="Files.File Size" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="Authoring Tool" id="6296">
+                    <map:expression source="Files.Authoring Tool" refresh="true"/>
+                </map:target>
+                <map:target page="Files" name="Last View Date" id="6176">
+                    <map:expression source="Files.Last View Date" refresh="true"/>
+                </map:target>
+            </map:parentClass>
+        </map:relation>
+    </map:structure>
+</map:root>

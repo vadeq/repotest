@@ -1,0 +1,87 @@
+<DesignState-config>
+ <panel-bar name="panel-bar" hover="true" graphics-theme="zws" expand-mode="multi">
+   <!-- expand-mode can be set to: scroll, single or multi -->
+   <theme>
+    <color name="panel-background" color="#ffffff"/>
+    <color name="menu-background" color="334597"/>
+    <color name="menu-spacing" color="#ffffff"/>
+    <text name="menu-title" font="Calibri" size="14px" color="#ffffff" bold="true"/>
+    <text name="menu-title-hover" font="Calibri" size="14px" color="#ffffff" bold="true"/>
+    <text name="menu-item" font="Calibri" size="12px" color="navy" bold="true"/>
+    <text name="menu-item-hover" font="Calibri" size="12px" color="#334597" bold="true"/>
+   </theme>
+   <properties>
+    <size name="panel-width" value="140"/>
+    <size name="panel-height" value="300"/>
+    <size name="panel-border" value=""/>
+    <size name="menu-height" value="21"/>
+    <size name="menu-border" value="0"/>
+    <size name="menu-spacing-height" value="10"/>
+    <size name="menu-item-icon-width" value="130"/>
+    <size name="menu-item-icon-height" value="18"/>
+
+    <property name="menu-item-icon-position" value="above"/>
+
+    <image name="panel-background" src="content_background"/>
+    <image name="menu-background" src="menu_group_img"/>
+    <image name="menu-bottom" src="content_end"/>
+    <image name="clear-pixel" src="clearpixel"/>
+   </properties>
+
+   <menu title="Cisco PLS 1.3" roles="all-roles">
+    <menu-item image="publish_immediate_nav" tip="PEN Publish: Immediate Release" url="/publish/cisco.do?menuItem=0.1&amp;publishPending=false" roles="all-roles"/>
+    <menu-item image="publish_pending_nav" tip="PEN Publishing: Pending Review" url="/publish/cisco.do?menuItem=0.2&amp;publishPending=true" roles="all-roles"/>
+    <menu-item image="publish_logs_nav" tip="PEN Status and Activity Monitor" url="/publish/retrieveque.do?menuItem=0.3" roles="all-roles"/>
+
+<!--     <menu-item image="publish_logs_nav" tip="PEN Status and Activity Monitor" url="/pen/cisco-1.3.1.jsp?menuItem=0.3" roles="all-roles"/> -->
+   </menu>
+
+<!--
+   <menu title="Agile" roles="all-roles">
+    <menu-item image="search_nav"	tip="Search Intralink" url="/pen/cisco-1.3.1.jsp?menuItem=1.1" roles="all-roles"/>
+   </menu>
+
+   <menu title="Windchill" roles="all-roles">
+    <menu-item image="search_nav"	tip="Search Intralink" url="/pen/cisco-1.3.1.jsp?menuItem=2.1" roles="all-roles"/>
+    <menu-item image="event_history_nav"	tip="Monitor Intralink Events"  url="" roles="all-roles"/>
+   </menu>
+
+   <menu title="Teamcenter" roles="all-roles">
+    <menu-item image="search_nav"	tip="Search Intralink" url="/pen/cisco-1.3.1.jsp?menuItem=3.1" roles="all-roles"/>
+    <menu-item image="event_history_nav"	tip="Monitor Teamcenter Events"  url="" roles="all-roles"/>
+   </menu>
+-->
+
+   <menu title="My Account" roles="all-roles">
+    <menu-item image="my_profile_nav" 	tip="View Account Profile" url="/account/profile/index.do?menuItem=4.1" roles="all-roles"/>
+    <menu-item image="change_password_nav" tip="Change Login Password" url="/account/profile/changePassword.do?menuItem=4.2" roles="all-roles"/>
+   </menu>
+
+   <menu title="Administration" roles="all-roles">
+    <menu-item image="user_accounts_nav" tip="Manage User Accounts" url="/account/user/index.do?menuItem=5.1" roles="all-roles"/>
+    <menu-item image="encrypt_password_nav" tip="Encrypt Password" 
+			url="/password/encryptPassword.do?menuItem=5.2" roles="all-roles"/>
+<!--
+<menu-item image="handler_queue_nav" tip="Event Handling Queue" url="/event/processor/index.do" roles="all-roles"/>
+-->
+   </menu>
+
+<!--
+   <menu title="Configuration" roles="all-roles">
+    <menu-item image="scheduler_nav"	tip="Schedule Processes" url="/scheduler/index.do" roles="all-roles"/>
+   </menu>
+
+   <menu title="Installation" roles="all-roles">
+    <menu-item image="reload_nav"	tip="Reload DesignState Server" url="/administration/index.do?event=reload&amp;serverName=DesignState-node-0" roles="all-roles"/>
+   </menu>
+
+  <menu title="Logs" roles="all-roles">
+    <menu-item image="process_logs_nav"  tip="Process Logs" url="/recorder/namespaces.do?menuItem=6.1" roles="all-roles"/>
+   </menu>
+-->   
+
+
+   <menu title="Logout" url="/logout.do?event=logout" roles="all-roles"/>
+ </panel-bar>
+
+</DesignState-config>

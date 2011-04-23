@@ -1,0 +1,40 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/jsp/root/synchronization
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-04-24T13:35:09.287705Z
+6115
+rmccabe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+sync.jsp
+file
+
+
+
+
+2008-07-11T22:05:48.406625Z
+ce7d472c90d4a8f78742df0d6293b946
+2008-04-24T13:35:09.287705Z
+6115
+rmccabe
+

@@ -1,0 +1,25 @@
+<DesignState-config>
+ <properties>
+  <property name="start-page" value="publish-search" />
+  <property name="enable-authentication" value="true"/>
+
+  <property name="service-name" value="DesignState" />
+
+  <property name="server-list" value="DesignState-node-0" />
+
+  <dir name="zws-web-app-config" path="[zws-config]/[organization]/[project]/web-app"/>
+
+  <property name="DesignState-database" value="DesignState" />
+
+
+  <!-- MODULE SPECIFIC PROPERTIES -->
+  <!-- Proc On Fly -->
+  <property name="proc-on-fly-report" value="Austin"/>
+
+
+  <!-- report Configurations -->
+
+  <!-- XSL STYLESHEETS  -->
+
+ </properties>
+</DesignState-config>

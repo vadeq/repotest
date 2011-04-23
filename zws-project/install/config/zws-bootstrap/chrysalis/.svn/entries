@@ -1,0 +1,40 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/zws-project/install/config/zws-bootstrap/chrysalis
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-03-25T18:34:48.173843Z
+5910
+eankutse
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+bootstrap.xml
+file
+
+
+
+
+2008-07-11T20:44:21.344125Z
+7fdb48e95a44f24dbec698be9310ed27
+2008-03-25T18:34:48.173843Z
+5910
+eankutse
+

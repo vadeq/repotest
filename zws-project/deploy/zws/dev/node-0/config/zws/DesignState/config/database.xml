@@ -1,0 +1,11 @@
+<DesignState-config>
+	<databases>
+		<!-- <mysql name="secure-spaces" database-name="zwsSecureSpace"/> -->
+		<mysql name="zws-synch-db" database-name="zwsSynchronizationLog"
+			host="localhost" username="DesignState" password="zero0"/>
+		<mysql name="zws-recorder-db" database-name="zwsRecorder" host="localhost"
+			username="DesignState" password="zero0"/>
+		<mysql name="DesignState" database-name="DesignState" host="localhost"
+			username="DesignState" password="zero0"/>
+	</databases>
+</DesignState-config>

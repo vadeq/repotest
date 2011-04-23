@@ -1,0 +1,13 @@
+<instructions>
+  <configuration ignore="true"/>
+
+  <configurator instance-of="zws.application.Configurator">
+    <base-path property="basePath"/>
+  </configurator>
+
+  <load instance-of="zws.application.Loader" method="load">
+    <tag-map required="true"/>
+    <file property="XMLConfiguration" required="true"/>
+  </load>
+  
+</instructions>

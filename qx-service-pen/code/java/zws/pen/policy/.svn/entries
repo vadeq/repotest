@@ -1,0 +1,76 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-08-14T12:55:51.207855Z
+6502
+eankutse
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+PENPolicy.java
+file
+
+
+
+
+2008-07-11T20:41:54.250375Z
+c53b0d8bc5a3b6e9944d3e91d3e7e94f
+2008-03-13T18:01:11.718159Z
+5823
+pavan.toleti
+
+SourcePENPolicy.java
+file
+
+
+
+
+2008-07-11T20:41:54.297250Z
+1d539ce897fa9d9d3bd4d2f29fb6df88
+2008-02-29T17:07:58.472510Z
+5704
+pavan.toleti
+
+declaration
+dir
+
+TargetPENPolicy.java
+file
+
+
+
+
+2008-07-11T20:41:54.344125Z
+d91187f60538841ffdba29c2d2576f36
+2008-02-29T17:07:58.472510Z
+5704
+pavan.toleti
+
+partner
+dir
+
+old
+dir
+
+op
+dir
+

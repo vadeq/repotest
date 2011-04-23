@@ -1,0 +1,55 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/product/pen/plugin-pen/code/java/zws/service/policy/match
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-05-28T14:50:17.813648Z
+6277
+ptoleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+PolicyMatchSvc.java
+file
+
+
+
+
+2008-07-11T20:41:02.578500Z
+a2d486a3429f935b47eb68c871052ed5
+2008-03-04T17:18:58.366510Z
+5750
+pavan.toleti
+
+PolicyMatch.java
+file
+
+
+
+
+2008-07-11T20:41:02.641000Z
+f9efbbdeaf41fd37eb6afe9b8960a0f8
+2008-04-17T19:55:49.969796Z
+6064
+eankutse
+
+op
+dir
+

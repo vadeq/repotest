@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plm-api-server>
+	<!--Configuration for async communication component-->
+	<async-config>
+		<!--Wakeup interval(seconds) of main thread.-->
+		<property name="thread.wakeup.interval" value="15"/>
+
+		<!--Minimum number of threads in thread pool.-->
+		<property name="thread.pool.minsize" value="3"/>
+
+		<!-- Maximum number of threads in thread pool.-->
+		<property name="thread.pool.maxsize" value="3"/>
+
+		<!--Timeout after waiting for specified seconds to get a worker thread. 0 or negative value means it will wait forever.
+		-->
+		<property name="thread.get.timeout" value="5"/>
+
+		<!--Maximum number of messages to pick up from queue.-->
+		<property name="message.process.count" value="3"/>	
+
+		<!--Identify a message as not being processed by any server when the time elapsed greater than the value of this property. Time eclapsed = current time - modify time of message. By default, it's 1 hour (3600 seconds).-->
+		<property name="message.process.timeout" value="3600"/>
+
+		<!--Retry for the number of times specified in this property. By default, there's no retry.-->	
+		<property name="message.retry.count" value="0"/>	
+
+		<!--Async implementation package. By default, com.agile.plmapi.service.async.impl-->
+		<property name="async.impl.package" value="com.agile.plmapi.service.async.sdk"/>
+
+		<!--Async implementation package. By default, AsyncPLMAPIAction-->
+		<property name="async.impl.action" value="AsyncPLMAPIAction"/>
+
+		<!--Async implementation package.By default, AsyncServiceImpl-->
+		<property name="async.impl.service" value="AsyncServiceImpl"/>
+	</async-config>
+</plm-api-server>

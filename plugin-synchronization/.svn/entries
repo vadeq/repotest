@@ -1,0 +1,46 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/synchronization/plugin-synchronization
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-04-23T20:11:03.960172Z
+6106
+rmccabe
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+build
+dir
+
+code
+dir
+
+build.xml
+file
+
+
+
+
+2008-07-11T20:39:46.703500Z
+c36d06955b5294e7dc7199ddbee64469
+2007-07-25T05:19:16.021247Z
+2598
+arbind.thakur
+

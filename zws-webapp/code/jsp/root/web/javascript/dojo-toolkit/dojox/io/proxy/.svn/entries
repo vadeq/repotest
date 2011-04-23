@@ -1,0 +1,79 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/io/proxy
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+xip_client.html
+file
+
+
+
+
+2008-07-11T22:09:47.359750Z
+bfc739faa30572d499fa0ddae06dde5c
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+tests
+dir
+
+xip_server.html
+file
+
+
+
+
+2008-07-11T22:09:47.437875Z
+f181a601f2737e5033e7e0a294203161
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+xip.js
+file
+
+
+
+
+2008-07-11T22:09:47.516000Z
+fa97ceb9e800af624a8f1380ded6c620
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+README
+file
+
+
+
+
+2008-07-11T22:09:47.641000Z
+50923bdf24e739a13faea6f6fda8f547
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+

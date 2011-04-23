@@ -1,0 +1,13 @@
+use mysql;
+
+#Create DesignState user
+UPDATE user SET user='DesignState' WHERE user='root';
+
+#SET DesignState PASSWORD
+UPDATE user SET password=password('zero0') WHERE user='DesignState';
+
+#REMOVE ANONYMOUS USERS
+DELETE FROM user WHERE user = '';
+
+#UPDATE TABLE PRIVILEGES
+FLUSH PRIVILEGES;

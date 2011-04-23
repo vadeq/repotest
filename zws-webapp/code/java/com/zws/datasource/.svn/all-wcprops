@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/datasource
+END
+SQLSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/datasource/SQLSource.java
+END
+FileSystemSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/datasource/FileSystemSource.java
+END
+SQLServerSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/datasource/SQLServerSource.java
+END
+DataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/datasource/DataSource.java
+END
+IntralinkSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/datasource/IntralinkSource.java
+END

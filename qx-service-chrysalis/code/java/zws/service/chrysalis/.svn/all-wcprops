@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/zws/!svn/ver/6371/trunk/zws/plugin/chrysalis/qx-service-chrysalis/code/java/zws/service/chrysalis
+END
+ChrysalisRequestStatusRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/zws/!svn/ver/5695/trunk/zws/plugin/chrysalis/qx-service-chrysalis/code/java/zws/service/chrysalis/ChrysalisRequestStatusRegistry.java
+END
+ChrysalisInstructionGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/zws/!svn/ver/6371/trunk/zws/plugin/chrysalis/qx-service-chrysalis/code/java/zws/service/chrysalis/ChrysalisInstructionGenerator.java
+END
+ChrysalisRequestProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/zws/!svn/ver/4410/trunk/zws/plugin/chrysalis/qx-service-chrysalis/code/java/zws/service/chrysalis/ChrysalisRequestProcessor.java
+END
+ChrysalisInputManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/zws/!svn/ver/6371/trunk/zws/plugin/chrysalis/qx-service-chrysalis/code/java/zws/service/chrysalis/ChrysalisInputManager.java
+END
+ChrysalisSvcInputQHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/zws/!svn/ver/5941/trunk/zws/plugin/chrysalis/qx-service-chrysalis/code/java/zws/service/chrysalis/ChrysalisSvcInputQHandler.java
+END
+ChrysalisOutputManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/zws/!svn/ver/6371/trunk/zws/plugin/chrysalis/qx-service-chrysalis/code/java/zws/service/chrysalis/ChrysalisOutputManager.java
+END
+ChrysalisSvc.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/5941/trunk/zws/plugin/chrysalis/qx-service-chrysalis/code/java/zws/service/chrysalis/ChrysalisSvc.java
+END
+ChrysalisSvcOutputQHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/zws/!svn/ver/5659/trunk/zws/plugin/chrysalis/qx-service-chrysalis/code/java/zws/service/chrysalis/ChrysalisSvcOutputQHandler.java
+END
+ChrysalisStatusRequestProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/zws/!svn/ver/5695/trunk/zws/plugin/chrysalis/qx-service-chrysalis/code/java/zws/service/chrysalis/ChrysalisStatusRequestProcessor.java
+END
+ChrysalisSvcDesignConverterQHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/zws/!svn/ver/5941/trunk/zws/plugin/chrysalis/qx-service-chrysalis/code/java/zws/service/chrysalis/ChrysalisSvcDesignConverterQHandler.java
+END
+PropertiesReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/zws/!svn/ver/5659/trunk/zws/plugin/chrysalis/qx-service-chrysalis/code/java/zws/service/chrysalis/PropertiesReader.java
+END
+ChrysalisRequestProcessorResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/zws/!svn/ver/6371/trunk/zws/plugin/chrysalis/qx-service-chrysalis/code/java/zws/service/chrysalis/ChrysalisRequestProcessorResource.java
+END
+ChrysalisDesignConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/zws/!svn/ver/6371/trunk/zws/plugin/chrysalis/qx-service-chrysalis/code/java/zws/service/chrysalis/ChrysalisDesignConverter.java
+END
+ChrysalisTranslationRequestProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/zws/!svn/ver/4410/trunk/zws/plugin/chrysalis/qx-service-chrysalis/code/java/zws/service/chrysalis/ChrysalisTranslationRequestProcessor.java
+END
+ChrysalisTranslationResultsFileNotFoundException.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/zws/!svn/ver/4468/trunk/zws/plugin/chrysalis/qx-service-chrysalis/code/java/zws/service/chrysalis/ChrysalisTranslationResultsFileNotFoundException.java
+END

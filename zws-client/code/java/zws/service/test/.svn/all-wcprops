@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/code/java/zws/service/test
+END
+TestService.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/test/TestService.java
+END
+EJBLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/test/EJBLocator.java
+END
+TestServiceLocalHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/test/TestServiceLocalHome.java
+END
+TestServiceRemoteHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/test/TestServiceRemoteHome.java
+END
+TestServiceHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/test/TestServiceHome.java
+END
+TestServiceLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/test/TestServiceLocal.java
+END
+TestServiceRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/test/TestServiceRemote.java
+END

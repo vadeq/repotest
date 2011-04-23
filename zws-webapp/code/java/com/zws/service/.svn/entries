@@ -1,0 +1,73 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/java/com/zws/service
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-05-01T15:46:06.603513Z
+6152
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+repository
+dir
+
+baseline
+dir
+
+Database_old.java
+file
+
+
+
+
+2008-07-11T22:04:48.031625Z
+6e2fd598d409ee8ab7e77a0e640120a1
+2008-02-29T17:00:53.791577Z
+5675
+pavan.toleti
+
+IDGenerator.java
+file
+
+
+
+
+2008-07-11T22:04:48.203500Z
+6874494f3cd486923ded30bbfb387740
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+config
+dir
+
+chron
+dir
+
+catalog
+dir
+
+account
+dir
+
+scheduler
+dir
+

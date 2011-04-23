@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/java/zws/hi/application/panelbar/xml
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:19:54.379681Z
+5307
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+PanelBarContext.java
+file
+
+
+
+
+2008-07-11T22:03:56.078500Z
+7a618e9ca57b6be21e5a353ff1470bc1
+2007-06-20T20:32:08.804405Z
+2064
+dushant.reddy
+
+PanelBarLoader.java
+file
+
+
+
+
+2008-07-11T22:03:56.125375Z
+1b60f1a6d6dc85b82dc8bf1cce5d9a57
+2007-06-20T20:32:08.804405Z
+2064
+dushant.reddy
+

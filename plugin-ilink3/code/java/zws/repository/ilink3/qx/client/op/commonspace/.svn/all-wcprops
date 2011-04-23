@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/zws/!svn/ver/5713/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace
+END
+SetLifeCycleAttribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/zws/!svn/ver/5381/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/SetLifeCycleAttribute.java
+END
+CreateFolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/zws/!svn/ver/5381/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/CreateFolder.java
+END
+ListEvents.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/zws/!svn/ver/5381/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/ListEvents.java
+END
+UnSetLifeCycleAttribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/zws/!svn/ver/5381/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/UnSetLifeCycleAttribute.java
+END
+DemoteInstance.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/zws/!svn/ver/4030/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/DemoteInstance.java
+END
+Search.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/zws/!svn/ver/552/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/Search.java
+END
+GetFolderListing.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/zws/!svn/ver/5381/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/GetFolderListing.java
+END
+Move.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/zws/!svn/ver/5381/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/Move.java
+END
+Rename.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/zws/!svn/ver/5713/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/Rename.java
+END
+PromoteInstance.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/zws/!svn/ver/4030/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/PromoteInstance.java
+END
+Demote.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/zws/!svn/ver/4030/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/Demote.java
+END
+ReportBill.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/zws/!svn/ver/5381/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/ReportBill.java
+END
+Find.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/zws/!svn/ver/528/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/Find.java
+END
+ListAttributes.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/zws/!svn/ver/5381/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/ListAttributes.java
+END
+Promote.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/zws/!svn/ver/4030/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/Promote.java
+END
+GetDependencies.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/zws/!svn/ver/4030/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/GetDependencies.java
+END
+Lock.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/zws/!svn/ver/5381/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/Lock.java
+END
+IntralinkRepositoryOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/zws/!svn/ver/552/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/IntralinkRepositoryOp.java
+END
+GetFolderTree.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/zws/!svn/ver/5381/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/GetFolderTree.java
+END
+ReportLatestBill.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/zws/!svn/ver/5381/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/ReportLatestBill.java
+END
+SetLifeCycleAttributeList.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/zws/!svn/ver/5381/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/SetLifeCycleAttributeList.java
+END
+Unlock.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/zws/!svn/ver/5381/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/Unlock.java
+END
+FindLatest.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/zws/!svn/ver/731/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/FindLatest.java
+END
+DeleteFolder.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/zws/!svn/ver/5381/trunk/zws/plugin/repository/ilink3/plugin-ilink3/code/java/zws/repository/ilink3/qx/client/op/commonspace/DeleteFolder.java
+END

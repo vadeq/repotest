@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="dev-build" default="publish-clean">
+
+  <path id="includes">
+    <!-- for including properties files and such in jar -->
+    <!-- fileset dir="${config}/ini">
+      <include name="**/*.properties,**/*.xml,**/*.xsd"/>
+    </fileset -->
+  </path>
+
+  <import file="build/title.build"/>
+  <import file="build/local-env.build"/>
+  <import file="build/classpath.build"/>
+  <import file="${build-scripts}\zws.build"/>
+
+  <target name="publish-fast" depends="zws-publish-fast-jar"/>
+  <target name="publish-clean" depends="zws-publish-clean-jar"/>
+  <target name="publish-updates" depends="zws-publish-updates-jar"/>
+
+</project>

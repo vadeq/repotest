@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/zws/!svn/ver/6310/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/binary
+END
+CopyBinaryFiles.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/zws/!svn/ver/4708/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/binary/CopyBinaryFiles.java
+END
+TranslateProeDesignToIgsOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/zws/!svn/ver/5960/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/binary/TranslateProeDesignToIgsOp.java
+END
+AdoptBinariesFromDeps.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/zws/!svn/ver/5464/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/binary/AdoptBinariesFromDeps.java
+END
+SetTranslatedBinaryContextValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/zws/!svn/ver/5704/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/binary/SetTranslatedBinaryContextValue.java
+END
+TranslateProeDesignToPdfOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/zws/!svn/ver/5960/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/binary/TranslateProeDesignToPdfOp.java
+END
+TransformBinaryOpBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/zws/!svn/ver/6310/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/binary/TransformBinaryOpBase.java
+END
+TranslateProeDesignToStepOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/zws/!svn/ver/5960/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/transform/binary/TranslateProeDesignToStepOp.java
+END

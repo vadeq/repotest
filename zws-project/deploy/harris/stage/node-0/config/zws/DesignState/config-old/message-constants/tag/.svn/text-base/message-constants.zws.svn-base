@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<instructions>
+
+  <DesignState-config ignore="true"/>
+
+  <message-constants ignore="true"/>
+
+  <message-constant instance-of="zws.application.messageconstants.MessageConstant" static-method="add" class="zws.application.messageconstants.MessageConstants" >
+    <id required="true" />
+    <message required="true" />
+    <description required="false" />
+  </message-constant>
+
+
+</instructions>

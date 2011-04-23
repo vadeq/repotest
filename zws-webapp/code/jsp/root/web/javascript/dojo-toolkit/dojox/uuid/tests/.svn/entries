@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox/uuid/tests
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+uuid.js
+file
+
+
+
+
+2008-07-11T22:09:45.453500Z
+b831b7db545466d5156e09b9ca27102b
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+runTests.html
+file
+
+
+
+
+2008-07-11T22:09:45.531625Z
+7f6ae36dac1f00d6bdf1e58ad61981ae
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+

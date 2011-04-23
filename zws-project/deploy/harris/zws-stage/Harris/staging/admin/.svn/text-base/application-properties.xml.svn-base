@@ -1,0 +1,51 @@
+<DesignState-config>
+ <!-- organization's customized application properties -->
+ <properties>
+
+  <property name="publishing-environment" value="Open" /> <!-- Open or Vault -->
+  <property name="find-numbers-base-directory" value="E:\zws\Findnumbers"/>
+
+  <property name="untouchable-folders" value="
+         Root Folder/Training,
+         Root Folder/test,
+         Root Folder/Untouchable,
+         Root Folder/Models/Exception/999-500/Untouch,
+         Root Folder/RTP Forms,
+         Root Folder/Libraries/Design Aids,
+         Root Folder/Libraries/Formats,
+         Root Folder/Libraries/Materials,
+         Root Folder/Libraries/Notes,
+         Root Folder/Libraries/Pending,
+         Root Folder/Libraries/Pro Cable,
+         Root Folder/Libraries/Sections,
+         Root Folder/Libraries/Symbols,
+         Root Folder/Libraries/Tables,
+         Root Folder/Libraries/Templates" />
+
+  <property name="non-publishing-folders" value="Root Folder/Non-Pub" />
+  
+  <!-- email alert -->
+  <property name="email-from-address" value="pen-zero-big@zerowait-state.com" />
+  <property name="email-smtp-server" value="mail.zerowait-state.com" />
+  <property name="email-recipients" value="dstewart@zerowait-state.com" /> 
+
+ </properties>
+</DesignState-config>
+
+<!--
+         Root Folder/Training,
+         Root Folder/test,
+         Root Folder/Untouchable,
+         Root Folder/Models/Exception/999-500/Untouch,
+         Root Folder/RTP Forms,
+         Root Folder/Libraries/Design Aids,
+         Root Folder/Libraries/Formats,
+         Root Folder/Libraries/Materials,
+         Root Folder/Libraries/Notes,
+         Root Folder/Libraries/Pending,
+         Root Folder/Libraries/Pro Cable,
+         Root Folder/Libraries/Sections,
+         Root Folder/Libraries/Symbols,
+         Root Folder/Libraries/Tables,
+         Root Folder/Libraries/Templates
+-->

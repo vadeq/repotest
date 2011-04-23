@@ -1,0 +1,10 @@
+<DesignState-config>
+	<qx-queue-ops>
+		<qx-queue queue-namespace="qx-queue-chrysalis-input-queue"
+			queue-op="zws.service.chrysalis.ChrysalisSvcInputQHandler"/>
+		<qx-queue queue-namespace="qx-queue-chrysalis-convert-queue"
+			queue-op="zws.service.chrysalis.ChrysalisSvcDesignConverterQHandler"/>
+		<qx-queue queue-namespace="qx-queue-chrysalis-output-queue"
+			queue-op="zws.service.chrysalis.ChrysalisSvcOutputQHandler"/>
+	</qx-queue-ops>
+</DesignState-config>

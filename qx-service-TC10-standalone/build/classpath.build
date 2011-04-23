@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="classpath">
+  <path id="classpath">
+    <!-- update to name specific jars -->
+    <fileset dir="${deps}/ugs/tc10"> <include name="portal.jar"/> </fileset>
+    <fileset dir="${deps}/ugs/tc10"> <include name="*.jar"/> </fileset>
+    <fileset dir="${deps}/ugs/tc10/fms"> <include name="*.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-qx.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-qx-web-client.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-interface.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-TC10.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-file-depot.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="DesignState-Client.jar"/> </fileset>
+  </path>
+</project>

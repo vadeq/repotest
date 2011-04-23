@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/event/plugin-queue-event/code/java/zws/service/event
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-05-01T18:38:22.310490Z
+6173
+eankutse
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+EventQueuePlugin.java
+file
+
+
+
+
+2008-07-11T17:23:34.297250Z
+7cf99f906a80ed6c40789b5fe17b5936
+2008-05-01T18:38:22.310490Z
+6173
+eankutse
+
+TestEventQueue.java
+file
+
+
+
+
+2008-07-11T17:23:34.344125Z
+13c47b2fe8ec3407705f5331d4069d4a
+2008-02-29T17:01:09.355677Z
+5680
+pavan.toleti
+

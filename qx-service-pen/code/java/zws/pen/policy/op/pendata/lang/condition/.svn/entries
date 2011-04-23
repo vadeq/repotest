@@ -1,0 +1,49 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/lang/condition
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-08-13T18:55:35.066193Z
+6498
+eankutse
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+ConditionOPBase.java
+file
+
+
+
+
+2008-07-11T20:41:32.734750Z
+570d0080d29cf3290f0d48737666b8ba
+2007-09-23T03:59:55.409579Z
+3387
+arbind.thakur
+
+comparison
+dir
+
+logical
+dir
+
+util
+dir
+

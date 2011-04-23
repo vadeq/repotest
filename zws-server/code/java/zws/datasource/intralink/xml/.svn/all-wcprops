@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/datasource/intralink/xml
+END
+WorkspaceStatusHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/xml/WorkspaceStatusHandler.java
+END
+SearchResultHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/datasource/intralink/xml/SearchResultHandler.java
+END
+ListAttributesHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/xml/ListAttributesHandler.java
+END
+GetBillHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/xml/GetBillHandler.java
+END
+PromoteResultHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/xml/PromoteResultHandler.java
+END
+GetDependenciesHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/datasource/intralink/xml/GetDependenciesHandler.java
+END
+WorkspaceListHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/xml/WorkspaceListHandler.java
+END
+ListWorkspaceHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/xml/ListWorkspaceHandler.java
+END
+IntralinkResultHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/xml/IntralinkResultHandler.java
+END
+FolderTreeHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/xml/FolderTreeHandler.java
+END
+WorkspaceHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/xml/WorkspaceHandler.java
+END
+PromoteFormSearchResultHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/xml/PromoteFormSearchResultHandler.java
+END
+IlinkQxResponseHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/xml/IlinkQxResponseHandler.java
+END
+ListNamesHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/xml/ListNamesHandler.java
+END
+ListEventsHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/zws/!svn/ver/5/trunk/zws/designstate/server/code/java/zws/datasource/intralink/xml/ListEventsHandler.java
+END

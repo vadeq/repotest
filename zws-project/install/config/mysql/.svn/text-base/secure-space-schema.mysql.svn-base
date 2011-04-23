@@ -1,0 +1,120 @@
+DROP DATABASE IF EXISTS zwsSecureSpace;
+CREATE DATABASE zwsSecureSpace;
+USE zwsSecureSpace;
+
+# Users
+		drop table if exists secureUser;
+
+    create table secureUser (
+     username varchar(250) primary key,
+     alias    varchar(250),
+     first    varchar(50),
+     last     varchar(50),
+     email    varchar(250),
+     phone    varchar(25),
+     active   tinyint default 1
+    ) type = InnoDB;
+
+# User Spaces
+		drop table if exists userSpace;
+
+    create table userSpace (
+     uSpace   varchar(250) primary key,
+     note     varchar(250),
+     type     varchar(250),
+     fqcn     varchar(250)
+    ) type = InnoDB;
+
+# User Space Families (supports multi-inheritance)
+		drop table if exists userSpaceFamily;
+
+    create table userSpaceFamily (
+     parent   varchar(250) not null references userSpace(uSpace) on delete cascade,
+     child    varchar(250) not null references userSpace(uSpace) on delete cascade,
+		 primary key (parent, child),
+		 index p (parent),
+		 index c (child)
+ ) type = InnoDB;
+
+# Data Spaces
+
+
+
+-- ------------------------------------
+-- Table: vadeSpaceFamily
+-- 
+		drop table if exists vadeSpaceFamily;
+
+    create table vadeSpaceFamily (
+     parent   varchar(250) not null references vadeSpace(vSpace) on delete cascade,
+     child    varchar(250) not null references vadeSpace(vSpace) on delete cascade,
+ 		 primary key (parent, child),
+ 		 index spc_fam_p_idx (parent),
+		 index spc_fam_c_idx (child)
+    ) type = InnoDB;
+
+-- ------------------------------------
+-- Table: secureUserSpace
+-- 
+
+		drop table if exists secureUserSpace;
+
+    create table secureUserSpace (
+     username varchar(250) not null references secureUser(username) on delete cascade,
+     uSpace   varchar(250) not null references userSpace(uSpace) on delete cascade,
+     primary key (username, uSpace),
+     index spc_usr_u_idx (username),
+     index spc_usr_s_idx (uSpace)     
+    ) type = InnoDB;
+
+-- ------------------------------------
+-- Table: secureVadeSpace
+-- Data and Actions Available in Secure Spaces
+
+		drop table if exists secureVadeSpace;
+
+    create table secureVadeSpace (
+      vSpace varchar(250) not null references vadeSpace(vSpace) on delete cascade,
+      uSpace varchar(250) not null references userSpace(uSpace) on delete cascade,
+      primary key (vSpace, uSpace),
+      index spc_dat_d_idx (vSpace),
+    	index spc_dat_u_idx (uSpace)      
+    ) type = InnoDB;
+
+-- ------------------------------------
+-- Table: password
+-- Passwords for Protected Data and Actions
+
+		drop table if exists password;
+
+    create table password (
+     vSpace   varchar(250) not null,
+     uSpace   varchar(250) not null,
+     username varchar(250) not null,
+     password varchar(250) not null,
+     primary key (vSpace, uSpace),
+     index spc_pwd_u_idx (vSpace),
+     index spc_pwd_d_idx (uSpace),     
+		 foreign key (uSpace, vSpace) 
+        references secureVadeSpace(vSpace, uSpace) on delete cascade
+    ) type = InnoDB;
+
+--insert into userspace set uspace='admin';
+--insert into userspace set uspace='engineer';
+--insert into userspace set uspace='guest';
+
+--insert into dataspace set dspace='report0';
+--insert into dataspace set dspace='report1';
+--insert into dataspace set dspace='report2';
+
+--insert into securedataspace set uspace='guest',  dspace='report0';
+--insert into securedataspace set uspace='engineer', dspace='report0';
+--insert into securedataspace set uspace='admin',  dspace='report0';
+
+--insert into securedataspace set uspace='engineer', dspace='report1';
+--insert into securedataspace set uspace='admin', dspace='report1';
+
+--insert into securedataspace set uspace='admin', dspace='report2';
+
+
+

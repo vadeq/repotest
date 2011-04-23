@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/zws/!svn/ver/6278/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/retrieve/metadata
+END
+RetrieveDesignStructure.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/zws/!svn/ver/5521/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/retrieve/metadata/RetrieveDesignStructure.java
+END
+RetrieveFirstLevelLatestBOM.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/zws/!svn/ver/5742/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/retrieve/metadata/RetrieveFirstLevelLatestBOM.java
+END
+RetrieveLatestBOM.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/zws/!svn/ver/5742/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/retrieve/metadata/RetrieveLatestBOM.java
+END
+RetrieveMetadataOpBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/zws/!svn/ver/6278/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/retrieve/metadata/RetrieveMetadataOpBase.java
+END
+RetrieveBOM.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/zws/!svn/ver/5521/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/retrieve/metadata/RetrieveBOM.java
+END
+RetrieveFirstLevelBOM.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/zws/!svn/ver/5742/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/retrieve/metadata/RetrieveFirstLevelBOM.java
+END
+RetrieveLatestMetadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/zws/!svn/ver/5742/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/retrieve/metadata/RetrieveLatestMetadata.java
+END
+RetrieveBOMWithDependencies.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/zws/!svn/ver/5521/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/retrieve/metadata/RetrieveBOMWithDependencies.java
+END
+RetrieveMetadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/zws/!svn/ver/5742/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/retrieve/metadata/RetrieveMetadata.java
+END
+RetrieveFirstLevelLatestDependencies.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/zws/!svn/ver/5742/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/retrieve/metadata/RetrieveFirstLevelLatestDependencies.java
+END
+RetrieveFirstLevelDependencies.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/zws/!svn/ver/5742/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/retrieve/metadata/RetrieveFirstLevelDependencies.java
+END
+RetrieveWhereUsedList.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/zws/!svn/ver/5742/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/retrieve/metadata/RetrieveWhereUsedList.java
+END

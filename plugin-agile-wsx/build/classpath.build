@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="classpath">
+  <path id="classpath">
+    <!-- update to name specific jars -->
+    
+    <!-- Agile server 9.2.2.1 Jars  -->
+    <fileset dir="${deps}/agile/AgileAPI/9.2.2.1"> <include name="AgileAPI-a9.2.2.1.jar"/> </fileset>
+    <fileset dir="${deps}/agile/AgileAPI/9.2.2.1"> <include name="fsClient-a9.2.2.1.jar"/> </fileset>
+    <fileset dir="${deps}/agile/AgileAPI/9.2.2.1"> <include name="agileclasses-a9.2.2.1.jar"/> </fileset>
+    
+    <!-- Agile PLM API Jars EC1.3.1 -->
+    <fileset dir="${deps}/agile/EC1.3.1/lib/plmapi/client"> <include name="plm-api.jar"/> </fileset>
+    <fileset dir="${deps}/agile/EC1.3.1/lib/plmapi/client"> <include name="plm-api-pam.jar"/> </fileset>
+    <fileset dir="${deps}/agile/EC1.3.1/lib/plmapi/client"> <include name="plm-api-server.jar"/> </fileset>
+
+    <!-- 3rd Party Jars -->
+    <fileset dir="${deps}/agile/EC1.3.1/lib/plmapi/ext"> <include name="**/*.jar"/> </fileset>
+
+    <fileset dir="${published}/jar"> <include name="DesignState-Client.jar"/> </fileset>
+    <fileset dir="${published}/jar"> <include name="zws-plugin-repository.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-interface.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="DesignState-Client.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-qx.jar"/> </fileset>
+		<fileset dir="${dist}/jar"> <include name="zws-qx-web-client.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-file-depot.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-repository.jar"/> </fileset>
+    <fileset dir="${dist}/jar"> <include name="zws-plugin-recorder.jar"/> </fileset>
+
+ </path>
+</project>

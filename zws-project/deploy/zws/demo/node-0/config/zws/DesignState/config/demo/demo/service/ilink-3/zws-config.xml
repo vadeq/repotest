@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<configuration>
+ <configurator base-path="\zws\DesignState\config\[organization]\[project]\service\ilink-3">
+  <load tag-map="..\..\..\..\tag\property.zws"  file="\ilink3-properties.xml"/>
+
+  <load tag-map="..\..\..\..\tag\event-listener.zws"  file="\event-listener.xml"/>
+  <load tag-map="..\..\..\..\tag\license-pool.zws"  file="\license-pool.xml"/>
+
+ </configurator>
+</configuration>

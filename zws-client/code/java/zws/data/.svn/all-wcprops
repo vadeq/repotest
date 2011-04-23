@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/zws/!svn/ver/6328/trunk/zws/designstate/client/code/java/zws/data
+END
+Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/data/Test.java
+END
+MetadataBinaryBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/3534/trunk/zws/designstate/client/code/java/zws/data/MetadataBinaryBase.java
+END
+Metadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/zws/!svn/ver/5136/trunk/zws/designstate/client/code/java/zws/data/Metadata.java
+END
+MetadataFamilyInstanceBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/zws/!svn/ver/3447/trunk/zws/designstate/client/code/java/zws/data/MetadataFamilyInstanceBase.java
+END
+MetadataBinary.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/3447/trunk/zws/designstate/client/code/java/zws/data/MetadataBinary.java
+END
+MetadataFamilyInstance.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/data/MetadataFamilyInstance.java
+END
+IlinkMetadata.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/data/IlinkMetadata.java
+END
+MetadataSubComponentBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/zws/!svn/ver/6328/trunk/zws/designstate/client/code/java/zws/data/MetadataSubComponentBase.java
+END
+MetadataBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/data/MetadataBase.java
+END
+MetadataSubComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/5407/trunk/zws/designstate/client/code/java/zws/data/MetadataSubComponent.java
+END

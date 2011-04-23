@@ -1,0 +1,14 @@
+<DesignState-config>
+	<repositories>
+		<intralink-3 name="ilink" system-password="zero0" system-username="intralink"
+			domain-name="harris" server-name="node-0" protocol="http"
+			host-name="INTRALINK_HOST_NAME" port="80" env-root="ilink-1"
+			services-path="ZeroWait-State/services"/>
+
+		<agile-sdk name="agile-sdk" system-password="zero0" system-username="intralink"
+			domain-name="harris" server-name="node-0" protocol="http"
+			host-name="AGILE_HOST_NAME" port="80" services-path="Agile"
+			ownership-bom-attribute="CAD Source" ownership-bom-attribute-value="Intralink"/>
+
+	</repositories>
+</DesignState-config>

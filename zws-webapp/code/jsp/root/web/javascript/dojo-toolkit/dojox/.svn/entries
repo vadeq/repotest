@@ -1,0 +1,352 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dojox
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+storage.js
+file
+
+
+
+
+2008-07-11T22:10:10.250375Z
+f7401f94845d5a7a5adcae3ba35a9a71
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+wire.js
+file
+
+
+
+
+2008-07-11T22:10:10.344125Z
+dc091d56fde05aa6197c48bb07f222f3
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+image
+dir
+
+dtl
+dir
+
+widget
+dir
+
+gfx
+dir
+
+rpc
+dir
+
+encoding
+dir
+
+gfx3d.js
+file
+
+
+
+
+2008-07-11T22:10:10.453500Z
+8c58abe4a211047eddcb78a40e83db45
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+cometd.js
+file
+
+
+
+
+2008-07-11T22:10:10.578500Z
+be4d033b243f42ba25e6d437db3368d6
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+presentation.js
+file
+
+
+
+
+2008-07-11T22:10:10.656625Z
+610ec58523450f78967c627cdee5205a
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+math
+dir
+
+validate
+dir
+
+color.js
+file
+
+
+
+
+2008-07-11T22:10:10.812875Z
+95eb285ef5f2e4880d3f9571d6cadd7e
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+crypto.js
+file
+
+
+
+
+2008-07-11T22:10:10.922250Z
+09c1a40e0eea472ee7ad03c14172a53b
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+dtl.js
+file
+
+
+
+
+2008-07-11T22:10:11.031625Z
+f8c698c85293461ec1d637af87bf053a
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+charting
+dir
+
+validate.js
+file
+
+
+
+
+2008-07-11T22:10:11.172250Z
+a5ae9700d850aba8a7eb4703cf9a3186
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+math.js
+file
+
+
+
+
+2008-07-11T22:10:11.109750Z
+93050b02e37426190133babd2f279f68
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+storage
+dir
+
+wire
+dir
+
+data
+dir
+
+_cometd
+dir
+
+fx
+dir
+
+layout
+dir
+
+date
+dir
+
+color
+dir
+
+crypto
+dir
+
+uuid.js
+file
+
+
+
+
+2008-07-11T22:10:11.312875Z
+5e7adecb0a4a149f3a893dd3f04863be
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+lang
+dir
+
+LICENSE
+file
+
+
+
+
+2008-07-11T22:10:11.484750Z
+0ccd9dc4b78ba43aa6c1231e82fcf0e5
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+grid
+dir
+
+off.js
+file
+
+
+
+
+2008-07-11T22:10:11.750375Z
+12708aa1c6b6a0f0aa36e8ddc98fd5b0
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+timing
+dir
+
+fx.js
+file
+
+
+
+
+2008-07-11T22:10:11.859750Z
+bc2ec04aabadc55d860dc6bfb2f348c9
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+collections.js
+file
+
+
+
+
+2008-07-11T22:10:12.016000Z
+633fd8b009eb9767ff13c621fdf02d47
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+flash
+dir
+
+_sql
+dir
+
+gfx.js
+file
+
+
+
+
+2008-07-11T22:10:12.344125Z
+2cbc184d04ff7be3a9addb0cb73052da
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+xml
+dir
+
+timing.js
+file
+
+
+
+
+2008-07-11T22:10:12.625375Z
+2372023b392276a28c0e2359dc827d63
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+uuid
+dir
+
+string
+dir
+
+io
+dir
+
+flash.js
+file
+
+
+
+
+2008-07-11T22:10:12.812875Z
+32589667ab32d331fa580878a4b6a6ab
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+resources
+dir
+
+off
+dir
+
+sql.js
+file
+
+
+
+
+2008-07-11T22:10:13.125375Z
+acc3ec12461c503b1d7a84c8b0ad6f7a
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+presentation
+dir
+
+gfx3d
+dir
+
+collections
+dir
+

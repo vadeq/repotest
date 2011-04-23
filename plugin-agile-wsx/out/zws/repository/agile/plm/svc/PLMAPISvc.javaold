@@ -1,0 +1,408 @@
+package zws.repository.agile.plm.svc;
+
+/*
+ * DesignState - Design Compression Technology @author: ptoleti @version: 1.0
+ * Created on Jul 18, 2007 10:51:09 AM Copywrite (c) 2007 Zero Wait-State Inc.
+ * All rights reserved
+ */
+import zws.exception.FailedToAuthenticate;
+import zws.security.Authentication;
+
+import java.io.File;
+import java.net.URL;
+import java.util.Calendar;
+import java.util.Iterator;
+import java.util.Map;
+
+import com.agile.plmapi.api.PlmFactory;
+import com.agile.plmapi.api.PlmObject;
+import com.agile.plmapi.api.PlmRelation;
+import com.agile.plmapi.api.PlmRequest;
+import com.agile.plmapi.api.PlmResponse;
+import com.agile.plmapi.api.PlmSession;
+import com.agile.plmapi.api.impl.PlmRequestHelper;
+import com.agile.plmapi.api.impl.PlmResponseHelper;
+import com.agile.sdo.cif.CifClientUtils;
+import com.agile.share.xml.XmlDocument;
+
+
+/**
+ * The Class PLMAPISvc.
+ *
+ * @author ptoleti
+ */
+public class PLMAPISvc {
+
+  /**
+   * Creates the item.
+   *
+   * @param itemSubClass the item sub class
+   * @param partNumber the part number
+   *
+   * @return the plm object
+   */
+  public PlmObject createItem(String itemSubClass, String partNumber) {
+    PlmObject plmItem = null;
+    try {
+      plmItem = CifClientUtils.addObject(itemSubClass, partNumber, true, true, "zws");
+      plmItem.setOptionValue("type", "item");
+      plmItem.setOptionValue("itemnumber", partNumber);
+      CifClientUtils.addAttribute(plmItem, "number", partNumber, true, true, "MappingCallable");
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return plmItem;
+  }
+
+  /**
+   * Sets the attributes.
+   *
+   * @param data the data
+   * @param plmPart the plm part
+   *
+   * @return the plm object
+   */
+  public PlmObject setAttributes(PlmObject plmPart, Map data) {
+    String attribute = null;
+    String value = null;
+    try {
+      Iterator itr = data.keySet().iterator();
+      while (itr.hasNext()) {
+        attribute = (String) itr.next();
+        value = (String) data.get(attribute);
+        CifClientUtils.addAttribute(plmPart, attribute, value, true, true, "PublishingEngine");
+      }
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return plmPart;
+  }
+
+  /**
+   * Attach file.
+   *
+   * @param fileDescription the file description
+   * @param file the file
+   * @param item the item
+   */
+  public void attachFile(PlmObject item, File file, String fileDescription) {
+    PlmRelation mrel3 = null;
+    PlmObject plmFolder = null;
+    PlmObject plmFile = null;
+    int fileSizex100 = (int) (100 * file.length()) / 1024;
+    double fileSize = fileSizex100 / 100;
+    String partNumber = null;
+    try {
+      partNumber = item.getAttributeValue("number");
+      plmFile = createPLMFile();
+      plmFolder = createPLMFileFolder(file.getName() + " [" + fileSize + "KB]");
+      CifClientUtils.addRelation(item, plmFile, "object-filefolder-relation",
+          partNumber, plmFolder.getKey(), true, true, "MappingCallable");
+
+      mrel3 = CifClientUtils.addRelation(plmFile, plmFolder, "file-filefolder-relation", plmFile.getKey(), plmFolder.getKey(), true, true, "MappingCallable");
+      CifClientUtils.addAttribute(mrel3, "filename", file.getAbsolutePath(), true, true, "MappingCallable"); // files table of filefolder
+      CifClientUtils.addAttribute(mrel3, "filedescription", fileDescription, true, true, "MappingCallable"); // files table of filefolder
+
+      PlmRelation mrel4 = CifClientUtils.addRelation(item, plmFile, "object-file-relation", partNumber, plmFile.getKey(), true, true, "MappingCallable");
+      //mrel4.setOptionValue("filename", file.getName());
+      mrel4.setOptionValue("filename", file.getAbsolutePath());
+      //mrel4.setOptionValue("modified", ""+file.lastModified());
+      //mrel4.setOptionValue("author", "Jason Brown");
+      //mrel4.setOptionValue("filepath", file.getParentFile().getAbsolutePath());
+      mrel4.setOptionValue("fileid", file.hashCode() + ""); // real value for
+                                                            // 11000-06.prt
+      CifClientUtils.addAttribute(mrel4, "filename", file.getAbsolutePath(), true, true, "MappingCallable"); // attachments table of item
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+  }
+
+  /**
+   * Creates the ECO.
+   *
+   * @param id the id
+   * @param autoNumberSrc the auto number src
+   * @param ecoKey the eco key
+   * @param workflow the workflow
+   *
+   * @return the plm object
+   */
+  public PlmObject createECO(String ecoKey, String autoNumberSrc,
+      String workflow, Authentication id) {
+    PlmObject plmECO = null;
+    try {
+      plmECO = CifClientUtils.addObject("Eng Lib ECO", ecoKey, true, true,
+          "MappingCallable");
+      plmECO.setOptionValue("type", "change");
+      plmECO.setOptionValue("autonumbersource", autoNumberSrc);
+      plmECO.setOptionValue("workflow", workflow);
+      plmECO.setOptionValue("changeanalyst", id.getUsername());
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return plmECO;
+  }
+
+  /**
+   * Adds the affected item.
+   *
+   * @param item the item
+   * @param eco the eco
+   */
+  public void addAffectedItem(PlmObject item, PlmObject eco) {
+    String partNumber;
+    try {
+      partNumber = item.getAttributeValue("number");
+      CifClientUtils.addRelation(eco, item, "change-object-relation", eco
+          .getKey(), partNumber, true, true, "MappingCallable");
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+  }
+
+  /**
+   * Creates the request.
+   *
+   * @param id the id
+   * @param createdByTool the created by tool
+   * @param createdForProject the created for project
+   * @param createdByToolVersion the created by tool version
+   *
+   * @return the plm request
+   */
+  public PlmRequest createRequest(Authentication id, String createdByTool,
+                                                     String createdByToolVersion,
+                                                     String createdForProject,
+                                                     String operation) {
+    PlmRequest request = null;
+    request = PlmFactory.createRequest();
+    request.getHeader().setParameter("createdByUser", id.getUsername());
+    request.getHeader().setParameter("createdDate", getCurrentDate());
+    request.getHeader().setParameter("createdByTool", createdByTool);
+    request.getHeader().setParameter("createdByToolVersion", createdByToolVersion);
+    request.getHeader().setParameter("createdForProject", createdForProject);
+    request.getHeader().setParameter("debugfilter", "note");
+    request.getHeader().setOperationName(operation);
+    return request;
+  }
+
+  /**
+   * Adds the PLM object.
+   *
+   * @param plmObject the plm object
+   * @param request the request
+   */
+  public void addPLMObject(PlmRequest request, PlmObject plmObject) {
+    request.getData().addObject(plmObject);
+  }
+
+  /**
+   * Login.
+   *
+   * @param userName the user name
+   * @param password the password
+   * @param url the url
+   *
+   * @return the plm session
+   *
+   * @throws FailedToAuthenticate the failed to authenticate
+   */
+  public PlmSession login(String url, String userName, String password)
+      throws FailedToAuthenticate { PlmSession session = null;
+      session = CifClientUtils.login(url, userName, password);
+    if (null == session || !session.isValid()) {
+      throw new FailedToAuthenticate(url);
+    }
+    return session;
+  }
+
+  /**
+   * Update.
+   *
+   * @param plmMappedRequest the plm mapped request
+   * @param session the session
+   *
+   * @return the plm response
+   *
+   * @throws Exception the exception
+   */
+  public PlmResponse update(PlmSession session, PlmRequest plmMappedRequest) throws Exception {
+    PlmResponse plmResponse = null;
+    try {
+      CifClientUtils.dumpRequestXML(plmMappedRequest);
+      plmResponse = session.execute("reserve", plmMappedRequest);
+      CifClientUtils.dumpResponseXML(plmResponse);
+      CifClientUtils.dfmUploadForRequest(session, plmMappedRequest);
+      plmResponse = session.execute("update", plmMappedRequest);
+      CifClientUtils.dumpResponseXML(plmResponse);
+    } catch (Exception e) {
+      e.printStackTrace();
+      throw e;
+    }
+    return plmResponse;
+  }
+
+
+  private void dump(PlmRequest plmRequest) {
+    XmlDocument rqstDoc = new XmlDocument( PlmRequestHelper.marshal(plmRequest) );
+    System.out.println( rqstDoc.toFormattedString() );
+  }
+
+  public PlmResponse update2(PlmSession session, PlmRequest plmRequest) throws Exception {
+    PlmRequest mappedRequest=null;
+    PlmResponse plmResponse = null;
+
+    dump(plmRequest);
+
+    plmResponse=session.execute("mapping",plmRequest);
+    if(!plmResponse.getStatus().isSuccess()) errorout(session,plmResponse);
+    mappedRequest=PlmFactory.createRequest(plmResponse,"checkstatus");
+    dump(mappedRequest);
+
+    URL mappedXML = new URL("file:/C:/temp/plm-api-update/drop-3/zws_mapped.xml");
+    mappedRequest = PlmFactory.createRequest(mappedXML);
+
+    plmResponse=session.execute("checkstatus", mappedRequest);
+    if(plmResponse.getStatus().hasErrors() || plmResponse.getStatus().hasFatals()) errorout(session,plmResponse);
+    mappedRequest=PlmFactory.createRequest(plmResponse, "reserve");
+
+    plmResponse=session.execute("reserve",mappedRequest);
+    if(plmResponse.getStatus().hasErrors() || plmResponse.getStatus().hasFatals()) errorout(session,plmResponse);
+    mappedRequest=PlmFactory.createRequest(plmResponse,"validate");
+
+    /*
+    plmResponse=session.execute("validate",mappedRequest);
+    if(plmResponse.getStatus().hasErrors() || plmResponse.getStatus().hasFatals()) errorout(session,plmResponse);
+    mappedRequest=PlmFactory.createRequest(plmResponse,"upload-files");
+    */
+
+    System.out.println("upload-files request:");
+    dump(mappedRequest);
+    // do dfm upload .... will modify request
+    mappedRequest.getHeader().setParameter("recurse", "true"); // set to scan the whole request's structure
+    PlmResponse dfmresponse = session.execute("upload-files", mappedRequest);
+    if(dfmresponse.getStatus().hasErrors() || dfmresponse.getStatus().hasFatals()) errorout(session,dfmresponse);
+    mappedRequest=PlmFactory.createRequest(dfmresponse,"update");
+
+    /*
+    System.out.println("logging in again...");
+    String url="http://linuxwas.agilesoft.com/Agile/services";
+    Authentication id= new Authentication("suchaudh", "Agile123");
+    PLMAPISvc svc = new PLMAPISvc();
+    PlmSession session2 = svc.login(url, id.getUsername(), id.getPassword());
+    */
+    System.out.println("update requst:");
+    dump(mappedRequest);
+    plmResponse=session.execute("update", mappedRequest);
+    if(plmResponse.getStatus().hasErrors() || plmResponse.getStatus().hasFatals()) errorout(session,plmResponse);
+    mappedRequest=PlmFactory.createRequest(plmResponse,"release");
+
+    System.out.println("release requst:");
+    dump(mappedRequest);
+    plmResponse=session.execute("release",mappedRequest);
+    if(plmResponse.getStatus().hasErrors() || plmResponse.getStatus().hasFatals()) errorout(session,plmResponse);
+    return plmResponse;
+  }
+
+
+  public void errorout(PlmSession session,PlmResponse response){
+    try{
+      XmlDocument rpnsDoc1 = new XmlDocument( PlmResponseHelper.marshal( response ) );
+      System.out.println( rpnsDoc1.toFormattedString() );
+      session.close();
+      }catch(Exception e){
+      e.printStackTrace();
+    }
+  }
+
+  /**
+   * Gets the next key.
+   *
+   * @param prefix the prefix
+   *
+   * @return the next key
+   */
+  private static synchronized String getNextKey(String prefix) {
+    return prefix + keyCount++;
+  }
+
+  /**
+   * Creates the PLM file.
+   *
+   * @return the plm object
+   */
+  private PlmObject createPLMFile() {
+    return createPLMFile(getNextKey("file"));
+  }
+
+  /**
+   * Creates the PLM file folder.
+   *
+   * @param folderDesc the folder desc
+   *
+   * @return the plm object
+   */
+  private PlmObject createPLMFileFolder(String folderDesc) {
+    return createPLMFileFolder(getNextKey("folder"), folderDesc);
+  }
+
+  /**
+   * Creates the PLM file.
+   *
+   * @param fileKey the file key
+   *
+   * @return the plm object
+   */
+  private PlmObject createPLMFile(String fileKey) {
+    PlmObject plmFile = null;
+    try {
+      plmFile = CifClientUtils.addObject("file", fileKey, true, true,
+          "MappingCallable");
+      plmFile.setOptionValue("type", "file");
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return plmFile;
+  }
+
+  /**
+   * Creates the PLM file folder.
+   *
+   * @param fileFolderKey the file folder key
+   * @param fileFolderDesc the file folder desc
+   *
+   * @return the plm object
+   */
+  private PlmObject createPLMFileFolder(String fileFolderKey,
+      String fileFolderDesc) {
+    PlmObject plmFileFolder = null;
+    try {
+      plmFileFolder = CifClientUtils.addObject("Library Files", fileFolderKey,
+          true, true, "MappingCallable");
+      plmFileFolder.setOptionValue("type", "filefolder");
+      plmFileFolder.setOptionValue("autonumbersource", "File Folder Number");
+      CifClientUtils.addAttribute(plmFileFolder, "description", fileFolderDesc,
+          true, true, "zws"); // titleblock/p2/p3 of filefolder
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    return plmFileFolder;
+  }
+
+  /**
+   * Gets the current date.
+   *
+   * @return the current date
+   */
+  private String getCurrentDate() {
+    Calendar c = Calendar.getInstance();
+    return c.get(Calendar.MONTH + 1) + "/" + c.get(Calendar.DATE) + "/"
+        + c.get(Calendar.YEAR);
+  }
+
+
+
+  /** The key count. */
+  private static long keyCount = 0;
+}

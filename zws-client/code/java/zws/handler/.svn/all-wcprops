@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/handler
+END
+HandlerRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/handler/HandlerRegistry.java
+END
+HandlerBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/543/trunk/zws/designstate/client/code/java/zws/handler/HandlerBase.java
+END
+TestPrintHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/handler/TestPrintHandler.java
+END
+Handler.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/551/trunk/zws/designstate/client/code/java/zws/handler/Handler.java
+END
+TestHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/handler/TestHandler.java
+END

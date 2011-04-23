@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/element/document
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-23T00:26:41.270635Z
+5521
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+AddDocument.java
+file
+
+
+
+
+2008-07-11T20:41:48.141000Z
+22f0a8845a1c57f5891ed7d5b8827224
+2008-02-23T00:26:41.270635Z
+5521
+pavan.toleti
+
+AddDocuments.java
+file
+
+
+
+
+2008-07-11T20:41:48.234750Z
+03ad2c8645f78e6581bd9a1b9639f3d4
+2008-02-15T17:12:40.668261Z
+5465
+eankutse
+

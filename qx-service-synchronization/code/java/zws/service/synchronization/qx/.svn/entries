@@ -1,0 +1,40 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/synchronization/qx-service-synchronization/code/java/zws/service/synchronization/qx
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-06-18T19:27:01.794066Z
+6367
+rmccabe
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+SynchronizationSvc.java
+file
+
+
+
+
+2008-07-11T20:40:09.750375Z
+0febb4c7fe0b4425b4dfa84dac3c31b5
+2008-06-18T19:27:01.794066Z
+6367
+rmccabe
+

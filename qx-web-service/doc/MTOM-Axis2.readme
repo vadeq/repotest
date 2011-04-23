@@ -1,0 +1,43 @@
+http://ws.apache.org/axis2/1_0/mtom-guide.html
+
+
+________________Axis2.xml___________________________________________________________
+<parameter name="enableMTOM" locked="false">true</parameter>
+....
+<axisconfig name="AxisJava2.0">
+	<!-- ================================================= -->
+	<!-- Parameters -->
+	<!-- ================================================= -->
+	<parameter name="cacheAttachments" locked="false">true</parameter>
+	<parameter name="attachmentDIR" locked="false">temp directory</parameter>
+	<parameter name="sizeThreshold" locked="false">4000</parameter>
+	.........
+	.........
+</axisconfig>
+___________________________________________________________________________________
+NOTE : It is a must to specify a directory to temporary store the attachments. Also care should be taken to *clean that directory* from time to time.
+
+
+
+Enabling MTOM Optimization at Server Side
+Axis 2 server automatically identifies incoming MTOM 
+optimized messages based on the content-type and de-serializes accordingly. 
+User can enableMTOM in the server side for outgoing messages Globally for all services:
+
+set the "enableMTOM" parameter to true in the Axis2.xml. 
+When it is set, *outgoing* messages *which contains optimizable content* 
+will be serialized and send as MTOM optimized messages. 
+(If it is not set all the binary data in binary content 
+nodes will be serialized as Base64 encoded strings.)
+
+File Caching for Attachments
+Axis2 comes handy with a file caching mechanism for incoming attachments, 
+which gives Axis2 the ability to handle very large attachments without buffering them in memory at any time. 
+Axis2 file caching streams the incoming MIME parts directly in to files, 
+after reading the MIME part headers.
+***Also a user can specify a size threshold for the File caching.**
+When this threshold value is specified, only the attachments whose size is 
+bigger than the threshold value will get cached in files. 
+Smaller attachments will remain in Memory.
+NOTE : It is a must to specify a directory to temporary store the attachments. Also care should be taken to *clean that directory* from time to time.
+

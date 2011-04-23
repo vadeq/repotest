@@ -1,0 +1,74 @@
+
+<DesignState-config>
+ <policy-matches>
+  
+  <!--  ProE Library Parts -->
+  <matching-rules policy="ProE-Library" priority="1"  target-name="agile-wsx" intent="publish|promote|review|publish-pending">
+   <include-match>
+    <container location="CiscoStandard"/>
+   </include-match>
+  </matching-rules>
+
+   
+  
+  <!--  ProE Library Designs -->
+  <matching-rules policy="ProE-Design" priority="2"  target-name="agile-wsx" intent="publish|promote|review">
+   <discard-policy-match><container location="CiscoStandard"/></discard-policy-match>
+   <include-match><is-asm-item/></include-match>
+   <include-match><is-prt-item/></include-match>
+   <include-match><is-drw-item/></include-match>
+  </matching-rules>
+
+
+  
+  <!--  ProE Library Designs publish pending  -->
+  <matching-rules policy="ProE-Design-pending" priority="3"  target-name="agile-wsx" intent="publish-pending">
+   <discard-policy-match><container location="CiscoStandard"/></discard-policy-match>
+   <include-match><is-asm-item/></include-match>
+   <include-match><is-prt-item/></include-match>
+   <include-match><is-drw-item/></include-match>
+  </matching-rules>
+
+
+  <!--  ProE Library Designs publish ECPN-->
+  <matching-rules policy="ProE-Design-pending_ecpn" priority="4"  target-name="agile-wsx" intent="publish-ecpn">
+   <discard-policy-match><container location="CiscoStandard"/></discard-policy-match>
+   <include-match><is-asm-item/></include-match>
+   <include-match><is-prt-item/></include-match>
+   <include-match><is-drw-item/></include-match>
+  </matching-rules>
+
+
+  <!-- TC10 Designs -->
+  <matching-rules policy="Teamcenter-Design" priority="5" target-name="agile-wsx" intent="publish|promote|review">
+   <include-match>
+	<compare-attribute 	attribute-name="owning_group" attribute-value="dba"/>
+   </include-match>
+      <include-match>
+	<compare-attribute 	attribute-name="owning_group" attribute-value="Engineering"/>
+   </include-match>
+  </matching-rules>
+
+  <!-- TC10 Designs -->
+  <matching-rules policy="Teamcenter-Design-pending" priority="6" target-name="agile-wsx" intent="publish-pending">
+   <include-match>
+	<compare-attribute 	attribute-name="owning_group" attribute-value="dba"/>
+   </include-match>
+      <include-match>
+	<compare-attribute 	attribute-name="owning_group" attribute-value="Engineering"/>
+   </include-match>
+  </matching-rules>
+
+    <!-- TC10 Designs -->
+  <matching-rules policy="Teamcenter-Design-pending_ecpn" priority="7" target-name="agile-wsx" intent="publish-ecpn">
+   <include-match>
+	<compare-attribute 	attribute-name="owning_group" attribute-value="dba"/>
+   </include-match>
+      <include-match>
+	<compare-attribute 	attribute-name="owning_group" attribute-value="Engineering"/>
+   </include-match>
+  </matching-rules>
+
+
+ </policy-matches>
+</DesignState-config>

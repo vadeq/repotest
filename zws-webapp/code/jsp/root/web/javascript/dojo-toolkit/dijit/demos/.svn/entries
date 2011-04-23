@@ -1,0 +1,100 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/jsp/root/web/javascript/dojo-toolkit/dijit/demos
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+chat
+dir
+
+i18n
+dir
+
+nihao.html
+file
+
+
+
+
+2008-07-11T22:07:27.766000Z
+602912631ac9194405d109d50c6cd0c4
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+mail
+dir
+
+chat.html
+file
+
+
+
+
+2008-07-11T22:07:27.875375Z
+dee9b06eedf55091f423df5beed7dfb9
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+i18n.html
+file
+
+
+
+
+2008-07-11T22:07:27.969125Z
+437fed6dc9c6d922b9b9f3687ee6b11f
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+mail.html
+file
+
+
+
+
+2008-07-11T22:07:28.156625Z
+461c413a9fa4481bd75882553ff9663e
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+form.html
+file
+
+
+
+
+2008-07-11T22:07:28.312875Z
+c0ec502dcb263e80ae3fa12198349fdc
+2008-03-07T15:56:37.781366Z
+5774
+rmccabe
+
+nihao
+dir
+

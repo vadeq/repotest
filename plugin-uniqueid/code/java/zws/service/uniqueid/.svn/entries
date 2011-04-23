@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/uniqueid/plugin-uniqueid/code/java/zws/service/uniqueid
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:07:38.174925Z
+5689
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+UniqueIdClient.java
+file
+
+
+
+
+2008-07-11T20:40:24.234750Z
+80224294a3fe7d43ea0d61a87da035fc
+2008-02-29T17:07:38.174925Z
+5689
+pavan.toleti
+
+TestUniqueId.java
+file
+
+
+
+
+2008-07-11T20:40:24.312875Z
+0a7784bff66759a82574776cf8455c3f
+2008-02-29T17:00:08.040315Z
+5652
+pavan.toleti
+

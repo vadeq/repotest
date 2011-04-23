@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/product/pen/qx-service-pen/code/java/zws/pen/policy/op/pendata/status
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:07:58.472510Z
+5704
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+SetGlobalStatus.java
+file
+
+
+
+
+2008-07-11T20:41:34.469125Z
+8fe67e28d7a97287db00c09260e5b588
+2008-02-23T00:26:41.270635Z
+5521
+pavan.toleti
+
+GetGlobalStatus.java
+file
+
+
+
+
+2008-07-11T20:41:34.531625Z
+d5caa5e75adae75b5347b4fc09e6aedb
+2008-02-29T17:07:58.472510Z
+5704
+pavan.toleti
+

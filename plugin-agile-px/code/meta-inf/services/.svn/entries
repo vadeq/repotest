@@ -1,0 +1,40 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/repository/agile/plugin-agile-px/code/meta-inf/services
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:22:35.632619Z
+5322
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+com.agile.px.ICustomAction
+file
+
+
+
+
+2008-07-11T20:36:07.375375Z
+7d21737ac695a3e76c2c827c6bb17d95
+2007-11-13T22:24:38.119513Z
+4024
+pavan.toleti
+

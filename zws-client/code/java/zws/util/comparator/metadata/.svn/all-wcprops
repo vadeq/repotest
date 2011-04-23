@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/util/comparator/metadata
+END
+ChronologicalOrder.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/comparator/metadata/ChronologicalOrder.java
+END
+PartNumberOrder.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/util/comparator/metadata/PartNumberOrder.java
+END
+HistoryOrder.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/util/comparator/metadata/HistoryOrder.java
+END

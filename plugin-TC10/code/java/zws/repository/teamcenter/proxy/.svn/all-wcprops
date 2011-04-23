@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/6296/trunk/zws/plugin/repository/TC10/plugin-TC10/code/java/zws/repository/teamcenter/proxy
+END
+TC10ProxyRepositoryBinarySource.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/zws/!svn/ver/6296/trunk/zws/plugin/repository/TC10/plugin-TC10/code/java/zws/repository/teamcenter/proxy/TC10ProxyRepositoryBinarySource.java
+END
+TC10ProxyRepositoryConfigurationSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/zws/!svn/ver/3022/trunk/zws/plugin/repository/TC10/plugin-TC10/code/java/zws/repository/teamcenter/proxy/TC10ProxyRepositoryConfigurationSource.java
+END
+TC10ProxyRepositoryBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/zws/!svn/ver/5702/trunk/zws/plugin/repository/TC10/plugin-TC10/code/java/zws/repository/teamcenter/proxy/TC10ProxyRepositoryBase.java
+END
+TC10ProxyInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/zws/!svn/ver/6168/trunk/zws/plugin/repository/TC10/plugin-TC10/code/java/zws/repository/teamcenter/proxy/TC10ProxyInterface.java
+END
+TC10ProxyRepositoryMetadataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/zws/!svn/ver/6296/trunk/zws/plugin/repository/TC10/plugin-TC10/code/java/zws/repository/teamcenter/proxy/TC10ProxyRepositoryMetadataSource.java
+END
+TC10ProxyRepositoryStructureSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/zws/!svn/ver/6296/trunk/zws/plugin/repository/TC10/plugin-TC10/code/java/zws/repository/teamcenter/proxy/TC10ProxyRepositoryStructureSource.java
+END
+TC10ProxyRepositorySearchAgent.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/zws/!svn/ver/6296/trunk/zws/plugin/repository/TC10/plugin-TC10/code/java/zws/repository/teamcenter/proxy/TC10ProxyRepositorySearchAgent.java
+END

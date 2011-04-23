@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/search/filter
+END
+MakeHistory.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/5656/trunk/zws/designstate/client/code/java/zws/search/filter/MakeHistory.java
+END
+LatestByKey.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/search/filter/LatestByKey.java
+END
+CreateBranchTree.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/search/filter/CreateBranchTree.java
+END
+CreateMetadataTreeByKey.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/search/filter/CreateMetadataTreeByKey.java
+END
+KeyFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/search/filter/KeyFilter.java
+END

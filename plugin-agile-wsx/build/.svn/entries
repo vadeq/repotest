@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/repository/agile/plugin-agile-wsx/build
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-04-29T18:44:43.222662Z
+6146
+arbind.thakur
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+title.build
+file
+
+
+
+
+2008-07-11T20:36:38.641000Z
+7b790fbff42c67f6cba42008752dfcc2
+2007-07-19T02:49:03.066494Z
+2493
+arbind.thakur
+
+classpath.build
+file
+
+
+
+
+2008-07-11T20:36:38.703500Z
+1ffa07f6dce03d32b84678a09a5d1474
+2008-04-29T18:44:43.222662Z
+6146
+arbind.thakur
+

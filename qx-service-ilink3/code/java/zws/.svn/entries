@@ -1,0 +1,49 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/repository/ilink3/qx-service-ilink3/code/java/zws
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-06-05T14:44:15.089694Z
+6306
+rmccabe
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+repository
+dir
+
+Test.java
+file
+
+
+
+
+2008-07-11T20:37:19.906625Z
+c9496835fff6a19cffb007c7ab288cf6
+2008-02-29T17:08:33.009639Z
+5719
+pavan.toleti
+
+service
+dir
+
+qx
+dir
+

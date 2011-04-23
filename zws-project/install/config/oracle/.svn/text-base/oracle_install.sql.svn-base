@@ -1,0 +1,223 @@
+-- $Id$
+
+-- ------------------------------------
+-- Table: user 
+-- active was originally a mysql boolean
+-- user is quoted because it is a keyword
+--
+drop table zwsuser cascade constraints;
+
+create table zwsuser (
+username  varchar2(25)  not null primary key,
+password  varchar2(255),
+firstName varchar2(50),
+lastName  varchar2(50),
+email     varchar2(125),
+phone     varchar2(25),
+role      varchar2(50),
+active    number(1,0) default 1
+);
+
+grant select on zwsuser to public;
+grant update on zwsuser to public;
+grant insert on zwsuser to public;
+grant delete on zwsuser to public;
+ 
+-- ------------------------------------
+-- Table: chronjob 
+-- startTime was originally a mysql time type
+--
+drop table chronjob cascade constraints;
+
+create table chronjob (
+name          varchar2(125) not null primary key,
+processName   varchar2(125) not null,
+startTime     timestamp not null, 
+periodHours   varchar2(10),
+periodMinutes varchar2(2),
+periodSeconds varchar2(2)
+);
+
+grant select on chronjob to public;
+grant update on chronjob to public;
+grant insert on chronjob to public;
+grant delete on chronjob to public;
+
+
+-- ------------------------------------
+-- Table: synchronizationLog 
+--
+drop table synchronizationLog cascade constraints;
+
+create table synchronizationLog (
+domainName0      varchar2(255),
+serverName0      varchar2(255),
+datasourceType0  varchar2(255),
+datasourceName0  varchar2(255),
+stamp0           number(20,0),
+uid0             varchar2(255),
+name0            varchar2(255),
+location0        varchar2(255),
+state0           varchar2(255),
+domainNameA      varchar2(255),
+serverNameA      varchar2(255),
+datasourceTypeA  varchar2(255),
+datasourceNameA  varchar2(255),
+stampA           number(20,0),
+uidA             varchar2(255),
+nameA            varchar2(255),
+locationA        varchar2(255),
+stateA           varchar2(255)
+);
+
+grant select on synchronizationLog to public;
+grant update on synchronizationLog to public;
+grant insert on synchronizationLog to public;
+grant delete on synchronizationLog to public;
+
+
+-- ------------------------------------
+-- Sequence for process table
+--
+	drop sequence process_seq;
+	create sequence process_seq
+			minvalue 1
+			nomaxvalue
+			start with 1
+			increment by 1
+			cache 20;
+    
+-- ------------------------------------
+-- Table: process 
+--
+drop table process cascade constraints;
+
+create table process (
+id          number(20,0)  not null primary key,
+namespace   varchar2(250) default '' not null,
+name        varchar2(250) default '' not null,
+starttime   timestamp     default sysdate not null,
+endtime     timestamp,
+status      varchar2(250),
+description varchar2(4000),
+notes varchar2(4000) default ''  
+);
+
+grant select on process to public;
+grant update on process to public;
+grant insert on process to public;
+grant delete on process to public;
+
+CREATE OR REPLACE TRIGGER TRIG_PROCESS BEFORE INSERT ON PROCESS 
+FOR EACH ROW 
+begin 
+select process_seq.nextval into :new.id from dual; 
+end;
+/
+
+-- ------------------------------------
+-- Table: family
+--
+
+drop table family cascade constraints;
+
+create table family (
+parentid    number(20,0) default 0 not null references process(id) on delete cascade,
+childid     number(20,0) default 0 not null references process(id) on delete cascade
+);
+
+drop index fam_p_idx;
+drop index fam_c_idx;
+create index fam_p_idx on family(parentid);
+create index fam_c_idx on family(childid);
+
+grant select on family to public;
+grant update on family to public;
+grant insert on family to public;
+grant delete on family to public;
+
+-- ------------------------------------
+-- Table:activity
+--
+
+drop table activity cascade constraints;
+
+create table activity (
+id        number(20,0)  default 0 not null,
+domain    varchar2(250) default '' not null,
+node      varchar2(250) default '' not null,
+timestamp timestamp     default SYSTIMESTAMP not null,
+type      varchar2(250) default '' not null,
+message   CLOB,
+Annotations CLOB  ,
+constraint fk_act_id foreign key (id) references process(id) on delete cascade
+);
+
+drop index act_p_idx;
+create index act_p_idx on activity(id);
+
+grant select on activity to public;
+grant update on activity to public;
+grant insert on activity to public;
+grant delete on activity to public;
+
+-- ------------------------------------
+-- Table: QxQueue
+-- 
+drop table QxQueue cascade constraints;
+
+create table QxQueue (
+name  varchar2(250) 	not null primary key,
+state varchar2(50) 	not null,
+notes varchar2(4000) 	default ''
+);
+
+grant select on QxQueue to public;
+grant update on QxQueue to public;
+grant insert on QxQueue to public;
+grant delete on QxQueue to public;
+
+
+-- ------------------------------------
+-- Table: QxElement
+-- 
+drop sequence qelement_id;
+create SEQUENCE qelement_id INCREMENT BY 1 START WITH 1;
+
+drop table QxElement cascade constraints;
+
+create table QxElement (
+id		number(20,0)  	not null primary key,
+namespace 	varchar2(250) 	not null,
+name 		varchar2(250) 	not null,
+priority 	number(20,0) 	not null,
+qorder 		number(20,0) 	not null,
+state 		varchar2(50) 	not null,
+context 	CLOB,
+instruction 	CLOB,
+summary 	varchar2(4000) 	default '',
+annotations 		CLOB,
+constraint fk_qelement foreign key (name) references QxQueue(name) on delete cascade
+);
+
+
+grant select on QxElement to public;
+grant update on QxElement to public;
+grant insert on QxElement to public;
+grant delete on QxElement to public;
+
+create or replace trigger trig_QxElement before insert on QxElement
+for each row
+begin
+select qelement_id.nextval into :new.id from dual;
+end;
+/
+
+-- ------------------------------------
+-- SEED DATA
+--  
+insert into zwsuser (username, password, role) values ('admin','CPqCyhCRa0w=','admin');
+insert into zwsuser (username, password, role) values ('test','CPqCyhCRa0w=','engineer');
+insert into zwsuser (username, password, role) values ('intralink','TsQ6OZNzl3Y=','admin');  
+
+commit;

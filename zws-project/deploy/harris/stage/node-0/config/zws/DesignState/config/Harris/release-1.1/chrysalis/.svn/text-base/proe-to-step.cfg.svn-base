@@ -1,0 +1,10 @@
+coordinate.system = Default
+output.assembly.configuration = Single file		
+export.wireframe = False
+export.surfaces = False
+export.solid = True
+export.quilts = False
+export.datums = True
+export.blanked.entities = True
+export.facets = False
+export.layers.AutoID = True

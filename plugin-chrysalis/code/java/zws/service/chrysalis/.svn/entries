@@ -1,0 +1,67 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/chrysalis/plugin-chrysalis/code/java/zws/service/chrysalis
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-04-02T17:39:55.532732Z
+5956
+eankutse
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+test
+dir
+
+ChrysalisClient.java
+file
+
+
+
+
+2008-07-11T17:22:34.719125Z
+54e2a54e7c2c83952f3467a3e6268455
+2008-04-02T17:39:55.532732Z
+5956
+eankutse
+
+ChrysalisRequestStatusInfo.java
+file
+
+
+
+
+2008-07-11T17:22:34.875375Z
+03a764f97c26e2fc2773e9f804284f53
+2007-11-30T14:49:16.271896Z
+4411
+eankutse
+
+ChrysalisConstants.java
+file
+
+
+
+
+2008-07-11T17:22:34.953500Z
+b71164dcfcb9a49f51250e939561eed6
+2007-11-16T02:11:45.833379Z
+4112
+arbind.thakur
+

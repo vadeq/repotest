@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="build-environment" basedir=".">
+
+  <!-- Application Name-->
+  <property name="app-name" value="DesignState"/>
+  
+  <!-- svn -->
+  <property name="svn-repository-url" value="http://10.10.10.10:80/svn/zws"/>
+
+  <!-- source code -->
+  <property name="code" location="${base}\code\java"/>
+  
+  <!-- web services code -->
+  <property name="web-services" location="${base}\code\web-services"/>
+
+  <!-- ejb and ear deployment descriptors-->
+  <property name="ejb" location="${base}\code\ejb"/>
+
+  <!-- config files -->
+  <property name="config" location="${base}\config"/>
+
+  <!-- build outputs -->
+  <property name="out" location="${base}\out"/>
+  <property name="classes" location="${out}\classes"/>
+  <property name="javadocs" location="${out}\javadocs"/>
+  <property name="packages" location="${out}\packages"/>
+
+  <!-- deployment targets for unit testing -->
+  <property name="agile-server" location="\\agile-0"/>
+  <property name="ilink3-server" location="\\ilink3-0"/>
+  <property name="r8-server" location="\\r8-server-0"/>
+  <property name="node-0-server" location="\\DesignState-node-0"/>
+  <property name="node-1-server" location="\\DesignState-node-1"/>
+  <property name="node-2-server" location="\\DesignState-node-2"/>
+  <property name="node-3-server" location="\\DesignState-node-3"/>
+  <property name="node-4-server" location="\\DesignState-node-4"/>
+
+  <property name="webapp" location="${code}\jsp\root"/>
+  <property name="web-inf" location="${code}\web-inf"/>
+  <property name="meta-inf" location="${code}\..\meta-inf"/>
+  <property name="agile-config" location="${code}\..\..\agile-config"/>
+  
+</project>

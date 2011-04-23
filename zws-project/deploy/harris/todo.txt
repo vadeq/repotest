@@ -1,0 +1,14 @@
+- snapshot Designstate Config for Agile
+  designstate user
+  roles
+  part and document subclasses
+  etc..
+
+- user authentication for transferring data into Agile:
+  use logged in end user?
+  use static system user:
+
+- Part number convention
+  when moving files from Intralink:
+  do special characters need to be mapped (i.e. "_" etc)
+  can we use the same naming convention for intralink and all others?

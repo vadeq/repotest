@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/client/code/java/zws/synchronization
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:17:50.730907Z
+5300
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+SynchronizationRecord.java
+file
+
+
+
+
+2008-07-11T20:45:59.406625Z
+adeec64e48be2b889f7a44ff407048f6
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+SynchronizationRecordBase.java
+file
+
+
+
+
+2008-07-11T20:45:59.469125Z
+cd06d325c5eb2242d7cb84974c1b7e49
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+

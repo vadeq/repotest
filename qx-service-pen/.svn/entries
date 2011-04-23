@@ -1,0 +1,46 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/product/pen/qx-service-pen
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-08-14T12:55:51.207855Z
+6502
+eankutse
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+build
+dir
+
+code
+dir
+
+build.xml
+file
+
+
+
+
+2008-07-11T20:41:55.406625Z
+ae4a8dacbc2bf1742fc927a89d6de650
+2007-08-31T01:48:36.009116Z
+3017
+pavan.toleti
+

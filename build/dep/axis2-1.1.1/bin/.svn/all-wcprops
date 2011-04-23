@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/zws/!svn/ver/5337/trunk/zws/build/dep/axis2-1.1.1/bin
+END
+axis2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/zws/!svn/ver/5/trunk/zws/build/dep/axis2-1.1.1/bin/axis2.sh
+END
+axis2server.bat
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/zws/!svn/ver/5/trunk/zws/build/dep/axis2-1.1.1/bin/axis2server.bat
+END
+java2wsdl.bat
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/zws/!svn/ver/5/trunk/zws/build/dep/axis2-1.1.1/bin/java2wsdl.bat
+END
+wsdl2java.bat
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/zws/!svn/ver/5/trunk/zws/build/dep/axis2-1.1.1/bin/wsdl2java.bat
+END
+axis2server.sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/zws/!svn/ver/5/trunk/zws/build/dep/axis2-1.1.1/bin/axis2server.sh
+END
+java2wsdl.sh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/zws/!svn/ver/5/trunk/zws/build/dep/axis2-1.1.1/bin/java2wsdl.sh
+END
+wsdl2java.sh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/zws/!svn/ver/5/trunk/zws/build/dep/axis2-1.1.1/bin/wsdl2java.sh
+END
+axis2.bat
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/zws/!svn/ver/5/trunk/zws/build/dep/axis2-1.1.1/bin/axis2.bat
+END
+setenv.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/zws/!svn/ver/5/trunk/zws/build/dep/axis2-1.1.1/bin/setenv.sh
+END

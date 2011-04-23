@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/com/agile/zws/connector
+END
+IntralinkParserPub.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/com/agile/zws/connector/IntralinkParserPub.java
+END
+XMLItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/com/agile/zws/connector/XMLItem.java
+END
+AgileConnectorPub.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/com/agile/zws/connector/AgileConnectorPub.java
+END
+TestMain.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/com/agile/zws/connector/TestMain.java
+END
+XMLAttribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zws/!svn/ver/4456/trunk/zws/designstate/server/code/java/com/agile/zws/connector/XMLAttribute.java
+END
+IntralinkParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/com/agile/zws/connector/IntralinkParser.java
+END
+AgileConnector.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/com/agile/zws/connector/AgileConnector.java
+END
+XMLMapping.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/com/agile/zws/connector/XMLMapping.java
+END
+XMLBOMItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/zws/!svn/ver/4456/trunk/zws/designstate/server/code/java/com/agile/zws/connector/XMLBOMItem.java
+END

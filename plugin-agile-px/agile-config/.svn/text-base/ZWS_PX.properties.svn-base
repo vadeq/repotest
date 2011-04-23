@@ -1,0 +1,29 @@
+#Process Extension Properties
+
+#DesignState routing
+designstate.domain.name=harris
+designstate.server.name=node-zero
+designstate.repository.name=agile-sdk
+
+
+#Default designstate authtentication
+designstate.default.username=zws
+designstate.default.password=agile
+designstate.log.file=e:\\zws.px.log
+
+#URLs to DesignState Services
+designstate.apc.service.url=http://vm-ilink-0/demo/start-part/index.do
+designstate.event.service.url=http://designstate-0/eventProcessor/fireEvent.jsp
+designstate.event.service.protocol=http
+
+#standalone testing (commandline)
+agile.cmdln.username=admin
+agile.cmdln.password=agile
+agile.cmdln.url=http://vm-agile-9-2:7778/Agile
+
+#Debug Mode
+designstate.px.in.debug.mode=true
+
+#Queue File location and number of minutes between retry attempts
+px.queue.file=e:\\queue.txt
+px.queue.retry.min=5

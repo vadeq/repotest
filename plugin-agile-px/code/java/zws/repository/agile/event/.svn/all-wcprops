@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/5808/trunk/zws/plugin/repository/agile/plugin-agile-px/code/java/zws/repository/agile/event
+END
+EventClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/zws/!svn/ver/5808/trunk/zws/plugin/repository/agile/plugin-agile-px/code/java/zws/repository/agile/event/EventClient.java
+END
+HTTPEventClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/zws/!svn/ver/5808/trunk/zws/plugin/repository/agile/plugin-agile-px/code/java/zws/repository/agile/event/HTTPEventClient.java
+END
+JMSEventClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/zws/!svn/ver/5808/trunk/zws/plugin/repository/agile/plugin-agile-px/code/java/zws/repository/agile/event/JMSEventClient.java
+END

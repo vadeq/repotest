@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/zws/!svn/ver/6167/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter
+END
+TC10RepositoryConfigurationSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/zws/!svn/ver/3099/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/TC10RepositoryConfigurationSource.java
+END
+TC10RepositoryMetadataStateTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/zws/!svn/ver/4074/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/TC10RepositoryMetadataStateTarget.java
+END
+TC10RepositoryBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/zws/!svn/ver/5703/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/TC10RepositoryBase.java
+END
+TC10Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/zws/!svn/ver/5666/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/TC10Test.java
+END
+TC10RepositoryMetadataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/zws/!svn/ver/5666/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/TC10RepositoryMetadataSource.java
+END
+TC10RepositoryStructureSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/zws/!svn/ver/5666/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/TC10RepositoryStructureSource.java
+END
+TC10Main.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/zws/!svn/ver/5666/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/TC10Main.java
+END
+TC10RepositorySearchAgent.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/zws/!svn/ver/5666/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/TC10RepositorySearchAgent.java
+END
+TC10RepositoryBinarySource.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/zws/!svn/ver/5666/trunk/zws/plugin/repository/TC10/qx-service-TC10-standalone/code/java/zws/repository/teamcenter/TC10RepositoryBinarySource.java
+END

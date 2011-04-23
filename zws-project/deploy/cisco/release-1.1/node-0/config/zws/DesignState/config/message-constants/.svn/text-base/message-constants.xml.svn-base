@@ -1,0 +1,33 @@
+<DesignState-config>
+ <message-constants>
+  <!--
+   Make sure to escape [& < > ' "] characters in your messages!
+    escape these as follows:
+    & becomes &amp;
+    < becomes &lt;
+    > becomes &gt;
+    ' becomes &apos;
+    " becomes &quot;
+    
+   For example, if you need:
+   message="Error: Can not contain number ["56"] in your request!"
+   
+   Then you should use:
+   message="Error: Can not contain number [&quot;56&quot;] in your request!"
+   
+   Same idea for the other escape chars!
+  -->
+  <message-constant id="email.subject.pen-canceled"     message="PEN: CANCELED! $published-items [$policy-name]"/>
+  <message-constant id="email.subject.pen-republished"     message="PEN: PUBLISHING DEPENDENT ITEMS FIRST $published-items [$policy-name]"/>
+  <message-constant id="email.subject.pen-published-ok"     message="PEN: PUBLISHED $published-items [$policy-name]"/>
+  <message-constant id="email.subject.pen-failed"     message="PEN: FAILED!!! $published-items [$policy-name]"/>
+  <message-constant id="email.subject.policy-no-match-found"     message="PEN: ERROR! No Policy defined to publish $name"/>  
+  <message-constant id="email.msg.title.pen-canceled"     message="Publishing was cancelled."/> 
+  <message-constant id="email.msg.title.pen-republished"     message="Publishing dependent items first!"/>
+  <message-constant id="email.msg.title.pen-published-ok"     message="Publish complete."/>
+  <message-constant id="email.msg.title.pen-failed"     message="Publish Failed!!!"/>
+  <message-constant id="email.msg.title.policy-no-match-found"     message="Policy match does not exist for $origin"/>  
+  <message-constant id="email.msg.footer.pen-published-by"     message="Published by $user"/>    
+  <message-constant id="parameterless"     message="$msg"/>
+ </message-constants>
+</DesignState-config>

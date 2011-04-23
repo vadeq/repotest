@@ -1,0 +1,52 @@
+<project name="update-deps" default="download-deps" basedir=".">
+  <description>Downloads DesignState Client and Server jar files</description> 
+
+  <property name="base" location="."/>
+
+  <macrodef name="svn-update">
+    <attribute name="work-dir"/>
+    <attribute name="username"/>
+    <attribute name="password"/>
+    <sequential>
+      <exec dir="@{work-dir}" executable="svn" failonerror="true">
+        <arg line="update --non-interactive --username @{username} --password @{password}"/> 
+      </exec>
+    </sequential>
+  </macrodef>
+
+  <!-- get download script and published deployables/libraries -->
+  <target name="get-download-script">
+    <delete dir="pub"/>
+    <mkdir dir="pub"/>
+    <get dest="pub/download-published-jars.xml" verbose="true" usetimestamp="false" src="http://build.zerowait-state.com/build/pub/download-published-jars.xml" /> 
+    <ant antfile="download-published-jars.xml" dir="pub"/>
+  </target>
+
+  <!-- call download script to download published deployables/libraries -->
+  <target name="download-pubs">
+    <ant antfile="download-published-jars.xml" dir="pub"/>
+  </target>
+
+  <!-- svn update of project specific config files -->
+  <target name="update">
+    <svn-update work-dir="${base}" username="cruise" password="cruise"/>
+  </target>
+
+  <!-- deploy to application servers -->
+  <target name="deploy">
+    <copy toDir="/zws/DesignState/webservice" file="pub/DesignState-Qx.aar"/>
+    <copy toDir="/zws/server/axis2/lib">
+      <fileset dir="pub/jar"/>
+    </copy>
+    <copy toDir="/zws/DesignState/webapp/ZeroWait-State/WEB-INF/lib">
+      <fileset dir="pub/jar"/>
+    </copy>
+
+    <delete dir="/zws/DesignState/webapp/ROOT"/>
+    <mkdir dir="/zws/DesignState/webapp/ROOT"/>
+    <unwar src="pub/DesignState-web.war" dest="/zws/DesignState/webapp/ROOT"/>
+
+    <delete dir="pub"/>
+  </target>
+
+</project>

@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/file-depot/webapp-file-depot/code/web-inf/classes
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-03-25T18:12:22.327710Z
+5909
+arbind.thakur
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+bootstrap.zws
+file
+
+
+
+
+2008-07-11T17:24:46.562875Z
+839a5eb24b8b02bcd03bd50636e7ba0a
+2007-12-08T18:39:18.224715Z
+4615
+arbind.thakur
+
+bootstrap.xml
+file
+
+
+
+
+2008-07-11T17:24:46.609750Z
+f8f1bd7e758b0df365a15d3754280d4a
+2008-03-25T18:11:54.556651Z
+5908
+arbind.thakur
+

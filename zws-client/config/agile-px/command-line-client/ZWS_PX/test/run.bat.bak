@@ -1,0 +1,6 @@
+@set APPDIR=%CD%
+@set AGILEHOME=D:\Agile\Agile9
+@set JAVAHOME=D:\j2sdk1.4.2_05
+@set CP=%APPDIR%\config;%APPDIR%\lib\log4j.jar;%APPDIR%\lib\AgileAPI.jar;%APPDIR%\lib\pxapi.jar;%APPDIR%\classes
+
+%JAVAHOME%\bin\java -cp %APPDIR%\lib\AgileAPI.jar;%APPDIR%\config com.zws.px.CreateModel %1

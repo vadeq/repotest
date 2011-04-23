@@ -1,0 +1,215 @@
+package zws.pen.policy.old.op;
+
+/*
+ * DesignState - Design Compression Technology @author: ptoleti @version: 1.0
+ * Created on Apr 26, 2007 12:03:51 PM Copywrite (c) 2007 Zero Wait-State Inc.
+ * All rights reserved
+ */
+
+import zws.pen.policy.PENPolicy;
+import zws.qx.QxContext;
+import zws.security.Authentication;
+import zws.service.pen.PENData;
+import zws.op.OpBase;
+import zws.origin.Origin;
+
+import java.util.Collection;
+
+import java.util.Vector;
+
+
+/**
+ * The Class PENDataOpBase.
+ * @author ptoleti
+ */
+public abstract class PENDataOpBase extends OpBase implements PENDataOp {
+
+  /**
+   * @param qxctx context
+   * @param originObj origin
+   * @param penPolicy policy obj
+   * @param penDataObj pen data
+   * @param id authentication
+   */
+  public void setRuntimeValues(QxContext qxctx, Origin originObj,
+                        PENPolicy penPolicy, PENData penDataObj,
+                        Authentication id) {
+    this.setQxCtx(qxctx);
+    this.setPenData(penDataObj);
+    this.setAuthentication(id);
+    this.setPenPolicyObj(penPolicy);
+    this.setCurrentItem(currentItem);
+    this.setOrigin(originObj);
+  }
+
+  /**
+   * set Context.
+   * @param ctx QxContext
+   * @see zws.pen.policy.old.op.PENDataOp#setCtx(zws.qx.QxContext)
+   */
+  public void setQxCtx(QxContext ctx) {
+    this.qxContext = ctx;
+  }
+
+  /**
+   * getContext.
+   * @return context QxContext
+   * @see zws.pen.policy.old.op.PENDataOp#getCtx()
+   */
+  public QxContext getQxCtx() {
+    return this.qxContext;
+  }
+
+  /**
+   * set PENData.
+   * @param pData PENData
+   * @see zws.pen.policy.old.op.PENDataOp#setPenData(zws.service.pen.PENData)
+   */
+  public void setPenData(PENData pData) {
+    this.penData = pData;
+  }
+
+  /**
+   * get PEN data.
+   * @return penData PEMData
+   * @see zws.pen.policy.old.op.PENDataOp#getPenData()
+   */
+  public PENData getPenData() {
+    return this.penData;
+  }
+
+  /**
+   * execute.
+   * @throws Exception exception
+   * @see zws.op.OpBase#execute()
+   */
+  public abstract void execute() throws Exception;
+
+  /**
+   * Add op.
+   * @param op PENData
+   * @throws Exception
+   */
+  public void add(PENDataOp op) {
+    opList.add(op);
+  }
+
+  /**
+   * Gets the ops.
+   * @return the ops
+   */
+  public Collection getOps() {
+    return opList;
+  }
+
+  /**
+   * @return Authentication
+   * @see zws.pen.policy.old.op.PENDataOp#getAuthentication()
+   */
+  public Authentication getAuthentication() {
+    return authID;
+  }
+
+  /**
+   * @param policyObj PENPolicy
+   * @see zws.pen.policy.old.op.PENDataOp#setPenPolicyObj(zws.pen.policy.PENPolicy)
+   */
+  public void setPenPolicyObj(PENPolicy policyObj) {
+    penPolicyObj = policyObj;
+  }
+
+  /**
+   * @return PENPolicy
+   * @see zws.pen.policy.old.op.PENDataOp#getPenPolicyObj()
+   */
+  public PENPolicy getPenPolicyObj() {
+    return penPolicyObj;
+  }
+
+  /**
+   * @param authId Authentication
+   * @see zws.pen.policy.old.op.PENDataOp#setAuthentication(zws.security.Authentication)
+   */
+    public void setAuthentication(Authentication authId) {
+    authID = authId;
+  }
+
+    /**
+     * @return the origin
+     */
+    public Origin getOrigin() {
+      return origin;
+    }
+
+    /**
+     * @param originObj the origin to set
+     */
+    public void setOrigin(Origin originObj) {
+      origin = originObj;
+    }
+    /**
+     * @return the location
+     */
+    public String getLocation() {
+      return location;
+    }
+
+    /**
+     * @param strLocation the location to set
+     */
+    public void setLocation(String strLocation) {
+      location = strLocation;
+    }
+
+    /**
+     * @return the currentElement
+     */
+    public String getCurrentElement() {
+      return currentElement;
+    }
+
+    /**
+     * @param currentElement the currentElement to set
+     */
+    public void setCurrentElement(String currentElement) {
+      this.currentElement = currentElement;
+    }
+
+    /**
+     * @param op opobj
+     */
+    public void passConfiguration(PENDataOp op ) {
+      op.setAuthentication(getAuthentication());
+      op.setContext(getContext());
+      op.setPenData(getPenData());
+      op.setPenPolicyObj(getPenPolicyObj());
+      op.setOrigin(getOrigin());
+      op.setLocation(getLocation());
+      op.setQxCtx(getQxCtx());
+  }
+
+  /** The pen policy obj. */
+  private PENPolicy penPolicyObj = null;
+
+  /** The auth ID. */
+  private Authentication authID = null;
+
+  /** opList. */
+  private Collection opList = new Vector();
+
+  /** context. */
+  private QxContext qxContext = null;
+
+  /** penData. */
+  private PENData penData = null;
+
+  /** Origin. */
+  private Origin origin = null;
+
+  /** Lcoation. */
+  private String location = null;
+
+  /** Current element. */
+  private String currentElement = null;
+
+}

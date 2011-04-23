@@ -1,0 +1,52 @@
+<%@page language="java" session="false"%>
+<!--com.infoengine.soap.rpc.def
+@string where
+-->
+
+<%@taglib uri="http://www.ptc.com/infoengine/taglib/core" prefix="ie"%>
+
+<%
+
+String instance = wt.util.WTProperties.getLocalProperties().getProperty ("wt.federation.ie.VMName");
+	String method = (String)getParam("method");
+
+	if(method.equalsIgnoreCase("Query-Objects")){
+		%> 
+			<ie:webject name="ZWSFind-Objects" 			type="obj">
+				<ie:param name="object_ref"         	data="${@form[]object_ref[]}"/>
+				<ie:param name="attribute"          	data="${@form[]attribute[*]}" 	delim=","/>
+				<ie:param name="type"               	data="${@form[]type[*]}" 	delim=","/>
+				<ie:param name="instance"           	data="<%= instance %>"/>
+				<ie:param name="where"         			data="${@form[]where[*]}"/>
+				<ie:param name="filter"         		data="${@form[]filter[*]}"/>
+				<ie:param name="group_out"          	data="output"/>
+			</ie:webject>
+			
+		<% } else if(method.equalsIgnoreCase("Query-Tree")){ %>				
+		
+			<ie:webject name="Query-Tree" 				type="obj">
+				<ie:param name="instance" 				data="<%= instance %>"/>
+				<ie:param name="object_ref"         	data="${@form[]object_ref[]}"/>
+				<ie:param name="attribute"          	data="${@form[]attribute[*]}" 	delim=","/>
+				<ie:param name="type"               	data="${@form[]type[*]}"/>
+				<ie:param name="direction" 				data="${@form[]direction[*]}"/>
+				<ie:param name="auto_navigate" 			data="${@form[]auto_navigate[*]}"/>
+				<ie:param name="depth" 					data="${@form[]depth[*]}"/>
+				<ie:param name="mode" 					data="${@form[]mode[*]}"/>
+	            <ie:param name="output_type"  			data="${@form[]output_type[*]}"/>         
+				<ie:param name="group_out" 				data="output"/>
+			</ie:webject>
+			
+		<% } else if (method.equalsIgnoreCase("Query-Links")) { %>
+			<ie:webject name="Query-Links" type="OBJ">
+				<ie:param name="INSTANCE" data="<%= instance %>"/>
+				<ie:param name="object_ref"         	data="${@form[]object_ref[]}"/>
+				<ie:param name="attribute"          	data="${@form[]attribute[*]}" 	delim=","/>
+				<ie:param name="type"               	data="${@form[]type[*]}"/>
+				<ie:param name="direction" 				data="${@form[]direction[*]}"/>
+				<ie:param name="auto_navigate" 			data="${@form[]auto_navigate[*]}"/>
+				<ie:param name="output_type"  			data="${@form[]output_type[*]}"/>         
+				<ie:param name="group_out" 				data="output"/>
+			</ie:webject>
+	
+	<% } %>

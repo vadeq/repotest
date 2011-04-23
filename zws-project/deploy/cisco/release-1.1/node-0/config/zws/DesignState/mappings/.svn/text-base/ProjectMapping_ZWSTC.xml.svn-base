@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:root
+    xsi:schemaLocation="http://www.agile.com/api/map file:/xsd/map.xsd"
+    version="2.0.0" xmlns:map="http://www.agile.com/api/map" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <map:globalRules>
+        <map:addTypeOption value="true"/>
+        <!-- read only or special attributes in Agile. 2064 and 2065 are used by CIF -->
+        <map:forceIsDirty value="false"
+            attribute="1001,1011,1014,1016,1017,1020,1021,1030,1046,1047,1051,1054,1055,1056,1057,1069,1081,1084,1142,1143,1144,1343,2064,2065,2181,3582,3621,3623,3624,3645,3743,4500,4684,6038,6148,6154,6173,6175,6176,6177,6178,6180,6184,6305,6388,6389,6390,7951,10014,12089,12205,2000004143,2000004612,2000004891,2000007045" split=","/>
+        <!-- flex fields that should work
+        <map:forceIsDirty value="false"
+            attribute="35818,35826,35827,35828,35829,35830,37549,37555,38266" split=","/>
+        -->
+    </map:globalRules>
+    <!--  ************************************************************************************************************
+          **      TCEng  Part  ReadOnly  Structure                                                                  **
+          **                                                                                                        **
+          **            TCEng Object (self)                                                                         **
+          **                                                                                                        **
+          ************************************************************************************************************  -->
+    <map:structure name="TCEng Part ReadOnly Structure">
+        <map:matchRule source="$ISDIRTY" match="^false$"/>
+        <map:self name="TCEng Object" head="true" isdirty="false">
+            <map:key page="Title Block" name="Number" id="1001">
+                <map:expressionOption>
+                    <map:expression source="item_id"
+                        match="^(?!null$)(.+)$" replace="MEU_$1" toCase="upper"/>
+                    <map:expression source="ItemID"
+                        match="^(?!null$)(.+)$" replace="MEU_$1" toCase="upper"/>
+                </map:expressionOption>
+            </map:key>
+            <map:class name="Documents">
+                <map:target page="Title Block" name="Description" id="1002">
+                    <map:expressionOption>
+                        <map:expression source="description"
+                            match="^(?!null$)(.*)$" replace="$1"/>
+                        <map:expression source="Description"
+                            match="^(?!null$)(.*)$" replace="$1"/>
+                    </map:expressionOption>
+                </map:target>
+            </map:class>
+            <map:subclass name="Mechanical Design Model"/>
+        </map:self>
+    </map:structure>
+    <!--  ************************************************************************************************************
+          **      TCEng  Part  wo/File  Structure                                                                    **
+          **                                                                                                        **
+          **                  Design Change Order                                                                   **
+          **               ECPN                                                                                     **
+          **            TCEng Object (self)  ->  TCEng Object                                                       **
+          **                                                                                                        **
+          ************************************************************************************************************  -->
+    <map:structure name="TCEng Part wo/File Structure">
+        <map:matchRule source="attachment+'!'" match="^!$" quote="'"/>
+        <map:self name="TCEng Object" head="false">
+            <map:key page="Title Block" name="Number" id="1001">
+                <map:expressionOption>
+                    <map:expression source="item_id"
+                        match="^(?!null$)(.+)$" replace="MEU_$1" toCase="upper"/>
+                    <map:expression source="ItemID"
+                        match="^(?!null$)(.+)$" replace="MEU_$1" toCase="upper"/>
+                </map:expressionOption>
+            </map:key>
+            <map:class name="Documents">
+                <map:target page="Title Block" name="Description" id="1002">
+                    <map:expressionOption>
+                        <map:expression source="description"
+                            match="^(?!null$)(.*)$" replace="$1"/>
+                        <map:expression source="Description"
+                            match="^(?!null$)(.*)$" replace="$1"/>
+                    </map:expressionOption>
+                </map:target>
+            </map:class>
+            <map:subclass name="Mechanical Design Model"/>
+        </map:self>
+        <map:object name="ECPN" head="true" isdirty="false">
+            <map:key page="Title Block" name="Number" id="1001">
+                <map:expressionOption>
+                    <map:expression source="item_id"
+                        match="^(\d{2,3}-\d{4,6}-\d{2}).*$"
+                        replace="ENG_$1" toCase="upper"/>
+                    <map:expression source="ItemID"
+                        match="^(\d{2,3}-\d{4,6}-\d{2}).*$"
+                        replace="ENG_$1" toCase="upper"/>
+                    <map:expression source="item_id"
+                        match="^(?!null$)(.*)$" replace="ENG_$1" toCase="upper"/>
+                    <map:expression source="ItemID"
+                        match="^(?!null$)(.*)$" replace="ENG_$1" toCase="upper"/>
+                </map:expressionOption>
+            </map:key>
+            <map:class name="Documents" limitRefresh="true">
+                <map:target name="role" option="true">
+                    <map:expression replace="parent"/>
+                </map:target>
+            </map:class>
+            <map:subclass name="ECPN" limitRefresh="true"/>
+        </map:object>
+        <map:object name="Design Change Order" head="true">
+            <map:key page="Cover Page" name="Number" id="1047">
+                <map:expression replace=""/>
+            </map:key>
+            <map:class name="Change Orders">
+                <map:target name="autonumbersource" option="true">
+                    <map:expression replace="Mechanical Design Publish (MDP) ECO Numbering Scheme"/>
+                </map:target>
+                <map:target name="ownerattribute" option="true">
+                    <map:expression replace="1099"/>
+                </map:target>
+                <map:target page="Cover Page" name="Workflow" id="3742">
+                    <map:expression replace="Eng Design Publish"/>
+                </map:target>
+                <map:target page="Cover Page" name="Change Analyst" id="1099">
+                    <map:expression replace="$USER"/>
+                </map:target>
+                <map:target page="Cover Page" name="Description of Change" id="1052" isdirtyDefault="true">
+                    <map:expressionOption>
+                        <map:expression source="Cover Page.Description of Change" match="(.+)" replace="$1" refresh="true"/>
+                        <map:expression source="'default'" quote="'" match="default" replace="Mechanical Design Publish" refresh="true"/>
+                    </map:expressionOption>
+                </map:target>
+                <map:target page="Cover Page" name="Reason For Change" id="1053" isdirtyDefault="true">
+                    <map:expressionOption>
+                        <map:expression source="Cover Page.Reason For Change" match="(.+)" replace="$1" refresh="true"/>
+                        <map:expression source="'default'" quote="'" match="default" replace="Mechanical Design Publish" refresh="true"/>
+                    </map:expressionOption>
+                </map:target>
+                <map:target page="Cover Page" name="Change Category" id="1060" isdirtyDefault="true">
+                    <map:expressionOption>
+                        <map:expression source="Cover Page.Change Category" match="(.+)" replace="$1" refresh="true"/>
+                        <map:expression source="'default'" quote="'" match="default" replace="ENG" refresh="true"/>
+                    </map:expressionOption>
+                </map:target>
+            </map:class>
+            <map:subclass name="Eng Design Publish">
+                <map:target page="Page Three"
+                    name="Eng Design Publish Category" id="1540" isdirtyDefault="true">
+                    <map:expressionOption>
+                        <map:expression source="Page Three.Eng Design Publish Category" match="(.+)" replace="$1" refresh="true"/>
+                        <map:expression source="'default'" quote="'" match="default" replace="Mechanical Design" refresh="true"/>
+                    </map:expressionOption>
+                </map:target>
+            </map:subclass>
+        </map:object>
+        <map:relation parent="TCEng Object" child="TCEng Object" self="true">
+            <map:childClass name="Documents">
+                <map:target page="BOM" name="Item Number" id="1011">
+                    <map:expressionOption>
+                        <map:expression source="item_id"
+                            match="^(?!null$)(.+)$" replace="MEU_$1" toCase="upper"/>
+                        <map:expression source="ItemID"
+                            match="^(?!null$)(.+)$" replace="MEU_$1" toCase="upper"/>
+                    </map:expressionOption>
+                </map:target>
+            </map:childClass>
+            <map:parentClass name="Documents"/>
+        </map:relation>
+        <map:relation parent="ECPN" child="TCEng Object" self="false">
+            <map:childClass name="Documents" limitRefresh="true">
+                <map:target page="BOM" name="Item Number" id="1011">
+                    <map:expressionOption>
+                        <map:expression source="item_id"
+                            match="^(\d{2,3}-\d{4,6}-\d{2}).*$"
+                            replace="ENG_$1" toCase="upper"/>
+                        <map:expression source="ItemID"
+                            match="^(\d{2,3}-\d{4,6}-\d{2}).*$"
+                            replace="ENG_$1" toCase="upper"/>
+                        <map:expression source="item_id"
+                            match="^(?!null$)(.*)$" replace="ENG_$1" toCase="upper"/>
+                        <map:expression source="ItemID"
+                            match="^(?!null$)(.*)$" replace="ENG_$1" toCase="upper"/>
+                    </map:expressionOption>
+                </map:target>
+            </map:childClass>
+            <map:parentClass name="Documents" limitRefresh="true"/>
+        </map:relation>
+        <map:relation parent="TCEng Object" child="Design Change Order" self="false">
+            <map:childClass name="Change Orders">
+                <map:target page="Affected Items" name="New Rev" id="1056">
+                    <map:expression replace="$NN"/>
+                </map:target>
+                <map:target page="Affected Items" name="Lifecycle Phase" id="1057">
+                    <map:expression replace="Design"/>
+                </map:target>
+            </map:childClass>
+            <map:parentClass name="Documents"/>
+        </map:relation>
+        <map:relation parent="ECPN" child="Design Change Order" self="false">
+            <map:childClass name="Change Orders" limitRefresh="true"/>
+            <map:parentClass name="Documents" limitRefresh="true"/>
+        </map:relation>
+    </map:structure>
+    <!--  ************************************************************************************************************
+          **      TCEng  Part  w/File  Structure                                                                    **
+          **                                                                                                        **
+          **                  Design Change Order                                                                   **
+          **               ECPN                                                                                     **
+          **            TCEng Object (self)  ->  TCEng Object                                                       **
+          **               TCEng Part File                                                                          **
+          **                  TCEng Part Folder                                                                     **
+          **                                                                                                        **
+          ************************************************************************************************************  -->
+    <map:structure name="TCEng Part w/File Structure">
+        <map:matchRule source="attachment" match="^.+$"/>
+        <map:self name="TCEng Object" head="false">
+            <map:key page="Title Block" name="Number" id="1001">
+                <map:expressionOption>
+                    <map:expression source="item_id"
+                        match="^(?!null$)(.+)$" replace="MEU_$1" toCase="upper"/>
+                    <map:expression source="ItemID"
+                        match="^(?!null$)(.+)$" replace="MEU_$1" toCase="upper"/>
+                </map:expressionOption>
+            </map:key>
+            <map:class name="Documents">
+                <map:target page="Title Block" name="Description" id="1002">
+                    <map:expressionOption>
+                        <map:expression source="description"
+                            match="^(?!null$)(.*)$" replace="$1"/>
+                        <map:expression source="Description"
+                            match="^(?!null$)(.*)$" replace="$1"/>
+                    </map:expressionOption>
+                </map:target>
+            </map:class>
+            <map:subclass name="Mechanical Design Model"/>
+        </map:self>
+        <map:object name="ECPN" head="true" isdirty="false">
+            <map:key page="Title Block" name="Number" id="1001">
+                <map:expressionOption>
+                    <map:expression source="item_id"
+                        match="^(\d{2,3}-\d{4,6}-\d{2}).*$"
+                        replace="ENG_$1" toCase="upper"/>
+                    <map:expression source="ItemID"
+                        match="^(\d{2,3}-\d{4,6}-\d{2}).*$"
+                        replace="ENG_$1" toCase="upper"/>
+                    <map:expression source="item_id"
+                        match="^(?!null$)(.*)$" replace="ENG_$1" toCase="upper"/>
+                    <map:expression source="ItemID"
+                        match="^(?!null$)(.*)$" replace="ENG_$1" toCase="upper"/>
+                </map:expressionOption>
+            </map:key>
+            <map:class name="Documents" limitRefresh="true">
+                <map:target name="role" option="true">
+                    <map:expression replace="parent"/>
+                </map:target>
+            </map:class>
+            <map:subclass name="ECPN" limitRefresh="true"/>
+        </map:object>
+        <map:object name="Design Change Order" head="true">
+            <map:key page="Cover Page" name="Number" id="1047">
+                <map:expression replace=""/>
+            </map:key>
+            <map:class name="Change Orders">
+                <map:target name="autonumbersource" option="true">
+                    <map:expression replace="Mechanical Design Publish (MDP) ECO Numbering Scheme"/>
+                </map:target>
+                <map:target name="ownerattribute" option="true">
+                    <map:expression replace="1099"/>
+                </map:target>
+                <map:target page="Cover Page" name="Workflow" id="3742">
+                    <map:expression replace="Eng Design Publish"/>
+                </map:target>
+                <map:target page="Cover Page" name="Change Analyst" id="1099">
+                    <map:expression replace="$USER"/>
+                </map:target>
+                <map:target page="Cover Page" name="Description of Change" id="1052" isdirtyDefault="true">
+                    <map:expressionOption>
+                        <map:expression source="Cover Page.Description of Change" match="(.+)" replace="$1" refresh="true"/>
+                        <map:expression source="'default'" quote="'" match="default" replace="Mechanical Design Publish" refresh="true"/>
+                    </map:expressionOption>
+                </map:target>
+                <map:target page="Cover Page" name="Reason For Change" id="1053" isdirtyDefault="true">
+                    <map:expressionOption>
+                        <map:expression source="Cover Page.Reason For Change" match="(.+)" replace="$1" refresh="true"/>
+                        <map:expression source="'default'" quote="'" match="default" replace="Mechanical Design Publish" refresh="true"/>
+                    </map:expressionOption>
+                </map:target>
+                <map:target page="Cover Page" name="Change Category" id="1060" isdirtyDefault="true">
+                    <map:expressionOption>
+                        <map:expression source="Cover Page.Change Category" match="(.+)" replace="$1" refresh="true"/>
+                        <map:expression source="'default'" quote="'" match="default" replace="ENG" refresh="true"/>
+                    </map:expressionOption>
+                </map:target>
+            </map:class>
+            <map:subclass name="Eng Design Publish">
+                <map:target page="Page Three"
+                    name="Eng Design Publish Category" id="1540" isdirtyDefault="true">
+                    <map:expressionOption>
+                        <map:expression source="Page Three.Eng Design Publish Category" match="(.+)" replace="$1" refresh="true"/>
+                        <map:expression source="'default'" quote="'" match="default" replace="Mechanical Design" refresh="true"/>
+                    </map:expressionOption>
+                </map:target>
+            </map:subclass>
+        </map:object>
+        <map:object name="TCEng Folder" head="false">
+            <map:key page="Title Block" name="Number" id="6173">
+                <map:expression replace=""/>
+            </map:key>
+            <map:class name="File Folders">
+                <map:target name="autonumbersource" option="true">
+                    <map:expression replace="File Folder Number"/>
+                </map:target>
+            </map:class>
+            <map:subclass name="Design File Folder"/>
+        </map:object>
+        <map:object name="TCEng File" head="false">
+            <map:key page="" name="file-name" id="">
+                <map:expression source="attachment"
+                    match="^(.*[\\/]|)([^\\/]+)$" replace="$2"/>
+            </map:key>
+            <map:class name="Files">
+                <map:target page="" name="file-path" id="">
+                    <map:expression source="attachment"
+                        match="^(.*[\\/]|)([^\\/]+)$" replace="$1"/>
+                </map:target>
+                <map:target page="" name="file-id" id="">
+                    <map:expression source="fileId"/>
+                </map:target>
+            </map:class>
+            <map:subclass name="file"/>
+        </map:object>
+        <map:relation parent="TCEng Object" child="TCEng Object" self="true">
+            <map:childClass name="Documents">
+                <map:target page="BOM" name="Item Number" id="1011">
+                    <map:expressionOption>
+                        <map:expression source="item_id"
+                            match="^(?!null$)(.+)$" replace="MEU_$1" toCase="upper"/>
+                        <map:expression source="ItemID"
+                            match="^(?!null$)(.+)$" replace="MEU_$1" toCase="upper"/>
+                    </map:expressionOption>
+                </map:target>
+            </map:childClass>
+            <map:parentClass name="Documents"/>
+        </map:relation>
+        <map:relation parent="ECPN" child="TCEng Object" self="false">
+            <map:childClass name="Documents" limitRefresh="true">
+                <map:target page="BOM" name="Item Number" id="1011">
+                    <map:expressionOption>
+                        <map:expression source="item_id"
+                            match="^(\d{2,3}-\d{4,6}-\d{2}).*$"
+                            replace="ENG_$1" toCase="upper"/>
+                        <map:expression source="ItemID"
+                            match="^(\d{2,3}-\d{4,6}-\d{2}).*$"
+                            replace="ENG_$1" toCase="upper"/>
+                        <map:expression source="item_id"
+                            match="^(?!null$)(.*)$" replace="ENG_$1" toCase="upper"/>
+                        <map:expression source="ItemID"
+                            match="^(?!null$)(.*)$" replace="ENG_$1" toCase="upper"/>
+                    </map:expressionOption>
+                </map:target>
+            </map:childClass>
+            <map:parentClass name="Documents" limitRefresh="true"/>
+        </map:relation>
+        <map:relation parent="TCEng Object" child="Design Change Order" self="false">
+            <map:childClass name="Change Orders">
+                <map:target page="Affected Items" name="New Rev" id="1056">
+                    <map:expression replace="$NN"/>
+                </map:target>
+                <map:target page="Affected Items" name="Lifecycle Phase" id="1057">
+                    <map:expression replace="Design"/>
+                </map:target>
+            </map:childClass>
+            <map:parentClass name="Documents"/>
+        </map:relation>
+        <map:relation parent="ECPN" child="Design Change Order" self="false">
+            <map:childClass name="Change Orders" limitRefresh="true"/>
+            <map:parentClass name="Documents" limitRefresh="true"/>
+        </map:relation>
+        <map:relation parent="TCEng Object" child="TCEng File" self="false">
+            <map:childClass name="Files"/>
+            <map:parentClass name="Documents">
+                <map:target page="Attachments" name="Filename" id="1046">
+                    <map:expression source="attachment"
+                        match="^(.*[\\/]|)([^\\/]+)$" replace="$2"/>
+                </map:target>
+            </map:parentClass>
+        </map:relation>
+        <map:relation parent="TCEng File" child="TCEng Folder" self="false">
+            <map:childClass name="File Folders">
+                <map:target page="Files" name="File Name" id="6303">
+                    <map:expression source="attachment"
+                        match="^(.*[\\/]|)([^\\/]+)$" replace="$2"/>
+                </map:target>
+            </map:childClass>
+            <map:parentClass name="Files"/>
+        </map:relation>
+    </map:structure>
+</map:root>

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/zws/!svn/ver/5337/trunk/zws/build/dep/agile/plmapi-1x
+END
+ecp-plm-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/zws/!svn/ver/1036/trunk/zws/build/dep/agile/plmapi-1x/ecp-plm-api.jar
+END
+agile-share-prof.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/zws/!svn/ver/1036/trunk/zws/build/dep/agile/plmapi-1x/agile-share-prof.jar
+END
+agile-share-xml.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/zws/!svn/ver/1036/trunk/zws/build/dep/agile/plmapi-1x/agile-share-xml.jar
+END
+ecp-connector.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/zws/!svn/ver/1036/trunk/zws/build/dep/agile/plmapi-1x/ecp-connector.jar
+END
+CifClient.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/zws/!svn/ver/1040/trunk/zws/build/dep/agile/plmapi-1x/CifClient.jar
+END
+agile-share.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/zws/!svn/ver/1036/trunk/zws/build/dep/agile/plmapi-1x/agile-share.jar
+END
+ecp-util.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/zws/!svn/ver/1036/trunk/zws/build/dep/agile/plmapi-1x/ecp-util.jar
+END
+ep-eci.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/zws/!svn/ver/1036/trunk/zws/build/dep/agile/plmapi-1x/ep-eci.jar
+END

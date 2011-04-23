@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/server/code/java/zws/service/packaging
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+PackagingSvc.java
+file
+
+
+
+
+2008-07-11T20:50:19.234750Z
+91ae3795f16ba269c15b2ee67bc24c09
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+
+PackagingServiceEJB.java
+file
+
+
+
+
+2008-07-11T20:50:19.297250Z
+39b4bb717a79137dc536eef221c2b365
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+

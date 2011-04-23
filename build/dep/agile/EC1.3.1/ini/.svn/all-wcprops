@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/ini
+END
+MappingTables.csv
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/ini/MappingTables.csv
+END
+plm-api-server.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/ini/plm-api-server.xml
+END
+ECMappingConfig.properties
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/ini/ECMappingConfig.properties
+END
+plm-api-client.properties
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/ini/plm-api-client.properties
+END
+plm-api-log.properties
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/ini/plm-api-log.properties
+END
+plm-api-xml.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/ini/plm-api-xml.xsd
+END
+plm-api-config.properties
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/ini/plm-api-config.properties
+END
+plm-api-master.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/ini/plm-api-master.xsl
+END
+plm-api-sdk.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/ini/plm-api-sdk.xml
+END
+aXML.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/zws/!svn/ver/6142/trunk/zws/build/dep/agile/EC1.3.1/ini/aXML.xsd
+END

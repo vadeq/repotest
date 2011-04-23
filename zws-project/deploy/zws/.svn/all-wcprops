@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/zws/!svn/ver/6399/trunk/zws/zws-project/deploy/zws
+END
+deploy.bat
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/zws/!svn/ver/917/trunk/zws/zws-project/deploy/zws/deploy.bat
+END
+update.bat
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/zws/!svn/ver/919/trunk/zws/zws-project/deploy/zws/update.bat
+END
+checkin.bat
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/zws/!svn/ver/916/trunk/zws/zws-project/deploy/zws/checkin.bat
+END
+local-env.template
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/zws/!svn/ver/6394/trunk/zws/zws-project/deploy/zws/local-env.template
+END
+deploy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/zws/!svn/ver/918/trunk/zws/zws-project/deploy/zws/deploy.xml
+END

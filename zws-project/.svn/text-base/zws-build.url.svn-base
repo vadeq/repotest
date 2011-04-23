@@ -1,0 +1,5 @@
+[DEFAULT]
+BASEURL=http://build.zerowait-state.com/svn/zws/trunk/zws/zws-project/
+[InternetShortcut]
+URL=http://build.zerowait-state.com/svn/zws/trunk/zws/zws-project/
+Modified=107482A68874C70170

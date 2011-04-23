@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/uniqueid/qx-service-uniqueid/build
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:20:49.619585Z
+5310
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+title.build
+file
+
+
+
+
+2008-07-11T20:40:39.984750Z
+2c0821f6d3ca6a715ac5ca81361e56f9
+2007-10-25T23:41:20.648883Z
+3676
+arbind.thakur
+
+classpath.build
+file
+
+
+
+
+2008-07-11T20:40:40.062875Z
+f17b2af5248d26c1534206a2b605a64c
+2007-10-25T23:41:20.648883Z
+3676
+arbind.thakur
+

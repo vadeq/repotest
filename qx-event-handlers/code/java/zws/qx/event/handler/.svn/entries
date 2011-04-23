@@ -1,0 +1,49 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/plugin/event/qx-event-handlers/code/java/zws/qx/event/handler
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:00:09.835723Z
+5654
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+agile
+dir
+
+ilink
+dir
+
+tc10
+dir
+
+EventHandlerBase.java
+file
+
+
+
+
+2008-07-11T17:23:51.312875Z
+1693c6ec1cc3236875befb058daf66f1
+2008-02-21T21:59:02.754658Z
+5513
+pavan.toleti
+

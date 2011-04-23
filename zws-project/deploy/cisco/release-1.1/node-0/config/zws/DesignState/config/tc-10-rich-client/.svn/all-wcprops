@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/zws/!svn/ver/6134/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/tc-10-rich-client
+END
+rich-client-services.xml
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/zws/!svn/ver/6134/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/tc-10-rich-client/rich-client-services.xml
+END
+rich-client-property.xml
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/zws/!svn/ver/6134/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/tc-10-rich-client/rich-client-property.xml
+END
+rich-client-repository.xml
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/zws/!svn/ver/6134/trunk/zws/zws-project/deploy/cisco/release-1.1/node-0/config/zws/DesignState/config/tc-10-rich-client/rich-client-repository.xml
+END

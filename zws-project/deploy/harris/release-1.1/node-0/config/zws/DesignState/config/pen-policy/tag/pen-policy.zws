@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instructions>
+ <designstate-config ignore="true"/>
+ <pen-policies ignore="true"/>
+
+ <!-- The Policy -->
+ <pen-policy instance-of="zws.pen.policy.PENPolicy" static-method="add" class="zws.service.pen.policy.PENPolicySvc">
+  <name required="true"/>
+  <src-repository property="srcRepositoryName"/>
+  <target-repository property="targetRepositoryName" required="true"/>
+ </pen-policy>
+
+ <define-sequence instance-of="zws.pen.policy.declaration.Sequence" static-method="defineSequence" class="zws.pen.policy.PENPolicy">
+  <sequence-name/>
+  <values/>
+  <delimiter/>
+ </define-sequence>
+ 
+ <sequence-index  instance-of="zws.pen.policy.op.pendata.util.SequenceIndex" method="add">
+  <sequence-name/>
+  <values/>
+ </sequence-index>
+
+ <retrieve-data instance-of="zws.pen.policy.op.pendata.PENDataOpList" method="setRetrieveSrcOp">
+       <continue-if-cancelled type="boolean" default="true"/>
+ </retrieve-data>
+ <transform-data instance-of="zws.pen.policy.op.pendata.PENDataOpList" method="setTransformSrcOp"/>
+ <analyze-data instance-of="zws.pen.policy.op.pendata.PENDataOpList" method="setAnalyzeDataOp"/>
+ <cancel-publish instance-of="zws.pen.policy.op.pendata.PENDataOpList" method="setCancelPublishOp">
+      <continue-if-cancelled type="boolean" default="true"/>
+ </cancel-publish>
+ <publish-target-data instance-of="zws.pen.policy.op.pendata.PENDataOpList" method="setPublishTargetOp"/>
+ <update-source instance-of="zws.pen.policy.op.pendata.PENDataOpList" method="setUpdateSrcOp"/>
+
+ <!-- Recording Messages -->
+  <status-message instance-of="zws.pen.policy.op.pendata.element.message.RecordElementMessage" method="add">
+  <message/>
+ </status-message>
+ <warning-message instance-of="zws.pen.policy.op.pendata.element.message.RecordElementWarningMessage" method="add">
+  <message/>
+ </warning-message>
+ <error-message instance-of="zws.pen.policy.op.pendata.element.message.RecordElementErrorMessage" method="add">
+  <message/>
+ </error-message>
+ <debug-message instance-of="zws.pen.policy.op.pendata.element.message.RecordElementDebugMessage" method="add">
+  <message/>
+ </debug-message>
+ <global-status-message instance-of="zws.pen.policy.op.pendata.message.RecordGlobalMessage" method="add">
+  <message/>
+ </global-status-message>
+ <global-warning-message instance-of="zws.pen.policy.op.pendata.message.RecordGlobalWarningMessage" method="add">
+  <message/>
+ </global-warning-message>
+ <global-error-message instance-of="zws.pen.policy.op.pendata.message.RecordGlobalErrorMessage" method="add">
+  <message/>
+ </global-error-message>
+ <global-debug-message instance-of="zws.pen.policy.op.pendata.message.RecordGlobalErrorMessage" method="add">
+  <message/>
+ </global-debug-message>
+
+ <!-- String Maker utilities -->
+ <make-string instance-of="zws.pen.policy.op.pendata.util.string.StringMaker" method="add">
+  <string/>
+ </make-string>
+ <measure-string-length instance-of="zws.pen.policy.op.pendata.util.string.MeasureStringLength" method="add">
+    <string/>
+ </measure-string-length>
+ <capitalize instance-of="zws.pen.policy.op.pendata.util.string.Capitalize" method="add">
+    <string/>
+ </capitalize>
+ <uppercase instance-of="zws.pen.policy.op.pendata.util.string.UpperCase" method="add">
+    <string/>
+ </uppercase>
+ <lowercase instance-of="zws.pen.policy.op.pendata.util.string.LowerCase" method="add">
+   <string/>
+ </lowercase>
+ <add-prefix instance-of="zws.pen.policy.op.pendata.util.string.Prefix" method="add">
+   <string/>
+  <prefix/>
+ </add-prefix>
+ <add-suffix instance-of="zws.pen.policy.op.pendata.util.string.Suffix" method="add">
+   <string/>
+  <suffix/>
+ </add-suffix>
+ <first instance-of="zws.pen.policy.op.pendata.util.string.First" method="add">
+   <string/>
+  <count type="int"  required="true"/>
+ </first>
+  <last instance-of="zws.pen.policy.op.pendata.util.string.Last" method="add">
+   <string/>
+  <count type="int"  required="true"/>
+ </last>
+ <first-word instance-of="zws.pen.policy.op.pendata.util.string.FirstWord" method="add">
+  <string/>
+ </first-word>
+ <substring instance-of="zws.pen.policy.op.pendata.util.string.Substring" method="add">
+  <string/>
+  <begin type="int" required="true"/>
+  <count type="int"  required="true"/>
+ </substring>
+ <logical-name instance-of="zws.pen.policy.op.pendata.util.string.StringMaker" method="setLogicalNameOp">
+  <name property="string"/>
+ </logical-name>
+ <logical-names instance-of="zws.pen.policy.op.pendata.util.string.StringCollectionMaker" method="setLogicalNamesOp">
+  <name property="string"/>
+ </logical-names>
+
+ <!-- FileName utilities  -->
+ <get-filename-base instance-of="zws.pen.policy.op.pendata.util.filename.GetFileNameBase" method="add"/>
+ <get-filename-extension instance-of="zws.pen.policy.op.pendata.util.filename.GetFileNameExtension" method="add"/>
+ 
+ <!-- Runtime Information-->
+ <username instance-of="zws.pen.policy.op.pendata.util.runtime.UserName" method="add"/>
+ <now instance-of="zws.pen.policy.op.pendata.util.runtime.Now" method="add"/>
+ <get-context-value instance-of="zws.pen.policy.op.pendata.util.runtime.GetContextValue" method="add">
+  <attribute property="attributeName" required="true"/>
+ </get-context-value>
+ <set-context-value instance-of="zws.pen.policy.op.pendata.util.runtime.SetContextValue" method="add">
+  <attribute property="attributeName" required="true"/>
+  <value property="attributeValue"/>
+ </set-context-value>
+ <get-system-property-value instance-of= "zws.pen.policy.op.pendata.util.GetSystemPropertyValue" method="add">
+  <attribute property="propertyName" />
+ </get-system-property-value>
+
+ <!-- Loops -->
+ <for-each-element  instance-of="zws.pen.policy.op.pendata.lang.loop.ForEachElement" method="add">
+     <continue-if-cancelled type="boolean" default="false"/>
+ </for-each-element>
+
+ <for-each-subcomponent  instance-of="zws.pen.policy.op.pendata.lang.element.iterator.ForEachSubcomponent" method="add">
+    <continue-if-cancelled type="boolean" default="false"/>
+ </for-each-subcomponent>
+
+ <for-each-origin-to-publish instance-of="zws.pen.policy.op.pendata.lang.element.iterator.ForEachOriginToPublish" method="add">
+   <continue-if-cancelled type="boolean" default="false"/>
+ </for-each-origin-to-publish>
+
+
+
+ <!-- selectors -->
+ <select-first-xfer-parent instance-of="zws.pen.policy.op.pendata.lang.select.SelectFirstXferParent" method="add"/>
+ <select-first-source-parent instance-of="zws.pen.policy.op.pendata.lang.select.SelectFirstSourceParent" method="add"/>
+ <select-first-xfer-subcomponent instance-of="zws.pen.policy.op.pendata.lang.select.SelectFirstXferSubComponent" method="add"/>
+ <select-by-name instance-of="zws.pen.policy.op.pendata.lang.select.SelectByName" method="add"/>
+ <select-first-document-parent instance-of="zws.pen.policy.op.pendata.lang.select.SelectFirstDocumentParent" method="add"/>
+ 
+ <!-- Branches -->
+ <if instance-of="zws.pen.policy.op.pendata.lang.branch.IF" method="add"/>
+ <if-element instance-of="zws.pen.policy.op.pendata.lang.branch.element.IFElement" method="add"/>
+ <then instance-of="zws.pen.policy.op.pendata.PENDataOpList" method="setThenOp"/>
+ <else instance-of="zws.pen.policy.op.pendata.PENDataOpList" method="setElseOp"/>
+ 
+ <!-- Conditional:  Logic -->
+ <not instance-of="zws.pen.policy.op.pendata.lang.condition.logical.NOT" method="add"/>
+ <and instance-of="zws.pen.policy.op.pendata.lang.condition.logical.AND" method="add"/>
+ <or instance-of="zws.pen.policy.op.pendata.lang.condition.logical.OR" method="add"/>
+ <xor instance-of="zws.pen.policy.op.pendata.lang.condition.logical.XOR" method="add"/>
+ <nand instance-of="zws.pen.policy.op.pendata.lang.condition.logical.NAND" method="add"/>
+ <nor instance-of="zws.pen.policy.op.pendata.lang.condition.logical.NOR" method="add"/>
+ <xnor instance-of="zws.pen.policy.op.pendata.lang.condition.logical.XNOR" method="add"/>
+ 
+ <!-- Conditional:  Comparison -->
+ <is-equal instance-of="zws.pen.policy.op.pendata.lang.condition.comparison.isEqual" method="add">
+  <value/>
+  <ignore-case type="boolean" default="false"/>
+ </is-equal>
+
+ <is-not-equal instance-of="zws.pen.policy.op.pendata.lang.condition.comparison.isEqual" method="add">
+  <value/>
+  <ignore-case type="boolean" default="false"/>
+  <inverted default="true" type="boolean"/>
+ </is-not-equal>
+
+ <is-greater-than instance-of="zws.pen.policy.op.pendata.lang.condition.comparison.isGreaterThan" method="add">
+  <value/>
+  <type default="string"/>
+ </is-greater-than>
+
+ <is-not-greater-than instance-of="zws.pen.policy.op.pendata.lang.condition.comparison.isGreaterThan" method="add">
+  <value/>
+  <type default="string"/>
+  <inverted default="true" type="boolean"/>
+ </is-not-greater-than>
+
+ <is-less-than instance-of="zws.pen.policy.op.pendata.lang.condition.comparison.isLessThan" method="add">
+  <value/>
+  <type default="string"/>
+ </is-less-than>
+
+ <is-not-less-than instance-of="zws.pen.policy.op.pendata.lang.condition.comparison.isLessThan" method="add">
+  <value/>
+  <type default="string"/>
+  <inverted default="true" type="boolean"/>
+ </is-not-less-than>
+
+ <is-empty instance-of="zws.pen.policy.op.pendata.lang.condition.comparison.isEmpty" method="add"/>
+
+ <starts-with instance-of="zws.pen.policy.op.pendata.lang.condition.comparison.StringStartsWith" method="add">
+  <prefix required="true"/>
+  <ignore-case type="boolean" default="false"/>
+ </starts-with>
+ 
+ <ends-with instance-of="zws.pen.policy.op.pendata.lang.condition.comparison.StringEndsWith" method="add">
+  <suffix required="true"/>
+  <ignore-case type="boolean" default="false"/>
+ </ends-with>
+  
+
+  
+ <string-length-is-exactly instance-of="zws.pen.policy.op.pendata.lang.condition.comparison.StringLengthEquals" method="add">
+  <string/>
+  <length type="int" required="true"/>
+ </string-length-is-exactly>
+
+ <string-length-is-at-most instance-of="zws.pen.policy.op.pendata.lang.condition.comparison.CompareStringLength" method="add">
+  <string/>
+  <max type="int" required="true"/>
+ </string-length-is-at-most>
+
+ <string-length-is-at-least instance-of="zws.pen.policy.op.pendata.lang.condition.comparison.CompareStringLength" method="add">
+  <string/>
+  <min type="int" required="true"/>
+ </string-length-is-at-least>
+
+ <string-contains-only-valid-chars instance-of="zws.pen.policy.op.pendata.lang.condition.comparison.StringContainsOnlyValidChars" method="add">
+  <string/>
+  <valid-characters/>
+ </string-contains-only-valid-chars>
+
+ <string-does-not-contain-invalid-chars instance-of="zws.pen.policy.op.pendata.lang.condition.comparison.StringDoesNotContainInvalidChars" method="add">
+  <string/>
+  <invalid-characters/>
+ </string-does-not-contain-invalid-chars>
+ <length-is-between instance-of="zws.pen.policy.op.pendata.lang.condition.comparison.CompareStringLength" method="add">
+  <string/>
+  <min type="int" required="true"/>
+  <max type="int" required="true"/>
+ </length-is-between>
+
+ <publishing-is-cancelled instance-of="zws.pen.policy.op.pendata.lang.condition.util.PublishingIsCancelled" method="add" />
+
+ <!-- Getters and Setters -->
+ <get-source-value instance-of= "zws.pen.policy.op.pendata.element.util.GetValueFromSourceOp" method="add">
+  <attribute property="attributeName" />
+ </get-source-value>
+ <get-xfer-value instance-of= "zws.pen.policy.op.pendata.element.util.GetTxAttributeOp" method="add">
+  <attribute property="attributeName" />
+ </get-xfer-value>
+ <get-target-value instance-of= "zws.pen.policy.op.pendata.element.util.GetValueFromTargetOp" method="add">
+  <attribute property="attributeName" />
+ </get-target-value>
+ 
+ <get-pending-eco-status instance-of="zws.pen.policy.op.pendata.element.status.eco.pending.GetPendingECOAttributeValue" method="add">
+  <attribute property="attributeName" default="status"/>
+ </get-pending-eco-status>
+
+ <get-pending-eco-type instance-of="zws.pen.policy.op.pendata.element.status.eco.pending.GetPendingECOAttributeValue" method="add">
+  <attribute property="attributeName" default="type"/>
+ </get-pending-eco-type>
+ 
+ <get-pending-eco-number instance-of="zws.pen.policy.op.pendata.element.status.eco.pending.GetPendingECOAttributeValue" method="add">
+  <attribute property="attributeName" default="number"/>
+ </get-pending-eco-number>
+ 
+ <get-element-name instance-of= "zws.pen.policy.op.pendata.element.util.GetElementName" method="add"/>
+   
+ <get-pending-eco-value instance-of= "zws.pen.policy.op.pendata.element.status.eco.pending.GetPendingECOAttributeValue" method="add">
+  <attribute property="attributeName" />
+ </get-pending-eco-value>
+ 
+ <!-- Condition of Structure  -->
+ <source-has-subcomponents instance-of="zws.pen.policy.op.pendata.lang.condition.util.SourceHasSubcomponent" method="add"/>
+ <xfer-has-subcomponents instance-of="zws.pen.policy.op.pendata.lang.condition.util.XferHasSubcomponent" method="add"/>
+ <target-has-subcomponents instance-of="zws.pen.policy.op.pendata.lang.condition.util.TargetHasSubcomponent" method="add"/>
+ 
+ <!--
+ <item-is-a-subcomponent instance-of="" method="add"/>
+ <item-is-a-parent instance-of="" method="add"/>
+ <item-has-parent instance-of="" method="add"/>
+ <item-has-subcomponents instance-of="" method="add"/>
+-->
+
+ <!-- Data Retrieval -->
+ <load-metadata-from-source-repository instance-of="zws.pen.policy.op.pendata.element.retrieve.metadata.RetrieveMetadata" method="add"/>
+ 
+ <load-bill-from-source-repository instance-of="zws.pen.policy.op.pendata.element.retrieve.metadata.RetrieveBOM" method="add"/>
+ <load-first-level-bill-from-source-repository instance-of="zws.pen.policy.op.pendata.element.retrieve.metadata.RetrieveFirstLevelBOM" method="add"/>
+ <load-first-level-deps-from-source-repository instance-of="zws.pen.policy.op.pendata.element.retrieve.metadata.RetrieveFirstLevelDependencies" method="add"/>
+ <load-latest-metadata-from-source-repository instance-of="zws.pen.policy.op.pendata.element.retrieve.metadata.RetrieveLatestMetadata" method="add"/>
+ <load-latest-bill-from-source-repository instance-of="zws.pen.policy.op.pendata.element.retrieve.metadata.RetrieveLatestBOM" method="add"/>
+ <load-first-level-latest-bill-from-source-repository instance-of="zws.pen.policy.op.pendata.element.retrieve.metadata.RetrieveFirstLevelLatestBOM" method="add"/>
+ <load-first-level-latest-deps-from-source-repository instance-of="zws.pen.policy.op.pendata.element.retrieve.metadata.RetrieveFirstLevelLatestDependencies" method="add"/>
+ <fetch-design-files instance-of="zws.pen.policy.op.pendata.element.retrieve.binary.FetchDesignFilesOp" method="add"/> 
+
+ <load-metadata-from-target-repository instance-of="zws.pen.policy.op.pendata.element.target.metadata.LoadTargetMetadataOp" method="add"/>
+<!--
+ <load-bill-from-target-repository instance-of="" method="add"/>
+ <load-first-level-deps-from-target-repository instance-of="" method="add"/>
+ <load-latest-metadata-from-target-repository instance-of="" method="add"/>
+ <load-latest-bill-from-target-repository instance-of="" method="add"/>
+ <load-latest-first-level-deps-from-target instance-of="" method="add"/>
+-->
+ <!-- Data State Detection -->
+ <load-synchronization-status instance-of="zws.pen.policy.op.pendata.element.status.item.LoadSyncStatusOp" method="add"/>
+ <detect-name-conflicts instance-of="zws.pen.policy.op.pendata.element.status.item.DetectNameConflictsOP" method="add"/>
+ <detect-synchronization-conflicts instance-of="zws.pen.policy.op.pendata.element.status.item.DetectSynchronizationConflictsOP" method="add"/>
+ <!-- detect-id-changes instance-of="" method="add"/ -->
+ <detect-pending-eco instance-of="zws.pen.policy.op.pendata.element.status.eco.pending.DetectPendingECOOp" method="add"/>
+ <load-pending-eco instance-of="zws.pen.policy.op.pendata.element.status.eco.pending.LoadPendingECOsOp" method="add"/>
+
+ <!-- more runtime parameters -->
+ <!--
+ <store-data instance-of= "" method="add">
+ </store-data>
+ <name instance-of= "" method="add">
+ </name>
+ <value instance-of= "" method="add">
+ </value>
+ <use-data instance-of= "" method="add">
+ </use-data>
+ -->
+ 
+ 
+ <!-- Data Transformation -->
+ <translate-design-to-igs instance-of="zws.pen.policy.op.pendata.element.transform.binary.TranslateProeDesignToIgsOp" method="add">
+  <logical-name/>
+ </translate-design-to-igs>
+ <translate-design-to-stp instance-of="zws.pen.policy.op.pendata.element.transform.binary.TranslateProeDesignToStepOp" method="add">
+  <logical-name/>
+ </translate-design-to-stp>
+ <translate-design-to-pdf instance-of="zws.pen.policy.op.pendata.element.transform.binary.TranslateProeDesignToPdfOp" method="add">  
+  <logical-name/>
+ </translate-design-to-pdf> 
+ <adopt-binaries-from-deps instance-of="zws.pen.policy.op.pendata.element.transform.binary.AdoptBinariesFromDeps" method="add"/>
+ <set-translated-binary-context-value instance-of="zws.pen.policy.op.pendata.element.transform.binary.SetTranslatedBinaryContextValue" method="add">
+  <attribute property="attributeName" required="true"/>
+  <value property="attributeValue"/>
+ </set-translated-binary-context-value>
+
+  
+ <remove-item instance-of="zws.pen.policy.op.pendata.element.transform.metadata.RemoveItemOp" method="add"/>
+ 
+  <set-xfer-name instance-of="zws.pen.policy.op.pendata.element.transform.metadata.SetNameOp" method="add"/>
+ <copy-all-attributes instance-of="zws.pen.policy.op.pendata.element.transform.metadata.CopyAllAttributesOp" method="add"/>
+ <copy-attribute instance-of="zws.pen.policy.op.pendata.element.transform.metadata.CopyAttributeOp" method="add">
+  <source-attribute property="attributeName"/>
+ </copy-attribute>
+ <rename-attribute instance-of="zws.pen.policy.op.pendata.element.transform.metadata.RenameAttributeOp" method="add">
+  <source-attribute property="sourceAttributeName" required="true"/>
+  <xfer-attribute property="xferAttributeName" required="true"/>
+  <default-value/>
+ </rename-attribute>
+ <set-attribute instance-of="zws.pen.policy.op.pendata.element.transform.metadata.SetAttributeOp" method="add">
+  <xfer-attribute property="attributeName"/>
+  <value property="attributeValue"/>
+  <max-length type="int"/>
+  <ignore-case type="boolean" default="true"/>
+  <valid-characters/>
+  <invalid-characters/>
+ </set-attribute>
+
+ <set-new-rev instance-of="zws.pen.policy.op.pendata.element.transform.metadata.SetAttributeOp" method="add">
+  <xfer-attribute property="attributeName" default="new-rev"/>
+  <value property="attributeValue"/>
+  <max-length type="int"/>
+  <ignore-case type="boolean" default="true"/>
+  <valid-characters/>
+  <invalid-characters/>
+ </set-new-rev >
+
+ <set-new-life-cycle-phase instance-of="zws.pen.policy.op.pendata.element.transform.metadata.SetAttributeOp" method="add">
+  <xfer-attribute property="attributeName" default="new-life-cycle-phase"/>
+  <value property="attributeValue"/>
+  <max-length type="int"/>
+  <ignore-case type="boolean" default="true"/>
+  <valid-characters/>
+  <invalid-characters/>
+ </set-new-life-cycle-phase>
+
+ <add-subcomponent instance-of="zws.pen.policy.op.pendata.element.transform.structure.AddSubcomponent" method="add"/>
+ <add-subcomponents instance-of="zws.pen.policy.op.pendata.element.transform.structure.AddSubcomponents" method="add"/>
+ <add-documents instance-of="zws.pen.policy.op.pendata.element.document.AddDocuments" method="add"/> 
+ <remove-subcomponents instance-of="zws.pen.policy.op.pendata.element.transform.structure.RemoveSubComponentsOp" method="add"/>
+ <copy-sub-components instance-of="zws.pen.policy.op.pendata.element.transform.structure.CopyAllSubcomponentsOp" method="add"/>
+ <list-parents instance-of="zws.pen.policy.op.pendata.element.transform.structure.ListParents" method="add"/>
+ <first-parent instance-of="zws.pen.policy.op.pendata.element.transform.structure.NameOfFirstParent" method="add"/>
+ <add-document instance-of="zws.pen.policy.op.pendata.element.document.AddDocument" method="add"/>
+  
+ <!-- Transformation for Target ECO -->
+ <set-target-eco instance-of="zws.pen.policy.op.pendata.element.status.eco.target.SetTargetECOOP" method="add">
+  <logical-name/>
+ </set-target-eco>
+ <get-target-eco instance-of="zws.pen.policy.op.pendata.element.status.eco.target.GetTargetECO" method="add"/>
+ <use-pending-eco instance-of="zws.pen.policy.op.pendata.element.status.eco.target.SetPendingECOAsTargetECOOP" method="add"/>
+
+<!-- Status -->
+ <get-element-status instance-of="zws.pen.policy.op.pendata.element.status.item.GetItemStatus" method="add">
+  <status property="statusName"/>
+ </get-element-status>
+ <set-element-status instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" required="true"/>
+  <value property="statusValue"/>
+ </set-element-status>
+ <get-global-status instance-of="zws.pen.policy.op.pendata.status.GetGlobalStatus" method="add">
+  <status property="statusName"/>
+ </get-global-status>
+ <set-global-status instance-of="zws.pen.policy.op.pendata.status.SetGlobalStatus" method="add">
+  <status property="statusName" required="true"/>
+  <value property="statusValue"/>
+ </set-global-status>
+
+ <element-status-is-true instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" required="true"/>
+  <check-for default="true"/>
+ </element-status-is-true>
+ <element-status-is-false instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" required="true"/>
+  <check-for default="false"/>
+ </element-status-is-false>
+ 
+ 
+ <!-- Set Publishing Pattern -->
+ <republish-item instance-of="zws.pen.policy.op.pendata.element.util.Republish" method="add"/>
+ <cancel instance-of="zws.pen.policy.op.pendata.util.CancelPublishing" method="add"/>
+
+
+<!-- built in variables --> 
+ <item-has-multiple-pending-ecos instance-of="zws.pen.policy.op.pendata.lang.condition.util.HasMultiplePendingECOs" method="add"/>
+
+ <item-is-design-model instance-of="zws.pen.policy.op.pendata.lang.condition.util.ItemIsDesignModel" method="add"/>
+ <item-is-design-drawing instance-of="zws.pen.policy.op.pendata.lang.condition.util.ItemIsDesignDrawing" method="add"/>
+ <item-is-skeleton-part instance-of="zws.pen.policy.op.pendata.lang.condition.util.ItemIsSkeletonPart" method="add"/>
+ <item-is-design-assembly instance-of="zws.pen.policy.op.pendata.lang.condition.util.ItemIsDesignAssembly" method="add"/> 
+ <item-is-design-format instance-of="zws.pen.policy.op.pendata.lang.condition.util.ItemIsDesignFormat" method="add"/>
+ <item-is-design-layout instance-of="zws.pen.policy.op.pendata.lang.condition.util.ItemIsDesignLayout" method="add"/>
+ <item-source-has-binary-files instance-of="zws.pen.policy.op.pendata.lang.condition.util.ItemSourceHasBinaryFiles" method="add"/>
+ <item-is-in-target instance-of="zws.pen.policy.op.pendata.lang.condition.util.ItemIsInTarget" method="add"/>
+ 
+ <item-is-design-root instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" default="item-is-design-root"/>
+  <check-for default="true"/>
+ </item-is-design-root>
+
+ <item-is-not-design-root instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" default="item-is-design-root"/>
+  <check-for default="false"/>
+ </item-is-not-design-root>
+ 
+
+ <item-is-library-component instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" default="library-component"/>
+  <check-for default="true"/>
+ </item-is-library-component>
+ 
+ <item-is-not-library-component instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" default="library-component"/>
+  <check-for default="false"/>
+ </item-is-not-library-component>
+
+ <item-has-pending-eco instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" default="item-has-pending-eco"/>
+  <check-for default="true"/>
+ </item-has-pending-eco>
+ 
+ <item-does-not-have-pending-eco instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" default="item-has-pending-eco"/>
+  <check-for default="false"/>
+ </item-does-not-have-pending-eco>
+
+
+<!--
+ <item-has-pending-eco instance-of="zws.pen.policy.op.pendata.lang.condition.util.HasPendingECO" method="add"/>
+ <item-does-not-have-pending-eco instance-of="zws.pen.policy.op.pendata.lang.condition.util.HasPendingECO" method="add">
+  <inverted default="true" type="boolean"/>
+ </item-does-not-have-pending-eco>
+-->
+
+ <!-- item-is-valid /  item-is-not-valid -->
+ <item-is-valid instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" default="item-is-valid"/>
+  <check-for default="true"/>
+ </item-is-valid>
+ 
+ <item-is-not-valid instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" default="item-is-valid"/>
+  <check-for default="false"/>
+ </item-is-not-valid>
+ 
+ <item-is-filtered-out instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" default="filter-out"/>
+  <check-for default="true"/>
+ </item-is-filtered-out>
+ 
+ <item-is-not-filtered-out instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" default="filter-out"/>
+  <check-for default="false"/>
+ </item-is-not-filtered-out>
+ 
+
+  <!-- item-is-new / item-is-not-new --> 
+ <item-is-new instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" default="sync-status"/>
+  <check-for default="new-item"/>
+ </item-is-new>
+ 
+  <!-- item-is-modified / item-is-not-modified -->
+ <item-is-modified instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" default="sync-status"/>
+  <check-for default="modified"/>
+ </item-is-modified> 
+   
+  <!-- item-is-synchronized / item-is-not-synchronized --> 
+ <item-is-synchronized instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" default="sync-status"/>
+  <check-for default="synchronized"/>
+ </item-is-synchronized>
+  
+  <!-- item-has-name-conflict / item-does-not-have-name-conflict -->
+ <item-has-name-conflict instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" default="item-has-name-conflict"/>
+  <check-for default="true"/>
+ </item-has-name-conflict>
+ 
+ <item-does-not-have-name-conflict instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" default="item-has-name-conflict"/>
+  <check-for default="false"/>
+ </item-does-not-have-name-conflict>
+    
+  <!-- item-has-synchronization-conflict / item-does-not-have-synchronization-conflict -->
+  <item-has-synchronization-conflict instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" default="item-has-synchronization-conflict"/>
+  <check-for default="true"/>
+ </item-has-synchronization-conflict>
+ 
+ <item-does-not-have-synchronization-conflict instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" default="item-has-synchronization-conflict"/>
+  <check-for default="false"/>
+ </item-does-not-have-synchronization-conflict> 
+  
+ <!-- item-source-system-matches-pub-env / item-source-system-does-not-match-pub-env -->  
+ <item-source-system-matches-pub-env instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" default="item-source-system-matches-pub-env"/>
+  <check-for default="true"/>
+ </item-source-system-matches-pub-env> 
+  
+ <item-source-system-does-not-match-pub-env instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" default="item-source-system-matches-pub-env"/>
+  <check-for default="false"/>
+ </item-source-system-does-not-match-pub-env>  
+  
+  <!-- is-on-open-eco / is-not-on-open-eco --> 
+  <item-is-on-open-eco instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" default="item-is-on-open-eco"/>
+  <check-for default="true"/>
+ </item-is-on-open-eco>
+ 
+ <item-is-not-on-open-eco instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" default="item-is-on-open-eco"/>
+  <check-for default="false"/>
+ </item-is-not-on-open-eco> 
+
+  <!-- is-released / is-not-released --> 
+  <target-is-already-released  instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" default="target-is-already-released"/>
+  <check-for default="true"/>
+ </target-is-already-released >
+ 
+ <target-is-not-already-released instance-of="zws.pen.policy.op.pendata.lang.condition.util.CompareItemStatus" method="add">
+  <status property="statusName" default="target-is-already-released"/>
+  <check-for default="false"/>
+ </target-is-not-already-released > 
+
+<!-- publishing patterns -->
+ <ignore-for-publishing instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="ignore-for-publishing"/>
+  <value property="statusValue" default="true"/>
+ </ignore-for-publishing>
+ 
+ <bind-to-target instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="bind-to-target"/>
+  <value property="statusValue" default="true"/>
+ </bind-to-target>
+ 
+ <publish-as-first-release instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="publish-as-first-release"/>
+  <value property="statusValue" default="true"/>
+ </publish-as-first-release>
+
+ <publish-as-unbound-first-release instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="publish-as-unbound-first-release"/>
+  <value property="statusValue" default="true"/>
+ </publish-as-unbound-first-release>
+  
+  <publish-as-revised-release instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="publish-as-revised-release"/>
+  <value property="statusValue" default="true"/>
+ </publish-as-revised-release>
+
+  <publish-as-unbound-revised-release instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="publish-as-unbound-revised-release"/>
+  <value property="statusValue" default="true"/>
+ </publish-as-unbound-revised-release>  
+  
+ <publish-as-first-wip instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="publish-as-first-wip"/>
+  <value property="statusValue" default="true"/>
+ </publish-as-first-wip>
+ 
+  <publish-as-unbound-first-wip instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="publish-as-unbound-first-wip"/>
+  <value property="statusValue" default="true"/>
+ </publish-as-unbound-first-wip>
+ 
+ <publish-as-revised-wip instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="publish-as-revised-wip"/>
+  <value property="statusValue" default="true"/>
+ </publish-as-revised-wip>
+
+ <publish-as-unbound-revised-wip instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="publish-as-unbound-revised-wip"/>
+  <value property="statusValue" default="true"/>
+ </publish-as-unbound-revised-wip>
+
+ <doc-release instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="doc-release"/>
+  <value property="statusValue" default="true"/>
+ </doc-release>
+ 
+  <doc-wip instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="doc-wip"/>
+  <value property="statusValue" default="true"/>
+ </doc-wip>
+
+ <publish-as-unbinded-first-release instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="publish-as-unbinded-first-release"/>
+  <value property="statusValue" default="true"/>
+ </publish-as-unbinded-first-release>
+
+
+<!-- Publishing Actions for each pattern -->
+
+ <need-to-create-item instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="item-needs-to-be-created"/>
+  <value property="statusValue" default="true"/>
+ </need-to-create-item>
+ 
+ <do-not-need-to-create-item instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="item-needs-to-be-created"/>
+  <value property="statusValue" default="false"/>
+ </do-not-need-to-create-item>
+
+ <need-to-synchronize-item instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="item-needs-to-be-synchronized"/>
+  <value property="statusValue" default="true"/>
+ </need-to-synchronize-item>
+ 
+ <do-not-need-to-synchronize-item instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="item-needs-to-be-synchronized"/>
+  <value property="statusValue" default="false"/>
+ </do-not-need-to-synchronize-item>
+ 
+
+ <need-to-update-metadata instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="metadata-needs-to-be-updated"/>
+  <value property="statusValue" default="true"/>
+ </need-to-update-metadata>
+ 
+ <do-not-need-to-update-metadata instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="metadata-needs-to-be-updated"/>
+  <value property="statusValue" default="false"/>
+ </do-not-need-to-update-metadata>
+ 
+ <need-to-update-struct instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="struct-needs-to-be-updated"/>
+  <value property="statusValue" default="true"/>
+ </need-to-update-struct>
+ 
+  
+ <do-not-need-to-update-struct instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="struct-needs-to-be-updated"/>
+  <value property="statusValue" default="false"/>
+ </do-not-need-to-update-struct>
+ 
+
+ <need-to-update-file instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="file-needs-to-be-updated"/>
+  <value property="statusValue" default="true"/>
+ </need-to-update-file>
+ 
+ <do-not-need-to-update-file instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="file-needs-to-be-updated"/>
+  <value property="statusValue" default="false"/>
+ </do-not-need-to-update-file>
+ 
+
+  <need-to-add-doc instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="doc-needs-to-be-added"/>
+  <value property="statusValue" default="true"/>
+ </need-to-add-doc>
+ 
+ <do-not-need-to-add-doc instance-of="zws.pen.policy.op.pendata.element.status.item.SetItemStatusOP" method="add">
+  <status property="statusName" default="doc-needs-to-be-added"/>
+  <value property="statusValue" default="false"/>
+ </do-not-need-to-add-doc>
+
+ <!-- Data Publishing -->
+ <create-new-items instance-of="zws.pen.policy.op.pendata.element.publish.CreateItems" method="add"/>
+ <detect-redlines instance-of="zws.pen.policy.op.pendata.element.publish.DetectRedLines" method="add"/>
+ <update-metadata instance-of="zws.pen.policy.op.pendata.element.publish.UpdateMetadata" method="add"/>
+ <update-structure instance-of="zws.pen.policy.op.pendata.element.publish.UpdateStructure" method="add"/>
+ <update-documentation instance-of="zws.pen.policy.op.pendata.element.publish.UpdateDocumentation" method="add"/> 
+ <update-binary-files instance-of="zws.pen.policy.op.pendata.element.publish.UpdateBinaryFiles" method="add"/>
+ <synchronize instance-of="zws.pen.policy.op.pendata.element.publish.Synchronize" method="add"/>
+
+ <!--
+  <add-affected-items instance-of="zws.pen.policy.op.pendata.element.publish.AddAffectedItemOP" method="add"/>
+-->
+
+ <!-- Source Update -->
+  <promote-source-data instance-of="zws.pen.policy.op.pendata.source.update.PromoteSourceData" method="add">
+    <state-name/>
+ </promote-source-data>
+ <demote-source-data instance-of="zws.pen.policy.op.pendata.source.update.DemoteSourceData" method="add">
+    <state-name/>
+ </demote-source-data>
+ 
+ <!-- toPlace-->
+ 
+ 
+ <!-- New Objects -->
+ <create-eco instance-of="zws.pen.policy.op.pendata.eco.CreateECOOp" method="add">
+  <logical-name/>
+ </create-eco>
+ <!--create-metadata instance-of="zws.pen.policy.op.pendata.util.CreateMetadataOp" method="add"/-->
+
+ <save-pending-eco instance-of="zws.pen.policy.op.pendata.eco.SavePendingECO" method="add">
+  <logical-name/>
+ </save-pending-eco>
+ 
+ <create-element instance-of="zws.pen.policy.op.pendata.element.util.CreateElementOp" method="add">
+  <logical-name/>
+ </create-element>
+ 
+ <property instance-of="zws.pen.policy.op.pendata.util.string.StringPairMaker" method="add">
+  <attribute property="string0"/>
+  <value property="string1"/>
+ </property>
+
+ <bom-property instance-of="zws.pen.policy.op.pendata.util.string.StringPairMaker" method="add">
+  <attribute property="string0" required="true"/>
+  <value property="string1" required="true"/>
+ </bom-property>
+
+<!-- Debugging -->
+  <breakpoint  instance-of="zws.pen.policy.op.pendata.util.Breakpoint" method="add">
+   <spot/>
+  </breakpoint>
+   
+  <print-out instance-of="zws.pen.policy.op.pendata.util.StandardOut" method="add">
+  <message/>
+ </print-out>
+  <show-pen-data instance-of="zws.pen.policy.op.pendata.util.ShowPENData" method="add">
+  <show-element-names default="true" type="boolean"/>
+  <show-global-status  default="true" type="boolean"/>
+  <show-eco-names  property="showECONames" default="true" type="boolean"/>
+  <show-ecos default="true" property="showECOs" type="boolean"/>
+  <show-source  default="true" type="boolean"/>
+  <show-target default="true" type="boolean"/>
+  <show-xfer  default="true" type="boolean"/>
+  <show-document-subcomponents  default="true" type="boolean"/>
+  <show-xfer-subcomponents  default="true" type="boolean"/>
+  <show-redline-status  default="true" type="boolean"/>    
+  <show-pending-eco property="showPendingECO"  default="true" type="boolean"/>
+  <show-status  default="true" type="boolean"/>
+  <show-subcomponent-status  default="true" type="boolean"/>
+  <show-ecostatus  property="showECOStatus" default="true" type="boolean"/>
+ </show-pen-data>
+
+<!-- custom ops -->
+ <set-harris-find-numbers instance-of="zws.pen.policy.op.pendata.custom.harris.SetFindNumbers" method="add">
+  <base-directory required="true"/>
+  <file-type default="csv"/>
+ </set-harris-find-numbers>
+
+</instructions>
+

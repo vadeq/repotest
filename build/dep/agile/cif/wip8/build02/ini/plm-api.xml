@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plm-api version="1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="plm-api.xsd">
+	<objects>
+		<object name="array" id="xsd:ID" cad-type="ecp:cadTypes|assembly" is-dirty="xsd:boolean|true" selected-to-save="xsd:boolean|true" lock="xsd:boolean|false" keep-locked="xsd:boolean|false" roll-revision="xsd:boolean|true" mode="ecp:execMode|interactive"/>
+		<object name="change" class="change" id="xsd:ID" cad-type="ecp:cadTypes|assembly" is-dirty="xsd:boolean|true" selected-to-save="xsd:boolean|true" lock="xsd:boolean|false" keep-locked="xsd:boolean|false" roll-revision="xsd:boolean|true" mode="ecp:execMode|interactive" subclass="xsd:string" number-source-id="xsd:string" next-autonumber="xsd:string" workflow-name="xsd:string">
+			<attributes>
+				<attribute name="number" class="number" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="NUMBER"/>
+				<attribute name="type" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="description" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="DESCRIPTION"/>
+				<attribute name="status" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="workflow" type="single-selection" value="" required="xds:boolean|false" send-back="xsd:boolean\true"/>
+				<!-- <attribute name="lifecycle-phase" type="single-selection" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="LIFECYCLEPHASE"/>  -->
+				<attribute name="change-category" type="single-selection" value="" required="xds:boolean|false" send-back="xsd:boolean\true"/>
+				<attribute name="change-reason" type="string" value="" required="xds:boolean|false" send-back="xsd:boolean\true"/>
+				<attribute name="reason-code" type="single-selection" value="" required="xds:boolean|false" send-back="xsd:boolean\true"/>
+				<attribute name="change-analyst" type="string" value="" required="xds:boolean|false" send-back="xsd:boolean\true"/>
+				<attribute name="originator" type="string" value="" required="xds:boolean|false" send-back="xsd:boolean\true"/>
+				<attribute name="originated-date" type="datetime" value="" required="xds:boolean|false" send-back="xsd:boolean\true"/>
+				<attribute name="released-date" type="datetime" value="" required="xds:boolean|false" send-back="xsd:boolean\true"/>
+				<attribute name="final-complete-date" type="datetime" value="" required="xds:boolean|false" send-back="xsd:boolean\true"/>
+				<attribute name="product-lines" type="multiple-selection" value="" required="xds:boolean|false" send-back="xsd:boolean\true"/>
+				<attribute name="class-id" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="class-name" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="CLASS"/>
+			</attributes>
+		</object>
+		<object name="part" class="part" id="xsd:ID" cad-type="ecp:cadTypes|assembly" modified-in-cad="xsd:boolean|false" selected-to-save="xsd:boolean|true" check-out="xsd:boolean|false" check-in="xsd:boolean|false" roll-revision="xsd:boolean|true" mode="ecp:execMode|interactive" save-baseline="xsd:boolean|false" new-rev="xsd:string" new-number="xsd:string" new-name="xsd:string" new-phase="xsd:string" eco-number="xsd:string" file="xsd:string" selection="xsd:string" cad-config="xsd:string" parent-object-number="xsd:string" parent-object-revision="xsd:string" cad-variant="xsd:string" subclass="xsd:string" number-source-id="xsd:string" next-autonumber="xsd:string">
+			<attributes>
+				<attribute name="number" class="number" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="NUMBER"/>
+				<attribute name="description" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="DESCRIPTION"/>
+				<attribute name="category" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="ITEMCATEGORY"/>
+				<attribute name="type" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CLASS"/>
+				<attribute name="lifecycle-phase" type="single-selection" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="LIFECYCLEPHASE"/>
+				<attribute name="product-lines" type="multiple-selection" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="PRODUCTLINES"/>
+				<attribute name="revision" class="revision" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="REV"/>
+				<attribute name="rev-incorporate-date" type="datetime" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="REVINCORPDATE"/>
+				<attribute name="rev-release-date" type="datetime" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="REVRELEASEDATE"/>
+				<attribute name="size" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="SIZE"/>
+				<attribute name="is-pending" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="class-id" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="class-name" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="CLASS"/>
+				<attribute name="effectivity-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="shippable-item" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="compliance-calculated-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="overall-compliance" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="seedpart" type="string" value="" required="xds:boolean|false" send-back="xsd:boolean|true" old-name="SEEDPART"/>
+				<attribute name="units" type="string" value="" required="xds:boolean|false" send-back="xsd:boolean|true" old-name="UNITS"/>
+			</attributes>
+		</object>
+		<object name="document" class="document" id="xsd:ID" cad-type="ecp:cadTypes|assembly" modified-in-cad="xsd:boolean|false" selected-to-save="xsd:boolean|true" check-out="xsd:boolean|false" check-in="xsd:boolean|false" download-file="xsd:boolean|true" roll-revision="xsd:boolean|true" mode="ecp:execMode|interactive" save-baseline="xsd:boolean|false" new-rev="xsd:string" new-number="xsd:string" new-name="xsd:string" new-phase="xsd:string" eco-number="xsd:string" file="xsd:string" selection="xsd:string" cad-config="xsd:string" parent-object-number="xsd:string" parent-object-revision="xsd:string" cad-variant="xsd:string" subclass="xsd:string" number-source-id="xsd:string" next-autonumber="xsd:string">
+			<attributes>
+				<attribute name="number" class="number" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="NUMBER"/>
+				<attribute name="type" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="detail-level" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="geometry-type" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="cad-type" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_TYPE"/>
+				<attribute name="cad-family" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_FAM"/>
+				<attribute name="cad-sub-type" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_SUBTYPE"/>
+				<attribute name="creating-system" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_CRE_SYSTEM"/>
+				<attribute name="file-name" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_FIL_NAME"/>
+				<attribute name="old-file-name" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="file-path" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_FIL_PATH"/>
+				<attribute name="old-file-path" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="valid-from-date" type="datetime" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="valid-to-date" type="datetime" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="timestamp" type="datetime" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_TIMESTAMP"/>
+				<attribute name="description" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="DESCRIPTION"/>
+				<attribute name="revision" class="revision" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="REV"/>
+				<attribute name="local-flag" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="project-name" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="cad-name" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_NAM_FMT"/>
+				<attribute name="frame-id" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="drawing-name" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="variant" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="cad-ident" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_IDENT"/>
+				<attribute name="class-id" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="class-name" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="CLASS"/>
+				<attribute name="lifecycle-phase" type="single-selection" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="category" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="size" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="product-lines" type="multiple-selection" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="rev-incorporate-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="rev-release-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="effectivity-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="shippable-item" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="compliance-calculated-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="overall-compliance" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<!-- new Attributes for Page two -->
+				<!-- the attribute cax-name-fmt is removed as the value should be mapped to cad-name -->
+				<!-- <attribute name="cax-name-fmt" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="CAX_NAM_FMT"/> -->
+				<attribute name="cax-01" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="CAX_01"/>
+				<attribute name="cax-02" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="CAX_02"/>
+				<attribute name="cax-03" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="CAX_03"/>
+				<attribute name="cax-04" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="CAX_04"/>
+				<attribute name="seedpart" type="string" value="" required="xds:boolean|false" send-back="xsd:boolean|true" old-name="SEEDPART"/>
+				<attribute name="units" type="string" value="" required="xds:boolean|false" send-back="xsd:boolean|true" old-name="UNITS"/>
+			</attributes>
+		</object>
+		<object name="cad-model" class="document" id="xsd:ID" cad-type="ecp:cadTypes|assembly" modified-in-cad="xsd:boolean|false" selected-to-save="xsd:boolean|true" check-out="xsd:boolean|false" check-in="xsd:boolean|false" download-file="xsd:boolean|true" roll-revision="xsd:boolean|true" mode="ecp:execMode|interactive" save-baseline="xsd:boolean|false" new-rev="xsd:string" new-number="xsd:string" new-name="xsd:string" new-phase="xsd:string" eco-number="xsd:string" file="xsd:string" selection="xsd:string" cad-config="xsd:string" parent-object-number="xsd:string" parent-object-revision="xsd:string" cad-variant="xsd:string" subclass="xsd:string" number-source-id="xsd:string" next-autonumber="xsd:string">
+			<attributes>
+				<attribute name="number" class="number" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="NUMBER"/>
+				<attribute name="type" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="detail-level" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="geometry-type" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="cad-type" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_TYPE"/>
+				<attribute name="cad-family" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_FAM"/>
+				<attribute name="cad-sub-type" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_SUBTYPE"/>
+				<attribute name="creating-system" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_CRE_SYSTEM"/>
+				<attribute name="file-name" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_FIL_NAME"/>
+				<attribute name="old-file-name" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="file-path" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_FIL_PATH"/>
+				<attribute name="old-file-path" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="valid-from-date" type="datetime" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="valid-to-date" type="datetime" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="timestamp" type="datetime" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_TIMESTAMP"/>
+				<attribute name="description" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="DESCRIPTION"/>
+				<attribute name="revision" class="revision" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="REV"/>
+				<attribute name="local-flag" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="project-name" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="cad-name" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_NAM_FMT"/>
+				<attribute name="frame-id" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="drawing-name" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="variant" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="cad-ident" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_IDENT"/>
+				<attribute name="class-id" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="class-name" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="CLASS"/>
+				<attribute name="lifecycle-phase" type="single-selection" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="category" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="size" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="product-lines" type="multiple-selection" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="rev-incorporate-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="rev-release-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="effectivity-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="shippable-item" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="compliance-calculated-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="overall-compliance" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<!-- new Attributes for Page two -->
+				<!-- the attribute cax-name-fmt is removed as the value should be mapped to cad-name -->
+				<!-- <attribute name="cax-name-fmt" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="CAX_NAM_FMT"/> -->
+				<attribute name="cax-01" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="CAX_01"/>
+				<attribute name="cax-02" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="CAX_02"/>
+				<attribute name="cax-03" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="CAX_03"/>
+				<attribute name="cax-04" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="CAX_04"/>
+				<attribute name="seedpart" type="string" value="" required="xds:boolean|false" send-back="xsd:boolean|true" old-name="SEEDPART"/>
+				<attribute name="units" type="string" value="" required="xds:boolean|false" send-back="xsd:boolean|true" old-name="UNITS"/>
+			</attributes>
+		</object>
+		<object name="file" class="file" id="xsd:ID" type="ecp:fileTypes|drawing" is-dirty="xsd:boolean|true">
+			<attributes>
+                <attribute name="file-id" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="file-name" type="string" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="NUMBER"/>
+				<attribute name="file-description" type="string" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="file-path" type="string" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="file-type" type="string" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="file-size" type="string" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="folder-number" class="number" type="string" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="folder-description" type="string" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="folder-version" class="version" type="string" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="timestamp" type="datetime" value="xsd:dateTime" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="check-out-user" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="check-out-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="modified-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="last-view-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="checkout-location" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="attachment-type" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="file-document-text" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="cad-last-view-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<!--As there will be file object filled with attributes rather than setting all the aatributes in relation object, the Attributes should also be configured for File object-->
+			</attributes>
+		</object>
+		<object name="filefolder" class="filefolder" id="xsd:ID" is-dirty="xsd:boolean|true" number-source-id="xsd:string" next-autonumber="xsd:string">
+			<attributes>
+				<attribute name="number" class="number" type="string" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="NUMBER"/>
+				<attribute name="description" type="string" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="version" class="version" type="string" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="check-in-date" type="datetime" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="check-out-date" type="datetime" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="check-out-folder" type="string" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="check-out-status" type="string" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="check-out-user" type="string" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="create-date" type="datetime" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="last-modified-date" type="datetime" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="lifecycle-phase" type="single-selection" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="type" type="string" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="class-name" type="single-selection" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CLASS"/>
+			</attributes>
+		</object>
+		<object name="userdata" class="userdata" id="xsd:ID" type="ecp:fileTypes|drawing" is-dirty="xsd:boolean|true">
+			<attributes>
+				<attribute name="username" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="fs-url" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="password" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="language" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="country" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="timezone" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="proxy-timezone-id" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+			</attributes>
+		</object>
+		<object name="row" class="row" id="xsd:ID" parent-object="xsd:IDREF"/>
+		<object name="serverdata" id="xsd:ID" type="ecp:fileTypes|drawing" is-dirty="xsd:boolean|true">
+			<attributes>
+				<attribute name="server-url" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="server-version" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+			</attributes>
+		</object>
+		<object name="folder" class="folder" id="xsd:ID">
+			<attributes>
+				<attribute name="name" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="id" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="type" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="has-parent" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+			</attributes>
+		</object>
+		<object name="savedquery" class="savedquery" id="xsd:ID">
+			<attributes>
+				<attribute name="name" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="id" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="entity" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="criteria" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="parameters" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="case-sensitive" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+			</attributes>
+		</object>
+		<object name="user" class="user" id="xsd:ID">
+			<attributes>
+				<attribute name="id" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="first-name" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="last-name" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+			</attributes>
+		</object>
+	</objects>
+	<relations>
+		<relation name="document-document-relation" class="document-document-relation" id="xsd:ID" cad-type="ecp:cadTypes|assembly" is-dirty="xsd:boolean|true" selected-to-save="xsd:boolean|true" lock="xsd:boolean|false" keep-locked="xsd:boolean|false" roll-revision="xsd:boolean|true" mode="ecp:execMode|interactive">
+			<attributes>
+				<attribute name="child-number" class="number" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="NUMBER"/>
+				<attribute name="child-description" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="child-revision" class="revision" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="REV"/>
+				<attribute name="cad-ident" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_IDENT"/>
+				<attribute name="cad-component" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_COMPONENT"/>
+				<attribute name="cad-reference" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_REFERENCE"/>
+				<attribute name="cad-config" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_CONFIG"/>
+				<attribute name="quantity" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="QUANTITY"/>
+				<attribute name="find-number" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="reference-designator" type="multiple-selection" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="sites" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="notes" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="cad-file-name" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_FILENAME"/>
+				<attribute name="cad-transform" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_TRANSFORM"/>
+				<attribute name="cad-sub-type" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_SUBTYPE"/>
+				<attribute name="relation-type" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="manufacturer" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="pending-changes" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="redlining" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="attachments" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="psr" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+			</attributes>
+		</relation>
+		<relation name="part-part-relation" class="part-part-relation" id="xsd:ID" cad-type="ecp:cadTypes|assembly" is-dirty="xsd:boolean|true" selected-to-save="xsd:boolean|true" lock="xsd:boolean|false" keep-locked="xsd:boolean|false" roll-revision="xsd:boolean|true" mode="ecp:execMode|interactive">
+			<attributes>
+				<attribute name="child-number" class="number" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="NUMBER"/>
+				<attribute name="child-description" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="child-revision" class="revision" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="REV"/>
+				<attribute name="cad-ident" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_IDENT"/>
+				<attribute name="cad-component" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_COMPONENT"/>
+				<attribute name="cad-reference" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_REFERENCE"/>
+				<attribute name="cad-config" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_CONFIG"/>
+				<attribute name="quantity" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="QUANTITY"/>
+				<attribute name="find-number" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="reference-designator" type="multiple-selection" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="sites" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="notes" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="cad-file-name" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_FILENAME"/>
+				<attribute name="cad-transform" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_TRANSFORM"/>
+				<attribute name="cad-sub-type" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_SUBTYPE"/>
+				<attribute name="relation-type" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="manufacturer" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="pending-changes" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="redlining" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="attachments" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="psr" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+			</attributes>
+		</relation>
+		<relation name="part-document-relation" class="part-document-relation" id="xsd:ID" cad-type="ecp:cadTypes|assembly" is-dirty="xsd:boolean|true" selected-to-save="xsd:boolean|true" lock="xsd:boolean|false" keep-locked="xsd:boolean|false" roll-revision="xsd:boolean|true" mode="ecp:execMode|interactive">
+			<attributes>
+				<attribute name="child-number" class="number" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="NUMBER"/>
+				<attribute name="child-description" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="child-revision" class="revision" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="REV"/>
+				<attribute name="cad-ident" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_IDENT"/>
+				<attribute name="cad-component" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_COMPONENT"/>
+				<attribute name="cad-reference" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_REFERENCE"/>
+				<attribute name="cad-config" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_CONFIG"/>
+				<attribute name="quantity" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="QUANTITY"/>
+				<attribute name="find-number" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="reference-designator" type="multiple-selection" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="sites" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="notes" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="cad-file-name" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_FILENAME"/>
+				<attribute name="cad-transform" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_TRANSFORM"/>
+				<attribute name="cad-sub-type" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="CAX_SUBTYPE"/>
+				<attribute name="relation-type" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="manufacturer" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="pending-changes" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="redlining" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="attachments" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="psr" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+			</attributes>
+		</relation>
+		<relation name="document-file-relation" class="document-file-relation" id="xsd:ID" cad-type="ecp:cadTypes|assembly" is-dirty="xsd:boolean|true" selected-to-save="xsd:boolean|true" lock="xsd:boolean|false" keep-locked="xsd:boolean|false" roll-revision="xsd:boolean|true" mode="ecp:execMode|interactive" download-file="xsd:boolean|true" file-folder-subclass="xsd:string">
+			<attributes>
+				<attribute name="file-size" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="file-name" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="file-path" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="file-type" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="file-id" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="file-description" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="folder-number" class="number" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="folder-description" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="folder-version" class="version" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="check-out-user" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="check-out-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="modified-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="last-view-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="checkout-location" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="attachment-type" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="file-document-text" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="cad-last-view-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+			</attributes>
+		</relation>
+		<relation name="file-container-relation" class="file-container-relation" id="xsd:ID">
+			<attributes>
+				<attribute name="folder-number" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+			</attributes>
+		</relation>
+		<relation name="container-file-relation" class="container-file-relation" id="xsd:ID">
+			<attributes>
+				<attribute name="file-name" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true" old-name="NUMBER"/>
+				<attribute name="file-description" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="file-path" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="file-type" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="file-size" value="xsd:string" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="last-view-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="checkout-location" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="file-document-text" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="cad-last-view-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+			</attributes>
+		</relation>
+		<relation name="change-item-relation" class="change-item-relation" id="xsd:ID" cad-type="ecp:cadTypes|assembly" is-dirty="xsd:boolean|true" selected-to-save="xsd:boolean|true" lock="xsd:boolean|false" keep-locked="xsd:boolean|false" roll-revision="xsd:boolean|true" mode="ecp:execMode|interactive">
+			<attributes>
+				<attribute name="item-number" class="number" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="function" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="lifecycle-phase" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="redlining" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="attachments" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="manufacturer" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="pending-changes" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="psr" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="item-description" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="sites" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="old-rev" class="old-rev" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="new-rev" class="new-rev" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="old-lifecycle-phase" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="effective-date" type="datetime" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="on-order" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="obsolete-date" type="datetime" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="work-in-progress" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="finished-goods" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="stock" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="field" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="mass" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+			</attributes>
+		</relation>
+		<relation name="change-file-relation" class="change-file-relation" id="xsd:ID" cad-type="ecp:cadTypes|assembly" is-dirty="xsd:boolean|true" selected-to-save="xsd:boolean|true" lock="xsd:boolean|false" keep-locked="xsd:boolean|false" roll-revision="xsd:boolean|true" mode="ecp:execMode|interactive">
+			<attributes>
+				<attribute name="file-name" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="file-description" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="file-size" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="file-type" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="folder-number" class="number" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="folder-version" class="version" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="check-out-user" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="check-out-date" type="datetime" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="modified-date" type="datetime" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="last-modified-date" type="datetime" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="last-view-date" type="datetime" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="check-out-folder" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="type" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="file-document-text" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+			</attributes>
+		</relation>
+		<relation name="change-history-relation" class="change-history-relation" id="xsd:ID" cad-type="ecp:cadTypes|assembly" is-dirty="xsd:boolean|true" selected-to-save="xsd:boolean|true" lock="xsd:boolean|false" keep-locked="xsd:boolean|false" roll-revision="xsd:boolean|true" mode="ecp:execMode|interactive">
+			<attributes>
+				<attribute name="status" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="next-status" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="action" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="user" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="groups" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="local-client-time" type="datetime" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="affected-objects" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="details" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="comments" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="notified-users" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="find-number" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+			</attributes>
+		</relation>
+		<relation name="change-workflow-relation" class="change-workflow-relation" id="xsd:ID" cad-type="ecp:cadTypes|assembly" is-dirty="xsd:boolean|true" selected-to-save="xsd:boolean|true" lock="xsd:boolean|false" keep-locked="xsd:boolean|false" roll-revision="xsd:boolean|true" mode="ecp:execMode|interactive">
+			<attributes>
+				<attribute name="status-code" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="action-img" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="workflow" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="workflow-status" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="required" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="reviewer" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="signoff-user" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="status-changed-by" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="local-client-time" type="datetime" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="signoff-comments" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+			</attributes>
+		</relation>
+		<relation name="change-reference-relation" class="change-reference-relation" id="xsd:ID" cad-type="ecp:cadTypes|assembly" is-dirty="xsd:boolean|true" selected-to-save="xsd:boolean|true" lock="xsd:boolean|false" keep-locked="xsd:boolean|false" roll-revision="xsd:boolean|true" mode="ecp:execMode|interactive">
+			<attributes>
+				<attribute name="type-image" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="number" class="number" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="description" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+			</attributes>
+		</relation>
+		<relation name="change-relationships-relation" class="change-relationships-relation" id="xsd:ID" cad-type="ecp:cadTypes|assembly" is-dirty="xsd:boolean|true" selected-to-save="xsd:boolean|true" lock="xsd:boolean|false" keep-locked="xsd:boolean|false" roll-revision="xsd:boolean|true" mode="ecp:execMode|interactive">
+			<attributes>
+				<attribute name="type-image" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="number" class="number" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="description" type="string" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+			</attributes>
+		</relation>
+		<relation name="item-where-used-relation" class="item-where-used-relation" child-id="xsd:IDREF" lock="xsd:boolean|true">
+			<attributes>
+				<attribute name="parent-number" class="parent-number" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="NUMBER"/>
+				<attribute name="revision" class="revision" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="REV"/>
+				<attribute name="type" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="description" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="DESCRIPTION"/>
+				<attribute name="sites" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="quantity" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="QUANTITY"/>
+				<attribute name="find-number" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="notes" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="cad-file-name" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="CAX_FILENAME"/>
+				<attribute name="cad-transform" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="CAX_TRANSFORM"/>
+				<attribute name="cad-ident" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="CAX_IDENT"/>
+				<attribute name="cad-component" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="CAX_COMPONENT"/>
+				<attribute name="cad-reference" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="CAX_REFERENCE"/>
+				<attribute name="cad-config" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true" old-name="CAX_CONFIG"/>
+			</attributes>
+		</relation>
+		<relation name="item-change-relation" class="item-change-relation" child-id="xsd:IDREF" lock="xsd:boolean|true">
+			<attributes>
+				<attribute name="change-number" class="change-number" type="string" value="" required="xsd:boolean|true" send-back="xsd:boolean|true"/>
+				<attribute name="change-type" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="sites" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="new-rev" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="change-status" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="change-description" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+			</attributes>
+		</relation>
+		<relation name="item-history-relation" class="item-history-relation" child-id="xsd:IDREF" lock="xsd:boolean|true">
+			<attributes>
+				<attribute name="action" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="user" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="local-time" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="user-action-time" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="details" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="comments" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="rev" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="site" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+			</attributes>
+		</relation>
+		<relation name="item-change-history-relation" class="item-change-history-relation" child-id="xsd:IDREF" lock="xsd:boolean|true">
+			<attributes>
+				<attribute name="change-number" class="change-number" type="string" value="" required="xsd:boolean|true" send-back="xsd:boolean|true"/>
+				<attribute name="change-type" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="sites" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="new-rev" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="change-status" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="change-description" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="lifecycle-phase" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="rev-incorporate-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="rev-release-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="effectivity-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="obsolete-date" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+			</attributes>
+		</relation>
+		<relation name="container-where-used-relation" class="container-where-used-relation" child-id="xds:IDREF" lock="xsd:boolean|true">
+			<attributes>
+				<attribute name="type" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="parent-number" class="parent-number" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="revision" class="revision" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="description" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="lifecycle-phase" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+			</attributes>
+		</relation>
+		<relation name="container-references-relation" class="container-references-relation" child-id="xds:IDREF" lock="xsd:boolean|true">
+			<attributes>
+				<attribute name="type" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="number" class="number" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="description" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="path" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="cax-ident" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="cax-component" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="cax-reference" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+			</attributes>
+		</relation>
+		<relation name="container-relationships-relation" class="container-relationships-relation" child-id="xds:IDREF" lock="xsd:boolean|true">
+			<attributes>
+				<attribute name="type" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="number" class="number" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="description" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="path" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="cax-ident" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="cax-component" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="cax-reference" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+			</attributes>
+		</relation>
+		<relation name="container-routing-relation" class="container-routing-relation" child-id="xds:IDREF" lock="xsd:boolean|true">
+			<attributes>
+				<attribute name="action" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="required" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="reviewer" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="local-client-time" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="user-action-time" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="signoff-comments" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+			</attributes>
+		</relation>
+		<relation name="container-history-relation" class="container-history-relation" child-id="xds:IDREF" lock="xsd:boolean|true">
+			<attributes>
+				<attribute name="action" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="user" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="groups" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="local-client-time" type="datetime" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="details" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="comments" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+				<attribute name="users-notified" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+			</attributes>
+		</relation>
+		<relation name="position" class="position" child-id="xsd:IDREF" lock="xsd:boolean|true">
+			<attributes>
+				<attribute name="quantity" type="integer" value="" required="ecp:booleanTrue|true" send-back="xsd:boolean|true"/>
+				<attribute name="reference" type="string" value="" required="xsd:boolean|false" send-back="xsd:boolean|true"/>
+			</attributes>
+		</relation>
+		<relation name="attachment" class="attachment" child-id="xsd:IDREF"/>
+		<relation name="content" class="content" child-id="xsd:IDREF"/>
+	</relations>
+</plm-api>

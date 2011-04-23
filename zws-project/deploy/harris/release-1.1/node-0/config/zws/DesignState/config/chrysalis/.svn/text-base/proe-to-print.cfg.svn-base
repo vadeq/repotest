@@ -1,0 +1,5 @@
+;
+; Printer Control File
+;
+; If a pcf file is specified, its values will be used rather than those following
+print.pcf.file = C:/zws/env/ptc/ilink-1/config/ps_print.pcf

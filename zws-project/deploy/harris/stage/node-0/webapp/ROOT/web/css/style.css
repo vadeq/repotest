@@ -1,0 +1,527 @@
+BODY
+{
+    FONT-SIZE: 10pt;
+    COLOR: #003366;
+    FONT-FAMILY: "Trebuchet MS";
+    BACKGROUND-COLOR: white;
+}
+TD
+{
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: "Trebuchet MS"
+}
+A
+{
+    FONT-SIZE: 10pt
+}
+A:visited
+{
+    TEXT-DECORATION: none;
+}
+A:hover
+{
+    COLOR: #8495A6;
+    TEXT-DECORATION: underline
+}
+A.listHeader
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: #2b552b;
+    BACKGROUND-COLOR: #666666;
+}
+.username
+{
+    COLOR: #CC5500;
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: bold;
+    FONT-FAMILY: "Trebuchet MS";
+    TEXT-ALIGN: right;
+}
+.menuItem
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    COLOR: #888888;
+    FONT-FAMILY: "Trebuchet MS";
+    TEXT-DECORATION: none;
+}
+.logoutButton
+{
+    FONT-WEIGHT: bold;
+    COLOR: #711820;
+    TEXT-DECORATION: none;
+}
+.button
+{
+    FONT-WEIGHT: bold;
+    COLOR: #333399;
+    TEXT-DECORATION: none;
+}
+.okButton
+{
+    FONT-WEIGHT: bold;
+    COLOR: #000000;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+}
+.saveButton
+{
+    FONT-WEIGHT: bold;
+    COLOR: #711820;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+}
+.actionButton
+{
+    FONT-WEIGHT: bold;
+    COLOR: #711820;
+    TEXT-ALIGN: right;
+    TEXT-DECORATION: none;
+}
+.editButton
+{
+    FONT-WEIGHT: bold;
+    COLOR: #711820;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+}
+.cancelButton
+{
+    FONT-WEIGHT: bold;
+    COLOR: #711820;
+    TEXT-ALIGN: right;
+    TEXT-DECORATION: none;
+}
+.deleteButton
+{
+    FONT-WEIGHT: bold;
+    COLOR: #711820;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+}
+.setting
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: #ccffcc;
+    TEXT-DECORATION: none;
+}
+.setting-on
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: #ccffcc;
+    TEXT-DECORATION: none;
+}
+.setting-off
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: #cccccc;
+    TEXT-DECORATION: none;
+}
+.editValue
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: #711820;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+}
+.selectItem
+{
+    FONT-WEIGHT: bold;
+    COLOR: #711820;
+    TEXT-ALIGN: left;
+    TEXT-DECORATION: none;
+}
+.deleteItem
+{
+    FONT-WEIGHT: bold;
+    COLOR: #990000;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none;
+}
+.form
+{
+    BACKGROUND-COLOR:white; //#E3E3E3
+}
+.formTitle
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: #FFFFFF;
+    FONT-FAMILY: "Trebuchet MS";
+    BACKGROUND-COLOR: #334597;
+    TEXT-ALIGN: center
+}
+.legendTitle
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 13pt;
+    COLOR: #4E4E50;
+    FONT-FAMILY: "Trebuchet MS";
+    TEXT-ALIGN: center
+}
+.searchCheck
+{
+	    BACKGROUND-COLOR: #FFFFFF;
+}
+.formMenu
+{
+    BACKGROUND-COLOR: white;
+}
+.itemMenu
+{
+    TEXT-ALIGN: center
+}
+.input
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: #000000;
+    LIST-STYLE-TYPE: none;
+    BACKGROUND-COLOR: white;
+}
+.itemForm
+{
+}
+.formProps
+{
+    BACKGROUND-COLOR: white;
+
+}
+
+.formPropsData
+{
+	BACKGROUND-COLOR: white;
+
+}
+.resultList
+{
+		BACKGROUND-COLOR: white;
+		WIDTH:710px;
+	  HEIGHT:200px;
+    ALIGN: center;
+    overflow:auto;
+
+}
+
+.queList
+{
+	BACKGROUND-COLOR: white;
+	WIDTH:700px;
+    ALIGN: center;
+}
+
+.queListScroll
+{
+		BACKGROUND-COLOR: white;
+		WIDTH:700px;
+	  HEIGHT:350px;
+    ALIGN: center;
+    overflow:auto;
+
+}
+
+.prop
+{
+    FONT-WEIGHT: bold;
+    COLOR: #000000;
+    BACKGROUND-COLOR: white;
+}
+.value
+{
+    FONT-WEIGHT: bold;
+    COLOR: black;
+    BACKGROUND-COLOR: white;
+    TEXT-ALIGN: left
+}
+.propError
+{
+    FONT-WEIGHT: bold;
+    COLOR: #711820;
+    BACKGROUND-COLOR: white;
+}
+.listForm
+{
+}
+.listHeader
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: #000000;
+    BACKGROUND-COLOR: #ffffff;
+}
+.listIconHeader
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: #000000;
+    BACKGROUND-COLOR: #ffffff;
+    TEXT-ALIGN: center;
+}
+.listItems
+{
+    BACKGROUND-COLOR: #cccccc
+}
+.item
+{
+    FONT-SIZE: 9pt;
+    COLOR: black;
+    FONT-FAMILY: "Trebuchet MS";
+    BACKGROUND-COLOR: white;
+}
+.highlitedItem
+{
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: bold;
+    COLOR: #CC5500;
+    FONT-FAMILY: "Trebuchet MS";
+    BACKGROUND-COLOR: white
+}
+.selectedItem
+{
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: BOLD;
+    COLOR: #CC5500;
+    BACKGROUND-COLOR: WHITE;
+    FONT-FAMILY: "Trebuchet MS";
+}
+.itemIcon
+{
+    FONT-SIZE: 9pt;
+    COLOR: black;
+    FONT-FAMILY: "Trebuchet MS";
+    BACKGROUND-COLOR: white;
+    TEXT-ALIGN: center;
+}
+.item0
+{
+    FONT-SIZE: 9pt;
+    COLOR: black;
+    FONT-FAMILY: "Trebuchet MS";
+    BACKGROUND-COLOR: white;
+}
+.highlitedItem0
+{
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: bold;
+    COLOR: #CC5500;
+    FONT-FAMILY: "Trebuchet MS";
+    BACKGROUND-COLOR: white
+}
+.item1
+{
+    FONT-SIZE: 9pt;
+    COLOR: black;
+    FONT-FAMILY: "Trebuchet MS";
+    BACKGROUND-COLOR: #eeeeee
+}
+.highlitedItem1
+{
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: bold;
+    COLOR: #CC5500;
+    FONT-FAMILY: "Trebuchet MS";
+    BACKGROUND-COLOR: white
+}
+.conflict
+{
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: bold;
+    COLOR: #990000;
+    FONT-FAMILY: "Trebuchet MS";
+    BACKGROUND-COLOR: white;
+}
+.formErrorLog
+{
+    FONT-WEIGHT: bold;
+    COLOR: #ffffff;
+    TEXT-ALIGN: center;
+    BACKGROUND-COLOR: #990000;
+}
+.formWarningLog
+{
+    FONT-WEIGHT: bold;
+    COLOR: #FFFFFF;
+    TEXT-ALIGN: center;
+    BACKGROUND-COLOR: #CC5500;
+}
+.formStatusLog
+{
+    FONT-WEIGHT: bold;
+    COLOR: #ffffff;
+    TEXT-ALIGN: center;
+    BACKGROUND-COLOR: 009900;
+}
+.footer
+{
+    FONT-WEIGHT: bold;
+    COLOR: #999999;
+    TEXT-ALIGN: center
+}
+INPUT
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: #333333;
+    BACKGROUND-COLOR: white;
+}
+.button2
+{
+    FONT-WEIGHT: bold;
+    BORDER-LEFT-COLOR: black;
+    BORDER-BOTTOM-COLOR: black;
+    CURSOR: hand;
+    COLOR: #993300;
+    BORDER-TOP-COLOR: #003366;
+    LIST-STYLE-TYPE: none;
+    BACKGROUND-COLOR: #cccccc;
+    TEXT-DECORATION: none;
+    BORDER-RIGHT-COLOR: black
+}
+.button3
+{
+    BACKGROUND-POSITION: left 50%;
+    FONT-WEIGHT: bold;
+    BORDER-LEFT-COLOR: #999999;
+    BORDER-BOTTOM-COLOR: #999999;
+    CURSOR: hand;
+    COLOR: #000000;
+    BORDER-TOP-COLOR: #cccccc;
+    LIST-STYLE-TYPE: none;
+    BACKGROUND-COLOR: #cccccc;
+    TEXT-DECORATION: none;
+    BORDER-RIGHT-COLOR: #cccccc
+}
+.logo
+{
+    COLOR: #334597;
+    FONT-SIZE: 16pt;
+    FONT-WEIGHT: bold;
+    FONT-FAMILY: "Trebuchet MS";
+    BACKGROUND-COLOR: white;
+    TEXT-ALIGN: left
+}
+.pageTitle
+{
+    COLOR: #334597;
+    FONT-SIZE: 16pt;
+    FONT-WEIGHT: bold;
+    FONT-FAMILY: "Trebuchet MS";
+    BACKGROUND-COLOR: white;
+    TEXT-ALIGN: center;
+}
+.headerUser
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: #ffffff;
+    TEXT-DECORATION: none;
+}
+.menu-gradient
+{
+    BACKGROUND-IMAGE: url(/orange-gradient.gif)
+}
+
+
+
+
+.rowdata1 {
+  background: #eeeeee;
+  color: #000000;
+  font: 8pt arial;
+  padding: 0px 0px 0px 4px;
+  height: 20px;
+  text-align: left;
+}
+
+.rowdata2 {
+  background: #ffffff;
+  color: #000000;
+  font: 8pt arial;
+  padding: 0px 0px 0px 4px;
+  height: 20px;
+  text-align: left;
+}
+
+.column_heading {
+  background: #000000;
+  color: #ffffff;
+  font: bold 8pt arial;
+  padding: 2px 0px 0px 4px;
+  height: 20px;
+  text-align: left;
+  vertical-align: 50%;
+}
+
+
+.field_label {
+	 color: #333333;
+	 background: #dddddd;
+	 font: bold 8pt/19px arial;
+	 border-bottom: #ffffff 1px solid;
+	 padding: 0px 0px 0px 3px;
+	 text-align: left;
+	 vertical-align: center;
+	 height: 20px;
+}
+
+
+.field_label_val {
+	vertical-align: top;
+	color: #333333;
+	background: #EDEDED;
+	font: 8pt/19px arial;
+	border-bottom: #ffffff 1px solid;
+	padding: 0px 3px 0px 3px;
+	text-align: left;
+	vertical-align: top;
+	height: 20px;
+}
+
+fieldset.search{
+width:790px;
+ALIGN:center;
+}
+fieldset.publish{
+width:725px;
+ALIGN:center;
+}
+.cspbItmVisited
+{
+ font-family:Trebuchet MS;
+ font-size:14px;
+ font-weight:bold;
+ background:#E9E9E4;
+}
+#results
+{
+	ALIGN:center;
+}
+
+/*The "universal rule". Set's border, padding and margin to 0 for all values. NB! If you aren't used to using this kind of code in your CSS you may experience some changes in your overall design. If so, set padding, margin and border in your breadCrumb CSS instead*/
+#breadCrumb {
+ height: 18px; /* This is the height we wan't on our breadcrumb */
+ padding: 4px 0 0 8px;
+ /* background: #999;  This is our background color */
+ color: #711820; /*This is our color on the text which isn't a link. We want' they to be light grey */
+}
+#breadCrumb li {
+ float: left;
+ display: inline;
+ margin-right: 4px;
+}
+#breadCrumb a {
+ color: #711820; /* Our breadcrumb links are going to be white */
+ font-weight: bold; /* And bold */
+ background: url(/web/image/breadcrumb.gif) top right no-repeat;
+ padding-right: 20px; /* We need to add some padding to the right of the link. This space is where the background image is going to be shown. */
+ text-decoration: none;
+}
+#breadCrumb a:hover {
+ color: #333;
+ background:url(/web/image/breadcrumb.gif) bottom right no-repeat;
+}

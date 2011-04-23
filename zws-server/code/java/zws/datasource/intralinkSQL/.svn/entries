@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/server/code/java/zws/datasource/intralinkSQL
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+ProiOracleSource.java
+file
+
+
+
+
+2008-07-11T20:50:49.281625Z
+f9e0365bcde3683620ee740ded981816
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+
+SearchAgent.java
+file
+
+
+
+
+2008-07-11T20:50:49.344125Z
+b8b5e042d1192dac875eb3d7c61e5cb8
+2008-02-29T17:08:06.819885Z
+5705
+pavan.toleti
+

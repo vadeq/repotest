@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/xml/processor
+END
+SetProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/processor/SetProperty.java
+END
+InvalidInstructionSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/processor/InvalidInstructionSet.java
+END
+InvalidTagInstruction.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/processor/InvalidTagInstruction.java
+END
+AttributeInstruction.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/processor/AttributeInstruction.java
+END
+Add.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/processor/Add.java
+END
+DuplicateInstructionSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/processor/DuplicateInstructionSet.java
+END
+DuplicateTagInstruction.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/processor/DuplicateTagInstruction.java
+END
+InstructionSetNotFound.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/processor/InstructionSetNotFound.java
+END
+NoOp.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/processor/NoOp.java
+END
+CallMethod.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/processor/CallMethod.java
+END
+InvalidAttributeInstruction.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/processor/InvalidAttributeInstruction.java
+END
+InstructionSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/zws/!svn/ver/5675/trunk/zws/designstate/webapp/code/java/com/zws/xml/processor/InstructionSet.java
+END
+TagInstruction.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/processor/TagInstruction.java
+END
+InstructionSetService.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/zws/!svn/ver/5/trunk/zws/designstate/webapp/code/java/com/zws/xml/processor/InstructionSetService.java
+END

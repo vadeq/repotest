@@ -1,0 +1,19 @@
+build order:
+zws-client
+
+#qx framework
+qx
+qx-soap-client
+qx-soap-service
+
+#plugins
+plugin-interface
+ilink3-plugin
+agile-cif-plugin
+
+#services
+zws-server
+ilink3-qx-service
+
+
+remove   <property name="svn-repository" from title.build files

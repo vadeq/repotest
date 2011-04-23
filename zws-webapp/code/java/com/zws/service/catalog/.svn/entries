@@ -1,0 +1,40 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/code/java/com/zws/service/catalog
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:19:54.379681Z
+5307
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+CatalogService.java
+file
+
+
+
+
+2008-07-11T22:04:46.516000Z
+4036d253fdac49040f27e2ba8c06d8c3
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+

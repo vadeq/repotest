@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ejb-jar PUBLIC "-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 2.0//EN" "http://java.sun.com/dtd/ejb-jar_2_0.dtd">
+
+<ejb-jar>
+ <description>DesignState Datasource Server</description>
+ <display-name>DesignState Datasource Server</display-name>
+ <enterprise-beans>
+
+  <session>
+   <ejb-name>DesignState-node-4-recorder-service</ejb-name>
+   <home>zws.service.recorder.RecorderServiceRemoteHome</home>
+   <remote>zws.service.recorder.RecorderServiceRemote</remote>
+   <ejb-class>zws.service.recorder.RecorderServiceEJB</ejb-class>
+   <session-type>Stateless</session-type>
+   <transaction-type>Bean</transaction-type>
+  </session>
+
+  <session>
+   <ejb-name>DesignState-node-4-prototype-service</ejb-name>
+   <home>zws.service.PrototypeServiceRemoteHome</home>
+   <remote>zws.service.PrototypeServiceRemote</remote>
+   <ejb-class>zws.service.PrototypeServiceEJB</ejb-class>
+   <session-type>Stateless</session-type>
+   <transaction-type>Bean</transaction-type>
+  </session>
+
+  <session>
+   <ejb-name>DesignState-node-4-topology-service</ejb-name>
+   <home>zws.service.topology.TopologyServiceRemoteHome</home>
+   <remote>zws.service.topology.TopologyServiceRemote</remote>
+   <ejb-class>zws.service.topology.TopologyServiceEJB</ejb-class>
+   <session-type>Stateless</session-type>
+   <transaction-type>Bean</transaction-type>
+  </session>
+
+  <session>
+   <ejb-name>DesignState-node-4-email-service</ejb-name>
+   <home>zws.service.email.EmailServiceHome</home>
+   <remote>zws.service.email.EmailServiceRemote</remote>
+   <ejb-class>zws.service.email.EmailServiceEJB</ejb-class>
+   <session-type>Stateless</session-type>
+   <transaction-type>Bean</transaction-type>
+  </session>
+
+  <session>
+   <ejb-name>DesignState-node-4-event-handling-service</ejb-name>
+   <home>zws.service.event.EventHandlingServiceHome</home>
+   <remote>zws.service.event.EventHandlingServiceRemote</remote>
+   <ejb-class>zws.service.event.EventHandlingServiceEJB</ejb-class>
+   <session-type>Stateless</session-type>
+   <transaction-type>Bean</transaction-type>
+  </session>
+
+  <session>
+   <ejb-name>DesignState-node-4-report-service</ejb-name>
+   <home>zws.service.report.ReportServiceRemoteHome</home>
+   <remote>zws.service.report.ReportServiceRemote</remote>
+   <ejb-class>zws.service.report.ReportServiceEJB</ejb-class>
+   <session-type>Stateless</session-type>
+   <transaction-type>Bean</transaction-type>
+  </session>
+
+  <session>
+   <ejb-name>DesignState-node-4-processor-service</ejb-name>
+   <home>zws.service.processor.ProcessorServiceHome</home>
+   <remote>zws.service.processor.ProcessorServiceRemote</remote>
+   <ejb-class>zws.service.processor.ProcessorServiceEJB</ejb-class>
+   <session-type>Stateless</session-type>
+   <transaction-type>Bean</transaction-type>
+  </session>
+
+  <session>
+   <ejb-name>DesignState-node-4-search-agent-service</ejb-name>
+   <home>zws.service.search.SearchAgentServiceRemoteHome</home>
+   <remote>zws.service.search.SearchAgentServiceRemote</remote>
+   <ejb-class>zws.service.search.SearchAgentServiceEJB</ejb-class>
+   <session-type>Stateless</session-type>
+   <transaction-type>Bean</transaction-type>
+  </session>
+
+  <session>
+   <ejb-name>DesignState-node-4-document-service</ejb-name>
+   <home>zws.service.document.DocumentServiceRemoteHome</home>
+   <remote>zws.service.document.DocumentServiceRemote</remote>
+   <ejb-class>zws.service.document.DocumentServiceEJB</ejb-class>
+   <session-type>Stateless</session-type>
+   <transaction-type>Bean</transaction-type>
+  </session>
+
+  <session>
+   <ejb-name>DesignState-node-4-printer-service</ejb-name>
+   <home>zws.service.printer.PrinterServiceRemoteHome</home>
+   <remote>zws.service.printer.PrinterServiceRemote</remote>
+   <ejb-class>zws.service.printer.PrinterServiceEJB</ejb-class>
+   <session-type>Stateless</session-type>
+   <transaction-type>Bean</transaction-type>
+  </session>
+
+  <session>
+   <ejb-name>DesignState-node-4-agile-access-service</ejb-name>
+   <home>zws.service.datasource.agile.AgileAccessServiceRemoteHome</home>
+   <remote>zws.service.datasource.agile.AgileAccessServiceRemote</remote>
+   <ejb-class>zws.service.datasource.agile.AgileAccessServiceEJB</ejb-class>
+   <session-type>Stateless</session-type>
+   <transaction-type>Bean</transaction-type>
+  </session>
+
+  <session>
+   <ejb-name>DesignState-node-4-intralink-access-service</ejb-name>
+   <home>zws.service.datasource.intralink.IntralinkAccessServiceRemoteHome</home>
+   <remote>zws.service.datasource.intralink.IntralinkAccessServiceRemote</remote>
+   <ejb-class>zws.service.datasource.intralink.IntralinkAccessServiceEJB</ejb-class>
+   <session-type>Stateless</session-type>
+   <transaction-type>Bean</transaction-type>
+  </session>
+
+  <session>
+   <ejb-name>DesignState-node-4-data-space-service</ejb-name>
+   <home>zws.service.space.DataSpaceServiceRemoteHome</home>
+   <remote>zws.service.space.DataSpaceServiceRemote</remote>
+   <ejb-class>zws.service.space.DataSpaceServiceEJB</ejb-class>
+   <session-type>Stateless</session-type>
+   <transaction-type>Bean</transaction-type>
+  </session>
+
+  <session>
+   <ejb-name>DesignState-node-4-packaging-service</ejb-name>
+   <home>zws.service.packaging.PackagingServiceRemoteHome</home>
+   <remote>zws.service.packaging.PackagingServiceRemote</remote>
+   <ejb-class>zws.service.packaging.PackagingServiceEJB</ejb-class>
+   <session-type>Stateless</session-type>
+   <transaction-type>Bean</transaction-type>
+  </session>
+
+  <session>
+   <ejb-name>DesignState-node-4-synchronization-service</ejb-name>
+   <home>zws.service.synchronization.SynchronizationServiceRemoteHome</home>
+   <remote>zws.service.synchronization.SynchronizationServiceRemote</remote>
+   <ejb-class>zws.service.synchronization.SynchronizationServiceEJB</ejb-class>
+   <session-type>Stateless</session-type>
+   <transaction-type>Bean</transaction-type>
+  </session>
+
+  <session>
+   <ejb-name>DesignState-node-4-replication-service</ejb-name>
+   <home>zws.service.replication.ReplicationServiceRemoteHome</home>
+   <remote>zws.service.replication.ReplicationServiceRemote</remote>
+   <ejb-class>zws.service.replication.ReplicationServiceEJB</ejb-class>
+   <session-type>Stateless</session-type>
+   <transaction-type>Bean</transaction-type>
+  </session>
+
+  <session>
+   <ejb-name>DesignState-node-4-replication-policy-service</ejb-name>
+   <home>zws.service.replication.policy.ReplicationPolicyServiceRemoteHome</home>
+   <remote>zws.service.replication.policy.ReplicationPolicyServiceRemote</remote>
+   <ejb-class>zws.service.replication.policy.ReplicationPolicyServiceEJB</ejb-class>
+   <session-type>Stateless</session-type>
+   <transaction-type>Bean</transaction-type>
+  </session>
+
+ </enterprise-beans>
+</ejb-jar>

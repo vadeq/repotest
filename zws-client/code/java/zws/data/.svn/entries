@@ -1,0 +1,172 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/client/code/java/zws/data
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-06-11T20:51:14.298974Z
+6328
+rmccabe
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+MetadataFamilyInstanceBase.java
+file
+
+
+
+
+2008-07-11T20:47:45.187875Z
+afb60dc275f431866e8b4968bc04f19c
+2007-09-26T19:49:06.484679Z
+3447
+pavan.toleti
+
+filter
+dir
+
+MetadataFamilyInstance.java
+file
+
+
+
+
+2008-07-11T20:47:45.250375Z
+5d75f73ead5067cd7c5afbcc1dfcf26f
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+IlinkMetadata.java
+file
+
+
+
+
+2008-07-11T20:47:45.312875Z
+d64fa1f738272b0ad729e8974d3e9461
+2007-05-27T22:38:09.358963Z
+5
+arbind.thakur
+
+MetadataSubComponentBase.java
+file
+
+
+
+
+2008-07-11T20:47:45.359750Z
+57940b8ecda5342c220d5167ed0df3e8
+2008-06-11T20:51:14.298974Z
+6328
+rmccabe
+
+intralink
+dir
+
+MetadataBase.java
+file
+
+
+
+
+2008-07-11T20:47:45.406625Z
+3fb8d2717a7472bc7071209343d39f26
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+MetadataSubComponent.java
+file
+
+
+
+
+2008-07-11T20:47:45.469125Z
+1b0dbcf8283bc3d3e3be80bd412f03ff
+2008-02-04T17:12:40.930380Z
+5407
+eankutse
+
+workspace
+dir
+
+Test.java
+file
+
+
+
+
+2008-07-11T20:47:45.516000Z
+a2d0e795d7bc69f878e916e08d30a014
+2008-02-29T17:00:13.242746Z
+5656
+pavan.toleti
+
+Metadata.java
+file
+
+
+
+
+2008-07-11T20:47:45.641000Z
+bc8710cf22d12c23de5b52920640967c
+2008-01-10T19:23:37.684029Z
+5136
+eankutse
+
+MetadataBinaryBase.java
+file
+
+
+
+
+2008-07-11T20:47:45.562875Z
+ea6ae7fe135dd69b5cf98c94dc3f7df4
+2007-10-02T20:51:54.437684Z
+3534
+pavan.toleti
+
+transformer
+dir
+
+MetadataBinary.java
+file
+
+
+
+
+2008-07-11T20:47:45.687875Z
+ad819d8eb6074553f7447b55455e8faf
+2007-09-26T19:49:06.484679Z
+3447
+pavan.toleti
+
+eco
+dir
+
+configuration
+dir
+
+tc10
+dir
+
+util
+dir
+

@@ -1,0 +1,20 @@
+<DesignState-config>
+ <!-- organization's customized application properties -->
+ <properties>
+
+  <property name="publishing-environment" value="Open" /> <!-- Open or Vault -->
+  <property name="find-numbers-base-directory" value=""/>
+
+	<!-- comma separated list of folders -->
+  <property name="untouchable-folders" value="" />
+
+	<!-- comma separated list of folders -->
+  <property name="non-publishing-folders" value="" />
+
+  <!-- email alerts.  recipients are pipe delimited -->
+  <property name="email-from-address" value="PEN@harris.com" />
+  <property name="email-smtp-server" value="smtp.corp.harris.com" />
+  <property name="email-recipients" value="admin@harris.com" />
+
+ </properties>
+</DesignState-config>

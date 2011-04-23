@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/designstate/webapp/build
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-01-26T00:19:54.379681Z
+5307
+pavan.toleti
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+title.build
+file
+
+
+
+
+2008-07-11T22:03:41.328500Z
+c95e76a8b7a5a242b0631a84808d7b65
+2007-12-08T19:10:43.157360Z
+4626
+arbind.thakur
+
+classpath.build
+file
+
+
+
+
+2008-07-11T22:03:41.375375Z
+c5732f61968b696633aa5a55f16e1a68
+2007-06-20T20:38:12.779055Z
+2065
+dushant.reddy
+

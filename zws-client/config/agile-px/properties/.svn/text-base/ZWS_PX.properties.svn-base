@@ -1,0 +1,29 @@
+#Process Extension Properties
+
+#DesignState routing
+designstate.domain.name=zws
+designstate.server.name=DesignState-node-0
+designstate.datasource.name=agile
+
+#Default designstate authtentication
+designstate.default.username=zws
+#designstate.default.username=albell
+designstate.default.password=agile
+designstate.log.file=C:\\zws.px.log
+
+#URLs to DesignState Services
+designstate.apc.service.url=http://vm-ilink-0/demo/start-part/index.do
+designstate.event.service.url=http://vm-ilink-0/event/service/fire.do
+#designstate.apc.service.url=http://pls-sjc-002:8888/demo/start-part/index.do
+#designstate.event.service.url=http://pls-sjc-002:8888/event/service/fire.do
+
+#standalone testing (commandline)
+agile.cmdln.username=zws
+agile.cmdln.password=agile
+agile.cmdln.url=http://vm-agile-9-2:7778/Agile
+#agile.cmdln.username=albell
+#agile.cmdln.password=agile
+#agile.cmdln.url=http://abell-d410:7777/Agile
+
+#Debug Mode
+designstate.px.in.debug.mode=true

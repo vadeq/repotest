@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/zws/!svn/ver/5300/trunk/zws/designstate/client/code/java/zws/service/replication/policy
+END
+ReplicationPolicyServiceRemoteHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/replication/policy/ReplicationPolicyServiceRemoteHome.java
+END
+EJBLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/replication/policy/EJBLocator.java
+END
+ReplicationPolicyServiceLocal.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/replication/policy/ReplicationPolicyServiceLocal.java
+END
+ReplicationPolicyServiceRemote.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/replication/policy/ReplicationPolicyServiceRemote.java
+END
+ReplicationPolicyService.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/replication/policy/ReplicationPolicyService.java
+END
+ReplicationPolicyServiceLocalHome.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/zws/!svn/ver/5/trunk/zws/designstate/client/code/java/zws/service/replication/policy/ReplicationPolicyServiceLocalHome.java
+END

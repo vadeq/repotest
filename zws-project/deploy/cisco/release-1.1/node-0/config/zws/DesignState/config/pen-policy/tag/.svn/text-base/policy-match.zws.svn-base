@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<instructions>
+  <DesignState-config ignore="true"/>
+  <policy-matches ignore="true"/>
+	<matching-rules instance-of="zws.service.policy.match.PolicyMatch" static-method="add" class="zws.service.policy.match.PolicyMatchSvc">
+		<policy property="name" required="true"/>
+		<priority/>
+		<target-name required="true"/>
+		<intent required="true"/>
+	</matching-rules>
+
+	<include-match instance-of="zws.service.policy.match.op.PolicyMatchOpList" method="add">
+		<is-ignored type="boolean" default="false"/>
+	</include-match>
+
+	<!-- if isIgnored is true and op result is true don't select the policy -->
+	<discard-policy-match instance-of="zws.service.policy.match.op.PolicyMatchOpList" method="add">
+		<is-ignored type="boolean" default="true"/>
+	</discard-policy-match>
+
+	<compare-attribute instance-of="zws.service.policy.match.op.CompareAttributeOP" method="add">
+		<attribute-name required="true"/>
+		<attribute-value required="true"/>
+	</compare-attribute>
+
+		<exclude-attribute instance-of="zws.service.policy.match.op.ExcludeAttributeOP" method="add">
+		<attribute-name required="true"/>
+		<attribute-value required="true"/>
+	</exclude-attribute>
+
+	<folder instance-of="zws.service.policy.match.op.CompareAttributeOP" method="add">
+		<attribute-name default="folder" />
+		<attribute-value required="true"/>
+	</folder>
+
+	<root-folder instance-of="zws.service.policy.match.op.StartsWithOP" method="add">
+		<attribute-name default="folder"/>
+		<location property="attributeValue"/>
+	</root-folder>
+
+	<container instance-of="zws.service.policy.match.op.StartsWithOP" method="add">
+		<attribute-name default="container"/>
+		<location property="attributeValue"/>
+	</container>
+
+	<check-item-type instance-of="zws.service.policy.match.op.CompareItemTypeOP" method="add">
+		<check-for required="true"/>
+	</check-item-type>
+
+	<is-asm-item instance-of="zws.service.policy.match.op.CompareItemTypeOP" method="add">
+		<check-for default="asm"/>
+	</is-asm-item>
+
+	<is-prt-item instance-of="zws.service.policy.match.op.CompareItemTypeOP" method="add">
+		<check-for default="prt"/>
+	</is-prt-item>
+
+	<is-drw-item instance-of="zws.service.policy.match.op.CompareItemTypeOP" method="add">
+		<check-for default="drw"/>
+	</is-drw-item>
+
+	<start-with-number instance-of="zws.service.policy.match.op.StartsWithNumber" method="add">
+		<attribute-name default="name"/>
+	</start-with-number>
+	
+	<start-with-alphabet instance-of="zws.service.policy.match.op.StartsWithAlphabet" method="add">
+		<attribute-name default="name"/>
+	</start-with-alphabet>
+</instructions>

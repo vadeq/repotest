@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/service/replication
+END
+ReplicationSvc.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/zws/!svn/ver/5705/trunk/zws/designstate/server/code/java/zws/service/replication/ReplicationSvc.java
+END
+ReplicationServiceEJB.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/zws/!svn/ver/1030/trunk/zws/designstate/server/code/java/zws/service/replication/ReplicationServiceEJB.java
+END

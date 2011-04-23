@@ -1,0 +1,52 @@
+8
+
+dir
+6507
+http://build.zerowait-state.com/svn/zws/trunk/zws/zws-project/deploy/harris/stage/node-0/config/zws/DesignState/config-old/ilink-3/tag
+http://build.zerowait-state.com/svn/zws
+
+
+
+2008-02-26T15:16:11.751891Z
+5546
+arbind.thakur
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+df950f47-7b31-0410-81e3-a46460c90653
+
+event-listener.zws
+file
+
+
+
+
+2008-07-11T20:45:00.812875Z
+d28cd6751b6b536a442075a4eb3205da
+2008-02-11T16:36:09.356099Z
+5445
+rmccabe
+
+license-pool.zws
+file
+
+
+
+
+2008-07-11T20:45:00.891000Z
+5fdc8ed706d061383bfcca565daf33f1
+2008-02-26T15:16:11.751891Z
+5546
+arbind.thakur
+
